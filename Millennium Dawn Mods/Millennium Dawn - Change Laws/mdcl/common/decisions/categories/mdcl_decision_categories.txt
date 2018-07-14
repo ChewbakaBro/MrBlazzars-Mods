@@ -1,0 +1,37 @@
+mdcl_change_laws_population = {
+	icon = propaganda
+
+	visible = {
+		always = yes
+	}
+}
+
+mdcl_change_laws_party_increase = {
+	icon = propaganda
+
+	visible = {
+		always = yes
+	}
+}
+
+mdcl_change_laws_party_decrease = {
+	icon = propaganda
+
+	visible = {
+		#always = yes
+		OR = {
+			has_any_islamist_influence = yes
+			has_any_fascist_influence = yes
+			has_any_nationalist_influence = yes
+			has_any_monarchist_influence = yes
+			has_any_reactionary_influence = yes
+			has_any_conservative_influence = yes
+			has_any_market_liberal_influence = yes
+			has_any_social_liberal_influence = yes
+			has_any_social_democrat_influence = yes
+			has_any_progressive_influence = yes
+			has_any_democratic_socialist_influence = yes
+			has_any_communist_influence = yes
+		}
+	}
+}

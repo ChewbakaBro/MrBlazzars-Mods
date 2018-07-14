@@ -1,0 +1,411 @@
+﻿l_english:
+ mdcl_change_laws_population:0 "Change Population Laws"
+ mdcl_change_laws_population_desc:0 "Tell those citizens of yours to change exactly how often they make babies!"
+
+ mdcl_change_population_growth_increase:0 "Increase Population Growth"
+ mdcl_change_population_growth_increase_desc:0 ""
+
+ mdcl_change_population_growth_decrease:0 "Decrease Population Growth"
+ mdcl_change_population_growth_decrease_desc:0 ""
+
+ mdcl_change_laws_party_increase:0 "Increase Party Popularity"
+ mdcl_change_laws_party_increase_desc:0 "Use your political power to increase a specific parties popularity in your country!"
+
+ mdcl_change_laws_party_decrease:0 "Decrease Party Popularity"
+ mdcl_change_laws_party_decrease_desc:0 "Use your political power to decrease a specific parties popularity in your country!"
+
+ mdcl_change_party_islamist_decrease:0 "Decrease Islamist Influence"
+ mdcl_change_party_islamist_decrease_desc:0 ""
+
+ mdcl_change_party_fascist_decrease:0 "Decrease Fascist Influence"
+ mdcl_change_party_fascist_decrease_desc:0 ""
+
+ mdcl_change_party_nationalist_decrease:0 "Decrease Nationalist Influence"
+ mdcl_change_party_nationalist_decrease_desc:0 ""
+
+ mdcl_change_party_monarchist_decrease:0 "Decrease Monarchist Influence"
+ mdcl_change_party_monarchist_decrease_desc:0 ""
+
+ mdcl_change_party_reactionary_decrease:0 "Decrease Reactionary Influence"
+ mdcl_change_party_reactionary_decrease_desc:0 ""
+
+ mdcl_change_party_conservative_decrease:0 "Decrease Conservative Influence"
+ mdcl_change_party_conservative_decrease_desc:0 ""
+
+ mdcl_change_party_market_liberal_decrease:0 "Decrease Market Liberal Influence"
+ mdcl_change_party_market_liberal_decrease_desc:0 ""
+
+ mdcl_change_party_social_liberal_decrease:0 "Decrease Social Liberal Influence"
+ mdcl_change_party_social_liberal_decrease_desc:0 ""
+
+ mdcl_change_party_social_democrat_decrease:0 "Decrease Social Democrat Influence"
+ mdcl_change_party_social_democrat_decrease_desc:0 ""
+
+ mdcl_change_party_progressive_decrease:0 "Decrease Progressive Influence"
+ mdcl_change_party_progressive_decrease_desc:0 ""
+
+ mdcl_change_party_democratic_socialist_decrease:0 "Decrease Socialist Influence"
+ mdcl_change_party_democratic_socialist_decrease_desc:0 ""
+
+ mdcl_change_party_communist_decrease:0 "Decrease Communist Influence"
+ mdcl_change_party_communist_decrease_desc:0 ""
+
+ mdcl_change_party_islamist_increase_1:0 "Increase Islamist Influence"
+ mdcl_change_party_islamist_increase_1_desc:0 ""
+
+ mdcl_change_party_islamist_increase_2:0 "Increase Islamist Influence"
+ mdcl_change_party_islamist_increase_2_desc:0 ""
+
+ mdcl_change_party_islamist_increase_3:0 "Increase Islamist Influence"
+ mdcl_change_party_islamist_increase_3_desc:0 ""
+
+ mdcl_change_party_islamist_increase_4:0 "Increase Islamist Influence"
+ mdcl_change_party_islamist_increase_4_desc:0 ""
+
+ mdcl_change_party_islamist_increase_5:0 "Increase Islamist Influence"
+ mdcl_change_party_islamist_increase_5_desc:0 ""
+
+ mdcl_change_party_islamist_increase_6:0 "Increase Islamist Influence"
+ mdcl_change_party_islamist_increase_6_desc:0 ""
+
+ mdcl_change_party_islamist_increase_7:0 "Increase Islamist Influence"
+ mdcl_change_party_islamist_increase_7_desc:0 ""
+
+ mdcl_change_party_islamist_increase_8:0 "Increase Islamist Influence"
+ mdcl_change_party_islamist_increase_8_desc:0 ""
+
+ mdcl_change_party_islamist_increase_9:0 "Increase Islamist Influence"
+ mdcl_change_party_islamist_increase_9_desc:0 ""
+
+ mdcl_change_party_islamist_increase_10:0 "Increase Islamist Influence"
+ mdcl_change_party_islamist_increase_10_desc:0 ""
+
+ mdcl_change_party_fascist_increase_1:0 "Increase Fascist Influence"
+ mdcl_change_party_fascist_increase_1_desc:0 ""
+
+ mdcl_change_party_fascist_increase_2:0 "Increase Fascist Influence"
+ mdcl_change_party_fascist_increase_2_desc:0 ""
+
+ mdcl_change_party_fascist_increase_3:0 "Increase Fascist Influence"
+ mdcl_change_party_fascist_increase_3_desc:0 ""
+
+ mdcl_change_party_fascist_increase_4:0 "Increase Fascist Influence"
+ mdcl_change_party_fascist_increase_4_desc:0 ""
+
+ mdcl_change_party_fascist_increase_5:0 "Increase Fascist Influence"
+ mdcl_change_party_fascist_increase_5_desc:0 ""
+
+ mdcl_change_party_fascist_increase_6:0 "Increase Fascist Influence"
+ mdcl_change_party_fascist_increase_6_desc:0 ""
+
+ mdcl_change_party_fascist_increase_7:0 "Increase Fascist Influence"
+ mdcl_change_party_fascist_increase_7_desc:0 ""
+
+ mdcl_change_party_fascist_increase_8:0 "Increase Fascist Influence"
+ mdcl_change_party_fascist_increase_8_desc:0 ""
+
+ mdcl_change_party_fascist_increase_9:0 "Increase Fascist Influence"
+ mdcl_change_party_fascist_increase_9_desc:0 ""
+
+ mdcl_change_party_fascist_increase_10:0 "Increase Fascist Influence"
+ mdcl_change_party_fascist_increase_10_desc:0 ""
+
+ mdcl_change_party_nationalist_increase_1:0 "Increase Nationalist Influence"
+ mdcl_change_party_nationalist_increase_1_desc:0 ""
+
+ mdcl_change_party_nationalist_increase_2:0 "Increase Nationalist Influence"
+ mdcl_change_party_nationalist_increase_2_desc:0 ""
+
+ mdcl_change_party_nationalist_increase_3:0 "Increase Nationalist Influence"
+ mdcl_change_party_nationalist_increase_3_desc:0 ""
+
+ mdcl_change_party_nationalist_increase_4:0 "Increase Nationalist Influence"
+ mdcl_change_party_nationalist_increase_4_desc:0 ""
+
+ mdcl_change_party_nationalist_increase_5:0 "Increase Nationalist Influence"
+ mdcl_change_party_nationalist_increase_5_desc:0 ""
+
+ mdcl_change_party_nationalist_increase_6:0 "Increase Nationalist Influence"
+ mdcl_change_party_nationalist_increase_6_desc:0 ""
+
+ mdcl_change_party_nationalist_increase_7:0 "Increase Nationalist Influence"
+ mdcl_change_party_nationalist_increase_7_desc:0 ""
+
+ mdcl_change_party_nationalist_increase_8:0 "Increase Nationalist Influence"
+ mdcl_change_party_nationalist_increase_8_desc:0 ""
+
+ mdcl_change_party_nationalist_increase_9:0 "Increase Nationalist Influence"
+ mdcl_change_party_nationalist_increase_9_desc:0 ""
+
+ mdcl_change_party_nationalist_increase_10:0 "Increase Nationalist Influence"
+ mdcl_change_party_nationalist_increase_10_desc:0 ""
+
+ mdcl_change_party_monarchist_increase_1:0 "Increase Monarchist Influence"
+ mdcl_change_party_monarchist_increase_1_desc:0 ""
+
+ mdcl_change_party_monarchist_increase_2:0 "Increase Monarchist Influence"
+ mdcl_change_party_monarchist_increase_2_desc:0 ""
+
+ mdcl_change_party_monarchist_increase_3:0 "Increase Monarchist Influence"
+ mdcl_change_party_monarchist_increase_3_desc:0 ""
+
+ mdcl_change_party_monarchist_increase_4:0 "Increase Monarchist Influence"
+ mdcl_change_party_monarchist_increase_4_desc:0 ""
+
+ mdcl_change_party_monarchist_increase_5:0 "Increase Monarchist Influence"
+ mdcl_change_party_monarchist_increase_5_desc:0 ""
+
+ mdcl_change_party_monarchist_increase_6:0 "Increase Monarchist Influence"
+ mdcl_change_party_monarchist_increase_6_desc:0 ""
+
+ mdcl_change_party_monarchist_increase_7:0 "Increase Monarchist Influence"
+ mdcl_change_party_monarchist_increase_7_desc:0 ""
+
+ mdcl_change_party_monarchist_increase_8:0 "Increase Monarchist Influence"
+ mdcl_change_party_monarchist_increase_8_desc:0 ""
+
+ mdcl_change_party_monarchist_increase_9:0 "Increase Monarchist Influence"
+ mdcl_change_party_monarchist_increase_9_desc:0 ""
+
+ mdcl_change_party_monarchist_increase_10:0 "Increase Monarchist Influence"
+ mdcl_change_party_monarchist_increase_10_desc:0 ""
+
+ mdcl_change_party_reactionary_increase_1:0 "Increase Reactionary Influence"
+ mdcl_change_party_reactionary_increase_1_desc:0 ""
+
+ mdcl_change_party_reactionary_increase_2:0 "Increase Reactionary Influence"
+ mdcl_change_party_reactionary_increase_2_desc:0 ""
+
+ mdcl_change_party_reactionary_increase_3:0 "Increase Reactionary Influence"
+ mdcl_change_party_reactionary_increase_3_desc:0 ""
+
+ mdcl_change_party_reactionary_increase_4:0 "Increase Reactionary Influence"
+ mdcl_change_party_reactionary_increase_4_desc:0 ""
+
+ mdcl_change_party_reactionary_increase_5:0 "Increase Reactionary Influence"
+ mdcl_change_party_reactionary_increase_5_desc:0 ""
+
+ mdcl_change_party_reactionary_increase_6:0 "Increase Reactionary Influence"
+ mdcl_change_party_reactionary_increase_6_desc:0 ""
+
+ mdcl_change_party_reactionary_increase_7:0 "Increase Reactionary Influence"
+ mdcl_change_party_reactionary_increase_7_desc:0 ""
+
+ mdcl_change_party_reactionary_increase_8:0 "Increase Reactionary Influence"
+ mdcl_change_party_reactionary_increase_8_desc:0 ""
+
+ mdcl_change_party_reactionary_increase_9:0 "Increase Reactionary Influence"
+ mdcl_change_party_reactionary_increase_9_desc:0 ""
+
+ mdcl_change_party_reactionary_increase_10:0 "Increase Reactionary Influence"
+ mdcl_change_party_reactionary_increase_10_desc:0 ""
+
+ mdcl_change_party_conservative_increase_1:0 "Increase Conservative Influence"
+ mdcl_change_party_conservative_increase_1_desc:0 ""
+
+ mdcl_change_party_conservative_increase_2:0 "Increase Conservative Influence"
+ mdcl_change_party_conservative_increase_2_desc:0 ""
+
+ mdcl_change_party_conservative_increase_3:0 "Increase Conservative Influence"
+ mdcl_change_party_conservative_increase_3_desc:0 ""
+
+ mdcl_change_party_conservative_increase_4:0 "Increase Conservative Influence"
+ mdcl_change_party_conservative_increase_4_desc:0 ""
+
+ mdcl_change_party_conservative_increase_5:0 "Increase Conservative Influence"
+ mdcl_change_party_conservative_increase_5_desc:0 ""
+
+ mdcl_change_party_conservative_increase_6:0 "Increase Conservative Influence"
+ mdcl_change_party_conservative_increase_6_desc:0 ""
+
+ mdcl_change_party_conservative_increase_7:0 "Increase Conservative Influence"
+ mdcl_change_party_conservative_increase_7_desc:0 ""
+
+ mdcl_change_party_conservative_increase_8:0 "Increase Conservative Influence"
+ mdcl_change_party_conservative_increase_8_desc:0 ""
+
+ mdcl_change_party_conservative_increase_9:0 "Increase Conservative Influence"
+ mdcl_change_party_conservative_increase_9_desc:0 ""
+
+ mdcl_change_party_conservative_increase_10:0 "Increase Conservative Influence"
+ mdcl_change_party_conservative_increase_10_desc:0 ""
+
+ mdcl_change_party_market_liberal_increase_1:0 "Increase Market Liberal Influence"
+ mdcl_change_party_market_liberal_increase_1_desc:0 ""
+
+ mdcl_change_party_market_liberal_increase_2:0 "Increase Market Liberal Influence"
+ mdcl_change_party_market_liberal_increase_2_desc:0 ""
+
+ mdcl_change_party_market_liberal_increase_3:0 "Increase Market Liberal Influence"
+ mdcl_change_party_market_liberal_increase_3_desc:0 ""
+
+ mdcl_change_party_market_liberal_increase_4:0 "Increase Market Liberal Influence"
+ mdcl_change_party_market_liberal_increase_4_desc:0 ""
+
+ mdcl_change_party_market_liberal_increase_5:0 "Increase Market Liberal Influence"
+ mdcl_change_party_market_liberal_increase_5_desc:0 ""
+
+ mdcl_change_party_market_liberal_increase_6:0 "Increase Market Liberal Influence"
+ mdcl_change_party_market_liberal_increase_6_desc:0 ""
+
+ mdcl_change_party_market_liberal_increase_7:0 "Increase Market Liberal Influence"
+ mdcl_change_party_market_liberal_increase_7_desc:0 ""
+
+ mdcl_change_party_market_liberal_increase_8:0 "Increase Market Liberal Influence"
+ mdcl_change_party_market_liberal_increase_8_desc:0 ""
+
+ mdcl_change_party_market_liberal_increase_9:0 "Increase Market Liberal Influence"
+ mdcl_change_party_market_liberal_increase_9_desc:0 ""
+
+ mdcl_change_party_market_liberal_increase_10:0 "Increase Market Liberal Influence"
+ mdcl_change_party_market_liberal_increase_10_desc:0 ""
+
+ mdcl_change_party_social_liberal_increase_1:0 "Increase Social Liberal Influence"
+ mdcl_change_party_social_liberal_increase_1_desc:0 ""
+
+ mdcl_change_party_social_liberal_increase_2:0 "Increase Social Liberal Influence"
+ mdcl_change_party_social_liberal_increase_2_desc:0 ""
+
+ mdcl_change_party_social_liberal_increase_3:0 "Increase Social Liberal Influence"
+ mdcl_change_party_social_liberal_increase_3_desc:0 ""
+
+ mdcl_change_party_social_liberal_increase_4:0 "Increase Social Liberal Influence"
+ mdcl_change_party_social_liberal_increase_4_desc:0 ""
+
+ mdcl_change_party_social_liberal_increase_5:0 "Increase Social Liberal Influence"
+ mdcl_change_party_social_liberal_increase_5_desc:0 ""
+
+ mdcl_change_party_social_liberal_increase_6:0 "Increase Social Liberal Influence"
+ mdcl_change_party_social_liberal_increase_6_desc:0 ""
+
+ mdcl_change_party_social_liberal_increase_7:0 "Increase Social Liberal Influence"
+ mdcl_change_party_social_liberal_increase_7_desc:0 ""
+
+ mdcl_change_party_social_liberal_increase_8:0 "Increase Social Liberal Influence"
+ mdcl_change_party_social_liberal_increase_8_desc:0 ""
+
+ mdcl_change_party_social_liberal_increase_9:0 "Increase Social Liberal Influence"
+ mdcl_change_party_social_liberal_increase_9_desc:0 ""
+
+ mdcl_change_party_social_liberal_increase_10:0 "Increase Social Liberal Influence"
+ mdcl_change_party_social_liberal_increase_10_desc:0 ""
+
+ mdcl_change_party_social_democrat_increase_1:0 "Increase Social Democrat Influence"
+ mdcl_change_party_social_democrat_increase_1_desc:0 ""
+
+ mdcl_change_party_social_democrat_increase_2:0 "Increase Social Democrat Influence"
+ mdcl_change_party_social_democrat_increase_2_desc:0 ""
+
+ mdcl_change_party_social_democrat_increase_3:0 "Increase Social Democrat Influence"
+ mdcl_change_party_social_democrat_increase_3_desc:0 ""
+
+ mdcl_change_party_social_democrat_increase_4:0 "Increase Social Democrat Influence"
+ mdcl_change_party_social_democrat_increase_4_desc:0 ""
+
+ mdcl_change_party_social_democrat_increase_5:0 "Increase Social Democrat Influence"
+ mdcl_change_party_social_democrat_increase_5_desc:0 ""
+
+ mdcl_change_party_social_democrat_increase_6:0 "Increase Social Democrat Influence"
+ mdcl_change_party_social_democrat_increase_6_desc:0 ""
+
+ mdcl_change_party_social_democrat_increase_7:0 "Increase Social Democrat Influence"
+ mdcl_change_party_social_democrat_increase_7_desc:0 ""
+
+ mdcl_change_party_social_democrat_increase_8:0 "Increase Social Democrat Influence"
+ mdcl_change_party_social_democrat_increase_8_desc:0 ""
+
+ mdcl_change_party_social_democrat_increase_9:0 "Increase Social Democrat Influence"
+ mdcl_change_party_social_democrat_increase_9_desc:0 ""
+
+ mdcl_change_party_social_democrat_increase_10:0 "Increase Social Democrat Influence"
+ mdcl_change_party_social_democrat_increase_10_desc:0 ""
+
+ mdcl_change_party_progressive_increase_1:0 "Increase Progressive Influence"
+ mdcl_change_party_progressive_increase_1_desc:0 ""
+
+ mdcl_change_party_progressive_increase_2:0 "Increase Progressive Influence"
+ mdcl_change_party_progressive_increase_2_desc:0 ""
+
+ mdcl_change_party_progressive_increase_3:0 "Increase Progressive Influence"
+ mdcl_change_party_progressive_increase_3_desc:0 ""
+
+ mdcl_change_party_progressive_increase_4:0 "Increase Progressive Influence"
+ mdcl_change_party_progressive_increase_4_desc:0 ""
+
+ mdcl_change_party_progressive_increase_5:0 "Increase Progressive Influence"
+ mdcl_change_party_progressive_increase_5_desc:0 ""
+
+ mdcl_change_party_progressive_increase_6:0 "Increase Progressive Influence"
+ mdcl_change_party_progressive_increase_6_desc:0 ""
+
+ mdcl_change_party_progressive_increase_7:0 "Increase Progressive Influence"
+ mdcl_change_party_progressive_increase_7_desc:0 ""
+
+ mdcl_change_party_progressive_increase_8:0 "Increase Progressive Influence"
+ mdcl_change_party_progressive_increase_8_desc:0 ""
+
+ mdcl_change_party_progressive_increase_9:0 "Increase Progressive Influence"
+ mdcl_change_party_progressive_increase_9_desc:0 ""
+
+ mdcl_change_party_progressive_increase_10:0 "Increase Progressive Influence"
+ mdcl_change_party_progressive_increase_10_desc:0 ""
+
+ mdcl_change_party_democratic_socialist_increase_1:0 "Increase Socialist Influence"
+ mdcl_change_party_democratic_socialist_increase_1_desc:0 ""
+
+ mdcl_change_party_democratic_socialist_increase_2:0 "Increase Socialist Influence"
+ mdcl_change_party_democratic_socialist_increase_2_desc:0 ""
+
+ mdcl_change_party_democratic_socialist_increase_3:0 "Increase Socialist Influence"
+ mdcl_change_party_democratic_socialist_increase_3_desc:0 ""
+
+ mdcl_change_party_democratic_socialist_increase_4:0 "Increase Socialist Influence"
+ mdcl_change_party_democratic_socialist_increase_4_desc:0 ""
+
+ mdcl_change_party_democratic_socialist_increase_5:0 "Increase Socialist Influence"
+ mdcl_change_party_democratic_socialist_increase_5_desc:0 ""
+
+ mdcl_change_party_democratic_socialist_increase_6:0 "Increase Socialist Influence"
+ mdcl_change_party_democratic_socialist_increase_6_desc:0 ""
+
+ mdcl_change_party_democratic_socialist_increase_7:0 "Increase Socialist Influence"
+ mdcl_change_party_democratic_socialist_increase_7_desc:0 ""
+
+ mdcl_change_party_democratic_socialist_increase_8:0 "Increase Socialist Influence"
+ mdcl_change_party_democratic_socialist_increase_8_desc:0 ""
+
+ mdcl_change_party_democratic_socialist_increase_9:0 "Increase Socialist Influence"
+ mdcl_change_party_democratic_socialist_increase_9_desc:0 ""
+
+ mdcl_change_party_democratic_socialist_increase_10:0 "Increase Socialist Influence"
+ mdcl_change_party_democratic_socialist_increase_10_desc:0 ""
+
+ mdcl_change_party_communist_increase_1:0 "Increase Communist Influence"
+ mdcl_change_party_communist_increase_1_desc:0 ""
+
+ mdcl_change_party_communist_increase_2:0 "Increase Communist Influence"
+ mdcl_change_party_communist_increase_2_desc:0 ""
+
+ mdcl_change_party_communist_increase_3:0 "Increase Communist Influence"
+ mdcl_change_party_communist_increase_3_desc:0 ""
+
+ mdcl_change_party_communist_increase_4:0 "Increase Communist Influence"
+ mdcl_change_party_communist_increase_4_desc:0 ""
+
+ mdcl_change_party_communist_increase_5:0 "Increase Communist Influence"
+ mdcl_change_party_communist_increase_5_desc:0 ""
+
+ mdcl_change_party_communist_increase_6:0 "Increase Communist Influence"
+ mdcl_change_party_communist_increase_6_desc:0 ""
+
+ mdcl_change_party_communist_increase_7:0 "Increase Communist Influence"
+ mdcl_change_party_communist_increase_7_desc:0 ""
+
+ mdcl_change_party_communist_increase_8:0 "Increase Communist Influence"
+ mdcl_change_party_communist_increase_8_desc:0 ""
+
+ mdcl_change_party_communist_increase_9:0 "Increase Communist Influence"
+ mdcl_change_party_communist_increase_9_desc:0 ""
+
+ mdcl_change_party_communist_increase_10:0 "Increase Communist Influence"
+ mdcl_change_party_communist_increase_10_desc:0 ""

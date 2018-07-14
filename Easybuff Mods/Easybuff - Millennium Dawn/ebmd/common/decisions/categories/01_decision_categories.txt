@@ -1,0 +1,7 @@
+easybuff_decision = {
+	icon = GFX_decision_politics
+
+	allowed = {
+		always = yes
+	}
+}

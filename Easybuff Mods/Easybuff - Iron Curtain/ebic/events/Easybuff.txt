@@ -1,0 +1,3098 @@
+﻿add_namespace = Easybuff
+
+
+country_event = {
+	id = Easybuff.1
+	title = Easybuff.1.t
+	desc = Easybuff.1.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = { remove_ideas = cheat_open_easybuff }
+	}
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.1.a
+		country_event = Easybuff.10
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.1.b
+		country_event = Easybuff.20
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.1.c
+		country_event = Easybuff.30
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.1.d
+		country_event = Easybuff.40
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.1.e
+		country_event = Easybuff.50
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.1.f
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.1.g
+		country_event = Easybuff.70
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.1.h
+		country_event = Easybuff.80
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.1.i
+		country_event = Easybuff.90
+	}
+	option = {
+		name = Easybuffclose
+	}
+}
+
+# Buildings 10
+country_event = {
+	id = Easybuff.10
+	title = Easybuff.10.t
+	desc = Easybuff.10.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.10.a
+		every_state = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.10.b
+		every_state = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = anti_air_building
+				level = 1
+				instant_build = yes
+			}    
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.10.c
+		every_state = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.10.d
+		every_state = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.10.e
+		add_offsite_building = { type = industrial_complex level = 2 }
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.10.f
+		add_offsite_building = { type = arms_factory level = 2 }
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.10.g
+		every_state = {
+			limit = { is_controlled_by = ROOT }
+			add_extra_state_shared_building_slots = 2
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.1
+	}
+}
+
+# Resources 20
+country_event = {
+	id = Easybuff.20
+	title = Easybuff.20.t
+	desc = Easybuff.20.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.20.a
+		every_state = {
+			limit = { is_controlled_by = ROOT }
+			add_resource = {
+				type = rubber
+				amount = 8
+			}
+			add_resource = {
+				type = oil
+				amount = 8
+			}
+			add_resource = {
+				type = aluminium
+				amount = 8
+			}
+			add_resource = {
+				type = tungsten
+				amount = 8
+			}
+			add_resource = {
+				type = steel
+				amount = 8
+			}
+			add_resource = {
+				type = chromium
+				amount = 8
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.20.b
+		random_state = {
+			limit = { is_controlled_by = ROOT }
+			add_resource = {
+				type = rubber
+				amount = 8
+			}
+			add_resource = {
+				type = oil
+				amount = 8
+			}
+			add_resource = {
+				type = aluminium
+				amount = 8
+			}
+			add_resource = {
+				type = tungsten
+				amount = 8
+			}
+			add_resource = {
+				type = steel
+				amount = 8
+			}
+			add_resource = {
+				type = chromium
+				amount = 8
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.20.c
+		every_owned_state = {
+			add_resource = {
+				type = rubber
+				amount = 8
+			}
+			add_resource = {
+				type = oil
+				amount = 8
+			}
+			add_resource = {
+				type = aluminium
+				amount = 8
+			}
+			add_resource = {
+				type = tungsten
+				amount = 8
+			}
+			add_resource = {
+				type = steel
+				amount = 8
+			}
+			add_resource = {
+				type = chromium
+				amount = 8
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.1
+	}
+}
+
+# Technologies 30
+country_event = {
+	id = Easybuff.30
+	title = Easybuff.30.t
+	desc = Easybuff.30.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.30.a
+		country_event = Easybuff.31
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.30.b
+		country_event = Easybuff.32
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.30.c
+		country_event = Easybuff.33
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.1
+	}
+}
+# Bicycle 31
+country_event = {
+	id = Easybuff.31
+	title = Easybuff.31.t
+	desc = Easybuff.31.desc
+	picture = GFX_report_event_german_inspect_troops
+	
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.31.a
+		set_technology = { bicycle_infantry = 1 }
+		country_event = Easybuff.30
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.31.b
+		set_technology = { bicycle_infantry = 0 }
+		country_event = Easybuff.30
+	}
+  
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.30
+	}
+}
+# 32
+country_event = {
+	id = Easybuff.32
+	title = Easybuff.32.t
+	desc = Easybuff.32.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.32.a
+		set_technology = { cv_fighter3 = 1 }
+		set_technology = { jet_fighter2 = 1 }
+		set_technology = { cv_CAS3 = 1 }
+		set_technology = { cv_naval_bomber3 = 1 }
+		set_technology = { jet_tactical_bomber2 = 1 }
+		set_technology = { jet_strategic_bomber1 = 1 }
+		country_event = Easybuff.30
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.32.b
+		set_technology = { main_battle_tank = 1 }
+		set_technology = { modern_art = 1 }
+		set_technology = { advanced_light_tank = 1 }
+		set_technology = { advanced_light_art = 1 }
+		set_technology = { advanced_medium_tank = 1 }
+		set_technology = { advanced_medium_art = 1 }
+		country_event = Easybuff.30
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.32.c
+		set_technology = { mechanised_infantry3 = 1 }
+		set_technology = { motorized_rocket_unit = 1 }
+		set_technology = { motorised_infantry = 1 }
+		set_technology = { tech_support = 1 }
+		set_technology = { advanced_infantry_weapons = 1 }
+		set_technology = { tech_mountaineers = 1 }
+		country_event = Easybuff.30
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.32.d
+		set_technology = { torpedo_cruiser = 1 }
+		set_technology = { advanced_submarine = 1 }
+		set_technology = { advanced_carrier = 1 }
+		set_technology = { heavy_battleship2 = 1 }
+		set_technology = { advanced_battleship = 1 }
+		set_technology = { advanced_heavy_cruiser = 1 }
+		country_event = Easybuff.30
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.30
+	}
+}
+# 33
+country_event = {
+	id = Easybuff.33
+	title = Easybuff.33.t
+	desc = Easybuff.33.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.33.a
+		country_event = Easybuff.30
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.33.b
+		country_event = Easybuff.30
+	}
+  
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.30
+	}
+}
+
+# Equipments 40
+country_event = {
+		trigger = { is_ai = no }
+	id = Easybuff.40
+	title = Easybuff.40.t
+	desc = Easybuff.40.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.40.a
+		country_event = Easybuff.41
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.40.b
+		country_event = Easybuff.42
+	}
+  
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.1
+	}
+}
+
+# Infantry Equipments 41
+country_event = {
+	id = Easybuff.41
+	title = Easybuff.41.t
+	desc = Easybuff.41.d
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+	
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.41.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 1000
+		}
+		country_event = Easybuff.40
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.41.b
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 1000
+		}
+		country_event = Easybuff.40
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.41.c
+		add_equipment_to_stockpile = {
+			type = artillery_equipment_1
+			amount = 1000
+		}
+		country_event = Easybuff.40
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.41.d
+		add_equipment_to_stockpile = {
+			type = motorized_equipment_1
+			amount = 1000
+		}
+		country_event = Easybuff.40
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.41.e
+		add_equipment_to_stockpile = {
+			type = mechanized_equipment_1
+			amount = 1000
+		}
+		country_event = Easybuff.40
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.41.f
+		add_equipment_to_stockpile = {
+			type = motorized_rocket_equipment_1
+			amount = 1000
+		}
+		country_event = Easybuff.40
+	}
+	
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.41.g
+		add_equipment_to_stockpile = {
+			type = modern_tank_artillery_equipment_1
+			amount = 1000
+		}
+		country_event = Easybuff.40
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.40
+	}
+}
+
+# Air Equipments 42
+country_event = {
+	id = Easybuff.42
+	title = Easybuff.42.t
+	desc = Easybuff.42.d
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+	
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.42.a
+		add_equipment_to_stockpile = {
+			type = strat_bomber_equipment_1
+			amount = 1000
+		}
+		country_event = Easybuff.40
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.42.b
+		add_equipment_to_stockpile = {
+			type = jet_strat_bomber_equipment_1
+			amount = 1000
+		}
+		country_event = Easybuff.40
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.42.c
+		add_equipment_to_stockpile = {
+			type = transport_plane_equipment_1
+			amount = 1000
+		}
+		country_event = Easybuff.40
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.42.d
+		add_equipment_to_stockpile = {
+			type = jet_fighter_equipment_2
+			amount = 1000
+		}
+		country_event = Easybuff.40
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.42.e
+		add_equipment_to_stockpile = {
+			type = cv_CAS_equipment_3
+			amount = 1000
+		}
+		country_event = Easybuff.40
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.40
+	}
+}
+
+# Points and Exps 50
+country_event = {
+	id = Easybuff.50
+	title = Easybuff.50.t
+	desc = Easybuff.50.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.50.a
+		army_experience = 100
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.50.b
+		navy_experience = 100
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.50.c
+		air_experience = 100
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.50.d
+		add_political_power = 300
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.50.e
+		add_manpower = 500000
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.50.f
+		add_command_power = 100
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.50.g
+		add_stability = 0.1
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.50.h
+		add_war_support = 0.1
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.50.i
+		add_named_threat = { threat = 25 }
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.50.j
+		add_named_threat = { threat = -25 }
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.1
+	}
+}
+
+# Faction and Parties 60
+country_event = {
+	id = Easybuff.60
+	title = Easybuff.60.t
+	desc = Easybuff.60.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.60.a
+		random_country = {
+			limit = {
+				AND = {
+					is_in_faction_with = ROOT
+					is_faction_leader = yes
+				}
+			}
+			remove_from_faction = ROOT
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.60.b
+		country_event = Easybuff.61
+	}
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.60.c
+		every_country = {
+			limit = { 
+				AND = { 
+					has_war_with = ROOT
+					is_in_faction = yes
+					is_faction_leader = no
+				}
+			}
+			random_country = {
+				limit = {
+					AND = {
+						is_in_faction_with = PREV
+						is_faction_leader = yes
+					}
+				}
+				remove_from_faction = PREV
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.60.d
+		country_event = Easybuff.62
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.60.e
+		country_event = Easybuff.63
+	}
+  
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.1
+	}
+}
+
+# Join Faction 61
+country_event = {
+	id = Easybuff.61
+	title = Easybuff.61.t
+	desc = Easybuff.61.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		name = Easybuff.61.a
+		trigger = {
+			ENG = {
+				is_in_faction = yes
+				is_faction_leader = yes
+			}
+			is_ai = no
+		}
+		random_country = {
+			limit = {
+				AND = {
+					is_in_faction_with = ENG
+					is_faction_leader = yes
+				}
+			}
+			add_to_faction = ROOT
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		name = Easybuff.61.b
+		trigger = {
+			FRA = {
+				is_in_faction = yes
+				is_faction_leader = yes
+			}
+			is_ai = no
+		}
+		random_country = {
+			limit = {
+				AND = {
+					is_in_faction_with = FRA
+					is_faction_leader = yes
+				}
+			}
+			add_to_faction = ROOT
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		name = Easybuff.61.c
+		trigger = {
+			GER = {
+				is_in_faction = yes
+				is_faction_leader = yes
+			}
+			is_ai = no
+		}
+		random_country = {
+			limit = {
+				AND = {
+					is_in_faction_with = GER
+					is_faction_leader = yes
+				}
+			}
+			add_to_faction = ROOT
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		name = Easybuff.61.e
+		trigger = {
+			SOV = {
+				is_in_faction = yes
+				is_faction_leader = yes
+			}
+			is_ai = no
+		}
+		random_country = {
+			limit = {
+				AND = {
+					is_in_faction_with = SOV
+					is_faction_leader = yes
+				}
+			}
+			add_to_faction = ROOT
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.60
+	}
+}
+
+# Disband Faction 62
+country_event = {
+	id = Easybuff.62
+	title = Easybuff.62.t
+	desc = Easybuff.62.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.62.a
+		random_country = {
+			limit = {
+				AND = {
+					has_war_with = ROOT
+					is_faction_leader = yes
+				}
+			}
+			dismantle_faction = yes
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.62.b
+		every_country = {
+			limit = {
+				is_faction_leader = yes
+			}
+			dismantle_faction = yes
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.62.c
+		random_country = {
+			limit = {
+				AND = {
+					is_faction_leader = yes
+				}
+			}
+			dismantle_faction = yes
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.60
+	}
+}
+
+# Re-Group party 63
+country_event = {
+	id = Easybuff.63
+	title = Easybuff.63.t
+	desc = Easybuff.63.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.a
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 100
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.b
+		set_politics = {
+			ruling_party = Liberal_Conservatism
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 100
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.c
+		set_politics = {
+			ruling_party = Christian_Democratic
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 100
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.e
+		set_politics = {
+			ruling_party = Social_Democratic
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 100
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.f
+		set_politics = {
+			ruling_party = Social_Liberalism
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 100
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.g
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 100
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.h
+		set_politics = {
+			ruling_party = centrist
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 100
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.i
+		set_politics = {
+			ruling_party = liberal
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 100
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.j
+		country_event = Easybuff.64
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.60
+	}
+}
+
+country_event = {
+	id = Easybuff.64
+	title = Easybuff.63.t
+	desc = Easybuff.63.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.k
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 100
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.l
+		set_politics = {
+			ruling_party = trotskyism
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 100
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.m
+		set_politics = {
+			ruling_party = maoism
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 100
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.n
+		set_politics = {
+			ruling_party = National_Socialism
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 100
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.o
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 100
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.p
+		set_politics = {
+			ruling_party = nationalism
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 100
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.q
+		set_politics = {
+			ruling_party = monarchism
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 100
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.r
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 100
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.j
+		country_event = Easybuff.65
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.60
+	}
+}
+
+country_event = {
+	id = Easybuff.65
+	title = Easybuff.63.t
+	desc = Easybuff.63.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.s
+		set_politics = {
+			ruling_party = islamism
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 100
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.t
+		set_politics = {
+			ruling_party = radical_shiaism
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 100
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.u
+		set_politics = {
+			ruling_party = pan_arabism
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 100
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.v
+		set_politics = {
+			ruling_party = Salafism
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 100
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.w
+		set_politics = {
+			ruling_party = Judaism
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 100
+				}
+				Christianism = {
+					popularity = 0
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.x
+		set_politics = {
+			ruling_party = Christianism
+			elections_allowed = no
+			parties = {
+				conservative = { 
+					popularity = 0
+				}
+				Liberal_Conservatism = {
+					popularity = 0
+				}
+				Christian_Democratic = {
+					popularity = 0
+				}
+				Social_Democratic = {
+					popularity = 0
+				}
+				Social_Liberalism = {
+					popularity = 0
+				}
+				democratic = {
+					popularity = 0
+				}
+				centrist = {
+					popularity = 0
+				}
+				liberal = {
+					popularity = 0
+				}
+				communism = {
+					popularity = 0
+				}
+				trotskyism = {
+					popularity = 0
+				}
+				maoism = {
+					popularity = 0
+				}
+				National_Socialism = {
+					popularity = 0
+				}
+				fascism = {
+					popularity = 0
+				}
+				nationalism = {
+					popularity = 0
+				}
+				monarchism = {
+					popularity = 0
+				}
+				neutrality = {
+					popularity = 0
+				}
+				islamism = {
+					popularity = 0
+				}
+				radical_shiaism = {
+					popularity = 0
+				}
+				pan_arabism = {
+					popularity = 0
+				}
+				Salafism = {
+					popularity = 0
+				}
+				Judaism = {
+					popularity = 0
+				}
+				Christianism = {
+					popularity = 100
+				}
+			}
+		}
+		country_event = Easybuff.60
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.63.j
+		country_event = Easybuff.63
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.60
+	}
+}
+
+# Cores and Domain 70
+country_event = {
+	id = Easybuff.70
+	title = Easybuff.70.t
+	desc = Easybuff.70.desc
+	picture = GFX_report_event_german_inspect_troops
+	
+
+	immediate = {
+		hidden_effect = {
+			every_state = {
+				limit= {
+					is_core_of = ROOT
+				}
+				set_state_flag = player_state
+			}
+			set_country_flag = player_country
+		}
+	}
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.70.a
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+				is_controlled_by = ROOT
+				is_owned_by = ROOT
+			}
+			every_country = {
+				limit = {
+					NOT = { has_country_flag = player_country }
+				}
+				remove_state_core = PREV
+				remove_state_claim = PREV
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.70.b
+		country_event = Easybuff.71
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.70.c
+		every_state = {
+			limit = {
+				NOT = { is_controlled_by = ROOT }
+				AND = { is_core_of = ROOT }
+			}
+			remove_core_of = ROOT
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.70.d
+		country_event = Easybuff.72
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.70.e
+		country_event = Easybuff.73
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.70.f
+		country_event = Easybuff.74
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.70.g
+		country_event = Easybuff.75
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.70.h
+		every_country = {
+			limit = {
+				has_war_with = ROOT
+			}
+			PREV =  { white_peace = ROOT }
+		} 
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.1
+	}
+}
+
+# Make Controlled to Cores 71
+country_event = {
+	id = Easybuff.71
+	title = Easybuff.71.t
+	desc = Easybuff.71.desc
+	picture = GFX_report_event_german_inspect_troops
+	
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.71.a
+		random_state = {
+			limit = {
+				AND = {
+					any_neighbor_state = { owner = { tag = ROOT } }
+					NOT = { is_core_of = ROOT }
+				}
+			}
+			add_core_of = ROOT
+		}
+		country_event = Easybuff.70
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.71.b
+		every_state = {
+			limit = {
+				AND = {
+					is_controlled_by = ROOT
+					NOT = { is_core_of = ROOT }
+				}
+			}
+			add_core_of = ROOT
+		}
+		country_event = Easybuff.70
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.71.c
+		every_state = {
+			limit = {
+				AND = {
+					is_claimed_by = ROOT
+					NOT = { is_core_of = ROOT }
+				}
+			}
+			add_core_of = ROOT
+		}
+		country_event = Easybuff.70
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.70
+	}
+}
+
+# Get Control of Core States 72
+country_event = {
+	id = Easybuff.72
+	title = Easybuff.72.t
+	desc = Easybuff.72.desc
+	picture = GFX_report_event_german_inspect_troops
+	
+
+	immediate = {
+		hidden_effect = {
+			random_state = {
+				limit = {
+					AND = {
+						is_core_of = ROOT
+						NOT = { is_controlled_by = ROOT }
+					}
+				}
+				save_event_target_as = ROOT_state
+			}
+		}
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.72.a
+		random_state = {
+			limit = {
+				AND = {
+					is_core_of = ROOT
+					NOT = { is_controlled_by = ROOT }
+				}
+			}
+			ROOT = {
+				transfer_state = PREV
+			}
+		}
+		country_event = Easybuff.70
+	}
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.72.b
+		every_state = {
+			limit = {
+				AND = {
+					is_core_of = ROOT
+					NOT = { is_controlled_by = ROOT }
+				}
+			}
+			ROOT = {
+				transfer_state = PREV
+			}
+		}
+		country_event = Easybuff.70
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.70
+	}
+}
+
+# Get Control of Neighbor States 73
+country_event = {
+	id = Easybuff.73
+	title = Easybuff.73.t
+	desc = Easybuff.73.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.73.a
+		random_state = {
+			limit = {
+				AND = {
+					any_neighbor_state = { owner = { tag = ROOT } }
+					NOT = { is_controlled_by = ROOT }
+					owner = { has_war_with = ROOT }
+				}
+			}
+			ROOT = {
+				transfer_state = PREV
+			}
+		}
+		country_event = Easybuff.70
+	}
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.73.b
+		random_state = {
+			limit = {
+				AND = {
+					any_neighbor_state = { owner = { tag = ROOT } }
+					NOT = { is_controlled_by = ROOT }
+				}
+			}
+			ROOT = {
+				transfer_state = PREV
+			}
+		}
+		country_event = Easybuff.70
+	}
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.73.c
+		random_state = {
+			limit = {
+				AND = {
+					any_neighbor_state = { 
+						is_owned_by = ROOT 
+						ROOT = {
+							divisions_in_state = {
+								state = PREV
+								size > 20
+							}
+						}
+					}
+					
+					NOT = { is_controlled_by = ROOT }
+				}
+			}
+			ROOT = {
+				transfer_state = PREV
+			}
+		}
+		country_event = Easybuff.70
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.70
+	}
+}
+
+# Puppet Country 74
+country_event = {
+	id = Easybuff.74
+	title = Easybuff.74.t
+	desc = Easybuff.74.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.74.a
+		random_country = {
+			limit = {
+				AND = {
+					is_ai = yes
+					NOT = { is_puppet_of = ROOT }
+				}
+			}
+			ROOT = { puppet = PREV }
+		}
+		country_event = Easybuff.70
+	}
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.74.b
+		random_country = {
+			limit = {
+				AND = {
+					is_neighbor_of = ROOT
+					NOT = { is_puppet_of = ROOT }
+				}
+			}
+			ROOT = { puppet = PREV }
+		}
+		country_event = Easybuff.70
+	}
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.74.c
+		random_country = {
+			limit = {
+				AND = {
+					has_war_with = ROOT
+					NOT = { is_puppet_of = ROOT }
+				}
+			}
+			ROOT = { puppet = PREV }
+		}
+		country_event = Easybuff.70
+	}
+
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.70
+	}
+}
+
+# Set Capital 75
+country_event = {
+	id = Easybuff.75
+	title = Easybuff.75.t
+	desc = Easybuff.75.d
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = { 
+			random_owned_state = {
+				limit = {
+					AND = {
+						is_owned_by = ROOT
+						ROOT = {
+							divisions_in_state = {
+								state = PREV
+								size > 10
+							}
+						}
+					}
+				}
+				save_event_target_as = cap_state          
+			}
+			random_owned_state = {
+				limit = {
+					AND = {
+						is_owned_by = ROOT
+						ROOT = {
+							divisions_in_state = {
+								state = PREV
+								size > 20
+							}
+						}
+					}
+				}
+				save_event_target_as = cap_states         
+			}
+			random_owned_state = {
+				save_event_target_as = cap_statess         
+			}
+		}
+	}
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.75.a
+		set_capital = event_target:cap_state
+		country_event = Easybuff.70
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.75.b
+		set_capital = event_target:cap_states
+		country_event = Easybuff.70
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.75.c
+		set_capital = event_target:cap_statess
+		country_event = Easybuff.70
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.70
+	}
+}
+
+# Static Modifiers 80
+country_event = {
+	id = Easybuff.80
+	title = Easybuff.80.t
+	desc = Easybuff.80.d
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.80.a
+		if = {
+			limit = { has_idea = de_combat_width }
+			remove_ideas = de_combat_width
+			else = { add_ideas = de_combat_width }
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.80.b
+		if = {
+			limit = { has_idea = more_org }
+			remove_ideas = more_org
+			else = { add_ideas = more_org }
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.80.c
+		if = {
+			limit = { has_idea = more_special }
+			remove_ideas = more_special
+			else = { add_ideas = more_special }
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.80.d
+		if = {
+			limit = { has_idea = safety_eqs }
+			remove_ideas = safety_eqs
+			else = { add_ideas = safety_eqs }
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.1
+	}
+}
+
+# Leaders 90
+country_event = {
+	id = Easybuff.90
+	title = Easybuff.90.t
+	desc = Easybuff.90.d
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.90.a
+		every_army_leader = {
+			add_unit_leader_trait = expert_improviser
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.90.b
+		every_army_leader = {
+			add_unit_leader_trait = lt_all_ability
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		trigger = { is_ai = no }
+		name = Easybuff.90.c
+		every_army_leader = {
+			add_unit_leader_trait = ctrl_more_troops
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.1
+	}
+}
