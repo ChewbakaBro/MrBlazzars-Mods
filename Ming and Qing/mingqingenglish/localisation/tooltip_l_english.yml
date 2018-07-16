@@ -1,0 +1,32 @@
+﻿l_english:
+ #清
+ add_southern_cores:0 "§RAfter a long run-in period, the southern regions can finally be integrated into the country.§!"
+ civil_war_warning:0 "§RCompeleting this national policy will launch a civil war for the Communism party, the scale of the civil war will depend on the support of the party.\n§!"
+ RQNG_set:0 "The countries name will be changed to §YThe Republic of China§!\n"
+ 
+ #明
+ civil_war_warning_MNG:0 "§RCompletely this national policy will cause the populist party to raise in a civil war to defend the emperor.\n§!"
+ huaibei_fortify:0 "Strengthens the Huaibei Defense line.\n"
+ RMNG_set:0 "Our countries name will change to §YEmpress and Communist's Ming§!\n"
+ RMNGnoEmperor_set:0 "Our country name will change to §YPeople's Republic of China§!\n"
+ add_southeasten_asia_cores:0 "§RNanyang will be regarded as an integral part of our country.\n§!"
+ rescue_probability:0 "After the assesment, the rescue has a §Y80%§! success chance, and §Y20%§! failure chance.\n"
+ split:0 "Select this option to establish §Ypuppet§ governemtns in India!.\n"
+ not_split:0 "Selecting this option， some parts that are clearly not part of British rule will be independent of ous, such as §YBurma§!,§YBangladesh§! and §YPakistan§!。\n"
+ Xiangxiaoqiang_and_National_guard:0 "Our Commando Hero §Xiang Xiaoqiang§! With his new §YNational Guard§! Will join our Country\n"
+ #人民卫队 is National Guard
+ 
+ 
+ 
+  #日本
+ yalu_river_fort_tt:0 "Limited reinforcement of the §YYalu River defense line§! Strengthen §Y North Korea§! Local Industrial Standard\n"
+ japanese_outer_manchuria_effort_tt:0 "Limited reinforcement of the §YWusuli Rivver defense line§! Strengthen §YJapanese Outer Manchuria§! Local Industrial Standard\n"
+ ally_with_usa_or_ussr:0 "After the promotion of mutual trust between the both countries, we believe that through a formal alliance we can build a mutual security defense system.\n"
+ ally_with_usa_or_ussr_warning:0 "§RThere is no doubt that some in the Empire think that the Soviet Union and the United States are our enemies, we can not afford to form an alliance with them. If we have to purpose forming an alliance through political changes, they will not be happy.\n§!"
+ manchukuo:0 "We will seize the Qing in the war with the opportunity created by them retreating in defeat again and again, establish a governemnt under out control §YManchuria puppet regime§! and §YMongolian puppet regime§!.\n"
+ manchukuo_warning:0 "§RWe must wait until the Qing retreat, before the movement of Manchuria and Mongolia can begin; If the Qing has the superiority in the war, our plans will not succeed.\n§!"
+ puppet_luzon_siam_lanfang:0 "We will seize the opportunity of the Ming retreating in the war to bring the southern colonies §YLuzon§!,§YLanfang§! and §YSiam§! into our rule.\n"
+ puppet_luzon_siam_lanfang_warning:0 "§RWe must wait till the Ming further retreat, and cannot stop us, before we can act; if the Ming has superiority in the war, our plans will not succeed.\n§!"
+ 
+ 
+ 

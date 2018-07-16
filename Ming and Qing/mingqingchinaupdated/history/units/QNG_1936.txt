@@ -1,0 +1,1226 @@
+﻿division_template = {
+	name = "八旗师"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "装甲师"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "骑兵师"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "绿营师"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "摩托化步兵师"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "山地步兵师"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }	
+		mountaineers = { x = 2 y = 2 }		
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+units = {
+
+#陆军
+	#京津
+	division= {	
+		name = "八旗1师"
+		location = 9843
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗101师"
+		location = 9843
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗102师"
+		location = 9843
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗103师"
+		location = 9843
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "装甲1师"
+		location = 9843
+		division_template = "装甲师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "摩步1师"
+		location = 9843
+		division_template = "摩托化步兵师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "八旗2师"
+		location = 9843
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗3师"
+		location = 10068
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗104师"
+		location = 10068
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗105师"
+		location = 10068
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "摩步2师"
+		location = 10068
+		division_template = "摩托化步兵师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "八旗106师"
+		location = 3900
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗107师"
+		location = 3900
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗108师"
+		location = 3900
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "京师卫戍师"
+		location = 9843
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第853师"
+		location = 10068
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "装甲2师"
+		location = 10068
+		division_template = "装甲师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	#直隶
+	division= {	
+		name = "八旗7师"
+		location = 1188
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗110师"
+		location = 1188
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗111师"
+		location = 1188
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "第836师"
+		location = 1188
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第823师"
+		location = 1188
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第822师"
+		location = 11944
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "装甲3师"
+		location = 11944
+		division_template = "装甲师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "装甲4师"
+		location = 1188
+		division_template = "装甲师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	#山东
+	division= {	
+		name = "八旗5师"
+		location = 1069
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "摩步3师"
+		location = 1069
+		division_template = "摩托化步兵师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "八旗6师"
+		location = 10000
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗121师"
+		location = 10000
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗113师"
+		location = 10000
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "摩步5师"
+		location = 10000
+		division_template = "摩托化步兵师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "第821师"
+		location = 1069
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第835师"
+		location = 10000
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "装甲5师"
+		location = 10000
+		division_template = "装甲师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "装甲6师"
+		location = 1069
+		division_template = "装甲师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	#山西
+	division= {	
+		name = "八旗8师"
+		location = 1519
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗9师"
+		location = 1519
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗123师"
+		location = 1519
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗145师"
+		location = 1519
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "第811师"
+		location = 12432
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第835师"
+		location = 12432
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第812师"
+		location = 1575
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "山地5师"
+		location = 12300
+		division_template = "山地步兵师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	#陕西
+	division= {	
+		name = "八旗10师"
+		location = 12156
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗11师"
+		location = 12156
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "摩步9师"
+		location = 12156
+		division_template = "摩托化步兵师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "第813师"
+		location = 4256
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第814师"
+		location = 12408
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第653师"
+		location = 12408
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第616师"
+		location = 4295
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第618师"
+		location = 4295
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第613师"
+		location = 4256
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "装甲7师"
+		location = 4256
+		division_template = "装甲师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "山地3师"
+		location = 4939
+		division_template = "山地步兵师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	#甘肃
+	division= {	
+		name = "八旗12师"
+		location = 1630
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "八旗13师"
+		location = 1630
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "装甲8师"
+		location = 1069
+		division_template = "装甲师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "摩步7师"
+		location = 1069
+		division_template = "摩托化步兵师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "第815师"
+		location = 1257
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第609师"
+		location = 1257
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第608师"
+		location = 1257
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第604师"
+		location = 2045
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第931师"
+		location = 7971
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	#青海
+	
+	division= {	
+		name = "第857师"
+		location = 7940
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第851师"
+		location = 12732
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第853师"
+		location = 12732
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "山地1师"
+		location = 4536
+		division_template = "山地步兵师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "山地2师"
+		location = 10787
+		division_template = "山地步兵师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	#新疆
+	division= {	
+		name = "八旗14师"
+		location = 4709
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "第854师"
+		location = 2015
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第855师"
+		location = 10691
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第856师"
+		location = 1838
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第857师"
+		location = 4709
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第858师"
+		location = 4973
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第857师"
+		location = 4709
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第532师"
+		location = 4709
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第531师"
+		location = 4704
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第521师"
+		location = 10691
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第525师"
+		location = 10691
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "第933师"
+		location = 7693
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "第934师"
+		location = 4709
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "第935师"
+		location = 10691
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	#蒙古
+	division= {	
+		name = "第871师"
+		location = 1791
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第872师"
+		location = 4801
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第877师"
+		location = 10627
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第875师"
+		location = 7799
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第936师"
+		location = 10627
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "第937师"
+		location = 7717
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "第942师"
+		location = 10554
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "第941师"
+		location = 12665
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	#内蒙古
+	division= {	
+		name = "第321师"
+		location = 10363
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第323师"
+		location = 10363
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第356师"
+		location = 4873
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第365师"
+		location = 4873
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第375师"
+		location = 11752
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第389师"
+		location = 11752
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第943师"
+		location = 11752
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "第946师"
+		location = 4873
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "第948师"
+		location = 972
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "第949师"
+		location = 9768
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	#辽宁吉林
+	division= {	
+		name = "八旗16师"
+		location = 11771
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "第881师"
+		location = 964
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第880师"
+		location = 6981
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "八旗18师"
+		location = 4572
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "第891师"
+		location = 11781
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第882师"
+		location = 861
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第951师"
+		location = 9848
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "第952师"
+		location = 3949
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "第955师"
+		location = 3944
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "第956师"
+		location = 944
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	#黑龙江外东北
+	division= {	
+		name = "八旗20师"
+		location = 10433
+		division_template = "八旗师"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "第894师"
+		location = 10612
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第883师"
+		location = 10541
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第698师"
+		location = 12485
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第642师"
+		location = 12485
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第631师"
+		location = 7832
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第546师"
+		location = 7832
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第957师"
+		location = 7785
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "第958师"
+		location = 1730
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "第892师"
+		location = 4829
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第888师"
+		location = 12263
+		division_template = "绿营师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "第953师"
+		location = 10521
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "第961师"
+		location = 3843
+		division_template = "骑兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+#海军
+	navy = {
+		name = "大清海军"
+		base = 4205
+		location = 4205
+		#大姐姐
+		ship = { name = "定远" definition = battleship equipment = { battleship_1 = {amount = 1 owner = QNG } } }
+		ship = { name = "镇远" definition = battleship equipment = { battleship_1 = {amount = 1 owner = QNG } } }
+		ship = { name = "平远" definition = battleship equipment = { battleship_1 = {amount = 1 owner = QNG } } }
+		ship = { name = "宁海" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "平海" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "威海" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "昭海" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "宁海" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "巡海" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "督海" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "抚海" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "绥海" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "疆海" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = QNG} } }
+		#小学生
+		ship = { name = "守正" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守仁" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守岳" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守桓" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守衡" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守奇" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守旭" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守义" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守峰" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守固" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守岳" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守横" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守贤" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守礼" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守信" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守智" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守慧" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守骏" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守秀" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守文" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守圣" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "守隆" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+	}
+	navy = {
+		name = "大清潜艇部队"
+		base = 4205
+		location = 4205
+		ship = { name = "海蛇-1" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-2" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }		
+		ship = { name = "海蛇-3" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-4" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-5" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-6" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-7" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-8" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-9" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-10" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-11" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-12" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-13" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-14" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-16" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-15" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-17" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-18" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-19" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-20" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-21" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-22" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-23" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-24" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-25" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-26" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-27" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-28" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-29" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-30" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-31" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-32" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-33" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-34" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-35" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-36" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-37" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-38" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-39" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-40" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "海蛇-41" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		
+	}
+	
+}
+
+air_wings = {
+	597 = { 
+
+		fighter_equipment_0 = {
+			owner = "QNG" 
+			amount = 200
+		}
+
+
+		tac_bomber_equipment_0 =  {
+			owner = "QNG" 
+			amount = 100
+		}
+	}
+	608 = { 
+
+		fighter_equipment_0 = {
+			owner = "QNG" 
+			amount = 200
+		}
+
+
+		tac_bomber_equipment_0 =  {
+			owner = "QNG" 
+			amount = 100
+		}
+	}
+	622 = { 
+
+		fighter_equipment_0 = {
+			owner = "QNG" 
+			amount = 200
+		}
+
+
+		tac_bomber_equipment_0 =  {
+			owner = "QNG" 
+			amount = 100
+		}
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "QNG"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "QNG" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "QNG" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "QNG" 
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "QNG" 
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 50
+	}
+
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "QNG" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_0
+			creator = "QNG" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
+	### Ships Under Contruction ###
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "QNG"
+		}
+		requested_factories = 1
+		progress = 0.75
+		amount = 2
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = heavy_cruiser_1
+			creator = "QNG"
+		}
+		requested_factories = 1
+		progress = 0.95
+		amount = 1
+	}
+}
+
+#####################

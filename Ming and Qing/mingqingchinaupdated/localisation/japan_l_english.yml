@@ -1,0 +1,75 @@
+﻿l_english:
+
+ #global_flag
+ japan_set_fascism:0 "在兵变中我们选择了皇道派\n"
+ japan_set_neutrality:0 "在兵变中我们选择了统制派\n"
+ 
+ #fraction
+ the_tokyo_moscow_alliance:0 "日苏共同安全协定"
+ west_pacific_treaty_organization:0 "西太平洋公约组织"
+
+ #opinion_modifier
+ need_contain_china:0 "我们需要共同防御中国"
+ japanese_ally_focus:0 "来自东京的友谊"
+ 
+ #national focus
+ showa_restoration:0 "昭和维新"
+ showa_restoration_desc:0 "昭和维新春空下，男儿连结为正义！胸中自有百万兵，死去飘散万朵樱！腐旧尸骸跨越过，此身飘摇共浮云。忧国挺身立向前，男儿放歌从此始！"
+ #showa_restoration_desc_English: Under the sky of Showa Restoration, brave men forge their justice into one. There are million troops in our chests, ready to die for our country like cherry blossoms.
+ 
+ japanization_in_korea:0 "朝鲜的皇民化教育"
+ japanization_in_korea_desc:0 "自本世纪初，朝鲜半岛已经纳入帝国统治长达三十年。我们应该教育那些朝鲜人如何为天皇尽忠。"
+ research_sharing_with_axis:0 "轴心国科研共享"
+ research_sharing_with_axis_desc:0 "作为同一个联盟的成员。我们应当分享各自的先进技术来加速获取战争的胜利。"
+ 
+ offshore_balancer_in_east_asia:0 "东亚的离岸平衡手"
+ offshore_balancer_in_east_asia_desc:0 "一个过于强大的中国对于帝国来说是个巨大的威胁，对美国和苏联来说也是同样。拉拢他们对帝国来说是有利的。"
+ tokyo_with_moskow:0 "与莫斯科合作"
+ tokyo_with_moskow_desc:0 "对于帝国来说，和莫斯科达成协议有助于我们对抗逐渐强大的中国。"
+ armor_cooperation_with_ussr:0 "日苏合作"
+ armor_cooperation_with_ussr_desc:0 "苏联人愿意在一定程度上分享他们的装甲科技，是时候让帝国的利剑更加锋利了！"
+ western_pacific_shield:0 "西太平洋之盾"
+ western_pacific_shield_desc:0 "帝国本土的安全取决于帝国海军的实力，而和美国人的合作有助于稳固帝国的领海。"
+ naval_cooperation_with_usa:0 "日美海军合作"
+ naval_cooperation_with_usa_desc:0 "和美国海军进行深入合作能更有效的提升联合舰队的实力。"
+ strengthen_our_relationships:0 "深化关系"
+ strengthen_our_relationships_desc:0 "和他们缔结稳固的盟约可以让帝国在国际上获得更多的话语权。"
+ 
+ yalu_river_defensive_line:0 "鸭绿江防御"
+ yalu_river_defensive_line_desc:0 "中国人的军队正在鸭绿江畔集结，我们应当做好战争的准备。"
+ japanese_outer_manchuria_effort:0 "日属外满洲的建设"
+ japanese_outer_manchuria_effort_desc:0 "外满洲还在帝国的控制之中。加强这一地区的防御，可以吸引更多中国军队的注意力。"
+ homeland_strengthen:0 "本土工业的进一步加强"
+ homeland_strengthen_desc:0 "唯有本土才是帝国真正的后盾，没有本土的支持帝国不可能支撑与中国的战争。"
+ 
+ intervene_ming_qing_war:0 "干涉明清战争"
+ intervene_ming_qing_war_desc:0 "明国和清国的战争爆发了，这也是帝国在东亚获得进一步利益的时候。"
+ interests_in_manchuria_and_mongolia:0 "满洲和蒙古的利益"
+ interests_in_manchuria_and_mongolia_desc:0 "如果取得满洲和蒙古，帝国将会在大陆上获得更稳固的落脚点。"
+ interests_in_south_china_sea:0 "向南中国海进军"
+ interests_in_south_china_sea_desc:0 "帝国的未来在海洋，如果我们能趁着明国的失败夺取他们在海外的殖民地，那么我们将会成为西太平洋最强的力量。"
+ take_british_malaya:0 "夺取英属马来亚"
+ take_british_malaya_desc:0 "为了我们殖民地的安全，我们有必要控制马六甲海峡。"
+ declare_war_to_ming:0 "对明宣战"
+ declare_war_to_ming_desc:0 "经过漫长的准备，我们需要征服中国。"
+ declare_war_to_qing:0 "对清宣战"
+ declare_war_to_qing_desc:0 "经过漫长的准备，我们需要征服中国。"
+ 
+ #national spirit
+ soviet_japanese_friendship:0 "日-苏友谊"
+ soviet_japanese_friendship_desc:0 ""
+ usa_japanese_friendship:0 "日-美友谊"
+ usa_japanese_friendship_desc:0 ""
+ offshore_balancer:0 "离岸平衡手"
+ offshore_balancer_desc:0 ""
+ manchukuo_construction:0 "满洲的建设"
+ manchukuo_construction_desc:0 ""
+ 
+ volunteer_in_MQwar:0 "干涉明清战争"
+ volunteer_in_MQwar_desc:0 ""
+ manchuria_focus:0 "向北进军"
+ manchuria_focus_desc:0 ""
+ south_china_sea_focus:0 "向南进军"
+ south_china_sea_focus_desc:0 ""
+ 
+ 

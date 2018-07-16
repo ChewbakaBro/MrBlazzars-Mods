@@ -1,0 +1,24 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+ming_scw = { 
+	enable = {
+		tag = MNG
+		has_global_flag = spanish_civil_war
+	}
+	abort = {
+		has_global_flag = scw_over
+	}
+	
+	ai_strategy = { type = ignore id = "D01" value = 1000 }
+	ai_strategy = { type = ignore id = "SPR" value = 1000 }
+}

@@ -1,0 +1,1553 @@
+ideas = {
+
+	country = {
+		#共产主义崛起
+		communism_rising = {
+			picture = trotskyite_plot_purged
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.01
+			}
+		}
+		#大萧条
+		MNG_great_depression = {
+			picture = great_depression
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.5
+				consumer_goods_factor = 0.25
+				conscription_factor = -0.5
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 0.75
+			}
+		}
+		#世界大战的胜利者
+		MNG_ww1_winner = {
+			picture = anti_soviet_pact
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			research_bonus = {
+				land_doctrine = -0.40
+			}
+		}
+		#分裂的中国
+		MNG_not_unified_china = {
+			picture = FRA_matignon_agreements
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				ai_get_ally_desire_factor = -10000
+			}
+		}
+		#怡福工业振兴法
+		yifu_industrial_recovery_law = {
+			picture = FRA_factory_strikes
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		#可能到来的战争
+		MNG_possible_war = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.1
+				consumer_goods_factor = -0.05
+				conscription_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		#为了大明
+		MNG_patriotic_war = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				country_exists = QNG
+				has_war_with = QNG
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.25
+				consumer_goods_factor = -0.15
+				conscription_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+		#高校扩招
+		MNG_science_funding = {
+			picture = generic_research_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_time_factor = -0.03
+			}
+		}
+		#防御优先
+		MNG_defensive_idea = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				country_exists = QNG
+				has_war_with = QNG
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				max_dig_in = 10
+				dig_in_speed_factor = 0.15
+				army_core_defence_factor = 0.1
+				supply_consumption_factor = -0.1
+				attrition = -0.05
+				recon_factor = 0.05
+			}
+		}
+		#进攻优先
+		MNG_offensive_idea = {
+			picture = generic_victors_of_ww1
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				country_exists = QNG
+				has_war_with = QNG
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				planning_speed = 0.1
+				max_planning = 0.2
+				army_core_attack_factor = 0.05
+				org_loss_when_moving = -0.05
+				land_reinforce_rate = 0.05
+			}
+		}
+		#反击
+		counterattack = {
+			picture = FRA_army_of_aggression_focus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			available = {
+				country_exists = QNG
+				has_war_with = QNG
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.2
+			}
+		}
+		#中国的胜利者
+		MNG_winner_of_china = {
+			picture = generic_volunteer_expedition_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				unity_factor = 0.05
+				army_morale_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+		#医治北方的战争创伤
+		reconstruction_northern = {
+			picture = wilkies_new_deal
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.2
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		#防御工事新技术
+		MNG_fortification_effort = {
+			picture = FRA_fortification_focus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+			}
+		}
+		#泛亚主义
+		pan_asianism = {
+			picture = generic_pp_unity_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.2
+			}
+		}
+		#国际货币基金组织
+		asian_monetary_fund = {
+			#picture = GFX_idea_stiff_upper_lip
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		#亚洲复兴计划
+		asian_renaissance_bank = {
+			picture = new_deal
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		#本土化
+		MNG_colonized = {
+			#picture = GFX_idea_stiff_upper_lip
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				autonomy_gain = -0.4
+			}
+		}
+		#本土化的加深
+		MNG_colonized_strenthen = {
+			#picture = GFX_idea_stiff_upper_lip
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				autonomy_gain = -1.5
+			}
+		}
+		#大陆政策
+		MNG_mainland_effort = {
+			picture = FRA_factory_strikes
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_Factor = 0.05
+				army_speed_factor = 0.05
+				army_attack_factor = 0.05
+				justify_war_goal_time = -0.10
+			}
+		}
+
+		#来自东方的援助
+		RAJ_MNG_support_all_india_forward_bloc = {
+			picture = generic_volunteer_expedition_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = -0.02
+				neutrality_drift = -0.02
+				autonomy_gain = 0.1
+			}
+		}
+		#支持共产主义
+		MNG_support_communism = {
+			picture = generic_communism_drift_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.3
+			}
+		}
+		#宗主国赤化
+		MNG_communism_help = {
+			picture = generic_communism_drift_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.2
+			}
+		}
+		#本国特色的社会主义
+		MNG_socialism_with_chinese_characteristics = {
+			picture = new_deal
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		#支持民主主义
+		MNG_support_democratic = {
+			picture = generic_morale_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.3
+			}
+		}
+		#禁止共产主义
+		MNG_ban_communism = {
+			picture = anti_soviet_pact
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = -0.5
+			}
+		}
+		#远东的灯塔
+		MNG_eastern_democracy = {
+			picture = generic_pp_unity_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				guarantee_tension = -0.5
+				lend_lease_tension = -0.5
+				generate_wargoal_tension = -0.75
+			}
+		}
+		#北方故土的民主改革
+		MNG_northern_democratic_reform = {
+			picture = generic_volunteer_expedition_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		#大明主导的民主化
+		MNG_democratic_help = {
+			picture = generic_morale_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.2
+			}
+		}
+		#支持君主专制
+		MNG_support_neutrality = {
+			picture = generic_volunteer_expedition_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.3
+			}
+		}
+		#现代厂卫制度
+		MNG_modern_special_agent = {
+			picture = generic_spy_intel
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.1
+				encryption = 1
+				decryption = 1
+				drift_defence_factor = 0.5
+			}
+		}
+		#压制内阁权力
+		MNG_weaken_power_of_cabinet = {
+			picture = generic_intel_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.3
+				army_morale_factor = 0.15
+			}
+		}
+		#重开朝贡
+		MNG_rebuild_tribute_system = {
+			#picture = idea_scania
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		#中央帝国
+		central_empire = {
+			picture = generic_pp_unity_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_time_factor = -0.05
+                production_factory_max_efficiency_factor = 0.1
+				army_org_factor = 0.1
+				army_attack_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		#支持法西斯主义
+		MNG_support_fascism = {
+			picture = generic_fascism_drift_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.3
+			}
+		}
+		#东亚第一军国
+		first_nation_in_east_asia = {
+			picture = office_of_strategic_services
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.1
+				army_org_factor = 0.1
+				army_attack_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		
+	}
+	
+	#政治顾问
+	
+	political_advisor = {
+		
+		
+		#张澜
+		zhang_lan = {
+
+		
+			allowed = {
+				original_tag = "MNG"
+			}
+			
+			picture = generic_political_advisor_asia_3
+			
+			traits = { democratic_reformer }
+			
+			on_add = {
+				country_event = political.13
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+			
+		}
+		#郑恭寅
+		zheng_gongyin = {
+
+		
+			allowed = {
+				original_tag = "MNG"
+			}
+			
+			picture = generic_political_advisor_asia_2
+			traits = { neutrality_supporter }
+			
+			ai_will_do = {
+				factor = 0
+			}
+			
+		}
+		#汪兆铭
+		wang_zhaoming = {
+
+		
+			allowed = {
+				original_tag = "MNG"
+			}
+			
+			traits = { fascist_demagogue }
+			picture = generic_political_advisor_asia_3
+			on_add = {
+				country_event = political.7
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+			
+		}
+		#方鸿儒
+		fang_hongru = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_political_advisor_asia_1
+			
+			traits = { silent_workhorse }
+
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		#沈荣轩
+		shen_rongxuan = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			picture = generic_political_advisor_asia_3
+			traits = { war_industrialist }
+
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		#朱家骅
+		zhu_jiahua = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			picture = generic_political_advisor_asia_2
+			traits = { educator }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		#宋子文
+		song_ziwen = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_political_advisor_asia_3
+			
+			traits = { captain_of_industry }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		#爱新觉罗显妤
+		MNG_aisin_gioro_xianyu = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			#picture = GFX_idea_aisin_gioro_xianyu
+			available = {
+				has_global_flag = MNG_receive_qing_princess
+				has_global_flag = Xianyu_agree_work_for_MNG
+			}
+			
+			traits = { prince_of_terror }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		#施肇基
+		shi_zhaoji = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			available = {
+				has_global_flag = MNG_receive_qing_princess
+			}
+			picture = generic_political_advisor_asia_3
+			traits = { smooth_talking_charmer }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	#制造商
+	tank_manufacturer = { 
+		
+		designer = yes
+		#郑氏重工集团
+		zhengshi_zhonggong = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			picture = generic_tank_manufacturer_1
+			traits = { heavy_tank_manufacturer }
+
+		}
+		#泰山集团
+		taishan = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			picture = generic_tank_manufacturer_2
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		#飞马集团
+		feima = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_tank_manufacturer_3
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		#福建造船厂
+		fujian_naval_manufacturer = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_naval_manufacturer_2
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			equipment_bonus = {
+				
+			}
+			
+			traits = { fujian }
+			
+		}
+		#台湾船业
+		taiwan_naval_manufacturer = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_naval_manufacturer_1
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { taiwan }
+			
+			equipment_bonus = {
+				
+			}
+			
+		}
+		#舟山造船厂
+		zhoushan_naval_manufacturer = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_naval_manufacturer_3
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { zhoushan }
+			
+			equipment_bonus = {
+				
+			}
+			
+		}	
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		#飞凤集团
+		feifeng = {
+			
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_air_manufacturer_2
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		#岭南航空
+		lingnan = { 
+			allowed = {
+				original_tag = MNG
+			}
+						
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			picture = generic_air_manufacturer_1
+			traits = { CAS_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		
+		#万户集团
+		wanhu = { 
+
+			picture = generic_air_manufacturer_3
+			allowed = {
+				original_tag = MNG
+			}
+			
+						
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		#凤凰航空
+		fenghuang = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			picture = generic_air_manufacturer_1
+			traits = { heavy_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		#空天飞机
+		kongtian = {
+
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_air_manufacturer_2
+						
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+
+
+	}
+	
+	industrial_concern = {
+		
+		#扬子建造
+		yangzi = {
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			research_bonus = {
+				industry = 0.10
+				
+			}
+			picture = generic_industrial_concern_1
+			traits = { industrial_concern }
+		}
+		#南海计算
+		nanhai = {
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			picture = generic_electronics_concern_2
+			traits = { electronics_concern }
+		}		
+	}
+	
+	materiel_manufacturer = {
+		
+		designer = yes
+		#定国集团
+		dingguo = {
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			picture = generic_artillery_manufacturer_1
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+				# +10% arty/at/aa research speed
+			}
+		}
+		#金陵军工
+		jinling = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			picture = generic_infantry_equipment_manufacturer_1
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		
+
+		#玉花骢集团
+		yuhuacong = {
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			picture = generic_motorized_equipment_manufacturer_1
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+	
+	theorist = {
+		#钱学森
+		qian_xuesen = {
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			research_bonus = {
+				rocketry = 0.10
+			}
+			picture = generic_political_advisor_asia_2
+			traits = { rocket_scientist }
+		}
+		#王淦昌
+		wang_ganchang = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+		
+			research_bonus = {
+				nuclear = 0.10
+			}
+			picture = generic_political_advisor_asia_1
+			traits = { nuclear_scientist }
+		}
+		#蒋百里
+		jiang_baili = {
+
+			picture = generic_army_asia_2
+			allowed = {
+				original_tag = MNG
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.1
+			}
+			
+			
+			traits = { blitzkrieg_theorist }
+		}
+		#向挺之
+		xiang_tingzhi = {
+
+			picture = generic_army_asia_1
+			allowed = {
+				original_tag = MNG
+			}
+			
+			
+			research_bonus = {
+				cat_mobile_warfare = 0.10
+			}
+			
+
+			traits = { mobile_warfare_expert }
+		}
+		
+		#秦国镛
+		qin_guoyong = {
+
+			picture = generic_air_asia_2
+			allowed = {
+				original_tag = MNG
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+		#齐希文
+		qi_xiwen = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_navy_asia_2
+			cost = 250
+			
+			research_bonus = {
+				cat_trade_interdiction = 0.20
+			}
+			
+			traits = { submarine_specialist }
+		}
+		#萨镇冰
+		sa_zhenbing = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_navy_asia_1
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+	}
+
+	# MILITARY
+	army_chief = {
+		#张照先
+		zhang_zhaoxian = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_army_asia_5
+			traits = { army_chief_organizational_2 }			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+
+		#白崇禧
+		bai_chongxi = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+						
+			traits = { army_chief_offensive_2 }
+			picture = generic_army_asia_7
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		#朱德
+		zhu_de = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+						
+			traits = { army_chief_defensive_2 }
+			picture = generic_army_asia_2
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+	}
+	
+	air_chief = {
+		#周至柔
+		zhou_zhirou = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+						
+			traits = { air_chief_ground_support_2 }
+			picture = generic_air_asia_3
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		#毛邦初
+		mao_bangchu = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			available = {
+				has_completed_focus = MNG_air_innovation
+			}
+						
+			traits = { air_chief_all_weather_2 }
+			picture = generic_air_asia_1
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		#王鹤翔
+		wang_hexiang = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+						
+			traits = { air_chief_reform_2 }
+			picture = generic_air_asia_2
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	navy_chief = { #CHIEF OF NAVY
+		#陈绍宽
+		chen_shaokuan = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+						
+			traits = { navy_chief_decisive_battle_2 }
+			picture = generic_navy_asia_2
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+		#桂永清
+		gui_yongqing = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_navy_asia_3			
+			traits = { navy_chief_commerce_raiding_3 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+	}
+
+	high_command = {
+		#李宗仁
+		li_zongren = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			traits = { army_infantry_2 }
+			picture = generic_army_asia_3
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		#贺龙
+		he_long = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			traits = { army_armored_2 }
+			picture = generic_army_asia_4
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		#卫立煌
+		wei_lihuang = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			traits = { army_regrouping_2 }
+			picture = generic_army_asia_5
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		#常凯申
+		chang_kaishen = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			traits = { army_logistics_4 }
+			picture = generic_army_asia_2
+			ai_will_do = {
+				factor = 1.5
+			}
+		}
+		#刘亚楼
+		liu_yalou = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_air_asia_2
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		#肖华
+		xiao_hua = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			traits = { air_bomber_interception_2 }
+			picture = generic_air_asia_1
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		#常乾坤
+		chang_qiankun = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			
+			traits = { air_airborne_2 }
+			picture = generic_air_asia_3
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+		#刘华清
+		liu_huaqing = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_navy_asia_1
+			traits = { navy_naval_air_defense_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		#沈鸿烈
+		shen_honglie = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_navy_asia_2
+			traits = { navy_fleet_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		#陈策
+		chen_ce = {
+
+			
+			allowed = {
+				original_tag = MNG
+			}
+			picture = generic_navy_asia_3
+			traits = { navy_anti_submarine_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+}

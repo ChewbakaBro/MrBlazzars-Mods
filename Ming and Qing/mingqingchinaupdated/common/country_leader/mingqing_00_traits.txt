@@ -1,0 +1,113 @@
+leader_traits = {
+	#领导者技能
+	#支持皇室
+	neutrality_supporter = {
+		random = yes
+	
+		sprite = 13
+		
+		neutrality_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#教育家
+	educator = {
+		random = yes
+	
+		sprite = 13
+		
+		research_time_factor = -0.03
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#福建造船厂
+	fujian = {
+		random = no
+		equipment_bonus = {
+			carrier = {
+				build_cost_ic = -0.05
+			}
+			capital_ship = {
+				build_cost_ic = -0.05
+			}
+			screen_ship = {
+				build_cost_ic = -0.05
+			}
+			submarine = {
+				build_cost_ic = -0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#台湾船业
+	taiwan = {
+		random = no
+		equipment_bonus = {
+			carrier = {
+				carrier_size = 0.15
+			}
+			capital_ship = {
+				naval_range = 0.15
+			}
+			screen_ship = {
+				naval_range = 0.15
+			}
+			submarine = {
+				naval_range = 0.15
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#舟山造船厂
+	zhoushan = {
+		random = no
+		equipment_bonus = {
+			carrier = {
+				armor_value = 0.15
+			}
+			capital_ship = {
+				armor_value = 0.15 attack = 0.05
+			}
+			screen_ship = {
+				armor_value = 0.15 attack = 0.05
+			}
+			submarine = {
+				armor_value = 0.15 attack = 0.05
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	prince_of_terror = {
+		sprite = 13
+		enemy_partisan_effect = -0.25
+		foreign_subversive_activites = -0.4
+		non_core_manpower = 0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	army_logistics_4 = {  # Ground units suffer 20% less attrition
+		sprite = 6
+		attrition = -0.20
+		
+		ai_will_do = {
+			factor = 4
+		}
+	}
+}

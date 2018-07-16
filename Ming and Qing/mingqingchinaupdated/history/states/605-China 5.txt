@@ -1,0 +1,66 @@
+
+state={
+	id=605
+	name="STATE_605" #ËÄ´¨
+	resources={
+		steel=30.000
+		aluminium=5
+	}
+
+	history={
+		owner = MNG
+		add_core_of = MNG
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			air_base = 4
+
+		
+			9966 = {
+				bunker = 7
+			}
+			4375 = {
+				bunker = 7
+			}
+			10132 = {
+				bunker = 7
+			}
+			1367 = {
+				bunker = 7
+			}
+			12767 = {
+				bunker = 7
+			}
+			7256 = {
+				bunker = 7
+			}
+			2091 = {
+				bunker = 1
+			}
+			4167 = {
+				bunker = 1
+			}
+			7418 = {
+				bunker = 1
+			}
+		}
+			
+		victory_points = {
+			4925 10 
+		}
+		victory_points = {
+			6999 20 
+		}
+		victory_points = {
+			4167 5 
+		}
+
+	}
+
+	provinces={
+		1367 1395 1893 2030 2091 4041 4141 4167 4375 4431 4925 5048 6999 7240 7256 7418 8026 9966 10132 10144 10304 10841 11865 11972 12141 12274 12705 12767 12819 
+	}
+	manpower=52963300
+	buildings_max_level_factor=1.000
+	state_category=city
+}

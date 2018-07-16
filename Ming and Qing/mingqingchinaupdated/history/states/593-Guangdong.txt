@@ -1,0 +1,35 @@
+
+state={
+	id=593
+	name="STATE_593" #¹ã¶«
+	resources={
+		tungsten=50.000
+		steel=30.000
+		chromium=15.000
+	}
+
+	history={
+		owner = MNG
+		add_core_of = MNG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 2
+			9938 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1078 1120 1162 1202 4050 4165 4207 7067 7108 7141 7182 9938 9970 9978 9997 10080 10121 12014 12095 
+	}
+	manpower=12700000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

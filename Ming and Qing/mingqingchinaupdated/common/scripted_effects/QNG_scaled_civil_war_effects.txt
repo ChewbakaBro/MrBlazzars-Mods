@@ -1,0 +1,99 @@
+### Scale based on party support and autonomy progress.
+### First look for party support level. Then look for autonomy progress
+### It's not pretty, but that's how we like it
+start_scaled_communist_civil_war_cap608 = {
+	if = {
+		limit = { communism > 0.50 }
+			start_civil_war = {
+				ruling_party = communism
+				ideology = neutrality
+				size = 0.18
+				capital = 608
+			}
+			else = {
+				if = {
+					limit = { communism > 0.45 }
+					start_civil_war = {
+						ruling_party = communism
+						ideology = neutrality
+						size = 0.24
+						capital = 608
+					}
+					else = {
+						if = {
+							limit = { communism > 0.40 }
+							start_civil_war = {
+								ruling_party = communism
+								ideology = neutrality
+								size = 0.30
+								capital = 608
+							}
+							else = {
+								if = {
+									limit = { communism > 0.35 }
+									start_civil_war = {
+										ruling_party = communism
+										ideology = neutrality
+										size = 0.36
+										capital = 608
+										}
+										else = {
+											if = {
+												limit = { communism > 0.30 }
+												start_civil_war = {
+													ruling_party = communism
+													ideology = neutrality
+													size = 0.42
+													capital = 608
+												}
+												else = {
+													if = {
+														limit = { communism > 0.25 }
+														start_civil_war = {
+															ruling_party = communism
+															ideology = neutrality
+															size = 0.48
+															capital = 608
+														}
+														else = {
+															if = {
+																limit = { communism > 0.20 }
+																start_civil_war = {
+																	ruling_party = communism
+																	ideology = neutrality
+																	size = 0.54
+																	capital = 608
+																}
+																else = {
+																	if = {
+																		limit = { communism > 0.15 }
+																		start_civil_war = {
+																			ruling_party = communism
+																			ideology = neutrality
+																			size = 0.60
+																			capital = 608
+																		}
+																		else = {
+																			start_civil_war = {
+																			ruling_party = communism
+																			ideology = neutrality
+																			size = 0.68
+																			capital = 608
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+		}
+	}

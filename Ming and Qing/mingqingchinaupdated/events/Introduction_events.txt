@@ -1,0 +1,271 @@
+﻿# introduction
+
+add_namespace = intro
+#隐藏事件
+country_event = { #Event fired one hour after gamestart by the SWI history file
+	id = intro.0
+	title = intro.0.t 
+	desc = intro.0.d 
+	picture = GFX_report_event_intro
+	
+	hidden = yes
+		
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			SOV = {
+				diplomatic_relation = { country = QNG relation = non_aggression_pact }
+			}
+			JAP = {
+				diplomatic_relation = { country = QNG relation = non_aggression_pact }
+			}
+			QNG={
+				add_ideas = {
+					QNG_AI_buff_before_MQwar
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = intro.0.a
+		
+		every_country = { #Intro events
+            limit = { is_ai = no }
+            country_event = { id = intro.1 } 
+        }
+	}
+}
+
+#欢迎来到明清MOD
+country_event = {
+	id = intro.1
+	title = intro.1.t 
+	desc = intro.1.d 
+	picture = GFX_report_introduction
+		
+    is_triggered_only = yes
+	
+	option = {
+		name = intro.1.a #历史介绍
+		country_event = { id = intro.2 }
+	}
+	
+	option = {
+		name = intro.1.b #不用了
+		hidden_effect = {
+			news_event = { id = mingqingnews.0 days = 5 }
+		}
+	}
+}
+
+#年代选择
+country_event = {
+	id = intro.2
+	title = intro.2.t 
+	desc = intro.2.d 
+	picture = GFX_report_introduction
+		
+    is_triggered_only = yes
+	
+	option = {
+		name = intro.2.a #17世纪
+		country_event = { id = intro.3 }
+	}
+	
+	option = {
+		name = intro.2.b #18世纪
+		country_event = { id = intro.4 }
+	}
+	
+	option = {
+		name = intro.2.c #19世纪
+		country_event = { id = intro.5 }
+	}
+	
+	option = {
+		name = intro.2.e #20世纪初
+		country_event = { id = intro.6 }
+	}
+	
+	option = {
+		name = intro.2.f #世界大战
+		country_event = { id = intro.7 }
+	}
+	
+	option = {
+		name = intro.2.g #战后
+		country_event = { id = intro.8 }
+	}
+	
+	option = {
+		name = intro.2.h #不用了
+		hidden_effect = {
+			news_event = { id = mingqingnews.0 days = 5 }
+		}
+	}
+}
+
+#17世纪的世界
+country_event = {
+	id = intro.3
+	title = intro.3.t 
+	desc = intro.3.d 
+	picture = GFX_report_introduction
+		
+    is_triggered_only = yes
+	
+	option = {
+		name = intro.3.a #18世纪
+		country_event = { id = intro.4 }
+	}
+	
+	option = {
+		name = intro.3.b #返回选择
+		country_event = { id = intro.2 }
+	}
+	
+	option = {
+		name = intro.3.c #不用了
+		hidden_effect = {
+			news_event = { id = mingqingnews.0 days = 5 }
+		}
+
+	}
+}
+
+#18世纪的世界
+country_event = {
+	id = intro.4
+	title = intro.4.t 
+	desc = intro.4.d 
+	picture = GFX_report_introduction
+		
+    is_triggered_only = yes
+	
+	option = {
+		name = intro.4.a #19世纪
+		country_event = { id = intro.5 }
+	}
+	
+	option = {
+		name = intro.4.b #返回选择
+		country_event = { id = intro.2 }
+	}
+	
+	option = {
+		name = intro.4.c #不用了
+		hidden_effect = {
+			news_event = { id = mingqingnews.0 days = 5 }
+		}
+	}
+}
+
+#19世纪的世界
+country_event = {
+	id = intro.5
+	title = intro.5.t 
+	desc = intro.5.d 
+	picture = GFX_report_introduction
+		
+    is_triggered_only = yes
+	
+	option = {
+		name = intro.5.a #20世纪初
+		country_event = { id = intro.6 }
+	}
+	
+	option = {
+		name = intro.5.b #返回选择
+		country_event = { id = intro.2 }
+	}
+	
+	option = {
+		name = intro.5.c #不用了
+		hidden_effect = {
+			news_event = { id = mingqingnews.0 days = 5 }
+		}
+	}
+}
+
+#20世纪的世界
+country_event = {
+	id = intro.6
+	title = intro.6.t 
+	desc = intro.6.d 
+	picture = GFX_report_introduction
+		
+    is_triggered_only = yes
+	
+	option = {
+		name = intro.6.a #世界大战
+		country_event = { id = intro.7 }
+	}
+	
+	option = {
+		name = intro.6.b #返回选择
+		country_event = { id = intro.2 }
+	}
+	
+	option = {
+		name = intro.6.c #不用了
+		hidden_effect = {
+			news_event = { id = mingqingnews.0 days = 5 }
+		}
+	}
+}
+
+#世界大战
+country_event = {
+	id = intro.7
+	title = intro.7.t 
+	desc = intro.7.d 
+	picture = GFX_report_introduction
+		
+    is_triggered_only = yes
+	
+	option = {
+		name = intro.7.a #战后
+		country_event = { id = intro.8 }
+	}
+	
+	option = {
+		name = intro.7.b #返回选择
+		country_event = { id = intro.2 }
+	}
+	
+	option = {
+		name = intro.7.c #不用了
+		hidden_effect = {
+			news_event = { id = mingqingnews.0 days = 5 }
+		}
+
+	}
+}
+
+#战后的世界
+country_event = {
+	id = intro.8
+	title = intro.8.t 
+	desc = intro.8.d 
+	picture = GFX_report_introduction
+		
+    is_triggered_only = yes
+	
+	option = {
+		name = intro.8.a #返回选择
+		country_event = { id = intro.2 }
+	}
+	
+	option = {
+		name = intro.8.b #不用了
+		hidden_effect = {
+			news_event = { id = mingqingnews.0 days = 5 }
+		}
+
+	}
+}
+
+
+

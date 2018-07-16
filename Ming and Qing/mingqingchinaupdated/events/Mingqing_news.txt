@@ -1,0 +1,1076 @@
+﻿# MINGQING NEWS
+
+add_namespace = mingqingnews
+
+#1936年，分裂的中国
+news_event = {
+	id = mingqingnews.0
+	title = mingqingnews.0.t
+	desc = mingqingnews.0.d
+
+	picture = GFX_news_introduction
+	
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = {
+		name = mingqingnews.0.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.0.b
+		trigger = { TAG = QNG }
+	}
+	option = {
+		name = mingqingnews.0.c
+		trigger = { TAG = MNG }
+	}
+}
+
+#溥仪宫变
+news_event = {
+	id = mingqingnews.1
+	title = mingqingnews.1.t
+	desc = mingqingnews.1.d
+	
+	picture = GFX_news_overturn_puyi
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.1.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.1.b
+		trigger = { TAG = QNG }
+	}
+	option = {
+		name = mingqingnews.1.c
+		trigger = { TAG = MNG }
+	}
+}
+
+#毓岚担任八旗参将
+news_event = {
+	id = mingqingnews.2
+	title = mingqingnews.2.t
+	desc = mingqingnews.2.d
+	 
+	picture = GFX_news_event_006
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.2.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.2.b
+		trigger = { TAG = QNG }
+	}
+	option = {
+		name = mingqingnews.2.c
+		trigger = { TAG = MNG }
+	}
+}
+
+#清朝重返淮北
+news_event = {
+	id = mingqingnews.3
+	title = mingqingnews.3.t
+	desc = mingqingnews.3.d
+	
+	picture = GFX_news_event_018
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.3.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.3.b
+		trigger = { TAG = QNG }
+	}
+	option = {
+		name = mingqingnews.3.c
+		trigger = { TAG = MNG }
+	}
+}
+
+#明清战争爆发
+news_event = {
+	id = mingqingnews.4
+	title = mingqingnews.4.t
+	desc = mingqingnews.4.d
+	 
+	picture = GFX_news_event_004
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.4.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.4.b
+		trigger = { TAG = QNG }
+	}
+	option = {
+		name = mingqingnews.4.c
+		trigger = { TAG = MNG }
+	}
+}
+
+#明清战争，清朝战胜
+news_event = {
+	id = mingqingnews.5
+	title = mingqingnews.5.t
+	desc = mingqingnews.5.d
+	 
+	picture = GFX_news_event_033
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.5.a
+		trigger = {
+			NOT = {
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.5.b
+		trigger = { TAG = QNG }
+	}
+}
+
+#清共产主义内战
+news_event = {
+	id = mingqingnews.6
+	title = mingqingnews.6.t
+	desc = mingqingnews.6.d
+	picture = GFX_news_event_032
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.6.a
+		trigger = {
+			NOT = { original_tag = QNG }
+		}
+	}
+	option = {
+		name = mingqingnews.6.b
+		trigger = { 
+			original_tag = QNG
+		}
+	}
+}
+
+#清朝共产主义内战，共产党胜利
+news_event = {
+	id = mingqingnews.7
+	title = mingqingnews.7.t
+	desc = mingqingnews.7.d
+	picture = GFX_news_event_033
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = qing_communist_civil_war
+		NOT = { has_global_flag = qcw_over }
+		QNG = { has_civil_war = no }
+		any_other_country = {
+			original_tag = QNG
+			has_government = communism
+		}
+		all_country = {
+			OR = {
+				NOT = { original_tag = QNG }
+				has_government = communism
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = qing_communist_victory
+		set_global_flag = qcw_over
+	}
+	
+	option = {
+		name = mingqingnews.7.a
+		trigger = {
+			NOT = { original_tag = QNG }
+		}
+	}
+	option = {
+		name = mingqingnews.7.b
+		trigger = { original_tag = QNG }
+	}
+}
+
+#清朝共产主义内战，共产党失败
+news_event = {
+	id = mingqingnews.8
+	title = mingqingnews.8.t
+	desc = mingqingnews.8.d
+	picture = GFX_news_event_033
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = qing_communist_civil_war
+		NOT = { has_global_flag = qcw_over }
+		QNG = { has_civil_war = no }
+		any_other_country = {
+			original_tag = QNG
+			NOT = { has_government = communism }
+		}
+		all_country = {
+			OR = {
+				NOT = { original_tag = QNG }
+				NOT = { has_government = communism }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = qing_communist_defeat
+		set_global_flag = qcw_over
+	}
+	
+	option = {
+		name = mingqingnews.8.a
+		trigger = {
+			NOT = { original_tag = QNG }
+		}
+	}
+	option = {
+		name = mingqingnews.8.b
+		trigger = { original_tag = QNG }
+	}
+}
+
+#清加入共产国际
+news_event = {
+	id = mingqingnews.9
+	title = mingqingnews.9.t
+	desc = mingqingnews.9.d
+	 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	picture = GFX_news_join_comintern
+	
+	option = {
+		name = mingqingnews.9.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.9.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = mingqingnews.9.c
+		trigger = { TAG = QNG }
+	}
+}
+
+#清加入同盟国
+news_event = {
+	id = mingqingnews.10
+	title = mingqingnews.10.t
+	desc = mingqingnews.10.d
+	 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	picture = GFX_news_join_allies
+	
+	option = {
+		name = mingqingnews.10.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.10.b
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = mingqingnews.10.c
+		trigger = { TAG = QNG }
+	}
+}
+
+#清加入轴心国
+news_event = {
+	id = mingqingnews.11
+	title = mingqingnews.11.t
+	desc = mingqingnews.11.d
+	 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	picture = GFX_news_join_axis
+	
+	option = {
+		name = mingqingnews.11.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.11.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = mingqingnews.11.c
+		trigger = { TAG = QNG }
+	}
+}
+
+#清国的崩溃
+news_event = {
+	id = mingqingnews.12
+	title = mingqingnews.12.t
+	desc = mingqingnews.12.d
+	 
+	
+	major = yes
+	picture = GFX_news_qing_collapse
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.12.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.12.b
+		trigger = { TAG = MNG }
+	}
+}
+
+#日满协定
+news_event = {
+	id = mingqingnews.1201
+	title = mingqingnews.1201.t
+	desc = mingqingnews.1201.d
+	 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	picture = GFX_news_japan_manchu_agreements
+	
+	option = {
+		name = mingqingnews.1201.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+				TAG = QNG
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.1201.b
+		trigger = {
+			OR = {
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.1201.c
+		trigger = { TAG = JAP }
+	}
+}
+
+
+#苏蒙新三国友好互助条约
+news_event = {
+	id = mingqingnews.1202
+	title = mingqingnews.1202.t
+	desc = mingqingnews.1202.d
+	 
+	
+	major = yes
+	picture = GFX_news_sov_men_sik
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.1202.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.1202.b
+		trigger = { TAG = MNG }
+	}
+	option = {
+		name = mingqingnews.1202.c
+		trigger = { TAG = SOV }
+	}
+}
+
+#日蒙协定
+news_event = {
+	id = mingqingnews.1203
+	title = mingqingnews.1203.t
+	desc = mingqingnews.1203.d
+	 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	picture = GFX_news_japan_manchu_agreements
+	
+	option = {
+		name = mingqingnews.1203.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+				TAG = JAP
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.1203.b
+		trigger = {
+			OR = {
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.1203.c
+		trigger = { TAG = JAP }
+	}
+}
+
+#日本势力在南中国海的扩张
+news_event = {
+	id = mingqingnews.1204
+	title = mingqingnews.1204.t
+	desc = mingqingnews.1204.d
+	 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	picture = GFX_news_japan_south_expansion
+	
+	option = {
+		name = mingqingnews.1204.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+				TAG = JAP
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.1204.b
+		trigger = {
+			OR = {
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.1204.c
+		trigger = { TAG = JAP }
+	}
+}
+
+#日本接受明索取关东州
+news_event = {
+	id = mingqingnews.13
+	title = mingqingnews.13.t
+	desc = mingqingnews.13.d
+	 
+	picture = GFX_news_event_chinese_soldiers_march
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.13.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.13.b
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = mingqingnews.13.c
+		trigger = { TAG = MNG }
+	}
+}
+#日本拒绝明索取关东州
+news_event = {
+	id = mingqingnews.14
+	title = mingqingnews.14.t
+	desc = mingqingnews.14.d
+	 
+	picture = GFX_news_event_chinese_soldiers_march
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.14.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.14.b
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = mingqingnews.14.c
+		trigger = { TAG = MNG }
+	}
+}
+
+#明加入共产国际
+news_event = {
+	id = mingqingnews.15
+	title = mingqingnews.15.t
+	desc = mingqingnews.15.d
+	 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	picture = GFX_news_join_comintern
+	
+	option = {
+		name = mingqingnews.15.a
+		trigger = {
+			NOT = {
+				TAG = SOV
+				TAG = MNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.15.b
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = mingqingnews.15.c
+		trigger = { TAG = MNG }
+	}
+}
+
+#明加入同盟国
+news_event = {
+	id = mingqingnews.16
+	title = mingqingnews.16.t
+	desc = mingqingnews.16.d
+	 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	picture = GFX_news_join_allies
+	
+	option = {
+		name = mingqingnews.16.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+				TAG = MNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.16.b
+		trigger = { TAG = ENG }
+	}
+	option = {
+		name = mingqingnews.16.c
+		trigger = { TAG = MNG }
+	}
+}
+
+#明加入轴心国
+news_event = {
+	id = mingqingnews.17
+	title = mingqingnews.17.t
+	desc = mingqingnews.17.d
+	 
+	
+	major = yes
+	
+	picture = GFX_news_join_axis
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.17.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = MNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.17.b
+		trigger = { TAG = GER }
+	}
+	option = {
+		name = mingqingnews.17.c
+		trigger = { TAG = MNG }
+	}
+}
+
+#明日共荣
+news_event = {
+	id = mingqingnews.18
+	title = mingqingnews.18.t
+	desc = mingqingnews.18.d
+	 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.18.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+				TAG = MNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.18.b
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = mingqingnews.18.c
+		trigger = { TAG = MNG }
+	}
+}
+
+#大明的民主化
+news_event = {
+	id = mingqingnews.19
+	title = mingqingnews.19.t
+	desc = mingqingnews.19.d
+	 
+	picture = GFX_news_democratic
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.19.a
+		trigger = { TAG = MNG }
+	}
+}
+
+#大明的法西斯化
+news_event = {
+	id = mingqingnews.20
+	title = mingqingnews.20.t
+	desc = mingqingnews.20.d
+	
+	picture = GFX_news_fascism
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.20.a
+		trigger = { TAG = MNG }
+	}
+}
+
+#大清的民主化
+news_event = {
+	id = mingqingnews.21
+	title = mingqingnews.21.t
+	desc = mingqingnews.21.d
+	 
+	picture = GFX_news_democratic
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.21.a
+		trigger = { TAG = QNG }
+	}
+}
+
+#大清的法西斯化
+news_event = {
+	id = mingqingnews.22
+	title = mingqingnews.22.t
+	desc = mingqingnews.22.d
+	
+	picture = GFX_news_fascism
+	is_triggered_only = yes
+	
+	option = {
+		name = mingqingnews.22.a
+		trigger = { TAG = QNG }
+	}
+}
+
+#准噶尔同意内附
+news_event = {
+	id = mingqingnews.23
+	title = mingqingnews.23.t
+	desc = mingqingnews.23.d
+	 
+	major = yes
+	
+	is_triggered_only = yes
+	
+	picture = GFX_news_dzugaria_mng
+	
+	option = {
+		name = mingqingnews.23.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.23.b
+		trigger = { TAG = MNG }
+	}
+}
+
+#准噶尔拒绝内附
+news_event = {
+	id = mingqingnews.24
+	title = mingqingnews.24.t
+	desc = mingqingnews.24.d
+	 
+	major = yes
+	
+	is_triggered_only = yes
+	
+	picture = GFX_news_dzugaria_mng
+	
+	option = {
+		name = mingqingnews.24.a
+		trigger = {
+			NOT = {
+				TAG = TIB
+				TAG = MNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.24.b
+		trigger = { TAG = TIB }
+	}
+	option = {
+		name = mingqingnews.24.c
+		trigger = { TAG = MNG }
+	}
+}
+
+#十四格格继任明辽阳公主，为明朝效力
+news_event = {
+	id = mingqingnews.25
+	title = mingqingnews.25.t
+	desc = mingqingnews.25.d
+	 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	picture = GFX_news_event_generic_rally_3
+	
+	option = {
+		name = mingqingnews.25.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.25.b
+		trigger = { TAG = QNG }
+	}
+	option = {
+		name = mingqingnews.25.c
+		trigger = { TAG = MNG }
+	}
+}
+
+#十四格格接受辽阳公主封号，归隐出家
+news_event = {
+	id = mingqingnews.26
+	title = mingqingnews.26.t
+	desc = mingqingnews.26.d
+	 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	picture = GFX_news_event_generic_rally_3
+	
+	option = {
+		name = mingqingnews.26.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.26.b
+		trigger = { TAG = QNG }
+	}
+	option = {
+		name = mingqingnews.26.c
+		trigger = { TAG = MNG }
+	}
+}
+
+#营救失败后，十四格格在北京被毓岚处决
+news_event = {
+	id = mingqingnews.27
+	title = mingqingnews.27.t
+	desc = mingqingnews.27.d
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	picture = GFX_news_xianyu_death
+	
+	immediate = {
+		set_global_flag = xianyu_dead
+	}
+	
+	option = {
+		name = mingqingnews.27.a
+		trigger = {
+			NOT = {
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.27.b
+		trigger = { TAG = QNG }
+	}
+	option = {
+		name = mingqingnews.27.c
+		trigger = { TAG = MNG }
+	}
+}
+
+#潜艇兵北京游街
+news_event = {
+	id = mingqingnews.28
+	title = mingqingnews.28.t
+	desc = mingqingnews.28.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	picture = GFX_news_parade
+	
+	option = {
+		name = mingqingnews.28.a
+		trigger = { TAG = QNG }
+	}
+	option = {
+		name = mingqingnews.28.b
+		trigger = { TAG = MNG }
+	}
+}
+
+#南京大乱，民主派上台
+news_event = {
+	id = mingqingnews.29
+	title = mingqingnews.29.t
+	desc = mingqingnews.29.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	picture = GFX_news_nanjing_chaos
+	
+	option = {
+		name = mingqingnews.29.a
+		trigger = { TAG = QNG }
+	}
+	option = {
+		name = mingqingnews.29.b
+		trigger = { TAG = MNG }
+	}
+}
+
+#南京大乱，人民卫队
+news_event = {
+	id = mingqingnews.30
+	title = mingqingnews.30.t
+	desc = mingqingnews.30.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	picture = GFX_news_nanjing_chaos
+	
+	option = {
+		name = mingqingnews.30.a
+		trigger = { TAG = QNG }
+	}
+	option = {
+		name = mingqingnews.30.b
+		trigger = { TAG = MNG }
+	}
+}
+
+#南京陷落
+news_event = {
+	id = mingqingnews.31
+	title = mingqingnews.31.t
+	desc = mingqingnews.31.d
+	picture = GFX_news_event_048
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		613 = { is_controlled_by = QNG }
+		613 = { is_owned_by = MNG }
+		QNG = { has_war_with = MNG }
+		NOT = { has_global_flag = fall_of_nanjing_MQ }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_nanjing_MQ
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = mingqingnews.31.a
+		trigger = {
+			NOT = {
+				TAG = QNG
+				TAG = MNG
+			}
+		}
+	}
+	option = {
+		name = mingqingnews.31.b
+		trigger = { TAG = QNG }
+	}
+	option = {
+		name = mingqingnews.31.c
+		trigger = { TAG = MNG }
+	}
+}

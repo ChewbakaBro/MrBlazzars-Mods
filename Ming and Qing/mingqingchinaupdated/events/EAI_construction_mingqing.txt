@@ -1,0 +1,74 @@
+﻿add_namespace = EAI_C_Mingqing
+
+country_event = {
+	id = EAI_C_Mingqing.0
+	hidden = yes
+	mean_time_to_happen = { days = 0 }
+	immediate = {
+		every_country = {
+			limit = { is_ai = yes OR = { original_tag = MNG original_tag = QNG } }
+
+			country_event = EAI_C_Mingqing.1
+		}
+	}
+	option = {}
+}
+
+country_event = {
+	id = EAI_C_Mingqing.1
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		clr_country_flag = EAI_construction_1
+	
+		queue_MIC = yes
+		queue_MIC = yes
+		queue_MIC = yes
+		queue_MIC = yes
+		queue_MIC = yes
+		
+		queue_MIC = yes
+		queue_MIC = yes
+		queue_MIC = yes
+		queue_MIC = yes
+		queue_MIC = yes
+	}
+	option = {}
+}
+
+
+country_event = { #QNG_MNG
+	id = EAI_C_Mingqing.2
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	trigger = { 
+		is_ai = yes 
+		OR = { 
+			original_tag = QNG original_tag = MNG
+		}
+		NOT = { has_country_flag = EAI_construction_1 } 
+	}
+	
+	immediate = {
+		set_country_flag = EAI_construction_1
+		
+		if = { limit = { num_of_civilian_factories < 10 } 		country_event = { id = EAI_C_Mingqing.1 days = 1000 } else = {
+		if = { limit = { num_of_civilian_factories < 20 } 		country_event = { id = EAI_C_Mingqing.1 days = 600  } else = {
+		if = { limit = { num_of_civilian_factories < 30 } 		country_event = { id = EAI_C_Mingqing.1 days = 500  } else = {
+		if = { limit = { num_of_civilian_factories < 40 } 		country_event = { id = EAI_C_Mingqing.1 days = 400  } else = {
+		if = { limit = { num_of_civilian_factories < 50 } 		country_event = { id = EAI_C_Mingqing.1 days = 350  } else = {
+		if = { limit = { num_of_civilian_factories < 60 } 		country_event = { id = EAI_C_Mingqing.1 days = 300  } else = {
+		if = { limit = { num_of_civilian_factories < 70 } 		country_event = { id = EAI_C_Mingqing.1 days = 240  } else = {
+		if = { limit = { num_of_civilian_factories < 80 } 		country_event = { id = EAI_C_Mingqing.1 days = 220  } else = {
+		if = { limit = { num_of_civilian_factories < 90 } 		country_event = { id = EAI_C_Mingqing.1 days = 175  } else = {
+		if = { limit = { num_of_civilian_factories < 100 } 		country_event = { id = EAI_C_Mingqing.1 days = 150  } else = {
+		if = { limit = { num_of_civilian_factories < 110 } 		country_event = { id = EAI_C_Mingqing.1 days = 125  } else = {
+		if = { limit = { num_of_civilian_factories < 120 } 		country_event = { id = EAI_C_Mingqing.1 days = 100  } else = {
+																country_event = { id = EAI_C_Mingqing.1 days = 80   } 
+		} } } } } } } } } } } } } } } } } } } } } } } }
+	}
+	option = {}
+}
+
+
+

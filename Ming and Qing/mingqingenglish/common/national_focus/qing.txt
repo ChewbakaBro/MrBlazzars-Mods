@@ -1,0 +1,2079 @@
+focus_tree = {
+	id = qing_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = QNG
+		}
+	}
+	
+	default = no
+
+###############明清焦点路线###############
+	
+	#帝国雄心
+	focus = {
+		id = QNG_heart_of_empire
+		icon = GFX_goal_generic_attack_allies
+		x = 0
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		completion_reward = {
+			army_experience = 5
+			add_political_power = 100
+		}
+		bypass = {
+			AND = {
+				NOT = { country_exists = MNG }
+			}
+		}
+	}
+	#废除溥仪
+	focus = {
+		id = QNG_overturn_puyi
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = QNG_heart_of_empire }
+		mutually_exclusive = { focus = QNG_loyal_to_emperor }
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}		
+		completion_reward = {
+			QNG = {
+				add_ideas = QNG_revenge
+				country_event = { id = qing.1 days = 1 }
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+			set_global_flag = puyi_overturned
+		}
+	}
+	#忠君辅国
+	focus = {
+		id = QNG_loyal_to_emperor
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = QNG_heart_of_empire }
+		mutually_exclusive = { focus = QNG_overturn_puyi }
+		x = 1
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}		
+		completion_reward = {
+			QNG = {
+				add_ideas = QNG_remain
+				country_event = { id = qing.2 days = 1 }
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			set_global_flag = puyi_not_overturned
+		}
+	}
+	#重返淮北
+	focus = {
+		id = QNG_return_huaibei
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { 
+		focus = QNG_loyal_to_emperor
+		focus = QNG_overturn_puyi
+		}
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = { is_puppet = no }
+		
+		completion_reward = {
+			598 = { set_demilitarized_zone = no }
+			606 = { set_demilitarized_zone = no }
+			607 = { set_demilitarized_zone = no }
+			custom_effect_tooltip = GER_rhineland_ultimatum
+			set_global_flag = qing_return_huaibei_start
+			add_political_power = 120
+			army_experience = 5
+			add_named_threat = { threat = 5 name = QNG_return_huaibei }
+			if = {
+				limit = { MNG = { is_puppet = no } }
+				MNG = {
+					country_event = { id = ming.1 }
+					custom_effect_tooltip = may_provoke_hostility
+				}
+			}
+			
+		}
+	}
+	#消灭伪明
+	focus = {
+		id = QNG_war_to_ming
+		icon = GFX_goal_generic_major_war
+		prerequisite = { 
+		focus = QNG_return_huaibei
+		}
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = { 
+			is_puppet = no
+			NOT = { has_idea = QNG_prepare_to_war }
+		}
+		will_lead_to_war_with = MNG
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MNG
+			}
+			hidden_effect ={
+				news_event = { days = 5 id = mingqingnews.4 }
+				remove_ideas = QNG_AI_buff_before_MQwar
+			}
+		}
+	}
+	#犒赏将士
+	focus = {
+		id = QNG_boost_the_morale
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = QNG_war_to_ming }
+		x = -2
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_offensive_war_with = MNG
+		}
+		completion_reward = {
+			QNG = {
+				add_ideas = QNG_boosted_morale
+			}
+		}
+	}
+	#强硬的征服
+	focus = {
+		id = QNG_tough_ruling
+		icon = GFX_goal_continuous_suppression
+		prerequisite = { focus = QNG_war_to_ming }
+		mutually_exclusive = { focus = QNG_moderate_ruling }
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_offensive_war_with = MNG
+		}
+		bypass = {
+			NOT = { country_exists = MNG }
+		}
+		completion_reward = {
+			QNG = {
+				add_ideas = QNG_tough_conquering
+			}
+		}
+	}
+	#温和的征服
+	focus = {
+		id = QNG_moderate_ruling
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = QNG_war_to_ming }
+		mutually_exclusive = { focus = QNG_tough_ruling }
+		x = 2
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_offensive_war_with = MNG
+		}
+		bypass = {
+			NOT = { country_exists = MNG }
+		}
+		completion_reward = {
+			QNG = {
+				add_ideas = QNG_soft_conquering
+			}
+		}
+	}
+	#天下一统
+	focus = {
+		id = QNG_win_war_to_ming
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { 
+			focus = QNG_boost_the_morale
+			focus = QNG_tough_ruling
+			focus = QNG_moderate_ruling
+		}
+		x = 0
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { country_exists = MNG }
+		}
+		completion_reward = {
+			QNG = {
+				remove_ideas = QNG_not_unified_china
+				add_ideas = QNG_winner_of_china
+			}
+			add_timed_idea = {
+				idea = reconstruction_southern
+				days = 1000
+			}
+			hidden_effect = {
+				country_event = { id = mingqingnews.5 days = 1 }
+			}
+		}
+	}
+	
+	#征服准噶尔
+	focus = {
+		id = QNG_claim_dzungaria
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { 
+			focus = QNG_win_war_to_ming
+		}
+		x = -2
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		will_lead_to_war_with = TIB
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TIB
+			}
+		}
+	}
+	
+###############政治线###############
+
+	#修订钦定宪法
+	focus = {
+		id = QNG_constitution
+		icon = GFX_goal_generic_major_alliance
+		x = 7
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#君权民授
+	focus = {
+		id = QNG_constitutional_monarchy
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = QNG_constitution }
+		mutually_exclusive = { focus = QNG_absolute_monarchy }
+		x = 6
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+			add_national_unity = 0.1
+		}
+	}
+	#奉天承运
+	focus = {
+		id = QNG_absolute_monarchy
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = QNG_constitution }
+		mutually_exclusive = { focus = QNG_constitutional_monarchy }
+		x = 8
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+			add_national_unity = 0.05
+		}
+	}
+	#工人权利
+	focus = {
+		id = QNG_worker_rights
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = QNG_constitutional_monarchy }
+		mutually_exclusive = { focus = QNG_support_democracy }
+		x = 4
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = QNG_support_communism_focus
+		}
+	}
+	#人民民主
+	focus = {
+		id = QNG_people_democracy
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = QNG_worker_rights }
+		x = 4
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = li_dazhao
+			add_political_power = 150
+		}
+	}
+	#革命！
+	focus = {
+		id = QNG_revolution
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = QNG_people_democracy }
+		x = 4
+		y = 4
+		cost = 10
+		ai_will_do = { factor = 1 }
+		available = { has_civil_war = no  has_global_flag = qing_return_huaibei_start }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			custom_effect_tooltip = civil_war_warning
+			hidden_effect = {
+				random_owned_controlled_state = {
+						prioritize = { 597 614 }
+						QNG = { set_capital = PREV }
+				}
+				
+				
+				
+				start_scaled_communist_civil_war_cap608 = yes
+				
+				set_global_flag = qing_communist_civil_war
+				news_event = { hours = 6 id = mingqingnews.6 }
+				
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = RQNG
+				
+				create_country_leader = {
+					name = "Zohu En Lai"
+					desc = "POLITICS_SUBHAS_CHANDRA_BOSE_DESC"
+					picture = "gfx/leaders/QNG/Portrait_Qing_Zhou_En_Lai.dds"
+					expire = "1965.1.1"
+					ideology = marxism
+					traits = { indomitable_perseverance }
+				}
+			}
+			add_ideas = QNG_communism_revolution
+			remove_ideas = han_nationalism
+			add_political_power = 150
+			custom_effect_tooltip = RQNG_set
+		}
+	}								
+	#大同新义
+	focus = {
+		id = QNG_datong
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = QNG_revolution }
+		x = 4
+		y = 5
+		cost = 10
+		available = { has_civil_war = no  has_global_flag = qing_communist_victory }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = QNG_southern_resist
+			remove_ideas = QNG_tough_conquering
+			remove_ideas = QNG_soft_conquering
+			add_ideas = QNG_unified_country_communism
+		}
+	}
+	#开启民智
+	focus = {
+		id = QNG_support_democracy
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = QNG_constitutional_monarchy }
+		mutually_exclusive = { focus = QNG_worker_rights }
+		x = 6
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = QNG_support_democracy_focus
+			QNG = {
+				country_event = { id = qing.9 }
+			}
+		}
+	}
+	#改革咨议局与国会
+	focus = {
+		id = QNG_parliament
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = QNG_support_democracy }
+		x = 6
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = hu_shi
+			add_political_power = 150
+		}
+	}
+	#五族大同
+	focus = {
+		id = QNG_union
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = QNG_parliament }
+		x = 6
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = QNG_five_races_under_one_union
+			remove_ideas = han_nationalism
+			add_political_power = 150
+		}
+	}
+	#口含天宪
+	focus = {
+		id = QNG_support_neutrality
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = QNG_absolute_monarchy }
+		mutually_exclusive = { focus = QNG_support_fascism }
+		x = 8
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = QNG_support_neutrality_focus
+		}
+	}
+	#重组粘杆处
+	focus = {
+		id = QNG_nianganchu
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = QNG_support_neutrality }
+		x = 8
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = yang_du
+			add_political_power = 150
+		}
+	}
+	#圣心独裁
+	focus = {
+		id = QNG_emperor_dictatorship
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = QNG_nianganchu }
+		x = 8
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = QNG_emperor_dictatorship_focus
+			remove_ideas = han_nationalism
+			add_political_power = 150
+		}
+	}
+	#军国一体
+	focus = {
+		id = QNG_support_fascism
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = QNG_absolute_monarchy }
+		mutually_exclusive = { focus = QNG_support_neutrality }
+		x = 10
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = QNG_support_fascism_focus
+			QNG = {
+				country_event = { id = qing.10 }
+			}
+		}
+	}
+	#重划八旗
+	focus = {
+		id = QNG_reconstruction_eight_banners
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = QNG_support_fascism }
+		x = 10
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = zhang_jinghui
+			add_political_power = 150
+		}
+	}
+	#满汉融合
+	focus = {
+		id = QNG_mutual_assimilation
+		icon = GFX_goal_continuous_increase_nu
+		prerequisite = { focus = QNG_reconstruction_eight_banners }
+		x = 10
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = QNG_mutual_assimilation_focus
+			remove_ideas = han_nationalism
+			add_political_power = 150
+		}
+	}
+	#江山永固
+	focus = {
+		id = QNG_long_live_the_empire
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		prerequisite = { 
+			focus = QNG_union
+			focus = QNG_emperor_dictatorship
+			focus = QNG_mutual_assimilation
+		}
+		x = 10
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { country_exists = MNG }
+		}
+		completion_reward = {
+			remove_ideas = QNG_southern_resist
+			add_ideas = QNG_unified_country
+		}
+	}
+###############政治线后续###############
+	#南北合一
+	focus = {
+		id = QNG_south_and_north
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { 
+			focus = QNG_long_live_the_empire
+			focus = QNG_datong
+		}
+		prerequisite = { 
+			focus = QNG_win_war_to_ming
+		}
+		x = 0
+		y = 6
+		cost = 20
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { country_exists = MNG }
+			NOT = { has_idea = reconstruction_southern }
+		}
+		completion_reward = {
+			QNG = {
+					country_event = { id = qing.4 }
+					custom_effect_tooltip = add_southern_cores
+				}
+		}
+	}
+	#加入共产国际
+	focus = {
+		id = QNG_join_comintern
+		icon = GFX_goal_support_communism
+		prerequisite = { 
+			focus = QNG_datong
+		}
+		mutually_exclusive = { focus = QNG_join_allies focus = QNG_join_axis focus = QNG_join_nothing }
+		x = 4
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_puppet = no
+	 		is_in_faction = no
+			NOT = { has_idea = QNG_not_unified_china } 
+	 		OR = {
+	 			has_government = communism
+	 			communism > 0.4
+	 		}
+	 		has_war = no
+ 			SOV = {
+ 				exists = yes
+ 				has_government = communism
+ 				is_faction_leader = yes
+ 			}
+		}
+		completion_reward = {
+			SOV = {
+					country_event = { id = qing.6 }
+			}
+		}
+	}
+	#加入同盟国
+	focus = {
+		id = QNG_join_allies
+		icon = GFX_goal_anschluss
+		prerequisite = { 
+			focus = QNG_long_live_the_empire
+		}
+		mutually_exclusive = { focus = QNG_join_comintern focus = QNG_join_axis focus = QNG_join_nothing }
+		x = 6
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_puppet = no
+			has_government = democratic
+			NOT = { has_idea = QNG_not_unified_china } 
+			ENG = {
+				exists = yes
+				has_government = democratic
+			}
+			NOT = { has_war_with = ENG }
+		}
+		completion_reward = {
+			ENG = {
+					country_event = { id = qing.7 }
+			}
+		}
+	}
+	#加入轴心国
+	focus = {
+		id = QNG_join_axis
+		icon = GFX_goal_support_fascism
+		prerequisite = { 
+			focus = QNG_long_live_the_empire
+		}
+		mutually_exclusive = { focus = QNG_join_comintern focus = QNG_join_allies focus = QNG_join_nothing }
+		x = 10
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_puppet = no
+			is_in_faction = no
+			NOT = { has_idea = QNG_not_unified_china } 
+	 		NOT = { has_war_with = GER }
+	 		OR = {
+	 			has_government = fascism
+	 			fascism > 0.4
+	 		}
+	 		
+	 		GER = {
+	 			exists = yes
+	 			has_government = fascism
+ 				is_faction_leader = yes
+	 		}
+		}
+		completion_reward = {
+			GER = {
+					country_event = { id = qing.8 }
+			}
+		}
+	}
+	#自己建阵营
+	focus = {
+		id = QNG_join_nothing
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { 
+			focus = QNG_long_live_the_empire
+		}
+		mutually_exclusive = { focus = QNG_join_comintern focus = QNG_join_allies focus = QNG_join_axis }
+		x = 8
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_puppet = no	
+			NOT = { has_idea = QNG_not_unified_china } 
+		}
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+		}
+	}
+	#对英战争
+	focus = {
+		id = QNG_war_to_britain
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = QNG_join_nothing focus = QNG_join_axis focus = QNG_join_comintern}
+		available = {
+		    is_puppet = no
+		    OR = {
+		    	NOT = { is_in_faction_with = ENG }
+		    }
+		}
+		bypass = {
+		    OR = {
+		        AND = {
+		            has_war_with = ENG
+		        }
+		        AND = {
+		        	NOT = { country_exists = ENG }
+		        }
+		        AND = {
+		        	QNG = {
+		        		owns_state = 336
+		        		owns_state = 672
+		        	}
+		        }
+		    }
+		}
+		will_lead_to_war_with = ENG 
+		x = 10
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					any_other_country = {
+						has_war_with = ROOT
+						is_major = yes
+					}
+					has_war_with_amount > 1
+				}
+			}		
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					ENG = {
+						exists = yes
+						NOT = {
+							is_in_faction_with = QNG
+						}
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = ENG
+					generator = { 336 672 }
+				}
+			}
+			
+		}
+	}
+	#对苏战争
+	focus = {
+		id = QNG_war_to_soviet
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = QNG_join_nothing focus = QNG_join_axis focus = QNG_join_allies }
+		available = {
+		    is_puppet = no
+		    OR = {
+		    	NOT = { is_in_faction_with = SOV }
+		    }
+		}
+		bypass = {
+		    OR = {
+		        AND = {
+		            has_war_with = SOV
+		        }
+		        AND = {
+		        	NOT = { country_exists = SOV }
+		        }
+		        AND = {
+		        	QNG = {
+		        		owns_state = 732
+		        		owns_state = 742
+						owns_state = 405
+						owns_state = 586
+						owns_state = 589
+		        	}
+		        }
+		    }
+		}
+		will_lead_to_war_with = SOV 
+		x = 8
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					any_other_country = {
+						has_war_with = ROOT
+						is_major = yes
+					}
+					has_war_with_amount > 1
+				}
+			}		
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					SOV = {
+						exists = yes
+						NOT = {
+							is_in_faction_with = QNG
+						}
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = SOV
+					generator = { 732 742 405 586 589 }
+				}
+			}
+		}
+	}
+	#对日战争
+	focus = {
+		id = QNG_war_to_japan
+		icon = GFX_focus_AST_war_japan
+		prerequisite = { focus = QNG_join_nothing focus = QNG_join_comintern focus = QNG_join_allies }
+		available = {
+		    is_puppet = no
+		    OR = {
+		    	NOT = { is_in_faction_with = JAP }
+		    }
+		}
+		bypass = {
+		    OR = {
+		        AND = {
+		            has_war_with = JAP
+		        }
+		        AND = {
+		        	NOT = { country_exists = JAP }
+		        }
+		        AND = {
+		        	QNG = {
+		        		owns_state = 749
+		        	}
+		        }
+		    }
+		}
+		will_lead_to_war_with = JAP 
+		x = 6
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					any_other_country = {
+						has_war_with = ROOT
+						is_major = yes
+					}
+					has_war_with_amount > 1
+				}
+			}		
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					JAP = {
+						exists = yes
+						NOT = {
+							is_in_faction_with = QNG
+						}
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = JAP
+					generator = { 749 }
+				}
+			}
+		}
+	}
+
+
+###############工业以及战后重建###############
+
+	#国家工业计划
+	focus = {
+		id = QNG_industrial_plan
+		icon = GFX_goal_generic_production
+		x = 15
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	#轻工业计划 I
+	focus = {
+		id = QNG_construction_effort_1
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = QNG_industrial_plan }
+		x = 12
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#基础设施计划 I
+	focus = {
+		id = QNG_infrastructure_effort_1
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = QNG_industrial_plan }
+		x = 14
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#军工计划 I
+	focus = {
+		id = QNG_production_effort_1
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = QNG_industrial_plan }
+		x = 16
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#东北资源勘探计划
+	focus = {
+		id = QNG_northeastern_resource
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = QNG_industrial_plan }
+		x = 18
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 40
+				state = 714
+			}
+			add_resource = {
+				type = aluminium
+				amount = 10
+				state = 328
+			}
+			add_resource = {
+				type = chromium
+				amount = 10
+				state = 717
+			}
+		}
+	}
+	#西北资源勘探计划
+	focus = {
+		id = QNG_northwestern_resource
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = QNG_northeastern_resource }
+		x = 18
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 20
+				state = 746
+			}
+			add_resource = {
+				type = oil
+				amount = 10
+				state = 618
+			}
+			add_resource = {
+				type = chromium
+				amount = 10
+				state = 619
+			}
+		}
+	}
+	#蒙古资源勘探计划
+	focus = {
+		id = QNG_mongolian_resource
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = QNG_northwestern_resource }
+		x = 18
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 745
+			}
+			add_resource = {
+				type = aluminium
+				amount = 10
+				state = 330
+			}
+			add_resource = {
+				type = chromium
+				amount = 10
+				state = 745
+			}
+		}
+	}
+	#华北资源勘探计划
+	focus = {
+		id = QNG_northernchina_resource
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = QNG_mongolian_resource }
+		x = 18
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 10
+				state = 621
+			}
+			add_resource = {
+				type = aluminium
+				amount = 10
+				state = 614
+			}
+		}
+	}
+	#华南资源勘探计划
+	focus = {
+		id = QNG_southernchina_resource
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = QNG_northernchina_resource }
+		x = 18
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_subject = no
+			NOT = { country_exists = MNG }
+		}
+		completion_reward = {
+			add_resource = {
+				type = rubber
+				amount = 10
+				state = 599
+			}
+			add_resource = {
+				type = rubber
+				amount = 10
+				state = 592
+			}
+			add_resource = {
+				type = chromium
+				amount = 15
+				state = 325
+			}
+		}
+	}
+	#教育振兴计划
+	focus = {
+		id = QNG_educational_plan
+		icon = GFX_focus_research
+		prerequisite = { focus = QNG_construction_effort_1 }
+		prerequisite = { focus = QNG_infrastructure_effort_1 }
+		prerequisite = { focus = QNG_production_effort_1 }
+		x = 14
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	#轻工业计划 II
+	focus = {
+		id = QNG_construction_effort_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = QNG_educational_plan }
+		x = 12
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#基础设施计划 II
+	focus = {
+		id = QNG_infrastructure_effort_2
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = QNG_educational_plan }
+		x = 14
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#军工计划 II
+	focus = {
+		id = QNG_production_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = QNG_educational_plan }
+		x = 16
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#南方轻工业重建
+	focus = {
+		id = QNG_construction_effort_southern
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 12
+		y = 4
+		cost = 12
+		prerequisite = { focus = QNG_construction_effort_2 }
+		available = {
+			is_subject = no
+			NOT = { country_exists = MNG }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			599 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			602 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#南方基础设施重建
+	focus = {
+		id = QNG_infrastructure_effort_southern
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 14
+		y = 4
+		cost = 12
+		prerequisite = { focus = QNG_infrastructure_effort_2 }
+		available = {
+			is_subject = no
+			NOT = { country_exists = MNG }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			743 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			620 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#南方军工重建
+	focus = {
+		id = QNG_production_effort_southern
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 16
+		y = 4
+		cost = 12
+		prerequisite = { focus = QNG_production_effort_2 }
+		available = {
+			is_subject = no
+			NOT = { country_exists = MNG }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			613 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			596 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#重建南方大学
+	focus = {
+		id = QNG_southern_university
+		icon = GFX_focus_research
+		prerequisite = { 
+			focus = QNG_construction_effort_southern 
+			focus = QNG_infrastructure_effort_southern 
+			focus = QNG_production_effort_southern 
+		}
+		x = 13
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_subject = no
+			NOT = { country_exists = MNG }
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	#秘密武器
+	focus = {
+		id = QNG_nuclear_effort
+		icon = GFX_focus_wonderweapons
+		prerequisite = { 
+			focus = QNG_construction_effort_southern 
+			focus = QNG_infrastructure_effort_southern 
+			focus = QNG_production_effort_southern 
+		}
+		x = 15
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_subject = no
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 0.5
+				category = nuclear
+			}
+		}
+	}
+
+###############陆海空三军焦点###############
+
+	#保定讲武堂
+	focus = {
+		id = QNG_army_university
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 22
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	#重视步兵装备
+	focus = {
+		id = QNG_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = QNG_army_university }
+		x = 20
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = support_tech
+			}
+		}
+	}
+	#重视炮兵
+	focus = {
+		id = QNG_artillery_effort
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = QNG_equipment_effort }
+		x = 20
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	#重视摩托化
+	focus = {
+		id = QNG_motorization_effort
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = QNG_army_university }
+		bypass = { has_tech = motorised_infantry }
+		x = 22
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.5
+				technology = motorised_infantry
+			}
+		}
+	}
+	#重视机械化
+	focus = {
+		id = QNG_mechanization_effort
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = QNG_motorization_effort }
+		x = 22
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	#重视装甲
+	focus = {
+		id = QNG_armor_effort
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = QNG_army_university }
+		x = 24
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	#重视特种部队
+	focus = {
+		id = QNG_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = QNG_armor_effort }
+		x = 24
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 2
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+	#陆军改革
+	focus = {
+		id = QNG_army_reform
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = QNG_artillery_effort }
+		prerequisite = { focus = QNG_special_forces }
+		prerequisite = { focus = QNG_mechanization_effort }
+		x = 22
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 20
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	#青岛船政局
+	focus = {
+		id = QNG_qingdao_dockyard
+		icon = GFX_goal_generic_construct_naval_dockyard
+		
+		x = 28
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 20
+			597 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			614 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#重视潜艇
+	focus = {
+		id = QNG_submarine_effort
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = QNG_qingdao_dockyard }
+		x = 26
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = basic_submarine
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+		}
+	}
+	#重视主力舰
+	focus = {
+		id = QNG_capital_ships_effort
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = QNG_qingdao_dockyard }
+		mutually_exclusive = { focus = QNG_carriers_effort }
+		x = 28
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 2
+				technology = basic_battlecruiser
+				technology = basic_battleship
+				technology = improved_battleship
+				technology = advanced_battleship
+				technology = heavy_battleship
+				technology = heavy_battleship2
+				
+			}
+		}
+	}
+	#重视航空母舰
+	focus = {
+		id = QNG_carriers_effort
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = QNG_qingdao_dockyard }
+		mutually_exclusive = { focus = QNG_capital_ships_effort }
+		x = 30
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = carrier_focus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
+				technology = advanced_carrier
+			}
+		}
+	}
+	#海军学说的发展
+	focus = {
+		id = QNG_navy_doctrines_effort
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { 
+			focus = QNG_submarine_effort 
+			focus = QNG_capital_ships_effort 
+			focus = QNG_carriers_effort }
+		
+		x = 27
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = naval_doctrine
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+	#改进屏卫舰
+	focus = {
+		id = QNG_improved_screen_ships
+		icon = GFX_goal_generic_navy_cruiser
+	 	prerequisite = { 
+			focus = QNG_capital_ships_effort
+			focus = QNG_carriers_effort }
+		x = 29
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = improved_screen_ships
+				bonus = 0.5
+				uses = 2
+				technology = basic_destroyer
+				technology = improved_destroyer
+				technology = advanced_destroyer
+				technology = basic_light_cruiser
+				technology = improved_light_cruiser
+				technology = advanced_light_cruiser
+				technology = basic_heavy_cruiser
+				technology = improved_heavy_cruiser
+				technology = advanced_heavy_cruiser
+			}
+		}
+	}
+	#南苑航空学校
+	focus = {
+		id = QNG_air_force_college
+		icon = GFX_goal_generic_air_doctrine
+
+		x = 34
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			air_experience = 50
+
+			add_tech_bonus = {
+				name = FRA_air_doctrine
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	#重视轰炸机
+	focus = {
+		id = QNG_bomber_effort
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = QNG_air_force_college }
+		mutually_exclusive = { focus = QNG_fighter_effort }
+		x = 32
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_bomber_focus
+				bonus = 0.5
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+	}
+	#重视战略轰炸机
+	focus = {
+		id = QNG_strategic_bomber_effort
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { 
+			focus = QNG_bomber_effort
+			}
+		x = 32
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cat_strategic_bomber_focus
+				bonus = 0.5
+				uses = 1
+				category = cat_strategic_bomber
+			}
+		}
+	}
+	#火箭技术
+	focus = {
+		id = QNG_rocket_effort
+		icon = GFX_focus_rocketry
+		prerequisite = { 
+			focus = QNG_strategic_bomber_effort
+			focus = QNG_heavy_fighter_effort
+			}
+		x = 33
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				ahead_reduction = 0.5
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+	}
+	#重视战斗机
+	focus = {
+		id = QNG_fighter_effort
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = QNG_air_force_college }
+		mutually_exclusive = { focus = QNG_bomber_effort }
+		x = 34
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_fighter_focus
+				bonus = 0.5
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
+	#重视重型战斗机
+	focus = {
+		id = QNG_heavy_fighter_effort
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { 
+			focus = QNG_fighter_effort
+			}
+		x = 34
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cat_heavy_fighter_focus
+				bonus = 0.5
+				uses = 1
+				category = cat_heavy_fighter
+			}
+		}
+	}
+	#重视支援机
+	focus = {
+		id = QNG_CAS_effort
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = QNG_air_force_college }
+		x = 36
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_cas_focus
+				bonus = 0.5
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	#重视海轰
+	focus = {
+		id = QNG_naval_bomber_effort
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { 
+			focus = QNG_bomber_effort
+			focus = QNG_carriers_effort
+			}
+		x = 31
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_naval_bomber_focus
+				bonus = 0.5
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	
+	
+	
+
+
+}

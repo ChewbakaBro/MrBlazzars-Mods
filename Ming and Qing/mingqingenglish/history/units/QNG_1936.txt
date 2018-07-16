@@ -1,0 +1,1226 @@
+﻿division_template = {
+	name = "8th Banner Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored Division"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Cavalry Division"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Green Standard Army Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Motorized Infantry Division"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mountain Infantry Division"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }	
+		mountaineers = { x = 2 y = 2 }		
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+units = {
+
+#陆军
+	#京津
+	division= {	
+		name = "8th Banners 1 Division"
+		location = 9843
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 101 Division"
+		location = 9843
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 102 Division"
+		location = 9843
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 103 Division"
+		location = 9843
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "Armored 1 Division"
+		location = 9843
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Motorized Infatry 1 Division"
+		location = 9843
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "8th Banners 2 Division"
+		location = 9843
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 3 Division"
+		location = 10068
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 104 Division"
+		location = 10068
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 105 Division"
+		location = 10068
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "Motorized Infatry 2 Division"
+		location = 10068
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "8th Banners 106 Division"
+		location = 3900
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 107 Division"
+		location = 3900
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 108 Division"
+		location = 3900
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "Beijing Garrison Division"
+		location = 9843
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "853th Division"
+		location = 10068
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "Armored 2 Division"
+		location = 10068
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	#直隶
+	division= {	
+		name = "8th Banners 7 Division"
+		location = 1188
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 110 Division"
+		location = 1188
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 111 Division"
+		location = 1188
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "836th Division"
+		location = 1188
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "823th Division"
+		location = 1188
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "822th Division"
+		location = 11944
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Armored 3 Division"
+		location = 11944
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Armored 4 Division"
+		location = 1188
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	#山东
+	division= {	
+		name = "8th Banners 5 Division"
+		location = 1069
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "Motorized Infatry 3 Division"
+		location = 1069
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "8th Banners 6 Division"
+		location = 10000
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 121 Division"
+		location = 10000
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 113 Division"
+		location = 10000
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "Motorized Infatry 5 Division"
+		location = 10000
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "821th Division"
+		location = 1069
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "835th Division"
+		location = 10000
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Armored 5 Division"
+		location = 10000
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Armored 6 Division"
+		location = 1069
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	#山西
+	division= {	
+		name = "8th Banners 8 Division"
+		location = 1519
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 9 Division"
+		location = 1519
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 123 Division"
+		location = 1519
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 145 Division"
+		location = 1519
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "811th Division"
+		location = 12432
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "835th Division"
+		location = 12432
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "812th Division"
+		location = 1575
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Mountain 5 Division"
+		location = 12300
+		division_template = "Mountain Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	#陕西
+	division= {	
+		name = "8th Banners 10 Division"
+		location = 12156
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 11 Division"
+		location = 12156
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "Motorized Infatry 9 Division"
+		location = 12156
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "813th Division"
+		location = 4256
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "814th Division"
+		location = 12408
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "653th Division"
+		location = 12408
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "616th Division"
+		location = 4295
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "618th Division"
+		location = 4295
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "613th Division"
+		location = 4256
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Armored 7 Division"
+		location = 4256
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Mountain 3 Division"
+		location = 4939
+		division_template = "Mountain Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	#甘肃
+	division= {	
+		name = "8th Banners 12 Division"
+		location = 1630
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "8th Banners 13 Division"
+		location = 1630
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "Armored 8 Division"
+		location = 1069
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Motorized Infatry 7 Division"
+		location = 1069
+		division_template = "Motorized Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "815th Division"
+		location = 1257
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "609th Division"
+		location = 1257
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "608th Division"
+		location = 1257
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "604th Division"
+		location = 2045
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "931th Division"
+		location = 7971
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	#青海
+	
+	division= {	
+		name = "857th Division"
+		location = 7940
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "851th Division"
+		location = 12732
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "853th Division"
+		location = 12732
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Mountain 1 Division"
+		location = 4536
+		division_template = "Mountain Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "Mountain 2 Division"
+		location = 10787
+		division_template = "Mountain Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	#新疆
+	division= {	
+		name = "8th Banners 14 Division"
+		location = 4709
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "854th Division"
+		location = 2015
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "855th Division"
+		location = 10691
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "856th Division"
+		location = 1838
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "857th Division"
+		location = 4709
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "858th Division"
+		location = 4973
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "857th Division"
+		location = 4709
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "532th Division"
+		location = 4709
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "531th Division"
+		location = 4704
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "521th Division"
+		location = 10691
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "525th Division"
+		location = 10691
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "933th Division"
+		location = 7693
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "934th Division"
+		location = 4709
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "935th Division"
+		location = 10691
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	#蒙古
+	division= {	
+		name = "871th Division"
+		location = 1791
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "872th Division"
+		location = 4801
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "877th Division"
+		location = 10627
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "875th Division"
+		location = 7799
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "936th Division"
+		location = 10627
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "937th Division"
+		location = 7717
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "942th Division"
+		location = 10554
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "941th Division"
+		location = 12665
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	#内蒙古
+	division= {	
+		name = "321th Division"
+		location = 10363
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "323th Division"
+		location = 10363
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "356th Division"
+		location = 4873
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "365th Division"
+		location = 4873
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "375th Division"
+		location = 11752
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "389th Division"
+		location = 11752
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "943th Division"
+		location = 11752
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "946th Division"
+		location = 4873
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "948th Division"
+		location = 972
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "949th Division"
+		location = 9768
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	#辽宁吉林
+	division= {	
+		name = "8th Banners 16 Division"
+		location = 11771
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "881th Division"
+		location = 964
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "880th Division"
+		location = 6981
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "8th Banners 18 Division"
+		location = 4572
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "891th Division"
+		location = 11781
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "882th Division"
+		location = 861
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "951th Division"
+		location = 9848
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "952th Division"
+		location = 3949
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "955th Division"
+		location = 3944
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "956th Division"
+		location = 944
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	#黑龙江外东北
+	division= {	
+		name = "8th Banners 20 Division"
+		location = 10433
+		division_template = "8th Banner Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+	division= {	
+		name = "894th Division"
+		location = 10612
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "883th Division"
+		location = 10541
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "698th Division"
+		location = 12485
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "642th Division"
+		location = 12485
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "631th Division"
+		location = 7832
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "546th Division"
+		location = 7832
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "957th Division"
+		location = 7785
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "958th Division"
+		location = 1730
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "892th Division"
+		location = 4829
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "888th Division"
+		location = 12263
+		division_template = "Green Standard Army Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "953th Division"
+		location = 10521
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "961th Division"
+		location = 3843
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+#海军
+	navy = {
+		name = "The Qing Navy"
+		base = 4205
+		location = 4205
+		#大姐姐
+		ship = { name = "Dingyuan" definition = battleship equipment = { battleship_1 = {amount = 1 owner = QNG } } }
+		ship = { name = "Zhenyuan" definition = battleship equipment = { battleship_1 = {amount = 1 owner = QNG } } }
+		ship = { name = "Pingyuan" definition = battleship equipment = { battleship_1 = {amount = 1 owner = QNG } } }
+		ship = { name = "Ninghai" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Pinghai" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Weihai" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Zhaohai" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Ninghai" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Xunhai" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Duhai" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Fuhai" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Suihai" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Jianghai" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = QNG} } }
+		#小学生
+		ship = { name = "Shouzheng" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouren" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouyue" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouhuan" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouheng" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouqi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouxu" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouyi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shoufeng" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shougu" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouyue" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouheng" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouxian" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouli" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouxin" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouzhi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouhui" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shoujun" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouxiu" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shouwen" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shousheng" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Shoulong" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = QNG} } }
+	}
+	navy = {
+		name = "Qing Submarine Force"
+		base = 4205
+		location = 4205
+		ship = { name = "Haishe-1" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-2" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }		
+		ship = { name = "Haishe-3" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-4" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-5" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-6" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-7" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-8" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-9" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-10" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-11" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-12" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-13" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-14" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-16" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-15" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-17" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-18" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-19" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-20" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-21" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-22" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-23" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-24" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-25" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-26" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-27" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-28" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-29" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-30" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-31" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-32" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-33" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-34" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-35" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-36" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-37" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-38" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-39" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-40" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		ship = { name = "Haishe-41" definition = submarine equipment = { submarine_1 = {amount = 1 owner = QNG} } }
+		
+	}
+	
+}
+
+air_wings = {
+	597 = { 
+
+		fighter_equipment_0 = {
+			owner = "QNG" 
+			amount = 200
+		}
+
+
+		tac_bomber_equipment_0 =  {
+			owner = "QNG" 
+			amount = 100
+		}
+	}
+	608 = { 
+
+		fighter_equipment_0 = {
+			owner = "QNG" 
+			amount = 200
+		}
+
+
+		tac_bomber_equipment_0 =  {
+			owner = "QNG" 
+			amount = 100
+		}
+	}
+	622 = { 
+
+		fighter_equipment_0 = {
+			owner = "QNG" 
+			amount = 200
+		}
+
+
+		tac_bomber_equipment_0 =  {
+			owner = "QNG" 
+			amount = 100
+		}
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "QNG"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "QNG" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "QNG" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "QNG" 
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "QNG" 
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 50
+	}
+
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "QNG" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_0
+			creator = "QNG" 
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+
+	### Ships Under Contruction ###
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "QNG"
+		}
+		requested_factories = 1
+		progress = 0.75
+		amount = 2
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = heavy_cruiser_1
+			creator = "QNG"
+		}
+		requested_factories = 1
+		progress = 0.95
+		amount = 1
+	}
+}
+
+#####################

@@ -1,0 +1,122 @@
+﻿MNG = {
+	submarine = {
+		prefix = ""
+		generic = { "Sensuikan" }
+		unique = {
+			"Qi-201" "Qi-202" "Qi-203" "Qi-204" "Qi-205" "Qi-206" "Qi-207" "Qi-306" "Qi-307" "Qi-309" "Qi-310" "Qi-311" "Qi-312" "Qi-101" "Qi-102" "Qi-103" "Qi-104" "Qi-105" "Qi-106" "Qi-107" "Qi-108" "Qi-109" "Qi-110" "Qi-111" "Qi-112" "Qi-113" "Qi-114" "Qi-115" "Qi-116" "Qi-117" "Qi-118" "Qi-119" "Qi-120" "Qi-305" "Qi-308" "Qi-121" "Qi-122" "Qi-123" "Qi-124" "Qi-125" 
+			"Qi-1" "Qi-2" "Qi-3" "Qi-4" "Qi-5" "Qi-6" "Qi-7" "Qi-8" "Qi-9" "Qi-10" "Qi-11" "Qi-12" "Qi-13" "Qi-14" "Qi-15" "Qi-16" "Qi-17" "Qi-18" "Qi-19" "Qi-20" "Qi-21" "Qi-22" "Qi-23" "Qi-24" "Qi-25" "Qi-26" "Qi-27" "Qi-28" "Qi-29" "Qi-30" "Qi-31" "Qi-32" "Qi-33" "Qi-34" "Qi-35" "Qi-36" "Qi-37" "Qi-38" "Qi-51" "Qi-52" "Qi-53" "Qi-54" "Qi-55" "Qi-56" "Qi-101" "Qi-102" "Qi-103" "Qi-104" "Qi-47" "Qi-48" "Qi-49" "Qi-58" "Qi-59" "Qi-60" "Qi-61" "Qi-62" "Qi-63" "Qi-64" "Qi-65" "Qi-66" "Qi-67" "Qi-68" "Qi-69" "Qi-70" 
+			"Chu-126" "Chu-127" "Chu-128" "Chu-129" "Chu-130" "Chu-131" "Chu-132" "Chu-133" "Chu-134" "Chu-208" "Chu-209" "Chu-210" "Chu-211" "Chu-212" "Chu-213" "Chu-214" "Chu-215" "Chu-135" "Chu-136" "Chu-137" "Chu-138" "Chu-216" "Chu-405" "Chu-406" "Chu-407" "Chu-408" "Chu-411" "Chu-412" "Chu-413" "Chu-414" "Chu-415" "Chu-416" "Chu-417" "Chu-418" "Chu-419" "Chu-420" "Chu-424" "Chu-425" "Chu-426" "Chu-427" "Chu-428" "Chu-429" "Chu-430""Chu-313" "Chu-314" "Chu-315" "Chu-316" "Chu-317" "Chu-318" "Chu-319" "Chu-320" "Chu-321" "Chu-322" "Chu-323" "Chu-324" "Chu-401" "Chu-402" "Chu-403" "Chu-404" "Chu-421" "Chu-422" "Chu-423" 
+			"Yan-1" "Yan-2" "Yan-3" "Yan-21" "Yan-22" "Yan-23" "Yan-51" "Yan-52" "Yan-53" "Yan-54" "Yan-55" "Yan-56" 
+			"Zhao-1" "Zhao-2" "Zhao-3" "Zhao-4" "Zhao-5" "Zhao-6" "Qi-301" "Qi-302" "Qi-303" "Qi-304" 	
+		}
+	}
+	destroyer = {
+		prefix = ""
+		generic = { "Destroyer" }
+		unique = {
+			"Chunyue""Chunai""Chunfeng""Chunwu""Chunyu""Chunmai""Chunai""Chunshuang""Chunhan""Chunyun""Chunxue"
+			"Xiayue""Xiaai""Xiafeng""Xiawu""Xiayu""Xiamai""Xiaai""Xiashuang""Xiahan""Xiayun"
+			"Qiuyue""Qiuai""Qiufeng""Qiuwu""Qiuyu""Qiumai""Qiuai""Qiushuang""Qiuhan""Qiuyun""Qiuxue"
+			"Dongyue""Dongai""Dongfeng""Dongwu""Dongyu""Dongmai""Dongai""Dongshuang""Donghan""Dongyun""Dongxue"
+			"Nuanyue""Nuanai""Nuanfeng""Nuanwu""Nuanyu""Nuanmai""Nuanai""Nuanshuang""Nuanhan""Nuanyun"
+			"Liangyue""Liangai""Liangfeng""Liangwu""Liangyu""Liangmai""Liangai""Liangshuang""Lianghan""Liangyun"
+		}
+	}
+	light_cruiser = {
+		prefix = ""
+		generic = { "Light Cruiser" }
+		unique = {
+			"Xianyang""Longxi""Jiuyuan""dangjun""Huaiyang""Jiaodong""Jiaoxi"
+			"Taiyuan""Daijun""Hengshan""Qinghe""Beiping""Yuyang""Shanggu"
+			"Liaoxi""Liaodong""Hanzhong""Shujun""Bajun""Nanjun""Jiujiang"
+			"Lujiang""Hengshan""Linhuai""Dongting""Cangwu""Xiangjun""Minzhong"
+			"Zhangjun""Zhouling""Jianghu""Wuqian""Changshan""Weijun""Changyi"
+			"Dahe""Beihai""Donglai""Guiyang""Wuling""Lingling""Danyang"
+			"Guanghan""Jianwei""Yuegui""Zangke""Jincheng""Wuwei""Zhangye"
+			"Jiuquan""Dunhuang""Anding""Dingxiang""Shuofang""Zhuojun""Hepu"
+		}
+	}
+	heavy_cruiser = {
+		prefix = ""
+		generic = { "Heavy Cruiser" }
+		unique = {
+			"Xianyang""Longxi""Jiuyuan""Dangjun""Huaiyang""Jiaodong""Jiaoxi"
+			"Taiyuan""Daijun""Hengshan""Qinghe""Beiping""Yuyang""Shanggu"
+			"Liaoxi""Liaodong""Hanzhong""Shujun""Bajun""Nanjun""Jiujiang"
+			"Lujiang""Hengshan""Linhuai""Dongting""Cangwu""Xiangjun""Minzhong"
+			"Zhangjun""Zhouling""Jianghu""Wuqian""Changshan""Weijun""Changyi"
+			"Dahe""Beihai""Donglai""Guiyang""Wuling""Lingling""Danyang"
+			"Guanghan""Jianwei""Yuegui""Zangke""Jincheng""Wuwei""Zhangye"
+			"Jiuquan""Dunhuang""Anding""Dingxiang""Shuofang""Zhuojun""Hepu"
+		}
+	}
+	battle_cruiser = {
+		prefix = ""
+		generic = { "Battle Cruiser" }
+		unique = {
+			"Maoshan""Funiu""Zhongtiao""Jiuyi""Wuzhi""Luoxiao""Jiuhua"
+			"Luliang""Wutai""Taixing""Yinshan""Qilian""Laoshan""Tongbai"
+			"Yuntai""Tianmu""Wuliang""Zhangbai""Daba""Qionglai""Ailao"
+			"Yandang""Xianxia""Huaiyu""Maoshan""Wumeng""Micang""Qinling"
+			"Langjuxu""Shiwandashan""Liuzhao""Nanling""Kunyu""Tianshan""Hengduan"
+			"Yunkai""Yaoshan""Kuocang""Dongguan""Daiyun""Xing'anling""Tanggula"
+			"Liupan""Helan""Wangwu""Yanshan"
+		}
+	}
+	battleship = {
+		prefix = ""
+		generic = { "Battleship" }
+		unique = {
+			"Maoshan""Funiu""Zhongtiao""Jiuyi""Wuzhi""Luoxiao""Jiuhua"
+			"Luliang""Wutai""Taixing""Yinshan""Qilian""Laoshan""Tongbai"
+			"Yuntai""Tianmu""Wuliang""Zhangbai""Daba""Qionglai""Ailao"
+			"Yandang""Xianxia""Huaiyu""Maoshan""Wumeng""Micang""Qinling"
+			"Langjuxu""Shiwandashan""Liuzhao""Nanling""Kunyu""Tianshan""Hengduan"
+			"Yunkai""Yaoshan""Kuocang""Dongguan""Daiyun""Xing'anling""Tanggula"
+			"Liupan""Helan""Wangwu""Yanshan"
+			
+		}
+	}
+	carrier = {
+		prefix = ""
+		generic = { "Carrier" }
+		unique = {
+			"Ganjiang""Danjiang""Yuanjiang""Fengshui""Miluojiang""Chishui""Wujiang"
+			"Iinshajiang""Xinjiang""Wusongjiang""Bailongjiang""Yalongjiang""Qingshuijiang""Zhuohe"
+			"Fenhe""Weishui""Yanhe""Luohe""Yishui""Wenhe""Zhanghe"
+			"Bahe""Yanhe""Wudinghe""Sanchuanhe""Huaihe""Jishui""Daqinghe"
+		}
+	}
+
+
+	infantry = {
+		prefix = ""
+		generic = { "Infantry Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_MNG"
+		unique = {}
+	}
+	motorized = {
+		prefix = ""
+		generic = { "Motorizard Infantry Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_MNG"
+		unique = {}
+	}
+	cavalry = {
+		prefix = ""
+		generic = { "Cavalry Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_MNG"
+		unique = {}
+	}
+	light_armor = {
+		prefix = ""
+		generic = { "Light Armored Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_MNG"
+		unique = {}
+	}
+	medium_armor = {
+		prefix = ""
+		generic = { "Heavy Armor Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_MNG"
+		unique = {}
+	}
+}

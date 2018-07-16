@@ -1,0 +1,27 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_MNG_aisin_gioro_xianyu"
+		texturefile = "gfx/interface/ideas/idea_aisin_gioro_xianyu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_QNG_aisin_gioro_xianyu"
+		texturefile = "gfx/interface/ideas/idea_aisin_gioro_xianyu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MNG_colonized"
+		texturefile = "gfx/interface/ideas/brittish_stoicism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MNG_colonized_strenthen"
+		texturefile = "gfx/interface/ideas/brittish_stoicism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_asian_monetary_fund"
+		texturefile = "gfx/interface/ideas/brittish_stoicism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MNG_rebuild_tribute_system"
+		texturefile = "gfx/interface/ideas/idea_scania.dds"
+	}
+}

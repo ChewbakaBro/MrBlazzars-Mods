@@ -1,0 +1,477 @@
+﻿###########################
+# Qing Events
+###########################
+
+add_namespace = qing
+
+#宣统宫变
+country_event = {
+	id = qing.1
+	title = qing.1.t
+	desc = qing.1.d
+	picture = GFX_report_xuantong_coup
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = qing.1.a
+		ai_chance = { factor = 100 }
+		create_country_leader = {
+			name = "爱新觉罗毓岚"
+			desc = "POLITICS_EDWARD_EDWARD_DESC"
+			picture = "gfx/leaders/QNG/Portrait_Qing_Yu_Lan.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				inexperienced_imperialist				
+			}
+		}
+		hidden_effect = {
+			news_event = { days = 2 id = mingqingnews.1 }
+			if = {
+				limit = { has_global_flag = MNG_not_receive_qing_princess }
+				news_event = { days = 10 id = mingqingnews.27 }
+			}
+		}
+	}
+}
+
+#溥仪趋向强硬
+country_event = {
+	id = qing.2
+	title = qing.2.t
+	desc = qing.2.d
+	picture = GFX_report_puyi_remain
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = qing.2.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			country_event = { days = 2 id = mingqingnews.2 }
+			create_field_marshal = {
+				name = "爱新觉罗毓岚"
+				portrait_path = "gfx/leaders/QNG/Portrait_Qing_Yu_Lan.dds"
+				traits = { fast_planner  thorough_planner }
+				skill = 3
+			}
+		}
+	}
+}
+
+#重返淮北的胜利
+country_event = {
+	id = qing.3
+	title = qing.3.t
+	desc = qing.3.d
+	picture = GFX_report_return_huaibei
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = qing.3.a
+		ai_chance = { factor = 100 }
+		add_timed_idea = {
+			idea = QNG_huaibei_victory
+			days = 365
+		}
+		add_timed_idea = {
+			idea = QNG_prepare_to_war
+			days = 80
+		}
+		hidden_effect = {
+			country_event = { days = 2 id = mingqingnews.3 }
+		}
+	}
+}
+
+#获得南方地区核心领土
+country_event = {
+	id = qing.4
+	title = qing.4.t
+	desc = qing.4.d
+	picture = GFX_report_southern_core
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = qing.4.a
+		ai_chance = { factor = 100 }
+		601 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		325 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		326 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		605 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		603 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		599 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		594 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		591 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		728 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		729 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		592 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		593 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		602 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		600 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		595 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		620 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		743 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		613 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		596 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		524 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		322 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		744 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+		434 = {
+			if = {
+				limit = { is_owned_by = QNG }
+				add_core_of = QNG
+			}
+		}
+	}
+}
+
+#共产党赢得内战，迁都
+country_event = {
+	id = qing.5
+	title = qing.5.t
+	desc = qing.5.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+	
+	trigger = {
+		original_tag = QNG
+		has_government = communism
+		has_global_flag = qing_communist_victory
+		owns_state = 608
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+		name = qing.5.a
+		set_capital = 608
+	}
+}
+
+#清朝加入共产国际
+country_event = {
+	id = qing.6
+	title = qing.6.t
+	desc = qing.6.d
+	picture = GFX_report_event_stalin_01
+
+	is_triggered_only = yes
+		
+	option = {
+		name = qing.6.a
+		SOV = { add_to_faction = QNG }
+		SOV = {
+			add_ai_strategy = {
+				type = alliance
+				id = "QNG"
+				value = 200
+			}
+		}
+		QNG = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = SOV_QNG_join_comintern_agree
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = mingqingnews.9 }
+		}
+	}
+	option = {
+		name = qing.6.b
+		ai_chance = { factor = 0 }
+		QNG = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = SOV_QNG_join_comintern_reject
+			}
+		}
+	}
+}
+
+#清朝加入同盟国
+country_event = {
+	id = qing.7
+	title = qing.7.t
+	desc = qing.7.d
+	picture = GFX_report_event_degaulle_churchill
+
+	is_triggered_only = yes
+		
+	option = {
+		name = qing.7.a
+		ENG = { add_to_faction = QNG }
+		ENG = {
+			add_ai_strategy = {
+				type = alliance
+				id = "QNG"
+				value = 200
+			}
+		}
+		QNG = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = ENG_QNG_join_comintern_agree
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = mingqingnews.10 }
+		}
+	}
+	option = {
+		name = qing.7.b
+		ai_chance = { factor = 0 }
+		QNG = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = ENG_QNG_join_comintern_reject
+			}
+		}
+	}
+}
+
+#清朝加入轴心国
+country_event = {
+	id = qing.8
+	title = qing.8.t
+	desc = qing.8.d
+	picture = GFX_report_event_degaulle_churchill
+
+	is_triggered_only = yes
+		
+	option = {
+		name = qing.8.a
+		GER = { add_to_faction = QNG }
+		GER = {
+			add_ai_strategy = {
+				type = alliance
+				id = "QNG"
+				value = 200
+			}
+		}
+		QNG = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = GER_QNG_join_comintern_agree
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = mingqingnews.11 }
+		}
+	}
+	option = {
+		name = qing.8.b
+		ai_chance = { factor = 0 }
+		QNG = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = GER_QNG_join_comintern_reject
+			}
+		}
+	}
+}
+
+#民主化
+country_event = {
+	id = qing.9
+	title = qing.9.t
+	desc = qing.9.d
+	picture = GFX_report_return_huaibei
+
+	is_triggered_only = yes
+		
+	option = {
+		name = qing.9.a
+		if = {
+			limit = { has_global_flag = puyi_overturned }
+			create_country_leader = {
+				name = "爱新觉罗毓岚"
+				desc = "POLITICS_EDWARD_EDWARD_DESC"
+				picture = "gfx/leaders/QNG/Portrait_Qing_Yu_Lan.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+				inexperienced_imperialist				
+				}
+			}
+		}
+		if = {
+			limit = { has_global_flag = puyi_not_overturned }
+			create_country_leader = {
+				name = "爱新觉罗溥仪"
+				desc = "POLITICS_EDWARD_EDWARD_DESC"
+				picture = "gfx/leaders/QNG/Portrait_Qing_Pu_Yi.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+				
+				}
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = mingqingnews.21 }
+		}
+	}
+}
+
+#法西斯化
+country_event = {
+	id = qing.10
+	title = qing.10.t
+	desc = qing.10.d
+	picture = GFX_report_return_huaibei
+
+	is_triggered_only = yes
+		
+	option = {
+		name = qing.10.a
+		if = {
+			limit = { has_global_flag = puyi_overturned }
+			create_country_leader = {
+				name = "爱新觉罗毓岚"
+				desc = "POLITICS_EDWARD_EDWARD_DESC"
+				picture = "gfx/leaders/QNG/Portrait_Qing_Yu_Lan.dds"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+				inexperienced_imperialist				
+				}
+			}
+		}
+		if = {
+			limit = { has_global_flag = puyi_not_overturned }
+			create_country_leader = {
+				name = "爱新觉罗溥仪"
+				desc = "POLITICS_EDWARD_EDWARD_DESC"
+				picture = "gfx/leaders/QNG/Portrait_Qing_Pu_Yi.dds"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+				
+				}
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = mingqingnews.22 }
+		}
+	}
+}
+

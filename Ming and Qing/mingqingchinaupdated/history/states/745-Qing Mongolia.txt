@@ -1,0 +1,30 @@
+state={
+	id=745
+	name="STATE_745" #«Â Ù√…π≈
+	resources={
+		steel=3.000
+		chromium=2.000
+	}
+
+	history={
+		owner = QNG
+		add_core_of = QNG
+		victory_points = {
+			4801 5 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+
+		}
+	}
+
+	provinces={
+		1723 1743 1787 1853 1868 4729 4792 4801 4856 4862 4873 7749 7752 7806 7823 7885 10554 10558 10575 10578 10632 10647 10689 10708 12533 12539 12557 12612 12629 12665 12669 12686 
+	}
+	manpower=352000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

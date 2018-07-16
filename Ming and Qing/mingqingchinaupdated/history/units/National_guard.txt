@@ -1,0 +1,43 @@
+﻿division_template = {
+	name = "人民卫队" #National Guard
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 3 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+
+units = {
+
+#人民卫队
+	#南直隶
+	division= {	
+		name = "人民卫队第1师"
+		location = 11913
+		division_template = "人民卫队"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "人民卫队第2师"
+		location = 11913
+		division_template = "人民卫队"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+}

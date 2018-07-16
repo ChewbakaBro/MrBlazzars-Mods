@@ -1,0 +1,161 @@
+﻿capital = 608
+
+OOB = "QNG_1936"
+
+set_technology = {
+
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	motorised_infantry = 1
+	gwtank = 1
+	basic_light_tank = 1
+	basic_heavy_tank = 1
+	
+	early_fighter = 1
+	early_bomber = 1
+	
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	
+	transport = 1
+}
+
+add_ideas = {
+	han_nationalism
+	QNG_not_unified_china
+	partial_economic_mobilisation
+}
+
+
+set_research_slots = 3
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 30
+		}
+		
+		communism = {
+			popularity = 5
+		}
+		
+		neutrality = { 
+			popularity = 65
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_convoys = 120
+
+create_country_leader = {
+	name = "Aisin-Gioro Pu Yi"
+	desc = ""
+	picture = "gfx/leaders/QNG/Portrait_Qing_Pu_Yi.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Aisin-Gioro Pu Jie"
+	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Pujie.dds"
+	skill = 4
+	traits = {  offensive_doctrine  }
+}
+
+create_field_marshal = {
+	name = "Ji Hong Chang"
+	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Jihongchang.dds"
+	skill = 3
+	traits = { defensive_doctrine }
+}
+
+create_field_marshal = {
+	name = "Fu Zuo Yi"
+	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Fuzuoyi.dds"
+	skill = 3
+	traits = {  offensive_doctrine }
+}
+
+create_corps_commander = {
+	name = "Chi Feng Cheng"
+	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Chifengcheng.dds"
+	skill = 2
+	traits = { trickster  }
+}
+
+create_corps_commander = {
+	name = "Han Fuqu"
+	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Hanfuqu.dds"
+	skill = 2
+	traits = { fortress_buster }
+}
+
+create_corps_commander = {
+	name = "Song Zhen Yuan"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	skill = 3
+	traits = { fortress_buster }
+}
+
+create_corps_commander = {
+	name = "Hao Meng Ling"
+	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Haomengling.dds"
+	skill = 2
+	traits = { desert_fox }
+}
+
+create_corps_commander = {
+	name = "Zheng Ting Zhen"
+	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Zhengtingzhen.dds"
+	skill = 1
+	traits = { commando }
+}
+
+create_corps_commander = {
+	name = "Chen Tian Yuan"
+	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Chendiaoyuan.dds"
+	skill = 1
+	traits = { trait_engineer }
+}
+
+create_navy_leader = {
+	name = "Fu Cha Kang Shen"
+	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Fuchakangshen.dds"
+	traits = { blockade_runner }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Ling Xiao"
+	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Lingxiao.dds"
+	traits = { superior_tactician }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Luo Feng Ting"
+	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Luofengting.dds"
+	traits = {  }
+	skill = 2
+}
+

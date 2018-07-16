@@ -1,0 +1,77 @@
+﻿l_english:
+ # NEWS
+ mingnovel.0.t:0 "East China Sea submarine incident"
+ mingnovel.0.d:0 "A few days ago, one of our submarine training boats 'Grasshopper' was captured by the Qing army in the East China Sea. The reason is that a mysterious man swimming in the sea hung onto the periscop, his call for help caused a Qing Destroyer to find the sub.\n\nBut afterwards this man rescued the submarine soldiers trapped in the Lianyungang naval base, and hijacked a airplane from the base and landed it back at our military airfields.\n\nNow the intelligence department has the mysterious man in custody, do we need to investigate him?"
+ mingnovel.0.a:0 "Let the Secret Police investigate the origin of this person"
+ mingnovel.0.b:0 "Forget it"
+ 
+ mingnovel.1.t:0 "To Xiang Xiaoqiang, the name is very interesting."
+ mingnovel.1.d:0 "The report from the Secret Police, said the man's name is Xianqiang. In the interrogation process, he seems to know nothing about this anomaly, repeatedly saying that he came from 'The People's Republic of China' that is 'in the future'\n\nAfter the psychiatrist's appraisal, we think the man has an intermittent paranoid situation.\n\n\n\nCertainly, this may also be because he is disguised very well, we suggest further observation for several days."
+ mingnovel.1.a:0 "First lock him up for several days, to see what he does!"
+ 
+ mingnovel.2.t:0 "British Agents?"
+ mingnovel.2.d:0 "He finally gave us the answers we saught under pressure! This kid is from overseas, he is and agent of the British Military Intelligence 6, we also let him listen to BBC's radio but he pretended to not understand it.\n\nHowever, all this is hiding, but to the Secret Police directors eyes."
+ mingnovel.2.a:0 "Sounds interesting"
+ 
+ mingnovel.3.t:0 "Report from the East China Sea submarine force."
+ mingnovel.3.d:0 "This important matter is not a good one, a few days ago, the Qing captured several submarine soldiers that were spying in the Huainan area.\n\nThis action comes from Princess Aisin-Gioro Xian Yu, and they will have the submarine soldiers ready to tour the Beijing streets as soon as possible, this is absurd!"
+ mingnovel.3.a:0 "The cabinet and Ministry of Defense need to meet to discuss this."
+ 
+ mingnovel.4.t:0 "Do we save them or not?"
+ mingnovel.4.d:0 "The meeting is fruitless!\n\nGovernment officials of similar caliber, strongly advocated that rescue is neither desirable nor feasible: rescue is exetremly improper, can easily trigger all out war, and we can't expand the situation; the Qing army is strong if we start a war they will quickly encircle us.\n\nThus, in order to save the soldiers, is is very likely we will have to pay more costs, and could lead to a war.\n\nSo, in the end should we save them or not?"
+ mingnovel.4.a:0 "Save them, we can't leave any Ming soliders to their death!"
+ mingnovel.4.b:0 "Do not save them, we can't afford the price."
+ 
+ mingnovel.5.t:0 "The Commando unit is prepared"
+ mingnovel.5.d:0 "The plan is to mobilize a comaando squad nad initial a naval rescue of the submarine soldiers during transport between Lianyungang and Beijing. The British Agent that rescused some of the soldiers has promised to lend us his strength for this mission.\n\nMeanwhile, we have assembled several elite soldiers, the capable command squad, we hopd they can rescue them smoothly and quickly.\n\nHowever, the risk of failure is always present, we can not take this lightly, we must be ready for anything."
+ mingnovel.5.a:0 "Okay, let's go"
+ 
+ mingnovel.6.t:0 "Rescue was a success, but there was unexpected surprises"
+ mingnovel.6.d:0 "Significant news, our commandos succeeded in the attack in the Lianyungang western suburbs on the prisoners escort, they have successful rescured the prisoners and retreated.\n\nIn addition, we also captured the Qing spy cheif Aisin-Gioro Luo Yu, this was very startling news!\n\nNow, how should we treat this princess from the Qing?"
+ mingnovel.6.a:0 "Maybe we can give her a title so she will tell us her plans"
+ mingnovel.6.b:0 "Badly, this person only deserves to be rotting in prision"
+ 
+ mingnovel.7.t:0 "The rescue has failed"
+ mingnovel.7.d:0 "Our commandos attacked the prisoners escort in the western suburbs of Lianyungang, but the rescue attempt failed!\n\nThe survivors went to the Xuzhou area spy network, according to the survivors information sent from the network, the command unit memebers heads hang from the city walls!"
+ mingnovel.7.a:0 "regretful"
+ 
+ mingnovel.8.t:0 "Xian Yu is willing to work with us"
+ mingnovel.8.d:0 "After recieveing the news from Beijing, obviously she has taken the blow harshly, she can not believe that her beloved father was usurped by her own brother.\n\nHowever, after she took control of her emotion, she swore vengence for the usurper and, of course, joined us."
+ mingnovel.8.a:0 "A very good thing"
+ 
+ mingnovel.9.t:0 "Xian Yu is not willing to work with us"
+ mingnovel.9.d:0 "After recieveing the news from Beijing, obviously she has taken the blow harshly, she can not believe that her beloved father was usurped by her own brother.\n\nShe proposed to us that she will accept the title, but fearing for her life she refused to join our cause."
+ mingnovel.9.a:0 "Well, go along with it"
+ 
+ mingnovel.10.t:0 "East China Sea submarine incident"
+ mingnovel.10.d:0 "A couple days ago we captured a Ming submarine training ship.\n\nBut afterward then a ming agent infiltrated the Lingyungang nanval base were the captured soldiers were and not only rescued them but also stole one of our airplanes and took off to a Ming airport.\n\nPrincess Xian Yu proposed we take necessary actions to tell the Ming, we are not to be messed with."
+ mingnovel.10.a:0 "Do it quickly"#????着显妤速办
+ 
+ mingnovel.11.t:0 "We successfully brought the prisoners to Huaibei"
+ mingnovel.11.d:0 "Good news, the spy network of Huainan reports the soldiers were escorted successfully to Huaibei.\n\nPrincess Xian Yu is obviously worthy of command, but for now we must make sure to deal with the prisoners"
+ mingnovel.11.a:0 "First interogate them in Huaibei, then bring them back to Beijing."
+ 
+ mingnovel.12.t:0 "The Ming Commando unit came again, this time they succeeded!"
+ mingnovel.12.d:0 "Bad news, Ming commandos in the western suburbs of Lianyungang attacked the escort of the prinsoners successfully and rescued them. In addition, "
+ mingnovel.12.a:0 "The soldiers are useless!"
+ 
+ mingnovel.13.t:0 "The Ming Commando unit came again, But failed!"
+ mingnovel.13.d:0 "The Ming Commando unit attacked the prisoners escort, but failed! We were also able to dig up the Ming's spy network in the Xuzhou area, now the heads of the commando units hang on the city walls!"
+ mingnovel.13.a:0 "Haha, our soldiers did beautifully! We must get this group of Ming prisoners to Beijing."
+ 
+ mingnovel.14.t:0 "Nanjing Chaos"
+ mingnovel.14.d:0 "As a result of the rescue operations a few days ago, the Cabinet believes that the Secrect Policies behavior is trying to create a state of emergency, thus holding the royal family to obtain more poltiical power. As a result, they have used the media to encourage students to go to the streets to launch a peace march.\n\nThere are two ways ahead of the Royal Family; one is simply to seize power, but the military has announced the neutrality makes the Secrect Police isolated and helpless; the other is to compromise with the cabinet, but this is likely to lead to damage in the royal power base.\n\nWhat should we do?"
+ mingnovel.14.a:0 "The Royal Family can not give in, we must pressure the cabinet"
+ mingnovel.14.b:0 "The Royal Family needs to comply with the constitution"
+ 
+ mingnovel.15.t:0 "Xiang Xiaoqiang's idea"
+ mingnovel.15.d:0 "Commando hero Xiang Xiaoqiang submitted a plan to the Queen that make help the royal family, it suggests we require staff police ties to directly control various government agencies.\n\nThe plan caused a 'beer hall riot' in Ming, which is very dangerous. Perhaps Fascism will seize the whole country after this riot."
+ mingnovel.15.a:0 "In harsh time we should do harsh things" #In harsh time we should do harsh things.
+ mingnovel.15.b:0 "Give up, this may destroy the stability of our country"
+ 
+ mingnovel.16.t:0 "National Guard Reformed" #National Guard Reformed
+ mingnovel.16.d:0 "After the success of the seizure of power, we have a new 'problem' to deal with. Xiang Xiaoqiang has proven their loyalty to the royal family with their prvious actions. Perhaps, make him the leader of the new National Guard."
+ mingnovel.16.a:0 "Make it loyal to the military power of the Imperial Family directly" 
+ mingnovel.16.b:0 "Such a force may be dangerous"
+ 
+ 

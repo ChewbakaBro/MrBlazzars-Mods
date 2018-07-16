@@ -1,0 +1,585 @@
+﻿add_namespace = mingnovel
+
+#东海近海潜艇事件
+country_event = {
+	id = mingnovel.0
+	title = mingnovel.0.t
+	desc = mingnovel.0.d
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MNG
+		AND = {
+			date > 1936.3.1
+		}
+	}
+	
+	picture = GFX_report_event_military_planning
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			QNG = { 
+				country_event = { id = mingnovel.10}
+			}
+		}
+	}
+	
+	option = {
+		name = mingnovel.0.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			MNG = { 
+				country_event = { id = mingnovel.1 days = 3 }
+			}
+			
+		}
+	}
+	option = {
+		name = mingnovel.0.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+#向小强？他是谁？
+country_event = {
+	id = mingnovel.1
+	title = mingnovel.1.t
+	desc = mingnovel.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	picture = GFX_report_dongchang
+	
+	option = {
+		name = mingnovel.1.a
+		ai_chance = { factor = 100 }
+		
+		hidden_effect = {
+			MNG = { 
+				country_event = { id = mingnovel.2 days = 5 }
+				country_event = { id = mingnovel.3 days = 15 }
+			}
+		}
+	}
+}
+
+#“英国特工？”
+country_event = {
+	id = mingnovel.2
+	title = mingnovel.2.t
+	desc = mingnovel.2.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	picture = GFX_report_xiangxiaoqiang
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = mingnovel.2.a
+	}
+}
+
+#来自东海潜艇部队的报告
+country_event = {
+	id = mingnovel.3
+	title = mingnovel.3.t
+	desc = mingnovel.3.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	picture = GFX_report_east_sub
+	
+	immediate = {
+		hidden_effect = {
+			QNG = { 
+				country_event = { id = mingnovel.11}
+			}
+		}
+	}
+	
+	option = {
+		name = mingnovel.3.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			MNG = { 
+				country_event = { id = mingnovel.4 days = 5 }
+			}
+		}
+	}
+}
+
+#到底救不救？
+country_event = {
+	id = mingnovel.4
+	title = mingnovel.4.t
+	desc = mingnovel.4.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	option = {
+		name = mingnovel.4.a
+		ai_chance = { factor = 100 }
+		MNG = { 
+			country_event = { id = mingnovel.5 days = 10 }
+		}
+		add_political_power = -30
+	}
+	option = {
+		name = mingnovel.4.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+#突击队准备好了
+country_event = {
+	id = mingnovel.5
+	title = mingnovel.5.t
+	desc = mingnovel.5.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	option = {
+		name = mingnovel.5.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			set_global_flag = rescue_our_soldiers
+		}
+		custom_effect_tooltip = rescue_probability
+	}
+}
+
+#营救（判定）
+country_event = {
+	id = mingnovel.501
+	title = mingnovel.501.t
+	desc = mingnovel.501.d
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	trigger = {
+		tag = MNG
+		has_global_flag = rescue_our_soldiers
+	}
+	
+	hidden = yes
+	
+	immediate = {
+		random_list = {
+			80 = { 
+				country_event = { id = mingnovel.6 }
+			}
+			20 = { 
+				country_event = { id = mingnovel.7 }
+			}
+		}
+	}
+	
+	option = {
+	}
+}
+
+
+
+#营救成功，并带回十四格格
+country_event = {
+	id = mingnovel.6
+	title = mingnovel.6.t
+	desc = mingnovel.6.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	picture = GFX_report_east_sub
+	
+	immediate = {
+		hidden_effect = {
+			QNG = { 
+				country_event = { id = mingnovel.12}
+				set_country_flag = Xianyu_captured
+			}
+		}
+	}
+	
+	option = {
+		name = mingnovel.6.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			set_global_flag = rescue_succeed
+			set_global_flag = MNG_receive_qing_princess
+		}
+	}
+	option = {
+		name = mingnovel.6.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+#营救失败
+country_event = {
+	id = mingnovel.7
+	title = mingnovel.7.t
+	desc = mingnovel.7.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	picture = GFX_report_rescue_failed
+	
+	immediate = {
+		hidden_effect = {
+			QNG = { 
+				country_event = { id = mingnovel.13 }
+			}
+		}
+	}
+	
+	option = {
+		name = mingnovel.7.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			set_global_flag = rescue_failed
+		}
+	}
+}
+
+#十四格格的考虑（判定）
+country_event = {
+	id = mingnovel.601
+	title = mingnovel.601.t
+	desc = mingnovel.601.d
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	trigger = {
+		tag = MNG
+		has_global_flag = MNG_receive_qing_princess
+		has_global_flag = puyi_overturned
+	}
+	
+	hidden = yes
+	
+	immediate = {
+		random_list = {
+			50 = { 
+				MNG = { country_event = { id = mingnovel.8 } }
+			}
+			50 = { 
+				MNG = { country_event = { id = mingnovel.9 } }
+			}
+		}
+	}
+	
+	option = {
+	}
+}
+
+#十四格格愿意为我们效力
+country_event = {
+	id = mingnovel.8
+	title = mingnovel.8.t
+	desc = mingnovel.8.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	picture = GFX_report_14_princess
+	
+	option = {
+		name = mingnovel.8.a
+		ai_chance = { factor = 100 }
+		
+		hidden_effect = {
+			news_event = { days = 1 id = mingqingnews.25 }
+		}
+		set_global_flag = Xianyu_agree_work_for_MNG
+	}
+}
+
+#十四格格不愿意为我们效力
+country_event = {
+	id = mingnovel.9
+	title = mingnovel.9.t
+	desc = mingnovel.9.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	picture = GFX_report_14_princess
+	
+	option = {
+		name = mingnovel.9.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			news_event = { days = 1 id = mingqingnews.26 }
+		}
+		set_global_flag = Xianyu_refuse_work_for_MNG
+	}
+}
+
+#十四格格被处决（判定）
+country_event = {
+	id = mingnovel.901
+	title = mingnovel.901.t
+	desc = mingnovel.901.d
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	trigger = {
+		tag = MNG
+		has_global_flag = rescue_failed
+		has_global_flag = puyi_overturned
+	}
+	
+	hidden = yes
+	
+	immediate = {
+		news_event = { id = mingqingnews.27 }
+	}
+	
+	option = {
+	}
+}
+
+#东海近海潜艇事件（清）
+country_event = {
+	id = mingnovel.10
+	title = mingnovel.10.t
+	desc = mingnovel.10.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	picture = GFX_report_event_military_planning
+	
+	option = {
+		name = mingnovel.10.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+#我们成功请回了之前被俘的潜艇兵
+country_event = {
+	id = mingnovel.11
+	title = mingnovel.11.t
+	desc = mingnovel.11.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	picture = GFX_report_east_sub
+	
+	option = {
+		name = mingnovel.11.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+#明营救成功，俘虏了十四格格
+country_event = {
+	id = mingnovel.12
+	title = mingnovel.12.t
+	desc = mingnovel.12.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	picture = GFX_report_east_sub
+	
+	option = {
+		name = mingnovel.12.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+#明营救失败
+country_event = {
+	id = mingnovel.13
+	title = mingnovel.13.t
+	desc = mingnovel.13.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	picture = GFX_report_rescue_failed
+	
+	option = {
+		name = mingnovel.13.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			news_event = { days = 10 id = mingqingnews.28 }
+		}
+	}
+}
+
+#南京大乱
+country_event = {
+	id = mingnovel.14
+	title = mingnovel.14.t
+	desc = mingnovel.14.d
+	
+	fire_only_once = yes
+	picture = GFX_report_nanjing_chaos
+	
+	trigger = {
+		tag = MNG
+		OR = {
+			has_global_flag = rescue_failed
+			has_global_flag = rescue_succeed
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = mingnovel.14.a
+		ai_chance = { factor = 95 }
+		trigger = {
+			has_global_flag = rescue_succeed
+		}
+		MNG = { 
+			country_event = { id = mingnovel.15 days = 2 }
+		}
+	}
+	option = {
+		name = mingnovel.14.b
+		ai_chance = { factor = 5 }
+		set_politics = {
+			ruling_party = democratic
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		create_country_leader = {
+				name = "朱佑榕"
+				desc = ""
+				picture = "gfx/leaders/MNG/Portrait_Ming_Zhu_You_Rong.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+				}
+		}
+		hidden_effect = {
+			news_event = { days = 1 id = mingqingnews.29 }
+		}
+	}
+}
+
+#向小强的主意
+country_event = {
+	id = mingnovel.15
+	title = mingnovel.15.t
+	desc = mingnovel.15.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	picture = GFX_report_national_guard
+	
+	option = {
+		name = mingnovel.15.a
+		ai_chance = { factor = 95 }
+		MNG = { 
+			country_event = { id = mingnovel.16 hours = 12 }
+		}
+	}
+	
+	option = {
+		name = mingnovel.14.b
+		ai_chance = { factor = 5 }
+		set_politics = {
+			ruling_party = democratic
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		create_country_leader = {
+				name = "朱佑榕"
+				desc = ""
+				picture = "gfx/leaders/MNG/Portrait_Ming_Zhu_You_Rong.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+				}
+		}
+		hidden_effect = {
+			news_event = { days = 1 id = mingqingnews.29 }
+		}
+	}
+}
+
+#人民卫队
+country_event = {
+	id = mingnovel.16
+	title = mingnovel.16.t
+	desc = mingnovel.16.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	picture = GFX_report_national_guard_2
+	
+	option = {
+		name = mingnovel.16.a
+		ai_chance = { factor = 90 }
+		custom_effect_tooltip = Xiangxiaoqiang_and_National_guard
+		hidden_effect = {
+			MNG = {
+				load_oob = "National_guard"
+				create_corps_commander = {
+					name = "向小强"
+					portrait_path = "gfx/leaders/MNG/Portrait_Ming_Xiangxiaoqiang.dds"
+					traits = { panzer_leader trickster }
+					skill = 1
+				}
+				news_event = { days = 1 id = mingqingnews.30 }
+			}
+		}
+	}
+	
+	option = {
+		name = mingnovel.16.b
+		ai_chance = { factor = 10 }
+		add_manpower = 20000
+	}
+}
+
+
+
+
+
+
+
+

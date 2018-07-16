@@ -1,0 +1,36 @@
+
+state={
+	id=613
+	name="STATE_613" #南直隶
+
+	history={
+		owner = MNG
+		add_core_of = MNG
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			air_base = 6
+			dockyard = 3
+			arms_factory = 2
+			7014 = {
+				naval_base = 6
+				coastal_bunker = 1
+				bunker = 1
+			}
+
+		}
+		victory_points = {
+			11913 20 
+		}
+		victory_points = {
+			7014 10 
+		}
+	}
+
+	provinces={
+		996 1099 1125 1171 4105 4173 7014 7104 7120 10034 10044 10076 11913 11937 11982 12019 12052 12076 13142 
+	}
+	manpower=17305100
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

@@ -1,0 +1,410 @@
+﻿###########################
+# Japan Events
+###########################
+add_namespace = japanmq
+
+#东京兵变
+country_event = {
+	id = japanmq.0
+	title = japanmq.0.t
+	desc = japanmq.0.d
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JAP
+		AND = {
+			date > 1936.2.10
+		}
+	}
+	picture = GFX_report_event_japanese_officers
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	#中立
+	option = {
+		name = japanmq.0.a
+		ai_chance = { factor = 80 }
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.20
+		}
+		hidden_effect = {
+			news_event = { id = jpnews.0 days = 1 }
+			set_country_flag = japan_set_neutrality
+		}
+	}
+	
+	#法西斯
+	option = {
+		name = japanmq.0.b
+		ai_chance = { factor = 20 }
+		set_politics = {
+			ruling_party = fascism
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.20
+		}
+		hidden_effect = {
+			news_event = { id = jpnews.1 days = 1 }
+			set_country_flag = japan_set_fascism
+		}
+	}
+}
+
+#日苏合作
+country_event = {
+	id = japanmq.1
+	title = japanmq.1.t
+	desc = japanmq.1.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	#同意
+	option = {
+		name = japanmq.1.a
+		ai_chance = { factor = 100 }
+		SOV = {
+            give_guarantee = JAP
+			
+        }
+        JAP = {
+            give_guarantee = SOV
+			
+        }
+		diplomatic_relation = {
+            country = JAP
+            relation = non_aggression_pact
+        }
+		hidden_effect = {
+			news_event = { days = 2 id = jpnews.2 }
+			set_country_flag = japan_cooperation_with_ussr
+		}
+		
+		
+	}
+	
+	#不同意
+	option = {
+		name = japanmq.1.b
+		ai_chance = { factor = 0 }
+		hidden_effect = {
+			news_event = { days = 2 id = jpnews.2 }
+		}
+	}
+}
+
+#日美合作
+country_event = {
+	id = japanmq.2
+	title = japanmq.2.t
+	desc = japanmq.2.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	#同意
+	option = {
+		name = japanmq.2.a
+		ai_chance = { factor = 100 }
+		USA = {
+            give_guarantee = JAP
+			
+        }
+        JAP = {
+            give_guarantee = USA
+			
+        }
+		diplomatic_relation = {
+            country = JAP
+            relation = non_aggression_pact
+        }
+		hidden_effect = {
+			news_event = { days = 2 id = jpnews.3 }
+			set_country_flag = japan_cooperation_with_usa
+		}
+	}
+	
+	#不同意
+	option = {
+		name = japanmq.2.b
+		ai_chance = { factor = 0 }
+		hidden_effect = {
+			news_event = { days = 2 id = jpnews.3 }
+		}
+	}
+}
+
+#日苏结盟
+country_event = {
+	id = japanmq.3
+	title = japanmq.3.t
+	desc = japanmq.3.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	#同意
+	option = {
+		name = japanmq.3.a
+		ai_chance = { factor = 100 }
+		dismantle_faction = yes
+		add_national_unity = -0.1
+		JAP = {
+			if = {
+					limit = {
+						is_faction_leader = yes
+					}
+					dismantle_faction = yes
+			}
+			if = {
+					limit = {
+						is_in_faction  = yes
+					}
+					remove_from_faction = JAP
+			}
+			add_national_unity = -0.1
+			create_faction = "the_tokyo_moscow_alliance"
+			add_to_faction = SOV
+			add_named_threat = { threat = 5 name = japanmq.3.t }
+		}
+		hidden_effect = {
+			news_event = { days = 2 id = jpnews.4 }
+		}
+	}
+	
+	#不同意
+	option = {
+		name = japanmq.3.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+#日美结盟
+country_event = {
+	id = japanmq.4
+	title = japanmq.4.t
+	desc = japanmq.4.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	#同意
+	option = {
+		name = japanmq.4.a
+		ai_chance = { factor = 100 }
+		dismantle_faction = yes
+		add_national_unity = -0.1
+		JAP = {
+			if = {
+				limit = {
+					is_faction_leader = yes
+				}
+				dismantle_faction = yes
+			}
+			if = {
+				limit = {
+					is_in_faction  = yes
+				}
+				remove_from_faction = JAP
+			}
+			add_national_unity = -0.1
+			create_faction = "west_pacific_treaty_organization"
+			add_to_faction = USA
+			add_named_threat = { threat = 5 name = japanmq.4.t }
+		}
+		hidden_effect = {
+			news_event = { days = 2 id = jpnews.5 }
+		}
+	}
+	
+	#不同意
+	option = {
+		name = japanmq.4.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+#北进-满洲国的成立
+country_event = {
+	id = japanmq.5
+	title = japanmq.5.t
+	desc = japanmq.5.d
+	
+	fire_only_once = yes
+	picture = GFX_report_japanese_northern_expansion
+	
+	trigger = {
+		tag = JAP
+		has_country_flag = manchuria_focus_flag
+		QNG = { is_ai = yes }
+		MNG = { is_ai = yes }
+		QNG = { surrender_progress > 0.5 }
+	}
+	
+	
+	option = {
+		name = japanmq.5.a
+		ai_chance = { factor = 100 }
+		
+		#满洲
+		MAN = { transfer_state = 561 }
+		MAN = { transfer_state = 657 }
+		MAN = { transfer_state = 714 }
+		MAN = { transfer_state = 715 }
+		MAN = { transfer_state = 328 }
+		MAN = { transfer_state = 717 }
+		MAN = { transfer_state = 612 }
+		JAP = { puppet = MAN }
+		
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = MAN
+				}
+				add_core_of = MAN
+			}
+			MAN = {
+				load_oob = MAN_1936
+				add_manpower = 300000
+			}
+			news_event = { days = 10 id = mingqingnews.1201 }
+		}
+	}
+}
+
+#北进-蒙古的成立
+country_event = {
+	id = japanmq.6
+	title = japanmq.6.t
+	desc = japanmq.6.d
+	
+	fire_only_once = yes
+	picture = GFX_report_japanese_northern_expansion
+	
+	trigger = {
+		tag = JAP
+		has_country_flag = manchuria_focus_flag
+		QNG = { is_ai = yes }
+		MNG = { is_ai = yes }
+		QNG = { surrender_progress > 0.7 }
+	}
+	
+	
+	option = {
+		name = japanmq.6.a
+		ai_chance = { factor = 100 }
+		
+		#蒙古
+		MON = { transfer_state = 745 }
+		MON = { transfer_state = 330 }
+		MON = { transfer_state = 329 }
+		JAP = { puppet = MON }
+		
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = MON
+				}
+				add_core_of = MON
+			}
+			MON = {
+				load_oob = MON_1936
+				add_manpower = 300000
+			}
+			news_event = { days = 10 id = mingqingnews.1203 }
+		}
+	}
+}
+
+#南进-日本夺取吕宋
+country_event = {
+	id = japanmq.7
+	title = japanmq.7.t
+	desc = japanmq.7.d
+	
+	fire_only_once = yes
+	picture = GFX_report_japanese_southern_expansion
+	
+	trigger = {
+		tag = JAP
+		has_country_flag = south_china_sea_focus_flag
+		MNG = { is_ai = yes }
+		MNG = { surrender_progress > 0.4 }
+	}
+	
+	option = {
+		name = japanmq.7.a
+		ai_chance = { factor = 100 }
+		JAP = { puppet = LUZ }
+		LUZ = { white_peace = QNG }
+		MNG = { country_event = { id = ming.30 } }
+		hidden_effect = {
+			news_event = { days = 10 id = mingqingnews.1204 }
+		}
+	}
+	
+	
+}
+
+#南进-日本夺取兰芳
+country_event = {
+	id = japanmq.8
+	title = japanmq.8.t
+	desc = japanmq.8.d
+	
+	fire_only_once = yes
+	picture = GFX_report_japanese_southern_expansion
+	
+	trigger = {
+		tag = JAP
+		has_country_flag = south_china_sea_focus_flag
+		MNG = { is_ai = yes }
+		MNG = { surrender_progress > 0.6 }
+	}
+	
+	option = {
+		name = japanmq.8.a
+		ai_chance = { factor = 100 }
+		JAP = { puppet = INS }
+		INS = { white_peace = QNG }
+	}
+	
+}
+
+#南进-日本夺取暹罗
+country_event = {
+	id = japanmq.9
+	title = japanmq.9.t
+	desc = japanmq.9.d
+	
+	fire_only_once = yes
+	picture = GFX_report_japanese_southern_expansion
+	
+	trigger = {
+		tag = JAP
+		has_country_flag = south_china_sea_focus_flag
+		MNG = { is_ai = yes }
+		MNG = { surrender_progress > 0.8 }
+	}
+	
+	option = {
+		name = japanmq.7.a
+		ai_chance = { factor = 100 }
+		JAP = { puppet = SIA }
+		SIA = { white_peace = QNG }
+	}
+	
+}
+
+
+

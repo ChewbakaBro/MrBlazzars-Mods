@@ -1,0 +1,22 @@
+
+state={
+	id=287
+	name="STATE_287" #Ëþ¿ËÀ­Âê¸É
+
+	history={
+		owner = QNG
+		add_core_of = QNG
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		4947 5736 8042 8086 10885 12864 
+	}
+	manpower=478000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

@@ -1,0 +1,68 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+#non aggression pact with sov
+NAP_QNG-SOV = {
+	enable = {
+		OR = { tag = QNG tag = SOV }
+		NOT = { has_war_with = QNG has_war_with = SOV }
+		OR = { has_non_aggression_pact_with = QNG has_non_aggression_pact_with = SOV }
+		NOT = { is_justifying_wargoal_against = QNG is_justifying_wargoal_against = SOV }
+		NOT = { QNG = { has_war_with = MNG } }
+	}
+	
+	abort = {
+		OR = {
+			has_war_with = QNG has_war_with = SOV
+			NOT = { has_non_aggression_pact_with = QNG has_non_aggression_pact_with = SOV }
+			is_justifying_wargoal_against = JAP is_justifying_wargoal_against = SOV
+			QNG = { has_war_with = MNG }
+		}
+	}
+	ai_strategy = { type = ignore id = "QNG" value = 100 }
+	ai_strategy = { type = ignore id = "SOV" value = 100 }
+}
+
+#non aggression pact with jap
+NAP_QNG-JAP = {
+	enable = {
+		OR = { tag = QNG tag = JAP }
+		NOT = { has_war_with = QNG has_war_with = JAP }
+		OR = { has_non_aggression_pact_with = QNG has_non_aggression_pact_with = JAP }
+		NOT = { is_justifying_wargoal_against = QNG is_justifying_wargoal_against = JAP }
+		NOT = { QNG = { has_war_with = MNG } }
+	}
+	
+	abort = {
+		OR = {
+			has_war_with = QNG has_war_with = JAP
+			NOT = { has_non_aggression_pact_with = QNG has_non_aggression_pact_with = JAP }
+			is_justifying_wargoal_against = JAP is_justifying_wargoal_against = JAP
+			QNG = { has_war_with = MNG }
+		}
+	}
+	ai_strategy = { type = ignore id = "QNG" value = 100 }
+	ai_strategy = { type = ignore id = "JAP" value = 100 }
+}
+
+ming_scw = { 
+	enable = {
+		tag = QNG
+		has_global_flag = spanish_civil_war
+	}
+	abort = {
+		has_global_flag = scw_over
+	}
+	
+	ai_strategy = { type = ignore id = "D01" value = 1000 }
+	ai_strategy = { type = ignore id = "SPR" value = 1000 }
+}

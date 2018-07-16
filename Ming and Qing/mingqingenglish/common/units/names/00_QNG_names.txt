@@ -1,0 +1,132 @@
+﻿QNG = {
+	fleet_name_template = FLEET_NAME_QNG
+	Submarine = {
+		prefix = ""
+		generic = { "Submarine" }
+		unique = {
+			"Sea Shark-201" "Sea Shark-202" "Sea Shark-203" "Sea Shark-204" "Sea Shark-205" "Sea Shark-206" "Sea Shark-207" "Sea Shark-306" "Sea Shark-307" "Sea Shark-309" "Sea Shark-310" "Sea Shark-311" "Sea Shark-312" "Sea Shark-101" "Sea Shark-102" "Sea Shark-103" "Sea Shark-104" "Sea Shark-105" "Sea Shark-106" "Sea Shark-107" "Sea Shark-108" "Sea Shark-109" "Sea Shark-110" "Sea Shark-111" "Sea Shark-112" "Sea Shark-113" "Sea Shark-114" "Sea Shark-115" "Sea Shark-116" "Sea Shark-117" "Sea Shark-118" "Sea Shark-119" "Sea Shark-120" "Sea Shark-305" "Sea Shark-308" "Sea Shark-121" "Sea Shark-122" "Sea Shark-123" "Sea Shark-124" "Sea Shark-125" 
+			"Sea Dragon-1" "Sea Dragon-2" "Sea Dragon-3" "Sea Dragon-4" "Sea Dragon-5" "Sea Dragon-6" "Sea Dragon-7" "Sea Dragon-8" "Sea Dragon-9" "Sea Dragon-10" "Sea Dragon-11" "Sea Dragon-12" "Sea Dragon-13" "Sea Dragon-14" "Sea Dragon-15" "Sea Dragon-16" "Sea Dragon-17" "Sea Dragon-18" "Sea Dragon-19" "Sea Dragon-20" "Sea Dragon-21" "Sea Dragon-22" "Sea Dragon-23" "Sea Dragon-24" "Sea Dragon-25" "Sea Dragon-26" "Sea Dragon-27" "Sea Dragon-28" "Sea Dragon-29" "Sea Dragon-30" "Sea Dragon-31" "Sea Dragon-32" "Sea Dragon-33" "Sea Dragon-34" "Sea Dragon-35" "Sea Dragon-36" "Sea Dragon-37" "Sea Dragon-38" "Sea Dragon-51" "Sea Dragon-52" "Sea Dragon-53" "Sea Dragon-54" "Sea Dragon-55" "Sea Dragon-56" "Sea Dragon-101" "Sea Dragon-102" "Sea Dragon-103" "Sea Dragon-104" "Sea Dragon-47" "Sea Dragon-48" "Sea Dragon-49" "Sea Dragon-58" "Sea Dragon-59" "Sea Dragon-60" "Sea Dragon-61" "Sea Dragon-62" "Sea Dragon-63" "Sea Dragon-64" "Sea Dragon-65" "Sea Dragon-66" "Sea Dragon-67" "Sea Dragon-68" "Sea Dragon-69" "Sea Dragon-70" 
+			"Sea Serpent-126" "Sea Serpent-127" "Sea Serpent-128" "Sea Serpent-129" "Sea Serpent-130" "Sea Serpent-131" "Sea Serpent-132" "Sea Serpent-133" "Sea Serpent-134" "Sea Serpent-208" "Sea Serpent-209" "Sea Serpent-210" "Sea Serpent-211" "Sea Serpent-212" "Sea Serpent-213" "Sea Serpent-214" "Sea Serpent-215" "Sea Serpent-135" "Sea Serpent-136" "Sea Serpent-137" "Sea Serpent-138" "Sea Serpent-216" "Sea Serpent-405" "Sea Serpent-406" "Sea Serpent-407" "Sea Serpent-408" "Sea Serpent-411" "Sea Serpent-412" "Sea Serpent-413" "Sea Serpent-414" "Sea Serpent-415" "Sea Serpent-416" "Sea Serpent-417" "Sea Serpent-418" "Sea Serpent-419" "Sea Serpent-420" "Sea Serpent-424" "Sea Serpent-425" "Sea Serpent-426" "Sea Serpent-427" "Sea Serpent-428" "Sea Serpent-429" "Sea Serpent-430""Sea Serpent-313" "Sea Serpent-314" "Sea Serpent-315" "Sea Serpent-316" "Sea Serpent-317" "Sea Serpent-318" "Sea Serpent-319" "Sea Serpent-320" "Sea Serpent-321" "Sea Serpent-322" "Sea Serpent-323" "Sea Serpent-324" "Sea Serpent-401" "Sea Serpent-402" "Sea Serpent-403" "Sea Serpent-404" "Sea Serpent-421" "Sea Serpent-422" "Sea Serpent-423" 
+			"Sea Whale-1" "Sea Whale-2" "Sea Whale-3" "Sea Whale-21" "Sea Whale-22" "Sea Whale-23" "Sea Whale-51" "Sea Whale-52" "Sea Whale-53" "Sea Whale-54" "Sea Whale-55" "Sea Whale-56" 
+			"Sea Legendary Dragon-1" "Sea Legendary Dragon-2" "Sea Legendary Dragon-3" "Sea Legendary Dragon-4" "Sea Legendary Dragon-5" "Sea Legendary Dragon-6" "Sea Shark-301" "Sea Shark-302" "Sea Shark-303" "Sea Shark-304" 	
+		}
+	}
+	destroyer = {
+		prefix = ""
+		generic = { "Destroyer" }
+		unique = {
+			"Shouguo""Shou ji""Shoufen""Shourui""Shouzhe""Shoumin"
+			"Shoucheng""Shouxiao""Shouwu""Shouci""Shouxian""Shouqin"
+			"Shoujing""Shouzhong""Shouyun""Shouchong""Shouxuan""Shousui"
+			"Shouxiao""Shouji""Shougong""Shouhong""Shouan""Shouye"
+			"Shouzhao""Shoukuan""Shouyu""Shoujing""Shouxin""Shoude"
+			"Shougong""Shouxian""Shousheng""Shouqin""Shouchun""Shoulong"
+			"Shoufa""Shoujing""Shouyou""Shouyuan""Shouduan""Shouyi"
+			"Shouyi""Shoufu""Shouli""Shouyuan""Shoujiao""Shouren"
+			"Shouying""Shoujian""Shouzhi""Shouzhao""Shouwen""Shouwen"
+			"Shouhong""Shouzhen""Shouji""Shouzheng""Shoujin""Shoushun"
+			"Shouzhe""Shouxue""Shoushao""Shouhan""Shouzhen""Shoumao"
+			"Shouchun""Shourui""Shousong""Shoudeng""Shouyan""Shouy"
+		}
+	}
+	light_cruiser = {
+		prefix = ""
+		generic = { "Light cruiser" }
+		unique = {
+			"Jinghai""Jinghai""Jinghai""Weihai""Zhenghai"
+			"Chonghai""Zhihai""Ruihai""Weihai""Yanhai"
+			"Yihai""Gaunghai""Xinhai""Fenhai""Longhai"
+			"Yinghai""Minhai""Zhenhai""Jianhai""Lihai"
+			"Yuanhai""Anhai""Zhihai""Denhai""Jihai"
+			"Xuanhai""Zhaohai""Jinghai""Suihai""Jinghai"
+			"Shenghai""Baohai""Juhai""Qinghai""Fuhai"
+			"Yonghai""Zhanghai""Honghai""Suhai""Chenghai"
+			"Gonghai""Haohai""Hanhai""Jinghai""Chenghai"
+			"Tianhai""Jinhai""Junhai""Lianghai""Jiehai"
+		}
+	}
+	heavy_cruiser = {
+		prefix = ""
+		generic = { "Heavy cruiser" }
+		unique = {
+			"Jinghai""Jinghai""Jinghai""Weihai""Zhenghai"
+			"Chonghai""Zhihai""Ruihai""Weihai""Yanhai"
+			"Yihai""Gaunghai""Xinhai""Fenhai""Longhai"
+			"Yinghai""Minhai""Zhenhai""Jianhai""Lihai"
+			"Yuanhai""Anhai""Zhihai""Jianhai""Jihai"
+			"Xuanhai""Zhaohai""Jinghai""Suihai""Jinghai"
+			"Shenghai""Baohai""Juhai""Qinghai""Fuhai"
+			"Yonghai""Zhanghai""Honghai""Suhai""Chenghai"
+			"Gonghai""Haohai""Hanhai""Jinghai""Chenghai"
+			"Tianhai""Jinhai""Junhai""Lianghai""Jiehai"
+		}
+	}
+	battle_cruiser = {
+		prefix = ""
+		generic = { "Battle cruiser" }
+		unique = {
+			"Jingyuan""Zhiyuan""Jiyuan""Kangyuan""Weiyuan"
+			"Guangyuan""Zhenyuan""Anyuan""Xuanyuan""Chengyuan"
+			"Liyuan""Yiyuan""Laiyuan""Qingyuan""Liangyuan"
+			"Jinyuan""Changyuan""Shengyuan""Fanyuan""Rongyuan"
+			"Hauyuan""Shiyuan""Chengyuan""Dengyuan""Fuyuan"
+			"Yangyuan""Guyuan""Liyuan""Fengyuan""Taiyuan"
+			"Fuyuan""Xiyuan""Shunyuan""Minyuan""Jieyuan"
+			"Xunyuan""Zhenyuan""Dingyuan""Taiyuan""Jinyuan"
+		}
+	}
+	battleship = {
+		prefix = ""
+		generic = { "Battleship" }
+		unique = {
+			"Jingyuan""Zhiyuan""Jiyuan""Kangyuan""Weiyuan"
+			"Guangyuan""Zhenyuan""Anyuan""Xuanyuan""Chengyuan"
+			"Liyuan""Yiyuan""Laiyuan""Qingyuan""Liangyuan"
+			"Jinyuan""Changyuan""Shengyuan""Fanyuan""Rongyuan"
+			"Hauyuan""Shiyuan""Chengyuan""Dengyuan""Fuyuan"
+			"Yangyuan""Guyuan""Liyuan""Fengyuan""Taiyuan"
+			"Fuyuan""Xiyuan""Shunyuan""Minyuan""Jieyuan"
+			"Xunyuan""Zhenyuan""Dingyuan""Taiyuan""Jinyuan"
+		}
+	}
+	carrier = {
+		prefix = ""
+		generic = { "Carrier" }
+		unique = {
+			"Fubo""Fenyong""Zhaode""Yangwei""Zhenwu"
+			"Fuguo""Jianwu""Polu""Suinan""Wuwei"
+		}
+	}
+
+
+	infantry = {
+		prefix = ""
+		generic = { "Infantry division" }
+		generic_pattern = "UNIT_GENERIC_NAME_QNG"
+		unique = {}
+	}
+	motorized = {
+		prefix = ""
+		generic = { "Motorized infantry division" }
+		generic_pattern = "UNIT_GENERIC_NAME_QNG"
+		unique = {}
+	}
+	mountaineers = {
+		prefix = ""
+		generic = { "Mountain infantry division" }
+		generic_pattern = "UNIT_GENERIC_NAME_QNG"
+		unique = {}
+	}
+	cavalry = {
+		prefix = ""
+		generic = { "Cavalry division" }
+		generic_pattern = "UNIT_GENERIC_NAME_QNG"
+		unique = {}
+	}
+	light_armor = {
+		prefix = ""
+		generic = { "Light armor" }
+		generic_pattern = "UNIT_GENERIC_NAME_QNG"
+		unique = {}
+	}
+}

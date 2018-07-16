@@ -1,0 +1,46 @@
+﻿l_english:
+ 
+ #events
+ qing.1.t:0 "Palace Rebellion"
+ qing.1.d:0 "Pu Yi is just a weak emperor, in the last war, it is under his weak leadership, that the Qing lost the war.\n\nFor the future of the Qing, in order to eliminte the Ming, we must have a strong emperor, the eldest son, Yu, is a suitable candidate."
+ qing.1.a:0 "For the Qing!"
+ 
+ qing.2.t:0 "Pu Yi Trend Unyielding"
+ qing.2.d:0 "In a fierce imperial pre-speech, Pu Yi appoints the eldest son Yu as the new Eight Banners Senate for the Qing army. This means that the Qing military policy as begun to move froward strongly."
+ qing.2.a:0 "For the Qing!"
+ 
+ qing.3.t:0 "The Ming Flinchs!"
+ qing.3.d:0 "The Qing army advanced on the so-called 'demilitarized zone', while the Ming didn't even dare draw a breath."
+ qing.3.a:0 "The Eight Banner Cavalry will soon sweep away the south!"
+ 
+ qing.4.t:0 "The North and South Unite"
+ qing.4.d:0 "The Southern provinces have accepted our rule and become core states."
+ qing.4.a:0 "We must gather after being divided for so long as the world will not rest."#???天下大势，分久必合。
+ 
+ qing.5.t:0 "The Victory of the Communist"
+ qing.5.d:0 "It is time to end the civil war, and move back to the capital."
+ qing.5.a:0 "Very good."
+ 
+ qing.6.t:0 "Comrades of the Qing wish to join the Comintern"
+ qing.6.d:0 "The comrades of our country have made great progress and wish to join the cominterm."
+ qing.6.a:0 "This is a great thing."
+ qing.6.b:0 "Forget it."
+ 
+ qing.7.t:0 "The Qing wishes to join the Allies"
+ qing.7.d:0 "The Qing wishes to join the allies, and they wish to fight side by side with us to eradicate Fascism."
+ qing.7.a:0 "This is a great thing."
+ qing.7.b:0 "Forget it."
+ 
+ qing.8.t:0 "The Qing wishes to join the Axis"
+ qing.8.d:0 "The Qing wishes to join the axis, and they wish to fight side by side with us to eradicate democracy and communism."
+ qing.8.a:0 "This is a great thing."
+ qing.8.b:0 "Forget it."
+ 
+ qing.9.t:0 "Democratic Transformation"
+ qing.9.d:0 "Under the auspices of the Emperor we carried out constitutional reform, the success of the reform marked the democratization of East Asia achieveing further success."
+ qing.9.a:0 "Long live the constitution! Long live the nation! Long live the Emperor!"
+ 
+ qing.10.t:0 "Fascist Transformation"
+ qing.10.d:0 "In the Emperor's decision, the government further reform, Manchu's power has been further expanded."
+ qing.10.a:0 "Long live the Emperor!"
+ 

@@ -1,0 +1,34 @@
+
+state={
+	id=325
+	name="STATE_325" #云南
+	resources={
+		tungsten=10
+		aluminium=20
+	}
+
+	history={
+		owner = MNG
+		add_core_of = MNG
+		victory_points = {
+			1319 10 
+		}
+		victory_points = {
+			7965 3 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+
+	}
+
+	provinces={
+		1114 1172 1196 1319 1383 1522 1653 4501 4559 4937 5009 5072 7446 7606 7965 7976 8023 8126 10346 10413 10776 10819 10863 12262 12282 12789 12841 12898 
+	}
+	manpower=11994500
+	buildings_max_level_factor=1.000
+	state_category=town
+}

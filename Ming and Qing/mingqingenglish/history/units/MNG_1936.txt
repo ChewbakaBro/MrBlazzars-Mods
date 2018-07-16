@@ -1,0 +1,922 @@
+﻿division_template = {
+	name = "Imperial Guard Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Mountain Division"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }	
+		mountaineers = { x = 2 y = 2 }		
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armored Division"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Garrison Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+	}
+	priority = 0
+
+}
+
+division_template = {
+	name = "Marine Corps"
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}	
+}
+
+units = {
+
+#陆 Military Division
+	#南直隶
+	division= {	
+		name = "Imperial Guard 1st Division"
+		location = 11913
+		division_template = "Imperial Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	
+	division= {	
+		name = "Imperial Guard 2nd Division"
+		location = 11913
+		division_template = "Imperial Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Nanjing Division"
+		location = 11913
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Songjiang Division"
+		location = 7014
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "120th Military Division"
+		location = 7014
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	
+	division= {	
+		name = "193rd Military Division"
+		location = 4105
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "191st Military Division"
+		location = 1171
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "192nd Military Division"
+		location = 11937
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	
+	
+	#湖北
+	division= {	
+		name = "1st Military Division"
+		location = 4619
+		division_template = "Imperial Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "8th Military Division"
+		location = 7609
+		division_template = "Imperial Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Armored 3rd Division"
+		location = 7596
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Armored 4th Division"
+		location = 7948
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "101st Military Division"
+		location = 4619
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "132nd Military Division"
+		location = 10474
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "133rd Military Division"
+		location = 10474
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	
+	division= {	
+		name = "171st Military Division"
+		location = 7167
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "173rd Military Division"
+		location = 9934
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+
+	#淮南
+	division= {	
+		name = "10th Military Division"
+		location = 10446
+		division_template = "Imperial Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Armored 1st Division"
+		location = 4158
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Armored 2nd Division"
+		location = 7094
+		division_template = "Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "11th Military Division"
+		location = 4001
+		division_template = "Imperial Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "15th Military Division"
+		location = 7222
+		division_template = "Imperial Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "101st Military Division"
+		location = 10446
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "101st Military Division"
+		location = 4001
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "101st Military Division"
+		location = 7222
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "181st Military Division"
+		location = 11928
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	#四川
+	division= {	
+		name = "2nd Military Division"
+		location = 4925
+		division_template = "Imperial Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "103rd Military Division"
+		location = 4925
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "3rd Military Division"
+		location = 4925
+		division_template = "Imperial Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "122nd Military Division"
+		location = 6999
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "143rd Military Division"
+		location = 4167
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	#西康
+	division= {	
+		name = "116th Military Division"
+		location = 12837
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "117th Military Division"
+		location = 12837
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Mountain 1st Division"
+		location = 2067
+		division_template = "Mountain Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	#云贵
+	division= {	
+		name = "119th Military Division"
+		location = 1319
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "121st Military Division"
+		location = 1319
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "125th Military Division"
+		location = 4504
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "162nd Military Division"
+		location = 10822
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "161st Military Division"
+		location = 1010
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "Mountain 2nd Division"
+		location = 8023
+		division_template = "Mountain Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	#湖南江西
+	division= {	
+		name = "155th Military Division"
+		location = 7101
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "151st Military Division"
+		location = 7097
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "152nd Military Division"
+		location = 3992
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "154th Military Division"
+		location = 7159
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "158th Military Division"
+		location = 1153
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	
+	division= {	
+		name = "213th Military Division"
+		location = 13143
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "210th Military Division"
+		location = 11988
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "214th Military Division"
+		location = 1066
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	#两广
+	division= {	
+		name = "103rd Military Division"
+		location = 7137
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "104th Military Division"
+		location = 1047
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "138th Military Division"
+		location = 1047
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "112th Military Division"
+		location = 10404
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Mountain 3rd Division"
+		location = 9997
+		division_template = "Mountain Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Mountain 4th Division"
+		location = 7192
+		division_template = "Mountain Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Marine Corps 3rd Division"
+		location = 1070
+		division_template = "Marine Corps"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "Marine Corps 4th Division"
+		location = 994
+		division_template = "Marine Corps"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	#福建台湾
+	division= {	
+		name = "115th Military Division"
+		location = 4196
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "118th Military Division"
+		location = 7071
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "123rd Military Division"
+		location = 7186
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "111th Military Division"
+		location = 7186
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Marine Corps 2th Division"
+		location = 12068
+		division_template = "Marine Corps"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	#浙江
+	division= {	
+		name = "5th Military Division"
+		location = 7191
+		division_template = "Imperial Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		name = "113th Military Division"
+		location = 7191
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "7th Military Division"
+		location = 9974
+		division_template = "Imperial Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "111th Military Division"
+		location = 9974
+		division_template = "Garrison Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		name = "Marine Corps 1st Division"
+		location = 1055
+		division_template = "Marine Corps"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+
+#海 Military Division
+	navy = {
+		name = "East China Sea Fleet"
+		base = 7014
+		location = 7014
+		#大姐姐
+		ship = { name = "Jialing" definition = carrier equipment = { carrier_1 = {amount = 1 owner = MNG} } 			
+
+			air_wings = { 
+				cv_fighter_equipment_0 =  { owner = "MNG" amount = 22 }
+				cv_nav_bomber_equipment_1 =  { owner = "MNG" amount = 22 }
+			}
+		}
+		ship = { name = "Pearl River" definition = carrier equipment = { carrier_1 = {amount = 1 owner = MNG} } 			
+
+			air_wings = { 
+				cv_fighter_equipment_0 =  { owner = "MNG" amount = 22 }
+				cv_nav_bomber_equipment_1 =  { owner = "MNG" amount = 22 }
+			}
+		}
+		
+		ship = { name = "Huashan" definition = battleship equipment = { battleship_1 = {amount = 1 owner = MNG } } }
+		ship = { name = "Hengshan" definition = battleship equipment = { battleship_1 = {amount = 1 owner = MNG } } }
+		ship = { name = "Songshan" definition = battleship equipment = { battleship_1 = {amount = 1 owner = MNG } } }
+		ship = { name = "Taishan" definition = battleship equipment = { battleship_1 = {amount = 1 owner = MNG } } }
+		
+		ship = { name = "Mikawa" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Hedong" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Longxi" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Beide" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = MNG} } }
+		
+		ship = { name = "Shangjun" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Hanzhong" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Yunzhong" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Yanmen" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Nanyang" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = MNG} } }
+		#小学生
+		ship = { name = "Lichun" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chunfen" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Lixia" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Xiazhi" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Liqiu" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qiufen" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Lidong" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Dongzhi" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Yushui" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Jingzhe" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qingming" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Guyu" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Xiaoman" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Mangzhong" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Xiaoshu" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Dashu" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chushu" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Bailu" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Hanlu" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Shuangjiang" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Xiaoxue" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Daxue" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Xiaohan" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Dahan" definition = destroyer equipment = { destroyer_2 = {amount = 1 owner = MNG} } }
+	}
+	
+	navy = {
+		name = "East China Sea Submarine Force"
+		base = 9974
+		location = 9974
+		ship = { name = "Chu-1" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-2" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }		
+		ship = { name = "Chu-3" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-4" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-5" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-6" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-7" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-8" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-9" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-10" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-11" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-12" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-13" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-14" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-16" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-15" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-17" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-18" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-19" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-20" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-21" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-22" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-23" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-24" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-25" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-26" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-27" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-28" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-29" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-30" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chu-31" definition = submarine equipment = { submarine_2 = {amount = 1 owner = MNG} } }
+		
+	}
+	
+	navy = {
+		name = "South China Sea Fleet"
+		base = 1047
+		location = 1047
+		#大姐姐
+		ship = { name = "Qiantang" definition = carrier equipment = { carrier_1 = {amount = 1 owner = MNG} } 			
+
+			air_wings = { 
+				cv_fighter_equipment_0 =  { owner = "MNG" amount = 22 }
+				cv_nav_bomber_equipment_1 =  { owner = "MNG" amount = 22 }
+			}
+		}
+		
+		ship = { name = "Lushan" definition = battleship equipment = { battleship_1 = {amount = 1 owner = MNG } } }
+		ship = { name = "Wuyi" definition = battleship equipment = { battleship_1 = {amount = 1 owner = MNG } } }
+		ship = { name = "Changbai" definition = battleship equipment = { battleship_1 = {amount = 1 owner = MNG } } }
+		ship = { name = "Kunlun" definition = battleship equipment = { battleship_1 = {amount = 1 owner = MNG } } }
+		
+		ship = { name = "Hongnong" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Runan" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Julu" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Changsha" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = MNG} } }
+	
+		ship = { name = "Dongjun" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Huaiyang" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Linzi" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Henei" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = MNG} } }
+	
+		#小学生
+		ship = { name = "Chunfeng" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chunyu" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chunxue" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chunyun" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chunwu" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Chunwu" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Nuanfeng" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Nuanyang" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Hanfeng" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Hanxue" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Dongxue" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Dongyun" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qiuyue" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qiuyang" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Xiari" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Xiayu" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Nuanyun" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Hanyun" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = MNG} } }
+	}
+	
+	
+	navy = {
+		name = "South China Sea Submarine Force"
+		base = 1070
+		location = 1070
+		ship = { name = "Qi-1" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-2" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }		
+		ship = { name = "Qi-3" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-4" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-5" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-6" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-7" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-8" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-9" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-10" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-11" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-12" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-13" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-14" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-16" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-15" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-17" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-18" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-19" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-20" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-21" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-22" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-23" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-24" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-25" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-26" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-27" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-28" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-29" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-30" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-31" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		ship = { name = "Qi-32" definition = submarine equipment = { submarine_1 = {amount = 1 owner = MNG} } }
+		
+	}
+
+}
+
+air_wings = {
+	613 = { 
+
+		fighter_equipment_0 = {
+			owner = "MNG" 
+			amount = 200
+		}
+
+
+		CAS_equipment_1 =  {
+			owner = "MNG" 
+			amount = 100
+		}
+
+		tac_bomber_equipment_0 =  {
+			owner = "MNG" 
+			amount = 100
+		}
+	}
+	620 = { 
+
+		fighter_equipment_0 = {
+			owner = "MNG" 
+			amount = 200
+		}
+
+
+		CAS_equipment_1 =  {
+			owner = "MNG" 
+			amount = 100
+		}
+
+		tac_bomber_equipment_0 =  {
+			owner = "MNG" 
+			amount = 100
+		}
+	}
+}
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = 
+{
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "MNG"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "MNG" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "MNG" 
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "MNG" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "MNG" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+
+
+### Ongoing Naval Production Jan 1 1936 ###
+		add_equipment_production = {				
+			equipment = {
+				type = battleship_1
+				creator = "MNG"
+			}
+			requested_factories = 1
+			progress = 0.76
+			amount = 1
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = carrier_1
+
+				creator = "MNG" 
+			}
+			requested_factories = 1
+			progress = 0.86
+
+			amount = 1
+		}
+		add_equipment_production = {				
+			equipment = {
+				type = heavy_cruiser_2
+
+				creator = "MNG" 
+			}
+			requested_factories = 1
+			progress = 0.2
+			amount = 1
+		}		
+		add_equipment_production = {				
+			equipment = {
+				type = destroyer_2
+				creator = "MNG" 
+			}
+			requested_factories = 2
+			progress = 0.7
+			amount = 3
+		}		
+		add_equipment_production = {				
+			equipment = {
+				type = submarine_2
+				creator = "MNG" 
+			}
+			requested_factories = 2
+			progress = 0.7
+			amount = 2
+		}
+
+}
+
+
+
+

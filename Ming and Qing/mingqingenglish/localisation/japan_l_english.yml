@@ -1,0 +1,75 @@
+﻿l_english:
+
+ #global_flag
+ japan_set_fascism:0 "The Emperor won the mutiny\n"
+ japan_set_neutrality:0 "The Constitutional Government won the mutiny\n"
+ 
+ #fraction
+ the_tokyo_moscow_alliance:0 "Japan-Soviet Joint Security Agreement"
+ west_pacific_treaty_organization:0 "West Pacific Treaty"
+
+ #opinion_modifier
+ need_contain_china:0 "We must contain China"
+ japanese_ally_focus:0 "Friendship from Tokyo"
+ 
+ #national focus
+ showa_restoration:0 "Showa Restoration"
+ showa_restoration_desc:0 "Under the sky of Showa Restoration, brave men forge their justice into one. There are million troops in our chests, ready to die for our country like cherry blossoms."
+ #showa_restoration_desc_English: Under the sky of Showa Restoration, brave men forge their justice into one. There are million troops in our chests, ready to die for our country like cherry blossoms.
+
+ japanization_in_korea:0 "North Korea's Imperial Education"
+ japanization_in_korea_desc:0 "Since the beginning of this century, the Korean Peninsula has been incorporated into the empire. We should educate the Koreans about their loyalty to the emperor."
+ research_sharing_with_axis:0 "Research Sharing with the Axis"
+ research_sharing_with_axis_desc:0 "As a member of the same league. We should share advanced technology to accelerate the victory of war."
+ 
+ offshore_balancer_in_east_asia:0 "East Asia Offshort Balancer"
+ offshore_balancer_in_east_asia_desc:0 "An overly powerful China is a huge threat to the empire, and it is the same for the United States and the Soviet Union. That is a advantage for the empire."
+ tokyo_with_moskow:0 "Working with Moscow"
+ tokyo_with_moskow_desc:0 "For the empire, reaching an agreement with moscow will help us to fight the increasingly powerful China."
+ armor_cooperation_with_ussr:0 "Japan-Soviet Army Cooperation"
+ armor_cooperation_with_ussr_desc:0 "The Soviet people are willing to share their armor technology to a certain extent, it is time to make the imperial sword sharper."
+ western_pacific_shield:0 "West Pacific Shield"
+ western_pacific_shield_desc:0 "the security of the empire depends on the strength of the Imperial Navy, and the cooperation with the United States will help stabilize the territorial waters of the empire."
+ naval_cooperation_with_usa:0 "Japan-US Naval Cooperation"
+ naval_cooperation_with_usa_desc:0 "In-depth cooperation with the US Navy will be more effective to enhance the strength of the combined fleet."
+ strengthen_our_relationships:0 "Strengthen our Relationships"
+ strengthen_our_relationships_desc:0 "This concludes the stable treaty of alliance to ensure close relationships with our friends."
+ 
+ yalu_river_defensive_line:0 "Yalu River Defense"
+ yalu_river_defensive_line_desc:0 "The Chinese army is assembling on the Yalu River, and we must be ready for war."
+ japanese_outer_manchuria_effort:0 "Japanese Construction effort in Outer Manchuria"
+ japanese_outer_manchuria_effort_desc:0 "Manchuria is still under the control of the empire. Strengthen the defense in this area to attract attention of the Chinese army."
+ homeland_strengthen:0 "Further strengthening of Mainland Industry"
+ homeland_strengthen_desc:0 "Only some natives truly support the empire, without the support of the natives the empire can not win the war against China."
+ 
+ intervene_ming_qing_war:0 "Intervene in the Ming and Qing War"
+ intervene_ming_qing_war_desc:0 "The war between Ming and Qing has begun, and this is the time when the Empire will increase it's benefits in East Asia."
+ interests_in_manchuria_and_mongolia:0 "Interests in Manchuria and Mongolia"
+ interests_in_manchuria_and_mongolia_desc:0 "If we can obtain Manchuria and Mongolia, the Empire will obtain, and maintain, a solid foothold on the mainland."
+ interests_in_south_china_sea:0 "Interests in the South China Sea"
+ interests_in_south_china_sea_desc:0 "For the future of the Empire, if we can take advantage of the failure of the Ming and seize their overseas colonies, then we will become the strongest power in the West Pacific."
+ take_british_malaya:0 "Take British Malaya"
+ take_british_malaya_desc:0 "For the security of our colonies, we need to control the Straits of Malacca."
+ declare_war_to_ming:0 "Declare war on Ming"
+ declare_war_to_ming_desc:0 "After a long preparation, we need to conquer China."
+ declare_war_to_qing:0 "Declare war on Qing"
+ declare_war_to_qing_desc:0 "After a long preparation, we need to conquer China."
+ 
+ #national spirit
+ soviet_japanese_friendship:0 "Japan-Soviet Friendship"
+ soviet_japanese_friendship_desc:0 ""
+ usa_japanese_friendship:0 "Japan-US Friendship"
+ usa_japanese_friendship_desc:0 ""
+ offshore_balancer:0 "Offshore Balancer"
+ offshore_balancer_desc:0 ""
+ manchukuo_construction:0 "Manchuria's Construction"
+ manchukuo_construction_desc:0 ""
+ 
+ volunteer_in_MQwar:0 "Interfere in the Ming and Qing War"
+ volunteer_in_MQwar_desc:0 ""
+ manchuria_focus:0 "March Northward"
+ manchuria_focus_desc:0 ""
+ south_china_sea_focus:0 "March Southward"
+ south_china_sea_focus_desc:0 ""
+ 
+ 

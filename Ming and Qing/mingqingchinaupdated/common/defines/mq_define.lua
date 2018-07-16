@@ -1,0 +1,2 @@
+NDefines.NCountry.MAJOR_MIN_FACTORIES = 40
+NDefines.NCountry.MIN_MAJOR_COUNTRIES	= 9

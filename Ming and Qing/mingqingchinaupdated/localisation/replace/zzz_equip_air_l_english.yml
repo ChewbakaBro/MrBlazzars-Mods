@@ -1,0 +1,176 @@
+﻿l_english:
+
+#明空军
+ MNG_fighter_equipment_0:0 "天鹅 99"
+ MNG_fighter_equipment_0_short:0 "天鹅 99"
+ 
+ MNG_CAS_equipment_1:0 "大雁 53"
+ MNG_CAS_equipment_1_short:0 "大雁 53"
+ MNG_CAS_equipment_2:0 "大雁 86"
+ MNG_CAS_equipment_2_short:0 "大雁 86"
+ MNG_CAS_equipment_3:0 "大雁 101"
+ MNG_CAS_equipment_3_short:0 "大雁 101"
+ 
+ MNG_cv_CAS_equipment_1:0 "舰载型大雁 54"
+ MNG_cv_CAS_equipment_1_short:0 "大雁 54"
+ MNG_cv_CAS_equipment_2:0 "舰载型大雁 87"
+ MNG_cv_CAS_equipment_2_short:0 "大雁 87"
+ MNG_cv_CAS_equipment_3:0 "舰载型大雁 102"
+ MNG_cv_CAS_equipment_3_short:0 "大雁 102"
+ 
+ MNG_fighter_equipment_1:0 "天鹅 108"
+ MNG_fighter_equipment_1_short:0 "天鹅 108"
+ MNG_fighter_equipment_2:0 "天鹅 121"
+ MNG_fighter_equipment_2_short:0 "天鹅 121"
+ MNG_fighter_equipment_3:0 "天鹅 135"
+ MNG_fighter_equipment_3_short:0 "天鹅 135"
+ 
+ MNG_cv_fighter_equipment_0:0 "舰载型天鹅 100"
+ MNG_cv_fighter_equipment_0_short:0 "天鹅 100"
+ MNG_cv_fighter_equipment_1:0 "舰载型天鹅 109"
+ MNG_cv_fighter_equipment_1_short:0 "天鹅 109"
+ MNG_cv_fighter_equipment_2:0 "舰载型天鹅 122"
+ MNG_cv_fighter_equipment_2_short:0 "天鹅 122"
+ MNG_cv_fighter_equipment_3:0 "舰载型天鹅 136"
+ MNG_cv_fighter_equipment_3_short:0 "天鹅 136"
+ 
+ MNG_nav_bomber_equipment_1:0 "海燕 23"
+ MNG_nav_bomber_equipment_1_short:0 "海燕 23"
+ MNG_nav_bomber_equipment_2:0 "海燕 27"
+ MNG_nav_bomber_equipment_2_short:0 "海燕 27"
+ MNG_nav_bomber_equipment_3:0 "海燕 32"
+ MNG_nav_bomber_equipment_3_short:0 "海燕 32"
+ 
+ MNG_cv_nav_bomber_equipment_1:0 "舰载型海燕 24"
+ MNG_cv_nav_bomber_equipment_1_short:0 "海燕 24"
+ MNG_cv_nav_bomber_equipment_2:0 "舰载型海燕 28"
+ MNG_cv_nav_bomber_equipment_2_short:0 "海燕 28"
+ MNG_cv_nav_bomber_equipment_3:0 "舰载型海燕 33"
+ MNG_cv_nav_bomber_equipment_3_short:0 "海燕 33"
+ 
+ MNG_tac_bomber_equipment_0:0 "杜鹃 1"
+ MNG_tac_bomber_equipment_0_short:0 "杜鹃 1"
+ 
+ MNG_heavy_fighter_equipment_1:0 "丹顶鹤 109"
+ MNG_heavy_fighter_equipment_1_short:0 "丹顶鹤 109"
+ MNG_heavy_fighter_equipment_2:0 "丹顶鹤 122"
+ MNG_heavy_fighter_equipment_2_short:0 "丹顶鹤 122"
+ MNG_heavy_fighter_equipment_3:0 "丹顶鹤 136"
+ MNG_heavy_fighter_equipment_3_short:0 "丹顶鹤 136"
+ 
+
+ MNG_tac_bomber_equipment_1:0 "杜鹃 8"
+ MNG_tac_bomber_equipment_1_short:0 "杜鹃 8"
+ MNG_tac_bomber_equipment_2:0 "杜鹃 16"
+ MNG_tac_bomber_equipment_2_short:0 "杜鹃 16"
+ MNG_tac_bomber_equipment_3:0 "杜鹃 21"
+ MNG_tac_bomber_equipment_3_short:0 "杜鹃 21"
+ 
+ MNG_strat_bomber_equipment_1:0 "凤凰 1"
+ MNG_strat_bomber_equipment_1_short:0 "凤凰 1"
+ MNG_strat_bomber_equipment_2:0 "凤凰 3"
+ MNG_strat_bomber_equipment_2_short:0 "凤凰 3"
+ MNG_strat_bomber_equipment_3:0 "凤凰 6"
+ MNG_strat_bomber_equipment_3_short:0 "凤凰 6"
+ 
+ MNG_jet_fighter_equipment_1:0 "孔雀 1"
+ MNG_jet_fighter_equipment_1_short:0 "孔雀 1"
+ MNG_jet_fighter_equipment_2:0 "孔雀 3"
+ MNG_jet_fighter_equipment_2_short:0 "孔雀 3"
+ 
+ MNG_jet_tac_bomber_equipment_1:0 "鹰隼 2"
+ MNG_jet_tac_bomber_equipment_1_short:0 "鹰隼 2"
+ MNG_jet_tac_bomber_equipment_2:0 "鹰隼 5"
+ MNG_jet_tac_bomber_equipment_2_short:0 "鹰隼 5"
+ 
+ MNG_jet_strat_bomber_equipment_1:0 "大鹏 1"
+ MNG_jet_strat_bomber_equipment_1_short:0 "大鹏 1"
+ 
+ MNG_transport_plane:0 "鸟巢"
+ 
+ #清空军
+ QNG_fighter_equipment_0:0 "晴空 31"
+ QNG_fighter_equipment_0_short:0 "晴空 31"
+ 
+ QNG_CAS_equipment_1:0 "天雷 2"
+ QNG_CAS_equipment_1_short:0 "天雷 2"
+ QNG_CAS_equipment_2:0 "天雷 5"
+ QNG_CAS_equipment_2_short:0 "天雷 5"
+ QNG_CAS_equipment_3:0 "天雷 9"
+ QNG_CAS_equipment_3_short:0 "天雷 9"
+ 
+ QNG_cv_CAS_equipment_1:0 "空母型天雷 2"
+ QNG_cv_CAS_equipment_1_short:0 "天雷 2"
+ QNG_cv_CAS_equipment_2:0 "空母型天雷 5"
+ QNG_cv_CAS_equipment_2_short:0 "天雷 5"
+ QNG_cv_CAS_equipment_3:0 "空母型天雷 9"
+ QNG_cv_CAS_equipment_3_short:0 "天雷 9"
+ 
+ QNG_fighter_equipment_1:0 "晴空 43"
+ QNG_fighter_equipment_1_short:0 "晴空 43"
+ QNG_fighter_equipment_2:0 "晴空 50"
+ QNG_fighter_equipment_2_short:0 "晴空 50"
+ QNG_fighter_equipment_3:0 "晴空 58"
+ QNG_fighter_equipment_3_short:0 "晴空 58"
+ 
+ QNG_cv_fighter_equipment_0:0 "空母型晴空 31"
+ QNG_cv_fighter_equipment_0_short:0 "晴空 31"
+ QNG_cv_fighter_equipment_1:0 "空母型晴空 43"
+ QNG_cv_fighter_equipment_1_short:0 "晴空 43"
+ QNG_cv_fighter_equipment_2:0 "空母型晴空 50"
+ QNG_cv_fighter_equipment_2_short:0 "晴空 50"
+ QNG_cv_fighter_equipment_3:0 "空母型晴空 58"
+ QNG_cv_fighter_equipment_3_short:0 "晴空 58"
+ 
+ QNG_nav_bomber_equipment_1:0 "海啸 22"
+ QNG_nav_bomber_equipment_1_short:0 "海啸 22"
+ QNG_nav_bomber_equipment_2:0 "海啸 28"
+ QNG_nav_bomber_equipment_2_short:0 "海啸 28"
+ QNG_nav_bomber_equipment_3:0 "海啸 31"
+ QNG_nav_bomber_equipment_3_short:0 "海啸 31"
+ 
+ QNG_cv_nav_bomber_equipment_1:0 "空母型海啸 22"
+ QNG_cv_nav_bomber_equipment_1_short:0 "海啸 22"
+ QNG_cv_nav_bomber_equipment_2:0 "空母型海啸 28"
+ QNG_cv_nav_bomber_equipment_2_short:0 "海啸 28"
+ QNG_cv_nav_bomber_equipment_3:0 "空母型海啸 31"
+ QNG_cv_nav_bomber_equipment_3_short:0 "海啸 31"
+ 
+ QNG_tac_bomber_equipment_0:0 "落雨 23"
+ QNG_tac_bomber_equipment_0_short:0 "落雨 23"
+ 
+ QNG_heavy_fighter_equipment_1:0 "台风 78"
+ QNG_heavy_fighter_equipment_1_short:0 "台风 78"
+ QNG_heavy_fighter_equipment_2:0 "台风 92"
+ QNG_heavy_fighter_equipment_2_short:0 "台风 92"
+ QNG_heavy_fighter_equipment_3:0 "台风 100"
+ QNG_heavy_fighter_equipment_3_short:0 "台风 100"
+ 
+ QNG_tac_bomber_equipment_1:0 "落雨 26"
+ QNG_tac_bomber_equipment_1_short:0 "落雨 26"
+ QNG_tac_bomber_equipment_2:0 "落雨 32"
+ QNG_tac_bomber_equipment_2_short:0 "落雨 32"
+ QNG_tac_bomber_equipment_3:0 "落雨 36"
+ QNG_tac_bomber_equipment_3_short:0 "落雨 36"
+ 
+ QNG_strat_bomber_equipment_1:0 "雷鸣 19"
+ QNG_strat_bomber_equipment_1_short:0 "雷鸣 19"
+ QNG_strat_bomber_equipment_2:0 "雷鸣 23"
+ QNG_strat_bomber_equipment_2_short:0 "雷鸣 23"
+ QNG_strat_bomber_equipment_3:0 "雷鸣 32"
+ QNG_strat_bomber_equipment_3_short:0 "雷鸣 32"
+ 
+ QNG_jet_fighter_equipment_1:0 "疾风 1"
+ QNG_jet_fighter_equipment_1_short:0 "疾风 1"
+ QNG_jet_fighter_equipment_2:0 "疾风 2"
+ QNG_jet_fighter_equipment_2_short:0 "疾风 2"
+ 
+ QNG_jet_tac_bomber_equipment_1:0 "闪电 1"
+ QNG_jet_tac_bomber_equipment_1_short:0 "闪电 1"
+ QNG_jet_tac_bomber_equipment_2:0 "闪电 3"
+ QNG_jet_tac_bomber_equipment_2_short:0 "闪电 3"
+ 
+ QNG_jet_strat_bomber_equipment_1:0 "瑞雪 1"
+ QNG_jet_strat_bomber_equipment_1_short:0 "瑞雪 1"
+ 
+ QNG_transport_plane:0 "天都"

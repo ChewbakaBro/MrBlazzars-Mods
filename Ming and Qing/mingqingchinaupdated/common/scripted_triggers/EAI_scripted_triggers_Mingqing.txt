@@ -1,0 +1,13 @@
+no_border = {
+	NOT = { any_neighbor_state = { NOT = { is_controlled_by = ROOT } } } 
+}
+
+no_enemy_border = {
+	NOT = { any_neighbor_state = { CONTROLLER = { has_war_with = ROOT } } }
+}
+
+available_state = {
+	is_controlled_by = ROOT 
+	free_building_slots = { building = industrial_complex size > 0 include_locked = no } 
+	free_building_slots = { building = arms_factory size > 0 include_locked = no } 
+}

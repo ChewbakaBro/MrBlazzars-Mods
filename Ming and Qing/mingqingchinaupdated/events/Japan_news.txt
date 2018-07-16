@@ -1,0 +1,226 @@
+﻿# JAPAN NEWS
+
+add_namespace = jpnews
+
+#东京兵变-中立
+news_event = {
+	id = jpnews.0
+	title = jpnews.0.t
+	desc = jpnews.0.d
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	picture = GFX_news_226_coup
+	
+	option = {
+		name = jpnews.0.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = jpnews.0.b
+		trigger = { TAG = JAP }
+	}
+
+}
+
+#东京兵变-法西斯
+news_event = {
+	id = jpnews.1
+	title = jpnews.1.t
+	desc = jpnews.1.d
+	
+	major = yes
+	
+	picture = GFX_news_226_coup
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = jpnews.1.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = jpnews.1.b
+		trigger = { TAG = JAP }
+	}
+}
+
+#日苏合作
+news_event = {
+	id = jpnews.2
+	title = jpnews.2.t
+	desc = jpnews.2.d
+	
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	picture = GFX_news_sov_with_jap
+	
+	option = {
+		name = jpnews.2.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+				TAG = SOV
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = jpnews.2.b
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = jpnews.2.c
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = jpnews.2.e
+		trigger = {
+			OR = {
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+}
+
+#日美合作
+news_event = {
+	id = jpnews.3
+	title = jpnews.3.t
+	desc = jpnews.3.d
+	
+	picture = GFX_news_usa_with_jap
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = jpnews.3.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+				TAG = USA
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = jpnews.3.b
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = jpnews.3.c
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = jpnews.3.e
+		trigger = {
+			OR = {
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+}
+
+#日苏结盟
+news_event = {
+	id = jpnews.4
+	title = jpnews.4.t
+	desc = jpnews.4.d
+	
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = jpnews.4.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+				TAG = SOV
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = jpnews.4.b
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = jpnews.4.c
+		trigger = { TAG = SOV }
+	}
+	option = {
+		name = jpnews.4.e
+		trigger = {
+			OR = {
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+}
+
+#日美结盟
+news_event = {
+	id = jpnews.5
+	title = jpnews.5.t
+	desc = jpnews.5.d
+	
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = jpnews.5.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+				TAG = USA
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+	option = {
+		name = jpnews.5.b
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = jpnews.5.c
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = jpnews.5.e
+		trigger = {
+			OR = {
+				TAG = MNG
+				TAG = QNG
+			}
+		}
+	}
+}
+
+
+

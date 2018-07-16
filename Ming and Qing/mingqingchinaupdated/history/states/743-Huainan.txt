@@ -1,0 +1,60 @@
+state={
+	id=743
+	name="STATE_743" #淮南
+	
+	history={
+		owner = MNG
+		add_core_of = MNG
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			air_base = 6
+			dockyard = 2
+			arms_factory = 1
+		
+			10446 = {
+				bunker = 1
+			}
+			10434 = {
+				bunker = 1
+			}
+			4158 = {
+				bunker = 1
+			}
+			10064 = {
+				bunker = 1
+			}
+			12036 = {
+				bunker = 1
+			}
+			7094 = {
+				bunker = 1
+			}
+			1001 = {
+				bunker = 1
+			}
+			7181 = {
+				bunker = 1
+			}
+			10095 = {
+				bunker = 1
+			}
+			9953 = {
+				bunker = 1
+			}
+		}
+		victory_points = { 
+			7222 5 
+		}
+		victory_points = { 
+			4148 3 
+		}
+	}
+	
+	provinces={
+		1001 1083 1089 1146 4001 4091 4148 4158 4203 7035 7094 7181 7222 9953 10008 10017 10064 10095 10434 10446 11928 11994 12036 12061 12426 
+	}
+	manpower=15563400
+	buildings_max_level_factor=1.000
+	state_category=city
+}

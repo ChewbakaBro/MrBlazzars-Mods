@@ -1,0 +1,244 @@
+﻿capital = 613 #南京
+
+OOB = "MNG_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	
+	marines = 1
+	
+	trench_warfare = 1
+	
+	gw_artillery = 1
+	interwar_antiair = 1
+	interwar_antitank = 1
+	
+	gwtank = 1
+	basic_light_tank = 1
+	
+	cv_early_fighter = 1
+	cv_CAS1 = 1
+	cv_naval_bomber1 = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	basic_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	transport = 1
+	base_strike = 1
+}
+
+set_convoys = 200
+set_national_unity = 0.65
+set_research_slots = 3
+
+add_ideas = {
+	communism_rising
+	MNG_not_unified_china
+	MNG_ww1_winner
+	MNG_great_depression
+}
+
+set_politics = {
+	parties = {
+		democratic = { 
+			popularity = 5
+		}
+
+		fascism = {
+			popularity = 5
+		}
+		
+		communism = {
+			popularity = 15
+		}
+		
+		neutrality = { 
+			popularity = 75
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = INS
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = CAM
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = LAO
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = VIN
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = LUZ
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
+	}
+	set_autonomy = {
+		target = SIA
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
+	}
+	else = {
+		puppet = INS
+		puppet = CAM
+		puppet = LAO
+		puppet = VIN
+		puppet = LUZ
+		puppet = SIA
+	}
+}
+
+
+
+create_country_leader = {
+	name = "Zhu You Rong"
+	desc = ""
+	picture = "gfx/leaders/MNG/Portrait_Ming_Zhu_You_Rong.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		popular_figurehead
+	}
+}
+
+create_country_leader = {
+	name = "Mao Ze Dong"
+	desc = ""
+	picture = "gfx/leaders/MNG/Portrait_Ming_Mao_Ze_Dong.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
+create_field_marshal = {
+	name = "Zhang Zhao Xian"
+	portrait_path = "gfx/leaders/MNG/Portrait_Ming_Zhangzhaoxian.dds"
+	skill = 3
+	traits = { defensive_doctrine }
+}
+
+create_field_marshal = {
+	name = "Chu Yunfei"
+	portrait_path = "gfx/leaders/MNG/Portrait_Shanxi_Generic_land_Chu_Yunfei.dds"
+	skill = 9
+	traits = { logistics_wizard offensive_doctrine defensive_doctrine fast_planner thorough_planner organisational_leader inspirational_leader }
+}
+
+create_field_marshal = {
+	name = "Li Yunlong"
+	portrait_path = "gfx/leaders/MNG/liyunlong.tga"
+	skill = 9
+	traits = { logistics_wizard offensive_doctrine defensive_doctrine fast_planner thorough_planner organisational_leader inspirational_leader }
+}
+
+create_field_marshal = {
+	name = "Li Pin Xian"
+	portrait_path = "gfx/leaders/MNG/Portrait_Ming_Lipinxian.dds"
+	skill = 3
+	traits = { offensive_doctrine }
+}
+
+create_corps_commander = {
+	name = "Liu Xiang"
+	portrait_path = "gfx/leaders/MNG/Portrait_Ming_Liuxiang.dds"
+	skill = 2
+	traits = { trickster }
+}
+
+create_corps_commander = {
+	name = "Sun Liren"
+	portrait_path = "gfx/leaders/MNG/Portrait_Ming_Sunliren.dds"
+	skill = 2
+	traits = { hill_fighter }
+}
+
+create_corps_commander = {
+	name = "Tang Shengzhi"
+	portrait_path = "gfx/leaders/MNG/Portrait_Ming_Tangshengzhi.dds"
+	skill = 2
+	traits = { urban_assault_specialist }
+}
+
+create_corps_commander = {
+	name = "Hu Tsung-nan"
+	portrait_path = "gfx/leaders/MNG/Portrait_Ming_Huzongnan.dds"
+	skill = 2
+	traits = { desert_fox }
+}
+
+create_corps_commander = {
+	name = "Deng Xihou"
+	portrait_path = "gfx/leaders/MNG/Portrait_Ming_Dengxihou.dds"
+	skill = 1
+	traits = { commando }
+}
+
+create_corps_commander = {
+	name = "Wu Qiwei"
+	portrait_path = "gfx/leaders/MNG/Portrait_Ming_Wuqiwei.dds"
+	skill = 1
+	traits = { trait_engineer }
+}
+
+create_navy_leader = {
+	name = "Su Zi Yi"
+	portrait_path = "gfx/leaders/MNG/Portrait_Ming_Suziyi.dds"
+	traits = { spotter }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Xue Ling Jun"
+	portrait_path = "gfx/leaders/MNG/Portrait_Ming_Xuelinjun.dds"
+	traits = { ironside }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Zhan Lin Hao"
+	portrait_path = "gfx/leaders/MNG/Portrait_Ming_Zhanlinhao.dds"
+	traits = { seawolf }
+	skill = 3
+}
+
+
+

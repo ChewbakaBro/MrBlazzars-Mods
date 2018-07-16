@@ -1,0 +1,177 @@
+﻿l_english:
+ 
+ #event
+ ming.1.t:0 "The Qing Enters the Demilitarized Zone"
+ ming.1.d:0 "The domestic situation is unstable, the British and French concessions make it difficult for us to make a strong response, and now the Qing prepares for war, we need time to prepare the Military."
+ ming.1.a:0 "Shameful concession"
+ 
+ ming.1001.t:0 "Adjustment to Policies"
+ ming.1001.d:0 "The move to take North China is undoubtedly dangerous, therefore we must adjust our policies, to provide aid to the country."
+ ming.1001.a:0 "Ok"
+ 
+ ming.1002.t:0 "Aid from the Soviets"
+ ming.1002.d:0 "Stalin met with out ambassador, he said the Soviet Union would consider their adjusting the Far East policy, but he regretted the fake and cruel treay of versailles, saying the Soviet Union is willing to provide some military assistance to us."
+ ming.1002.a:0 "Something is better then nothing."
+ 
+ ming.1003.t:0 "Adjustment to Policies"
+ ming.1003.d:0 "The move to take Hauibei is undoubtedly dangerous, therefore we must adjust our policies, to provide aid to the country."
+ ming.1003.a:0 "Ok"
+ 
+ ming.1004.t:0 "Assistance from Japan"
+ ming.1004.d:0 "The Prime Minister Kouki Hirota met with our ambassador, saying Japan will consider adjusting their policy toward the Qing, but he regretted the fake and cruel treay of versailles, saying Japan is willing to provide some military assistance to us."
+ ming.1004.a:0 "Something is better then nothing."
+ 
+ ming.2.t:0 "Return to the Capital"
+ ming.2.d:0 "The Qing has fallen today. China is Divided no longer. We are now Unified"
+ ming.2.a:0 "The whole country is unified under one emperor"
+ 
+ ming.3.t:0 "Whether to move the capital back to Beijing"
+ ming.3.d:0 "After the unification war, we recovered the motherland of the Central Plains, the government some people thing should be in Beijing; But some thing moving the capital to Beijing will be dangerous as the Japanese hold Lushun."
+ ming.3.a:0 "Well, all in Beijing"
+ ming.3.b:0 "Well, wait for us to retake to Lushun"
+ 
+ ming.4.t:0 "Soviet and Japanese are ready to attack the Qing"
+ ming.4.d:0 "Recently, with our army triumphantly on the motherland, the Japanese and Soviet ambassadors, respectively, have submitted their preparations for war against the Qing, they expressed no intention to territorial claims of North China; However, they hope they can take land from the Qing once it is defeated."
+ ming.4.a:0 "Our troops are too far from Xinjiang, Mongolia and Manchuria, and we have no better choice"
+ 
+ ming.5.t:0 "The Soviet Union declares was on the Qing"
+ ming.5.d:0 "Due to the Qing army's perfromance in the Ming and Qing wars, the Soviet Union has seen clearly the Qing is a weak and pathetic country.\n\nThe Communist Party of China decided to declare war on the Qing and proclaimed two puppet regimes in Xinjiang and Mongolia to safeguard the security of the Soviet Union's Far East border and prevent the forces of the Ming from going north."
+ ming.5.a:0 "Declare war on the Qing"
+ 
+ ming.6.t:0 "Japan declares war on the Qing"
+ ming.6.d:0 "Due to the Qing army's perfromance in the Ming and Qing wars, Japan has seen clearly the Qing is a weak and pathetic country.\n\nThe Japanese army decided to declare war on the Qing, to support the Manchu aristocracy to establish a pupper regime, and to prepare for the next mainland policy."
+ ming.6.a:0 "Declare war on the Qing"
+ 
+ ming.7.t:0 "We were divided up"
+ ming.7.d:0 "The performance of the Qing army was terrible, and the Japanese, Soviet Union, and Ming divided the Qing territory among themselves.."
+ ming.7.a:0 "Determined by the Emperor"#作者钦定的
+ 
+ ming.701.t:0 "The Qing have surrendered to us"
+ ming.701.d:0 "Last night, the city of Beijing launch a coup, military action on the behalf of pseydo-emperor Yu Lan, along with other members of the aristocrats, caused a coup, Pu Yi escaped from Beijing and disappeared with a trace."
+ ming.701.a:0 "Vile, that should be our land!"
+ 
+ ming.8.t:0 "Southern Coastal Provinces become Core States"
+ ming.8.d:0 "With the continuous development of the Ming Souther COastal provinces, they have became an indispensable part of the Ming."
+ ming.8.a:0 "Southern Coastal provinces of the Ming"
+ 
+ ming.9.t:0 "The Ming requests Kwantung Leased Territory be given to them."
+ ming.9.d:0 "The Ming believes that the Kwantung Leased Territory is their territory from ancient times, and requests us to return it to them."
+ ming.9.a:0 "Ok"
+ ming.9.b:0 "Not good"
+ 
+ ming.901.t:0 "Japan accepted our request"
+ ming.901.d:0 "The ambassador of Japan submitted a note to us that have accepted our request for Kanto."
+ ming.901.a:0 "Ok"
+ 
+ ming.902.t:0 "Japan has rejected our request"
+ ming.902.d:0 "Japan refused our request for Kanto."
+ ming.902.a:0 "Ok"
+ 
+ ming.10.t:0 "The ultimatum of the Zhungaer Khanate"
+ ming.10.d:0 "The Ming wish to annex us"
+ ming.10.a:0 "Ok"
+ ming.10.b:0 "No"
+ 
+ ming.1005.t:0 "Zhungaer has accepted our request"
+ ming.1005.d:0 ""
+ ming.1005.a:0 "Ok"
+ 
+ ming.1006.t:0 "Zhungaer has rejected our request"
+ ming.1006.d:0 ""
+ ming.1006.a:0 "Ok"
+ 
+ ming.12.t:0 "Aid from the East"
+ ming.12.d:0 ""
+ ming.12.a:0 "Ok"
+ 
+ ming.13.t:0 "Indian Forward Bloc is prepared"
+ ming.13.d:0 "They want us to give military support as soon as possible, reliance only on peacful struggle to gain indepedence is not enough"
+ ming.13.a:0 "Ok"
+ 
+ ming.14.t:0 "Treament of India"
+ ming.14.d:0 "When we intend to enter India, we should consider how to deal with this huge country, should we divide the governance of it? Or consider keeping it whole?"
+ ming.14.a:0 "Split India"
+ ming.14.b:0 "Respect the integrity of India"
+ ming.14.c:0 "Direct occupation is better"
+ 
+ ming.1501.t:0 "Establishment of Assam"
+ ming.1501.d:0 ""
+ ming.1501.a:0 "Good"
+ 
+ ming.1502.t:0 "Establishment of Bangladesh"
+ ming.1502.d:0 ""
+ ming.1502.a:0 "Good"
+ 
+ ming.1503.t:0 "Establishment of Delhi"
+ ming.1503.d:0 ""
+ ming.1503.a:0 "Good"
+ 
+ ming.1504.t:0 "Establishment of Pakistan"
+ ming.1504.d:0 ""
+ ming.1504.a:0 "Good"
+ 
+ ming.1505.t:0 "Establishment of Kashmir"
+ ming.1505.d:0 ""
+ ming.1505.a:0 "Good"
+ 
+ ming.1506.t:0 "Establishment of Tamil"
+ ming.1506.d:0 ""
+ ming.1506.a:0 "Good"
+ 
+ ming.1507.t:0 "Establishment of Mumbai"
+ ming.1507.d:0 ""
+ ming.1507.a:0 "Good"
+ 
+ ming.1508.t:0 "Establishment of Burma"
+ ming.1508.d:0 ""
+ ming.1508.a:0 "Good"
+ 
+ ming.1509.t:0 "Establishment of Orissa"
+ ming.1509.d:0 ""
+ ming.1509.a:0 "Good"
+ 
+ ming.21.t:0 "Negotiate with the Communists"
+ ming.21.d:0 ""
+ ming.21.a:0 "Undermine the bourgeois power under the monarchy"
+ ming.21.b:0 "Revolution in the End"
+ 
+ ming.22.t:0 "Comrades of the Ming want to join the Cominterm"
+ ming.22.d:0 "Our comrades in the Ming have made great progress and they want to join the Comintern"
+ ming.22.a:0 "This is a great thing."
+ ming.22.b:0 "Forget it."
+ 
+ ming.2301.t:0 "Communist support has risen"
+ ming.2301.d:0 ""
+ ming.2301.a:0 "Follow the footsteps of the motherland."
+ 
+ ming.2302.t:0 "Democracy support has risen"
+ ming.2302.d:0 ""
+ ming.2302.a:0 "Follow the footsteps of the motherland."
+ 
+ ming.24.t:0 "The Rise of Trotskyism"
+ ming.24.d:0 "The eternal revolution is the mission of the proletarian regime in this world, and we must help the whole world adopt the red flag!"
+ ming.24.a:0 "Ok"
+ 
+ ming.25.t:0 "The Ming wants to join the Allies"
+ ming.25.d:0 "Do we agree?"
+ ming.25.a:0 "Ok"
+ 
+ ming.26.t:0 "The Ming wants to join the Axis"
+ ming.26.d:0 "The Ming wishes to join the Axis, and they wish to fight side by side with us to eradicate democracy and communism."
+ ming.26.a:0 "This is a great thing."
+ ming.26.b:0 "Forget it."
+ 
+ ming.27.t:0 "Invitation from the Ming"
+ ming.27.d:0 ""
+ ming.27.a:0 "This is a great thing."
+ ming.27.b:0 "Forget it."
+ 
+ ming.28.t:0 "Democractic Transformation"#民主化
+ ming.28.d:0 "We have decided to make Democracy the foundation of our country."
+ ming.28.a:0 "Long live the Constitution! Long live the nation! Long live his Majesty!"#宪法万岁！国民万岁！陛下万岁！
+ 
+ ming.29.t:0 "Fascist Transformation"#法西斯化
+ ming.29.d:0 "We will use our sword to obtain more land."
+ ming.29.a:0 "Long live his Majesty!"#陛下万岁！
+ 
+ 

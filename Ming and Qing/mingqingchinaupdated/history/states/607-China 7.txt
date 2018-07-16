@@ -1,0 +1,39 @@
+
+state={
+	id=607
+	name="STATE_607" #河南
+	
+	resources={
+		steel=30
+		aluminium=35
+		chromium=5
+		oil=5
+	}
+	
+	history={
+		owner = QNG
+		add_core_of = MNG
+		add_core_of = QNG
+		set_demilitarized_zone = yes
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+
+		}
+		victory_points = {
+			9958 3 
+		}
+		victory_points = {
+			11931 2 
+		}
+
+	}
+
+	provinces={
+		1004 1139 1603 4066 4114 4144 4519 4547 4606 6932 7074 7129 7459 7508 7540 7568 7656 9958 10364 11931 12012 
+	}
+	manpower=24289800
+	buildings_max_level_factor=1.000
+	state_category=city
+}

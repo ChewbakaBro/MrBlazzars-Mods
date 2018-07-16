@@ -1,0 +1,7 @@
+﻿l_english:
+ INS_subject:0 "$OVERLORDADJ$East India"
+ INS_subject_DEF:0 "$OVERLORDADJ$East India"
+ INS_MNG_autonomy_dominion:0 "Lanfang Chinese Union"
+ INS_MNG_autonomy_colony:0 "Lanfang Chinese Union"
+ INS_MNG_autonomy_puppet:0 "Lanfang Chinese Union"
+ INS_MNG_autonomy_integrated_puppet:0 "Lanfang Chinese union"

@@ -1,0 +1,36 @@
+﻿capital = 430
+
+set_politics = {
+	parties = {
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0
+		}
+		
+		neutrality = { 
+			popularity = 100
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+		name = "Abdul Kumar Sinha"
+		desc = ""
+		picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+		}
+}

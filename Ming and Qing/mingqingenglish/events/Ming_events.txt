@@ -1,0 +1,2139 @@
+﻿###########################
+# Ming Events
+###########################
+
+add_namespace = ming
+
+#明的答复
+country_event = {
+	id = ming.1
+	title = ming.1.t
+	desc = ming.1.d
+	
+	picture = GFX_report_event_chinese_officers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.1.a
+		ai_chance = { factor = 100 }
+		QNG = { 
+			country_event = qing.3
+		}
+	}
+}
+
+#苏联对清敌对
+country_event = {
+	id = ming.1001
+	title = ming.1001.t
+	desc = ming.1001.d
+	 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.1001.a
+		ai_chance = { factor = 100 }
+		SOV = {
+			add_ai_strategy = {
+				type = antagonize
+				id = "QNG"			
+				value = 2000
+			}
+			MNG = { country_event = { id = ming.1002 days = 20 } }
+		}
+	}
+}
+
+#苏联的援助
+country_event = {
+	id = ming.1002
+	title = ming.1002.t
+	desc = ming.1002.d
+	
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.1002.a
+		ai_chance = { factor = 100 }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 producer = SOV }
+		add_equipment_to_stockpile = { type = support_equipment_1 amount = 100 producer = SOV }
+	}
+}
+
+#日本对清敌对
+country_event = {
+	id = ming.1003
+	title = ming.1003.t
+	desc = ming.1003.d
+	 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.1003.a
+		ai_chance = { factor = 100 }
+		JAP = {
+			add_ai_strategy = {
+				type = antagonize
+				id = "QNG"			
+				value = 2000
+			}
+		}
+		MNG = { country_event = { id = ming.1004 days = 10 } }
+	}
+}
+
+#日本的援助
+country_event = {
+	id = ming.1004
+	title = ming.1004.t
+	desc = ming.1004.d
+	
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.1004.a
+		ai_chance = { factor = 100 }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 producer = JAP }
+		add_equipment_to_stockpile = { type = support_equipment_1 amount = 100 producer = JAP }
+	}
+}
+
+#重返大明门
+country_event = {
+	id = ming.2
+	title = ming.2.t
+	desc = ming.2.d
+	
+	picture = GFX_report_event_chinese_army_training
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.2.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			country_event = { days = 3 id = ming.3 }
+		}
+	}
+}
+
+#胜利后是否迁都
+country_event = {
+	id = ming.3
+	title = ming.3.t
+	desc = ming.3.d
+	
+	picture = GFX_report_event_soldiers_marching
+	 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.3.a
+		ai_chance = { factor = 20 }
+		set_capital = 608
+	}
+	option = {
+		name = ming.3.b
+		ai_chance = { factor = 80 }
+	}
+}
+
+#苏联和日本准备对清宣战
+country_event = {
+	id = ming.4
+	title = ming.4.t
+	desc = ming.4.d
+	
+	picture = GFX_report_event_tanks_mexico_city
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = MNG
+		QNG = { has_offensive_war_with = MNG }
+		country_exists = QNG
+		QNG = { is_ai = yes }
+		JAP = { is_ai = yes }
+		QNG = { surrender_progress > 0.2 }
+		OR = {
+			NOT = { 607 = { is_controlled_by = QNG } }
+			NOT = { 606 = { is_controlled_by = QNG } }
+			NOT = { 598 = { is_controlled_by = QNG } }
+		}
+	}
+	
+	
+	option = {
+		name = ming.4.a
+		SOV = {
+			country_event = { id = ming.5 days = 20 }
+		}
+		JAP = {
+			country_event = { id = ming.6 days = 20 }
+		}
+		hidden_effect = {
+			QNG = {
+				remove_ideas = han_nationalism
+			}
+			set_global_flag = divide_up_qing
+		}
+	}
+}
+
+#苏联对清宣战
+country_event = {
+	id = ming.5
+	title = ming.5.t
+	desc = ming.5.d
+	 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		has_global_flag = divide_up_qing
+	}
+	
+	option = {
+		name = ming.5.a
+		ai_chance = { factor = 1 }
+		SOV = {
+			declare_war_on = {
+				target = QNG
+				type = annex_everything
+			}
+		}
+	}
+}
+
+#日本对清宣战
+country_event = {
+	id = ming.6
+	title = ming.6.t
+	desc = ming.6.d
+	 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = JAP
+		has_global_flag = divide_up_qing
+	}
+	
+	option = {
+		name = ming.6.a
+		ai_chance = { factor = 1 }
+		JAP = {
+				declare_war_on = {
+					target = QNG
+					type = annex_everything
+				}
+		}
+	}
+}
+
+#清决定向明投降
+country_event = {
+	id = ming.7
+	title = ming.7.t
+	desc = ming.7.d
+	
+	picture = GFX_report_event_japanese_chinese_surrender
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		AND= {
+			tag = QNG
+			QNG = { has_offensive_war_with = MNG }
+			QNG = { has_defensive_war_with = SOV }
+			QNG = { has_defensive_war_with = JAP }
+			QNG = { is_ai = yes }
+		}
+	}
+	
+	mean_time_to_happen = { days = 20 }
+	
+	option = {
+		name = ming.7.a
+		ai_chance = { factor = 100 }
+		MNG = { country_event = { id = ming.701 } }
+		
+	}
+}
+
+#清军放下抵抗，日本占据满洲，苏联占据蒙古新疆
+country_event = {
+	id = ming.701
+	title = ming.701.t
+	desc = ming.701.d
+	
+	picture = GFX_report_event_japanese_chinese_surrender
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = {
+		name = ming.701.a
+		ai_chance = { factor = 1 }
+		MNG = { transfer_state = 598 }
+		MNG = { transfer_state = 606 }
+		MNG = { transfer_state = 597 }
+		MNG = { transfer_state = 607 }
+		MNG = { transfer_state = 622 }
+		MNG = { transfer_state = 615 }
+		MNG = { transfer_state = 614 }
+		MNG = { transfer_state = 609 }
+		MNG = { transfer_state = 616 }
+		MNG = { transfer_state = 748 }
+		MNG = { transfer_state = 621 }
+		MNG = { transfer_state = 610 }
+		MNG = { transfer_state = 716 }
+		MNG = { transfer_state = 604 }
+		MNG = { annex_country = { target = QNG } }
+		#新疆
+		SIK = { transfer_state = 747 }
+		SIK = { transfer_state = 287 }
+		SIK = { transfer_state = 619 }
+		SIK = { transfer_state = 746 }
+		SIK = { transfer_state = 618 }
+		SIK = { transfer_state = 617 }
+		SOV = { puppet = SIK }
+		#蒙古
+		MON = { transfer_state = 745 }
+		MON = { transfer_state = 330 }
+		MON = { transfer_state = 329 }
+		SOV = { puppet = MON }
+		#满洲
+		MAN = { transfer_state = 561 }
+		MAN = { transfer_state = 657 }
+		MAN = { transfer_state = 714 }
+		MAN = { transfer_state = 715 }
+		MAN = { transfer_state = 328 }
+		MAN = { transfer_state = 717 }
+		MAN = { transfer_state = 612 }
+		JAP = { puppet = MAN }
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = SIK
+				}
+				add_core_of = SIK
+			}
+			SIK = {
+				load_oob = SIK_1936
+				add_manpower = 300000
+			}
+			every_state = {
+				limit = {
+					is_owned_by = MAN
+				}
+				add_core_of = MAN
+			}
+			MAN = {
+				load_oob = MAN_1936
+				add_manpower = 300000
+			}
+			every_state = {
+				limit = {
+					is_owned_by = MON
+				}
+				add_core_of = MON
+			}
+			MON = {
+				load_oob = MON_1936
+				add_manpower = 300000
+			}
+			news_event = { days = 1 id = mingqingnews.12 }
+			news_event = { days = 20 id = mingqingnews.1201 }
+			news_event = { days = 30 id = mingqingnews.1202 }
+			JAP = { add_ideas = manchukuo_construction }
+			MAN = { add_ideas = manchukuo_construction }
+		}
+	}
+}
+
+#殖民地
+country_event = {
+	id = ming.8001
+	title = ming.8001.t
+	desc = ming.8001.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.8001.a
+		ai_chance = { factor = 100 }
+		add_ideas = MNG_colonized_strenthen
+	}
+}
+	
+
+#获得南洋地区核心领土
+country_event = {
+	id = ming.8
+	title = ming.8.t
+	desc = ming.8.d
+	 
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MNG
+		NOT = { has_completed_focus = MNG_fate_of_puppet }
+		focus_progress = {
+			focus = MNG_fate_of_puppet
+			progress > 0.5
+		}
+	}
+	
+	option = {
+		name = ming.8.a
+		ai_chance = { factor = 100 }
+		670 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}#老挝
+		671 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}
+		286 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}#越南
+		741 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}#柬埔寨
+		289 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}
+		724 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}#暹罗
+		623 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}
+		327 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}
+		624 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}
+		625 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}
+		628 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}
+		626 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}
+		627 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}#菲律宾
+		333 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}
+		334 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}
+		673 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}
+		668 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}
+		667 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}
+		721 = {
+			if = {
+				limit = { is_owned_by = MNG }
+				add_core_of = MNG
+			}
+		}#兰芳
+	}
+}
+
+#索取关东州
+country_event = {
+	id = ming.9
+	title = ming.9.t
+	desc = ming.9.d
+	 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.9.a
+		ai_chance = { factor = 1 }
+		MNG = {
+			country_event = { id = ming.901 }
+		}
+	}
+	option = {
+		name = ming.9.b
+		ai_chance = { factor = 99 }
+		MNG = {
+			country_event = { id = ming.902 days = 3 }
+		}
+	}
+}
+
+#索取关东州-日本接受
+country_event = {
+	id = ming.901
+	title = ming.901.t
+	desc = ming.901.d
+	 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.901.a
+		ai_chance = { factor = 1 }
+		MNG = { transfer_state = 749 }
+		hidden_effect = {
+			news_event = { hours = 6 id = mingqingnews.13 }
+		}
+	}
+}
+
+#索取关东州-日本拒绝
+country_event = {
+	id = ming.902
+	title = ming.902.t
+	desc = ming.902.d
+	 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.902.a
+		ai_chance = { factor = 10 }
+		MNG = {
+			create_wargoal = {
+				type = take_state_focus
+				target = JAP
+				generator = { 749 } 
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = mingqingnews.14 }
+		}
+		
+	}
+}
+
+#要求准噶尔内附
+country_event = {
+	id = ming.10
+	title = ming.10.t
+	desc = ming.10.d
+	 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.10.a
+		ai_chance = { factor = 50 }
+		MNG = {
+			country_event = { id = ming.1005 }
+		}
+	}
+	option = {
+		name = ming.10.b
+		ai_chance = { factor = 50 }
+		MNG = {
+			country_event = { id = ming.1006 days = 3 }
+		}
+	}
+}
+
+#准噶尔接受
+country_event = {
+	id = ming.1005
+	title = ming.1005.t
+	desc = ming.1005.d
+	 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.1005.a
+		ai_chance = { factor = 1 }
+		MNG = { 
+			transfer_state = 744
+			transfer_state = 322
+			transfer_state = 434			
+		}
+		MNG = { annex_country = { target = TIB } }
+		hidden_effect = {
+			news_event = { hours = 6 id = mingqingnews.23 }
+		}
+	}
+}
+
+#准噶尔拒绝
+country_event = {
+	id = ming.1006
+	title = ming.1006.t
+	desc = ming.1006.d
+	 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.1006.a
+		ai_chance = { factor = 10 }
+		MNG = {
+			create_wargoal = {
+				type = annex_everything
+				target = TIB
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = mingqingnews.24 }
+		}
+		
+	}
+}
+
+#来自东方的援助
+country_event = {
+	id = ming.12
+	title = ming.12.t
+	desc = ming.12.d
+	 
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.12.a
+		ai_chance = { factor = 10 }
+		MNG = {
+			country_event = { id = ming.13 days = 60 }
+		}
+	}
+}
+
+#全印前进同盟已经准备好了
+country_event = {
+	id = ming.13
+	title = ming.13.t
+	desc = ming.13.d
+	
+	picture = GFX_report_event_indian_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ming.13.a
+		ai_chance = { factor = 10 }
+		set_global_flag = all_india_forward_bloc_ready
+	}
+}
+
+#分裂印度与否
+country_event = {
+	id = ming.14
+	title = ming.14.t
+	desc = ming.14.d
+	
+	picture = GFX_report_event_indian_parade
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = ming.14.a
+		ai_chance = { factor = 100 }
+		set_global_flag = divide_india
+		custom_effect_tooltip = split
+	}
+	option = {
+		name = ming.14.b
+		ai_chance = { factor = 0 }
+		set_global_flag = devide_mym_etc
+		custom_effect_tooltip = not_split
+	}
+	option = {
+		name = ming.14.c
+		ai_chance = { factor = 0 }
+	}
+}
+
+#建立阿萨姆
+country_event = {
+	id = ming.1501
+	title = ming.1501.t
+	desc = ming.1501.d
+	
+	picture = GFX_report_event_india_protests
+	
+	mean_time_to_happen = { days = 2 }
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MNG
+		has_global_flag = divide_india
+		432 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		NOT = {
+			ASM = { exists = yes }
+		}
+	}
+	
+	option = {
+		name = ming.1501.a
+		ai_chance = { factor = 10 }
+		ASM = {
+			add_state_core = 432
+			set_capital = 432
+			transfer_state = 432
+		}
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			MNG = {
+				set_autonomy = {
+					target = ASM
+					autonomous_state = autonomy_puppet
+				}
+			}
+			else = {
+				MNG = { puppet = ASM }
+			}
+		}
+		if = {
+			limit = {
+				RAJ = { exists = yes }
+			}
+			RAJ = {
+				declare_war_on = {
+					target = ASM
+					type = annex_everything
+				}
+			}
+		}
+		hidden_effect = {
+			ASM = {
+				load_oob = "ASM_established"
+			}
+		}
+	}
+}
+
+#建立孟加拉
+country_event = {
+	id = ming.1502
+	title = ming.1502.t
+	desc = ming.1502.d
+	 
+	mean_time_to_happen = { days = 2 }
+	
+	picture = GFX_report_event_india_protests
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MNG
+		OR = {
+			has_global_flag = devide_mym_etc
+			has_global_flag = divide_india
+		}
+		430 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		NOT = {
+			BLD = { exists = yes }
+		}
+	}
+	
+	
+	option = {
+		name = ming.1502.a
+		ai_chance = { factor = 10 }
+		BLD = {
+			add_state_core = 430
+			set_capital = 430
+			transfer_state = 430
+		}
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			MNG = {
+				set_autonomy = {
+					target = BLD
+					autonomous_state = autonomy_puppet
+				}
+			}
+			else = {
+				MNG = { puppet = BLD }
+			}
+		}
+		if = {
+			limit = {
+				RAJ = { exists = yes }
+			}
+			RAJ = {
+				declare_war_on = {
+					target = BLD
+					type = annex_everything
+				}
+			}
+		}
+		hidden_effect = {
+			BLD = {
+				load_oob = "BLD_established"
+			}
+		}
+	}
+}
+
+#建立德里
+country_event = {
+	id = ming.1503
+	title = ming.1503.t
+	desc = ming.1503.d
+	
+	picture = GFX_report_event_india_protests
+	
+	
+	mean_time_to_happen = { days = 2 }
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MNG
+		439 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		433 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		437 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		438 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		435 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		431 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		NOT = {
+			DEL = { exists = yes }
+		}
+		has_global_flag = divide_india
+	}
+	
+	option = {
+		name = ming.1503.a
+		ai_chance = { factor = 10 }
+		DEL = {
+			add_state_core = 439
+			add_state_core = 433
+			add_state_core = 437
+			add_state_core = 438
+			set_capital = 439
+			transfer_state = 439
+			transfer_state = 433
+			transfer_state = 437
+			transfer_state = 438
+		}
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			MNG = {
+				set_autonomy = {
+					target = DEL
+					autonomous_state = autonomy_puppet
+				}
+			}
+			else = {
+				MNG = { puppet = DEL }
+			}
+		}
+		if = {
+			limit = {
+				RAJ = { exists = yes }
+			}
+			RAJ = {
+				declare_war_on = {
+					target = DEL
+					type = annex_everything
+				}
+			}
+		}
+		hidden_effect = {
+			DEL = {
+				load_oob = "DEL_established"
+			}
+		}
+	}
+}
+
+#建立巴基斯坦
+country_event = {
+	id = ming.1504
+	title = ming.1504.t
+	desc = ming.1504.d
+	 
+	 
+	picture = GFX_report_event_india_protests
+	
+	mean_time_to_happen = { days = 2 }
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MNG
+		444 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		445 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		443 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		440 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		442 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		NOT = {
+			PAK = { exists = yes }
+		}
+		OR = {
+			has_global_flag = devide_mym_etc
+			has_global_flag = divide_india
+		}
+	}
+	
+	option = {
+		name = ming.1504.a
+		ai_chance = { factor = 10 }	
+		PAK = {
+			add_state_core = 444
+			add_state_core = 445
+			add_state_core = 443
+			add_state_core = 440
+			add_state_core = 442
+			set_capital = 443
+			transfer_state = 444
+			transfer_state = 445
+			transfer_state = 443
+			transfer_state = 440
+			transfer_state = 442
+		}
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			MNG = {
+				set_autonomy = {
+					target = PAK
+					autonomous_state = autonomy_puppet
+				}
+			}
+			else = {
+				MNG = { puppet = PAK }
+			}
+		}
+		if = {
+			limit = {
+				RAJ = { exists = yes }
+			}
+			RAJ = {
+				declare_war_on = {
+					target = PAK
+					type = annex_everything
+				}
+			}
+		}
+		hidden_effect = {
+			PAK = {
+				load_oob = "PAK_1936"
+			}
+		}
+	}
+}
+
+#建立克什米尔
+country_event = {
+	id = ming.1505
+	title = ming.1505.t
+	desc = ming.1505.d
+	
+	picture = GFX_report_event_india_protests
+	
+	mean_time_to_happen = { days = 2 }
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MNG
+		441 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		NOT = {
+			KAS = { exists = yes }
+		}
+		OR = {
+			has_global_flag = devide_mym_etc
+			has_global_flag = divide_india
+		}
+	}
+	
+	
+	option = {
+		name = ming.1505.a
+		ai_chance = { factor = 10 }
+		KAS = {
+			add_state_core = 441
+			set_capital = 441
+			transfer_state = 441
+		}
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			MNG = {
+				set_autonomy = {
+					target = KAS
+					autonomous_state = autonomy_puppet
+				}
+			}
+			else = {
+				MNG = { puppet = KAS }
+			}
+		}
+		if = {
+			limit = {
+				RAJ = { exists = yes }
+			}
+			RAJ = {
+				declare_war_on = {
+					target = KAS
+					type = annex_everything
+				}
+			}
+		}
+		hidden_effect = {
+			KAS = {
+				load_oob = "KAS_established"
+			}
+		}
+	}
+}
+
+#建立泰米尔
+country_event = {
+	id = ming.1506
+	title = ming.1506.t
+	desc = ming.1506.d
+	
+	picture = GFX_report_event_india_protests
+	
+	mean_time_to_happen = { days = 2 }
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MNG
+		425 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		423 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		424 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		NOT = {
+			TAM = { exists = yes }
+		}
+		has_global_flag = divide_india
+	}
+	
+	
+	option = {
+		name = ming.1506.a
+		ai_chance = { factor = 10 }
+		TAM = {
+			add_state_core = 423
+			add_state_core = 425
+			add_state_core = 424
+			set_capital = 425
+			transfer_state = 423
+			transfer_state = 425
+			transfer_state = 424
+		}
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			MNG = {
+				set_autonomy = {
+					target = TAM
+					autonomous_state = autonomy_puppet
+				}
+			}
+			else = {
+				MNG = { puppet = TAM }
+			}
+		}
+		if = {
+			limit = {
+				RAJ = { exists = yes }
+			}
+			RAJ = {
+				declare_war_on = {
+					target = TAM
+					type = annex_everything
+				}
+			}
+		}
+		hidden_effect = {
+			TAM = {
+				load_oob = "TAM_established"
+			}
+		}
+	}
+}
+
+#建立孟买
+country_event = {
+	id = ming.1507
+	title = ming.1507.t
+	desc = ming.1507.d
+	
+	picture = GFX_report_event_india_protests
+	 
+	
+	mean_time_to_happen = { days = 2 }
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MNG
+		428 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		429 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		436 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		427 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		NOT = {
+			MUM = { exists = yes }
+		}
+		has_global_flag = divide_india
+	}
+	
+	
+	option = {
+		name = ming.1507.a
+		ai_chance = { factor = 10 }
+		MUM = {
+			add_state_core = 428
+			add_state_core = 429
+			add_state_core = 436
+			add_state_core = 427
+			set_capital = 429
+			transfer_state = 428
+			transfer_state = 429
+			transfer_state = 436
+			transfer_state = 427
+		}
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			MNG = {
+				set_autonomy = {
+					target = MUM
+					autonomous_state = autonomy_puppet
+				}
+			}
+			else = {
+				MNG = { puppet = MUM }
+			}
+		}
+		if = {
+			limit = {
+				RAJ = { exists = yes }
+			}
+			RAJ = {
+				declare_war_on = {
+					target = MUM
+					type = annex_everything
+				}
+			}
+		}
+		hidden_effect = {
+			MUM = {
+				load_oob = "MUM_established"
+			}
+		}
+	}
+}
+
+#建立缅甸
+country_event = {
+	id = ming.1508
+	title = ming.1508.t
+	desc = ming.1508.d
+	
+	picture = GFX_report_event_india_protests
+	 
+	
+	mean_time_to_happen = { days = 2 }
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MNG
+		288 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		640 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		NOT = {
+			MYM = { exists = yes }
+		}
+		OR = {
+			has_global_flag = devide_mym_etc
+			has_global_flag = divide_india
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = ming.1508.a
+		ai_chance = { factor = 10 }
+		MYM = {
+			add_state_core = 288
+			add_state_core = 640
+			set_capital = 288
+			transfer_state = 288
+			transfer_state = 640
+		}
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			MNG = {
+				set_autonomy = {
+					target = MYM
+					autonomous_state = autonomy_puppet
+				}
+			}
+			else = {
+				MNG = { puppet = MYM }
+			}
+		}
+		if = {
+			limit = {
+				RAJ = { exists = yes }
+			}
+			RAJ = {
+				declare_war_on = {
+					target = MYM
+					type = annex_everything
+				}
+			}
+		}
+		hidden_effect = {
+			MYM = {
+				load_oob = "MYM_established"
+			}
+		}
+	}
+}
+
+#建立奥里萨
+country_event = {
+	id = ming.1509
+	title = ming.1509.t
+	desc = ming.1509.d
+	
+	picture = GFX_report_event_india_protests
+	 
+	
+	mean_time_to_happen = { days = 2 }
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MNG
+		426 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		431 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		435 = {
+			controller = {
+				OR = {
+					tag = MNG
+					is_puppet_of = MNG
+				}
+			}
+		}
+		NOT = {
+			ORI = { exists = yes }
+		}
+		has_global_flag = divide_india
+	}
+	
+	
+	option = {
+		name = ming.1509.a
+		ai_chance = { factor = 10 }
+		ORI = {
+			add_state_core = 426
+			add_state_core = 431
+			add_state_core = 435
+			set_capital = 426
+			transfer_state = 426
+			transfer_state = 431
+			transfer_state = 435
+		}
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			MNG = {
+				set_autonomy = {
+					target = ORI
+					autonomous_state = autonomy_puppet
+				}
+			}
+			else = {
+				MNG = { puppet = ORI }
+			}
+		}
+		if = {
+			limit = {
+				RAJ = { exists = yes }
+			}
+			RAJ = {
+				declare_war_on = {
+					target = ORI
+					type = annex_everything
+				}
+			}
+		}
+		hidden_effect = {
+			ORI = {
+				load_oob = "ORI_established"
+			}
+		}
+	}
+}
+
+#与共产党人谈判
+country_event = {
+	id = ming.21
+	title = ming.21.t
+	desc = ming.21.d
+	 
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = ming.21.a
+		ai_chance = { factor = 10 }
+		create_country_leader = {
+				name = "Zhu You Rong"
+				desc = ""
+				picture = "gfx/leaders/MNG/Portrait_Ming_Zhu_You_Rong.dds"
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					popular_figurehead
+				}
+		}
+		set_global_flag = negotiation_succeed
+	}
+	option = {
+		name = ming.21.b
+		ai_chance = { factor = 0 }
+		set_global_flag = negotiation_failed
+	}
+}
+
+#明加入共产国际
+country_event = {
+	id = ming.22
+	title = ming.22.t
+	desc = ming.22.d
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = ming.22.a
+		SOV = { add_to_faction = MNG }
+		SOV = {
+			add_ai_strategy = {
+				type = alliance
+				id = "MNG"
+				value = 200
+			}
+		}
+		MNG = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = SOV_MNG_join_comintern_agree
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = mingqingnews.15 }
+		}
+	}
+	option = {
+		name = ming.22.b
+		ai_chance = { factor = 0 }
+		MNG = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = SOV_MNG_join_comintern_reject
+			}
+		}
+	}
+}
+
+#越南赤化
+country_event = {
+	id = ming.2201
+	title = ming.2201.t
+	desc = ming.2201.d
+	 
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	
+	trigger = {
+		tag = VIN
+		NOT = { has_government = communism }
+		communism > 0.4
+	}
+	
+	option = {
+		name = ming.2201.a
+		if = {
+			limit = {
+				NOT = { has_government = communism }
+			}
+			set_politics = {
+				ruling_party = communism
+			}
+		}
+	}
+}
+
+#老挝赤化
+country_event = {
+	id = ming.2202
+	title = ming.2201.t
+	desc = ming.2201.d
+	 
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	
+	trigger = {
+		tag = LAO
+		NOT = { has_government = communism }
+		communism > 0.4
+	}
+	
+	option = {
+		name = ming.2202.a
+		if = {
+			limit = {
+				NOT = { has_government = communism }
+			}
+			set_politics = {
+				ruling_party = communism
+			}
+		}
+	}
+}
+
+#吕宋赤化
+country_event = {
+	id = ming.2203
+	title = ming.2201.t
+	desc = ming.2201.d
+	 
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	
+	trigger = {
+		tag = LUZ
+		NOT = { has_government = communism }
+		communism > 0.4
+	}
+	
+	option = {
+		name = ming.2201.a
+		if = {
+			limit = {
+				NOT = { has_government = communism }
+			}
+			set_politics = {
+				ruling_party = communism
+			}
+		}
+	}
+}
+
+#兰芳赤化
+country_event = {
+	id = ming.2204
+	title = ming.2201.t
+	desc = ming.2201.d
+	 
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	
+	trigger = {
+		tag = INS
+		NOT = { has_government = communism }
+		communism > 0.4
+	}
+	
+	option = {
+		name = ming.2201.a
+		if = {
+			limit = {
+				NOT = { has_government = communism }
+			}
+			set_politics = {
+				ruling_party = communism
+			}
+		}
+	}
+}
+
+#高棉赤化
+country_event = {
+	id = ming.2205
+	title = ming.2201.t
+	desc = ming.2201.d
+	 
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	
+	trigger = {
+		tag = CAM
+		NOT = { has_government = communism }
+		communism > 0.4
+	}
+	
+	option = {
+		name = ming.2201.a
+		if = {
+			limit = {
+				NOT = { has_government = communism }
+			}
+			set_politics = {
+				ruling_party = communism
+			}
+		}
+	}
+}
+
+#暹罗赤化
+country_event = {
+	id = ming.2206
+	title = ming.2201.t
+	desc = ming.2201.d
+	 
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	
+	trigger = {
+		tag = SIA
+		NOT = { has_government = communism }
+		communism > 0.4
+	}
+	
+	option = {
+		name = ming.2201.a
+		if = {
+			limit = {
+				NOT = { has_government = communism }
+			}
+			set_politics = {
+				ruling_party = communism
+			}
+		}
+	}
+}
+
+#越南民主
+country_event = {
+	id = ming.2301
+	title = ming.2302.t
+	desc = ming.2302.d
+	 
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	
+	trigger = {
+		tag = VIN
+		NOT = { has_government = democratic }
+		democratic > 0.4
+	}
+	
+	option = {
+		name = ming.2302.a
+		if = {
+			limit = {
+				NOT = { has_government = democratic }
+			}
+			set_politics = {
+				ruling_party = democratic
+			}
+		}
+	}
+}
+
+#老挝民主
+country_event = {
+	id = ming.2302
+	title = ming.2302.t
+	desc = ming.2302.d
+	 
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	
+	trigger = {
+		tag = LAO
+		NOT = { has_government = democratic }
+		democratic > 0.4
+	}
+	
+	option = {
+		name = ming.2302.a
+		if = {
+			limit = {
+				NOT = { has_government = democratic }
+			}
+			set_politics = {
+				ruling_party = democratic
+			}
+		}
+	}
+}
+
+#高棉民主
+country_event = {
+	id = ming.2303
+	title = ming.2302.t
+	desc = ming.2302.d
+	 
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	
+	trigger = {
+		tag = CAM
+		NOT = { has_government = democratic }
+		democratic > 0.4
+	}
+	
+	option = {
+		name = ming.2302.a
+		if = {
+			limit = {
+				NOT = { has_government = democratic }
+			}
+			set_politics = {
+				ruling_party = democratic
+			}
+		}
+	}
+}
+
+#兰芳民主
+country_event = {
+	id = ming.2304
+	title = ming.2302.t
+	desc = ming.2302.d
+	 
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	
+	trigger = {
+		tag = INS
+		NOT = { has_government = democratic }
+		democratic > 0.4
+	}
+	
+	option = {
+		name = ming.2302.a
+		if = {
+			limit = {
+				NOT = { has_government = democratic }
+			}
+			set_politics = {
+				ruling_party = democratic
+			}
+		}
+	}
+}
+
+#吕宋民主
+country_event = {
+	id = ming.2305
+	title = ming.2302.t
+	desc = ming.2302.d
+	 
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	
+	trigger = {
+		tag = LUZ
+		NOT = { has_government = democratic }
+		democratic > 0.4
+	}
+	
+	option = {
+		name = ming.2302.a
+		if = {
+			limit = {
+				NOT = { has_government = democratic }
+			}
+			set_politics = {
+				ruling_party = democratic
+			}
+		}
+	}
+}
+
+#暹罗民主
+country_event = {
+	id = ming.2306
+	title = ming.2302.t
+	desc = ming.2302.d
+	 
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	
+	trigger = {
+		tag = SIA
+		NOT = { has_government = democratic }
+		democratic > 0.4
+	}
+	
+	option = {
+		name = ming.2302.a
+		if = {
+			limit = {
+				NOT = { has_government = democratic }
+			}
+			set_politics = {
+				ruling_party = democratic
+			}
+		}
+	}
+}
+
+#明托派上台
+country_event = {
+	id = ming.24
+	title = ming.24.t
+	desc = ming.24.d
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = ming.24.a
+		if = {
+			limit = {
+				NOT = { has_global_flag = negotiation_succeed }
+			}
+			create_country_leader = {
+				name = "Chen Du Xiu"
+				desc = ""
+				picture = "gfx/leaders/MNG/Portrait_Ming_Chen_Du_Xiu.dds"
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					
+				}
+			}
+		}
+		set_global_flag = MNG_trotskyism_rule
+	}
+	
+}
+
+#明加入同盟国
+country_event = {
+	id = ming.25
+	title = ming.25.t
+	desc = ming.25.d
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = ming.25.a
+		ENG = { add_to_faction = MNG }
+		ENG = {
+			add_ai_strategy = {
+				type = alliance
+				id = "MNG"
+				value = 200
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = mingqingnews.16 }
+		}
+	}
+}
+
+#明加入轴心
+country_event = {
+	id = ming.26
+	title = ming.26.t
+	desc = ming.26.d
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = ming.26.a
+		GER = { add_to_faction = MNG }
+		GER = {
+			add_ai_strategy = {
+				type = alliance
+				id = "MNG"
+				value = 200
+			}
+		}
+		MNG = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = GER_MNG_join_comintern_agree
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = mingqingnews.17 }
+		}
+	}
+	option = {
+		name = ming.26.b
+		ai_chance = { factor = 0 }
+		MNG = {
+			add_opinion_modifier = {
+				target = GER
+				modifier = GER_MNG_join_comintern_reject
+			}
+		}
+	}
+}
+
+#邀请日本加入大东亚共荣圈
+country_event = {
+	id = ming.27
+	title = ming.27.t
+	desc = ming.27.d
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = ming.27.a
+		MNG = { add_to_faction = JAP }
+		JAP = {
+			add_ai_strategy = {
+				type = alliance
+				id = "MNG"
+				value = 200
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = mingqingnews.18 }
+		}
+	}
+	option = {
+		name = ming.27.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+#民主化
+country_event = {
+	id = ming.28
+	title = ming.28.t
+	desc = ming.28.d
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = ming.28.a
+		create_country_leader = {
+				name = "Zhu You Rong"
+				desc = ""
+				picture = "gfx/leaders/MNG/Portrait_Ming_Zhu_You_Rong.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+				}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = mingqingnews.19 }
+		}
+	}
+}
+
+#法西斯化
+country_event = {
+	id = ming.29
+	title = ming.29.t
+	desc = ming.29.d
+	 
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = ming.29.a
+		create_country_leader = {
+				name = "Zhu You Rong"
+				desc = ""
+				picture = "gfx/leaders/MNG/Portrait_Ming_Zhu_You_Rong.dds"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+				}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = mingqingnews.20 }
+		}
+	}
+}
+
+
+
+

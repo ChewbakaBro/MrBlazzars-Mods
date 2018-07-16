@@ -1,0 +1,185 @@
+spriteTypes = {
+	
+	#### news picture ####
+	
+	spriteType = {
+		name = "GFX_news_overturn_puyi"
+		texturefile = "gfx/event_pictures/news_overturn_puyi.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_yulan_general"
+		texturefile = "gfx/event_pictures/news_yulan_general.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_news_emperor_remain"
+		texturefile = "gfx/event_pictures/news_emperor_remain.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_news_226_coup"
+		texturefile = "gfx/event_pictures/news_226_coup.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_sov_with_jap"
+		texturefile = "gfx/event_pictures/news_sov_with_jap.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_usa_with_jap"
+		texturefile = "gfx/event_pictures/news_usa_with_jap.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_parade"
+		texturefile = "gfx/event_pictures/news_parade.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_xianyu_death"
+		texturefile = "gfx/event_pictures/news_xianyu_death.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_japan_manchu_agreements"
+		texturefile = "gfx/event_pictures/news_japan_manchu_agreements.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_sov_men_sik"
+		texturefile = "gfx/event_pictures/news_sov_men_sik.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_qing_collapse"
+		texturefile = "gfx/event_pictures/news_qing_collapse.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_democratic"
+		texturefile = "gfx/event_pictures/news_democratic.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_fascism"
+		texturefile = "gfx/event_pictures/news_fascism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_introduction"
+		texturefile = "gfx/event_pictures/news_introduction.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_nanjing_chaos"
+		texturefile = "gfx/event_pictures/news_nanjing_chaos.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_dzugaria_mng"
+		texturefile = "gfx/event_pictures/news_dzugaria_mng.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_join_comintern"
+		texturefile = "gfx/event_pictures/news_join_comintern.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_join_axis"
+		texturefile = "gfx/event_pictures/news_join_axis.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_join_allies"
+		texturefile = "gfx/event_pictures/news_join_allies.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_japan_south_expansion"
+		texturefile = "gfx/event_pictures/news_japan_south_expansion.dds"
+	}
+	
+
+	#### report picture ####
+	
+	spriteType = {
+		name = "GFX_report_introduction"
+		texturefile = "gfx/event_pictures/report_introduction.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_dongchang"
+		texturefile = "gfx/event_pictures/report_dongchang.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_xiangxiaoqiang"
+		texturefile = "gfx/event_pictures/report_xiangxiaoqiang.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_east_sub"
+		texturefile = "gfx/event_pictures/report_east_sub.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_rescue_failed"
+		texturefile = "gfx/event_pictures/report_rescue_failed.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_14_princess"
+		texturefile = "gfx/event_pictures/report_14_princess.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_national_guard"
+		texturefile = "gfx/event_pictures/report_national_guard.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_nanjing_chaos"
+		texturefile = "gfx/event_pictures/report_nanjing_chaos.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_national_guard_2"
+		texturefile = "gfx/event_pictures/report_national_guard_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_xuantong_coup"
+		texturefile = "gfx/event_pictures/report_xuantong_coup.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_puyi_remain"
+		texturefile = "gfx/event_pictures/report_puyi_remain.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_return_huaibei"
+		texturefile = "gfx/event_pictures/report_return_huaibei.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_southern_core"
+		texturefile = "gfx/event_pictures/report_southern_core.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_japanese_southern_expansion"
+		texturefile = "gfx/event_pictures/report_japanese_southern_expansion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_japanese_northern_expansion"
+		texturefile = "gfx/event_pictures/report_japanese_northern_expansion.dds"
+	}
+}
+
+
+

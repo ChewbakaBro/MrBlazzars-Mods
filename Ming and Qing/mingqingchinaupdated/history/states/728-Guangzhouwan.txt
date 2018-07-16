@@ -1,0 +1,24 @@
+state={
+	id=728
+	name="STATE_728" #广州湾
+	manpower = 200000
+	
+	state_category = city
+	
+	history={
+		owner = MNG
+		add_core_of = MNG
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			dockyard = 1
+			11981 = {
+				naval_base = 5
+			}
+		}
+	}
+	
+	provinces={
+		11981 
+	}
+}

@@ -1,0 +1,176 @@
+﻿l_english:
+
+#明空军
+ MNG_fighter_equipment_0:0 "Swan 99"
+ MNG_fighter_equipment_0_short:0 "Swan 99"
+ 
+ MNG_CAS_equipment_1:0 "Goose 53"
+ MNG_CAS_equipment_1_short:0 "Goose 53"
+ MNG_CAS_equipment_2:0 "Goose 86"
+ MNG_CAS_equipment_2_short:0 "Goose 86"
+ MNG_CAS_equipment_3:0 "Goose 101"
+ MNG_CAS_equipment_3_short:0 "Goose 101"
+ 
+ MNG_cv_CAS_equipment_1:0 "Carrier Type Goose 54"
+ MNG_cv_CAS_equipment_1_short:0 "Goose 54"
+ MNG_cv_CAS_equipment_2:0 "Carrier Type Goose 87"
+ MNG_cv_CAS_equipment_2_short:0 "Goose 87"
+ MNG_cv_CAS_equipment_3:0 "Carrier Type Goose 102"
+ MNG_cv_CAS_equipment_3_short:0 "Goose 102"
+ 
+ MNG_fighter_equipment_1:0 "Swan 108"
+ MNG_fighter_equipment_1_short:0 "Swan 108"
+ MNG_fighter_equipment_2:0 "Swan 121"
+ MNG_fighter_equipment_2_short:0 "Swan 121"
+ MNG_fighter_equipment_3:0 "Swan 135"
+ MNG_fighter_equipment_3_short:0 "Swan 135"
+ 
+ MNG_cv_fighter_equipment_0:0 "Carrier Type Swan 100"
+ MNG_cv_fighter_equipment_0_short:0 "Swan 100"
+ MNG_cv_fighter_equipment_1:0 "Carrier Type Swan 109"
+ MNG_cv_fighter_equipment_1_short:0 "Swan 109"
+ MNG_cv_fighter_equipment_2:0 "Carrier Type Swan 122"
+ MNG_cv_fighter_equipment_2_short:0 "Swan 122"
+ MNG_cv_fighter_equipment_3:0 "Carrier Type Swan 136"
+ MNG_cv_fighter_equipment_3_short:0 "Swan 136"
+ 
+ MNG_nav_bomber_equipment_1:0 "Swallow 23"
+ MNG_nav_bomber_equipment_1_short:0 "Swallow 23"
+ MNG_nav_bomber_equipment_2:0 "Swallow 27"
+ MNG_nav_bomber_equipment_2_short:0 "Swallow 27"
+ MNG_nav_bomber_equipment_3:0 "Swallow 32"
+ MNG_nav_bomber_equipment_3_short:0 "Swallow 32"
+ 
+ MNG_cv_nav_bomber_equipment_1:0 "Carrier Type Swallow 24"
+ MNG_cv_nav_bomber_equipment_1_short:0 "Swallow 24"
+ MNG_cv_nav_bomber_equipment_2:0 "Carrier Type Swallow 28"
+ MNG_cv_nav_bomber_equipment_2_short:0 "Swallow 28"
+ MNG_cv_nav_bomber_equipment_3:0 "Carrier Type Swallow 33"
+ MNG_cv_nav_bomber_equipment_3_short:0 "Swallow 33"
+ 
+ MNG_tac_bomber_equipment_0:0 "Cuckoo  1"
+ MNG_tac_bomber_equipment_0_short:0 "Cuckoo  1"
+ 
+ MNG_heavy_fighter_equipment_1:0 "Red-crowned crane 109"
+ MNG_heavy_fighter_equipment_1_short:0 "Red-crowned crane 109"
+ MNG_heavy_fighter_equipment_2:0 "Red-crowned crane 122"
+ MNG_heavy_fighter_equipment_2_short:0 "Red-crowned crane 122"
+ MNG_heavy_fighter_equipment_3:0 "Red-crowned crane 136"
+ MNG_heavy_fighter_equipment_3_short:0 "Red-crowned crane 136"
+ 
+
+ MNG_tac_bomber_equipment_1:0 "Cuckoo  8"
+ MNG_tac_bomber_equipment_1_short:0 "Cuckoo  8"
+ MNG_tac_bomber_equipment_2:0 "Cuckoo  16"
+ MNG_tac_bomber_equipment_2_short:0 "Cuckoo  16"
+ MNG_tac_bomber_equipment_3:0 "Cuckoo  21"
+ MNG_tac_bomber_equipment_3_short:0 "Cuckoo  21"
+ 
+ MNG_strat_bomber_equipment_1:0 "Phoenix 1"
+ MNG_strat_bomber_equipment_1_short:0 "Phoenix 1"
+ MNG_strat_bomber_equipment_2:0 "Phoenix 3"
+ MNG_strat_bomber_equipment_2_short:0 "Phoenix 3"
+ MNG_strat_bomber_equipment_3:0 "Phoenix 6"
+ MNG_strat_bomber_equipment_3_short:0 "Phoenix 6"
+ 
+ MNG_jet_fighter_equipment_1:0 "Peacock 1"
+ MNG_jet_fighter_equipment_1_short:0 "Peacock 1"
+ MNG_jet_fighter_equipment_2:0 "Peacock 3"
+ MNG_jet_fighter_equipment_2_short:0 "Peacock 3"
+ 
+ MNG_jet_tac_bomber_equipment_1:0 "Falcon 2"
+ MNG_jet_tac_bomber_equipment_1_short:0 "Falcon 2"
+ MNG_jet_tac_bomber_equipment_2:0 "Falcon 5"
+ MNG_jet_tac_bomber_equipment_2_short:0 "Falcon 5"
+ 
+ MNG_jet_strat_bomber_equipment_1:0 "Eagle 1"
+ MNG_jet_strat_bomber_equipment_1_short:0 "Eagle 1"
+ 
+ MNG_transport_plane:0 "Bird's Nest"
+ 
+ #清空军
+ QNG_fighter_equipment_0:0 "Clear sky 31"
+ QNG_fighter_equipment_0_short:0 "Clear sky 31"
+ 
+ QNG_CAS_equipment_1:0 "Sky Thunder 2"
+ QNG_CAS_equipment_1_short:0 "Sky Thunder 2"
+ QNG_CAS_equipment_2:0 "Sky Thunder 5"
+ QNG_CAS_equipment_2_short:0 "Sky Thunder 5"
+ QNG_CAS_equipment_3:0 "Sky Thunder 9"
+ QNG_CAS_equipment_3_short:0 "Sky Thunder 9"
+ 
+ QNG_cv_CAS_equipment_1:0 "Carrier Sky Thunder 2"
+ QNG_cv_CAS_equipment_1_short:0 "Sky Thunder 2"
+ QNG_cv_CAS_equipment_2:0 "Carrier Sky Thunder 5"
+ QNG_cv_CAS_equipment_2_short:0 "Sky Thunder 5"
+ QNG_cv_CAS_equipment_3:0 "Carrier Sky Thunder 9"
+ QNG_cv_CAS_equipment_3_short:0 "Sky Thunder 9"
+ 
+ QNG_fighter_equipment_1:0 "Clear sky 43"
+ QNG_fighter_equipment_1_short:0 "Clear sky 43"
+ QNG_fighter_equipment_2:0 "Clear sky 50"
+ QNG_fighter_equipment_2_short:0 "Clear sky 50"
+ QNG_fighter_equipment_3:0 "Clear sky 58"
+ QNG_fighter_equipment_3_short:0 "Clear sky 58"
+ 
+ QNG_cv_fighter_equipment_0:0 "Carrier Clear Sky 31"
+ QNG_cv_fighter_equipment_0_short:0 "Clear Sky 31"
+ QNG_cv_fighter_equipment_1:0 "Carrier Clear Sky 43"
+ QNG_cv_fighter_equipment_1_short:0 "Clear Sky 43"
+ QNG_cv_fighter_equipment_2:0 "Carrier Clear Sky 50"
+ QNG_cv_fighter_equipment_2_short:0 "Clear Sky 50"
+ QNG_cv_fighter_equipment_3:0 "Carrier Clear Sky 58"
+ QNG_cv_fighter_equipment_3_short:0 "Clear Sky 58"
+ 
+ QNG_nav_bomber_equipment_1:0 "Tsunami 22"
+ QNG_nav_bomber_equipment_1_short:0 "Tsunami 22"
+ QNG_nav_bomber_equipment_2:0 "Tsunami 28"
+ QNG_nav_bomber_equipment_2_short:0 "Tsunami 28"
+ QNG_nav_bomber_equipment_3:0 "Tsunami 31"
+ QNG_nav_bomber_equipment_3_short:0 "Tsunami 31"
+ 
+ QNG_cv_nav_bomber_equipment_1:0 "Carrier Tsunami 22"
+ QNG_cv_nav_bomber_equipment_1_short:0 "Carrier Tsunami 22"
+ QNG_cv_nav_bomber_equipment_2:0 "Carrier Tsunami 28"
+ QNG_cv_nav_bomber_equipment_2_short:0 "Carrier Tsunami 28"
+ QNG_cv_nav_bomber_equipment_3:0 "Carrier Tsunami 31"
+ QNG_cv_nav_bomber_equipment_3_short:0 "Carrier Tsunami 31"
+ 
+ QNG_tac_bomber_equipment_0:0 "Rainfall 23"
+ QNG_tac_bomber_equipment_0_short:0 "Rainfall 23"
+ 
+ QNG_heavy_fighter_equipment_1:0 "Typhoon 78"
+ QNG_heavy_fighter_equipment_1_short:0 "Typhoon 78"
+ QNG_heavy_fighter_equipment_2:0 "Typhoon 92"
+ QNG_heavy_fighter_equipment_2_short:0 "Typhoon 92"
+ QNG_heavy_fighter_equipment_3:0 "Typhoon 100"
+ QNG_heavy_fighter_equipment_3_short:0 "Typhoon 100"
+ 
+ QNG_tac_bomber_equipment_1:0 "Rainfall 26"
+ QNG_tac_bomber_equipment_1_short:0 "Rainfall 26"
+ QNG_tac_bomber_equipment_2:0 "Rainfall 32"
+ QNG_tac_bomber_equipment_2_short:0 "Rainfall 32"
+ QNG_tac_bomber_equipment_3:0 "Rainfall 36"
+ QNG_tac_bomber_equipment_3_short:0 "Rainfall 36"
+ 
+ QNG_strat_bomber_equipment_1:0 "Thunder 19"
+ QNG_strat_bomber_equipment_1_short:0 "Thunder 19"
+ QNG_strat_bomber_equipment_2:0 "Thunder 23"
+ QNG_strat_bomber_equipment_2_short:0 "Thunder 23"
+ QNG_strat_bomber_equipment_3:0 "Thunder 32"
+ QNG_strat_bomber_equipment_3_short:0 "Thunder 32"
+ 
+ QNG_jet_fighter_equipment_1:0 "Gale 1"
+ QNG_jet_fighter_equipment_1_short:0 "Gale 1"
+ QNG_jet_fighter_equipment_2:0 "Gale 2"
+ QNG_jet_fighter_equipment_2_short:0 "Gale 2"
+ 
+ QNG_jet_tac_bomber_equipment_1:0 "Lightning 1"
+ QNG_jet_tac_bomber_equipment_1_short:0 "Lightning 1"
+ QNG_jet_tac_bomber_equipment_2:0 "Lightning 3"
+ QNG_jet_tac_bomber_equipment_2_short:0 "Lightning 3"
+ 
+ QNG_jet_strat_bomber_equipment_1:0 "Blizzard 1"
+ QNG_jet_strat_bomber_equipment_1_short:0 "Blizzard 1"
+ 
+ QNG_transport_plane:0 "Big Sky"

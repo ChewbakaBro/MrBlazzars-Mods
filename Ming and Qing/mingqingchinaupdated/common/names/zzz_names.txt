@@ -1,0 +1,39 @@
+﻿### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+
+
+MNG = {
+	male = {
+		names = { "李""赵""朱""江""胡""习""楚""宋""刘""徐""郑""向""景""沐""张""王""关""常""许""周""吴""孙""胡""陈" }
+	}
+	female = {
+		names = { "秋""尚" }
+	}
+	surnames = { 
+		"挺之""伯宁""文达""昊""观博""默""修闻""懿"
+		"彰""皓""晋皓""子舆""嘉盛""轩""澜""函升"
+		"岳宁""鸿毅""俊德""东阳""坤""立人""安定""方正"
+	}
+	callsigns = { }
+}
+QNG = {
+	male = {
+		names = { 
+			"李""刘""徐""张""王""周""吴""孙""胡""陈"
+			"博尔济吉特""额尔图""富察""钮祜禄""塞克图"
+			"佟佳""爱新觉罗""纳兰""叶赫那拉""索察"
+		}
+	}
+	female = {
+		names = {  }
+	}
+	surnames = { 
+		"挺之""伯宁""文达""昊""观博""默""修闻""懿"
+		"彰""皓""晋皓""子舆""嘉盛""轩""澜""函升"
+		"岳宁""鸿毅""俊德""东阳""坤""立人""安定""方正"
+	}
+	callsigns = { }
+}
