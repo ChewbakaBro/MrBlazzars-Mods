@@ -1,0 +1,774 @@
+﻿add_namespace = nf_legion
+
+# Debug - Restores Caesar
+country_event = {
+	id = nf_legion.100
+	title = nf_legion.100.t
+	desc = nf_legion.100.d
+	picture = GFX_report_event_fascist_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_legion.1.a
+
+		create_country_leader = {
+			name = "Caesar"
+			desc = "Caesar_DESC"
+			picture = "Portrait_Caesar.dds"
+			expire = "3000.1.1"
+			ideology = benevolent_dictatorship
+
+			traits = {
+				cruel_tyrant
+				warmonger
+			}
+		}
+	}
+}
+
+# The White Legs Petition
+country_event = {
+	id = nf_legion.1
+	title = nf_legion.1.t
+	desc = nf_legion.1.d
+	picture = GFX_event_CES_whitelegs
+
+	is_triggered_only = yes
+
+	# Ally
+	option = {
+		name = nf_legion.1.a
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 100
+			}
+		}
+
+		set_country_flag = accepted_petition
+
+		WHT = {
+			set_politics = {
+				ruling_party = elites
+				elections_allowed = no
+			}
+			add_popularity = { ideology = elites popularity = 0.5 }
+		}
+
+		CES = { add_to_faction = WHT }
+		add_opinion_modifier = {
+			target = CES
+			modifier = loyal_tribe
+		}
+		reverse_add_opinion_modifier = {
+			target = CES
+			modifier = loyal_tribe
+		}
+
+		declare_war_on = {
+			target = NCN
+			type = annex_everything
+		}
+
+	}
+
+	# Refuse
+	option = {
+		name = nf_legion.1.b
+
+		ai_chance = {
+			base = 1
+			modifier = {
+				is_historical_focus_on = no
+				factor = 100
+			}
+		}
+
+		set_country_flag = refused_petition
+	}
+}
+
+# The Eighties Petition
+country_event = {
+	id = nf_legion.2
+	title = nf_legion.2.t
+	desc = nf_legion.2.d
+	picture = GFX_event_CES_whitelegs
+
+	is_triggered_only = yes
+
+	# Ally
+	option = {
+		name = nf_legion.2.a
+
+		ai_chance = {
+			base = 7
+		}
+
+		EHT = {
+			set_politics = {
+				ruling_party = elites elections_allowed = no
+			}
+			add_popularity = { ideology = elites popularity = 0.5 }
+		}
+
+		set_country_flag = accepted_petition
+
+		CES = { add_to_faction = EHT }
+		add_opinion_modifier = {
+			target = CES
+			modifier = loyal_tribe
+		}
+		reverse_add_opinion_modifier = {
+			target = CES
+			modifier = loyal_tribe
+		}
+
+		declare_war_on = {
+			target = NCN
+			type = annex_everything
+		}
+	}
+
+	# Refuse
+	option = {
+		name = nf_legion.2.b
+
+		ai_chance = {
+			base = 3
+		}
+
+		set_country_flag = refused_petition
+
+		add_opinion_modifier = {
+			target = CES
+			modifier = disloyal_tribe
+		}
+		reverse_add_opinion_modifier = {
+			target = CES
+			modifier = disloyal_tribe
+		}
+	}
+}
+
+# Success at Hoover Dam
+country_event = {
+	id = nf_legion.3
+	title = nf_legion.3.t
+	desc = nf_legion.3.d
+	picture = GFX_event_CES_hoover_dam
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_legion.3.a
+
+		hidden_effect = {
+			set_country_flag = hoover_dam_won
+			clr_country_flag = battle_for_hoover_dam
+		}
+	}
+}
+
+# Failure at Hoover Dam
+country_event = {
+	id = nf_legion.4
+	title = nf_legion.4.t
+	desc = nf_legion.4.d
+	picture = GFX_event_CES_hoover_dam
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_legion.4.a
+
+		hidden_effect = {
+			set_country_flag = hoover_dam_lost
+			clr_country_flag = battle_for_hoover_dam
+		}
+	}
+}
+
+# Caesar's Illness
+# triggers civil war:
+# Caesar: id = 1000
+# Vulpes Inclulta (commander) id = 1001
+# Vulpes Inculta (country leader) id = 1005
+# Lucius (commander) id = 1002
+# Lucius (country leader) id = 1006
+# Lanius (commander) id = 1004
+# Lanius (country leader) id = 1007
+# Malpais (commander) id = 1003
+country_event = {
+	id = nf_legion.5
+	title = nf_legion.5.t
+	desc = nf_legion.5.d
+	picture = GFX_event_CES_vulpes
+
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = CES
+		has_country_flag = {
+			flag = conquered_86
+			days > 100
+		}
+		OR = {
+			has_completed_focus = ces_the_burned_man
+			has_completed_focus = ces_triumph_at_the_dam
+		}
+		NOT = {
+			any_neighbor_country = {
+				AND = {
+					has_war_with = CES
+					NOT = { original_tag = NCR }
+					strength_ratio = { tag = CES ratio > 0.15 }
+				}
+			}
+		}
+		NOT = { surrender_progress > 15 }
+	}
+	mean_time_to_happen = {
+		days = 600
+		modifier = {
+			factor = 3
+			is_ai = yes
+		}
+		modifier = {
+			factor = 0.5
+			NCR = {
+				OR = {
+					exists = no
+					has_civil_war = yes
+					has_capitulated = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_historical_focus_on = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_war_with = NCR
+		}
+	}
+
+
+	# stay as Lanius
+	option = {
+		name = nf_legion.5.a
+
+		kill_country_leader = yes
+
+		create_country_leader = {
+			name = "Lanius"
+			desc = "Lanius_DESC"
+			picture = "Portrait_Lanius.dds"
+			expire = "3000.1.1"
+			ideology = feudalism
+			id = 1007
+
+			traits = {
+				cruel_tyrant
+				warmonger
+			}
+		}
+		create_country_leader = {
+			name = "Vulpes Inculta"
+			desc = "Inculta_DESC"
+			picture = "Portrait_Inculta.dds"
+			expire = "3000.1.1"
+			ideology = oligarchy
+			id = 1005
+
+			traits = {
+				cruel_tyrant
+			}
+		}
+		if = {
+			limit = {
+				is_ai = no
+			}
+			start_civil_war = {
+				ideology = ruler
+				size = 0.55
+				capital = 522
+				states_filter = {
+					owner = { original_tag = CES }
+					is_CES_civil_war_non_eligable = no
+				}
+				keep_unit_leaders = { 1001 }
+			}
+		}
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			start_civil_war = {
+				ideology = ruler
+				size = 0.25
+				capital = 522
+				states_filter = {
+					owner = { original_tag = CES }
+					is_CES_civil_war_non_eligable = no
+				}
+				keep_unit_leaders = { 1003 1002 1004 }
+			}
+		}
+		hidden_effect = {
+			remove_unit_leader = 1001
+			set_country_flag = legion_had_civil_war
+		}
+		random_country = {
+			limit = {
+				original_tag = CES
+				has_government = ruler
+			}
+			set_cosmetic_tag = VLP
+			set_country_flag = legion_had_civil_war
+		}
+		custom_effect_tooltip = lanius_chosen
+	}
+	# switch to vulpes_inculta
+	option = {
+		name = nf_legion.5.b
+		hidden_effect = {
+			every_owned_state = {
+				set_state_flag = do_not_decimate
+			}
+		}
+		kill_country_leader = yes
+
+		create_country_leader = {
+			name = "Vulpes Inculta"
+			desc = "Inculta_DESC"
+			picture = "Portrait_Inculta.dds"
+			expire = "3000.1.1"
+			ideology = oligarchy
+			id = 1005
+
+			traits = {
+				cruel_tyrant
+				vulpes_inculta
+			}
+		}
+
+		set_politics = {
+			ruling_party = ruler
+			elections_allowed = no
+		}
+
+		hidden_effect = {
+			359 = { set_state_name = "Fortification Hill" }
+		}
+
+		create_country_leader = {
+			name = "Lanius"
+			desc = "Lanius_DESC"
+			picture = "Portrait_Lanius.dds"
+			expire = "3000.1.1"
+			ideology = tribalism
+			id = 1007
+
+			traits = {
+				cruel_tyrant
+				warmonger
+			}
+		}
+		if = {
+			limit = {
+				is_ai = no
+			}
+			start_civil_war = {
+				ideology = elites
+				size = 0.45
+				capital = 522
+				states_filter = {
+					owner = { original_tag = CES }
+					is_CES_civil_war_non_eligable = no
+				}
+				keep_unit_leaders = { 1002 1003 1004 }
+			}
+		}
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			start_civil_war = {
+				ideology = elites
+				size = 0.70
+				capital = 522
+				states_filter = {
+					owner = { original_tag = CES }
+					is_CES_civil_war_non_eligable = no
+				}
+				keep_unit_leaders = { 1002 1003 1004 }
+			}
+		}
+		hidden_effect = {
+			remove_unit_leader = 1001
+			set_country_flag = legion_had_civil_war
+		}
+		random_country = {
+			limit = {
+				original_tag = CES
+				has_government = elites
+			}
+			set_country_flag = legion_had_civil_war
+			set_cosmetic_tag = CES
+		}
+		hidden_effect = {
+			every_owned_state = {
+				clr_state_flag = do_not_decimate
+			}
+		}
+
+		set_cosmetic_tag = VLP
+
+		custom_effect_tooltip = vulpes_chosen
+	}
+
+	option = {
+		name = nf_legion.5.c
+
+		trigger = {
+			has_completed_focus = ces_goddess_diana
+			has_completed_focus = ces_the_twin_temples
+		}
+
+		set_country_flag = caesar_survived
+
+		add_stability = -0.1
+		add_war_support = 0.05
+		country_event = { id = nf_legion.6 }
+
+	}
+}
+
+country_event = {
+	id = nf_legion.6
+	title = nf_legion.6.t
+	desc = nf_legion.6.d
+	picture = GFX_event_CES_camp_1
+
+	is_triggered_only = yes
+	# Stay as Caesar
+	option = {
+		name = nf_legion.6.a
+
+		remove_unit_leader = 1002
+		set_country_flag = legion_had_civil_war
+
+		custom_effect_tooltip = caesar_chosen
+	}
+
+	option = {
+		name = nf_legion.6.b
+		hidden_effect = {
+			359 = { set_state_name = "Fortification Hill" }
+			every_owned_state = {
+				set_state_flag = do_not_decimate
+			}
+		}
+		create_country_leader = {
+			name = "Lucius"
+			desc = "Lucius_DESC"
+			picture = "Portrait_Lucius.dds"
+			expire = "3000.1.1"
+			ideology = technocracy
+			id = 1006
+
+			traits = {
+			}
+		}
+		hidden_effect = {
+			remove_unit_leader = 1002
+			set_country_flag = legion_had_civil_war
+		}
+		if = {
+			limit = {
+				is_ai = no
+			}
+			start_civil_war = {
+				ideology = intellectuals
+				size = 0.35
+				capital = 359
+				keep_unit_leaders = { 1001 1003 1004 }
+				states_filter = {
+					owner = { original_tag = CES }
+					is_CES_civil_war_non_eligable = no
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			start_civil_war = {
+					ideology = intellectuals
+					size = 0.2
+					capital = 359
+					states_filter = {
+						owner = { original_tag = CES }
+						is_CES_civil_war_non_eligable = no
+					}
+					keep_unit_leaders = { 1001 1003 1004 }
+			}
+		}
+		random_country = {
+			limit = {
+				original_tag = CES
+				has_government = intellectuals
+			}
+			set_research_slots = 4
+			set_politics = {
+				parties = {
+					people = { popularity = 0 }
+					elites = { popularity = 15 }
+					intellectuals = { popularity = 35 }
+					ruler = { popularity = 50 }
+				}
+				ruling_party = intellectuals
+				elections_allowed = no
+			}
+
+			set_cosmetic_tag = BOM
+
+			hidden_effect = {
+				set_technology = {
+					powered_weaponry = 1
+					scientific_civilization = 1
+					power_armour = 1
+					securitron_tech = 1
+				}
+				set_country_flag = legion_had_civil_war
+				load_oob = brotherhoodofmars
+			}
+
+			change_tag_from = CES
+		}
+		hidden_effect = {
+			every_owned_state = {
+				clr_state_flag = do_not_decimate
+			}
+		}
+		custom_effect_tooltip = lucius_chosen
+	}
+}
+
+# Expedition to Blackfoot
+country_event = {
+	id = nf_legion.7
+	title = nf_legion.7.t
+	desc = nf_legion.7.d
+	picture = GFX_event_CES_camp_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_legion.7.a
+
+		add_ideas = legion_nf_weapon_maintenance
+	}
+
+	option = {
+		name = nf_legion.7.b
+
+		add_ideas = legion_nf_unit_tactics
+	}
+
+	option = {
+		name = nf_legion.7.c
+
+		add_ideas = legion_nf_explosives_creation
+	}
+}
+
+# Death in the Canyons
+country_event = {
+	id = nf_legion.8
+	title = nf_legion.8.t
+	desc = nf_legion.8.d
+	picture = GFX_event_CES_camp_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_legion.8.a
+
+		add_ideas = legion_nf_ridgers_pyre
+	}
+
+	option = {
+		name = nf_legion.8.b
+
+		add_ideas = legion_nf_kaibab_crucifiction
+	}
+
+	option = {
+		name = nf_legion.8.c
+
+		add_ideas = legion_nf_fredonian_arena
+	}
+}
+
+# The Malpais Legate
+country_event = {
+	id = nf_legion.9
+	title = nf_legion.9.t
+	desc = nf_legion.9.d
+	picture = GFX_event_CES_malpais_legate
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_legion.9.a
+
+		create_field_marshal = {
+			name = "Malpais Legate"
+			portrait_path = "gfx/leaders/CES/Portrait_Malpais.dds"
+			skill = 5
+			id = 1003
+			traits = {
+				urban_assault_specialist
+			}
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 3
+		}
+
+		custom_effect_tooltip = legion_siege_battalion_tt
+		hidden_effect = { load_oob = "legion_siege_battalion" }
+	}
+
+	option = {
+		name = nf_legion.9.b
+
+		create_field_marshal = {
+			name = "Malpais Legate"
+			portrait_path = "gfx/leaders/CES/Portrait_Malpais.dds"
+			skill = 5
+			id = 1003
+			traits = {
+				desert_fox
+				trickster
+			}
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 6
+		}
+
+		custom_effect_tooltip = legion_recon_battalion_tt
+		hidden_effect = { load_oob = "legion_recon_battalion" }
+	}
+
+	option = {
+		name = nf_legion.9.c
+
+		create_field_marshal = {
+			name = "Malpais Legate"
+			portrait_path = "gfx/leaders/CES/Portrait_Malpais.dds"
+			skill = 5
+			id = 1003
+			traits = {
+				desert_fox
+			}
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 6
+			logistics_skill = 4
+		}
+
+		custom_effect_tooltip = legion_chariots_tt
+		hidden_effect = { load_oob = "legion_chariots" }
+	}
+}
+
+# Caesar, Son of Mars
+country_event = {
+	id = nf_legion.10
+	title = nf_legion.10.t
+	desc = nf_legion.10.d
+	picture = GFX_event_CES_caesar
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_legion.10.a
+
+		add_ideas = legion_nf_profligate_destruction
+	}
+
+	option = {
+		name = nf_legion.10.b
+
+		add_ideas = legion_nf_divide_et_impera
+	}
+
+	option = {
+		name = nf_legion.10.c
+
+		add_ideas = legion_nf_decimatio
+	}
+}
+
+#Hoover Dam over
+country_event = {
+	id = nf_legion.12
+	title = nf_legion.12.t
+	desc = nf_legion.12.d
+	picture = GFX_event_CES_hoover_dam
+
+	is_triggered_only = yes
+
+	option = {#Lost the war
+		name = nf_legion.12.a
+
+		trigger = {
+			NOT = {
+				252 = {
+					controller = {
+						tag = ROOT
+					}
+				}
+			}
+		}
+
+		hidden_effect = {
+			white_peace = NCR
+			white_peace = CES
+		}
+
+		set_country_flag = hoover_dam_lost
+		clr_country_flag = battle_for_hoover_dam
+	}
+
+	option = {#Congrats u win
+		name = nf_legion.12.b
+
+		trigger = {
+			252 = {
+				controller = {
+					tag = ROOT
+				}
+			}
+		}
+
+		set_country_flag = hoover_dam_won
+		transfer_state = 252
+		transfer_state = 613
+
+		hidden_effect = {
+			white_peace = NCR
+			white_peace = CES
+		}
+
+		clr_country_flag = battle_for_hoover_dam
+	}
+}
