@@ -7,7 +7,6 @@ country_event = {
 	desc = Easybuff.1.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	immediate = {
 		hidden_effect = { remove_ideas = cheat_open_easybuff }
@@ -61,8 +60,6 @@ country_event = {
 	desc = Easybuff.10.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.10.a
@@ -143,8 +140,6 @@ country_event = {
 	desc = Easybuff.20.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.20.a
@@ -251,8 +246,6 @@ country_event = {
 	desc = Easybuff.30.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.30.a
@@ -280,8 +273,6 @@ country_event = {
 	
 	is_triggered_only = yes
 
-	mean_time_to_happen = { days = 0 }
-
 	option = {
 		name = Easybuff.31.a
 		set_technology = { bicycle_infantry = 1 }
@@ -305,7 +296,6 @@ country_event = {
 	desc = Easybuff.32.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.32.a
@@ -359,7 +349,6 @@ country_event = {
 	desc = Easybuff.33.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.33.a
@@ -383,7 +372,6 @@ country_event = {
 	desc = Easybuff.40.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.40.a
@@ -407,7 +395,6 @@ country_event = {
 	desc = Easybuff.41.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 	
 	option = {
 		name = Easybuff.41.a
@@ -479,7 +466,6 @@ country_event = {
 	desc = Easybuff.42.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 	
 	option = {
 		name = Easybuff.42.a
@@ -534,7 +520,6 @@ country_event = {
 	desc = Easybuff.50.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.50.a
@@ -599,7 +584,6 @@ country_event = {
 	desc = Easybuff.60.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.60.a
@@ -663,7 +647,6 @@ country_event = {
 	desc = Easybuff.61.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.61.a
@@ -717,7 +700,6 @@ country_event = {
 	desc = Easybuff.62.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.62.a
@@ -767,7 +749,6 @@ country_event = {
 	desc = Easybuff.63.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.63.a
@@ -1182,7 +1163,6 @@ country_event = {
 	desc = Easybuff.70.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	immediate = {
 		hidden_effect = {
@@ -1268,7 +1248,6 @@ country_event = {
 	desc = Easybuff.71.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.71.a
@@ -1322,7 +1301,6 @@ country_event = {
 	desc = Easybuff.72.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	immediate = {
 		hidden_effect = {
@@ -1381,7 +1359,6 @@ country_event = {
 	desc = Easybuff.73.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.73.a
@@ -1453,7 +1430,6 @@ country_event = {
 	desc = Easybuff.74.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.74.a
@@ -1510,7 +1486,6 @@ country_event = {
 	desc = Easybuff.75.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	immediate = {
 		hidden_effect = { 
@@ -1576,7 +1551,6 @@ country_event = {
 	desc = Easybuff.80.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.80.a
@@ -1627,7 +1601,6 @@ country_event = {
 	desc = Easybuff.90.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.90.a
