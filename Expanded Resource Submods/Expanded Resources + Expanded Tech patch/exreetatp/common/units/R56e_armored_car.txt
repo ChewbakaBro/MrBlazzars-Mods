@@ -29,6 +29,7 @@ sub_units = {
 			grain_conversion_eq = 160
 			fuel_eq = 80
 			light_ammo_eq = 160
+			exre_uniform_eq = 60
 		}
 		manpower = 500
 		max_organisation = 30

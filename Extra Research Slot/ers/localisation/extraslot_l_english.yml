@@ -1,0 +1,8 @@
+﻿l_english:
+ extraslot.1:0 "Extra Research Slot"
+ extraslot.1.t:0 "Extra Research Slot"
+ extraslot.1.d:0 "This event gives you the choice to give an extra research slot to yourself, every country, or no one.\n\nFor those that want the research slot for only themselves pick option 1.\nFor those that want even the AI to have the research slot pick option 2.\nAnd those that want to not give it to anyone pick option 3."
+ extraslot.1.a:0 "Extra Research slot to only me."
+ extraslot.1.b:0 "Extra Research slot to no one."
+ extraslot.1.c:0 "Extra Research slot to everyone."
+ extraslot.1.e:0 "Extra Research slot to all Players"
