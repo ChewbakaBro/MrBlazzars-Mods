@@ -94,7 +94,7 @@ sub_units = {
 			support_equipment = 10
 			grain_conversion_eq = 125
 			light_ammo_eq = 200
-			exre_uniform_eq = 60		
+			exre_uniform_eq = 60
 		}
 
 		forest = {
