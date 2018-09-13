@@ -9,11 +9,11 @@ buildings = {
 		icon_frame = 1
 		infrastructure = yes
 		max_level = 10
-		value = 1
+		value = 5
 	}
 	air_base = {
 		show_on_map = 1
-		base_cost = 1750
+		base_cost = 1500
 		icon_frame = 2
 		air_base = yes
 		max_level = 10
@@ -31,7 +31,7 @@ buildings = {
 		value = 1
 	}
 	flakturm = {
-		show_on_map = 1
+		show_on_map = 0
 		base_cost = 30000
 		icon_frame = 28
 		anti_air = yes
@@ -40,6 +40,7 @@ buildings = {
 		max_level = 1 # This is the max unlock level
 		damage_factor = 0.05
 		value = 2
+		infrastructure_construction_effect = yes
 	}
 	radar_station = {
 		show_on_map = 1
@@ -49,7 +50,7 @@ buildings = {
 		#max_level = 0 # max: 5
 		max_level = 6 # This is the max unlock level
 		damage_factor = 0.5
-		value = 4
+		value = 8
 	}
 	# Province buildings
 	naval_base = {
@@ -140,25 +141,25 @@ buildings = {
 		show_on_map = 1
 		base_cost = 22000
 		icon_frame = 11
-		local_resources_oil = 6 # May use local_resources_ + any resource name
+		local_resources_oil = 3 # May use local_resources_ + any resource name
 		#local_resources_rubber = 2 # May use local_resources_ + any resource name
 		refinery = yes
 		#max_level = 0 # max: 5
 		max_level = 4 # This is the max unlock level
 		shares_slots = yes
-		value = 5
+		value = 10
 		infrastructure_construction_effect = yes
 	}
 	synthetic_rubber_refinery = {
 		show_on_map = 1
 		base_cost = 22000
 		icon_frame = 12
-		local_resources_rubber = 4 
+		local_resources_rubber = 1 
 		refinery = yes
 		#max_level = 0 # max: 5
 		max_level = 4 # This is the max unlock level
 		shares_slots = yes
-		value = 5
+		value = 10
 		infrastructure_construction_effect = yes
 	}
 	steel_refinery = {
@@ -173,16 +174,6 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
-	}
-	immature_steelmaking_furnace = {
-		show_on_map = 5
-		base_cost = 5
-		icon_frame = 14
-		local_resources_steel = 1
-		refinery = yes
-		max_level = 5
-		shares_slots = yes
-		value = 5
 	}
 	rocket_site = {
 		show_on_map = 1
@@ -206,6 +197,26 @@ buildings = {
 		value = 10
 		infrastructure_construction_effect = yes
 	}
+	
+	storage_building_1 = {
+		show_on_map = 0
+		base_cost = 7000
+		icon_frame = 38
+		max_level = 1
+		shares_slots = yes
+		value = 0
+		infrastructure_construction_effect = no
+	}
+	storage_building_2 = {
+		show_on_map = 0
+		base_cost = 7000
+		icon_frame = 37
+		max_level = 1
+		shares_slots = yes
+		value = 0
+		infrastructure_construction_effect = no
+	}
+	
 	tank_factory = {
 		show_on_map = 1
 		provincial = no
@@ -214,7 +225,7 @@ buildings = {
 		max_level = 4 # This is the max unlock level
 		
 		shares_slots = yes
-		value = 5
+		value = 0
 		infrastructure_construction_effect = yes
 	}
 	truck_factory = {
@@ -223,7 +234,7 @@ buildings = {
 		icon_frame = 18
 		max_level = 4 # This is the max unlock level
 		shares_slots = yes
-		value = 5
+		value = 0
 		infrastructure_construction_effect = yes
 	}
 	artillery_factory = {
@@ -232,7 +243,7 @@ buildings = {
 		icon_frame = 19
 		max_level = 4 # This is the max unlock level
 		shares_slots = yes
-		value = 5
+		value = 0
 		infrastructure_construction_effect = yes
 	}
 	smallarms_factory = {
@@ -241,7 +252,7 @@ buildings = {
 		icon_frame = 20
 		max_level = 4 # This is the max unlock level
 		shares_slots = yes
-		value = 5
+		value = 0
 		infrastructure_construction_effect = yes
 	}
 	uniform_factory = {
@@ -250,7 +261,7 @@ buildings = {
 		icon_frame = 21
 		max_level = 4 # This is the max unlock level
 		shares_slots = yes
-		value = 5
+		value = 0
 		infrastructure_construction_effect = yes
 	}
 	ammo_factory = {
@@ -259,7 +270,7 @@ buildings = {
 		icon_frame = 22
 		max_level = 4 # This is the max unlock level
 		shares_slots = yes
-		value = 5
+		value = 0
 		infrastructure_construction_effect = yes
 	}
 	Ltaircraft_factory = {
@@ -268,7 +279,7 @@ buildings = {
 		icon_frame = 23
 		max_level = 4 # This is the max unlock level
 		shares_slots = yes
-		value = 5
+		value = 0
 		infrastructure_construction_effect = yes
 	}
 	Hvaircraft_factory = {
@@ -277,7 +288,7 @@ buildings = {
 		icon_frame = 24
 		max_level = 4 # This is the max unlock level
 		shares_slots = yes
-		value = 5
+		value = 0
 		infrastructure_construction_effect = yes
 	}
 	shipyard = {
@@ -287,7 +298,7 @@ buildings = {
 		only_costal = yes
 		max_level = 4 # This is the max unlock level
 		shares_slots = yes
-		value = 5
+		value = 0
 		infrastructure_construction_effect = yes
 	}
 	subyard = {
@@ -297,8 +308,56 @@ buildings = {
 		only_costal = yes
 		max_level = 4 # This is the max unlock level
 		shares_slots = yes
-		value = 5
+		value = 0
 		infrastructure_construction_effect = yes
+	}
+	#used for money research calculations
+	research_centre = {
+		show_on_map = 0
+		base_cost = 99999
+		icon_frame = 30
+		only_costal = no
+		max_level = 1 # This is the max unlock level
+		shares_slots = no
+		value = 0
+		infrastructure_construction_effect = no
+	}
+	supply_depot = {
+		show_on_map = 0
+		base_cost = 1800
+		icon_frame = 36
+		max_level = 1
+		shares_slots = no
+		value = 0
+		infrastructure_construction_effect = no
+	}
+	police_station = {
+		show_on_map = 0
+		base_cost = 3000
+		icon_frame = 39
+		max_level = 1
+		shares_slots = no
+		value = 0
+		infrastructure_construction_effect = no
+	}
+	hospital = {
+		show_on_map = 0
+		base_cost = 3000
+		icon_frame = 40
+		max_level = 1
+		shares_slots = no
+		value = 0
+		infrastructure_construction_effect = no
+	}
+	dummy = { 
+		show_on_map = 100
+		base_cost = 90000
+		base_cost_conversion = 100000
+		military_production = 0
+		icon_frame = 29
+		max_level = 1
+		shares_slots = yes
+		value = 0
 	}
 	### disabled for now 
 	#arms_supercomplex = {

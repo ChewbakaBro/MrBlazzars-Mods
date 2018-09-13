@@ -1,8 +1,7 @@
 state_categories={
-megalopolis = {
-	local_building_slots = 24
-		local_supplies = -0.35
+	megalopolis = {
+		local_building_slots = 30
+		local_supplies = -0.42
 		color = { 0 240 240 }
-
 	}
 }
