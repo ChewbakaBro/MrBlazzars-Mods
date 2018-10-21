@@ -47,7 +47,7 @@ guiTypes = {
 				name = "state_name"
 				position = { x = 60 y = 5 }
 				textureFile = ""
-				font = "hoi_36header"
+				font = "bombardier_30"
 				text = "STATE_NAME_TEST"
 				maxWidth = 320
 				maxHeight = 30
@@ -67,7 +67,7 @@ guiTypes = {
 				name = "shared_slot_count"
 				position = { x = 194 y = 147 }
 				textureFile = ""
-				font = "hoi_18mbs"
+				font = "bombardier_18"
 				text = "SLOTS"
 				maxWidth = 190
 				maxHeight = 30
@@ -104,12 +104,12 @@ guiTypes = {
 				name = "claims"
 				position = { x = 15 y = 97 }
 				textureFile = ""
-				font = "hoi_18mbs"
+				font = "bombardier_18"
 				text = ""
 				maxWidth = 140
 				maxHeight = 30
 				fixedsize = yes
-				format = center				
+				format = center
 			}
 			
 			OverlappingElementsBoxType = {
@@ -124,7 +124,7 @@ guiTypes = {
 				name = "owner"
 				position = { x = 15 y = 42 }
 				textureFile = ""
-				font = "hoi_18mbs"
+				font = "bombardier_18"
 				text = ""
 				maxWidth = 140
 				maxHeight = 30
@@ -160,7 +160,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "state_resources"
-				position = { x= 22 y=261}
+				position = { x = 22 y = 261 }
 				size = { width=135 height=63 }
 				
 				
@@ -177,43 +177,64 @@ guiTypes = {
 					slotsize = { width = 52 height = 30 }
 					max_slots_horizontal = 2
 					max_slots_vertical = 3
-					
 				}
 			}
 			
-			iconType ={
+			iconType = {
 				name ="population_icon"
 				spriteType = "GFX_population_icon"
-				position = { x = 20 y = 157 }
+				position = { x = 20 y = 10000 }#x = 20 y = 157
 				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextboxType = {
+				name = "manpower_title"
+				position = { x = 22 y = 167 }#y=167
+				textureFile = ""
+				font = "bombardier_18"
+				text = "MANPOWER_TITLE"
+				maxWidth = 80
+				maxHeight = 30
+				format = left	
 			}
 			
 			instantTextboxType = {
 				name = "manpower"
-				position = { x = 64 y = 167 }
+				position = { x = 95 y = 167 }
 				textureFile = ""
-				font = "hoi_18mbs"
+				font = "bombardier_18"
 				maxWidth = 80
 				maxHeight = 30
-				format = center	
+				format = left	
 			}
 			
 			buttonType ={
 				name ="state_resistance_icon"
 				spriteType = "GFX_stateview_resistance_button"
-				position = { x = 20 y = 191 }
+				position = { x = 20 y = 10000 }#x = 20 y = 191
 				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextboxType = {
+				name = "resistance_title"
+				position = { x = 22 y = 190 }#y=167
+				textureFile = ""
+				font = "bombardier_18"
+				text = "RESISTANCE_TITLE"
+				maxWidth = 80
+				maxHeight = 30
+				format = left	
 			}
 			
 			instantTextboxType = {
 				name = "state_resistance"
-				position = { x = 54 y = 199 }
+				position = { x = 80 y = 190 }
 				textureFile = ""
-				font = "hoi_18mbs"
+				font = "bombardier_18"
 				text = "1300"
 				maxWidth = 90
 				maxHeight = 30
-				format = center
+				format = left
 			}
 		}
 		
