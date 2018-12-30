@@ -894,9 +894,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -915,16 +912,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -971,9 +959,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -992,16 +977,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -1048,9 +1024,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -1069,16 +1042,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -1125,9 +1089,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -1146,16 +1107,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -1202,9 +1154,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -1223,16 +1172,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -1279,9 +1219,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -1300,16 +1237,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -1356,9 +1284,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -1377,16 +1302,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -1433,9 +1349,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -1454,16 +1367,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -1528,9 +1432,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -1549,16 +1450,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -1605,9 +1497,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -1626,16 +1515,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -1682,9 +1562,6 @@ country_event = {
 				maoism = {
 					popularity = 100
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -1703,93 +1580,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
-					popularity = 0
-				}
-			}
-		}
-		country_event = Easybuff.60
-	}
-	option = {
-		trigger = { is_ai = no }
-		name = Easybuff.63.n
-		set_politics = {
-			ruling_party = National_Socialism
-			elections_allowed = no
-			parties = {
-				conservative = { 
-					popularity = 0
-				}
-				Liberal_Conservatism = {
-					popularity = 0
-				}
-				Christian_Democratic = {
-					popularity = 0
-				}
-				Social_Democratic = {
-					popularity = 0
-				}
-				Social_Liberalism = {
-					popularity = 0
-				}
-				democratic = {
-					popularity = 0
-				}
-				centrist = {
-					popularity = 0
-				}
-				liberal = {
-					popularity = 0
-				}
-				communism = {
-					popularity = 0
-				}
-				trotskyism = {
-					popularity = 0
-				}
-				maoism = {
-					popularity = 0
-				}
-				National_Socialism = {
-					popularity = 100
-				}
-				fascism = {
-					popularity = 0
-				}
-				nationalism = {
-					popularity = 0
-				}
-				monarchism = {
-					popularity = 0
-				}
-				neutrality = {
-					popularity = 0
-				}
-				islamism = {
-					popularity = 0
-				}
-				radical_shiaism = {
-					popularity = 0
-				}
-				pan_arabism = {
-					popularity = 0
-				}
-				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -1836,9 +1627,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 100
 				}
@@ -1857,16 +1645,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -1913,9 +1692,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -1934,16 +1710,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -1990,9 +1757,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -2011,16 +1775,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -2067,9 +1822,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -2088,16 +1840,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -2162,9 +1905,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -2183,16 +1923,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -2239,9 +1970,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -2260,93 +1988,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 100
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
-					popularity = 0
-				}
-			}
-		}
-		country_event = Easybuff.60
-	}
-	option = {
-		trigger = { is_ai = no }
-		name = Easybuff.63.u
-		set_politics = {
-			ruling_party = pan_arabism
-			elections_allowed = no
-			parties = {
-				conservative = { 
-					popularity = 0
-				}
-				Liberal_Conservatism = {
-					popularity = 0
-				}
-				Christian_Democratic = {
-					popularity = 0
-				}
-				Social_Democratic = {
-					popularity = 0
-				}
-				Social_Liberalism = {
-					popularity = 0
-				}
-				democratic = {
-					popularity = 0
-				}
-				centrist = {
-					popularity = 0
-				}
-				liberal = {
-					popularity = 0
-				}
-				communism = {
-					popularity = 0
-				}
-				trotskyism = {
-					popularity = 0
-				}
-				maoism = {
-					popularity = 0
-				}
-				National_Socialism = {
-					popularity = 0
-				}
-				fascism = {
-					popularity = 0
-				}
-				nationalism = {
-					popularity = 0
-				}
-				monarchism = {
-					popularity = 0
-				}
-				neutrality = {
-					popularity = 0
-				}
-				islamism = {
-					popularity = 0
-				}
-				radical_shiaism = {
-					popularity = 100
-				}
-				pan_arabism = {
-					popularity = 0
-				}
-				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 0
 				}
 			}
@@ -2393,9 +2035,6 @@ country_event = {
 				maoism = {
 					popularity = 0
 				}
-				National_Socialism = {
-					popularity = 0
-				}
 				fascism = {
 					popularity = 0
 				}
@@ -2414,170 +2053,7 @@ country_event = {
 				radical_shiaism = {
 					popularity = 0
 				}
-				pan_arabism = {
-					popularity = 0
-				}
 				Salafism = {
-					popularity = 100
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
-					popularity = 0
-				}
-			}
-		}
-		country_event = Easybuff.60
-	}
-	option = {
-		trigger = { is_ai = no }
-		name = Easybuff.63.w
-		set_politics = {
-			ruling_party = Judaism
-			elections_allowed = no
-			parties = {
-				conservative = { 
-					popularity = 0
-				}
-				Liberal_Conservatism = {
-					popularity = 0
-				}
-				Christian_Democratic = {
-					popularity = 0
-				}
-				Social_Democratic = {
-					popularity = 0
-				}
-				Social_Liberalism = {
-					popularity = 0
-				}
-				democratic = {
-					popularity = 0
-				}
-				centrist = {
-					popularity = 0
-				}
-				liberal = {
-					popularity = 0
-				}
-				communism = {
-					popularity = 0
-				}
-				trotskyism = {
-					popularity = 0
-				}
-				maoism = {
-					popularity = 0
-				}
-				National_Socialism = {
-					popularity = 0
-				}
-				fascism = {
-					popularity = 0
-				}
-				nationalism = {
-					popularity = 0
-				}
-				monarchism = {
-					popularity = 0
-				}
-				neutrality = {
-					popularity = 0
-				}
-				islamism = {
-					popularity = 0
-				}
-				radical_shiaism = {
-					popularity = 0
-				}
-				pan_arabism = {
-					popularity = 0
-				}
-				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 100
-				}
-				Christianism = {
-					popularity = 0
-				}
-			}
-		}
-		country_event = Easybuff.60
-	}
-	option = {
-		trigger = { is_ai = no }
-		name = Easybuff.63.x
-		set_politics = {
-			ruling_party = Christianism
-			elections_allowed = no
-			parties = {
-				conservative = { 
-					popularity = 0
-				}
-				Liberal_Conservatism = {
-					popularity = 0
-				}
-				Christian_Democratic = {
-					popularity = 0
-				}
-				Social_Democratic = {
-					popularity = 0
-				}
-				Social_Liberalism = {
-					popularity = 0
-				}
-				democratic = {
-					popularity = 0
-				}
-				centrist = {
-					popularity = 0
-				}
-				liberal = {
-					popularity = 0
-				}
-				communism = {
-					popularity = 0
-				}
-				trotskyism = {
-					popularity = 0
-				}
-				maoism = {
-					popularity = 0
-				}
-				National_Socialism = {
-					popularity = 0
-				}
-				fascism = {
-					popularity = 0
-				}
-				nationalism = {
-					popularity = 0
-				}
-				monarchism = {
-					popularity = 0
-				}
-				neutrality = {
-					popularity = 0
-				}
-				islamism = {
-					popularity = 0
-				}
-				radical_shiaism = {
-					popularity = 0
-				}
-				pan_arabism = {
-					popularity = 0
-				}
-				Salafism = {
-					popularity = 0
-				}
-				Judaism = {
-					popularity = 0
-				}
-				Christianism = {
 					popularity = 100
 				}
 			}
