@@ -1,6 +1,5 @@
 ﻿add_namespace = Easybuff
 
-
 country_event = {
 	id = Easybuff.1
 	title = Easybuff.1.t
@@ -266,7 +265,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 
-
 	option = {
 		trigger = { is_ai = no }
 		name = Easybuff.30.a
@@ -293,7 +291,6 @@ country_event = {
 	title = Easybuff.31.t
 	desc = Easybuff.31.desc
 	picture = GFX_report_event_german_inspect_troops
-	
 	is_triggered_only = yes
 
 	option = {
@@ -398,7 +395,6 @@ country_event = {
 
 # Equipments 40
 country_event = {
-		trigger = { is_ai = no }
 	id = Easybuff.40
 	title = Easybuff.40.t
 	desc = Easybuff.40.desc
@@ -2077,7 +2073,7 @@ country_event = {
 	title = Easybuff.70.t
 	desc = Easybuff.70.desc
 	picture = GFX_report_event_german_inspect_troops
-	
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -2170,7 +2166,7 @@ country_event = {
 	title = Easybuff.71.t
 	desc = Easybuff.71.desc
 	picture = GFX_report_event_german_inspect_troops
-	
+	is_triggered_only = yes
 
 	option = {
 		trigger = { is_ai = no }
@@ -2226,7 +2222,7 @@ country_event = {
 	title = Easybuff.72.t
 	desc = Easybuff.72.desc
 	picture = GFX_report_event_german_inspect_troops
-	
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {

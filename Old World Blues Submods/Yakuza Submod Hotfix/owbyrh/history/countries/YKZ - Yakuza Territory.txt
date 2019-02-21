@@ -1,0 +1,87 @@
+﻿oob = "YKZ_2275"
+capital = 160
+
+set_country_flag = not_a_raider_nation
+
+set_technology = {
+	standard_weaponry_tech = 1
+	blunt_weaponry = 1
+	tribal_civilization = 1
+	settled_civilization = 1
+	support_weaponry = 1
+	signal_tech = 1
+	logistics_tech = 1
+	explosive_tech = 1
+	anti_tank_tech = 1
+	anti_personnel_tech = 1
+	bike_tech_1 = 1
+}
+
+set_stability = 0.2 
+set_war_support = 0.55
+
+set_politics = {
+    parties = {
+        people = { popularity = 25 }
+        elites = { popularity = 10 }
+        intellectuals = { popularity = 20 }
+        ruler = { popularity = 45 }
+    }
+    ruling_party = elites
+    elections_allowed = no
+
+}
+
+create_country_leader = {
+	name = "Council Head Yazu"
+	picture = "gfx/leaders/Yazu.dds"
+	expire = "3000.1.1"
+	ideology = peoples_militia
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "War Rider Yuriko"
+	picture = "gfx/leaders/Raider/Portrait_Raider_Generic_14.dds"
+	expire = "3000.1.1"
+	ideology = militarist_oligarchy
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "The Inventor"
+	picture = "gfx/leaders/The_Inventor.dds"
+	expire = "3000.1.1"
+	ideology = technocracy
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Warlord Kaze"
+	picture = "gfx/leaders/Kaze.dds"
+	expire = "3000.1.1"
+	ideology = warlordship
+	traits = {
+		#
+	}
+}
+
+add_ideas = { 
+}
+
+create_corps_commander = {
+    name = "Bushido Hido"
+    portrait_path = "gfx/leaders/Tribal/Portrait_Tribal_Generic_14.dds"
+    skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+    traits = { urban_assault_specialist }
+}

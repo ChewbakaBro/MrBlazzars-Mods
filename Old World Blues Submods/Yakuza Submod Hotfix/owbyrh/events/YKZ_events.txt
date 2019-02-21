@@ -1,0 +1,561 @@
+﻿add_namespace = YKZ
+
+country_event = {
+	id = YKZ.1
+	title = YKZ.1.t
+	desc = YKZ.1.d
+	#picture = <stuff>
+
+	is_triggered_only = yes #only triggered by on_startup on_action
+	hidden = yes #makes the event hidden to teh player
+
+	immediate = {
+        YKZ = {
+            NCN = { 
+		add_ai_strategy = {
+    		type = ignore
+   		id = YKZ
+    		value = 100
+		}
+            }
+            NCR = { 
+		add_ai_strategy = {
+    		type = ignore
+   		id = YKZ
+    		value = 150
+		}
+            }
+            CES = { 
+		add_ai_strategy = {
+    		type = ignore
+   		id = YKZ
+    		value = 200
+		}
+            }
+            YKZ = { set_variable = { var = YKZ_kamikaze_wokou_score value = 30 } }
+            YKZ = { set_variable = { var = YKZ_yamaguchi_score value = 40 } }
+            YKZ = { set_variable = { var = YKZ_oyagami_score value = 20 } }
+            YKZ = { set_variable = { var = YKZ_jieitai_score value = 10 } }
+            YKZ = { set_variable = { var = YKZ_current_clan value = 2 } }
+            YKZ = { set_variable = { var = YKZ_leading_clan value = 2 } }
+            add_ideas = YKZ_yamaguchi_idea
+            add_ideas = YKZ_disrespected_people
+            country_event = { id = YKZ.2 days = 7 }
+        }
+    }
+
+	option = {
+		name = YKZ.1.a
+	}
+}
+
+country_event = {
+	id = YKZ.2
+	title = YKZ.2.t
+	desc = YKZ.2.d
+	#picture = <stuff>
+
+	is_triggered_only = yes #only triggered by on_startup on_action
+	hidden = yes #makes the event hidden to teh player
+
+	immediate = {
+	YKZ = {
+        add_to_variable = { var = YKZ_kamikaze_wokou_score value = -1 }
+        add_to_variable = { var = YKZ_yamaguchi_score value = -1 }
+        add_to_variable = { var = YKZ_oyagami_score value = -1 }
+        add_to_variable = { var = YKZ_jieitai_score value = -1 }
+
+        if = { limit = { check_variable = { var = YKZ_current_clan value = 1 compare = equals } } add_to_variable = { var = YKZ_kamikaze_wokou_score value = 6 } }
+        if = { limit = { check_variable = { var = YKZ_current_clan value = 2 compare = equals } } add_to_variable = { var = YKZ_yamaguchi_score value = 6 } }
+        if = { limit = { check_variable = { var = YKZ_current_clan value = 3 compare = equals } } add_to_variable = { var = YKZ_oyagami_score value = 6 } }
+        if = { limit = { check_variable = { var = YKZ_current_clan value = 4 compare = equals } } add_to_variable = { var = YKZ_jieitai_score value = 6 } }
+        clamp_variable = { var = YKZ_kamikaze_wokou_score min = 0 max = 100 }
+        clamp_variable = { var = YKZ_yamaguchi_score min = 0 max = 100 }
+        clamp_variable = { var = YKZ_oyagami_score min = 0 max = 100 }
+        clamp_variable = { var = YKZ_jieitai_score min = 0 max = 100 }
+
+
+        if = { limit = { AND = { check_variable = { YKZ_kamikaze_wokou_score > YKZ_yamaguchi_score } check_variable = { YKZ_kamikaze_wokou_score > YKZ_oyagami_score } check_variable = { YKZ_kamikaze_wokou_score > YKZ_jieitai_score }} } set_variable = { var = YKZ_leading_clan value = 1 } }  
+        if = { limit = { AND = { check_variable = { YKZ_yamaguchi_score > YKZ_jieitai_score } check_variable = { YKZ_yamaguchi_score > YKZ_oyagami_score } check_variable = { YKZ_yamaguchi_score > YKZ_kamikaze_wokou_score }} } set_variable = { var = YKZ_leading_clan value = 2 } }  
+        if = { limit = { AND = { check_variable = { YKZ_oyagami_score > YKZ_yamaguchi_score } check_variable = { YKZ_oyagami_score > YKZ_kamikaze_wokou_score } check_variable = { YKZ_oyagami_score > YKZ_jieitai_score }} } set_variable = { var = YKZ_leading_clan value = 3 } }  
+        if = { limit = { AND = { check_variable = { YKZ_jieitai_score > YKZ_yamaguchi_score } check_variable = { YKZ_jieitai_score > YKZ_oyagami_score } check_variable = { YKZ_jieitai_score > YKZ_kamikaze_wokou_score }} } set_variable = { var = YKZ_leading_clan value = 4 } }  
+
+        if = { limit = { check_variable = { YKZ_leading_clan = 1 } } remove_ideas = { YKZ_yamaguchi_idea YKZ_oyagami_idea YKZ_jieitai_idea } add_ideas = YKZ_kamikaze_wokou_idea }
+        if = { limit = { check_variable = { YKZ_leading_clan = 2 } } remove_ideas = { YKZ_kamikaze_wokou_idea YKZ_oyagami_idea YKZ_jieitai_idea } add_ideas = YKZ_yamaguchi_idea }
+        if = { limit = { check_variable = { YKZ_leading_clan = 3 } } remove_ideas = { YKZ_kamikaze_wokou_idea YKZ_yamaguchi_idea YKZ_jieitai_idea } add_ideas = YKZ_oyagami_idea }
+        if = { limit = { check_variable = { YKZ_leading_clan = 4 } } remove_ideas = { YKZ_kamikaze_wokou_idea YKZ_yamaguchi_idea YKZ_oyagami_idea } add_ideas = YKZ_jieitai_idea }
+
+        country_event = { id = YKZ.2 days = 7 }
+
+
+
+
+	}
+    }
+
+	option = {
+		name = YKZ.1.a
+	}
+}
+
+country_event = {
+    id = YKZ.3
+    title = YKZ.3.t
+    desc = YKZ.3.d
+    is_triggered_only = yes
+    
+		option = {
+		name = YKZ.3.a
+		set_technology = {
+		slashing_weaponry = 1
+		}
+		set_technology = {
+		leather_armour = 1
+		}
+		add_equipment_to_stockpile = {
+		    type = melee_equipment_1
+ 		   amount = 200
+		}
+		custom_effect_tooltip = YKZ_KAMIKAZE_WOKOU_GAIN_10
+		hidden_effect = { add_to_variable = { var = YKZ_kamikaze_wokou_score value = 10 } }
+		}
+
+		option = {
+		name = YKZ.3.b
+
+		set_technology = {
+		bike_tech_2 = 1
+		}
+		add_equipment_to_stockpile = {
+			type = motorbike_equipment_2
+			amount = 200
+			producer = EHT
+		}
+		custom_effect_tooltip = YKZ_motorcycle_gangs
+		hidden_effect = { load_oob = bosozoku }
+		custom_effect_tooltip = YKZ_YAMAGUCHI_GAIN_10
+		hidden_effect = { add_to_variable = { var = YKZ_yamaguchi_score value = 10 } }
+		}
+	
+		option = {
+		name = YKZ.3.c
+		add_ideas = YKZ_ancient_knowledge
+		custom_effect_tooltip = YKZ_OYAGAMI_GAIN_10
+		hidden_effect = { add_to_variable = { var = YKZ_oyagami_idea value = 10 } }
+		}
+}
+
+country_event = {
+    id = YKZ.4
+    title = YKZ.4.t
+    desc = YKZ.4.d
+    is_triggered_only = yes
+
+		option = {
+		name = YKZ.4.1
+		add_ideas = limited_conscription
+		custom_effect_tooltip = YKZ_KAMIKAZE_WOKOU_GAIN_10
+		hidden_effect = { add_to_variable = { var = YKZ_kamikaze_wokou_score value = 10 } }
+		}
+
+		option = {
+		name = YKZ.4.2
+		add_ideas = YKZ_skilled_traders
+		custom_effect_tooltip = YKZ_offer_new_reno_non_aggression_pact
+		hidden_effect = { NEW = { country_event = YKZ.6 } }
+		custom_effect_tooltip = YKZ_YAMAGUCHI_GAIN_10
+		hidden_effect = { add_to_variable = { var = YKZ_yamaguchi_score value = 10 } }
+		}
+
+		option = {
+		name = YKZ.4.3
+		add_war_support = 0.1
+			capital_scope = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		custom_effect_tooltip = YKZ_wall_carson
+		hidden_effect = {
+		160 = {
+		add_building_construction = {
+		type = bunker
+		level = 1
+		province = {
+		id = 4948
+		id = 9193
+		id = 9192
+		id = 9191
+		id = 9188
+		id = 9183
+		id = 8807
+		id = 8808
+		}
+		instant_build = yes
+		}
+		}
+
+		}
+		custom_effect_tooltip = YKZ_JIETAI_GAIN_10
+		hidden_effect = { add_to_variable = { var = YKZ_jieitai_score value = 10 } }
+		}
+
+		option = {
+		name = YKZ.4.4
+		set_technology = {
+		oral_instruction = 1
+		}
+		add_ideas = YKZ_unity_through_faith
+		add_stability = 0.05
+		custom_effect_tooltip = YKZ_OYAGAMI_GAIN_10
+		hidden_effect = { add_to_variable = { var = YKZ_oyagami_idea value = 10 } }
+		}
+
+}
+
+country_event = {
+    id = YKZ.6
+    title = YKZ.6.t
+    desc = YKZ.6.d
+    is_triggered_only = yes
+
+	option = {
+		name = Absolutely
+		ai_chance = {
+			factor = 100
+		}
+		capital_scope = { add_resource = { type = metal amount = 5 } } YKZ = { capital_scope = { add_resource = { type = metal amount = -5 } } }
+		diplomatic_relation = {
+		    country = YKZ
+		    relation = non_aggression_pact
+		    active = yes
+		}
+		add_opinion_modifier = {
+		    target = YKZ
+		    modifier = YKZ_trade_deal
+		}
+		hidden_effect = { YKZ = { news_event = YKZ.7 } }
+	}
+
+	option = {
+		name = Nah
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -5
+		hidden_effect = { YKZ = { news_event = YKZ.8 } }
+	}
+
+}
+
+news_event = {
+    id = YKZ.7
+    title = YKZ.7.t
+    desc = YKZ.7.d
+    is_triggered_only = yes
+
+
+	option = {
+		name = Excellent
+	}
+
+}
+
+news_event = {
+    id = YKZ.8
+    title = YKZ.8.t
+    desc = YKZ.8.d
+    is_triggered_only = yes
+
+
+	option = {
+		name = YKZ.8.a
+	}
+
+}
+
+country_event = {
+    id = YKZ.9
+    title = YKZ.9.t
+    desc = YKZ.9.d
+    is_triggered_only = yes
+    
+		option = {
+		name = YKZ.9.1
+		add_stability = 0.1
+		capital_scope = { 
+		add_extra_state_shared_building_slots = 4
+		add_building_construction = { type = industrial_complex level = 2 instant_build = yes } 
+		}
+		custom_effect_tooltip = YKZ_YAMAGUCHI_GAIN_10
+		hidden_effect = { add_to_variable = { var = YKZ_yamaguchi_score value = 10 } }
+		}
+
+		option = {
+		name = YKZ.9.2
+		add_war_support = 0.1
+		army_experience = 20
+		add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.3
+				uses = 2
+				category = land_doctrine
+		}
+		custom_effect_tooltip = YKZ_KAMIKAZE_WOKOU_GAIN_10
+		hidden_effect = { add_to_variable = { var = YKZ_kamikaze_wokou_score value = 10 } }
+		}
+	
+		option = {
+		name = YKZ.9.3
+		set_technology = {
+			electronic_engineering = 1
+		}
+		add_tech_bonus = {
+				name = robotic_bonus
+				bonus = 0.5
+				uses = 1
+				category = robotics_tech
+		}
+
+		add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+		}
+		custom_effect_tooltip = YKZ_OYAGAMI_GAIN_10
+		hidden_effect = { add_to_variable = { var = YKZ_oyagami_idea value = 10 } }
+		}
+		option = {
+		name = YKZ.9.4
+		add_war_support = 0.15
+		add_stability = 0.15
+		add_opinion_modifier = {
+		    target = SHI
+		    modifier = memoriesofthegreatwar
+		}
+		custom_effect_tooltip = YKZ_JIETAI_GAIN_10
+		hidden_effect = { add_to_variable = { var = YKZ_jieitai_score value = 10 } }
+		}
+}
+
+news_event = {
+    id = YKZ.10
+    title = YKZ.10.t
+    desc = YKZ.10.d
+	picture = GFX_news_event_generic_sign_treaty2
+    is_triggered_only = yes
+
+
+	option = {
+		name = YKZ.10.1
+
+		if = { limit = { owns_state = 160 } 
+		set_province_name = { id = 9187 name = "Shin-Kyoto" }
+		hidden_effect = {  160 = { set_state_name = "Shin-Kyoto" } }
+		}
+		if = { limit = { owns_state = 285 } 
+		set_province_name = { id = 9139 name = "Shin-Tokyo" }
+		hidden_effect = {  285 = { set_state_name = "Shin-Tokyo" } }
+		}
+		if = { limit = { owns_state = 284 } 
+		set_province_name = { id = 8784 name = "Himeji" }
+		hidden_effect = {  284 = { set_state_name = "Himeji" } }
+		}
+		if = { limit = { owns_state = 475 } 
+		set_province_name = { id = 2696 name = "Toyama" }
+		hidden_effect = {  475 = { set_state_name = "Toyama" } }
+		}
+		if = { limit = { owns_state = 184 } 
+		set_province_name = { id = 3405 name = "Yokohama" }
+		hidden_effect = {  184 = { set_state_name = "Yokohama" } }
+		}
+		if = { limit = { owns_state = 614 } 
+		set_province_name = { id = 9155 name = "Ouba" }
+		hidden_effect = {  614 = { set_state_name = "Ouba" } }
+		}
+		if = { limit = { owns_state = 295 } 
+		set_province_name = { id = 8371 name = "Nagano" }
+		hidden_effect = {  295 = { set_state_name = "Nagano" } }
+		}
+		if = { limit = { owns_state = 336 } 
+		set_province_name = { id = 2695 name = "Kure" }
+		hidden_effect = {  336 = { set_state_name = "Kure" } }
+		}
+		if = { limit = { owns_state = 261 } 
+		set_province_name = { id = 3481 name = "Saitama" }
+		hidden_effect = { 261 = { set_state_name = "Saitama" } }
+		}
+		if = { limit = { owns_state = 339 } 
+		set_province_name = { id = 2713 name = "Fukushima" }
+		hidden_effect = { 339 = { set_state_name = "Fukushima" } }
+		}
+		if = { limit = { owns_state = 585 } 
+		set_province_name = { id = 3386 name = "Matsuyama" }
+		hidden_effect = { 585 = { set_state_name = "Matsuyama" } }
+		}
+		if = { limit = { owns_state = 382 } 
+		set_province_name = { id = 3473 name = "Kamakura" }
+		hidden_effect = { 382 = { set_state_name = "Kamakura" } }
+		}
+		if = { limit = { owns_state = 612 } 
+		set_province_name = { id = 3548 name = "Nara" }
+		hidden_effect = { 612 = { set_state_name = "Nara" } }
+		}
+		if = { limit = { owns_state = 363 } 
+		set_province_name = { id = 3579 name = "Kawasaki" }
+		hidden_effect = { 363 = { set_state_name = "Kawasaki" } }
+		}
+		if = { limit = { owns_state = 100 } 
+		set_province_name = { id = 3329 name = "Sendai" }
+		hidden_effect = { 100 = { set_state_name = "Sendai" } }
+		}
+		if = { limit = { owns_state = 129 } 
+		set_province_name = { id = 8438 name = "Sapporo" }
+		hidden_effect = { 129 = { set_state_name = "Sapporo" } }
+		}
+		if = { limit = { owns_state = 273 } 
+		set_province_name = { id = 3463 name = "Sekigahara" }
+		hidden_effect = { 273 = { set_state_name = "Sekigahara" } }
+		}
+		if = { limit = { owns_state = 458 } 
+		set_province_name = { id = 2708 name = "Hakone" }
+		hidden_effect = { 458 = { set_state_name = "Hakone" } }
+		}
+		if = { limit = { owns_state = 223 } 
+		set_province_name = { id = 1200 name = "Takamatsu" }
+		hidden_effect = { 223 = { set_state_name = "Takamatsu" } }
+		}
+	}
+
+}
+
+news_event = {
+    id = YKZ.11
+    title = YKZ.11.t
+    desc = YKZ.11.d
+    picture = GFX_news_event_japanese_parade
+    is_triggered_only = yes
+
+
+	option = {
+		name = YKZ.11.1
+		custom_effect_tooltip = YKZ_form_shogunate
+		set_rule = {
+		can_create_factions = yes
+		}
+
+		add_ideas = YKZ_respected_people
+		hidden_effect = { 
+		set_cosmetic_tag = YKZ_SHOGUNATE
+		}
+	}
+
+}
+
+news_event = {
+    id = YKZ.12
+    title = YKZ.12.t
+    desc = YKZ.12.d
+    picture = GFX_news_event_kiev_ruins
+    is_triggered_only = yes
+
+
+	option = {
+		name = YKZ.12.1
+		custom_effect_tooltip = YKZ_sierra_army_destroyed
+		set_province_name = { id = 8479 name = "Sierra Army Depot Ruins" }
+		hidden_effect = { 159 = { set_state_name = "Sierra Army Depot Ruins" } }
+                159 = { add_resource = { type = electronics amount = 15 } }
+		remove_ideas = YKZ_skynet_defense_network
+	}
+
+}
+
+news_event = {
+    id = YKZ.13
+    title = YKZ.13.t
+    desc = YKZ.13.d
+    picture = GFX_news_event_advanced
+    is_triggered_only = yes
+
+
+	option = {
+		name = YKZ.13.1
+		custom_effect_tooltip = YKZ_scientific_advancements
+		hidden_effect = { 		
+		set_technology = {
+				settled_civilization = 1
+				scientific_civilization = 1
+		}
+		YKZ = { country_event = { id = YKZ.14 days = 60 } }
+		}
+	}
+
+}
+
+country_event = {
+    id = YKZ.14
+    title = YKZ.14.t
+    desc = YKZ.14.d
+    picture = GFX_event_advanced
+    is_triggered_only = yes
+
+
+	option = {
+		name = YKZ.14.1
+		YKZ = {
+			create_country_leader = {
+				name = "Skynet"
+				desc = "Skynet_DESC"
+				picture = "gfx/leaders/Secret_Leader.dds"
+				expire = "3000.1.1"
+				ideology = technocracy
+				traits = {
+					pre_simulated_tactics
+					adaptive_learning
+				}
+			}
+			
+			set_party_name = { 
+			ideology = intellectuals 
+			long_name = "Skynet Defense Network"
+			name = "Skynet Defense Network" 
+			}
+			
+			set_politics = {
+				parties = {
+					people = { popularity = 0 }
+					elites = { popularity = 0 }
+					intellectuals = { popularity = 100 }
+					ruler = { popularity = 0 }
+				}
+				ruling_party = intellectuals
+				elections_allowed = no
+			}
+		}
+	}
+
+	option = {
+		name = YKZ.14.2
+	}
+
+}
+
+news_event = {
+    id = YKZ.15
+    title = YKZ.13.t
+    desc = YKZ.13.d
+    picture = GFX_news_event_advanced
+    is_triggered_only = yes
+
+
+	option = {
+		name = YKZ.13.1
+		add_ideas = { YKZ_influence_of_vault_city YKZ_heart_of_the_world YKZ_disrespected_people YKZ_respected_people YKZ_vault_8_massacre YKZ_form_tax_bureau YKZ_daimyo_system YKZ_battle_for_kanto_city YKZ_vault_city_influence YKZ_honorbound_machines YKZ_automated_industry YKZ_refurbish_equipment YKZ_mastery_of_the_blade YKZ_bushido_code YKZ_war_schools YKZ_war_machines YKZ_citizenship_program  YKZ_depot_arms_manufactory YKZ_shogun_arms_depo YKZ_skynet_defense_network YKZ_ancient_knowledge YKZ_skilled_traders YKZ_unity_through_faith }
+	}
+
+}
