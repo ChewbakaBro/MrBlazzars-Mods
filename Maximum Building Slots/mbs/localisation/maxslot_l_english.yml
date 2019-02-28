@@ -1,0 +1,9 @@
+﻿l_english:
+ Maxslot.1:0 "Maximum Building Slot Cheat"
+ Maxslot.1.t:0 "Maximum Building Slot Cheat"
+ Maxslot.1.d:0 "This event gives you the choice to give max amount of construction slots in states from the begining without having to do research to get more slots to yourself, every country, or no one.\n\nFor those that want the Maximum slots for only themselves pick option 1.\nFor those that want even the AI to have the bonus pick option 2.\nAnd those that want to not give it to anyone pick option 3."
+ Maxslot.1.a:0 "Maximum Construction Slots to only me."
+ Maxslot.1.b:0 "Maximum Construction Slots to no one."
+ Maxslot.1.c:0 "Maximum Construction Slots to everyone."
+ Maxslot.1.e:0 "Maximum Construction Slots to All Players"
+ idea_max_slots:0 "Maximum Slot Cheat"

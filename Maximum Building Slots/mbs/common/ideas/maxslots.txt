@@ -1,0 +1,23 @@
+ideas = {
+
+	hidden_ideas = {#country
+	
+		idea_max_slots = {
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots_factor = 100
+			}
+		}
+	
+	}
+
+}

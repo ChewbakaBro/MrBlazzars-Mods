@@ -1,0 +1,40 @@
+﻿add_namespace = Maxslot
+
+country_event = {
+	id = Maxslot.1
+	title = Maxslot.1.t
+	desc = Maxslot.1.d
+	picture = GFX_news_event_002
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Maxslot.1.a
+		add_ideas = idea_max_slots
+		set_country_flag = cheated_slots
+	}
+	
+	option = {
+		name = Maxslot.1.c
+		every_country = {
+			add_ideas = idea_max_slots
+			set_country_flag = cheated_slots
+		}
+	}
+	
+	option = {
+		name = Maxslot.1.b
+		set_country_flag = cheated_slots
+	}
+
+	option = {
+		name = Maxslot.1.e
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			add_ideas = idea_max_slots
+			set_country_flag = cheated_slots
+		}
+	}
+}
