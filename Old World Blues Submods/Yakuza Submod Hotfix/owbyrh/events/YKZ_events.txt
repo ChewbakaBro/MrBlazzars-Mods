@@ -433,7 +433,7 @@ news_event = {
 
 }
 
-news_event = {
+country_event = {
     id = YKZ.11
     title = YKZ.11.t
     desc = YKZ.11.d
@@ -450,10 +450,9 @@ news_event = {
 
 		add_ideas = YKZ_respected_people
 		hidden_effect = { 
-		set_cosmetic_tag = YKZ_SHOGUNATE
+			set_cosmetic_tag = YKZ_SHOGUNATE
 		}
 	}
-
 }
 
 news_event = {
