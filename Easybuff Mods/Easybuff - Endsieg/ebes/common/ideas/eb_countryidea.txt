@@ -1,6 +1,5 @@
 ideas = {
 	country = {
-
 		de_combat_width = {
 			name = de_combat_width
 			picture = generic_infantry_bonus
@@ -16,8 +15,17 @@ ideas = {
 			allowed = { is_ai = no }
 			removal_cost = -1
 			modifier = {
-				ARMY_ORG = 20
-				NAVY_ORG = 20
+				ARMY_ORG = 30
+				NAVY_ORG = 30
+			}
+		}
+		more_speed = {
+			name = more_speed
+			picture = generic_infantry_bonus
+			allowed = { is_ai = no }
+			removal_cost = -1
+			modifier = {
+				ARMY_SPEED_FACTOR = 3
 			}
 		}
 		more_special = {
@@ -59,5 +67,26 @@ ideas = {
 				modern_tank_artillery_equipment = { reliability = 1.2 }
 			}
 		}
-    }
+		one_in_allbuff = {
+			name = one_in_allbuff
+			picture = generic_infantry_bonus
+			allowed = { is_ai = no }
+			removal_cost = -1
+			modifier = {
+				ARMY_ORG = 40
+				NAVY_ORG = 40
+				production_speed_buildings_factor = 1
+				industry_repair_factor = 100
+				research_speed_factor = 5
+				production_factory_max_efficiency_factor = 2
+				line_change_production_efficiency_factor = 1
+				PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR = 3
+				land_reinforce_rate = 0.2
+				ARMY_MORALE = 40
+				ARMY_SPEED_FACTOR = 4
+				ARMY_ARMOR_SPEED_FACTOR = 3
+				AIR_RANGE_FACTOR = 2
+			}
+		}
+  }
 }
