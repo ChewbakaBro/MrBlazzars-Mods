@@ -128,6 +128,21 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
+		name = Easybuff.10.h
+		add_offsite_building = { type = dockyard level = 2 }
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.10.i
+		add_offsite_building = { type = rocket_site level = 1 }
+	country_event = Easybuff.1
+		}
+	option = {
+		name = Easybuff.10.j
+		add_offsite_building = { type = nuclear_reactor level = 1 }
+		country_event = Easybuff.1
+	}
+	option = {
 		name = Easybuffback
 		country_event = Easybuff.1
 	}
@@ -175,7 +190,10 @@ country_event = {
 	option = {
 		name = Easybuff.20.b
 		random_state = {
-			limit = { is_controlled_by = ROOT }
+			limit = {
+				is_controlled_by = ROOT
+				is_capital = yes
+			}
 			add_resource = {
 				type = rubber
 				amount = 8
@@ -228,6 +246,90 @@ country_event = {
 			}
 			add_resource = {
 				type = chromium
+				amount = 8
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.20.d
+		random_state = {
+			limit = { 
+				is_controlled_by = ROOT 
+				is_capital = yes
+			}
+			add_resource = {
+				type = steel
+				amount = 8
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.20.e
+		random_state = {
+			limit = { 
+				is_controlled_by = ROOT 
+				is_capital = yes
+			}
+			add_resource = {
+				type = tungsten
+				amount = 8
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.20.f
+		random_state = {
+			limit = { 
+				is_controlled_by = ROOT 
+				is_capital = yes
+			}
+			add_resource = {
+				type = aluminium
+				amount = 8
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.20.g
+		random_state = {
+			limit = { 
+				is_controlled_by = ROOT 
+				is_capital = yes
+			}
+			add_resource = {
+				type = chromium
+				amount = 8
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.20.h
+		random_state = {
+			limit = { 
+				is_controlled_by = ROOT 
+				is_capital = yes
+			}
+			add_resource = {
+				type = rubber
+				amount = 8
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.20.i
+		random_state = {
+			limit = { 
+				is_controlled_by = ROOT 
+				is_capital = yes
+			}
+			add_resource = {
+				type = oil
 				amount = 8
 			}
 		}
@@ -1588,6 +1690,24 @@ country_event = {
 		}
 		country_event = Easybuff.1
 	}
+	option = {
+        name = Easybuff.80.e
+        if = {
+            limit = { has_idea = more_speed }
+            remove_ideas = more_speed
+            else = { add_ideas = more_speed }
+        }
+        country_event = Easybuff.1
+    }
+    option = {
+        name = Easybuff.80.f
+        if = {
+            limit = { has_idea = one_in_allbuff }
+            remove_ideas = one_in_allbuff
+            else = { add_ideas = one_in_allbuff }
+        }
+        country_event = Easybuff.1
+    }
 	option = {
 		name = Easybuffback
 		country_event = Easybuff.1
