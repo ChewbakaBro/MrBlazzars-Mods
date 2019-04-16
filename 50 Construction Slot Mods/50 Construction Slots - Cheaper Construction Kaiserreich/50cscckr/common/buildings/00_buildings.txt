@@ -11,12 +11,15 @@ buildings = {
 		infrastructure = yes
 		max_level = 10
 		value = 1
+
+		show_modifier = yes
+		max_fuel_building = 0.75 #k
 	}
 
 	arms_factory = {
 		show_on_map = 6
-		base_cost = 4860
-		base_cost_conversion = 2700
+		base_cost = 3600
+		base_cost_conversion = 2000
 		military_production = 1
 		icon_frame = 2
 		max_level = 40
@@ -27,8 +30,8 @@ buildings = {
 
 	industrial_complex = {
 		show_on_map = 6
-		base_cost = 7290
-		base_cost_conversion = 6075
+		base_cost = 5400
+		base_cost_conversion = 4500
 		general_production = 1
 		icon_frame = 1
 		max_level = 40
@@ -115,15 +118,32 @@ buildings = {
 
 	synthetic_refinery = {
 		show_on_map = 1
-		base_cost = 6500
+		base_cost = 7250
 		icon_frame = 10
-		local_resources_oil = 2 # May use local_resources_ + any resource name
-		local_resources_rubber = 2 # May use local_resources_ + any resource name
+		#local_resources_oil = 1 # May use local_resources_ + any resource name
+		local_resources_rubber = 1 # May use local_resources_ + any resource name
 		refinery = yes
 		max_level = 3 # This is the max unlock level
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
+
+		show_modifier = yes
+		fuel_gain_from_states = 2.0 #per hour
+	}
+
+	fuel_silo = {
+		show_on_map = 1
+		base_cost = 2500
+		icon_frame = 14
+		#max_level = 1
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+		fuel_silo = yes
+		
+		show_modifier = yes
+		max_fuel_building = 100.0 #k
 	}
 
 	radar_station = {
@@ -159,5 +179,13 @@ buildings = {
 		shares_slots = yes
 		value = 10
 		infrastructure_construction_effect = yes
+	}
+
+	UFC_idea = {
+		political_power_gain = -0.004
+		production_speed_buildings_factor = 0.003
+		consumer_goods_factor = -0.001
+		war_support_factor = -0.006
+		shares_slots = yes
 	}
 }
