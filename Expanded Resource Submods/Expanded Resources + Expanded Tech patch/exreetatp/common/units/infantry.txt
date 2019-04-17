@@ -39,7 +39,6 @@ sub_units = {
 		weight = 0.5
 		
 		supply_consumption = 0.07
-	
 		essential = {
 			grain_conversion_eq
 		}
@@ -47,7 +46,6 @@ sub_units = {
 			infantry_equipment = 100
 			grain_conversion_eq = 125
 			light_ammo_eq = 200
-			fuel_eq = 20
 			exre_uniform_eq = 50
 		}
 	}
@@ -169,7 +167,6 @@ sub_units = {
 			infantry_equipment = 150
 			grain_conversion_eq = 175
 			light_ammo_eq = 300
-			fuel_eq = 20
 			exre_uniform_eq = 60
 		}
 
@@ -228,7 +225,6 @@ sub_units = {
 			infantry_equipment = 140
 			grain_conversion_eq = 160
 			light_ammo_eq = 280
-			fuel_eq = 20
 			exre_uniform_eq = 60
 		}
 
@@ -287,7 +283,6 @@ sub_units = {
 			infantry_equipment = 130
 			grain_conversion_eq = 155
 			light_ammo_eq = 260
-			fuel_eq = 20
 			exre_uniform_eq = 60
 		}
 	}
@@ -335,7 +330,6 @@ sub_units = {
 			infantry_equipment = 150
 			grain_conversion_eq = 170
 			light_ammo_eq = 300
-			fuel_eq = 20
 			exre_uniform_eq = 60
 		}
 
@@ -392,7 +386,6 @@ sub_units = {
 			infantry_equipment = 150
 			grain_conversion_eq = 170
 			light_ammo_eq = 300
-			fuel_eq = 20
 			exre_uniform_eq = 60
 		}
 
@@ -453,7 +446,6 @@ sub_units = {
 			infantry_equipment = 150
 			grain_conversion_eq = 170
 			light_ammo_eq = 300
-			fuel_eq = 20
 			exre_uniform_eq = 60
 		}
 
@@ -506,7 +498,6 @@ sub_units = {
 			infantry_equipment = 150
 			grain_conversion_eq = 170
 			light_ammo_eq = 300
-			fuel_eq = 20
 			exre_uniform_eq = 60
 		}
 
@@ -556,15 +547,13 @@ sub_units = {
 		transport = motorized_equipment
 		essential = {
 			grain_conversion_eq
-			fuel_eq
-		}
+		}	
 		need = {
 			infantry_equipment = 100
 			motorized_equipment = 50
 			grain_conversion_eq = 140
-			fuel_eq = 50
 			light_ammo_eq = 200
-			exre_uniform_eq = 60
+			exre_uniform_eq = 50
 		}
 
 		forest = {
@@ -638,7 +627,6 @@ sub_units = {
 			infantry_equipment
 			mechanized_equipment
 			grain_conversion_eq
-			fuel_eq
 		}
 
 		# this is what moves us and sets speed
@@ -648,7 +636,6 @@ sub_units = {
 			mechanized_equipment = 50
 			infantry_equipment = 100
 			grain_conversion_eq = 180
-			fuel_eq = 50
 			light_ammo_eq = 200
 			exre_uniform_eq = 50
 		}
