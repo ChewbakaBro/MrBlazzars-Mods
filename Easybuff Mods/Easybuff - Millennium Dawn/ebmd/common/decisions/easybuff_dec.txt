@@ -2,7 +2,7 @@ easybuff_decision = {
 #political_actions = {
 	easy_buff_dec = {
 
-		icon = GFX_decision_politics
+		icon = generic
 
 		fire_only_once = no
 

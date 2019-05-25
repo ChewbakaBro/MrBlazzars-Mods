@@ -1,5 +1,5 @@
 easybuff_decision = {
-	icon = GFX_decision_politics
+	icon = political_actions
 
 	allowed = {
 		always = yes
