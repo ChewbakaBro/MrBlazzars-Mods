@@ -9,6 +9,8 @@ scripted_gui = {
 		visible = {
 			is_owned_by = ROOT
 			is_controlled_by = ROOT
+			NOT = { is_core_of = ROOT }
+			ROOT = { NOT = { has_country_flag = owb_coring_invisible } }
 		}
 		
 		effects = {
@@ -33,7 +35,7 @@ scripted_gui = {
 					}
 				}
 			}
-			add_core_click_visible = {
+			add_core_visible = {
 				NOT = {
 					is_core_of = ROOT
 				}
@@ -44,8 +46,9 @@ scripted_gui = {
 						has_country_flag = not_allowed_to_core_flag
 					}
 				}
+				ROOT = { NOT = { has_country_flag = owb_coring_invisible } }
 			}
-			add_core_click_cancel_visible = {
+			add_core_cancel_visible = {
 				is_core_of = ROOT
 				ROOT = {
 					#is_major = yes

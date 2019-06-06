@@ -6,7 +6,7 @@ upgrades = {
 		cost = land
 		reliability = 0.06
 	}
-	
+
 	INF_SA_upgrade = {
 		max_level = 5
 
@@ -14,7 +14,7 @@ upgrades = {
 		soft_attack = 0.05
 		reliability = -0.05
 	}
-	
+
 	INF_HA_upgrade = {
 		max_level = 5
 
@@ -23,7 +23,7 @@ upgrades = {
 		ap_attack = 0.05
 		reliability = -0.05
 	}
-	
+
 	INF_defence_upgrade = {
 		max_level = 5
 
@@ -31,7 +31,7 @@ upgrades = {
 		defense = 0.05
 		breakthrough = 0.05
 	}
-	
+
 	#ART EQ
 	ART_reliability_upgrade = {
 		max_level = 5
@@ -39,7 +39,7 @@ upgrades = {
 		cost = land
 		reliability = 0.06
 	}
-	
+
 	ART_SA_upgrade = {
 		max_level = 5
 
@@ -47,7 +47,7 @@ upgrades = {
 		soft_attack = 0.05
 		reliability = -0.05
 	}
-	
+
 	ART_HA_upgrade = {
 		max_level = 5
 
@@ -56,7 +56,7 @@ upgrades = {
 		ap_attack = 0.05
 		reliability = -0.05
 	}
-	
+
 	ART_defence_upgrade = {
 		max_level = 5
 
@@ -64,7 +64,7 @@ upgrades = {
 		defense = 0.05
 		breakthrough = 0.05
 	}
-	
+
 	#AT EQ
 	AT_reliability_upgrade = {
 		max_level = 5
@@ -72,7 +72,7 @@ upgrades = {
 		cost = land
 		reliability = 0.06
 	}
-	
+
 	AT_pierce_upgrade = {
 		max_level = 5
 
@@ -80,7 +80,7 @@ upgrades = {
 		ap_attack = 0.05
 		reliability = -0.05
 	}
-	
+
 	AT_HA_upgrade = {
 		max_level = 5
 
@@ -88,7 +88,7 @@ upgrades = {
 		hard_attack = 0.05
 		reliability = -0.05
 	}
-	
+
 	AT_defence_upgrade = {
 		max_level = 5
 
@@ -96,7 +96,7 @@ upgrades = {
 		defense = 0.05
 		breakthrough = 0.05
 	}
-	
+
 	#AA EQ
 	AA_reliability_upgrade = {
 		max_level = 5
@@ -104,7 +104,7 @@ upgrades = {
 		cost = land
 		reliability = 0.06
 	}
-	
+
 	AA_AA_upgrade = {
 		max_level = 5
 
@@ -112,7 +112,7 @@ upgrades = {
 		air_attack = 0.05
 		reliability = -0.05
 	}
-	
+
 	AA_HA_upgrade = {
 		max_level = 5
 
@@ -121,7 +121,7 @@ upgrades = {
 		ap_attack = 0.05
 		reliability = -0.05
 	}
-	
+
 	AA_defence_upgrade = {
 		max_level = 5
 
@@ -129,7 +129,7 @@ upgrades = {
 		defense = 0.05
 		breakthrough = 0.05
 	}
-	
+
 	#MOT EQ
 	MOT_reliability_upgrade = {
 		max_level = 5
@@ -137,7 +137,7 @@ upgrades = {
 		cost = land
 		reliability = 0.06
 	}
-	
+
 	MOT_speed_upgrade = {
 		max_level = 5
 
@@ -145,7 +145,7 @@ upgrades = {
 		maximum_speed = 0.05
 		reliability = -0.05
 	}
-	
+
 	MOT_hardness_upgrade = {
 		max_level = 5
 
@@ -161,7 +161,7 @@ upgrades = {
 		cost = land
 		reliability = 0.06
 	}
-	
+
 	MECH_speed_upgrade = {
 		max_level = 5
 
@@ -169,7 +169,7 @@ upgrades = {
 		maximum_speed = 0.05
 		reliability = -0.05
 	}
-	
+
 	MECH_armor_upgrade = {
 		max_level = 5
 
@@ -177,7 +177,7 @@ upgrades = {
 		hardness = 0.05
 		reliability = -0.05
 	}
-	
+
 	MECH_attack_upgrade = {
 		max_level = 5
 
@@ -186,7 +186,7 @@ upgrades = {
 		hard_attack = 0.05
 		reliability = -0.05
 	}
-	
+
 	#SUPP
 	SUPP_reliability_upgrade = {
 		max_level = 5
