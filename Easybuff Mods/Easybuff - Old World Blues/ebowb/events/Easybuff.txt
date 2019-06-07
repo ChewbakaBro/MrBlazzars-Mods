@@ -858,20 +858,12 @@ country_event = {
 		set_politics = {
 			ruling_party = people
 		elections_allowed = yes
-		parties = {
-			people = { 
-				popularity = 100
-			}
-			intellectuals = {
-				popularity = 0
-			}
-			elites = {
-				popularity = 0
-			}
-			ruler = {
-				popularity = 0
-			}
 		}
+		set_popularities = {
+			people = 100
+			intellectuals = 0
+			elites = 0
+ 			ruler = 0
 		}
 		country_event = Easybuff.60
 	}
@@ -880,20 +872,12 @@ country_event = {
 		set_politics = {
 			ruling_party = intellectuals
 		elections_allowed = yes
-		parties = {
-			people = { 
-				popularity = 0
-			}
-			intellectuals = {
-				popularity = 100
-			}
-			elites = {
-				popularity = 0
-			}
-			ruler = {
-				popularity = 0
-			}
 		}
+		set_popularities = {
+			people = 0
+			intellectuals = 100
+			elites = 0
+ 			ruler = 0
 		}
 		country_event = Easybuff.60
 	}
@@ -902,20 +886,12 @@ country_event = {
 		set_politics = {
 			ruling_party = elites
 		elections_allowed = yes
-		parties = {
-			people = { 
-				popularity = 0
-			}
-			intellectuals = {
-				popularity = 0
-			}
-			elites = {
-				popularity = 100
-			}
-			ruler = {
-				popularity = 0
-			}
 		}
+		set_popularities = {
+			people =0
+			intellectuals = 0
+			elites = 100
+ 			ruler = 0
 		}
 		country_event = Easybuff.60
 	}
@@ -924,20 +900,12 @@ country_event = {
 		set_politics = {
 			ruling_party = ruler
 		elections_allowed = yes
-		parties = {
-			people = { 
-				popularity = 0
-			}
-			intellectuals = {
-				popularity = 0
-			}
-			elites = {
-				popularity = 0
-			}
-			ruler = {
-				popularity = 100
-			}
 		}
+		set_popularities = {
+			people = 0
+			intellectuals = 0
+			elites = 0
+ 			ruler = 100
 		}
 		country_event = Easybuff.60
 	}
@@ -1376,6 +1344,15 @@ country_event = {
 			limit = { has_idea = safety_eqs }
 			remove_ideas = safety_eqs
 			else = { add_ideas = safety_eqs }
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.80.e
+		if = {
+			limit = { has_idea = more_speed }
+			remove_ideas = more_speed
+			else = { add_ideas = more_speed }
 		}
 		country_event = Easybuff.1
 	}
