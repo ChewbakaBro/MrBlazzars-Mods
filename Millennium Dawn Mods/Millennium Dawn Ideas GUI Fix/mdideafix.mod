@@ -18,4 +18,4 @@ tags={
 }
 picture="thumbnail.jpg"
 remote_file_id="1755587348"
-supported_version="1.6.*"
+supported_version="1.7.*"

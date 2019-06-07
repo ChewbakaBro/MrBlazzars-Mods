@@ -6,7 +6,7 @@
  cheat_open_easybuff:0 "Open Cheat Menu"
  Easybuffclose:0 "Close"
  Easybuffback:0 "Back"
- 
+
  cheat_construction:0 "Construction Cheats"
  cheat_technology:0 "Technology Cheats"
  cheat_politics:0 "Politics Cheats"
@@ -19,31 +19,31 @@
  cheat_construction_lv3:0 "Lv3 Construction"
  cheat_construction_insane:0 "Insane Construction"
 
- cheat_technology_lv1:0 "Lv1 Tech" 
- cheat_technology_lv2:0 "Lv2 Tech" 
- cheat_technology_lv3:0 "Lv3 Tech" 
- cheat_technology_lv4:0 "Lv4 Tech" 
- cheat_technology_insane:0 "Insane Tech" 
+ cheat_technology_lv1:0 "Lv1 Tech"
+ cheat_technology_lv2:0 "Lv2 Tech"
+ cheat_technology_lv3:0 "Lv3 Tech"
+ cheat_technology_lv4:0 "Lv4 Tech"
+ cheat_technology_insane:0 "Insane Tech"
 
- cheat_politics_lv1:0 "Lv1 Politics" 
- cheat_politics_lv2:0 "Lv2 Politics" 
- cheat_politics_lv3:0 "Lv3 Politics" 
- cheat_politics_insane:0 "Insane Politics" 
+ cheat_politics_lv1:0 "Lv1 Politics"
+ cheat_politics_lv2:0 "Lv2 Politics"
+ cheat_politics_lv3:0 "Lv3 Politics"
+ cheat_politics_insane:0 "Insane Politics"
 
- cheat_equipment_lv1:0 "Lv1 Equipment" 
- cheat_equipment_lv2:0 "Lv2 Equipment" 
- cheat_equipment_lv3:0 "Lv3 Equipment" 
- cheat_equipment_insane:0 "Insane Equipment" 
+ cheat_equipment_lv1:0 "Lv1 Equipment"
+ cheat_equipment_lv2:0 "Lv2 Equipment"
+ cheat_equipment_lv3:0 "Lv3 Equipment"
+ cheat_equipment_insane:0 "Insane Equipment"
 
- cheat_land_lv1:0 "Lv1 Land" 
- cheat_land_lv2:0 "Lv2 Land" 
- cheat_land_lv3:0 "Lv3 Land" 
+ cheat_land_lv1:0 "Lv1 Land"
+ cheat_land_lv2:0 "Lv2 Land"
+ cheat_land_lv3:0 "Lv3 Land"
  cheat_land_insane:0 "Insane Land"
 
- cheat_navyair_lv1:0 "Lv1 NavyAir" 
- cheat_navyair_lv2:0 "Lv2 NavyAir" 
- cheat_navyair_lv3:0 "Lv3 NavyAir" 
- cheat_navyair_insane:0 "Insane NavyAir" 
+ cheat_navyair_lv1:0 "Lv1 NavyAir"
+ cheat_navyair_lv2:0 "Lv2 NavyAir"
+ cheat_navyair_lv3:0 "Lv3 NavyAir"
+ cheat_navyair_insane:0 "Insane NavyAir"
 
 # Event Menu
  Easybuff.1:0 "Open Cheat Menu"
@@ -85,6 +85,7 @@
  Easybuff.20.g:0 "Chromium"
  Easybuff.20.h:0 "Rubber"
  Easybuff.20.i:0 "Oil"
+ Easybuff.20.j:0 "Money"
 
  Easybuff.30:0 "Technologies"
  Easybuff.30.t:0 "Technologies"
@@ -233,7 +234,6 @@
  Easybuff.80.c:0 "More Special Forces"
  Easybuff.80.d:0 "Safety Equipments"
  Easybuff.80.e:0 "Troops move faster"
- Easybuff.80.f:0 "Buffs all in one"
 
  Easybuff.90:0 "Enhance Army Leader"
  Easybuff.90.t:0 "Enhance Army Leader"
@@ -241,6 +241,16 @@
  Easybuff.90.a:0 "Faster"
  Easybuff.90.b:0 "All Abilities"
  Easybuff.90.c:0 "Control More Troops"
+
+ Easybuff.100.t:0 "Money System"
+ Easybuff.100.desc:0 "Change your money amounts"
+ Easybuff.100.a:0 "Add 1 Billion Dollars"
+ Easybuff.100.b:0 "Add 10 Billion Dollars"
+ Easybuff.100.c:0 "Add 100 Billion Dollars"
+ Easybuff.100.d:0 "Add 1 Billion International Dollars"
+ Easybuff.100.e:0 "Add 10 Billion International Dollars"
+ Easybuff.100.f:0 "Add 100 Billion International Dollars"
+ Easybuff.100.g:0 "Remove all Debt"
 
 # Leader Traits
  ctrl_more_troops:0 "Control More Troops"
@@ -250,4 +260,5 @@
  de_combat_width:0 "Decrease Combat Width"
  more_org:0 "Max Organization"
  more_special:0 "More Special Forces"
+ more_speed:0 "Troops move faster"
  safety_eqs:0 "Safety Equipments"
