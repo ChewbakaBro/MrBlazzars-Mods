@@ -1459,6 +1459,17 @@ country_event = {
 		country_event = Easybuff.20
 	}
 	option = {
+		name = Easybuff.100.h
+		hidden_effect = {
+			add_to_variable = { treasury = 1000 }
+			ingame_calculate_size_modifier = yes
+			update_military_rate = yes
+			calculate_interest_rate = yes
+			calculate_debt_rate = yes
+		}
+		country_event = Easybuff.20
+	}
+	option = {
 		name = Easybuff.100.d
 		hidden_effect = {
 			add_to_variable = { int_investments = 1 }
@@ -1478,6 +1489,14 @@ country_event = {
 		name = Easybuff.100.f
 		hidden_effect = {
 			add_to_variable = { int_investments = 100 }
+			calculate_int_investments_rate = yes
+		}
+		country_event = Easybuff.20
+	}
+	option = {
+		name = Easybuff.100.i
+		hidden_effect = {
+			add_to_variable = { int_investments = 1000 }
 			calculate_int_investments_rate = yes
 		}
 		country_event = Easybuff.20

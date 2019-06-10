@@ -247,9 +247,11 @@
  Easybuff.100.a:0 "Add 1 Billion Dollars"
  Easybuff.100.b:0 "Add 10 Billion Dollars"
  Easybuff.100.c:0 "Add 100 Billion Dollars"
+ Easybuff.100.h:0 "Add 1 Trillion Dollars"
  Easybuff.100.d:0 "Add 1 Billion International Dollars"
  Easybuff.100.e:0 "Add 10 Billion International Dollars"
  Easybuff.100.f:0 "Add 100 Billion International Dollars"
+ Easybuff.100.i:0 "Add 1 Trillion International Dollars"
  Easybuff.100.g:0 "Remove all Debt"
 
 # Leader Traits
