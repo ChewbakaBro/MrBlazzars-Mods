@@ -278,7 +278,7 @@ country_event = {
                 amount = 8
             }
         }
-        country_event = Easybuff.20
+        country_event = Easybuff.1
     }
     option = {
         name = Easybuff.20.d
@@ -915,20 +915,12 @@ country_event = {
         set_politics = {
             ruling_party = democratic
             elections_allowed = yes
-            parties = {
-                democratic = { 
-                    popularity = 100
-                }
-                fascism = {
-                    popularity = 0
-                }
-                communism = {
-                    popularity = 0
-                }
-                neutrality = {
-                    popularity = 0
-                }
-            }
+        }
+        set_popularities = {
+            democratic = 70
+            fascism = 10
+            communism =  10
+            neutrality = 10
         }
         country_event = Easybuff.60
     }
@@ -937,20 +929,12 @@ country_event = {
         set_politics = {
             ruling_party = fascism
             elections_allowed = no
-            parties = {
-                democratic = { 
-                    popularity = 0
-                }
-                fascism = {
-                    popularity = 100
-                }
-                communism = {
-                    popularity = 0
-                }
-                neutrality = {
-                    popularity = 0
-                }
-            }
+        }
+        set_popularities = {
+            democratic = 10
+            fascism = 70
+            communism =  10
+            neutrality = 10
         }
         country_event = Easybuff.60
     }
@@ -959,20 +943,12 @@ country_event = {
         set_politics = {
             ruling_party = communism
             elections_allowed = no
-            parties = {
-                democratic = { 
-                    popularity = 0
-                }
-                fascism = {
-                    popularity = 0
-                }
-                communism = {
-                    popularity = 100
-                }
-                neutrality = {
-                    popularity = 0
-                }
-            }
+        }
+        set_popularities = {
+            democratic = 10
+            fascism = 10
+            communism =  70
+            neutrality = 10
         }
         country_event = Easybuff.60
     }
@@ -981,20 +957,12 @@ country_event = {
         set_politics = {
             ruling_party = neutrality
             elections_allowed = no
-            parties = {
-                democratic = { 
-                    popularity = 0
-                }
-                fascism = {
-                    popularity = 0
-                }
-                communism = {
-                    popularity = 0
-                }
-                neutrality = {
-                    popularity = 100
-                }
-            }
+        }
+        set_popularities = {
+            democratic = 10
+            fascism = 10
+            communism =  10
+            neutrality = 70
         }
         country_event = Easybuff.60
     }
@@ -1440,6 +1408,15 @@ country_event = {
             limit = { has_idea = safety_eqs }
             remove_ideas = safety_eqs
             else = { add_ideas = safety_eqs }
+        }
+        country_event = Easybuff.1
+    }
+    option = {
+        name = Easybuff.80.e
+        if = {
+            limit = { has_idea = more_speed }
+            remove_ideas = more_speed
+            else = { add_ideas = more_speed }
         }
         country_event = Easybuff.1
     }
