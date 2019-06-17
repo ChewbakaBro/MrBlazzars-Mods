@@ -5,26 +5,25 @@ country_event = {
 	title = Maxslot.1.t
 	desc = Maxslot.1.d
 	picture = GFX_news_event_002
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = Maxslot.1.a
 		add_ideas = idea_max_slots
-		set_country_flag = cheated_slots
+		set_global_flag = max_building_only_current_nation
 	}
-	
+
 	option = {
 		name = Maxslot.1.c
 		every_country = {
 			add_ideas = idea_max_slots
-			set_country_flag = cheated_slots
 		}
+		set_global_flag = max_building_everyone
 	}
-	
+
 	option = {
 		name = Maxslot.1.b
-		set_country_flag = cheated_slots
 	}
 
 	option = {
@@ -34,7 +33,22 @@ country_event = {
 				is_ai = no
 			}
 			add_ideas = idea_max_slots
-			set_country_flag = cheated_slots
 		}
+		set_global_flag = max_building_only_players
+	}
+}
+
+country_event = {
+	id = Namespacehere.IDhere
+	title = Namespacehere.IDhere.t
+	desc = Namespacehere.IDhere.d
+	picture = GFX_event_picture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {}
+	mean_time_to_happen = {
+		days = 2
 	}
 }

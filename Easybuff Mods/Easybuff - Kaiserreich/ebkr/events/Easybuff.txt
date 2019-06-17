@@ -263,7 +263,7 @@ country_event = {
 				amount = 8
 			}
 		}
-		country_event = Easybuff.1
+		country_event = Easybuff.20
 	}
 	option = {
 		name = Easybuff.20.e
@@ -277,7 +277,7 @@ country_event = {
 				amount = 8
 			}
 		}
-		country_event = Easybuff.1
+		country_event = Easybuff.20
 	}
 	option = {
 		name = Easybuff.20.f
@@ -291,7 +291,7 @@ country_event = {
 				amount = 8
 			}
 		}
-		country_event = Easybuff.1
+		country_event = Easybuff.20
 	}
 	option = {
 		name = Easybuff.20.g
@@ -305,7 +305,7 @@ country_event = {
 				amount = 8
 			}
 		}
-		country_event = Easybuff.1
+		country_event = Easybuff.20
 	}
 	option = {
 		name = Easybuff.20.h
@@ -319,7 +319,7 @@ country_event = {
 				amount = 8
 			}
 		}
-		country_event = Easybuff.1
+		country_event = Easybuff.20
 	}
 	option = {
 		name = Easybuff.20.i
@@ -333,7 +333,7 @@ country_event = {
 				amount = 8
 			}
 		}
-		country_event = Easybuff.1
+		country_event = Easybuff.20
 	}
 	option = {
 		name = Easybuffback
@@ -431,12 +431,12 @@ country_event = {
 	}
 	option = {
 		name = Easybuff.32.d
-		set_technology = { torpedo_cruiser = 1 }
-		set_technology = { advanced_submarine = 1 }
-		set_technology = { advanced_carrier = 1 }
-		set_technology = { heavy_battleship2 = 1 }
-		set_technology = { advanced_battleship = 1 }
-		set_technology = { advanced_heavy_cruiser = 1 }
+		#set_technology = { torpedo_cruiser = 1 }
+		#set_technology = { advanced_submarine = 1 }
+		#set_technology = { advanced_carrier = 1 }
+		#set_technology = { heavy_battleship2 = 1 }
+		#set_technology = { advanced_battleship = 1 }
+		#set_technology = { advanced_heavy_cruiser = 1 }
 		country_event = Easybuff.30
 	}
 	option = {
@@ -857,38 +857,18 @@ country_event = {
 		set_politics = {
 			ruling_party = totalist
 			elections_allowed = no
-			parties = {
-				totalist = { 
-					popularity = 100
-				}
-				syndicalist = {
-					popularity = 0
-				}
-				radical_socialist = {
-					popularity = 0
-				}
-				social_democrat = {
-					popularity = 0
-				}
-				social_liberal = {
-					popularity = 0
-				}
-				market_liberal = {
-					popularity = 0
-				}
-				social_conservative = {
-					popularity = 0
-				}
-				authoritarian_democrat = {
-					popularity = 0
-				}
-				paternal_autocrat = {
-					popularity = 0
-				}
-				national_populist = {
-					popularity = 0
-				}
-			}
+		}
+		set_popularities = {
+			totalist = 100
+			syndicalist = 0
+			radical_socialist = 0
+			social_democrat = 0
+			social_liberal = 0
+			market_liberal = 0
+			social_conservative = 0
+			authoritarian_democrat = 0
+			paternal_autocrat = 0
+			national_populist = 0
 		}
 		country_event = Easybuff.60
 	}
@@ -897,38 +877,18 @@ country_event = {
 		set_politics = {
 			ruling_party = syndicalist
 			elections_allowed = no
-			parties = {
-				totalist = { 
-					popularity = 0
-				}
-				syndicalist = {
-					popularity = 1000
-				}
-				radical_socialist = {
-					popularity = 0
-				}
-				social_democrat = {
-					popularity = 0
-				}
-				social_liberal = {
-					popularity = 0
-				}
-				market_liberal = {
-					popularity = 0
-				}
-				social_conservative = {
-					popularity = 0
-				}
-				authoritarian_democrat = {
-					popularity = 0
-				}
-				paternal_autocrat = {
-					popularity = 0
-				}
-				national_populist = {
-					popularity = 0
-				}
-			}
+		}
+		set_popularities = {
+			totalist = 0
+			syndicalist = 100
+			radical_socialist = 0
+			social_democrat = 0
+			social_liberal = 0
+			market_liberal = 0
+			social_conservative = 0
+			authoritarian_democrat = 0
+			paternal_autocrat = 0
+			national_populist = 0
 		}
 		country_event = Easybuff.60
 	}
@@ -937,38 +897,18 @@ country_event = {
 		set_politics = {
 			ruling_party = radical_socialist
 			elections_allowed = no
-			parties = {
-				totalist = { 
-					popularity = 0
-				}
-				syndicalist = {
-					popularity = 0
-				}
-				radical_socialist = {
-					popularity = 100
-				}
-				social_democrat = {
-					popularity = 0
-				}
-				social_liberal = {
-					popularity = 0
-				}
-				market_liberal = {
-					popularity = 0
-				}
-				social_conservative = {
-					popularity = 0
-				}
-				authoritarian_democrat = {
-					popularity = 0
-				}
-				paternal_autocrat = {
-					popularity = 0
-				}
-				national_populist = {
-					popularity = 0
-				}
-			}
+		}
+		set_popularities = {
+			totalist = 0
+			syndicalist = 0
+			radical_socialist = 100
+			social_democrat = 0
+			social_liberal = 0
+			market_liberal = 0
+			social_conservative = 0
+			authoritarian_democrat = 0
+			paternal_autocrat = 0
+			national_populist = 0
 		}
 		country_event = Easybuff.60
 	}
@@ -977,38 +917,18 @@ country_event = {
 		set_politics = {
 			ruling_party = social_democrat
 			elections_allowed = no
-			parties = {
-				totalist = { 
-					popularity = 0
-				}
-				syndicalist = {
-					popularity = 0
-				}
-				radical_socialist = {
-					popularity = 0
-				}
-				social_democrat = {
-					popularity = 100
-				}
-				social_liberal = {
-					popularity = 0
-				}
-				market_liberal = {
-					popularity = 0
-				}
-				social_conservative = {
-					popularity = 0
-				}
-				authoritarian_democrat = {
-					popularity = 0
-				}
-				paternal_autocrat = {
-					popularity = 0
-				}
-				national_populist = {
-					popularity = 0
-				}
-			}
+		}
+		set_popularities = {
+			totalist = 0
+			syndicalist = 0
+			radical_socialist = 0
+			social_democrat = 100
+			social_liberal = 0
+			market_liberal = 0
+			social_conservative = 0
+			authoritarian_democrat = 0
+			paternal_autocrat = 0
+			national_populist = 0
 		}
 		country_event = Easybuff.60
 	}
@@ -1017,38 +937,18 @@ country_event = {
 		set_politics = {
 			ruling_party = social_liberal
 			elections_allowed = no
-			parties = {
-				totalist = { 
-					popularity = 0
-				}
-				syndicalist = {
-					popularity = 0
-				}
-				radical_socialist = {
-					popularity = 0
-				}
-				social_democrat = {
-					popularity = 0
-				}
-				social_liberal = {
-					popularity = 100
-				}
-				market_liberal = {
-					popularity = 0
-				}
-				social_conservative = {
-					popularity = 0
-				}
-				authoritarian_democrat = {
-					popularity = 0
-				}
-				paternal_autocrat = {
-					popularity = 0
-				}
-				national_populist = {
-					popularity = 0
-				}
-			}
+		}
+		set_popularities = {
+			totalist = 0
+			syndicalist = 0
+			radical_socialist = 0
+			social_democrat = 0
+			social_liberal = 100
+			market_liberal = 0
+			social_conservative = 0
+			authoritarian_democrat = 0
+			paternal_autocrat = 0
+			national_populist = 0
 		}
 		country_event = Easybuff.60
 	}
@@ -1057,38 +957,18 @@ country_event = {
 		set_politics = {
 			ruling_party = market_liberal
 			elections_allowed = no
-			parties = {
-				totalist = { 
-					popularity = 0
-				}
-				syndicalist = {
-					popularity = 0
-				}
-				radical_socialist = {
-					popularity = 0
-				}
-				social_democrat = {
-					popularity = 0
-				}
-				social_liberal = {
-					popularity = 0
-				}
-				market_liberal = {
-					popularity = 100
-				}
-				social_conservative = {
-					popularity = 0
-				}
-				authoritarian_democrat = {
-					popularity = 0
-				}
-				paternal_autocrat = {
-					popularity = 0
-				}
-				national_populist = {
-					popularity = 0
-				}
-			}
+		}
+		set_popularities = {
+			totalist = 0
+			syndicalist = 0
+			radical_socialist = 0
+			social_democrat = 0
+			social_liberal = 0
+			market_liberal = 100
+			social_conservative = 0
+			authoritarian_democrat = 0
+			paternal_autocrat = 0
+			national_populist = 0
 		}
 		country_event = Easybuff.60
 	}
@@ -1097,38 +977,18 @@ country_event = {
 		set_politics = {
 			ruling_party = social_conservative
 			elections_allowed = no
-			parties = {
-				totalist = { 
-					popularity = 0
-				}
-				syndicalist = {
-					popularity = 0
-				}
-				radical_socialist = {
-					popularity = 0
-				}
-				social_democrat = {
-					popularity = 0
-				}
-				social_liberal = {
-					popularity = 0
-				}
-				market_liberal = {
-					popularity = 0
-				}
-				social_conservative = {
-					popularity = 100
-				}
-				authoritarian_democrat = {
-					popularity = 0
-				}
-				paternal_autocrat = {
-					popularity = 0
-				}
-				national_populist = {
-					popularity = 0
-				}
-			}
+		}
+		set_popularities = {
+			totalist = 0
+			syndicalist = 0
+			radical_socialist = 0
+			social_democrat = 0
+			social_liberal = 0
+			market_liberal = 0
+			social_conservative = 100
+			authoritarian_democrat = 0
+			paternal_autocrat = 0
+			national_populist = 0
 		}
 		country_event = Easybuff.60
 	}
@@ -1137,38 +997,18 @@ country_event = {
 		set_politics = {
 			ruling_party = authoritarian_democrat
 			elections_allowed = no
-			parties = {
-				totalist = { 
-					popularity = 0
-				}
-				syndicalist = {
-					popularity = 0
-				}
-				radical_socialist = {
-					popularity = 0
-				}
-				social_democrat = {
-					popularity = 0
-				}
-				social_liberal = {
-					popularity = 0
-				}
-				market_liberal = {
-					popularity = 0
-				}
-				social_conservative = {
-					popularity = 0
-				}
-				authoritarian_democrat = {
-					popularity = 100
-				}
-				paternal_autocrat = {
-					popularity = 0
-				}
-				national_populist = {
-					popularity = 0
-				}
-			}
+		}
+		set_popularities = {
+			totalist = 0
+			syndicalist = 0
+			radical_socialist = 0
+			social_democrat = 0
+			social_liberal = 0
+			market_liberal = 0
+			social_conservative = 0
+			authoritarian_democrat = 100
+			paternal_autocrat = 0
+			national_populist = 0
 		}
 		country_event = Easybuff.60
 	}
@@ -1177,38 +1017,18 @@ country_event = {
 		set_politics = {
 			ruling_party = paternal_autocrat
 			elections_allowed = no
-			parties = {
-				totalist = { 
-					popularity = 0
-				}
-				syndicalist = {
-					popularity = 0
-				}
-				radical_socialist = {
-					popularity = 0
-				}
-				social_democrat = {
-					popularity = 0
-				}
-				social_liberal = {
-					popularity = 0
-				}
-				market_liberal = {
-					popularity = 0
-				}
-				social_conservative = {
-					popularity = 0
-				}
-				authoritarian_democrat = {
-					popularity = 0
-				}
-				paternal_autocrat = {
-					popularity = 100
-				}
-				national_populist = {
-					popularity = 0
-				}
-			}
+		}
+		set_popularities = {
+			totalist = 0
+			syndicalist = 0
+			radical_socialist = 0
+			social_democrat = 0
+			social_liberal = 0
+			market_liberal = 0
+			social_conservative = 0
+			authoritarian_democrat = 0
+			paternal_autocrat = 100
+			national_populist = 0
 		}
 		country_event = Easybuff.60
 	}
@@ -1217,38 +1037,18 @@ country_event = {
 		set_politics = {
 			ruling_party = national_populist
 			elections_allowed = no
-			parties = {
-				totalist = { 
-					popularity = 0
-				}
-				syndicalist = {
-					popularity = 0
-				}
-				radical_socialist = {
-					popularity = 0
-				}
-				social_democrat = {
-					popularity = 0
-				}
-				social_liberal = {
-					popularity = 0
-				}
-				market_liberal = {
-					popularity = 0
-				}
-				social_conservative = {
-					popularity = 0
-				}
-				authoritarian_democrat = {
-					popularity = 0
-				}
-				paternal_autocrat = {
-					popularity = 0
-				}
-				national_populist = {
-					popularity = 100
-				}
-			}
+		}
+		set_popularities = {
+			totalist = 0
+			syndicalist = 0
+			radical_socialist = 0
+			social_democrat = 0
+			social_liberal = 0
+			market_liberal = 0
+			social_conservative = 0
+			authoritarian_democrat = 0
+			paternal_autocrat = 0
+			national_populist = 100
 		}
 		country_event = Easybuff.60
 	}
@@ -1700,18 +1500,9 @@ country_event = {
         country_event = Easybuff.1
     }
     option = {
-        name = Easybuff.80.f
-        if = {
-            limit = { has_idea = one_in_allbuff }
-            remove_ideas = one_in_allbuff
-            else = { add_ideas = one_in_allbuff }
-        }
+        name = Easybuffback
         country_event = Easybuff.1
     }
-	option = {
-		name = Easybuffback
-		country_event = Easybuff.1
-	}
 }
 
 # Leaders 90

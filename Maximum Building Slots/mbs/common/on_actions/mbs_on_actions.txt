@@ -1,9 +1,77 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			# if = {
+			# 	limit = {
+			# 		has_game_rule = {
+			# 			rule = MAX_BUILDING_SLOTS
+			# 			option = ONLY_ME_MAX_SLOTS
+			# 		}
+			# 	}
+			# }
 			every_country = {
 				limit = { is_ai = no }
 				country_event = { id = Maxslot.1 }
+			}
+		}
+	}
+
+	on_puppet = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = max_building_everyone
+					ROOT = { NOT = { has_idea = idea_max_slots } }
+				}
+				ROOT = { add_ideas = idea_max_slots }
+			}
+			if = {
+				limit = {
+					has_global_flag = max_building_only_players
+					ROOT = { is_ai = no }
+					ROOT = { NOT = { has_idea = idea_max_slots } }
+				}
+				ROOT = { add_ideas = idea_max_slots }
+			}
+		}
+	}
+
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = max_building_everyone
+					ROOT = { NOT = { has_idea = idea_max_slots } }
+				}
+				ROOT = { add_ideas = idea_max_slots }
+			}
+			if = {
+				limit = {
+					has_global_flag = max_building_only_players
+					ROOT = { NOT = { has_idea = idea_max_slots } }
+					ROOT = { is_ai = no }
+				}
+				ROOT = { add_ideas = idea_max_slots }
+			}
+		}
+	}
+
+	on_release_as_free = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = max_building_everyone
+					ROOT = { NOT = { has_idea = idea_max_slots } }
+				}
+				ROOT = { add_ideas = idea_max_slots }
+			}
+			if = {
+				limit = {
+					has_global_flag = max_building_only_players
+					ROOT = { NOT = { has_idea = idea_max_slots } }
+					ROOT = { is_ai = no }
+				}
+				ROOT = { add_ideas = idea_max_slots }
 			}
 		}
 	}

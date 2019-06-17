@@ -1,0 +1,24 @@
+# max_building_slots = {
+#     name = "MAX_BUILDING_SLOTS"
+#     group = "RULE_GROUP_MAX_BUILDING_SLOTS"
+#     default = {
+#         name = NO_ONE_MAX_SLOTS
+#         text = "RULE_NO_ONE_MAX_SLOTS"
+#         desc = "RULE_NO_ONE_MAX_SLOTS_DESC"
+#     }
+#     option = {
+#         name = ONLY_ME_MAX_SLOTS
+#         text = "RULE_ONLY_ME_MAX_SLOTS"
+#         desc = "RULE_ONLY_ME_MAX_SLOTS_DESC"
+#     }
+#     option = {
+#         name = EVERYONE_MAX_SLOTS
+#         text = "RULE_EVERYONE_MAX_SLOTS"
+#         desc = "RULE_EVERYONE_MAX_SLOTS_DESC"
+#     }
+#     option = {
+#         name = PLAYERS_ONLY_MAX_SLOTS
+#         text = "RULE_PLAYERS_ONLY_MAX_SLOTS"
+#         desc = "RULE_PLAYERS_ONLY_MAX_SLOTS_DESC"
+#     }
+# }
