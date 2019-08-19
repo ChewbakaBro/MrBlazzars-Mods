@@ -1,0 +1,399 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#Mexico Version
+			# if = {
+			# 	limit = {
+			# 		has_game_rule = {
+			# 			rule = ncr_breakup_status
+			# 			option = NCR_SHATTERED_NO_NCR
+			# 		}
+			# 	}
+			# 	NCR = {
+			# 		release = BAR
+			# 		BAR = {
+			# 			every_owned_state = {
+			# 				limit = {
+			# 					is_owned_by = PREV
+			# 				}
+			# 				add_core_of = NCR
+			# 			}
+			# 		}
+			# 		release = BON
+			# 		BON = {
+			# 			every_owned_state = {
+			# 				limit = {
+			# 					is_owned_by = PREV
+			# 				}
+			# 				add_core_of = NCR
+			# 			}
+			# 		}
+			# 		BOS = {
+			# 			transfer_state = 433
+			# 			transfer_state = 558
+			# 			transfer_state = 312
+			# 			transfer_state = 606
+			# 			every_owned_state = {
+			# 				limit = {
+			# 					is_owned_by = PREV
+			# 				}
+			# 				add_core_of = PREV
+			# 			}
+			# 		}
+			# 		ENC = {
+			# 			transfer_state = 205
+			# 			transfer_state = 63
+			# 			transfer_state = 866
+			# 			transfer_state = 583
+			# 			transfer_state = 4
+			# 			transfer_state = 80
+			# 			every_owned_state = {
+			# 				limit = {
+			# 					is_owned_by = PREV
+			# 				}
+			# 				add_core_of = PREV
+			# 			}
+			# 		}
+			# 		SCR = {
+			# 			annex_country = {
+			# 				target = NCR
+			# 			}
+			# 		}
+			# 	}
+			# }
+			# else_if = {
+			# 	limit = {
+			# 		has_game_rule = {
+			# 			rule = ncr_breakup_status
+			# 			option = NCR_SHATTERED
+			# 		}
+			# 	}
+			# 	NCR = {
+			# 		release = BAR
+			# 		BAR = {
+			# 			every_owned_state = {
+			# 				limit = {
+			# 					is_owned_by = PREV
+			# 				}
+			# 				add_core_of = NCR
+			# 			}
+			# 		}
+			# 		release = BON
+			# 		BON = {
+			# 			every_owned_state = {
+			# 				limit = {
+			# 					is_owned_by = PREV
+			# 				}
+			# 				add_core_of = NCR
+			# 			}
+			# 		}
+			# 		BOS = {
+			# 			transfer_state = 433
+			# 			transfer_state = 558
+			# 			transfer_state = 312
+			# 			transfer_state = 606
+			# 			every_owned_state = {
+			# 				limit = {
+			# 					is_owned_by = PREV
+			# 				}
+			# 				add_core_of = PREV
+			# 			}
+			# 		}
+			# 		ENC = {
+			# 			transfer_state = 205
+			# 			transfer_state = 63
+			# 			transfer_state = 866
+			# 			transfer_state = 583
+			# 			transfer_state = 4
+			# 			transfer_state = 80
+			# 			every_owned_state = {
+			# 				limit = {
+			# 					is_owned_by = PREV
+			# 				}
+			# 				add_core_of = PREV
+			# 			}
+			# 		}
+			# 	}
+			# }
+			#Non Mexico Version
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = ncr_breakup_status
+						option = NCR_SHATTERED_NO_NCR
+					}
+				}
+				NCR = {
+					release = BAR
+					BAR = {
+						every_owned_state = {
+							limit = {
+								is_owned_by = PREV
+							}
+							add_core_of = NCR
+						}
+					}
+					release = BON
+					BON = {
+						every_owned_state = {
+							limit = {
+								is_owned_by = PREV
+							}
+							add_core_of = NCR
+						}
+					}
+					BOS = {
+						transfer_state = 433
+						transfer_state = 558
+						transfer_state = 312
+						transfer_state = 606
+						every_owned_state = {
+							limit = {
+								is_owned_by = PREV
+							}
+							add_core_of = PREV
+						}
+					}
+					ENC = {
+						transfer_state = 205
+						transfer_state = 63
+						transfer_state = 583
+						transfer_state = 4
+						transfer_state = 80
+						every_owned_state = {
+							limit = {
+								is_owned_by = PREV
+							}
+							add_core_of = PREV
+						}
+					}
+					SCR = {
+						annex_country = {
+							target = NCR
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = ncr_breakup_status
+						option = NCR_SHATTERED
+					}
+				}
+				NCR = {
+					release = BAR
+					BAR = {
+						every_owned_state = {
+							limit = {
+								is_owned_by = PREV
+							}
+							add_core_of = NCR
+						}
+					}
+					release = BON
+					BON = {
+						every_owned_state = {
+							limit = {
+								is_owned_by = PREV
+							}
+							add_core_of = NCR
+						}
+					}
+					BOS = {
+						transfer_state = 433
+						transfer_state = 558
+						transfer_state = 312
+						transfer_state = 606
+						every_owned_state = {
+							limit = {
+								is_owned_by = PREV
+							}
+							add_core_of = PREV
+						}
+					}
+					ENC = {
+						transfer_state = 205
+						transfer_state = 63
+						transfer_state = 866
+						transfer_state = 583
+						transfer_state = 4
+						transfer_state = 80
+						every_owned_state = {
+							limit = {
+								is_owned_by = PREV
+							}
+							add_core_of = PREV
+						}
+					}
+				}
+			}
+
+			#Legionsposion on startup - Remove when Mexico launches, Included in base mod then.
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = legion_breakaway_status
+						option = LEGION_BROKEN
+					}
+				}
+				CES = {
+					white_peace = TWI
+					release = PHR
+					release = FLA
+					release = HUA
+					release = BLK
+					release = TSI
+					release = WAP
+					release = MES
+					release = SUF
+					release = RSR
+					release = WAP
+					release = BSU
+					release = JIC
+				}
+			}
+
+			#Add opinion mods to newly created countries if needed.
+			every_country = {
+				limit = {
+					tag = HEA
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = HEA }
+						NOT = { has_opinion_modifier = world_view_hea }
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = hea_view_world
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = world_view_hea
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					tag = BRK
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = BRK }
+						NOT = { has_opinion_modifier = world_view_brk }
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = brk_view_world
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = world_view_brk
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					is_raider_nation = yes
+				}
+				every_country = {
+					limit = {
+						is_settler_nation = yes
+						NOT = { has_opinion_modifier = settlers_vs_raiders }
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = settlers_vs_raiders
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = settlers_vs_raiders
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					is_super_mutant_nation = yes
+				}
+				every_other_country = {
+					limit = {
+						is_super_mutant_nation = yes
+						has_opinion_modifier = non_supermutants
+						has_opinion_modifier = non_supermutants_trade
+					}
+					remove_opinion_modifier = {
+						target = PREV
+						modifier = non_supermutants
+					}
+					remove_opinion_modifier = {
+						target = PREV
+						modifier = non_supermutants_trade
+					}
+					PREV = {
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = supermutants
+						}
+						remove_opinion_modifier = {
+							target = PREV
+							modifier = supermutants_trade
+						}
+					}
+				}
+				every_other_country = {
+					limit = {
+						NOT = { is_super_mutant_nation = yes }
+						NOT = { has_opinion_modifier = supermutants }
+						NOT = { has_opinion_modifier = supermutants_trade }
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = non_supermutants
+					}
+					reverse_add_opinion_modifier = {
+						target = PREV
+						modifier = non_supermutants_trade
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = supermutants
+					}
+					add_opinion_modifier = {
+						target = PREV
+						modifier = supermutants_trade
+					}
+				}
+			}
+			#Mexico One
+			# every_country = {
+			# 	limit = {
+			# 		is_mexican = yes
+			# 	}
+			# 	every_country = {
+			# 		limit = {
+			# 			NOT = { is_mexican = yes }
+			# 			NOT = { has_opinion_modifier = others_vs_mexicans }
+			# 			NOT = { has_opinion_modifier = mexican_isolation }
+			# 		}
+			# 		add_opinion_modifier = {
+			# 			target = PREV
+			# 			modifier = mexican_isolation
+			# 		}
+			# 		reverse_add_opinion_modifier = {
+			# 			target = PREV
+			# 			modifier = mexican_isolation
+			# 		}
+			# 		add_opinion_modifier = {
+			# 			target = PREV
+			# 			modifier = others_vs_mexicans
+			# 		}
+			# 		reverse_add_opinion_modifier = {
+			# 			target = PREV
+			# 			modifier = mexicans_vs_others
+			# 		}
+			# 	}
+			# }
+		}
+	}
+}

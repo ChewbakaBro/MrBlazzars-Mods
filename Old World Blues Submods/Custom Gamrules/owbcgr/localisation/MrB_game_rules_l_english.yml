@@ -1,0 +1,16 @@
+﻿l_english:
+  RULE_GROUP_OWB_CUSTOM_GAMERULES:0 "OWB Custom Game Rules"
+
+  RULE_GAME_SETUP_NCR_BREAKUP_STATUS:0 "@NCR NCR Shattered Status"
+  RULE_GAME_SETUP_NCR_BREAKUP_STATUS_DEFAULT:0 "@NCR NCR Whole"
+  RULE_GAME_SETUP_NCR_BREAKUP_STATUS_DEFAULT_DESC:0 "Leave the NCR as they are in the base game. Whole and ready to conquer the wastes."
+  RULE_GAME_SETUP_NCR_BREAKUP_STATUS_SHATTERED_NO_NCR:0 "@NCR NCR Shattered - No NCR"
+  RULE_GAME_SETUP_NCR_BREAKUP_STATUS_SHATTERED_NO_NCR_DESC:0 "Shatter the NCR. In this mode the NCR have been conquered by the Scorpions as they were not ready. - §RThis option will game over anyone playing as the NCR as the scorpions will annex them.§!"
+  RULE_GAME_SETUP_NCR_BREAKUP_STATUS_SHATTERED:0 "@NCR NCR Shattered"
+  RULE_GAME_SETUP_NCR_BREAKUP_STATUS_SHATTERED_DESC:0 "Shatter the NCR. In this mode the NCR never annexed their neighbors but remained alive. No changes to their focus tree were made."
+
+  RULE_GAME_SETUP_LEGION_BREAKAWAY_STATUS:0 "Status of the Legion"
+  RULE_GAME_SETUP_LEGION_BREAKAWAY_STATUS_DEFAULT:0 "@CES Default"
+  RULE_GAME_SETUP_LEGION_BREAKAWAY_STATUS_DEFAULT_DESC:0 "The Legion is whole at the start of the game."
+  RULE_GAME_SETUP_LEGION_BREAKAWAY_STATUS_BROKEN:0 "@CES Broken"
+  RULE_GAME_SETUP_LEGION_BREAKAWAY_STATUS_BROKEN_DESC:0 "The Legion is broken into its break away states."
