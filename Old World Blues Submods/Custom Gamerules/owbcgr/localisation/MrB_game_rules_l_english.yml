@@ -14,3 +14,9 @@
   RULE_GAME_SETUP_LEGION_BREAKAWAY_STATUS_DEFAULT_DESC:0 "The Legion is whole at the start of the game."
   RULE_GAME_SETUP_LEGION_BREAKAWAY_STATUS_BROKEN:0 "@CES Broken"
   RULE_GAME_SETUP_LEGION_BREAKAWAY_STATUS_BROKEN_DESC:0 "The Legion is broken into its break away states."
+
+  RULE_AI_BEHAVIOR_CES:0 "@CES The Legion"
+  RULE_AI_BEHAVIOR_CES_DEFAULT:0 "Default"
+  RULE_AI_BEHAVIOR_CES_DEFAULT_DESC:0 "The Legion will either follow their historical path or select a random one based on the historical focus option."
+  RULE_AI_BEHAVIOR_CES_BOM:0 "£flag_BOM_flag_texticon  Brotherhood of Mars"
+  RULE_AI_BEHAVIOR_CES_BOM_DESC:0 "The Legion will takes focuses to spawn the BoM During the civil war."

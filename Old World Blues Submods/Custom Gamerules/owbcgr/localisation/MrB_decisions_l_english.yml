@@ -1,0 +1,10 @@
+﻿l_english:
+  form_the_ncr:0 "Form the New California Republic - Cosmetic"
+  form_the_ncr_desc:0 "This will just give you all NCR cores and apply a cosmetic tag to make you look like the NCR without becoming the actual NCR."
+  form_the_legion:0 "Form the Legion - Cosmetic"
+  form_the_legion_desc:0 "This will just give you all CES cores and apply a cosmetic tag to make you look like the CES without becoming the actual CES."
+
+  form_the_ncr_nation:0 "Form the New California Republic"
+  form_the_ncr_nation_desc:0 "This will change your country to the NCR, focus tree and all. You will retain all navy/army leaders and troops/ships."
+  form_the_legion_nation:0 "Form the Legion"
+  form_the_legion_nation_desc:0 "This will change your country to the CES, focus tree and all. You will retain all navy/army leaders and troops/ships."

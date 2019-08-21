@@ -1,0 +1,8 @@
+spriteTypes = {
+# The Legion
+	spriteType = {
+		name = "GFX_flag_BOM_flag_texticon"
+		texturefile = "gfx/flags/small/BOM.tga"
+		legacy_lazy_load = no
+	}
+}

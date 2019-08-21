@@ -32,3 +32,19 @@ legion_breakaway_status = {
 		desc = "RULE_GAME_SETUP_LEGION_BREAKAWAY_STATUS_BROKEN_DESC"
 	}
 }
+
+#Caesar's Legion
+CES_ai_behavior = {
+	name = "RULE_AI_BEHAVIOR_CES"
+	group = "RULE_GROUP_OWB_CUSTOM_GAMERULES"
+	default = {
+		name = DEFAULT
+		text = "RULE_AI_BEHAVIOR_CES_DEFAULT"
+		desc = "RULE_AI_BEHAVIOR_CES_DEFAULT_DESC"
+	}
+	option = {
+		name = BOM
+		text = "RULE_AI_BEHAVIOR_CES_BOM"
+		desc = "RULE_AI_BEHAVIOR_CES_BOM_DESC"
+	}
+}

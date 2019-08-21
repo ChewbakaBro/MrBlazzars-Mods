@@ -1,0 +1,185 @@
+formable_nations = {
+	form_the_legion_nation = {
+		allowed = {
+			is_legion_breakway = yes
+			has_game_rule = {
+				rule = legion_breakaway_status
+				option = LEGION_BROKEN
+			}
+		}
+		visible = {
+			any_owned_state = {
+				is_core_of = CES
+			}
+			NOT = { has_country_flag = formed_ces }
+		}
+		available = {
+			owns_all_cores_of_legion = yes
+		}
+		highlight_states = {
+			any_state = {
+				is_core_of = CES
+				NOT = { is_owned_and_controlled_by = ROOT }
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			CES = { inherit_technology = ROOT }
+			every_army_leader = { set_nationality = CES }
+			every_navy_leader = { set_nationality = CES }
+			transfer_navy = { target = CES }
+			CES = {
+				transfer_state = 253
+				change_tag_from = ROOT
+			}
+			CES = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
+			set_country_flag = formed_ces
+			if = {
+				limit = {
+					has_global_flag = legion_civil_war_disabled
+					NOT = { has_global_flag = legion_had_civil_war }
+				}
+				clr_global_flag = legion_civil_war_disabled
+			}
+		}
+	}
+	form_the_legion = {
+		allowed = {
+			is_legion_breakway = yes
+			has_game_rule = {
+				rule = legion_breakaway_status
+				option = LEGION_BROKEN
+			}
+		}
+		visible = {
+			any_owned_state = {
+				is_core_of = CES
+			}
+			NOT = { has_country_flag = formed_ces_cosmetic }
+		}
+		available = {
+			owns_all_cores_of_legion = yes
+		}
+		highlight_states = {
+			any_state = {
+				is_core_of = CES
+				NOT = { is_owned_and_controlled_by = ROOT }
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_cosmetic_tag = CES_cosmetic
+			every_state = {
+				limit = {
+					is_core_of = CES
+				}
+				add_core_of = ROOT
+			}
+			set_country_flag = formed_ces_cosmetic
+		}
+	}
+	form_the_ncr_nation = {
+		allowed = {
+			NOT = {
+				is_raider_nation = yes
+			}
+			NOT = {
+				original_tag = NCR
+			}
+			OR = {
+				NOT = { country_exists = NCR }
+				has_game_rule = {
+					rule = ncr_breakup_status
+					option = NCR_SHATTERED_NO_NCR
+				}
+			}
+		}
+		visible = {
+			any_owned_state = {
+				is_core_of = NCR
+			}
+			NOT = { has_country_flag = formed_ncr }
+		}
+		available = {
+			owns_all_cores_of_ncr = yes
+		}
+		highlight_states = {
+			any_state = {
+				is_core_of = NCR
+				NOT = { is_owned_and_controlled_by = ROOT }
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_army_leader = { set_nationality = NCR }
+			every_navy_leader = { set_nationality = NCR }
+			NCR = { inherit_technology = PREV }
+			transfer_navy = { target = NCR }
+			NCR = {
+				transfer_state = 253
+				change_tag_from = ROOT
+			}
+			NCR = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
+			set_country_flag = formed_ncr
+			if = {
+				limit = {
+					has_global_flag = NCR_civil_war_disabled
+				}
+				clr_global_flag = NCR_civil_war_disabled
+			}
+		}
+	}
+	form_the_ncr = {
+		allowed = {
+			NOT = {
+				is_raider_nation = yes
+			}
+			NOT = {
+				original_tag = NCR
+			}
+			OR = {
+				NOT = { country_exists = NCR }
+				has_game_rule = {
+					rule = ncr_breakup_status
+					option = NCR_SHATTERED_NO_NCR
+				}
+			}
+		}
+		visible = {
+			any_owned_state = {
+				is_core_of = NCR
+			}
+			NOT = { has_country_flag = formed_ncr_cosmetic }
+		}
+		available = {
+			owns_all_cores_of_ncr = yes
+		}
+		highlight_states = {
+			any_state = {
+				is_core_of = NCR
+				NOT = { is_owned_and_controlled_by = ROOT }
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_cosmetic_tag = NCR_cosmetic
+			every_state = {
+				limit = {
+					is_core_of = NCR
+				}
+				add_core_of = ROOT
+			}
+			set_country_flag = formed_ncr_cosmetic
+		}
+	}
+}

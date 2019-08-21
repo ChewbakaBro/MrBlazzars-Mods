@@ -1,0 +1,44 @@
+ENC_cosmetic_tag = {
+	color = rgb { 0 45 106 }
+	color_ui = rgb { 0 45 106 }
+}
+
+THR_cosmetic_tag = {
+	color = rgb { 136 17 28 }
+	color_ui = rgb { 136 17 28 }
+}
+
+#THR_cosmetic_tag = { #Thradd Dark Black
+	#color = rgb { 68 28 30 }
+	#color_ui = rgb { 68 28 30 }
+#}
+
+VLP_cosmetic_tag = {
+	color = rgb { 92 12 12 }
+	color_ui = rgb { 92 12 12 }
+}
+
+BOM_cosmetic_tag = {
+	color = rgb { 92 12 12 }
+	color_ui = rgb { 92 12 12 }
+}
+
+BON_cosmetic_tag = {
+	color = rgb { 206 18 4 }
+	color_ui = rgb { 206 18 4 }
+}
+
+BAR_cosmetic_tag = {
+	color = rgb { 126 16 16 }
+	color_ui = rgb { 126 16 16 }
+}
+
+NCR_cosmetic = {
+	color = rgb { 153 116 93 }
+	color_ui = rgb { 199 151 121 }
+}
+
+CES_cosmetic = {
+	color = rgb { 169 24 24 }
+	color_ui = rgb { 169 24 24 }
+}

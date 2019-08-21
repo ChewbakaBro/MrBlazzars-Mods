@@ -1,0 +1,16 @@
+﻿units = {
+	fleet = {
+		name = "Baron's Fleet"
+		naval_base = 4995
+		task_force = {
+			name = "Baron's Fleet"
+			location = 4995
+			ship = { name = "NCRS Gunderson" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = NCR } } }
+			ship = { name = "NCRS Palm Springs" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = NCR } } }
+			ship = { name = "NCRS Visalia" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = NCR } } }
+			ship = { name = "NCRS Marysville" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = NCR } } }
+			ship = { name = "NCRS Etna" definition = light_cruiser equipment = { light_cruiser_equipment_1 = { amount = 1 owner = NCR } } }
+			ship = { name = "NCRS Point-Green" definition = light_cruiser equipment = { light_cruiser_equipment_1 = { amount = 1 owner = NCR } } }
+		}
+	}
+}

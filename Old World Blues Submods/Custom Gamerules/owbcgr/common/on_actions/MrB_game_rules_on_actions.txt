@@ -1,6 +1,19 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_game_rule = {
+							rule = ncr_breakup_status
+							option = NCR_WHOLE
+						}
+					}
+				}
+				NCR = {
+					load_oob = "NCR_2275_naval"
+				}
+			}
 			#Mexico Version
 			# if = {
 			# 	limit = {
@@ -15,20 +28,33 @@ on_actions = {
 			# 			every_owned_state = {
 			# 				limit = {
 			# 					is_owned_by = PREV
-			# 				}
-			# 				add_core_of = NCR
+			# 				}w
 			# 			}
+			# 			build_2_random_mil_factory = yes
+			#			build_2_random_civ_factory = yes
+			#			build_2_random_mil_factory = yes
+			#			build_2_random_civ_factory = yes
+			# 			load_oob = "BAR_2275"
+			# 			load_oob = "BAR_2275_naval"
 			# 		}
 			# 		release = BON
 			# 		BON = {
+			#			inherit_technology = NCR
 			# 			every_owned_state = {
 			# 				limit = {
 			# 					is_owned_by = PREV
 			# 				}
 			# 				add_core_of = NCR
 			# 			}
+			# 			build_2_random_mil_factory = yes
+			#			build_2_random_civ_factory = yes
+			#			build_2_random_mil_factory = yes
+			#			build_2_random_civ_factory = yes
+			# 			load_oob = "BON_2275"
+			# 			load_oob = "BON_2275_naval"
 			# 		}
 			# 		BOS = {
+			#			inherit_technology = NCR
 			# 			transfer_state = 433
 			# 			transfer_state = 558
 			# 			transfer_state = 312
@@ -53,10 +79,22 @@ on_actions = {
 			# 				}
 			# 				add_core_of = PREV
 			# 			}
+			# 			build_2_random_mil_factory = yes
+			#			build_2_random_civ_factory = yes
+			#			build_2_random_mil_factory = yes
+			#			build_2_random_civ_factory = yes
+			# 			load_oob = "enclavecivilwar"
+			# 			load_oob = "ENC_enclavepmc"
 			# 		}
 			# 		SCR = {
 			# 			annex_country = {
 			# 				target = NCR
+			# 			}
+			# 			every_owned_state = {
+			# 				limit = {
+			# 					is_core_of = NCR
+			# 				}
+			# 				decimate_half_all_industry = yes
 			# 			}
 			# 		}
 			# 	}
@@ -71,21 +109,35 @@ on_actions = {
 			# 	NCR = {
 			# 		release = BAR
 			# 		BAR = {
+			#			inherit_technology = NCR
 			# 			every_owned_state = {
 			# 				limit = {
 			# 					is_owned_by = PREV
 			# 				}
 			# 				add_core_of = NCR
 			# 			}
+			# 			build_2_random_mil_factory = yes
+			#			build_2_random_civ_factory = yes
+			#			build_2_random_mil_factory = yes
+			#			build_2_random_civ_factory = yes
+			# 			load_oob = "BAR_2275"
+			# 			load_oob = "BAR_2275_naval"
 			# 		}
 			# 		release = BON
 			# 		BON = {
+			#			inherit_technology = NCR
 			# 			every_owned_state = {
 			# 				limit = {
 			# 					is_owned_by = PREV
 			# 				}
 			# 				add_core_of = NCR
 			# 			}
+			# 			build_2_random_mil_factory = yes
+			#			build_2_random_civ_factory = yes
+			#			build_2_random_mil_factory = yes
+			#			build_2_random_civ_factory = yes
+			# 			load_oob = "BON_2275"
+			# 			load_oob = "BON_2275_naval"
 			# 		}
 			# 		BOS = {
 			# 			transfer_state = 433
@@ -112,6 +164,12 @@ on_actions = {
 			# 				}
 			# 				add_core_of = PREV
 			# 			}
+			# 			build_2_random_mil_factory = yes
+			#			build_2_random_civ_factory = yes
+			#			build_2_random_mil_factory = yes
+			#			build_2_random_civ_factory = yes
+			# 			load_oob = "enclavecivilwar"
+			# 			load_oob = "ENC_enclavepmc"
 			# 		}
 			# 	}
 			# }
@@ -126,21 +184,35 @@ on_actions = {
 				NCR = {
 					release = BAR
 					BAR = {
+						inherit_technology = NCR
 						every_owned_state = {
 							limit = {
 								is_owned_by = PREV
 							}
 							add_core_of = NCR
 						}
+						build_2_random_mil_factory = yes
+						build_2_random_civ_factory = yes
+						build_2_random_mil_factory = yes
+						build_2_random_civ_factory = yes
+						load_oob = "BAR_2275"
+						load_oob = "BAR_2275_naval"
 					}
 					release = BON
 					BON = {
+						inherit_technology = NCR
 						every_owned_state = {
 							limit = {
 								is_owned_by = PREV
 							}
 							add_core_of = NCR
 						}
+						build_2_random_mil_factory = yes
+						build_2_random_civ_factory = yes
+						build_2_random_mil_factory = yes
+						build_2_random_civ_factory = yes
+						load_oob = "BON_2275"
+						load_oob = "BON_2275_naval"
 					}
 					BOS = {
 						transfer_state = 433
@@ -166,10 +238,22 @@ on_actions = {
 							}
 							add_core_of = PREV
 						}
+						build_2_random_mil_factory = yes
+						build_2_random_civ_factory = yes
+						build_2_random_mil_factory = yes
+						build_2_random_civ_factory = yes
+						load_oob = "enclavecivilwar"
+						load_oob = "ENC_enclavepmc"
 					}
 					SCR = {
 						annex_country = {
 							target = NCR
+						}
+						every_owned_state = {
+							limit = {
+								is_core_of = NCR
+							}
+							decimate_half_all_industry = yes
 						}
 					}
 				}
@@ -181,6 +265,7 @@ on_actions = {
 						option = NCR_SHATTERED
 					}
 				}
+				set_global_flag = NCR_civil_war_disabled
 				NCR = {
 					release = BAR
 					BAR = {
@@ -190,6 +275,12 @@ on_actions = {
 							}
 							add_core_of = NCR
 						}
+						build_2_random_mil_factory = yes
+						build_2_random_civ_factory = yes
+						build_2_random_mil_factory = yes
+						build_2_random_civ_factory = yes
+						load_oob = "BAR_2275"
+						load_oob = "BAR_2275_naval"
 					}
 					release = BON
 					BON = {
@@ -199,6 +290,12 @@ on_actions = {
 							}
 							add_core_of = NCR
 						}
+						build_2_random_mil_factory = yes
+						build_2_random_civ_factory = yes
+						build_2_random_mil_factory = yes
+						build_2_random_civ_factory = yes
+						load_oob = "BON_2275"
+						load_oob = "BON_2275_naval"
 					}
 					BOS = {
 						transfer_state = 433
@@ -225,6 +322,12 @@ on_actions = {
 							}
 							add_core_of = PREV
 						}
+						build_2_random_mil_factory = yes
+						build_2_random_civ_factory = yes
+						build_2_random_mil_factory = yes
+						build_2_random_civ_factory = yes
+						load_oob = "enclavecivilwar"
+						load_oob = "ENC_enclavepmc"
 					}
 				}
 			}
@@ -237,6 +340,7 @@ on_actions = {
 						option = LEGION_BROKEN
 					}
 				}
+				set_global_flag = legion_civil_war_disabled
 				CES = {
 					white_peace = TWI
 					release = PHR
@@ -248,9 +352,44 @@ on_actions = {
 					release = MES
 					release = SUF
 					release = RSR
-					release = WAP
 					release = BSU
 					release = JIC
+				}
+				BLK = {
+					annex_country = { target = CES transfer_troops = no }
+				}
+				every_state = {
+					limit = {
+						is_core_of = TWI
+					}
+					add_core_of = CES
+				}
+				every_country = {
+					limit = {
+						is_legion_breakaway = yes
+					}
+					every_owned_state = {
+						add_core_of = CES
+					}
+					load_oob = "legion_breakaway_oob"
+					for_loop_effect = {
+						start = 0
+						end = 6
+
+						random_owned_controlled_state = {
+							limit = {
+								is_capital = yes
+							}
+							create_unit = {
+								division = "division_template = \"Militia\" start_experience_factor = 0.70 start_equipment_factor = 1.0"
+								owner = PREV
+							}
+						}
+					}
+					build_2_random_mil_factory = yes
+					build_2_random_civ_factory = yes
+					build_2_random_mil_factory = yes
+					build_2_random_civ_factory = yes
 				}
 			}
 
