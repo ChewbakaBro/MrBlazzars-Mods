@@ -43,7 +43,7 @@ equipments = {
 		resources = {
 			tungsten = 2
 			steel = 2
-			coal=2
+			coal = 2
 		}
 	}
 
@@ -63,7 +63,7 @@ equipments = {
 		parent = anti_tank_equipment_1
 		priority = 90
 		visual_level = 1
-
+		
 		can_convert_from = {
 			anti_tank_equipment_1
 		}
@@ -75,7 +75,7 @@ equipments = {
 		resources = {
 			tungsten = 2
 			steel = 2
-			coal=2
+			coal = 2
 		}
 	}
 	
@@ -99,7 +99,7 @@ equipments = {
 		resources = {
 			tungsten = 2
 			steel = 3
-			coal=3
+			coal = 3
 		}
 		is_convertable = yes
 	}

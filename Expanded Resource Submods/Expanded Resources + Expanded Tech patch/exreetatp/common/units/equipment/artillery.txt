@@ -44,7 +44,7 @@ equipments = {
 		resources = {
 			tungsten = 1
 			steel = 2
-			coal=2
+			coal = 2
 		}
 	}
 	
@@ -78,7 +78,7 @@ equipments = {
 		resources = {
 			tungsten = 1
 			steel = 2
-			coal=2
+			coal = 2
 		}
 		is_convertable = yes
 	}
@@ -104,7 +104,7 @@ equipments = {
 		resources = {
 			tungsten = 1
 			steel = 3
-			coal=3
+			coal = 3
 		}
 		is_convertable = yes
 	}
@@ -143,7 +143,7 @@ equipments = {
 		resources = {
 			tungsten = 2
 			steel = 1
-			coal=2
+			coal = 2
 		}
 	}
 	
@@ -176,7 +176,7 @@ equipments = {
 		resources = {
 			tungsten = 2
 			steel = 1
-			coal=3
+			coal = 3
 		}
 		is_convertable = yes
 	}
@@ -200,35 +200,6 @@ equipments = {
 		defense = 25
 		breakthrough = 12
 		soft_attack = 42
-		
-		build_cost_ic = 5
-		resources = {
-			tungsten = 2
-			steel = 4
-			coal = 4
-		}
-	}
-	
-###------> X <><> <><> <><> <><> <><>
-	
-###------> New Artillery <><> <><> <><> <><> <><>
-	
-	artillery_equipment_x = {
-		year = 1945
-
-		archetype = artillery_equipment
-		parent = artillery_equipment_3
-		priority = 50
-		visual_level = 3
-		
-		can_convert_from = {
-			artillery_equipment_2
-			artillery_equipment_3
-		}
-		
-		defense = 21
-		breakthrough = 9
-		soft_attack = 60
 		
 		build_cost_ic = 5
 		resources = {

@@ -20,14 +20,10 @@ sub_units = {
 		}
 
 		combat_width = 2
-		essential = {
-			grain_conversion_eq
-			fuel_eq
-		}
+
 		need = {
 			armored_car_equipment = 80
 			grain_conversion_eq = 160
-			fuel_eq = 80
 			light_ammo_eq = 160
 			exre_uniform_eq = 60
 		}
