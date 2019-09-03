@@ -81,7 +81,7 @@ country_event = {
 				type = anti_air_building
 				level = 1
 				instant_build = yes
-			}    
+			}
 		}
 		country_event = Easybuff.1
 	}
@@ -149,105 +149,105 @@ country_event = {
 	option = {
 		name = Easybuff.20.a
 		every_state = {
-		limit = {
-			is_controlled_by = ROOT
+			limit = {
+				is_controlled_by = ROOT
+			}
+			add_resource = {
+				type = water
+				amount = 8
+			}
+			add_resource = {
+				type = energy
+				amount = 8
+			}
+			add_resource = {
+				type = metal
+				amount = 8
+			}
+			add_resource = {
+				type = composites
+				amount = 8
+			}
+			add_resource = {
+				type = circuitry
+				amount = 8
+			}
+			add_resource = {
+				type = advanced
+				amount = 8
+			}
 		}
-		add_resource = {
-			type = water
-			amount = 8
-		}
-		add_resource = {
-			type = electricity
-			amount = 8
-		}
-		add_resource = {
-			type = metal
-			amount = 8
-		}
-		add_resource = {
-			type = fuel
-			amount = 8
-		}
-		add_resource = {
-			type = electronics
-			amount = 8
-		}
-		add_resource = {
-			type = advanced_technology
-			amount = 8
-		}
-	}
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.20.b
 		random_state = {
-		limit = {
-			is_controlled_by = ROOT
-			is_capital = yes
-		}
-		add_resource = {
-			type = water
-			amount = 8
-		}
-		add_resource = {
-			type = electricity
-			amount = 8
-		}
-		add_resource = {
-			type = metal
-			amount = 8
-		}
-		add_resource = {
-			type = fuel
-			amount = 8
-		}
-		add_resource = {
-			type = electronics
-			amount = 8
-		}
-		add_resource = {
-			type = advanced_technology
-			amount = 8
-		}
+			limit = {
+				is_controlled_by = ROOT
+				is_capital = yes
+			}
+			add_resource = {
+				type = water
+				amount = 8
+			}
+			add_resource = {
+				type = energy
+				amount = 8
+			}
+			add_resource = {
+				type = metal
+				amount = 8
+			}
+			add_resource = {
+				type = composites
+				amount = 8
+			}
+			add_resource = {
+				type = circuitry
+				amount = 8
+			}
+			add_resource = {
+				type = advanced
+				amount = 8
+			}
 		}
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.20.c
 		every_owned_state = {
-		add_resource = {
-			type = water
-			amount = 8
-		}
-		add_resource = {
-			type = electricity
-			amount = 8
-		}
-		add_resource = {
-			type = metal
-			amount = 8
-		}
-		add_resource = {
-			type = fuel
-			amount = 8
-		}
-		add_resource = {
-			type = electronics
-			amount = 8
-		}
-		add_resource = {
-			type = advanced_technology
-			amount = 8
-		}
+			add_resource = {
+				type = water
+				amount = 8
+			}
+			add_resource = {
+				type = energy
+				amount = 8
+			}
+			add_resource = {
+				type = metal
+				amount = 8
+			}
+			add_resource = {
+				type = composites
+				amount = 8
+			}
+			add_resource = {
+				type = circuitry
+				amount = 8
+			}
+			add_resource = {
+				type = advanced
+				amount = 8
+			}
 		}
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.20.d
 		random_state = {
-			limit = { 
-				is_controlled_by = ROOT 
+			limit = {
+				is_controlled_by = ROOT
 				is_capital = yes
 			}
 			add_resource = {
@@ -260,12 +260,12 @@ country_event = {
 	option = {
 		name = Easybuff.20.e
 		random_state = {
-			limit = { 
-				is_controlled_by = ROOT 
+			limit = {
+				is_controlled_by = ROOT
 				is_capital = yes
 			}
 			add_resource = {
-				type = electricity
+				type = energy
 				amount = 8
 			}
 		}
@@ -274,8 +274,8 @@ country_event = {
 	option = {
 		name = Easybuff.20.f
 		random_state = {
-			limit = { 
-				is_controlled_by = ROOT 
+			limit = {
+				is_controlled_by = ROOT
 				is_capital = yes
 			}
 			add_resource = {
@@ -288,12 +288,12 @@ country_event = {
 	option = {
 		name = Easybuff.20.g
 		random_state = {
-			limit = { 
-				is_controlled_by = ROOT 
+			limit = {
+				is_controlled_by = ROOT
 				is_capital = yes
 			}
 			add_resource = {
-				type = fuel
+				type = composites
 				amount = 8
 			}
 		}
@@ -302,12 +302,12 @@ country_event = {
 	option = {
 		name = Easybuff.20.h
 		random_state = {
-			limit = { 
-				is_controlled_by = ROOT 
+			limit = {
+				is_controlled_by = ROOT
 				is_capital = yes
 			}
 			add_resource = {
-				type = electronics
+				type = circuitry
 				amount = 8
 			}
 		}
@@ -316,12 +316,12 @@ country_event = {
 	option = {
 		name = Easybuff.20.i
 		random_state = {
-			limit = { 
-				is_controlled_by = ROOT 
+			limit = {
+				is_controlled_by = ROOT
 				is_capital = yes
 			}
 			add_resource = {
-				type = advanced_technology
+				type = advanced
 				amount = 8
 			}
 		}
@@ -376,7 +376,7 @@ country_event = {
 		#set_technology = { bicycle_infantry = 0 }
 		country_event = Easybuff.30
 	}
-  
+
 	option = {
 		name = Easybuffback
 		country_event = Easybuff.30
@@ -461,7 +461,7 @@ country_event = {
 		name = Easybuff.33.b
 		country_event = Easybuff.30
 	}
-  
+
 	option = {
 		name = Easybuffback
 		country_event = Easybuff.30
@@ -484,7 +484,7 @@ country_event = {
 		name = Easybuff.40.b
 		country_event = Easybuff.42
 	}
-  
+
 	option = {
 		name = Easybuffback
 		country_event = Easybuff.1
@@ -498,7 +498,7 @@ country_event = {
 	desc = Easybuff.41.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	
+
 	option = {
 		name = Easybuff.41.a
 		# add_equipment_to_stockpile = {
@@ -547,7 +547,7 @@ country_event = {
 		# }
 		country_event = Easybuff.40
 	}
-	
+
 	option = {
 		name = Easybuff.41.g
 		# add_equipment_to_stockpile = {
@@ -569,7 +569,7 @@ country_event = {
 	desc = Easybuff.42.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	
+
 	option = {
 		name = Easybuff.42.a
 		# add_equipment_to_stockpile = {
@@ -709,8 +709,8 @@ country_event = {
 	option = {
 		name = Easybuff.60.c
 		every_country = {
-			limit = { 
-				AND = { 
+			limit = {
+				AND = {
 					has_war_with = ROOT
 					is_in_faction = yes
 					is_faction_leader = no
@@ -736,7 +736,7 @@ country_event = {
 		name = Easybuff.60.e
 		country_event = Easybuff.63
 	}
-  
+
 	option = {
 		name = Easybuffback
 		country_event = Easybuff.1
@@ -760,7 +760,7 @@ country_event = {
 					is_faction_leader = yes
 				}
 			}
-			add_to_faction = ROOT
+			ROOT = { join_caesars_legion = yes }
 		}
 		country_event = Easybuff.60
 	}
@@ -773,7 +773,7 @@ country_event = {
 					is_faction_leader = yes
 				}
 			}
-			add_to_faction = ROOT
+			ROOT = { join_ncr = yes }
 		}
 		country_event = Easybuff.60
 	}
@@ -786,7 +786,7 @@ country_event = {
 					is_faction_leader = yes
 				}
 			}
-			add_to_faction = ROOT
+			ROOT = { join_brotherhood_of_steel = yes }
 		}
 		country_event = Easybuff.60
 	}
@@ -857,7 +857,7 @@ country_event = {
 		name = Easybuff.63.a
 		set_politics = {
 			ruling_party = people
-		elections_allowed = yes
+			elections_allowed = yes
 		}
 		set_popularities = {
 			people = 100
@@ -871,7 +871,7 @@ country_event = {
 		name = Easybuff.63.b
 		set_politics = {
 			ruling_party = intellectuals
-		elections_allowed = yes
+			elections_allowed = yes
 		}
 		set_popularities = {
 			people = 0
@@ -885,7 +885,7 @@ country_event = {
 		name = Easybuff.63.c
 		set_politics = {
 			ruling_party = elites
-		elections_allowed = yes
+			elections_allowed = yes
 		}
 		set_popularities = {
 			people =0
@@ -899,7 +899,7 @@ country_event = {
 		name = Easybuff.63.d
 		set_politics = {
 			ruling_party = ruler
-		elections_allowed = yes
+			elections_allowed = yes
 		}
 		set_popularities = {
 			people = 0
@@ -991,7 +991,7 @@ country_event = {
 				has_war_with = ROOT
 			}
 			PREV =  { white_peace = ROOT }
-		} 
+		}
 		country_event = Easybuff.1
 	}
 	option = {
@@ -1157,8 +1157,8 @@ country_event = {
 		random_state = {
 			limit = {
 				AND = {
-					any_neighbor_state = { 
-						is_owned_by = ROOT 
+					any_neighbor_state = {
+						is_owned_by = ROOT
 						ROOT = {
 							divisions_in_state = {
 								state = PREV
@@ -1166,7 +1166,6 @@ country_event = {
 							}
 						}
 					}
-					
 					NOT = { is_controlled_by = ROOT }
 				}
 			}
@@ -1247,7 +1246,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = { 
+		hidden_effect = {
 			random_owned_state = {
 				limit = {
 					AND = {
@@ -1260,7 +1259,7 @@ country_event = {
 						}
 					}
 				}
-				save_event_target_as = cap_state          
+				save_event_target_as = cap_state
 			}
 			random_owned_state = {
 				limit = {
@@ -1274,10 +1273,10 @@ country_event = {
 						}
 					}
 				}
-				save_event_target_as = cap_states         
+				save_event_target_as = cap_states
 			}
 			random_owned_state = {
-				save_event_target_as = cap_statess         
+				save_event_target_as = cap_statess
 			}
 		}
 	}
