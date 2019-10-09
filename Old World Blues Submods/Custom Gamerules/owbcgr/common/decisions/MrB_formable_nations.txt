@@ -1,17 +1,17 @@
 formable_nations = {
 	form_the_legion_nation = {
 		allowed = {
-			is_legion_breakway = yes
-			has_game_rule = {
-				rule = legion_breakaway_status
-				option = LEGION_BROKEN
-			}
+			is_legion_breakaway = yes
 		}
 		visible = {
 			any_owned_state = {
 				is_core_of = CES
 			}
 			NOT = { has_country_flag = formed_ces }
+			has_game_rule = {
+				rule = CES_status
+				option = BROKEN
+			}
 		}
 		available = {
 			owns_all_cores_of_legion = yes
@@ -37,6 +37,12 @@ formable_nations = {
 					target = ROOT
 					transfer_troops = yes
 				}
+				every_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					add_core_of = PREV
+				}
 			}
 			set_country_flag = formed_ces
 			if = {
@@ -50,17 +56,17 @@ formable_nations = {
 	}
 	form_the_legion = {
 		allowed = {
-			is_legion_breakway = yes
-			has_game_rule = {
-				rule = legion_breakaway_status
-				option = LEGION_BROKEN
-			}
+			is_legion_breakaway = yes
 		}
 		visible = {
 			any_owned_state = {
 				is_core_of = CES
 			}
 			NOT = { has_country_flag = formed_ces_cosmetic }
+			has_game_rule = {
+				rule = CES_status
+				option = BROKEN
+			}
 		}
 		available = {
 			owns_all_cores_of_legion = yes
@@ -91,19 +97,21 @@ formable_nations = {
 			NOT = {
 				original_tag = NCR
 			}
-			OR = {
-				NOT = { country_exists = NCR }
-				has_game_rule = {
-					rule = ncr_breakup_status
-					option = NCR_SHATTERED_NO_NCR
-				}
-			}
 		}
 		visible = {
 			any_owned_state = {
 				is_core_of = NCR
 			}
 			NOT = { has_country_flag = formed_ncr }
+			OR = {
+				NCR = {
+					exists = no
+				}
+				has_game_rule = {
+					rule = ncr_breakup_status
+					option = NCR_SHATTERED_NO_NCR
+				}
+			}
 		}
 		available = {
 			owns_all_cores_of_ncr = yes
@@ -129,6 +137,12 @@ formable_nations = {
 					target = ROOT
 					transfer_troops = yes
 				}
+				every_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					add_core_of = PREV
+				}
 			}
 			set_country_flag = formed_ncr
 			if = {
@@ -147,19 +161,21 @@ formable_nations = {
 			NOT = {
 				original_tag = NCR
 			}
-			OR = {
-				NOT = { country_exists = NCR }
-				has_game_rule = {
-					rule = ncr_breakup_status
-					option = NCR_SHATTERED_NO_NCR
-				}
-			}
 		}
 		visible = {
 			any_owned_state = {
 				is_core_of = NCR
 			}
 			NOT = { has_country_flag = formed_ncr_cosmetic }
+			OR = {
+				NCR = {
+					exists = no
+				}
+				has_game_rule = {
+					rule = ncr_breakup_status
+					option = NCR_SHATTERED_NO_NCR
+				}
+			}
 		}
 		available = {
 			owns_all_cores_of_ncr = yes

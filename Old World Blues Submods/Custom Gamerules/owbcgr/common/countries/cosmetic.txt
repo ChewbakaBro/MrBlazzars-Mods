@@ -33,6 +33,35 @@ BAR_cosmetic_tag = {
 	color_ui = rgb { 126 16 16 }
 }
 
+RRG_rosado = {
+	color = rgb { 115 20 20 }
+	color_ui = rgb { 92 96 215 }
+}
+
+TLA_RRG = {
+	color = rgb { 92 96 215 }
+	color_ui = rgb { 92 96 215 }
+}
+
+USM = {
+	color = rgb { 0 127 70 }
+	color_ui = rgb { 92 96 215 }
+}
+ARM_RRG = {
+	color = rgb { 0 127 70 }
+	color_ui = rgb { 92 96 215 }
+}
+
+MAYA = {
+	color = rgb { 226 205 29 }
+	color_ui = rgb { 226 205 29 }
+}
+
+SHI_BOS = {
+	color = rgb { 192 38 0 }
+	color_ui = rgb { 192 38 0 }
+}
+
 NCR_cosmetic = {
 	color = rgb { 153 116 93 }
 	color_ui = rgb { 199 151 121 }

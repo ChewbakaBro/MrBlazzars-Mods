@@ -5,12 +5,12 @@
 		task_force = {
 			name = "Baron's Fleet"
 			location = 4995
-			ship = { name = "NCRS Gunderson" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = NCR } } }
-			ship = { name = "NCRS Palm Springs" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = NCR } } }
-			ship = { name = "NCRS Visalia" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = NCR } } }
-			ship = { name = "NCRS Marysville" definition = destroyer equipment = { destroyer_equipment_1 = { amount = 1 owner = NCR } } }
-			ship = { name = "NCRS Etna" definition = light_cruiser equipment = { light_cruiser_equipment_1 = { amount = 1 owner = NCR } } }
-			ship = { name = "NCRS Point-Green" definition = light_cruiser equipment = { light_cruiser_equipment_1 = { amount = 1 owner = NCR } } }
+			ship = { name = "NCRS Gunderson" definition = light_ship_unit equipment = { ship_hull_light_1 = { amount = 1 owner = NCR version_name = "River Boat" } } }
+			ship = { name = "NCRS Vault Dweller" definition = light_ship_unit equipment = { ship_hull_light_1 = { amount = 1 owner = NCR version_name = "River Boat" } } }
+			ship = { name = "NCRS Visalia" definition = light_ship_unit equipment = { ship_hull_light_1 = { amount = 1 owner = NCR version_name = "River Boat" } } }
+			ship = { name = "NCRS Marysville" definition = light_ship_unit equipment = { ship_hull_light_1 = { amount = 1 owner = NCR version_name = "River Boat" } } }
+			ship = { name = "NCRS Etna" definition = light_ship_unit equipment = { ship_hull_light_1 = { amount = 1 owner = NCR version_name = "River Boat" } } }
+			ship = { name = "NCRS Point-Green" definition = medium_ship_screen_unit equipment = { ship_hull_medium_1 = { amount = 1 owner = NCR version_name = "Destroyer" } } }
 		}
 	}
 }

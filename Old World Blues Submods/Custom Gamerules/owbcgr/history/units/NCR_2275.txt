@@ -1,6 +1,8 @@
 ﻿division_template = {
 	name = "NCR Troopers"
 
+	division_names_group = _NCR_INF_01
+
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -26,9 +28,8 @@ division_template = {
 		spec_ops = { x = 1 y = 1 }
 	}
 	support = {
-		signal_company = { x = 0 y = 0 }
-		anti_tank_company = { x = 0 y = 1 }
-		recon_company = { x = 0 y = 2 }
+		anti_tank_company = { x = 0 y = 0 }
+		recon_company = { x = 0 y = 1 }
 	}
 }
 
@@ -54,23 +55,7 @@ division_template = {
 units = {
 	division = {
 		name = "1st Ranger Company"
-		location = 8814
-		division_template = "NCR Rangers"
-		start_experience_factor = 0.5
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		name = "2nd Ranger Company"
-		location = 8814
-		division_template = "NCR Rangers"
-		start_experience_factor = 0.5
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		name = "3rd Ranger Company"
-		location = 8814
+		location = 2384
 		division_template = "NCR Rangers"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
@@ -78,7 +63,7 @@ units = {
 
 	division = {
 		name = "1st Motorized Company"
-		location = 8814
+		location = 8830
 		division_template = "Motorized Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -86,7 +71,7 @@ units = {
 
 	division = {
 		name = "2nd Motorized Company"
-		location = 8814
+		location = 8830
 		division_template = "Motorized Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -94,7 +79,7 @@ units = {
 
 	division = {
 		name = "3rd Motorized Company"
-		location = 8814
+		location = 8830
 		division_template = "Motorized Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -102,7 +87,7 @@ units = {
 
 	division = {
 		name = "4th Motorized Company"
-		location = 8814
+		location = 8830
 		division_template = "Motorized Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -110,10 +95,10 @@ units = {
 
 	division = {
 		division_name = {
- 			is_name_ordered = yes
- 			name_order = 1
- 		}
-		location = 8814
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 2397
 		division_template = "NCR Troopers"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -121,10 +106,10 @@ units = {
 
 	division = {
 		division_name = {
- 			is_name_ordered = yes
- 			name_order = 2
- 		}
-		location = 8814
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 4789
 		division_template = "NCR Troopers"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -132,10 +117,10 @@ units = {
 
 	division = {
 		division_name = {
- 			is_name_ordered = yes
- 			name_order = 3
- 		}
-		location = 8814
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 5078
 		division_template = "NCR Troopers"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -143,10 +128,10 @@ units = {
 
 	division = {
 		division_name = {
- 			is_name_ordered = yes
- 			name_order = 4
- 		}
-		location = 8814
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 8761
 		division_template = "NCR Troopers"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -154,230 +139,10 @@ units = {
 
 	division = {
 		division_name = {
- 			is_name_ordered = yes
- 			name_order = 5
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 6
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 7
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 8
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 9
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 10
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 11
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 12
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 13
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 14
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 15
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 16
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 17
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 18
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 19
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 20
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 21
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 22
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 23
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 24
- 		}
-		location = 8814
-		division_template = "NCR Troopers"
-		start_experience_factor = 0.2
-		start_equipment_factor = 1.0
-	}
-
-	division = {
-		division_name = {
- 			is_name_ordered = yes
- 			name_order = 25
- 		}
-		location = 8814
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 3278
 		division_template = "NCR Troopers"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1.0
@@ -395,3 +160,4 @@ instant_effect = {
 		efficiency = 100
 	}
 }
+# vim: set ft=pdx ts=2 sw=2 tw=79 :
