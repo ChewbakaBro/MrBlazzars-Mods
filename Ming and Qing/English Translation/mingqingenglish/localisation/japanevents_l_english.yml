@@ -1,87 +1,86 @@
 ﻿l_english:
- 
+
  #events
  japanmq.0.t:0 "Tokyo Mutiny"
  japanmq.0.d:0 "Last night, a group of Imperialst Officers launched a mutiny, and now the situtation is at a stalemate, which side should we support?"
  japanmq.0.a:0 "Support the Constitutional system"
  japanmq.0.b:0 "Support the Imperial system"
- 
+
  japanmq.1.t:0 "Japan-Soviet Cooperation"
  japanmq.1.d:0 ""
  japanmq.1.a:0 "Agree"
  japanmq.1.b:0 "Disagree"
- 
+
  japanmq.2.t:0 "Japan-US Cooperation"
  japanmq.2.d:0 ""
  japanmq.2.a:0 "Agree"
  japanmq.2.b:0 "Disagree"
- 
+
  japanmq.3.t:0 "Signing of the Japan-Soviet Security Agreement"
  japanmq.3.d:0 ""
  japanmq.3.a:0 "Agree"
  japanmq.3.b:0 "Disagree"
- 
+
  japanmq.4.t:0 "Signing of the West Pacific Convention"
  japanmq.4.d:0 ""
  japanmq.4.a:0 "Agree"
  japanmq.4.b:0 "Disagree"
- 
+
  japanmq.5.t:0 "Establishment of Manchukuo"
  japanmq.5.d:0 "With the defeat of the Qing, we need to build a solid territory on the mianland, Manchuria is the best choice for the Empire."
  japanmq.5.a:0 "Victory for the Empire"
- 
+
  japanmq.6.t:0 "Establishment of Mongolia"
  japanmq.6.d:0 "With the defeat of the Qing, we need to build a solid territory on the mianland, Mongolia is the best choice for the Empire."
  japanmq.6.a:0 "Victory for the Empire"
- 
+
  japanmq.7.t:0 "Seize Luzon"
  japanmq.7.d:0 "With the defeat of the Ming, we need to further expand our sphere of influence in the South China Sea, Luzon is a good choice."
  japanmq.7.a:0 "Victory for the Empire"
- 
+
  japanmq.8.t:0 "Seize Lanfang"
  japanmq.8.d:0 "With the defeat of the Ming, we need to further expand our sphere of influence in the South China Sea, Lanfang is a good choice."
  japanmq.8.a:0 "Victory for the Empire"
- 
+
  japanmq.9.t:0 "Seize Siam"
  japanmq.9.d:0 "With the defeat of the Ming, we need to further expand our sphere of influence in the South China Sea, Siam is a good choice."
  japanmq.9.a:0 "Victory for the Empire"
- 
+
  #newsevents
  jpnews.0.t:0 "Tokyo Mutiny"
  jpnews.0.d:0 "At midnight in 1936, several soldiers led a young man to Tokyo to carry out an assassination, and achieved considerable results: two former cabinet prime ministers killed, also seizing Tokyo Center.\n\nHowever, the rebels were not successful in killing the Prime Minister, they did not succeed in securing the support of senior generals, plus the Emperor was angered by the coups actions and other factors, which led to the rebels failing to replace the regime. Eventually, the mutiny ended in failure."
  jpnews.0.a:0 "Interesting"
  jpnews.0.b:0 "For the Emperor"
- 
+
  jpnews.1.t:0 "Tokyo Mutiny"
  jpnews.1.d:0 "At midnight in 1936, several soldiers led a young man to Tokyo to carry out an assassination, and achieved considerable results: two former cabinet prime ministers killed, also seizing Tokyo Center.\n\nIn the Emperor's acuiescence, the mutiny was a success, and now these young officers have set up a military government."
  jpnews.1.a:0 "Interesting"
  jpnews.1.b:0 "For the Emperor"
- 
+
  jpnews.2.t:0 "Japan-Soviet Cooperation"
  jpnews.2.d:0 "Today diplomatic officials in Moscow and Japan have showed a co-signed statement signed by the heads of state for both countries.\n\nThe statement expressed that both countries have a common interest in the Far East, and expressed they would help eachother with security."
  jpnews.2.a:0 "Clearly aimed at the countries in the mainland"
  jpnews.2.b:0 "Japan has more friends"
  jpnews.2.c:0 "The Soviet Union and Japan have more benefits"
  jpnews.2.e:0 "We were targeted"
- 
+
  jpnews.3.t:0 "Japan-US Cooperation"
  jpnews.3.d:0 "Today diplomatic officials in Washington and Japan have shown a co-signed statement signed by the heads of state for both countries.\n\nThe statement expressed that both countries have a common interest in the Far East, and expressed they would help eachother with security."
  jpnews.3.a:0 "Clearly aimed at the countries in the mainland"
  jpnews.3.b:0 "Japan has more friends"
  jpnews.3.c:0 "The US and Japan have more benefits"
  jpnews.3.e:0 "We were targeted"
- 
+
  jpnews.4.t:0 "Japanese and Soviet Union Alliance"
  jpnews.4.d:0 "Japan announced a military alliance with the Soviet Union to curb the aggression of China on the mainland.\n\nAnalysts pointed out that the situation in the Far East is likely to become more and more tense, and involves great nations of other regions."
  jpnews.4.a:0 "Now there are several factions in the world?"
  jpnews.4.b:0 "Japan has more friends"
  jpnews.4.c:0 "The Soviet Union and Japan have more benefits"
  jpnews.4.e:0 "We were targeted"
- 
+
  jpnews.5.t:0 "Japanese and US Alliance"
  jpnews.5.d:0 "Japan announced a military alliance with the United States to curb the aggression of China on the mainland.\n\nAnalysts pointed out that the situation in the Far East is likely to become more and more tense, and involves great nations of other regions."
  jpnews.5.a:0 "Now there are several factions in the world?"
  jpnews.5.b:0 "Japan has more friends"
  jpnews.5.c:0 "The US and Japan have more benefits"
  jpnews.5.e:0 "We were targeted"
- 

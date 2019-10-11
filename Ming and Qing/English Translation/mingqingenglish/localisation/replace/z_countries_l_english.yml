@@ -1,6 +1,6 @@
 ﻿l_english:
- MNG_fascism:0 "Great Empire of Ming"
- MNG_fascism_DEF:0 "The Great Empire of Ming"
+ MNG_fascism:0 "Ming Empire"
+ MNG_fascism_DEF:0 "Mine Empire"
  MNG_democratic:0 "Ming"
  MNG_democratic_DEF:0 "Ming"
  MNG_neutrality:0 "Ming"
@@ -23,6 +23,18 @@
  QNG_democratic_ADJ:0 "Qing"
  QNG_neutrality_ADJ:0 "Qing"
  QNG_communism_ADJ:0 "The Chinese Socialist Republic"
+ QIU_fascism:0 "Qingqiu Empire"
+ QIU_fascism_DEF:0 "Qingqiu Empire"
+ QIU_democratic:0 "Qingqiu"
+ QIU_democratic_DEF:0 "Qingqiu"
+ QIU_neutrality:0 "Qingqiu"
+ QIU_neutrality_DEF:0 "Qingqiu"
+ QIU_communism:0 "Qingqiu Empire"
+ QIU_communism_DEF:0 "Qingqiu Empire"
+ QIU_fascism_ADJ:0 "Qingqiu Empire"
+ QIU_democratic_ADJ:0 "Qingqiu"
+ QIU_neutrality_ADJ:0 "Qingqiu"
+ QIU_communism_ADJ:0 "Qingqiu Empire"
  JAP_fascism:0 "Empire of Japan"
  JAP_fascism_DEF:0 "The Empire of Japan"
  JAP_democratic:0 "Japan"
@@ -107,7 +119,7 @@
  TIB_democratic_ADJ:0 "Zhungaer"
  TIB_neutrality_ADJ:0 "Zhungaer"
  TIB_communism_ADJ:0 "Zhungaer"
- 
+
  ASM_fascism:0 "Assam Empire"
  ASM_fascism_DEF:0 "The Assam Empire"
  ASM_democratic:0 "Assam Republic"
@@ -204,9 +216,22 @@
  ORI_democratic_ADJ:0 "Orissa"
  ORI_neutrality_ADJ:0 "Orissa"
  ORI_communism_ADJ:0 "Orissa"
+
+ KOR_fascism:0 "Korean Empire" #Korea Empire
+ KOR_fascism_DEF:0 "Korean Empire"
+ KOR_democratic:0 "Republic of Korea" #Republic of Korea
+ KOR_democratic_DEF:0 "Republic of Korea"
+ KOR_communism:0 "Democratic People's Republic of Korea" #Democratic People's Republic of Korea
+ KOR_communism_DEF:0 "Democratic People's Republic of Korea"
+ KOR_neutrality:0 "Korea"
+ KOR_neutrality_DEF:0 "Korea"
+ KOR_fascism_ADJ:0 "Korea"
+ KOR_democratic_ADJ:0 "Korea"
+ KOR_communism_ADJ:0 "Korea"
+ KOR_neutrality_ADJ:0 "Korea"
  #朝鲜
  KOR_fascism:0 "Korea Empire" #Korea Empire
- KOR_fascism_DEF:0 "The Korean Empire" 
+ KOR_fascism_DEF:0 "The Korean Empire"
  KOR_democratic:0 "Republic of Korea" #Republic of Korea
  KOR_democratic_DEF:0 "The Republic of Korea"
  KOR_communism:0 "Democratic People's Republic of Korea" #Democratic People's Republic of Korea
@@ -218,5 +243,3 @@
  KOR_communism_ADJ:0 "Korea"
  KOR_neutrality_ADJ:0 "Korea"
  #In modern Chinese language 朝鲜 means DPRK and 韩国 means ROK
- 
- 

@@ -2,8 +2,13 @@
 
 OOB = "QNG_1936"
 
-set_technology = {
+set_stability = 0.5
+set_war_support = 0.6
+set_fuel_ratio = 0.6
+set_research_slots = 3
+set_convoys = 120
 
+set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1		
@@ -24,45 +29,59 @@ set_technology = {
 	early_heavy_cruiser = 1
 	early_battleship = 1
 	early_battlecruiser = 1
+
+	#1.6 New Add#
+	electronic_mechanical_engineering = 1
+	radio = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	early_ship_hull_cruiser = 1
+	basic_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	early_ship_hull_carrier = 1
+
+	basic_battery = 1
+	basic_light_battery = 1
+	basic_medium_battery = 1
+	basic_heavy_battery = 1
+	basic_torpedo = 1
+	sonar = 1
+	smoke_generator = 1
+	basic_depth_charges = 1
+	basic_secondary_battery = 1
+	basic_cruiser_armor_scheme = 1
+	basic_heavy_armor_scheme = 1
+	improved_secondary_battery = 1
+	basic_fire_control_system = 1
 	
-	transport = 1
+	mass_assault = 1
+	fleet_in_being = 1	
 }
 
 add_ideas = {
+	qing_corruption
 	han_nationalism
 	QNG_not_unified_china
 	partial_economic_mobilisation
 }
 
-
-set_research_slots = 3
-set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 30
-		}
-		
-		communism = {
-			popularity = 5
-		}
-		
-		neutrality = { 
-			popularity = 65
-		}
-	}
-	
+set_politics = {	
 	ruling_party = neutrality
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
-set_convoys = 120
+set_popularities = {
+	neutrality = 65
+	fascism = 30
+	communism = 5
+}
 
 create_country_leader = {
 	name = "Aisin-Gioro Pu Yi"
@@ -71,91 +90,315 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		#
 	}
 }
 
 create_field_marshal = {
 	name = "Aisin-Gioro Pu Jie"
 	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Pujie.dds"
-	skill = 4
-	traits = {  offensive_doctrine  }
+	skill = 5
+	traits = {  offensive_doctrine winter_specialist media_personality politically_connected}
+	attack_skill = 6
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 5
 }
 
 create_field_marshal = {
-	name = "Ji Hong Chang"
+	name = "Yehe-Nara Yichang"
 	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Jihongchang.dds"
-	skill = 3
-	traits = { defensive_doctrine }
+	skill = 4
+	traits = { offensive_doctrine war_hero brilliant_strategist }
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_field_marshal = {
-	name = "Fu Zuo Yi"
+	name = "Guo-Brokaw Yonggui"
 	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Fuzuoyi.dds"
-	skill = 3
-	traits = {  offensive_doctrine }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 3
+	traits = { defensive_doctrine trait_cautious career_officer infantry_officer}
 }
 
 create_corps_commander = {
-	name = "Chi Feng Cheng"
-	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Chifengcheng.dds"
-	skill = 2
-	traits = { trickster  }
+	name = "Ji Hongchang"
+	#portrait_path = "gfx/leaders/QNG/Portrait_Qing_Chifengcheng.dds"
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	traits = { trickster armor_officer fortress_buster winter_specialist }
 }
 
 create_corps_commander = {
 	name = "Han Fuqu"
-	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Hanfuqu.dds"
-	skill = 2
-	traits = { fortress_buster }
-}
-
-create_corps_commander = {
-	name = "Song Zhen Yuan"
-	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	#portrait_path = "gfx/leaders/QNG/Portrait_Qing_Hanfuqu.dds"
 	skill = 3
-	traits = { fortress_buster }
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+	traits = { infantry_officer old_guard trait_engineer}
 }
 
 create_corps_commander = {
-	name = "Hao Meng Ling"
-	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Haomengling.dds"
+	name = "Fu Zuoyi"
+	#portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	skill = 4
+	traits = { infantry_officer trait_cautious old_guard trait_engineer}
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Hao Mengling"
+	#portrait_path = "gfx/leaders/QNG/Portrait_Qing_Haomengling.dds"
+	skill = 4
+	traits = { trait_reckless armor_officer harsh_leader fortress_buster}
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Tongjia Dechang"
+	#portrait_path = "gfx/leaders/QNG/Portrait_Qing_Zhengtingzhen.dds"
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+	traits = { trait_reckless trickster skilled_staffer}
+}
+
+create_corps_commander = {
+	name = "Soqoro Kushan"
+	#portrait_path = "gfx/leaders/QNG/Portrait_Qing_Zhengtingzhen.dds"
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+	traits = { commando infantry_officer }
+}
+
+create_corps_commander = {
+	name = "Guwargiya Fuhu"
+		#picture = "Portrait_Soviet_Nikandr_Yevlampyevich_Chibisov.dds"
+	traits = { trickster politically_connected}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Niohuru Shichang"
+		#picture = "Portrait_Soviet_Nikandr_Yevlampyevich_Chibisov.dds"
+	traits = { panzer_leader desert_fox politically_connected}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Chen Wangwu"
+	#portrait_path = "gfx/leaders/QNG/Portrait_Qing_Chendiaoyuan.dds"
 	skill = 2
-	traits = { desert_fox }
-}
-
-create_corps_commander = {
-	name = "Zheng Ting Zhen"
-	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Zhengtingzhen.dds"
-	skill = 1
-	traits = { commando }
-}
-
-create_corps_commander = {
-	name = "Chen Tian Yuan"
-	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Chendiaoyuan.dds"
-	skill = 1
 	traits = { trait_engineer }
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
 }
 
-create_navy_leader = {
-	name = "Fu Cha Kang Shen"
-	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Fuchakangshen.dds"
-	traits = { blockade_runner }
+create_corps_commander = {
+	name = "Aisin-Gioro Huizhang"
+	#portrait_path = "gfx/leaders/QNG/Portrait_Qing_Chendiaoyuan.dds"
+	skill = 2
+	traits = { infantry_officer }
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kiyan Barsi"
+		#picture = "Portrait_Japan_Akira_Muto.dds"
+	traits = { career_officer cavalry_officer media_personality}
+	skill = 2
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Nukus Nahai"
+		#picture = "Portrait_Japan_Kanji_Ishiwara.dds"
+	traits = { cavalry_officer trait_reckless winter_specialist }
+	skill = 3 
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Hushud Batu"
+		#picture = "Portrait_Japan_Kanji_Ishiwara.dds"
+	traits = { cavalry_officer trait_reckless winter_specialist }
+	skill = 3 
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ma Fuxiang"
+		#picture = "Portrait_Japan_Kanji_Ishiwara.dds"
+	traits = { cavalry_officer trait_reckless }
+	skill = 2 
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Hexigten Tukha-Temur"
+		#picture = "Portrait_Japan_Kanji_Ishiwara.dds"
+	traits = { cavalry_officer panzer_leader politically_connected}
+	skill = 2 
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Moltetu Gadaa-Merin"
+		#picture = "Portrait_Japan_Kanji_Ishiwara.dds"
+	traits = { offensive_doctrine armor_officer brilliant_strategist desert_fox trait_cautious harsh_leader }
+	skill = 4 
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Sagrada Natsutu"
+		#picture = "Portrait_Japan_Akira_Muto.dds"
+	traits = { career_officer politically_connected }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Aisin-Gioro Yulan"
+		#picture = "Portrait_Japan_Akira_Muto.dds"
+	traits = { politically_connected }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Aisin-Gioro Yuqi"
+		#picture = "Portrait_Japan_Akira_Muto.dds"
+	traits = { politically_connected }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Zhang Zuolin"
+		#picture = "Portrait_Japan_Akira_Muto.dds"
+	traits = { brilliant_strategist winter_specialist harsh_leader }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Nigri Houbitu"
+		#picture = "Portrait_Japan_Akira_Muto.dds"
+	traits = { infantry_officer trait_cautious harsh_leader }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ersuri Giorhalan"
+		#picture = "Portrait_Japan_Akira_Muto.dds"
+	traits = { brilliant_strategist winter_specialist brilliant_strategist }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
+
+create_navy_leader = {
+	name = "Fucha Kangshen"
+	#portrait_path = "gfx/leaders/QNG/Portrait_Qing_Fuchakangshen.dds"
+	traits = { green_water_expert bold }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 2
 }
 
 create_navy_leader = {
-	name = "Ling Xiao"
-	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Lingxiao.dds"
-	traits = { superior_tactician }
-	skill = 2
+	name = "Maja Haining"
+	#portrait_path = "gfx/leaders/QNG/Portrait_Qing_Lingxiao.dds"
+	traits = { superior_tactician ironside }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
 }
 
 create_navy_leader = {
-	name = "Luo Feng Ting"
-	portrait_path = "gfx/leaders/QNG/Portrait_Qing_Luofengting.dds"
-	traits = {  }
-	skill = 2
+	name = "Heseri Fengting"
+	#portrait_path = "gfx/leaders/QNG/Portrait_Qing_Luofengting.dds"
+	traits = { seawolf }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
 }
-

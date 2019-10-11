@@ -1106,7 +1106,7 @@ air_wings = {
 			amount = 100
 		}
 	}
-	622 = { 
+	744 = { 
 
 		fighter_equipment_0 = {
 			owner = "QNG" 

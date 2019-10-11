@@ -1,13 +1,13 @@
 ﻿l_english:
  # MENU
  QNG_GATHERING_STORM_DESC:0 "Since China’s division in 1644, the Qing has hoped to eliminate the Southern Ming. In the last war the Qing joined Germany, but they suffered a humiliating defeat and lost many things. After the war, the Qing were bordering on danger, the domestic Han Nationalists began to stir, but the Qing Emperor was a weak yes-man. \n\nFortunately, the Great Depression made their southern neighbors too weak to attack. After rearming, the Qing Army was once again at full strength. So NOW may be the time to resolve domestic issues and take the south."
- 
+
  #global_flag
  qing_return_huaibei_start:0 "Return to Huaibei"
  qing_communist_victory:0 "Victory of the Communist People"
  Xianyu_captured:0 "Xian Yu was taken by the Ming"
  xianyu_dead:0 "Xian Yu was executed"
- 
+
  #opinion_modifier???????
  SOV_QNG_join_comintern_reject:0 "The Soviet Union refused to join us."#might be something like "The Soviet Union refuse our attempts to join the Comintern." same for the rest
  SOV_QNG_join_comintern_agree:0 "The Soviet Union agreed to join us."
@@ -15,18 +15,20 @@
  ENG_QNG_join_comintern_agree:0 "Britain agreed to join us."
  GER_QNG_join_comintern_reject:0 "Germany refused to join us."
  GER_QNG_join_comintern_agree:0 "Germany agreed to join us."
- 
- 
+
+
  #cosmetic_tag
  RQNG_communism:0 "International Republic of China"#?
  RQNG_communism_DEF:0 "International Republic of China"#?
- 
- 
- 
+
+
+
  #national_spirit
  QNG_AI_buff_before_MQwar:0 "AI Revision"
  QNG_AI_buff_before_MQwar_desc:0 "This BUFF will be removed before the Ming and Qing war."
 
+ qing_corruption:0 "Qing Corruption"
+ qing_corruption_desc:0 "Corruption in the Qing Dynasty has penetrated into every corner. Since the reign of Guangxu, the whole country has been arrogant and self-satisfied. The wind of corruption and the sale of the official princes rebounded again. By the time of Xuantong, the Qing dynasty could not get the recognition of the people and the respect of foreign countries."
  han_nationalism:0 "The resistance of the Han People"
  han_nationalism_desc:0 "Ever since the Tifaling order was given, the Qing never relaxed their control of the Han people, they once believed in the Manchus and Han people relations, but with the change of times and the country's modernization, the nationalism of the Han people began to raise again, this is not good news."
  QNG_revenge:0 "Revenge"
@@ -71,7 +73,7 @@
  QNG_mutual_assimilation_focus_desc:0 ""
  QNG_unified_country:0 "A Unified Country"
  QNG_unified_country_desc:0 ""
- 
+
  #national focus
  QNG_heart_of_empire:0 "The Empires ambition"
  QNG_heart_of_empire_desc:0 "It has been nearly 20 years since the last war, we must leave the past failures behind us, and revive the ambitions of the empire."
@@ -130,7 +132,7 @@
  QNG_long_live_the_empire_desc:0 "After the revitalization of the polititcal system, the upper-level systems of the Qing transformed, we can finally achieve political stability within the country."
  QNG_south_and_north:0 "North and South Unite"
  QNG_south_and_north_desc:0 "The Ming was completely eliminated, our imperial scribes have revised the texts of the southern people, we are also fruitful in the reconstruction of the south. Nowadays, the southern people have recongized us as their only ruler."
- 
+
  QNG_join_comintern:0 "Join the Comintern"
  QNG_join_comintern_desc:0 "We share similar interests and ideas with the comrades of the Soviet Union, and should cooperate to seek greater benefits."
  QNG_join_allies:0 "Join the Allies"
@@ -146,7 +148,7 @@
  QNG_war_to_soviet_desc:0 "The Russian people have attempted to block us after our conquest of Zhungaer, now we need to let them know the power of our cavalry."
  QNG_war_to_japan:0 "War against Japan"
  QNG_war_to_japan_desc:0 "The Japanese in the last century, taking advantage of the war with Ming, took Guan Dongzhou, it is time to take it back."
- 
+
  QNG_industrial_plan:0 "National Industrial Plan"
  QNG_industrial_plan_desc:0 "Most of the countries wealth is in the hands of powerful officials, but they are not willing to contribute their wealth to the court. In order to cope with the future, we must reinvigorate the industry and improve the strength of the court."
  QNG_northeastern_resource:0 "Northeast Prospecting Plan"
@@ -183,7 +185,7 @@
  QNG_southern_university_desc:0 "Regarding the universities destroyed during the war with ming, we must rebuild them so that they can serve us."
  QNG_nuclear_effort:0 "The Secret Weapon"
  QNG_nuclear_effort_desc:0 "Our nuclear scientists could not wait to realize the true potential of nuclear armaments. All they need now is resources."
- 
+
  QNG_army_university:0 "The Baoding Military University"
  QNG_army_university_desc:0 "Although our countries army has reorganized, the command staff is seriously inadequate. We must open the Army university, to cultivate more commanders."
  QNG_equipment_effort:0 "Serious Infantry Equipment effort"
@@ -200,7 +202,7 @@
  QNG_special_forces_desc:0 "We need elite troops. Give priority to the development of mountain troops and paratroopers."
  QNG_army_reform:0 "Army Reform"
  QNG_army_reform_desc:0 "Our army is not suitable for modern war, we must carry out a reform, so as to effectively import our combat efficiency."
- 
+
  QNG_qingdao_dockyard:0 "Qingdao Naval Construction"
  QNG_qingdao_dockyard_desc:0 "In the war with Ming, our naval advantage has long been lost. The Ming navy threatens our trade and coastline. We have to make a effort to protect our coastline."
  QNG_submarine_effort:0 "Serious Submarine Effort"
@@ -213,7 +215,7 @@
  QNG_improved_screen_ships_desc:0 "In the long struggle with the Ming cruisers and destroyers, we also learned how to deal effectively with these ships. Destroyers will be crucial."
  QNG_navy_doctrines_effort:0 "Develop the Naval Doctrines"
  QNG_navy_doctrines_effort_desc:0 ""
- 
+
  QNG_air_force_college:0 "The Nanyuan Aviation School"
  QNG_air_force_college_desc:0 "Our Air Force has been neglected. If we want to fight in the air, we must carry out serious reforms. The establishment of Aviation Schools is the first step in reform."
  QNG_bomber_effort:0 "Serious Bomber Effort"
@@ -230,8 +232,8 @@
  QNG_CAS_effort_desc:0 "Modern troops need not only the behicles on the ground, but also the need for air support."
  QNG_naval_bomber_effort:0 "Serious Naval Bomber Effort"
  QNG_naval_bomber_effort_desc:0 "Navy bombers are good at destroying enemy ships and ports, which is why it is an integral part of naval operations."
- 
- 
+
+
  #advisors
  li_dazhao:0 "Li Dazhao"
  hu_shi:0 "Hu Shi"
@@ -245,7 +247,7 @@
  aisin_gioro_yumin:0 "Aisin-Gioro Yu Min"
  QNG_aisin_gioro_xianyu:0 "Aisin-Gioro Xian Yu"
  guo_taiqi:0 "Guo Taiqi"
- 
+
  shanhai:0 "Shanhai Company"
  jiaoche:0 "Jiaoche Company"
  xian_cheliang:0 "Xi'an Vehicle Company"
@@ -261,7 +263,7 @@
  sanjin:0 "Sanjin Military Company"
  wuyi:0 "Staunch Military Company"
  liaoning_zhongqi:0 "Liaoning Heavy Truck Company"
- 
+
  zhao_jiuzhang:0 "Zhao Ziuzhang"
  borjigit_yingning:0 "Bor Jigit Ying Ning"
  donggiya_yizhe:0 "Tong Jia Yizhe"
@@ -285,4 +287,3 @@
  fuca_kangshen:0 "Fuca Kangshen"
  ling_xiao:0 "Ling Xiao"
  luo_fengting:0 "Luo Fengting"
- 

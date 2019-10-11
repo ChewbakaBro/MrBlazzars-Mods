@@ -489,6 +489,7 @@ country_event = {
 				expire = "1965.1.1"
 				ideology = liberalism
 				traits = {
+					son_of_heaven
 				}
 		}
 		hidden_effect = {
@@ -532,6 +533,7 @@ country_event = {
 				expire = "1965.1.1"
 				ideology = liberalism
 				traits = {
+					son_of_heaven
 				}
 		}
 		hidden_effect = {
@@ -562,7 +564,11 @@ country_event = {
 					name = "Xiang Xiaoqiang"
 					portrait_path = "gfx/leaders/MNG/Portrait_Ming_Xiangxiaoqiang.dds"
 					traits = { panzer_leader trickster }
-					skill = 1
+					skill = 2
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 1
 				}
 				news_event = { days = 1 id = mingqingnews.30 }
 			}
@@ -575,7 +581,6 @@ country_event = {
 		add_manpower = 20000
 	}
 }
-
 
 
 

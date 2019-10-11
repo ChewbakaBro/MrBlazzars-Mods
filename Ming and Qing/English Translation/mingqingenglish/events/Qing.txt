@@ -10,9 +10,9 @@ country_event = {
 	title = qing.1.t
 	desc = qing.1.d
 	picture = GFX_report_xuantong_coup
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = qing.1.a
 		ai_chance = { factor = 100 }
@@ -23,7 +23,7 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = despotism
 			traits = {
-				inexperienced_imperialist				
+				inexperienced_imperialist attacker_qing				
 			}
 		}
 		hidden_effect = {
@@ -42,9 +42,9 @@ country_event = {
 	title = qing.2.t
 	desc = qing.2.d
 	picture = GFX_report_puyi_remain
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = qing.2.a
 		ai_chance = { factor = 100 }
@@ -66,9 +66,9 @@ country_event = {
 	title = qing.3.t
 	desc = qing.3.d
 	picture = GFX_report_return_huaibei
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = qing.3.a
 		ai_chance = { factor = 100 }
@@ -92,150 +92,18 @@ country_event = {
 	title = qing.4.t
 	desc = qing.4.d
 	picture = GFX_report_southern_core
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = qing.4.a
 		ai_chance = { factor = 100 }
-		601 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
+		every_state = {
+			limit = {
+				is_core_of = MNG
 			}
-		}
-		325 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		326 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		605 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		603 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		599 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		594 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		591 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		728 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		729 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		592 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		593 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		602 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		600 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		595 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		620 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		743 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		613 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		596 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		524 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		322 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		744 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
-		434 = {
-			if = {
-				limit = { is_owned_by = QNG }
-				add_core_of = QNG
-			}
-		}
+			add_core_of = QNG
+		}	
 	}
 }
 
@@ -245,7 +113,7 @@ country_event = {
 	title = qing.5.t
 	desc = qing.5.d
 	picture = GFX_report_event_spain_civil_war_volunteers_01
-	
+
 	trigger = {
 		original_tag = QNG
 		has_government = communism
@@ -274,7 +142,7 @@ country_event = {
 	picture = GFX_report_event_stalin_01
 
 	is_triggered_only = yes
-		
+
 	option = {
 		name = qing.6.a
 		SOV = { add_to_faction = QNG }
@@ -315,7 +183,7 @@ country_event = {
 	picture = GFX_report_event_degaulle_churchill
 
 	is_triggered_only = yes
-		
+
 	option = {
 		name = qing.7.a
 		ENG = { add_to_faction = QNG }
@@ -356,7 +224,7 @@ country_event = {
 	picture = GFX_report_event_degaulle_churchill
 
 	is_triggered_only = yes
-		
+
 	option = {
 		name = qing.8.a
 		GER = { add_to_faction = QNG }
@@ -394,10 +262,10 @@ country_event = {
 	id = qing.9
 	title = qing.9.t
 	desc = qing.9.d
-	 
+
 
 	is_triggered_only = yes
-		
+
 	option = {
 		name = qing.9.a
 		if = {
@@ -409,7 +277,7 @@ country_event = {
 				expire = "1965.1.1"
 				ideology = liberalism
 				traits = {
-				inexperienced_imperialist				
+					inexperienced_imperialist
 				}
 			}
 		}
@@ -422,7 +290,7 @@ country_event = {
 				expire = "1965.1.1"
 				ideology = liberalism
 				traits = {
-				
+
 				}
 			}
 		}
@@ -437,10 +305,10 @@ country_event = {
 	id = qing.10
 	title = qing.10.t
 	desc = qing.10.d
-	 
+
 
 	is_triggered_only = yes
-		
+
 	option = {
 		name = qing.10.a
 		if = {
@@ -452,7 +320,7 @@ country_event = {
 				expire = "1965.1.1"
 				ideology = nazism
 				traits = {
-				inexperienced_imperialist				
+				inexperienced_imperialist
 				}
 			}
 		}
@@ -465,7 +333,7 @@ country_event = {
 				expire = "1965.1.1"
 				ideology = nazism
 				traits = {
-				
+
 				}
 			}
 		}
@@ -474,4 +342,3 @@ country_event = {
 		}
 	}
 }
-

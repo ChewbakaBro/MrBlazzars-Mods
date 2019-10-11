@@ -1,7 +1,7 @@
 ﻿l_english:
  # MENU
  MNG_GATHERING_STORM_DESC:0 "Since the division of China in 1644, Qing has the biggest threat to the Ming. Although the Ming won in WWI, the North land still belongs to the Mongolians.\n\nAfter the Great Depression swept the world, the Ming included, the domestic communists began to seek a revolution, and overthrow the Monarchy. Meanwhile, the world situation begins to destabilize, the Qing starts to move restlessly. Now the Ming must decide how to proceed in the chaos."
- 
+
  #global_flag
  great_depression_end_for_ming:0 "The Ming has recovered from the Great Depression\n"
  all_india_forward_bloc_ready:0 "The All Indian Advance Alliance is ready"
@@ -10,7 +10,7 @@
  rescue_succeed:0 "Rescue successful"
  MNG_receive_qing_princess:0 "Xian Yu arrives in Ming"
  Xianyu_agree_work_for_MNG:0 "Xian Yu agrees to work with Ming"
- 
+
  #opinion_modifier
  SOV_MNG_join_comintern_reject:0 "The Soviet Union refused to join us."#might be something like "The Soviet Union refuse our attempts to join the Comintern." same for the rest
  SOV_MNG_join_comintern_agree:0 "The Soviet Union agreed to join us."
@@ -20,17 +20,17 @@
  MNG_closer_to_usa:0 "Improve relations with the USA"
  MNG_closer_to_japan:0 "Improve relations with Japan"
  MNG_pan_asianism:0 "Pan-Asianism"
- 
+
  #cosmetic_tag
  RMNG_communism:0 "Empress and Communist's Ming"
  RMNG_communism_DEF:0 "Empress and Communist's Ming"
  RMNGnoEmperor_communism:0 "People's Republic of China"
  RMNGnoEmperor_communism_DEF:0 "People's Republic of China"
- 
+
  #faction
  free_asian_union:0 "Free Asian Union"
 
- 
+
  #national_spirit
  communism_rising:0 "Communism is on the Rise"
  communism_rising_desc:0 "With the impact of the Great Depression, the Ming communists have started demanding further polticial rights, which also increased tensions between other polticial factions. If the Communist Parties support rate is to high, they will control the state power."
@@ -68,11 +68,11 @@
  MNG_mainland_effort_desc:0 "With the reunification of the motherland, we should focus our policies on the East Asian continent."
  RAJ_MNG_support_all_india_forward_bloc:0 "Aid from the East"
  RAJ_MNG_support_all_india_forward_bloc_desc:0 "This is a great opportunity for the Ming to show they are willing to help india remove the shackles of the British."
- 
+
  pan_asianism:0 "Pan-Asianism"
  asian_monetary_fund:0 "Asian Monetary Fund"
  asian_renaissance_bank:0 "Asian Rehabilitation Bank"
- 
+
  MNG_support_communism:0 "Support Communism"
  MNG_support_communism_desc:0 "Many of the Communist party's claims have merit, we should give them more support."
  MNG_communism_help:0 "Help our colony nation to adopt communism"#宗主国赤化 Old translation:Communist support
@@ -80,7 +80,7 @@
  MNG_socialism_with_chinese_characteristics:0 "Socialism with Chinese Characteristics"
  MNG_socialism_with_chinese_characteristics_desc:0 "Marxism is not completely applicable for any countries, we have to develop socialism according to our own national conditions."
  #MNG_socialism_with_chinese_characteristics_desc：Marxism is not completely applicable for any countries, we have to develop socialism according to our own national conditions.
- 
+
  MNG_support_democratic:0 "Support Democracy"
  MNG_support_democratic_desc:0 "In the 19th century, Ming completed the initial constitutional reform, now we should finish what we started, giving the cabinet and parties more authority."
  MNG_ban_communism:0 "Forbid Communism"
@@ -105,10 +105,10 @@
  MNG_support_fascism_desc:0 "We must awaken the people's national pride, publicizing our past glories is a good way to do it."
  first_nation_in_east_asia:0 "East Asia's greatest Military Nation"#东亚第一军国
  first_nation_in_east_asia_desc:0 "After defeating Japan, no one in East Asia dared question our authority."
- 
- 
- 
- 
+
+
+
+
  #national focus
  MNG_threat_from_north:0 "Dark Cloud from the North"
  MNG_threat_from_north_desc:0 "The Qing Army plans for our capital only 100 kilometers away, and now the likelihood of war seems to be increasing."
@@ -128,7 +128,7 @@
  MNG_science_academy_desc:0 "Along with increased enrollment in universities, the Imperial Academy of Science has even more talented people. We can hire additional researchers."
  MNG_defeat_depression:0 "Overcome the Great Depression"
  MNG_defeat_depression_desc:0 "Through our various efforts, the Empire has finally rid itself of the Great Depression's effects."
- 
+
  MNG_strengthen_huaibei_defense:0 "Strengthen the Huaibei Ling of Defense"
  MNG_strengthen_huaibei_defense_desc:0 "The news from the front isn't good, the Qing Army advanced into the Hauibei demilitarized zone, we need to strengthen our defense line."
  MNG_diplomatic_effort:0 "Diplomatic Effort"
@@ -145,7 +145,7 @@
  MNG_counterattack_desc:0 "The Qing in the war, have been delt a great blow, it's time to launch a counter-attack, Advance! Liberate the people in Qing-occupied lands!"
  MNG_return_to_beijing:0 "Return Beijing to the Ming"
  MNG_return_to_beijing_desc:0 "Ours troop are finally victorious against the Qing regime, we have recovered our ancestor's land. We can declare that China has been unified and our motherland will stand in the east."#王师北伐如宣王，风驰电击复土疆。故国山河终于在我辈手中光复，大明将以崭新的姿态重新屹立于世界。
- 
+
  MNG_shan_gan_industry:0 "Northwest Industrial Plan"
  MNG_shan_gan_industry_desc:0 "With the successful liberation of the north, we can finally start developing the northwestern industry."
  MNG_zhongyuan_industry:0 "Central Plains Industrial Plan"
@@ -158,7 +158,7 @@
  MNG_rare_metals_in_south_desc:0 ""
  MNG_kailuan_steels:0 "Kailuan Steel"
  MNG_kailuan_steels_desc:0 ""
- 
+
  MNG_where_we_go:0 "Direction of our Advance"
  MNG_where_we_go_desc:0 "Along with the unification of the motherland, we should think about the next step in our construction guidelines."
  MNG_colonized_focus:0 "Colonize Focus"
@@ -183,7 +183,7 @@
  MNG_war_for_ryukyu_desc:0 "The Ryukyu Islands was once a vassal state of ours, but Japan has taken advantage of our conflict with the Qing to take it, it is time Japan answers for their errors!"
  MNG_war_for_malaysia:0 "Take British Malaya"
  MNG_war_for_malaysia_desc:0 "The states of the British Malaya was once vassal states of ours. The English took them while we were in a period of decline, and created The British Malaya. It is time to bring them home again."
- 
+
  MNG_mainland_focus:0 "Mainland Focus"
  MNG_mainland_focus_desc:0 "With the reunification of the motherland, we should focus our policies on the East Asian continent."
  MNG_shanxi_gansu_railway:0 "Shanxi Gansu Railway"
@@ -200,7 +200,7 @@
  MNG_cooperate_with_all_india_forward_bloc_desc:0 "We should, secretly support the indian struggle against the British colonists."
  MNG_liberate_india:0 "Liberate India"
  MNG_liberate_india_desc:0 "It is the time to help india free itself from the shackles of British rule."
- 
+
  MNG_free_asian_union:0 "Free Asian Union"
  MNG_free_asian_union_desc:0 "After experiencing the successful practice of the mainland policy, our spheres of influcen and markets cover nearly half the world's population, we also gave the Asian people who have been squeezed by the european colonizers freedom. Now is time to get establish a Alliance of our Asia."
  MNG_xihu_lake_system:0 "West Lake System"
@@ -209,10 +209,10 @@
  MNG_the_renaissance_plan_of_asia_desc:0 "The Asian revitalization plan is a plan for economic assistance to Asian countries that have been colonized. We are convinced that this will have a profound impact on the development of asia and the world's poltiical landscape."
  MNG_pan_asianism:0 "Pan-Asianism"
  MNG_pan_asianism_desc:0 "Ming, historically was Asia's largest country, today once again returns to that title. We have the responsibility to lead the people of Asia to make progress together to build a beautiful Asia."
- 
+
  MNG_summarise_experiences:0 "Summarizing the experience of the Unification War"#总结统一战争的经验
  MNG_summarise_experiences_desc:0 "The war of reunification has revealed new possible tactics for us to study and learn from."
- 
+
  MNG_general_staff:0 "Army General Staff"
  MNG_general_staff_desc:0 "We should reform the Army General Staff, using our updated Army tactics."
  MNG_fortification_focus:0 "Improve our Fortificiations"
@@ -227,7 +227,7 @@
  MNG_armor_focus_desc:0 "Tanks should play the main role in our battle plans."
  MNG_heavy_armor_focus:0 "Main Battle Tank Project"
  MNG_heavy_armor_focus_desc:0 "With more skilled armored division, we can move towards making them our main battle line."
- 
+
  MNG_naval_innovation:0 "Naval Doctrine Theory"
  MNG_naval_innovation_desc:0 "Our goal is to build a Modern Navy."
  MNG_submarine_effort:0 "Submarine Improvement Effort"
@@ -252,10 +252,10 @@
  MNG_rocket_effort_desc:0 "The key technology to the development of land, sea, and air forces is the rocket and jet engines."
  MNG_nuclear_effort:0 "The Secret Weapon"
  MNG_nuclear_effort_desc:0 "Our nuclear scientists could not wait to realize the true doomsday potential of nuclear weapons. What they need now is extra resources that we can provide them."
- 
+
  MNG_government_reform:0 "Administrative Reform"
  MNG_government_reform_desc:0 "Our Government agencies can't be irrevocable, and if we wish to be strong, we must make some changes."
- 
+
  MNG_support_communism_focus:0 "Embrace Communism"
  MNG_support_communism_focus_desc:0 "Many of the Communist party's claims have merit, we should give them more support, but first the government must negotiate with the Communist party representatives, with hopes to ensure the existance of the Royal Family."
  MNG_invitation_to_communist:0 "Invite the Communists into the Cabinet"
@@ -278,7 +278,7 @@
  MNG_puppet_soviet_desc:0 "Stalin's so-called 'socialist' path has departed from Marx's thought, we must guide them back onto the right path."
  MNG_communism_in_southeastern_asia:0 "Communize the Southern Coastal Provinces"
  MNG_communism_in_southeastern_asia_desc:0 "We must help the Nanyang Countries embark on the socialist road."
- 
+
  MNG_support_democratic_focus:0 "Perfect the Monarchy Constitutional System"
  MNG_support_democratic_focus_desc:0 "The Monarchy Constitutional system should be further reformed, giving the cabint parties more power."
  MNG_ban_communism_focus:0 "Ban Communism"
@@ -301,7 +301,7 @@
  MNG_democracy_in_southeastern_asia_desc:0 "With the further reform of the Ming Constitutionalism, Nanyang should also strengthen their Democratic ways."
  MNG_democracy_to_japan:0 "Bring Democracy to Japan"
  MNG_democracy_to_japan_desc:0 "The Japanese call their Meji reign a constitutional monarchy, which is simply a joke, it is time the Japanese gained real democracy."
- 
+
  MNG_support_neutrality_focus:0 "Absolute Monarchy"
  MNG_support_neutrality_focus_desc:0 "The Emperor is the country, the Monarchy has been in china for more then 2000 years, that fact alone shows it is desirable."
  MNG_modern_special_agent_focus:0 "Create the Secrect Police"
@@ -322,7 +322,7 @@
  MNG_foreign_expeditions_desc:0 "We can send more volunter's to deepen our intervention in other areas."
  MNG_loyalty_education:0 "Loyalty Education"
  MNG_loyalty_education_desc:0 "We need to make sure the people are loyal to Her Majesty, which requires increased investment in education."
- 
+
  MNG_support_fascism_focus:0 "Promote the National Spirit"
  MNG_support_fascism_focus_desc:0 "We must awaken the people's national pride, publicizing our past glories is a good way to do it."
  MNG_national_education:0 "Promote the National Spirit"
@@ -341,8 +341,8 @@
  MNG_war_to_japan_desc:0 "The Japanese have been on the mainland from the begining, it is time to let them know who is the dominant force in East Asia. Advance and make them aware of who we are!"
  MNG_first_nation_in_east_asia:0 "East Asia's greatest Military Nation"#东亚第一军国
  MNG_first_nation_in_east_asia_desc:0 "After defeating Japan, no one in East Asia dared question our authority."
- 
- 
+
+
  #advisors
  mao_ze_dong:0 "Mao Zedong"
  zhang_lan:0 "Zhang Lan"
@@ -356,7 +356,7 @@
  song_ziwen:0 "Song Ziwen"
  aisin_gioro_xianyu:0 "Aisin Gioro Xianyu"
  shi_zhaoji:0 "Shi Zhaoji"
- 
+
  zhengshi_zhonggong:0 "Zheng Heavy Industry Group"
  taishan:0 "Taishan Group"
  feima:0 "Pegasus Group"
@@ -376,7 +376,7 @@
  dingguo:0 "Dinggup Group"
  jinling:0 "Jinling Military Industry"
  yuhuacong:0 "Yuhua Cong Group"
- 
+
  qian_xuesen:0 "Qian Xuesen"
  wang_ganchang:0 "Wang Ganchang"
  jiang_baili:0 "Jiang Baili"
@@ -384,18 +384,18 @@
  qin_guoyong:0 "Qing Guoyong"
  qi_xiwen:0 "Qi Xiwen"
  sa_zhenbing:0 "Sa Zhenbing"
- 
+
  zhang_zhaoxian:0 "Zhang Zhaoxian"
  bai_chongxi:0 "Bai Chongxi"
  zhu_de:0 "Zhu De"
- 
+
  zhou_zhirou:0 "Zhou Zhirou"
  mao_bangchu:0 "Mao Bangchu"
  wang_hexiang:0 "Wang Hexiang"
- 
+
  chen_shaokuan:0 "Chen Shaokuan"
  gui_yongqing:0 "Gui Yongqing"
- 
+
  li_zongren:0 "Li Zongren"
  chang_kaishen:0 "Chang kaishen"
  wei_lihuang:0 "Wei Lihuang"
@@ -407,3 +407,37 @@
  shen_honglie:0 "Shen Honglie"
  chen_ce:0 "Chen Ce"
 
+ #新增国策
+ MNG_nanyang:0 "Integrating Nanyang Shipbuilding Industry"
+ MNG_nanyang_desc:0 "Ming has helped the Nanyang countries to help set up the shipbuilding industry company. Now it is the integration of these companies into one, serving the defense of the entire Ming and Nanyang!"
+ nanyang_chuanbo:0 "Nanyang Shipbuilding Industry Group"
+ MNG_donghai_fleet_desc:0 "Expansion of the East China Sea Fleet"
+ MNG_huanghai_fleet_desc:0 "Expansion of the Yellow Sea Fleet"
+ MNG_nanhai_fleet_desc:0 "Establishing the South China Sea Fleet"
+ MNG_donghai_fleet:0 "(Writing, no effect)"
+ MNG_huanghai_fleet:0 "(Writing, no effect)"
+ MNG_nanhai_fleet:0 "(Writing, no effect)"
+ MNG_taipingyang_hq:0 "(Writing, no effect)"
+ MNG_taipingyang_hq_desc:0 "Formation of the Ming Navy Pacific Joint Command"
+
+ #大明决议
+ MNG_japan_war:0 "Tomorrow's War"
+ MNG_japan_war_desc:0 "There can only be one Major in East Asia. The war between Ming and Japan cannot be avoided. What should we do next?"
+ MNG_annex_man:0 "Annex Manchuria"
+ MNG_annex_japan:0 "Annex Japan"
+ MNG_QNG_Destiny:0 "Destiny"
+ MNG_QNG_Destiny_desc:0 "China has been split for nearly three hundred years since the 17th century. Now that China has finally achieved reunification, it is time to restore the glory of the kingdom!"
+ MNG_QNG_Destiny_China:0 "Restoring China"
+ controls_man:0 "Control Manchuria"
+ controls_oman:0 "Control of Manchuria and Sakhalin"
+ controls_mon:0 "Control Mongolia"
+ controls_sik:0 "Control the western region"
+ controls_tib:0 "Control Tibet"
+ MNG_QNG_Destiny_China_Add_Core:0 "China, with the heavens and the earth, is the same as the sun and the moon. All territories §Ysince ancient times§! are now our core area!"
+ China_Resources:0 "China Resources Exploration and Development"
+ China_Resources_desc:0 "At present, China has discovered 173 kinds of minerals, and 159 kinds of minerals with proven reserves, including 8 kinds of energy minerals, 54 kinds of metal minerals, 90 kinds of non-metallic minerals, and 3 kinds of water and gas minerals. China's mineral resources are relatively abundant, and some mineral reserves are among the best in the world."
+ CR_dongbei:0 "Mining northeast crude oil and iron ore"
+ CR_huabei:0 "Mining North China Aluminum Mine and Iron Ore"
+ CR_huanan:0 "Expanding South China Tungsten Mine and Aluminum Mine"
+ CR_xibei:0 "Northwest Resources Exploration and Mining"
+ CR_xinan:0 "Southwest Resources Exploration and Mining"

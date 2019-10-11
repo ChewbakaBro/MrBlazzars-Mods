@@ -14,6 +14,11 @@
 		motorized = { x = 2 y = 1 }
 		motorized = { x = 2 y = 2 }
 		motorized = { x = 2 y = 3 }
+		motorized = { x = 2 y = 4 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }	
+		motorized = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }
@@ -35,6 +40,20 @@ units = {
 	}
 	division= {	
 		name = "2nd National Guard"
+		location = 11913
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3rd National Guard"
+		location = 11913
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "4th National Guard"
 		location = 11913
 		division_template = "National Guard"
 		start_experience_factor = 0.2

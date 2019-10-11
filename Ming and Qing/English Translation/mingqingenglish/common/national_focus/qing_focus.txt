@@ -1,19 +1,19 @@
 focus_tree = {
 	id = qing_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = QNG
 		}
 	}
-	
+
 	default = no
 
 ###############明清焦点路线###############
-	
+
 	#帝国雄心
 	focus = {
 		id = QNG_heart_of_empire
@@ -23,7 +23,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}		
+		}
 		completion_reward = {
 			army_experience = 5
 			add_political_power = 100
@@ -45,7 +45,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-		}		
+		}
 		completion_reward = {
 			QNG = {
 				add_ideas = QNG_revenge
@@ -69,7 +69,7 @@ focus_tree = {
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
-		#}		
+		#}
 		completion_reward = {
 			QNG = {
 				add_ideas = QNG_remain
@@ -86,7 +86,7 @@ focus_tree = {
 	focus = {
 		id = QNG_return_huaibei
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { 
+		prerequisite = {
 		focus = QNG_loyal_to_emperor
 		focus = QNG_overturn_puyi
 		}
@@ -97,7 +97,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = { is_puppet = no }
-		
+
 		completion_reward = {
 			598 = { set_demilitarized_zone = no }
 			606 = { set_demilitarized_zone = no }
@@ -114,14 +114,14 @@ focus_tree = {
 					custom_effect_tooltip = may_provoke_hostility
 				}
 			}
-			
+
 		}
 	}
 	#消灭伪明
 	focus = {
 		id = QNG_war_to_ming
 		icon = GFX_goal_generic_major_war
-		prerequisite = { 
+		prerequisite = {
 		focus = QNG_return_huaibei
 		}
 		x = 0
@@ -130,7 +130,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = { 
+		available = {
 			is_puppet = no
 			NOT = { has_idea = QNG_prepare_to_war }
 		}
@@ -218,7 +218,7 @@ focus_tree = {
 	focus = {
 		id = QNG_win_war_to_ming
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { 
+		prerequisite = {
 			focus = QNG_boost_the_morale
 			focus = QNG_tough_ruling
 			focus = QNG_moderate_ruling
@@ -233,6 +233,8 @@ focus_tree = {
 			NOT = { country_exists = MNG }
 		}
 		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
 			QNG = {
 				remove_ideas = QNG_not_unified_china
 				add_ideas = QNG_winner_of_china
@@ -246,12 +248,12 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	#征服准噶尔
 	focus = {
 		id = QNG_claim_dzungaria
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { 
+		prerequisite = {
 			focus = QNG_win_war_to_ming
 		}
 		x = -2
@@ -268,7 +270,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 ###############政治线###############
 
 	#修订钦定宪法
@@ -299,7 +301,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 150
-			add_national_unity = 0.1
+			add_stability = 0.1
 		}
 	}
 	#奉天承运
@@ -316,7 +318,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 150
-			add_national_unity = 0.05
+			add_stability = 0.05
 		}
 	}
 	#工人权利
@@ -361,11 +363,11 @@ focus_tree = {
 		cost = 10
 		ai_will_do = { factor = 1 }
 		available = { has_civil_war = no  has_global_flag = qing_return_huaibei_start }
-		
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			custom_effect_tooltip = civil_war_warning
 			hidden_effect = {
@@ -373,19 +375,19 @@ focus_tree = {
 						prioritize = { 597 614 }
 						QNG = { set_capital = PREV }
 				}
-				
-				
-				
+
+
+
 				start_scaled_communist_civil_war_cap608 = yes
-				
+
 				set_global_flag = qing_communist_civil_war
 				news_event = { hours = 6 id = mingqingnews.6 }
-				
+
 				drop_cosmetic_tag = yes
 				set_cosmetic_tag = RQNG
-				
+
 				create_country_leader = {
-					name = "Zohu En Lai"
+					name = "Zhou Enlai"
 					desc = "POLITICS_SUBHAS_CHANDRA_BOSE_DESC"
 					picture = "gfx/leaders/QNG/Portrait_Qing_Zhou_En_Lai.dds"
 					expire = "1965.1.1"
@@ -398,7 +400,7 @@ focus_tree = {
 			add_political_power = 150
 			custom_effect_tooltip = RQNG_set
 		}
-	}								
+	}
 	#大同新义
 	focus = {
 		id = QNG_datong
@@ -575,7 +577,7 @@ focus_tree = {
 	focus = {
 		id = QNG_long_live_the_empire
 		icon = GFX_goal_tfv_sever_ties_with_uk
-		prerequisite = { 
+		prerequisite = {
 			focus = QNG_union
 			focus = QNG_emperor_dictatorship
 			focus = QNG_mutual_assimilation
@@ -591,6 +593,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = QNG_southern_resist
+			remove_ideas = QNG_tough_conquering
+			remove_ideas = QNG_soft_conquering
 			add_ideas = QNG_unified_country
 		}
 	}
@@ -599,11 +603,11 @@ focus_tree = {
 	focus = {
 		id = QNG_south_and_north
 		icon = GFX_focus_generic_home_defense
-		prerequisite = { 
+		prerequisite = {
 			focus = QNG_long_live_the_empire
 			focus = QNG_datong
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = QNG_win_war_to_ming
 		}
 		x = 0
@@ -627,7 +631,7 @@ focus_tree = {
 	focus = {
 		id = QNG_join_comintern
 		icon = GFX_goal_support_communism
-		prerequisite = { 
+		prerequisite = {
 			focus = QNG_datong
 		}
 		mutually_exclusive = { focus = QNG_join_allies focus = QNG_join_axis focus = QNG_join_nothing }
@@ -640,7 +644,7 @@ focus_tree = {
 		available = {
 			is_puppet = no
 	 		is_in_faction = no
-			NOT = { has_idea = QNG_not_unified_china } 
+			NOT = { has_idea = QNG_not_unified_china }
 	 		OR = {
 	 			has_government = communism
 	 			communism > 0.4
@@ -662,7 +666,7 @@ focus_tree = {
 	focus = {
 		id = QNG_join_allies
 		icon = GFX_goal_anschluss
-		prerequisite = { 
+		prerequisite = {
 			focus = QNG_long_live_the_empire
 		}
 		mutually_exclusive = { focus = QNG_join_comintern focus = QNG_join_axis focus = QNG_join_nothing }
@@ -675,7 +679,7 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			has_government = democratic
-			NOT = { has_idea = QNG_not_unified_china } 
+			NOT = { has_idea = QNG_not_unified_china }
 			ENG = {
 				exists = yes
 				has_government = democratic
@@ -692,7 +696,7 @@ focus_tree = {
 	focus = {
 		id = QNG_join_axis
 		icon = GFX_goal_support_fascism
-		prerequisite = { 
+		prerequisite = {
 			focus = QNG_long_live_the_empire
 		}
 		mutually_exclusive = { focus = QNG_join_comintern focus = QNG_join_allies focus = QNG_join_nothing }
@@ -705,13 +709,13 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			is_in_faction = no
-			NOT = { has_idea = QNG_not_unified_china } 
+			NOT = { has_idea = QNG_not_unified_china }
 	 		NOT = { has_war_with = GER }
 	 		OR = {
 	 			has_government = fascism
 	 			fascism > 0.4
 	 		}
-	 		
+
 	 		GER = {
 	 			exists = yes
 	 			has_government = fascism
@@ -728,7 +732,7 @@ focus_tree = {
 	focus = {
 		id = QNG_join_nothing
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { 
+		prerequisite = {
 			focus = QNG_long_live_the_empire
 		}
 		mutually_exclusive = { focus = QNG_join_comintern focus = QNG_join_allies focus = QNG_join_axis }
@@ -739,8 +743,8 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			is_puppet = no	
-			NOT = { has_idea = QNG_not_unified_china } 
+			is_puppet = no
+			NOT = { has_idea = QNG_not_unified_china }
 		}
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
@@ -773,7 +777,7 @@ focus_tree = {
 		        }
 		    }
 		}
-		will_lead_to_war_with = ENG 
+		will_lead_to_war_with = ENG
 		x = 10
 		y = 7
 		cost = 10
@@ -786,9 +790,9 @@ focus_tree = {
 						has_war_with = ROOT
 						is_major = yes
 					}
-					has_war_with_amount > 1
+					has_war = yes
 				}
-			}		
+			}
 		}
 		completion_reward = {
 			if = {
@@ -806,7 +810,7 @@ focus_tree = {
 					generator = { 336 672 }
 				}
 			}
-			
+
 		}
 	}
 	#对苏战争
@@ -839,7 +843,7 @@ focus_tree = {
 		        }
 		    }
 		}
-		will_lead_to_war_with = SOV 
+		will_lead_to_war_with = SOV
 		x = 8
 		y = 7
 		cost = 10
@@ -852,9 +856,9 @@ focus_tree = {
 						has_war_with = ROOT
 						is_major = yes
 					}
-					has_war_with_amount > 1
+					has_war = yes
 				}
-			}		
+			}
 		}
 		completion_reward = {
 			if = {
@@ -900,7 +904,7 @@ focus_tree = {
 		        }
 		    }
 		}
-		will_lead_to_war_with = JAP 
+		will_lead_to_war_with = JAP
 		x = 6
 		y = 7
 		cost = 10
@@ -913,9 +917,9 @@ focus_tree = {
 						has_war_with = ROOT
 						is_major = yes
 					}
-					has_war_with_amount > 1
+					has_war = yes
 				}
-			}		
+			}
 		}
 		completion_reward = {
 			if = {
@@ -958,7 +962,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	#轻工业计划 I
 	focus = {
 		id = QNG_construction_effort_1
@@ -1015,7 +1019,7 @@ focus_tree = {
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -1082,150 +1086,151 @@ focus_tree = {
 			}
 		}
 	}
-	#东北资源勘探计划
-	focus = {
-		id = QNG_northeastern_resource
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = QNG_industrial_plan }
-		x = 18
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_resource = {
-				type = oil
-				amount = 40
-				state = 714
-			}
-			add_resource = {
-				type = aluminium
-				amount = 10
-				state = 328
-			}
-			add_resource = {
-				type = chromium
-				amount = 10
-				state = 717
-			}
-		}
-	}
-	#西北资源勘探计划
-	focus = {
-		id = QNG_northwestern_resource
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = QNG_northeastern_resource }
-		x = 18
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_resource = {
-				type = steel
-				amount = 20
-				state = 746
-			}
-			add_resource = {
-				type = oil
-				amount = 10
-				state = 618
-			}
-			add_resource = {
-				type = chromium
-				amount = 10
-				state = 619
-			}
-		}
-	}
-	#蒙古资源勘探计划
-	focus = {
-		id = QNG_mongolian_resource
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = QNG_northwestern_resource }
-		x = 18
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_resource = {
-				type = steel
-				amount = 10
-				state = 745
-			}
-			add_resource = {
-				type = aluminium
-				amount = 10
-				state = 330
-			}
-			add_resource = {
-				type = chromium
-				amount = 10
-				state = 745
-			}
-		}
-	}
-	#华北资源勘探计划
-	focus = {
-		id = QNG_northernchina_resource
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = QNG_mongolian_resource }
-		x = 18
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_resource = {
-				type = steel
-				amount = 10
-				state = 621
-			}
-			add_resource = {
-				type = aluminium
-				amount = 10
-				state = 614
-			}
-		}
-	}
-	#华南资源勘探计划
-	focus = {
-		id = QNG_southernchina_resource
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = QNG_northernchina_resource }
-		x = 18
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			is_subject = no
-			NOT = { country_exists = MNG }
-		}
-		completion_reward = {
-			add_resource = {
-				type = rubber
-				amount = 10
-				state = 599
-			}
-			add_resource = {
-				type = rubber
-				amount = 10
-				state = 592
-			}
-			add_resource = {
-				type = chromium
-				amount = 15
-				state = 325
-			}
-		}
-	}
+#	#东北资源勘探计划
+#	focus = {
+#		id = QNG_northeastern_resource
+#		icon = GFX_goal_generic_oil_refinery
+#		prerequisite = { focus = QNG_industrial_plan }
+#		x = 18
+#		y = 1
+#		cost = 10
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_resource = {
+#				type = oil
+#				amount = 40
+#				state = 714
+#			}
+#			add_resource = {
+#				type = aluminium
+#				amount = 10
+#				state = 328
+#			}
+#			add_resource = {
+#				type = chromium
+#				amount = 10
+#				state = 717
+#			}
+#		}
+#	}
+#	#西北资源勘探计划
+#	focus = {
+#		id = QNG_northwestern_resource
+#		icon = GFX_goal_generic_oil_refinery
+#		prerequisite = { focus = QNG_northeastern_resource }
+#		x = 18
+#		y = 2
+#		cost = 10
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_resource = {
+#				type = steel
+#				amount = 20
+#				state = 746
+#			}
+#			add_resource = {
+#				type = oil
+#				amount = 10
+#				state = 618
+#			}
+#			add_resource = {
+#				type = chromium
+#				amount = 10
+#				state = 619
+#			}
+#		}
+#	}
+#	#蒙古资源勘探计划
+#	focus = {
+#		id = QNG_mongolian_resource
+#		icon = GFX_goal_generic_oil_refinery
+#		prerequisite = { focus = QNG_northwestern_resource }
+#		x = 18
+#		y = 3
+#		cost = 10
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_resource = {
+#				type = steel
+#				amount = 10
+#				state = 789
+#			}
+#			add_resource = {
+#				type = aluminium
+#				amount = 10
+#				state = 789
+#			}
+#			add_resource = {
+#				type = chromium
+#				amount = 10
+#				state = 330
+#			}
+#		}
+#	}
+#
+#	#华北资源勘探计划
+#	focus = {
+#		id = QNG_northernchina_resource
+#		icon = GFX_goal_generic_oil_refinery
+#		prerequisite = { focus = QNG_mongolian_resource }
+#		x = 18
+#		y = 4
+#		cost = 10
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		completion_reward = {
+#			add_resource = {
+#				type = steel
+#				amount = 10
+#				state = 621
+#			}
+#			add_resource = {
+#				type = aluminium
+#				amount = 10
+#				state = 614
+#			}
+#		}
+#	}
+#	#华南资源勘探计划
+#	focus = {
+#		id = QNG_southernchina_resource
+#		icon = GFX_goal_generic_oil_refinery
+#		prerequisite = { focus = QNG_northernchina_resource }
+#		x = 18
+#		y = 5
+#		cost = 10
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		available = {
+#			is_subject = no
+#			NOT = { country_exists = MNG }
+#		}
+#		completion_reward = {
+#			add_resource = {
+#				type = rubber
+#				amount = 10
+#				state = 599
+#			}
+#			add_resource = {
+#				type = rubber
+#				amount = 10
+#				state = 592
+#			}
+#			add_resource = {
+#				type = chromium
+#				amount = 15
+#				state = 325
+#			}
+#		}
+#	}
 	#教育振兴计划
 	focus = {
 		id = QNG_educational_plan
@@ -1299,7 +1304,7 @@ focus_tree = {
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
-				all_owned_state = {			
+				all_owned_state = {
 					free_building_slots = {
 						building = infrastructure
 						size < 1
@@ -1416,7 +1421,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			743 = {
+			788 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -1470,10 +1475,10 @@ focus_tree = {
 	focus = {
 		id = QNG_southern_university
 		icon = GFX_focus_research
-		prerequisite = { 
-			focus = QNG_construction_effort_southern 
-			focus = QNG_infrastructure_effort_southern 
-			focus = QNG_production_effort_southern 
+		prerequisite = {
+			focus = QNG_construction_effort_southern
+			focus = QNG_infrastructure_effort_southern
+			focus = QNG_production_effort_southern
 		}
 		x = 13
 		y = 5
@@ -1493,10 +1498,10 @@ focus_tree = {
 	focus = {
 		id = QNG_nuclear_effort
 		icon = GFX_focus_wonderweapons
-		prerequisite = { 
-			focus = QNG_construction_effort_southern 
-			focus = QNG_infrastructure_effort_southern 
-			focus = QNG_production_effort_southern 
+		prerequisite = {
+			focus = QNG_construction_effort_southern
+			focus = QNG_infrastructure_effort_southern
+			focus = QNG_production_effort_southern
 		}
 		x = 15
 		y = 5
@@ -1528,7 +1533,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			army_experience = 20
 			add_tech_bonus = {
@@ -1695,7 +1700,7 @@ focus_tree = {
 	focus = {
 		id = QNG_qingdao_dockyard
 		icon = GFX_goal_generic_construct_naval_dockyard
-		
+
 		x = 28
 		y = 0
 		cost = 10
@@ -1732,21 +1737,18 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		completion_reward = {
-			add_tech_bonus = {
-				name = ss_bonus
-				bonus = 0.5
-				ahead_reduction = 1
-				uses = 1
-				technology = basic_submarine
-				technology = improved_submarine
-				technology = advanced_submarine
-			}
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 1.00
+							uses = 1
+							category = ss_tech
+						}
 		}
 	}
 	#重视主力舰
@@ -1760,26 +1762,19 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-		
+
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
 			navy_experience = 25
-			add_tech_bonus = {
-				name = capital_ships_bonus
-				bonus = 0.5
-				ahead_reduction = 1
-				uses = 2
-				technology = basic_battlecruiser
-				technology = basic_battleship
-				technology = improved_battleship
-				technology = advanced_battleship
-				technology = heavy_battleship
-				technology = heavy_battleship2
-				
-			}
+					add_tech_bonus = {
+							name = capital_ships_bonus
+							bonus = 1.00
+							uses = 1
+							category = bb_tech
+						}
 		}
 	}
 	#重视航空母舰
@@ -1793,44 +1788,40 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		completion_reward = {
 			navy_experience = 25
-			add_tech_bonus = {
-				name = carrier_focus
-				bonus = 0.5
-				ahead_reduction = 1
-				uses = 1
-				technology = early_carrier
-				technology = basic_carrier
-				technology = improved_carrier
-				technology = advanced_carrier
-			}
+					add_tech_bonus = {
+							name = carrier_focus
+							bonus = 1.00
+							uses = 1
+							category = cv_tech
+						}
 		}
 	}
 	#海军学说的发展
 	focus = {
 		id = QNG_navy_doctrines_effort
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { 
-			focus = QNG_submarine_effort 
-			focus = QNG_capital_ships_effort 
+		prerequisite = {
+			focus = QNG_submarine_effort
+			focus = QNG_capital_ships_effort
 			focus = QNG_carriers_effort }
-		
+
 		x = 27
 		y = 2
 		cost = 10
 
 		available_if_capitulated = yes
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-		
+
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -1845,7 +1836,7 @@ focus_tree = {
 	focus = {
 		id = QNG_improved_screen_ships
 		icon = GFX_goal_generic_navy_cruiser
-	 	prerequisite = { 
+	 	prerequisite = {
 			focus = QNG_capital_ships_effort
 			focus = QNG_carriers_effort }
 		x = 29
@@ -1856,20 +1847,7 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 25
-			add_tech_bonus = {
-				name = improved_screen_ships
-				bonus = 0.5
-				uses = 2
-				technology = basic_destroyer
-				technology = improved_destroyer
-				technology = advanced_destroyer
-				technology = basic_light_cruiser
-				technology = improved_light_cruiser
-				technology = advanced_light_cruiser
-				technology = basic_heavy_cruiser
-				technology = improved_heavy_cruiser
-				technology = advanced_heavy_cruiser
-			}
+				add_ideas = british_convoy_discount
 		}
 	}
 	#南苑航空学校
@@ -1915,7 +1893,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_bomber_focus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = tactical_bomber
 			}
@@ -1925,7 +1903,7 @@ focus_tree = {
 	focus = {
 		id = QNG_strategic_bomber_effort
 		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { 
+		prerequisite = {
 			focus = QNG_bomber_effort
 			}
 		x = 32
@@ -1940,7 +1918,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = cat_strategic_bomber_focus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cat_strategic_bomber
 			}
@@ -1950,7 +1928,7 @@ focus_tree = {
 	focus = {
 		id = QNG_rocket_effort
 		icon = GFX_focus_rocketry
-		prerequisite = { 
+		prerequisite = {
 			focus = QNG_strategic_bomber_effort
 			focus = QNG_heavy_fighter_effort
 			}
@@ -1991,7 +1969,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_fighter_focus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = light_fighter
 			}
@@ -2001,7 +1979,7 @@ focus_tree = {
 	focus = {
 		id = QNG_heavy_fighter_effort
 		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { 
+		prerequisite = {
 			focus = QNG_fighter_effort
 			}
 		x = 34
@@ -2016,7 +1994,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = cat_heavy_fighter_focus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cat_heavy_fighter
 			}
@@ -2039,7 +2017,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_cas_focus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cas_bomber
 			}
@@ -2049,7 +2027,7 @@ focus_tree = {
 	focus = {
 		id = QNG_naval_bomber_effort
 		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { 
+		prerequisite = {
 			focus = QNG_bomber_effort
 			focus = QNG_carriers_effort
 			}
@@ -2065,15 +2043,10 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_naval_bomber_focus
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = naval_bomber
 			}
 		}
 	}
-	
-	
-	
-
-
 }

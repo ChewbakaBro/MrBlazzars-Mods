@@ -58,8 +58,8 @@
  MNG_submarine_3_desc:0 "The Yan Class is without a doubt the nightmare of enemy transport ships, having increased the cubmergence and cruise capabilites from the Chu Class Enormously."
  MNG_submarine_4:0 "Zhao Class Submarine"
  MNG_submarine_4_desc:0 "The Zhao Class submarine is the assassin of the Ming Dynasty fleets. She will sink the enemies ships into the abyss with her ruinous attacks."
- 
- 
+
+
  #清朝海军
  QNG_destroyer_1:0 "Kernel Defense Class Destroyer"
  QNG_destroyer_1_desc:0 "The Kernel Defense Class destroyer was deployed in 1922 to protect the capital ships of the Qing Dynasty."
@@ -117,4 +117,3 @@
  QNG_submarine_3_desc:0 "The Sea Whale Class submarine is much like her name parading the sea looking for prey to hunt. She is the nightmare of the enemy transport ships."
  QNG_submarine_4:0 "Sea Dragon Class Submarine"
  QNG_submarine_4_desc:0 "The Sea Dragon Class submarine is the assassin of the Qing Dynasties fleets. She will sink the enemies ships into the abyss."
- 

@@ -9,15 +9,15 @@ country_event = {
 	id = ming.1
 	title = ming.1.t
 	desc = ming.1.d
-	
+
 	picture = GFX_report_event_chinese_officers
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.1.a
 		ai_chance = { factor = 100 }
-		QNG = { 
+		QNG = {
 			country_event = qing.3
 		}
 	}
@@ -28,17 +28,17 @@ country_event = {
 	id = ming.1001
 	title = ming.1001.t
 	desc = ming.1001.d
-	 
-	
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.1001.a
 		ai_chance = { factor = 100 }
 		SOV = {
 			add_ai_strategy = {
 				type = antagonize
-				id = "QNG"			
+				id = "QNG"
 				value = 2000
 			}
 			MNG = { country_event = { id = ming.1002 days = 20 } }
@@ -51,11 +51,11 @@ country_event = {
 	id = ming.1002
 	title = ming.1002.t
 	desc = ming.1002.d
-	
+
 	picture = GFX_report_event_japan_army_mountainside
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.1002.a
 		ai_chance = { factor = 100 }
@@ -69,17 +69,17 @@ country_event = {
 	id = ming.1003
 	title = ming.1003.t
 	desc = ming.1003.d
-	 
-	
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.1003.a
 		ai_chance = { factor = 100 }
 		JAP = {
 			add_ai_strategy = {
 				type = antagonize
-				id = "QNG"			
+				id = "QNG"
 				value = 2000
 			}
 		}
@@ -92,11 +92,11 @@ country_event = {
 	id = ming.1004
 	title = ming.1004.t
 	desc = ming.1004.d
-	
+
 	picture = GFX_report_event_japan_army_mountainside
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.1004.a
 		ai_chance = { factor = 100 }
@@ -110,11 +110,11 @@ country_event = {
 	id = ming.2
 	title = ming.2.t
 	desc = ming.2.d
-	
+
 	picture = GFX_report_event_chinese_army_training
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.2.a
 		ai_chance = { factor = 100 }
@@ -129,12 +129,12 @@ country_event = {
 	id = ming.3
 	title = ming.3.t
 	desc = ming.3.d
-	
+
 	picture = GFX_report_event_soldiers_marching
-	 
-	
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.3.a
 		ai_chance = { factor = 20 }
@@ -151,11 +151,14 @@ country_event = {
 	id = ming.4
 	title = ming.4.t
 	desc = ming.4.d
-	
+
 	picture = GFX_report_event_tanks_mexico_city
-	
+
 	is_triggered_only = no
 	fire_only_once = yes
+
+	mean_time_to_happen = { days = 1 }
+
 	trigger = {
 		tag = MNG
 		QNG = { has_offensive_war_with = MNG }
@@ -169,15 +172,15 @@ country_event = {
 			NOT = { 598 = { is_controlled_by = QNG } }
 		}
 	}
-	
-	
+
+
 	option = {
 		name = ming.4.a
 		SOV = {
-			country_event = { id = ming.5 days = 20 }
+			country_event = { id = ming.5 days = 2 }
 		}
 		JAP = {
-			country_event = { id = ming.6 days = 20 }
+			country_event = { id = ming.6 days = 2 }
 		}
 		hidden_effect = {
 			QNG = {
@@ -193,15 +196,15 @@ country_event = {
 	id = ming.5
 	title = ming.5.t
 	desc = ming.5.d
-	 
-	
+
+
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
 		tag = SOV
 		has_global_flag = divide_up_qing
 	}
-	
+
 	option = {
 		name = ming.5.a
 		ai_chance = { factor = 1 }
@@ -219,15 +222,15 @@ country_event = {
 	id = ming.6
 	title = ming.6.t
 	desc = ming.6.d
-	 
-	
+
+
 	is_triggered_only = yes
 	fire_only_once = yes
 	trigger = {
 		tag = JAP
 		has_global_flag = divide_up_qing
 	}
-	
+
 	option = {
 		name = ming.6.a
 		ai_chance = { factor = 1 }
@@ -245,9 +248,9 @@ country_event = {
 	id = ming.7
 	title = ming.7.t
 	desc = ming.7.d
-	
+
 	picture = GFX_report_event_japanese_chinese_surrender
-	
+
 	is_triggered_only = no
 	fire_only_once = yes
 	trigger = {
@@ -259,14 +262,14 @@ country_event = {
 			QNG = { is_ai = yes }
 		}
 	}
-	
-	mean_time_to_happen = { days = 20 }
-	
+
+	mean_time_to_happen = { days = 1 }
+
 	option = {
 		name = ming.7.a
 		ai_chance = { factor = 100 }
 		MNG = { country_event = { id = ming.701 } }
-		
+
 	}
 }
 
@@ -275,43 +278,29 @@ country_event = {
 	id = ming.701
 	title = ming.701.t
 	desc = ming.701.d
-	
+
 	picture = GFX_report_event_japanese_chinese_surrender
-	
+
 	is_triggered_only = yes
 	fire_only_once = yes
-	
-	
+
+
 	option = {
 		name = ming.701.a
 		ai_chance = { factor = 1 }
-		MNG = { transfer_state = 598 }
-		MNG = { transfer_state = 606 }
-		MNG = { transfer_state = 597 }
-		MNG = { transfer_state = 607 }
-		MNG = { transfer_state = 622 }
-		MNG = { transfer_state = 615 }
-		MNG = { transfer_state = 614 }
-		MNG = { transfer_state = 609 }
-		MNG = { transfer_state = 616 }
-		MNG = { transfer_state = 748 }
-		MNG = { transfer_state = 621 }
-		MNG = { transfer_state = 610 }
-		MNG = { transfer_state = 716 }
-		MNG = { transfer_state = 604 }
-		MNG = { annex_country = { target = QNG } }
 		#新疆
-		SIK = { transfer_state = 747 }
 		SIK = { transfer_state = 287 }
 		SIK = { transfer_state = 619 }
-		SIK = { transfer_state = 746 }
 		SIK = { transfer_state = 618 }
 		SIK = { transfer_state = 617 }
+		SIK = { transfer_state = 760 }
+		SIK = { transfer_state = 759 }
 		SOV = { puppet = SIK }
 		#蒙古
-		MON = { transfer_state = 745 }
 		MON = { transfer_state = 330 }
 		MON = { transfer_state = 329 }
+		MON = { transfer_state = 789 }
+		MON = { transfer_state = 790 }
 		SOV = { puppet = MON }
 		#满洲
 		MAN = { transfer_state = 561 }
@@ -321,7 +310,16 @@ country_event = {
 		MAN = { transfer_state = 328 }
 		MAN = { transfer_state = 717 }
 		MAN = { transfer_state = 612 }
-		JAP = { puppet = MAN }
+		MAN = { transfer_state = 761 }
+		JAP = {
+			set_autonomy = {
+			target = MAN
+			autonomous_state = autonomy_integrated_puppet
+			}
+		}
+		#大明
+		QNG = { transfer_navy = { target = MNG } }
+		MNG = { annex_country = { target = QNG } }
 		hidden_effect = {
 			every_state = {
 				limit = {
@@ -340,7 +338,7 @@ country_event = {
 				add_core_of = MAN
 			}
 			MAN = {
-				load_oob = MAN_1936
+				load_oob = MAN_1939
 				add_manpower = 300000
 			}
 			every_state = {
@@ -367,25 +365,25 @@ country_event = {
 	id = ming.8001
 	title = ming.8001.t
 	desc = ming.8001.d
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.8001.a
 		ai_chance = { factor = 100 }
 		add_ideas = MNG_colonized_strenthen
 	}
 }
-	
+
 
 #获得南洋地区核心领土
 country_event = {
 	id = ming.8
 	title = ming.8.t
 	desc = ming.8.d
-	 
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = MNG
 		NOT = { has_completed_focus = MNG_fate_of_puppet }
@@ -394,7 +392,7 @@ country_event = {
 			progress > 0.5
 		}
 	}
-	
+
 	option = {
 		name = ming.8.a
 		ai_chance = { factor = 100 }
@@ -520,10 +518,10 @@ country_event = {
 	id = ming.9
 	title = ming.9.t
 	desc = ming.9.d
-	 
-	
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.9.a
 		ai_chance = { factor = 1 }
@@ -545,14 +543,20 @@ country_event = {
 	id = ming.901
 	title = ming.901.t
 	desc = ming.901.d
-	 
-	
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.901.a
 		ai_chance = { factor = 1 }
-		MNG = { transfer_state = 749 }
+		MNG = { transfer_state = 745 }
+		every_state = {
+			limit = {
+				is_owned_by = MAN
+			}
+			add_core_of = MNG
+		}
 		hidden_effect = {
 			news_event = { hours = 6 id = mingqingnews.13 }
 		}
@@ -564,24 +568,17 @@ country_event = {
 	id = ming.902
 	title = ming.902.t
 	desc = ming.902.d
-	 
-	
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.902.a
-		ai_chance = { factor = 10 }
-		MNG = {
-			create_wargoal = {
-				type = take_state_focus
-				target = JAP
-				generator = { 749 } 
-			}
-		}
+		ai_chance = { factor = 20 }
 		hidden_effect = {
 			news_event = { hours = 6 id = mingqingnews.14 }
 		}
-		
+
 	}
 }
 
@@ -590,10 +587,10 @@ country_event = {
 	id = ming.10
 	title = ming.10.t
 	desc = ming.10.d
-	 
-	
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.10.a
 		ai_chance = { factor = 50 }
@@ -615,17 +612,17 @@ country_event = {
 	id = ming.1005
 	title = ming.1005.t
 	desc = ming.1005.d
-	 
-	
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.1005.a
 		ai_chance = { factor = 1 }
-		MNG = { 
+		MNG = {
 			transfer_state = 744
 			transfer_state = 322
-			transfer_state = 434			
+			transfer_state = 434
 		}
 		MNG = { annex_country = { target = TIB } }
 		hidden_effect = {
@@ -639,10 +636,10 @@ country_event = {
 	id = ming.1006
 	title = ming.1006.t
 	desc = ming.1006.d
-	 
-	
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.1006.a
 		ai_chance = { factor = 10 }
@@ -655,7 +652,7 @@ country_event = {
 		hidden_effect = {
 			news_event = { hours = 6 id = mingqingnews.24 }
 		}
-		
+
 	}
 }
 
@@ -664,10 +661,10 @@ country_event = {
 	id = ming.12
 	title = ming.12.t
 	desc = ming.12.d
-	 
-	
+
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.12.a
 		ai_chance = { factor = 10 }
@@ -682,11 +679,11 @@ country_event = {
 	id = ming.13
 	title = ming.13.t
 	desc = ming.13.d
-	
+
 	picture = GFX_report_event_indian_parade
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = ming.13.a
 		ai_chance = { factor = 10 }
@@ -699,13 +696,13 @@ country_event = {
 	id = ming.14
 	title = ming.14.t
 	desc = ming.14.d
-	
+
 	picture = GFX_report_event_indian_parade
-	
+
 	is_triggered_only = yes
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = ming.14.a
 		ai_chance = { factor = 100 }
@@ -729,13 +726,13 @@ country_event = {
 	id = ming.1501
 	title = ming.1501.t
 	desc = ming.1501.d
-	
+
 	picture = GFX_report_event_india_protests
-	
+
 	mean_time_to_happen = { days = 2 }
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = MNG
 		has_global_flag = divide_india
@@ -751,7 +748,7 @@ country_event = {
 			ASM = { exists = yes }
 		}
 	}
-	
+
 	option = {
 		name = ming.1501.a
 		ai_chance = { factor = 10 }
@@ -798,13 +795,13 @@ country_event = {
 	id = ming.1502
 	title = ming.1502.t
 	desc = ming.1502.d
-	 
+
 	mean_time_to_happen = { days = 2 }
-	
+
 	picture = GFX_report_event_india_protests
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = MNG
 		OR = {
@@ -823,8 +820,8 @@ country_event = {
 			BLD = { exists = yes }
 		}
 	}
-	
-	
+
+
 	option = {
 		name = ming.1502.a
 		ai_chance = { factor = 10 }
@@ -871,14 +868,14 @@ country_event = {
 	id = ming.1503
 	title = ming.1503.t
 	desc = ming.1503.d
-	
+
 	picture = GFX_report_event_india_protests
-	
-	
+
+
 	mean_time_to_happen = { days = 2 }
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = MNG
 		439 = {
@@ -934,7 +931,7 @@ country_event = {
 		}
 		has_global_flag = divide_india
 	}
-	
+
 	option = {
 		name = ming.1503.a
 		ai_chance = { factor = 10 }
@@ -987,14 +984,14 @@ country_event = {
 	id = ming.1504
 	title = ming.1504.t
 	desc = ming.1504.d
-	 
-	 
+
+
 	picture = GFX_report_event_india_protests
-	
+
 	mean_time_to_happen = { days = 2 }
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = MNG
 		444 = {
@@ -1045,10 +1042,10 @@ country_event = {
 			has_global_flag = divide_india
 		}
 	}
-	
+
 	option = {
 		name = ming.1504.a
-		ai_chance = { factor = 10 }	
+		ai_chance = { factor = 10 }
 		PAK = {
 			add_state_core = 444
 			add_state_core = 445
@@ -1100,13 +1097,13 @@ country_event = {
 	id = ming.1505
 	title = ming.1505.t
 	desc = ming.1505.d
-	
+
 	picture = GFX_report_event_india_protests
-	
+
 	mean_time_to_happen = { days = 2 }
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = MNG
 		441 = {
@@ -1125,8 +1122,8 @@ country_event = {
 			has_global_flag = divide_india
 		}
 	}
-	
-	
+
+
 	option = {
 		name = ming.1505.a
 		ai_chance = { factor = 10 }
@@ -1173,13 +1170,13 @@ country_event = {
 	id = ming.1506
 	title = ming.1506.t
 	desc = ming.1506.d
-	
+
 	picture = GFX_report_event_india_protests
-	
+
 	mean_time_to_happen = { days = 2 }
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = MNG
 		425 = {
@@ -1211,8 +1208,8 @@ country_event = {
 		}
 		has_global_flag = divide_india
 	}
-	
-	
+
+
 	option = {
 		name = ming.1506.a
 		ai_chance = { factor = 10 }
@@ -1263,14 +1260,14 @@ country_event = {
 	id = ming.1507
 	title = ming.1507.t
 	desc = ming.1507.d
-	
+
 	picture = GFX_report_event_india_protests
-	 
-	
+
+
 	mean_time_to_happen = { days = 2 }
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = MNG
 		428 = {
@@ -1310,8 +1307,8 @@ country_event = {
 		}
 		has_global_flag = divide_india
 	}
-	
-	
+
+
 	option = {
 		name = ming.1507.a
 		ai_chance = { factor = 10 }
@@ -1364,14 +1361,14 @@ country_event = {
 	id = ming.1508
 	title = ming.1508.t
 	desc = ming.1508.d
-	
+
 	picture = GFX_report_event_india_protests
-	 
-	
+
+
 	mean_time_to_happen = { days = 2 }
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = MNG
 		288 = {
@@ -1398,9 +1395,9 @@ country_event = {
 			has_global_flag = divide_india
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	option = {
 		name = ming.1508.a
 		ai_chance = { factor = 10 }
@@ -1449,14 +1446,14 @@ country_event = {
 	id = ming.1509
 	title = ming.1509.t
 	desc = ming.1509.d
-	
+
 	picture = GFX_report_event_india_protests
-	 
-	
+
+
 	mean_time_to_happen = { days = 2 }
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = MNG
 		426 = {
@@ -1488,8 +1485,8 @@ country_event = {
 		}
 		has_global_flag = divide_india
 	}
-	
-	
+
+
 	option = {
 		name = ming.1509.a
 		ai_chance = { factor = 10 }
@@ -1540,22 +1537,20 @@ country_event = {
 	id = ming.21
 	title = ming.21.t
 	desc = ming.21.d
-	 
-	
+
 	is_triggered_only = yes
-	
-	
+
 	option = {
 		name = ming.21.a
 		ai_chance = { factor = 10 }
 		create_country_leader = {
-				name = "Zhu You Rong"
+				name = "Zhu Yourong"
 				desc = ""
 				picture = "gfx/leaders/MNG/Portrait_Ming_Zhu_You_Rong.dds"
 				expire = "1965.1.1"
 				ideology = marxism
 				traits = {
-					popular_figurehead
+					son_of_heaven
 				}
 		}
 		set_global_flag = negotiation_succeed
@@ -1572,10 +1567,10 @@ country_event = {
 	id = ming.22
 	title = ming.22.t
 	desc = ming.22.d
-	 
+
 
 	is_triggered_only = yes
-		
+
 	option = {
 		name = ming.22.a
 		SOV = { add_to_faction = MNG }
@@ -1613,17 +1608,17 @@ country_event = {
 	id = ming.2201
 	title = ming.2201.t
 	desc = ming.2201.d
-	 
+
 	fire_only_once = yes
 	is_triggered_only = no
-	
-	
+
+
 	trigger = {
 		tag = VIN
 		NOT = { has_government = communism }
 		communism > 0.4
 	}
-	
+
 	option = {
 		name = ming.2201.a
 		if = {
@@ -1642,17 +1637,17 @@ country_event = {
 	id = ming.2202
 	title = ming.2201.t
 	desc = ming.2201.d
-	 
+
 	fire_only_once = yes
 	is_triggered_only = no
-	
-	
+
+
 	trigger = {
 		tag = LAO
 		NOT = { has_government = communism }
 		communism > 0.4
 	}
-	
+
 	option = {
 		name = ming.2202.a
 		if = {
@@ -1671,17 +1666,17 @@ country_event = {
 	id = ming.2203
 	title = ming.2201.t
 	desc = ming.2201.d
-	 
+
 	fire_only_once = yes
 	is_triggered_only = no
-	
-	
+
+
 	trigger = {
 		tag = LUZ
 		NOT = { has_government = communism }
 		communism > 0.4
 	}
-	
+
 	option = {
 		name = ming.2201.a
 		if = {
@@ -1700,17 +1695,17 @@ country_event = {
 	id = ming.2204
 	title = ming.2201.t
 	desc = ming.2201.d
-	 
+
 	fire_only_once = yes
 	is_triggered_only = no
-	
-	
+
+
 	trigger = {
 		tag = INS
 		NOT = { has_government = communism }
 		communism > 0.4
 	}
-	
+
 	option = {
 		name = ming.2201.a
 		if = {
@@ -1729,17 +1724,17 @@ country_event = {
 	id = ming.2205
 	title = ming.2201.t
 	desc = ming.2201.d
-	 
+
 	fire_only_once = yes
 	is_triggered_only = no
-	
-	
+
+
 	trigger = {
 		tag = CAM
 		NOT = { has_government = communism }
 		communism > 0.4
 	}
-	
+
 	option = {
 		name = ming.2201.a
 		if = {
@@ -1758,17 +1753,17 @@ country_event = {
 	id = ming.2206
 	title = ming.2201.t
 	desc = ming.2201.d
-	 
+
 	fire_only_once = yes
 	is_triggered_only = no
-	
-	
+
+
 	trigger = {
 		tag = SIA
 		NOT = { has_government = communism }
 		communism > 0.4
 	}
-	
+
 	option = {
 		name = ming.2201.a
 		if = {
@@ -1787,17 +1782,17 @@ country_event = {
 	id = ming.2301
 	title = ming.2302.t
 	desc = ming.2302.d
-	 
+
 	fire_only_once = yes
 	is_triggered_only = no
-	
-	
+
+
 	trigger = {
 		tag = VIN
 		NOT = { has_government = democratic }
 		democratic > 0.4
 	}
-	
+
 	option = {
 		name = ming.2302.a
 		if = {
@@ -1816,17 +1811,17 @@ country_event = {
 	id = ming.2302
 	title = ming.2302.t
 	desc = ming.2302.d
-	 
+
 	fire_only_once = yes
 	is_triggered_only = no
-	
-	
+
+
 	trigger = {
 		tag = LAO
 		NOT = { has_government = democratic }
 		democratic > 0.4
 	}
-	
+
 	option = {
 		name = ming.2302.a
 		if = {
@@ -1845,17 +1840,17 @@ country_event = {
 	id = ming.2303
 	title = ming.2302.t
 	desc = ming.2302.d
-	 
+
 	fire_only_once = yes
 	is_triggered_only = no
-	
-	
+
+
 	trigger = {
 		tag = CAM
 		NOT = { has_government = democratic }
 		democratic > 0.4
 	}
-	
+
 	option = {
 		name = ming.2302.a
 		if = {
@@ -1874,17 +1869,17 @@ country_event = {
 	id = ming.2304
 	title = ming.2302.t
 	desc = ming.2302.d
-	 
+
 	fire_only_once = yes
 	is_triggered_only = no
-	
-	
+
+
 	trigger = {
 		tag = INS
 		NOT = { has_government = democratic }
 		democratic > 0.4
 	}
-	
+
 	option = {
 		name = ming.2302.a
 		if = {
@@ -1903,17 +1898,17 @@ country_event = {
 	id = ming.2305
 	title = ming.2302.t
 	desc = ming.2302.d
-	 
+
 	fire_only_once = yes
 	is_triggered_only = no
-	
-	
+
+
 	trigger = {
 		tag = LUZ
 		NOT = { has_government = democratic }
 		democratic > 0.4
 	}
-	
+
 	option = {
 		name = ming.2302.a
 		if = {
@@ -1932,17 +1927,17 @@ country_event = {
 	id = ming.2306
 	title = ming.2302.t
 	desc = ming.2302.d
-	 
+
 	fire_only_once = yes
 	is_triggered_only = no
-	
-	
+
+
 	trigger = {
 		tag = SIA
 		NOT = { has_government = democratic }
 		democratic > 0.4
 	}
-	
+
 	option = {
 		name = ming.2302.a
 		if = {
@@ -1961,10 +1956,10 @@ country_event = {
 	id = ming.24
 	title = ming.24.t
 	desc = ming.24.d
-	 
+
 
 	is_triggered_only = yes
-		
+
 	option = {
 		name = ming.24.a
 		if = {
@@ -1972,19 +1967,19 @@ country_event = {
 				NOT = { has_global_flag = negotiation_succeed }
 			}
 			create_country_leader = {
-				name = "Chen Du Xiu"
+				name = "Chen Duxiu"
 				desc = ""
 				picture = "gfx/leaders/MNG/Portrait_Ming_Chen_Du_Xiu.dds"
 				expire = "1965.1.1"
 				ideology = marxism
 				traits = {
-					
+
 				}
 			}
 		}
 		set_global_flag = MNG_trotskyism_rule
 	}
-	
+
 }
 
 #明加入同盟国
@@ -1992,10 +1987,10 @@ country_event = {
 	id = ming.25
 	title = ming.25.t
 	desc = ming.25.d
-	 
+
 
 	is_triggered_only = yes
-		
+
 	option = {
 		name = ming.25.a
 		ENG = { add_to_faction = MNG }
@@ -2017,10 +2012,10 @@ country_event = {
 	id = ming.26
 	title = ming.26.t
 	desc = ming.26.d
-	 
+
 
 	is_triggered_only = yes
-		
+
 	option = {
 		name = ming.26.a
 		GER = { add_to_faction = MNG }
@@ -2058,10 +2053,10 @@ country_event = {
 	id = ming.27
 	title = ming.27.t
 	desc = ming.27.d
-	 
+
 
 	is_triggered_only = yes
-		
+
 	option = {
 		name = ming.27.a
 		MNG = { add_to_faction = JAP }
@@ -2087,19 +2082,20 @@ country_event = {
 	id = ming.28
 	title = ming.28.t
 	desc = ming.28.d
-	 
+
 
 	is_triggered_only = yes
-		
+
 	option = {
 		name = ming.28.a
 		create_country_leader = {
-				name = "Zhu You Rong"
+				name = "Zhu Yourong"
 				desc = ""
 				picture = "gfx/leaders/MNG/Portrait_Ming_Zhu_You_Rong.dds"
 				expire = "1965.1.1"
 				ideology = liberalism
 				traits = {
+					son_of_heaven
 				}
 		}
 		hidden_effect = {
@@ -2113,19 +2109,20 @@ country_event = {
 	id = ming.29
 	title = ming.29.t
 	desc = ming.29.d
-	 
-	
+
+
 	is_triggered_only = yes
-		
+
 	option = {
 		name = ming.29.a
 		create_country_leader = {
-				name = "Zhu You Rong"
+				name = "Zhu Yourong"
 				desc = ""
 				picture = "gfx/leaders/MNG/Portrait_Ming_Zhu_You_Rong.dds"
 				expire = "1965.1.1"
 				ideology = nazism
 				traits = {
+					son_of_heaven
 				}
 		}
 		hidden_effect = {
@@ -2133,7 +2130,3 @@ country_event = {
 		}
 	}
 }
-
-
-
-
