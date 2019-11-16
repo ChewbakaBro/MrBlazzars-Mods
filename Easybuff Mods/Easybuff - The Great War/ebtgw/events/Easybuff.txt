@@ -114,12 +114,12 @@ country_event = {
     }
     option = {
         name = Easybuff.10.e
-        add_offsite_building = { type = industrial_complex level = 2 }
+        add_offsite_building = { type = industrial_complex level = 3 }
         country_event = Easybuff.1
     }
     option = {
         name = Easybuff.10.f
-        add_offsite_building = { type = arms_factory level = 2 }
+        add_offsite_building = { type = arms_factory level = 3 }
         country_event = Easybuff.1
     }
     option = {
@@ -132,7 +132,7 @@ country_event = {
     }
     option = {
         name = Easybuff.10.h
-        add_offsite_building = { type = dockyard level = 2 }
+        add_offsite_building = { type = dockyard level = 3 }
         country_event = Easybuff.1
     }
     option = {
@@ -292,7 +292,7 @@ country_event = {
                 amount = 8
             }
         }
-        country_event = Easybuff.20
+        country_event = Easybuff.1
     }
     option = {
         name = Easybuff.20.e
@@ -306,7 +306,7 @@ country_event = {
                 amount = 8
             }
         }
-        country_event = Easybuff.20
+        country_event = Easybuff.1
     }
     option = {
         name = Easybuff.20.f
@@ -320,7 +320,7 @@ country_event = {
                 amount = 8
             }
         }
-        country_event = Easybuff.20
+        country_event = Easybuff.1
     }
     option = {
         name = Easybuff.20.g
@@ -334,7 +334,7 @@ country_event = {
                 amount = 8
             }
         }
-        country_event = Easybuff.20
+        country_event = Easybuff.1
     }
     option = {
         name = Easybuff.20.j
@@ -348,7 +348,7 @@ country_event = {
                 amount = 8
             }
         }
-        country_event = Easybuff.20
+        country_event = Easybuff.1
     }
     option = {
         name = Easybuff.20.k
@@ -362,7 +362,7 @@ country_event = {
                 amount = 8
             }
         }
-        country_event = Easybuff.20
+        country_event = Easybuff.1
     }
     option = {
         name = Easybuff.20.h
@@ -376,7 +376,7 @@ country_event = {
                 amount = 8
             }
         }
-        country_event = Easybuff.20
+        country_event = Easybuff.1
     }
     option = {
         name = Easybuff.20.i
@@ -390,7 +390,7 @@ country_event = {
                 amount = 8
             }
         }
-        country_event = Easybuff.20
+        country_event = Easybuff.1
     }
     option = {
         name = Easybuffback
@@ -692,27 +692,27 @@ country_event = {
 
     option = {
         name = Easybuff.50.a
-        army_experience = 100
+        army_experience = 250
         country_event = Easybuff.1
     }
     option = {
         name = Easybuff.50.b
-        navy_experience = 100
+        navy_experience = 250
         country_event = Easybuff.1
     }
     option = {
         name = Easybuff.50.c
-        air_experience = 100
+        air_experience = 250
         country_event = Easybuff.1
     }
     option = {
         name = Easybuff.50.d
-        add_political_power = 300
+        add_political_power = 500
         country_event = Easybuff.1
     }
     option = {
         name = Easybuff.50.e
-        add_manpower = 500000
+        add_manpower = 700000
         country_event = Easybuff.1
     }
     option = {
@@ -889,6 +889,7 @@ country_event = {
             limit = {
                 AND = {
                     is_faction_leader = yes
+                    is_ai=yes
                 }
             }
             dismantle_faction = yes
@@ -1048,7 +1049,7 @@ country_event = {
             limit = {
                 has_war_with = ROOT
             }
-            PREV =  { white_peace = ROOT }
+            white_peace = ROOT
         } 
         country_event = Easybuff.1
     }
@@ -1417,6 +1418,15 @@ country_event = {
             limit = { has_idea = more_speed }
             remove_ideas = more_speed
             else = { add_ideas = more_speed }
+        }
+        country_event = Easybuff.1
+    }
+    option = {
+        name = Easybuff.80.f
+        if = {
+            limit = { has_idea = gen_mods }
+            remove_ideas = gen_mods
+            else = { add_ideas = gen_mods }
         }
         country_event = Easybuff.1
     }
