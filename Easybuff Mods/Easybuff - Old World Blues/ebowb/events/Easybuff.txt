@@ -626,27 +626,27 @@ country_event = {
 
 	option = {
 		name = Easybuff.50.a
-		army_experience = 100
+		army_experience = 250
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.50.b
-		navy_experience = 100
+		navy_experience = 250
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.50.c
-		air_experience = 100
+		air_experience = 250
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.50.d
-		add_political_power = 300
+		add_political_power = 500
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.50.e
-		add_manpower = 500000
+		add_manpower = 700000
 		country_event = Easybuff.1
 	}
 	option = {
@@ -833,6 +833,7 @@ country_event = {
 			limit = {
 				AND = {
 					is_faction_leader = yes
+					is_ai = yes
 				}
 			}
 			dismantle_faction = yes
@@ -1352,6 +1353,15 @@ country_event = {
 			limit = { has_idea = more_speed }
 			remove_ideas = more_speed
 			else = { add_ideas = more_speed }
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.80.f
+		if = {
+			limit = { has_idea = gen_mods }
+			remove_ideas = gen_mods
+			else = { add_ideas = gen_mods }
 		}
 		country_event = Easybuff.1
 	}
