@@ -1,5 +1,4 @@
 name="50 Construction Slots - Great War Cheaper Construction"
-path="mod/50cscctgw/"
 dependencies={
 	"Hearts of Iron IV: The Great War"
 }
@@ -10,5 +9,5 @@ tags={
 	"Gameplay"
 }
 picture="thumbnail.jpg"
-remote_file_id="959565013"
 version="1.8.*"
+remote_file_id="959565013"
