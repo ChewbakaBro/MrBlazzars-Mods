@@ -1,5 +1,4 @@
 name="50 Construction Slots - Equestria at War CC"
-path="mod/50cscceaw/"
 dependencies={
 	"Equestria at War"
 }
@@ -10,6 +9,6 @@ tags={
 	"Gameplay"
 }
 picture="thumbnail.jpg"
-remote_file_id="1408072379"
-supported_version="1.8.*"
 version="1"
+supported_version="1.8.*"
+remote_file_id="1408072379"
