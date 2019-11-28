@@ -1,5 +1,4 @@
 name="50 Construction Slots - KR Cheap Construction"
-path="mod/50cscckr/"
 dependencies={
 	"Kaiserreich"
 }
