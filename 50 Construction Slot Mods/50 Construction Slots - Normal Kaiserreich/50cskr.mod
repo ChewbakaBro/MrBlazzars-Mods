@@ -1,7 +1,7 @@
 name="50 Construction Slots - Kaiserreich"
-path="mod/50cskr/"
 dependencies={
 	"Kaiserreich"
+	"Kaiserreich Dev Build"
 }
 tags={
 	"Alternative History"
@@ -10,6 +10,7 @@ tags={
 	"Balance"
 }
 picture="thumbnail.jpg"
-remote_file_id="1155344770"
-supported_version="1.8.*"
 version="1"
+supported_version="1.8.*"
+path="mod/50cskr"
+remote_file_id="1155344770"
