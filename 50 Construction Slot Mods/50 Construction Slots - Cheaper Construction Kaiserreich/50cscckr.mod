@@ -1,7 +1,7 @@
 name="50 Construction Slots - KR Cheap Construction"
-path="mod/50cscckr/"
 dependencies={
 	"Kaiserreich"
+	"Kaiserreich Dev Build"
 }
 tags={
 	"Alternative History"
@@ -10,6 +10,7 @@ tags={
 	"Gameplay"
 }
 picture="thumbnail.jpg"
-remote_file_id="1155346311"
-supported_version="1.8.*"
 version="1"
+supported_version="1.8.*"
+path="mod/50cscckr"
+remote_file_id="1155346311"
