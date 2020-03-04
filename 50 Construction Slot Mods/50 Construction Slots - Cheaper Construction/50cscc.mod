@@ -1,5 +1,5 @@
-﻿name="50 Construction Slots - Cheaper Construction Costs"
-path="mod/50cscc/"
+version="1"
+name="50 Construction Slots - Cheaper Construction Costs"
 dependencies={
 	"The Road to 56"
 	"Apres Moi Le Deluge"
@@ -11,5 +11,6 @@ tags={
 	"Gameplay"
 }
 picture="thumbnail.jpg"
+supported_version="1.9.*"
+path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/50cscc"
 remote_file_id="902291461"
-supported_version="1.7.*"
