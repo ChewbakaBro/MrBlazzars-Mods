@@ -1,5 +1,4 @@
 name="++Easybuff - OWB"
-path="mod/ebowb/"
 dependencies={
 	"Old World Blues"
 	"Old World Blues - Dev"
@@ -9,5 +8,7 @@ tags={
 	"Gameplay"
 }
 picture="thumbnail.jpg"
-remote_file_id="1309267938"
 version="1.8.*"
+supported_version="1.9.1 beta"
+path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/ebowb"
+remote_file_id="1309267938"

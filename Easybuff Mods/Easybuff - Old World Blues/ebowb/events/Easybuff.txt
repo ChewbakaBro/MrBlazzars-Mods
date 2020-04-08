@@ -328,6 +328,60 @@ country_event = {
 		country_event = Easybuff.20
 	}
 	option = {
+		name = Easybuff.20.j
+		country_event = Easybuff.21
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuff.1
+	}
+}
+
+country_event = {
+	id = Easybuff.21
+	title = Easybuff.21.t
+	desc = Easybuff.21.desc
+	picture = GFX_report_event_german_inspect_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = Easybuff.21.a
+		add_to_variable = { caps_number_display = 250 }
+		country_event = Easybuff.20
+	}
+	option = {
+		name = Easybuff.21.b
+		add_to_variable = { caps_number_display = 500 }
+		country_event = Easybuff.20
+	}
+	option = {
+		name = Easybuff.21.c
+		add_to_variable = { caps_number_display = 1000 }
+		country_event = Easybuff.20
+	}
+	option = {
+		name = Easybuff.21.d
+		add_to_variable = { base_caps = 150 }
+		set_temp_variable = { caps_daily_diff_after = base_caps }
+		update_caps_income = yes
+		country_event = Easybuff.20
+	}
+	option = {
+		name = Easybuff.21.e
+		add_to_variable = { base_caps = 300 }
+		set_temp_variable = { caps_daily_diff_after = base_caps }
+		update_caps_income = yes
+		country_event = Easybuff.20
+	}
+	option = {
+		name = Easybuff.21.f
+		add_to_variable = { base_caps = 500 }
+		set_temp_variable = { caps_daily_diff_after = base_caps }
+		update_caps_income = yes
+		country_event = Easybuff.20
+	}
+	option = {
 		name = Easybuffback
 		country_event = Easybuff.1
 	}
@@ -697,7 +751,7 @@ country_event = {
 					is_faction_leader = yes
 				}
 			}
-			remove_from_faction = ROOT
+			leave_current_faction = yes
 		}
 		country_event = Easybuff.1
 	}
@@ -723,7 +777,7 @@ country_event = {
 						is_faction_leader = yes
 					}
 				}
-				remove_from_faction = PREV
+				leave_current_faction = yes
 			}
 		}
 		country_event = Easybuff.1
@@ -753,41 +807,17 @@ country_event = {
 
 	option = {
 		name = Easybuff.61.a
-		random_country = {
-			limit = {
-				AND = {
-					is_in_faction_with = CES
-					is_faction_leader = yes
-				}
-			}
-			ROOT = { join_caesars_legion = yes }
-		}
+		join_caesars_legion = yes
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.61.b
-		random_country = {
-			limit = {
-				AND = {
-					is_in_faction_with = NCR
-					is_faction_leader = yes
-				}
-			}
-			ROOT = { join_ncr = yes }
-		}
+		join_ncr = yes
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.61.c
-		random_country = {
-			limit = {
-				AND = {
-					is_in_faction_with = BOS
-					is_faction_leader = yes
-				}
-			}
-			ROOT = { join_brotherhood_of_steel = yes }
-		}
+		join_brotherhood_of_steel = yes
 		country_event = Easybuff.60
 	}
 	option = {
@@ -806,24 +836,22 @@ country_event = {
 
 	option = {
 		name = Easybuff.62.a
-		random_country = {
+		every_other_country = {
 			limit = {
-				AND = {
-					has_war_with = ROOT
-					is_faction_leader = yes
-				}
+				has_war_with = ROOT
+				is_in_faction = yes
 			}
-			dismantle_faction = yes
+			leave_current_faction = yes
 		}
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.62.b
-		every_country = {
+		every_other_country = {
 			limit = {
-				is_faction_leader = yes
+				is_in_faction = yes
 			}
-			dismantle_faction = yes
+			leave_current_faction = yes
 		}
 		country_event = Easybuff.60
 	}
@@ -831,12 +859,10 @@ country_event = {
 		name = Easybuff.62.c
 		random_country = {
 			limit = {
-				AND = {
-					is_faction_leader = yes
-					is_ai = yes
-				}
+				is_in_faction = yes
+				is_ai = yes
 			}
-			dismantle_faction = yes
+			leave_current_faction = yes
 		}
 		country_event = Easybuff.60
 	}
