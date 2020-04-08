@@ -9,5 +9,6 @@ tags={
 	"Utilities"
 }
 picture="thumbnail.jpg"
-version="1.8.*"
+version="1"
+supported_version="1.9.*"
 remote_file_id="932785784"
