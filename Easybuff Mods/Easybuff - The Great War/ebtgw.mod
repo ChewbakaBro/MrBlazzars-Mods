@@ -1,5 +1,4 @@
 name="++Easybuff - The Great War"
-path="mod/ebtgw/"
 dependencies={
 	"+Easybuff"
 	"Hearts of Iron IV: The Great War"
@@ -8,5 +7,7 @@ tags={
 	"Gameplay"
 }
 picture="thumbnail.jpg"
+version="1.9.*"
+supported_version="1.9.1"
+path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/ebtgw"
 remote_file_id="1162999250"
-version="1.8.*"
