@@ -1,5 +1,4 @@
 name="50 Construction Slots - Equestria at War CC"
-path="mod/50cscceaw/"
 dependencies={
 	"Equestria at War"
 }
@@ -10,6 +9,7 @@ tags={
 	"Gameplay"
 }
 picture="thumbnail.jpg"
-remote_file_id="1408072379"
-supported_version="1.8.*"
 version="1"
+supported_version="1.9.*"
+path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/50cscceaw"
+remote_file_id="1408072379"
