@@ -91,7 +91,7 @@ country_event = {
 				type = anti_air_building
 				level = 1
 				instant_build = yes
-			}    
+			}
 		}
 		country_event = Easybuff.1
 	}
@@ -122,24 +122,36 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = { is_ai = no }
 		name = Easybuff.10.e
-		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = { type = industrial_complex level = 3 }
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = { is_ai = no }
 		name = Easybuff.10.f
-		add_offsite_building = { type = arms_factory level = 2 }
+		add_offsite_building = { type = arms_factory level = 3 }
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = { is_ai = no }
 		name = Easybuff.10.g
 		every_state = {
 			limit = { is_controlled_by = ROOT }
 			add_extra_state_shared_building_slots = 2
 		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.10.h
+		add_offsite_building = { type = dockyard level = 3 }
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.10.i
+		add_offsite_building = { type = rocket_site level = 1 }
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.10.j
+		add_offsite_building = { type = nuclear_reactor level = 1 }
 		country_event = Easybuff.1
 	}
 	option = {
@@ -192,7 +204,10 @@ country_event = {
 		trigger = { is_ai = no }
 		name = Easybuff.20.b
 		random_state = {
-			limit = { is_controlled_by = ROOT }
+			limit = {
+				is_controlled_by = ROOT
+				is_capital = yes
+			}
 			add_resource = {
 				type = rubber
 				amount = 8
@@ -252,6 +267,90 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
+		name = Easybuff.20.d
+		random_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_capital = yes
+			}
+			add_resource = {
+				type = steel
+				amount = 8
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.20.e
+		random_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_capital = yes
+			}
+			add_resource = {
+				type = tungsten
+				amount = 8
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.20.f
+		random_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_capital = yes
+			}
+			add_resource = {
+				type = aluminium
+				amount = 8
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.20.g
+		random_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_capital = yes
+			}
+			add_resource = {
+				type = chromium
+				amount = 8
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.20.h
+		random_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_capital = yes
+			}
+			add_resource = {
+				type = rubber
+				amount = 8
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.20.i
+		random_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_capital = yes
+			}
+			add_resource = {
+				type = oil
+				amount = 8
+			}
+		}
+		country_event = Easybuff.1
+	}
+	option = {
 		name = Easybuffback
 		country_event = Easybuff.1
 	}
@@ -305,7 +404,7 @@ country_event = {
 		set_technology = { bicycle_infantry = 0 }
 		country_event = Easybuff.30
 	}
-  
+
 	option = {
 		name = Easybuffback
 		country_event = Easybuff.30
@@ -386,7 +485,7 @@ country_event = {
 		name = Easybuff.33.b
 		country_event = Easybuff.30
 	}
-  
+
 	option = {
 		name = Easybuffback
 		country_event = Easybuff.30
@@ -411,7 +510,7 @@ country_event = {
 		name = Easybuff.40.b
 		country_event = Easybuff.42
 	}
-  
+
 	option = {
 		name = Easybuffback
 		country_event = Easybuff.1
@@ -425,7 +524,7 @@ country_event = {
 	desc = Easybuff.41.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	
+
 	option = {
 		trigger = { is_ai = no }
 		name = Easybuff.41.a
@@ -480,7 +579,7 @@ country_event = {
 		}
 		country_event = Easybuff.40
 	}
-	
+
 	option = {
 		trigger = { is_ai = no }
 		name = Easybuff.41.g
@@ -503,7 +602,7 @@ country_event = {
 	desc = Easybuff.42.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	
+
 	option = {
 		trigger = { is_ai = no }
 		name = Easybuff.42.a
@@ -566,30 +665,30 @@ country_event = {
 	option = {
 		trigger = { is_ai = no }
 		name = Easybuff.50.a
-		army_experience = 100
+		army_experience = 250
 		country_event = Easybuff.1
 	}
 	option = {
 		trigger = { is_ai = no }
 		name = Easybuff.50.b
-		navy_experience = 100
+		navy_experience = 250
 		country_event = Easybuff.1
 	}
 	option = {
 		trigger = { is_ai = no }
 		name = Easybuff.50.c
-		air_experience = 100
+		air_experience = 250
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.50.d
-		add_political_power = 300
+		add_political_power = 500
 		country_event = Easybuff.1
 	}
 	option = {
 		trigger = { is_ai = no }
 		name = Easybuff.50.e
-		add_manpower = 500000
+		add_manpower = 700000
 		country_event = Easybuff.1
 	}
 	option = {
@@ -660,8 +759,8 @@ country_event = {
 		trigger = { is_ai = no }
 		name = Easybuff.60.c
 		every_country = {
-			limit = { 
-				AND = { 
+			limit = {
+				AND = {
 					has_war_with = ROOT
 					is_in_faction = yes
 					is_faction_leader = no
@@ -689,7 +788,7 @@ country_event = {
 		name = Easybuff.60.e
 		country_event = Easybuff.63
 	}
-  
+
 	option = {
 		name = Easybuffback
 		country_event = Easybuff.1
@@ -830,6 +929,7 @@ country_event = {
 			limit = {
 				AND = {
 					is_faction_leader = yes
+					is_ai = yes
 				}
 			}
 			dismantle_faction = yes
@@ -857,7 +957,7 @@ country_event = {
 			ruling_party = conservative
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 100
 				}
 				Liberal_Conservatism = {
@@ -922,7 +1022,7 @@ country_event = {
 			ruling_party = Liberal_Conservatism
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -987,7 +1087,7 @@ country_event = {
 			ruling_party = Christian_Democratic
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -1052,7 +1152,7 @@ country_event = {
 			ruling_party = Social_Democratic
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -1117,7 +1217,7 @@ country_event = {
 			ruling_party = Social_Liberalism
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -1182,7 +1282,7 @@ country_event = {
 			ruling_party = democratic
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -1247,7 +1347,7 @@ country_event = {
 			ruling_party = centrist
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -1312,7 +1412,7 @@ country_event = {
 			ruling_party = liberal
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -1395,7 +1495,7 @@ country_event = {
 			ruling_party = communism
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -1460,7 +1560,7 @@ country_event = {
 			ruling_party = trotskyism
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -1525,7 +1625,7 @@ country_event = {
 			ruling_party = maoism
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -1590,7 +1690,7 @@ country_event = {
 			ruling_party = fascism
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -1655,7 +1755,7 @@ country_event = {
 			ruling_party = nationalism
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -1720,7 +1820,7 @@ country_event = {
 			ruling_party = monarchism
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -1785,7 +1885,7 @@ country_event = {
 			ruling_party = neutrality
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -1868,7 +1968,7 @@ country_event = {
 			ruling_party = islamism
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -1933,7 +2033,7 @@ country_event = {
 			ruling_party = radical_shiaism
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -1998,7 +2098,7 @@ country_event = {
 			ruling_party = Salafism
 			elections_allowed = no
 			parties = {
-				conservative = { 
+				conservative = {
 					popularity = 0
 				}
 				Liberal_Conservatism = {
@@ -2151,7 +2251,7 @@ country_event = {
 				has_war_with = ROOT
 			}
 			PREV =  { white_peace = ROOT }
-		} 
+		}
 		country_event = Easybuff.1
 	}
 	option = {
@@ -2325,8 +2425,8 @@ country_event = {
 		random_state = {
 			limit = {
 				AND = {
-					any_neighbor_state = { 
-						is_owned_by = ROOT 
+					any_neighbor_state = {
+						is_owned_by = ROOT
 						ROOT = {
 							divisions_in_state = {
 								state = PREV
@@ -2334,7 +2434,7 @@ country_event = {
 							}
 						}
 					}
-					
+
 					NOT = { is_controlled_by = ROOT }
 				}
 			}
@@ -2418,7 +2518,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = { 
+		hidden_effect = {
 			random_owned_state = {
 				limit = {
 					AND = {
@@ -2431,7 +2531,7 @@ country_event = {
 						}
 					}
 				}
-				save_event_target_as = cap_state          
+				save_event_target_as = cap_state
 			}
 			random_owned_state = {
 				limit = {
@@ -2445,10 +2545,10 @@ country_event = {
 						}
 					}
 				}
-				save_event_target_as = cap_states         
+				save_event_target_as = cap_states
 			}
 			random_owned_state = {
-				save_event_target_as = cap_statess         
+				save_event_target_as = cap_statess
 			}
 		}
 	}
@@ -2522,6 +2622,24 @@ country_event = {
 			limit = { has_idea = safety_eqs }
 			remove_ideas = safety_eqs
 			else = { add_ideas = safety_eqs }
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.80.e
+		if = {
+			limit = { has_idea = more_speed }
+			remove_ideas = more_speed
+			else = { add_ideas = more_speed }
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.80.f
+		if = {
+			limit = { has_idea = gen_mods }
+			remove_ideas = gen_mods
+			else = { add_ideas = gen_mods }
 		}
 		country_event = Easybuff.1
 	}
