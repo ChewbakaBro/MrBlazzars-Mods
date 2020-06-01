@@ -1,5 +1,4 @@
 ﻿name="++Easybuff - End of a new Beginning"
-path="mod/ebeb/"
 dependencies={
 	"+Easybuff"
 	"End of a New Beginning [Official]"

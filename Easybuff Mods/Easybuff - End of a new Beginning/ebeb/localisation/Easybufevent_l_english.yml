@@ -1,49 +1,4 @@
 ﻿l_english:
- zcheat_idea:0 "zCheat Ideas"
-
- easybuff_decision:0 "Easy Buff"
- easy_buff_dec:0 "Open Cheat Menu"
- cheat_open_easybuff:0 "Open Cheat Menu"
- Easybuffclose:0 "Close"
- Easybuffback:0 "Back"
- 
- cheat_construction:0 "Construction Cheats"
- cheat_technology:0 "Technology Cheats"
- cheat_politics:0 "Politics Cheats"
- cheat_equipment:0 "Equipment Cheats"
- cheat_land:0 "Land Army Cheats"
- cheat_navyair:0 "Navy & Air Cheats"
-
- cheat_construction_lv1:0 "Lv1 Construction"
- cheat_construction_lv2:0 "Lv2 Construction"
- cheat_construction_lv3:0 "Lv3 Construction"
- cheat_construction_insane:0 "Insane Construction"
-
- cheat_technology_lv1:0 "Lv1 Tech" 
- cheat_technology_lv2:0 "Lv2 Tech" 
- cheat_technology_lv3:0 "Lv3 Tech" 
- cheat_technology_insane:0 "Insane Tech" 
-
- cheat_politics_lv1:0 "Lv1 Politics" 
- cheat_politics_lv2:0 "Lv2 Politics" 
- cheat_politics_lv3:0 "Lv3 Politics" 
- cheat_politics_insane:0 "Insane Politics" 
-
- cheat_equipment_lv1:0 "Lv1 Equipment" 
- cheat_equipment_lv2:0 "Lv2 Equipment" 
- cheat_equipment_lv3:0 "Lv3 Equipment" 
- cheat_equipment_insane:0 "Insane Equipment" 
-
- cheat_land_lv1:0 "Lv1 Land" 
- cheat_land_lv2:0 "Lv2 Land" 
- cheat_land_lv3:0 "Lv3 Land" 
- cheat_land_insane:0 "Insane Land"
-
- cheat_navyair_lv1:0 "Lv1 NavyAir" 
- cheat_navyair_lv2:0 "Lv2 NavyAir" 
- cheat_navyair_lv3:0 "Lv3 NavyAir" 
- cheat_navyair_insane:0 "Insane NavyAir" 
-
 # Event Menu
  Easybuff.1:0 "Open Cheat Menu"
  Easybuff.1.t:0 "Cheat Menu"
@@ -68,13 +23,22 @@
  Easybuff.10.e:0 "Industrial Complex"
  Easybuff.10.f:0 "Army Factory"
  Easybuff.10.g:0 "Building Slot"
+ Easybuff.10.h:0 "Dockyard"
+ Easybuff.10.i:0 "Rocket Site"
+ Easybuff.10.j:0 "Nuclear Reactor"
 
  Easybuff.20:0 "Resources"
  Easybuff.20.t:0 "Resources"
  Easybuff.20.desc:0 "Add 8 resources to All states or only a random state?"
  Easybuff.20.a:0 "Every Controlled State"
- Easybuff.20.b:0 "Random State"
+ Easybuff.20.b:0 "In Capital"
  Easybuff.20.c:0 "Every Owned State"
+ Easybuff.20.d:0 "Steel"
+ Easybuff.20.e:0 "Tungsten"
+ Easybuff.20.f:0 "Aluminium"
+ Easybuff.20.g:0 "Chromium"
+ Easybuff.20.h:0 "Rubber"
+ Easybuff.20.i:0 "Oil"
 
  Easybuff.30:0 "Technologies"
  Easybuff.30.t:0 "Technologies"
@@ -228,6 +192,8 @@
  Easybuff.80.b:0 "More Max Organization"
  Easybuff.80.c:0 "More Special Forces"
  Easybuff.80.d:0 "Safety Equipments"
+ Easybuff.80.e:0 "Troops move faster"
+ Easybuff.80.f:0 "General Static Buffs"
 
  Easybuff.90:0 "Enhance Army Leader"
  Easybuff.90.t:0 "Enhance Army Leader"
@@ -235,13 +201,3 @@
  Easybuff.90.a:0 "Faster"
  Easybuff.90.b:0 "All Abilities"
  Easybuff.90.c:0 "Control More Troops"
-
-# Leader Traits
- ctrl_more_troops:0 "Control More Troops"
- lt_all_ability:0 "Learn All Abilities"
-
-# Static Modifiers
- de_combat_width:0 "Decrease Combat Width"
- more_org:0 "Max Organization"
- more_special:0 "More Special Forces"
- safety_eqs:0 "Safety Equipments"
