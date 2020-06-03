@@ -1,0 +1,176 @@
+buildings = {
+
+	# show_on_map:
+	#	if provincial = yes, then show_on_map = X is amount per each province
+	#	if provincial = no, then show_on_map = X is amount per state
+
+
+#####INFRASTRUCTURE#####
+	infrastructure = {
+		base_cost = 4000
+		per_level_extra_cost = 250
+		icon_frame = 2
+		infrastructure = yes
+		max_level = 10
+		damage_factor = 0.7
+		value = 3
+	}
+	state_infrastructure = {
+		base_cost = 3000
+		per_level_extra_cost = 500
+		icon_frame = 3
+		infrastructure = yes
+		max_level = 8
+		damage_factor = 0.7
+		value = 5
+	}
+#####SHARED INDUSTRY
+	arms_factory = {
+		show_on_map = 6
+		base_cost = 15000
+		base_cost_conversion = 4000
+		military_production = 1
+		icon_frame = 9
+		max_level = 40
+		shares_slots = yes
+		value = 8
+		infrastructure_construction_effect = yes
+	}
+	industrial_complex = {
+		show_on_map = 6
+		base_cost = 15000
+		base_cost_conversion = 7500
+		general_production = 1
+		icon_frame = 8
+		max_level = 60
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+	}
+	dockyard = {
+		show_on_map = 1
+		show_on_map_meshes = 3
+		base_cost = 12500
+		only_costal = yes
+		naval_production = 1
+		icon_frame = 10
+		max_level = 50
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+	}
+	office_park = {
+		show_on_map = 0
+		base_cost = 17500
+		icon_frame = 23
+		max_level = 50
+		shares_slots = yes
+		damage_factor = 2
+		value = 5
+		infrastructure_construction_effect = yes
+	}
+#####AGRI-INDUSTRIAL#####
+	
+	water_infrastructure = {
+		base_cost = 5000
+		per_level_extra_cost = 1000
+		icon_frame = 1
+		infrastructure = yes
+		max_level = 12 # This is the max unlock level
+		value = 2
+		shares_slots = no
+		infrastructure_construction_effect = yes
+	}
+	agri_industrial_complex = {
+		base_cost = 5000
+		icon_frame = 24
+		infrastructure = yes
+		max_level = 50 # This is the max unlock level
+		local_resources_rubber = 1
+		refinery = yes
+		damage_factor = 0.2
+		value = 5
+		shares_slots = yes
+		infrastructure_construction_effect = yes
+	}
+#####ENERGY#####
+	fossil_fuel_powerplant = {
+		show_on_map = 0
+		base_cost = 6000
+		icon_frame = 5
+		local_resources_electricity = 5
+		refinery = yes
+		max_level = 5 # This is the max unlock level
+		shares_slots = yes
+		damage_factor = 2
+		value = 6
+		infrastructure_construction_effect = yes
+	}
+	renewable_powerplant = {
+		show_on_map = 0
+		base_cost = 9000
+		icon_frame = 4
+		local_resources_electricity = 5
+		refinery = yes
+		max_level = 5 # This is the max unlock level
+		shares_slots = yes
+		damage_factor = 0.4
+		value = 20
+		infrastructure_construction_effect = yes
+	}
+	nuclear_powerplant = {
+		show_on_map = 0
+		base_cost = 23000
+		icon_frame = 6
+		local_resources_electricity = 10
+		refinery = yes
+		max_level = 1 # This is the max unlock level
+		shares_slots = yes
+		damage_factor = 2
+		value = 6
+		infrastructure_construction_effect = yes
+	}
+##### RESOURCES #####
+	synthetic_refinery = {
+		show_on_map = 1
+		base_cost = 10000
+		icon_frame = 16
+		local_resources_oil = 2
+		refinery = yes
+		max_level = 6 # This is the max unlock level
+		shares_slots = yes
+		value = 3
+		infrastructure_construction_effect = yes
+		fuel_silo = yes
+		
+		show_modifier = yes
+		fuel_gain_from_states = 12.0 #per hour
+		max_fuel_building = 25.0 #k
+	}
+
+	steel_factory = {
+		show_on_map = 0
+		base_cost = 7500
+		icon_frame = 17
+		local_resources_steel = 3
+		local_resources_aluminium = 1
+		refinery = yes
+		max_level = 4
+		shares_slots = yes
+		value = 3
+		infrastructure_construction_effect = yes
+	}
+	
+	tungsten_factory = {
+		show_on_map = 0
+		base_cost = 7500
+		icon_frame = 18
+		local_resources_tungsten = 2
+		local_resources_steel = -1
+		refinery = yes
+		max_level = 2
+		shares_slots = yes
+		value = 3
+		infrastructure_construction_effect = yes
+	}
+}
