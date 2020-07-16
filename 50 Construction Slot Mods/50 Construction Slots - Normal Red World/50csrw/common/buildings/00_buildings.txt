@@ -143,19 +143,37 @@ buildings = {
 
 	synthetic_refinery = {
 		show_on_map = 1
-		base_cost = 1800
+		base_cost = 14500
 		icon_frame = 10
-		local_resources_oil = 3 # May use local_resources_ + any resource name
+		#local_resources_oil = 1 # May use local_resources_ + any resource name
+		local_resources_rubber = 1 # May use local_resources_ + any resource name
 		refinery = yes
-		max_level = 4 # This is the max unlock level
+		max_level = 3 # This is the max unlock level
 		shares_slots = yes
-		value = 3
+		value = 5
+		
+		show_modifier = yes
+		fuel_gain_from_states = 2.0 #per hour
+	}
+    
+    fuel_silo = {
+		show_on_map = 1
+		base_cost = 5000
+		icon_frame = 14
+		#max_level = 1
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+		fuel_silo = yes
+		
+		show_modifier = yes
+		max_fuel_building = 100.0 #k
 	}
 	
 	steel_factory = {
-		show_on_map = 1
+		show_on_map = 0
 		base_cost = 1800
-		icon_frame = 14
+		icon_frame = 15
 		local_resources_steel = 3 # May use local_resources_ + any resource name
 		refinery = yes
 		max_level = 4 # This is the max unlock level
@@ -164,9 +182,9 @@ buildings = {
 	}
 	
 	rubber_factory = {
-		show_on_map = 1
+		show_on_map = 0
 		base_cost = 1800
-		icon_frame = 15
+		icon_frame = 16
 		local_resources_rubber = 3 # May use local_resources_ + any resource name
 		refinery = yes
 		max_level = 4 # This is the max unlock level
@@ -175,9 +193,9 @@ buildings = {
 	}
 	
 	aluminium_factory = {
-		show_on_map = 1
+		show_on_map = 0
 		base_cost = 1800
-		icon_frame = 16
+		icon_frame = 17
 		local_resources_aluminium = 3 # May use local_resources_ + any resource name
 		refinery = yes
 		max_level = 4 # This is the max unlock level
@@ -186,9 +204,9 @@ buildings = {
 	}
 	
 	tungsten_factory = {
-		show_on_map = 1
+		show_on_map = 0
 		base_cost = 1800
-		icon_frame = 17
+		icon_frame = 18
 		local_resources_tungsten = 3 # May use local_resources_ + any resource name
 		refinery = yes
 		max_level = 4 # This is the max unlock level
@@ -197,9 +215,9 @@ buildings = {
 	}
 	
 	chromium_factory = {
-		show_on_map = 1
+		show_on_map = 0
 		base_cost = 1800
-		icon_frame = 18
+		icon_frame = 19
 		local_resources_chromium = 3 # May use local_resources_ + any resource name
 		refinery = yes
 		max_level = 4 # This is the max unlock level
@@ -208,9 +226,9 @@ buildings = {
 	}
 	
 	hospital = {
-		show_on_map = 1
+		show_on_map = 0
 		base_cost = 3000
-		icon_frame = 19
+		icon_frame = 20
 		conscription = 0.0005
 		max_level = 1
 		shares_slots = yes
@@ -218,11 +236,11 @@ buildings = {
 	}
 	
 	research_center = {
-		show_on_map = 1
+		show_on_map = 0
 		base_cost = 25000
-		icon_frame = 20
+		icon_frame = 21
 		nuclear_production_factor = 0.3
-		research_time_factor = -0.01
+		research_speed_factor = -0.01
 		max_level = 1
 		shares_slots = yes
 		value = 9
