@@ -11,65 +11,38 @@ country_event = {
 		}
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.1.a
 		country_event = Easybuff.10
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.1.b
 		country_event = Easybuff.20
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.1.c
 		country_event = Easybuff.30
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.1.d
 		country_event = Easybuff.40
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.1.e
 		country_event = Easybuff.50
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.1.f
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.1.g
 		country_event = Easybuff.70
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.1.h
 		country_event = Easybuff.80
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.1.i
 		country_event = Easybuff.90
 	}
@@ -86,9 +59,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.10.a
 		every_state = {
 			limit = {
@@ -103,9 +73,6 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.10.b
 		every_state = {
 			limit = {
@@ -120,9 +87,6 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.10.c
 		every_state = {
 			limit = {
@@ -137,9 +101,6 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.10.d
 		every_state = {
 			limit = {
@@ -217,9 +178,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.20.a
 		every_state = {
 			limit = {
@@ -253,9 +211,6 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.20.b
 		random_state = {
 			limit = {
@@ -290,9 +245,6 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.20.c
 		every_owned_state = {
 			add_resource = {
@@ -420,23 +372,14 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.30.a
 		country_event = Easybuff.31
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.30.b
 		country_event = Easybuff.32
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.30.c
 		country_event = Easybuff.33
 	}
@@ -454,9 +397,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.31.a
 		set_technology = {
 			bicycle_infantry = 1
@@ -464,9 +404,6 @@ country_event = {
 		country_event = Easybuff.30
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.31.b
 		set_technology = {
 			bicycle_infantry = 0
@@ -487,9 +424,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.32.a
 		set_technology = {
 			cv_fighter3 = 1
@@ -512,9 +446,6 @@ country_event = {
 		country_event = Easybuff.30
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.32.b
 		set_technology = {
 			main_battle_tank = 1
@@ -537,9 +468,6 @@ country_event = {
 		country_event = Easybuff.30
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.32.c
 		set_technology = {
 			mechanised_infantry3 = 1
@@ -562,9 +490,6 @@ country_event = {
 		country_event = Easybuff.30
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.32.d
 		set_technology = {
 			torpedo_cruiser = 1
@@ -600,16 +525,10 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.33.a
 		country_event = Easybuff.30
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.33.b
 		country_event = Easybuff.30
 	}
@@ -627,16 +546,10 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.40.a
 		country_event = Easybuff.41
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.40.b
 		country_event = Easybuff.42
 	}
@@ -654,9 +567,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.41.a
 		add_equipment_to_stockpile = {
 			type = infantry_equipment_0
@@ -665,9 +575,6 @@ country_event = {
 		country_event = Easybuff.40
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.41.b
 		add_equipment_to_stockpile = {
 			type = support_equipment_1
@@ -676,9 +583,6 @@ country_event = {
 		country_event = Easybuff.40
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.41.c
 		add_equipment_to_stockpile = {
 			type = artillery_equipment_1
@@ -687,9 +591,6 @@ country_event = {
 		country_event = Easybuff.40
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.41.d
 		add_equipment_to_stockpile = {
 			type = motorized_equipment_1
@@ -698,9 +599,6 @@ country_event = {
 		country_event = Easybuff.40
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.41.e
 		add_equipment_to_stockpile = {
 			type = mechanized_equipment_1
@@ -709,9 +607,6 @@ country_event = {
 		country_event = Easybuff.40
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.41.f
 		add_equipment_to_stockpile = {
 			type = motorized_rocket_equipment_1
@@ -720,9 +615,6 @@ country_event = {
 		country_event = Easybuff.40
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.41.g
 		add_equipment_to_stockpile = {
 			type = modern_tank_artillery_equipment_1
@@ -744,9 +636,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.42.a
 		add_equipment_to_stockpile = {
 			type = strat_bomber_equipment_1
@@ -755,9 +644,6 @@ country_event = {
 		country_event = Easybuff.40
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.42.b
 		add_equipment_to_stockpile = {
 			type = jet_strat_bomber_equipment_1
@@ -766,9 +652,6 @@ country_event = {
 		country_event = Easybuff.40
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.42.c
 		add_equipment_to_stockpile = {
 			type = transport_plane_equipment_1
@@ -777,9 +660,6 @@ country_event = {
 		country_event = Easybuff.40
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.42.d
 		add_equipment_to_stockpile = {
 			type = jet_fighter_equipment_2
@@ -788,9 +668,6 @@ country_event = {
 		country_event = Easybuff.40
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.42.e
 		add_equipment_to_stockpile = {
 			type = cv_CAS_equipment_3
@@ -812,25 +689,16 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.50.a
 		army_experience = 250
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.50.b
 		navy_experience = 250
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.50.c
 		air_experience = 250
 		country_event = Easybuff.1
@@ -841,41 +709,26 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.50.e
 		add_manpower = 700000
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.50.f
 		add_command_power = 100
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.50.g
 		add_stability = 0.1
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.50.h
 		add_war_support = 0.1
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.50.i
 		add_named_threat = {
 			threat = 25
@@ -883,9 +736,6 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.50.j
 		add_named_threat = {
 			threat = -25
@@ -906,9 +756,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.60.a
 		random_country = {
 			limit = {
@@ -922,16 +769,10 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.60.b
 		country_event = Easybuff.61
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.60.c
 		every_country = {
 			limit = {
@@ -954,16 +795,10 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.60.d
 		country_event = Easybuff.62
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.60.e
 		country_event = Easybuff.63
 	}
@@ -1074,9 +909,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.62.a
 		random_country = {
 			limit = {
@@ -1090,9 +922,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.62.b
 		every_country = {
 			limit = {
@@ -1103,9 +932,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.62.c
 		random_country = {
 			limit = {
@@ -1132,9 +958,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.a
 		set_politics = {
 			ruling_party = conservative
@@ -1163,9 +986,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.b
 		set_politics = {
 			ruling_party = Liberal_Conservatism
@@ -1194,9 +1014,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.c
 		set_politics = {
 			ruling_party = Christian_Democratic
@@ -1225,9 +1042,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.e
 		set_politics = {
 			ruling_party = Social_Democratic
@@ -1256,9 +1070,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.f
 		set_politics = {
 			ruling_party = Social_Liberalism
@@ -1287,9 +1098,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.g
 		set_politics = {
 			ruling_party = democratic
@@ -1318,9 +1126,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.h
 		set_politics = {
 			ruling_party = centrist
@@ -1349,9 +1154,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.i
 		set_politics = {
 			ruling_party = liberal
@@ -1380,9 +1182,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.j
 		country_event = Easybuff.64
 	}
@@ -1399,9 +1198,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.k
 		set_politics = {
 			ruling_party = communism
@@ -1430,9 +1226,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.l
 		set_politics = {
 			ruling_party = trotskyism
@@ -1461,9 +1254,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.m
 		set_politics = {
 			ruling_party = maoism
@@ -1492,9 +1282,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.o
 		set_politics = {
 			ruling_party = fascism
@@ -1523,9 +1310,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.p
 		set_politics = {
 			ruling_party = nationalism
@@ -1554,9 +1338,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.q
 		set_politics = {
 			ruling_party = monarchism
@@ -1585,9 +1366,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.r
 		set_politics = {
 			ruling_party = neutrality
@@ -1616,9 +1394,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.j
 		country_event = Easybuff.65
 	}
@@ -1635,9 +1410,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.s
 		set_politics = {
 			ruling_party = islamism
@@ -1666,9 +1438,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.t
 		set_politics = {
 			ruling_party = radical_shiaism
@@ -1697,9 +1466,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.v
 		set_politics = {
 			ruling_party = Salafism
@@ -1728,9 +1494,6 @@ country_event = {
 		country_event = Easybuff.60
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.63.j
 		country_event = Easybuff.63
 	}
@@ -1759,9 +1522,6 @@ country_event = {
 		}
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.70.a
 		every_state = {
 			limit = {
@@ -1782,16 +1542,10 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.70.b
 		country_event = Easybuff.71
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.70.c
 		every_state = {
 			limit = {
@@ -1807,37 +1561,22 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.70.d
 		country_event = Easybuff.72
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.70.e
 		country_event = Easybuff.73
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.70.f
 		country_event = Easybuff.74
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.70.g
 		country_event = Easybuff.75
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.70.h
 		every_country = {
 			limit = {
@@ -1863,9 +1602,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.71.a
 		random_state = {
 			limit = {
@@ -1885,9 +1621,6 @@ country_event = {
 		country_event = Easybuff.70
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.71.b
 		every_state = {
 			limit = {
@@ -1903,9 +1636,6 @@ country_event = {
 		country_event = Easybuff.70
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.71.c
 		every_state = {
 			limit = {
@@ -1949,9 +1679,6 @@ country_event = {
 		}
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.72.a
 		random_state = {
 			limit = {
@@ -1969,9 +1696,6 @@ country_event = {
 		country_event = Easybuff.70
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.72.b
 		every_state = {
 			limit = {
@@ -2002,9 +1726,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.73.a
 		random_state = {
 			limit = {
@@ -2029,9 +1750,6 @@ country_event = {
 		country_event = Easybuff.70
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.73.b
 		random_state = {
 			limit = {
@@ -2053,9 +1771,6 @@ country_event = {
 		country_event = Easybuff.70
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.73.c
 		random_state = {
 			limit = {
@@ -2094,9 +1809,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.74.a
 		random_country = {
 			limit = {
@@ -2114,9 +1826,6 @@ country_event = {
 		country_event = Easybuff.70
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.74.b
 		random_country = {
 			limit = {
@@ -2134,9 +1843,6 @@ country_event = {
 		country_event = Easybuff.70
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.74.c
 		random_country = {
 			limit = {
@@ -2202,25 +1908,16 @@ country_event = {
 		}
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.75.a
 		set_capital = event_target:cap_state
 		country_event = Easybuff.70
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.75.b
 		set_capital = event_target:cap_states
 		country_event = Easybuff.70
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.75.c
 		set_capital = event_target:cap_statess
 		country_event = Easybuff.70
@@ -2239,9 +1936,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.80.a
 		if = {
 			limit = {
@@ -2255,9 +1949,6 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.80.b
 		if = {
 			limit = {
@@ -2271,9 +1962,6 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.80.c
 		if = {
 			limit = {
@@ -2287,9 +1975,6 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.80.d
 		if = {
 			limit = {
@@ -2342,9 +2027,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.90.a
 		every_army_leader = {
 			add_unit_leader_trait = expert_improviser
@@ -2352,9 +2034,6 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.90.b
 		every_army_leader = {
 			add_unit_leader_trait = lt_all_ability
@@ -2362,9 +2041,6 @@ country_event = {
 		country_event = Easybuff.1
 	}
 	option = {
-		trigger = {
-			is_ai = no
-		}
 		name = Easybuff.90.c
 		every_army_leader = {
 			add_unit_leader_trait = ctrl_more_troops
@@ -2374,5 +2050,483 @@ country_event = {
 	option = {
 		name = Easybuffback
 		country_event = Easybuff.1
+	}
+}
+add_namespace = Easybuffideas
+country_event = {
+	id = Easybuffideas.1
+	title = Easybuffideas.1.t
+	desc = Easybuffideas.1.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+	option = {
+		name = Easybuffideas.1.a
+		country_event = Easybuffideas.10
+	}
+	option = {
+		name = Easybuffideas.1.b
+		country_event = Easybuffideas.20
+	}
+	option = {
+		name = Easybuffideas.1.c
+		country_event = Easybuffideas.30
+	}
+	option = {
+		name = Easybuffideas.1.d
+		country_event = Easybuffideas.40
+	}
+	option = {
+		name = Easybuffideas.1.e
+		country_event = Easybuffideas.50
+	}
+	option = {
+		name = Easybuffideas.1.f
+		country_event = Easybuffideas.60
+	}
+	option = {
+		name = Easybuffideas.1.g
+		country_event = Easybuffideas.70
+	}
+	option = {
+		name = Easybuffideas.1.h
+		country_event = Easybuffideas.80
+	}
+	option = {
+		name = Easybuffideas.1.i
+		country_event = Easybuffideas.90
+	}
+	option = {
+		name = Easybuffclose
+	}
+}
+
+#Construction Ideas
+country_event = {
+	id = Easybuffideas.10
+	title = Easybuffideas.10.t
+	desc = Easybuffideas.10.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+	option = {
+		name = Easybuffideas.10.a
+		easybuff_construction_ideas_removal = yes
+		add_ideas = cheat_construction_lv1
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.10.b
+		easybuff_construction_ideas_removal = yes
+		add_ideas = cheat_construction_lv2
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.10.c
+		easybuff_construction_ideas_removal = yes
+		add_ideas = cheat_construction_lv3
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.10.d
+		easybuff_construction_ideas_removal = yes
+		add_ideas = cheat_construction_lv4
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.10.e
+		easybuff_construction_ideas_removal = yes
+		add_ideas = cheat_construction_insane
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.10.f
+		easybuff_construction_ideas_removal = yes
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuffideas.10
+	}
+}
+
+#Technology Ideas
+country_event = {
+	id = Easybuffideas.20
+	title = Easybuffideas.20.t
+	desc = Easybuffideas.20.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+	option = {
+		name = Easybuffideas.20.a
+		easybuff_technology_ideas_removal = yes
+		add_ideas = cheat_technology_lv1
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.20.b
+		easybuff_technology_ideas_removal = yes
+		add_ideas = cheat_technology_lv2
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.20.c
+		easybuff_technology_ideas_removal = yes
+		add_ideas = cheat_technology_lv3
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.20.d
+		easybuff_technology_ideas_removal = yes
+		add_ideas = cheat_technology_lv4
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.20.e
+		easybuff_technology_ideas_removal = yes
+		add_ideas = cheat_technology_insane
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.20.f
+		easybuff_construction_ideas_removal = yes
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuffideas.20
+	}
+}
+
+#Politics Ideas
+country_event = {
+	id = Easybuffideas.30
+	title = Easybuffideas.30.t
+	desc = Easybuffideas.30.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+	option = {
+		name = Easybuffideas.30.a
+		easybuff_politics_ideas_removal = yes
+		add_ideas = cheat_politics_lv1
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.30.b
+		easybuff_politics_ideas_removal = yes
+		add_ideas = cheat_politics_lv2
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.30.c
+		easybuff_politics_ideas_removal = yes
+		add_ideas = cheat_politics_lv3
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.30.d
+		easybuff_politics_ideas_removal = yes
+		add_ideas = cheat_politics_lv4
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.30.e
+		easybuff_politics_ideas_removal = yes
+		add_ideas = cheat_politics_insane
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.30.f
+		easybuff_politics_ideas_removal = yes
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuffideas.30
+	}
+}
+
+#Equipment Ideas
+country_event = {
+	id = Easybuffideas.40
+	title = Easybuffideas.40.t
+	desc = Easybuffideas.40.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+	option = {
+		name = Easybuffideas.40.a
+		easybuff_equipment_ideas_removal = yes
+		add_ideas = cheat_equipment_lv1
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.40.b
+		easybuff_equipment_ideas_removal = yes
+		add_ideas = cheat_equipment_lv2
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.40.c
+		easybuff_equipment_ideas_removal = yes
+		add_ideas = cheat_equipment_lv3
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.40.d
+		easybuff_equipment_ideas_removal = yes
+		add_ideas = cheat_equipment_lv4
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.40.e
+		easybuff_equipment_ideas_removal = yes
+		add_ideas = cheat_equipment_insane
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.40.f
+		easybuff_equipment_ideas_removal = yes
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuffideas.40
+	}
+}
+
+#Land/Army Ideas
+country_event = {
+	id = Easybuffideas.50
+	title = Easybuffideas.50.t
+	desc = Easybuffideas.50.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+	option = {
+		name = Easybuffideas.50.a
+		easybuff_land_ideas_removal = yes
+		add_ideas = cheat_land_lv1
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.50.b
+		easybuff_land_ideas_removal = yes
+		add_ideas = cheat_land_lv2
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.50.c
+		easybuff_land_ideas_removal = yes
+		add_ideas = cheat_land_lv3
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.50.d
+		easybuff_land_ideas_removal = yes
+		add_ideas = cheat_land_lv4
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.50.e
+		easybuff_land_ideas_removal = yes
+		add_ideas = cheat_land_insane
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.50.f
+		easybuff_land_ideas_removal = yes
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuffideas.50
+	}
+}
+
+#Navy Ideas
+country_event = {
+	id = Easybuffideas.60
+	title = Easybuffideas.60.t
+	desc = Easybuffideas.60.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+	option = {
+		name = Easybuffideas.60.a
+		easybuff_navy_ideas_removal = yes
+		add_ideas = cheat_navy_lv1
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.60.b
+		easybuff_navy_ideas_removal = yes
+		add_ideas = cheat_navy_lv2
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.60.c
+		easybuff_navy_ideas_removal = yes
+		add_ideas = cheat_navy_lv3
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.60.d
+		easybuff_navy_ideas_removal = yes
+		add_ideas = cheat_navy_lv4
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.60.e
+		easybuff_navy_ideas_removal = yes
+		add_ideas = cheat_navy_insane
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.60.f
+		easybuff_navy_ideas_removal = yes
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuffideas.60
+	}
+}
+
+#Air Ideas
+country_event = {
+	id = Easybuffideas.70
+	title = Easybuffideas.70.t
+	desc = Easybuffideas.70.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+	option = {
+		name = Easybuffideas.70.a
+		easybuff_air_ideas_removal = yes
+		add_ideas = cheat_air_lv1
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.70.b
+		easybuff_air_ideas_removal = yes
+		add_ideas = cheat_air_lv2
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.70.c
+		easybuff_air_ideas_removal = yes
+		add_ideas = cheat_air_lv3
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.70.d
+		easybuff_air_ideas_removal = yes
+		add_ideas = cheat_air_lv4
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.70.e
+		easybuff_air_ideas_removal = yes
+		add_ideas = cheat_air_insane
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.70.f
+		easybuff_air_ideas_removal = yes
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuffideas.70
+	}
+}
+
+#Spy Ideas
+country_event = {
+	id = Easybuffideas.80
+	title = Easybuffideas.80.t
+	desc = Easybuffideas.80.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+	option = {
+		name = Easybuffideas.80.a
+		add_ideas = cheat_spy_slot
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.80.b
+		easybuff_spy_ideas_removal = yes
+		add_ideas = cheat_spy_lv2
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.80.c
+		easybuff_spy_ideas_removal = yes
+		add_ideas = cheat_spy_lv3
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.80.d
+		easybuff_spy_ideas_removal = yes
+		add_ideas = cheat_spy_lv4
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.80.e
+		easybuff_spy_ideas_removal = yes
+		add_ideas = cheat_spy_insane
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.80.f
+		hidden_effect = { remove_ideas = cheat_spy_slot }
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuffideas.80
+	}
+}
+
+#Population Ideas
+country_event = {
+	id = Easybuffideas.90
+	title = Easybuffideas.90.t
+	desc = Easybuffideas.90.desc
+	picture = GFX_report_event_german_inspect_troops
+	is_triggered_only = yes
+	option = {
+		name = Easybuffideas.90.a
+		easybuff_population_ideas_removal = yes
+		add_ideas = cheat_population_lv1
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.90.b
+		easybuff_population_ideas_removal = yes
+		add_ideas = cheat_population_lv2
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.90.c
+		easybuff_population_ideas_removal = yes
+		add_ideas = cheat_population_lv3
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.90.d
+		easybuff_population_ideas_removal = yes
+		add_ideas = cheat_population_lv4
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.90.e
+		easybuff_population_ideas_removal = yes
+		add_ideas = cheat_population_insane
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffideas.90.f
+		easybuff_population_ideas_removal = yes
+		country_event = Easybuffideas.1
+	}
+	option = {
+		name = Easybuffback
+		country_event = Easybuffideas.90
 	}
 }

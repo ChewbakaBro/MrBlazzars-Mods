@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		cheat_open_easybuff = {
+			picture = generic_pp_unity_bonus
+			available = { is_ai = no }
+			cancel_if_invalid = no
+			on_add = {
+				country_event = Easybuff.1
+			}
+		}
+		cheat_nothing={
+			picture = generic_pp_unity_bonus
+			available = { is_ai = no }
+			cancel_if_invalid = no
+		}
+	}
+}

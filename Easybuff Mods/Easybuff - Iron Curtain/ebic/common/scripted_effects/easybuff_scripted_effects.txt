@@ -1,0 +1,88 @@
+easybuff_construction_ideas_removal = {
+	hidden_effect = {
+		remove_ideas = cheat_construction_lv1
+		remove_ideas = cheat_construction_lv2
+		remove_ideas = cheat_construction_lv3
+		remove_ideas = cheat_construction_lv4
+		remove_ideas = cheat_construction_insane
+	}
+}
+
+easybuff_technology_ideas_removal = {
+	hidden_effect = {
+		remove_ideas = cheat_technology_lv1
+		remove_ideas = cheat_technology_lv2
+		remove_ideas = cheat_technology_lv3
+		remove_ideas = cheat_technology_lv4
+		remove_ideas = cheat_technology_insane
+	}
+}
+
+easybuff_politics_ideas_removal = {
+	hidden_effect = {
+		remove_ideas = cheat_politics_lv1
+		remove_ideas = cheat_politics_lv2
+		remove_ideas = cheat_politics_lv3
+		remove_ideas = cheat_politics_lv4
+		remove_ideas = cheat_politics_insane
+	}
+}
+
+easybuff_equipment_ideas_removal = {
+	hidden_effect = {
+		remove_ideas = cheat_equipment_lv1
+		remove_ideas = cheat_equipment_lv2
+		remove_ideas = cheat_equipment_lv3
+		remove_ideas = cheat_equipment_lv4
+		remove_ideas = cheat_equipment_insane
+	}
+}
+
+easybuff_land_ideas_removal = {
+	hidden_effect = {
+		remove_ideas = cheat_land_lv1
+		remove_ideas = cheat_land_lv2
+		remove_ideas = cheat_land_lv3
+		remove_ideas = cheat_land_lv4
+		remove_ideas = cheat_land_insane
+	}
+}
+
+easybuff_navy_ideas_removal = {
+	hidden_effect = {
+		remove_ideas = cheat_navy_lv1
+		remove_ideas = cheat_navy_lv2
+		remove_ideas = cheat_navy_lv3
+		remove_ideas = cheat_navy_lv4
+		remove_ideas = cheat_navy_insane
+	}
+}
+
+easybuff_air_ideas_removal = {
+	hidden_effect = {
+		remove_ideas = cheat_air_lv1
+		remove_ideas = cheat_air_lv2
+		remove_ideas = cheat_air_lv3
+		remove_ideas = cheat_air_lv4
+		remove_ideas = cheat_air_insane
+	}
+}
+
+easybuff_spy_ideas_removal = {
+	hidden_effect = {
+		remove_ideas = cheat_spy_lv2
+		remove_ideas = cheat_spy_lv3
+		remove_ideas = cheat_spy_lv4
+		remove_ideas = cheat_spy_insane
+	}
+}
+
+easybuff_population_ideas_removal = {
+	hidden_effect = {
+		remove_ideas = cheat_population_lv1
+		remove_ideas = cheat_population_lv2
+		remove_ideas = cheat_population_lv3
+		remove_ideas = cheat_population_lv4
+		remove_ideas = cheat_population_insane
+	}
+}
