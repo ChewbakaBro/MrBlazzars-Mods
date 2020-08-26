@@ -445,8 +445,8 @@ guiTypes = {
 				}
 
 				iconType = {
-					name = "terrain_stalingrad_icon"
-					spriteType = "GFX_terrain_stalingrad"
+					name = "terrain_volgograd_icon"
+					spriteType = "GFX_terrain_volgograd"
 					alwaystransparent = yes
 				}
 
@@ -691,8 +691,8 @@ guiTypes = {
 				}
 
 				iconType = {
-					name = "terrain_kobe_icon"
-					spriteType = "GFX_terrain_kobe"
+					name = "terrain_osaka_icon"
+					spriteType = "GFX_terrain_osaka"
 					alwaystransparent = yes
 				}
 
