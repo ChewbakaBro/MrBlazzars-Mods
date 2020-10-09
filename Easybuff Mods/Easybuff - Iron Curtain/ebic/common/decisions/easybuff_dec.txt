@@ -8,7 +8,7 @@ easybuff_decision = {
 
 		cost = 0
 		visible = {
-			always = yes
+			is_ai = no
 		}
 
 		complete_effect = {
@@ -24,7 +24,7 @@ easybuff_decision = {
 
 		cost = 0
 		visible = {
-			always = yes
+			is_ai = no
 		}
 
 		complete_effect = {

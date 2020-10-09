@@ -7,7 +7,6 @@ country_event = {
 	desc = Easybuff.1.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	immediate = {
 		hidden_effect = { remove_ideas = cheat_open_easybuff }
@@ -62,7 +61,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.10.a
@@ -159,7 +157,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.20.a
@@ -280,7 +277,7 @@ country_event = {
 				amount = 8
 			}
 		}
-		country_event = Easybuff.20
+		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.20.e
@@ -294,7 +291,7 @@ country_event = {
 				amount = 8
 			}
 		}
-		country_event = Easybuff.20
+		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.20.f
@@ -308,7 +305,7 @@ country_event = {
 				amount = 8
 			}
 		}
-		country_event = Easybuff.20
+		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.20.g
@@ -322,7 +319,7 @@ country_event = {
 				amount = 8
 			}
 		}
-		country_event = Easybuff.20
+		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.20.h
@@ -350,7 +347,7 @@ country_event = {
 				amount = 8
 			}
 		}
-		country_event = Easybuff.20
+		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.20.j
@@ -364,7 +361,7 @@ country_event = {
 				amount = 8
 			}
 		}
-		country_event = Easybuff.20
+		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuffback
@@ -380,7 +377,6 @@ country_event = {
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
 
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.30.a
@@ -408,7 +404,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.31.a
@@ -433,7 +428,6 @@ country_event = {
 	desc = Easybuff.32.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.32.a
@@ -487,7 +481,6 @@ country_event = {
 	desc = Easybuff.33.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.33.a
@@ -511,7 +504,6 @@ country_event = {
 	desc = Easybuff.40.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.40.a
@@ -535,7 +527,6 @@ country_event = {
 	desc = Easybuff.41.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.41.a
@@ -607,7 +598,6 @@ country_event = {
 	desc = Easybuff.42.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.42.a
@@ -662,31 +652,30 @@ country_event = {
 	desc = Easybuff.50.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.50.a
-		army_experience = 100
+		army_experience = 250
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.50.b
-		navy_experience = 100
+		navy_experience = 250
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.50.c
-		air_experience = 100
+		air_experience = 250
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.50.d
-		add_political_power = 300
+		add_political_power = 500
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.50.e
-		add_manpower = 500000
+		add_manpower = 700000
 		country_event = Easybuff.1
 	}
 	option = {
@@ -727,7 +716,6 @@ country_event = {
 	desc = Easybuff.60.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.60.a
@@ -791,7 +779,6 @@ country_event = {
 	desc = Easybuff.61.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.61.a
@@ -882,7 +869,6 @@ country_event = {
 	desc = Easybuff.62.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.62.a
@@ -932,7 +918,6 @@ country_event = {
 	desc = Easybuff.63.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.63.a
@@ -941,7 +926,7 @@ country_event = {
 			elections_allowed = no
 		}
 		set_popularities = {
-			market_liberal = 1
+			market_liberal = 100
 			social_conservative = 0
 			social_liberal = 0
 			social_democrat = 0
@@ -962,7 +947,7 @@ country_event = {
 		}
 		set_popularities = {
 			market_liberal = 0
-			social_conservative = 1
+			social_conservative = 100
 			social_liberal = 0
 			social_democrat = 0
 			leninist = 0
@@ -983,7 +968,7 @@ country_event = {
 		set_popularities = {
 			market_liberal = 0
 			social_conservative = 0
-			social_liberal = 1
+			social_liberal = 100
 			social_democrat = 0
 			leninist = 0
 			stalinist = 0
@@ -1004,7 +989,7 @@ country_event = {
 			market_liberal = 0
 			social_conservative = 0
 			social_liberal = 0
-			social_democrat = 1
+			social_democrat = 100
 			leninist = 0
 			stalinist = 0
 			anarchist = 0
@@ -1025,7 +1010,7 @@ country_event = {
 			social_conservative = 0
 			social_liberal = 0
 			social_democrat = 0
-			leninist = 1
+			leninist = 100
 			stalinist = 0
 			anarchist = 0
 			populist = 0
@@ -1046,7 +1031,7 @@ country_event = {
 			social_liberal = 0
 			social_democrat = 0
 			leninist = 0
-			stalinist = 1
+			stalinist = 100
 			anarchist = 0
 			populist = 0
 			fascism = 0
@@ -1067,7 +1052,7 @@ country_event = {
 			social_democrat = 0
 			leninist = 0
 			stalinist = 0
-			anarchist = 1
+			anarchist = 100
 			populist = 0
 			fascism = 0
 			paternal_autocrat = 0
@@ -1090,7 +1075,6 @@ country_event = {
 	desc = Easybuff.63.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.63.k
@@ -1105,7 +1089,7 @@ country_event = {
 			social_democrat = 0
 			leninist = 0
 			stalinist = 0
-			anarchist = 1
+			anarchist = 100
 			populist = 0
 			fascism = 0
 			paternal_autocrat = 0
@@ -1125,7 +1109,7 @@ country_event = {
 			social_democrat = 0
 			leninist = 0
 			stalinist = 0
-			anarchist = 1
+			anarchist = 100
 			populist = 0
 			fascism = 0
 			paternal_autocrat = 0
@@ -1145,7 +1129,7 @@ country_event = {
 			social_democrat = 0
 			leninist = 0
 			stalinist = 0
-			anarchist = 1
+			anarchist = 100
 			populist = 0
 			fascism = 0
 			paternal_autocrat = 0
@@ -1169,7 +1153,6 @@ country_event = {
 	desc = Easybuff.70.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	immediate = {
 		hidden_effect = {
@@ -1238,7 +1221,7 @@ country_event = {
 			limit = {
 				has_war_with = ROOT
 			}
-			PREV =  { white_peace = ROOT }
+			white_peace = ROOT
 		}
 		country_event = Easybuff.1
 	}
@@ -1255,7 +1238,6 @@ country_event = {
 	desc = Easybuff.71.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.71.a
@@ -1309,7 +1291,6 @@ country_event = {
 	desc = Easybuff.72.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	immediate = {
 		hidden_effect = {
@@ -1368,7 +1349,6 @@ country_event = {
 	desc = Easybuff.73.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.73.a
@@ -1440,7 +1420,6 @@ country_event = {
 	desc = Easybuff.74.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.74.a
@@ -1497,7 +1476,6 @@ country_event = {
 	desc = Easybuff.75.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	immediate = {
 		hidden_effect = {
@@ -1563,7 +1541,6 @@ country_event = {
 	desc = Easybuff.80.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.80.a
@@ -1601,12 +1578,21 @@ country_event = {
 		}
 		country_event = Easybuff.1
 	}
-	 option = {
+	option = {
 		name = Easybuff.80.e
 		if = {
 			limit = { has_idea = more_speed }
 			remove_ideas = more_speed
 			else = { add_ideas = more_speed }
+		}
+		country_event = Easybuff.1
+	}
+	option = {
+		name = Easybuff.80.f
+		if = {
+			limit = { has_idea = gen_mods }
+			remove_ideas = gen_mods
+			else = { add_ideas = gen_mods }
 		}
 		country_event = Easybuff.1
 	}
@@ -1623,7 +1609,6 @@ country_event = {
 	desc = Easybuff.90.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-	mean_time_to_happen = { days = 0 }
 
 	option = {
 		name = Easybuff.90.a
