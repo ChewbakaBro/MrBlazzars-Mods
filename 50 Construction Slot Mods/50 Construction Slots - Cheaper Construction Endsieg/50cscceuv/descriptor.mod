@@ -1,14 +1,14 @@
 version="1"
-name="50 Construction Slots - Endsieg"
 dependencies={
 	"Endsieg: Ultimate Victory"
 }
 tags={
 	"Alternative History"
-	"Gameplay"
 	"Utilities"
 	"Balance"
+	"Gameplay"
 }
-picture="thumbnail.jpg"
+name="50 Construction Slots - Endsieg Cheap Construction"
+picture="Thumbnail.png"
 supported_version="1.10.*"
-remote_file_id="1557136957"
+remote_file_id="1557138197"
