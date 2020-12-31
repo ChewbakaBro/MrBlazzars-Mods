@@ -347,37 +347,37 @@ country_event = {
 
 	option = {
 		name = Easybuff.21.a
-		add_to_variable = { caps_number_display = 250 }
+		set_temp_variable = { caps_to_add = 250 }
+		add_caps = yes
 		country_event = Easybuff.20
 	}
 	option = {
 		name = Easybuff.21.b
-		add_to_variable = { caps_number_display = 500 }
+		set_temp_variable = { caps_to_add = 500 }
+		add_caps = yes
 		country_event = Easybuff.20
 	}
 	option = {
 		name = Easybuff.21.c
-		add_to_variable = { caps_number_display = 1000 }
+		set_temp_variable = { caps_to_add = 1000 }
+		add_caps = yes
 		country_event = Easybuff.20
 	}
 	option = {
 		name = Easybuff.21.d
-		add_to_variable = { base_caps = 150 }
-		set_temp_variable = { caps_daily_diff_after = base_caps }
+		set_temp_variable = { caps_daily_diff = 150 }
 		update_caps_income = yes
 		country_event = Easybuff.20
 	}
 	option = {
 		name = Easybuff.21.e
-		add_to_variable = { base_caps = 300 }
-		set_temp_variable = { caps_daily_diff_after = base_caps }
+		set_temp_variable = { caps_daily_diff = 300 }
 		update_caps_income = yes
 		country_event = Easybuff.20
 	}
 	option = {
 		name = Easybuff.21.f
-		add_to_variable = { base_caps = 500 }
-		set_temp_variable = { caps_daily_diff_after = base_caps }
+		set_temp_variable = { caps_daily_diff = 500 }
 		update_caps_income = yes
 		country_event = Easybuff.20
 	}
@@ -817,7 +817,7 @@ country_event = {
 	}
 	option = {
 		name = Easybuff.61.c
-		join_brotherhood_of_steel = yes
+		join_western_brotherhood_of_steel = yes
 		country_event = Easybuff.60
 	}
 	option = {
