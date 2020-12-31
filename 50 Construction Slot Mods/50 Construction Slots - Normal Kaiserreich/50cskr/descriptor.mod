@@ -2,6 +2,7 @@ name="50 Construction Slots - Kaiserreich"
 dependencies={
 	"Kaiserreich"
 	"Kaiserreich Dev Build"
+	"Kaiserredux: A Kaiserreich Expansion"
 }
 tags={
 	"Alternative History"
@@ -11,5 +12,5 @@ tags={
 }
 picture="thumbnail.jpg"
 version="1"
-supported_version="1.9.*"
+supported_version="1.10.*"
 remote_file_id="1155344770"
