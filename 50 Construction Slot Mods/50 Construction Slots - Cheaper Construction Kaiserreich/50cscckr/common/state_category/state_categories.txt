@@ -1,9 +1,13 @@
 state_categories = {
 	twelve = {
 		local_building_slots = 24
-		color = { 0 240 240 }
+		color = { 70 160 240 }
 	}
 	eleven = {
+		local_building_slots = 22
+		color = { 0 240 240 }
+	}
+	ten = {
 		local_building_slots = 20
 		color = { 0 200 200 }
 	}
@@ -17,7 +21,7 @@ state_categories = {
 	}
 	seven = {
 		local_building_slots = 14
-		color = { 0 220 0}
+		color = { 0 220 0 }
 	}
 	six = {
 		local_building_slots = 12
