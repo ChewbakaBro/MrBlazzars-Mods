@@ -1,3 +1,3 @@
-# 50-Construction-Slots-mod-HOI4
-Holds all my Hearts of Iron 4 mods
+# MrBlazzar's Mods Repo
+Holds all the mods I've created for various games
 Please no steal thanks
