@@ -70,6 +70,13 @@ difficulty_settings = {
 	}
 
 	difficulty_setting = {
+		key = "custom_diff_strong_bag"
+		modifier = diff_strong_ai_generic
+		countries = { BAG }
+		multiplier = 2.0
+	}
+
+	difficulty_setting = {
 		key = "custom_diff_strong_bam"
 		modifier = diff_strong_ai_generic
 		countries = { BAM }
@@ -934,6 +941,13 @@ difficulty_settings = {
 		key = "custom_diff_strong_rio"
 		modifier = diff_strong_ai_generic
 		countries = { RIO }
+		multiplier = 2.0
+	}
+
+	difficulty_setting = {
+		key = "custom_diff_strong_rob"
+		modifier = diff_strong_ai_generic
+		countries = { ROB }
 		multiplier = 2.0
 	}
 
