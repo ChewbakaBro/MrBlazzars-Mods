@@ -2,6 +2,7 @@ name="++Easybuff - Kaiserreich"
 dependencies={
 	"+Easybuff"
 	"Kaiserreich"
+	"Kaiserredux: A Kaiserreich Expansion"
 }
 tags={
 	"Gameplay"

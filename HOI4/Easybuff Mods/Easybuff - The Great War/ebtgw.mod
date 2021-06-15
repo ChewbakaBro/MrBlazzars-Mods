@@ -2,6 +2,7 @@ name="++Easybuff - The Great War"
 dependencies={
 	"+Easybuff"
 	"Hearts of Iron IV: The Great War"
+	"Hearts of Iron IV: The Great War Redux [Beta]"
 }
 tags={
 	"Gameplay"
