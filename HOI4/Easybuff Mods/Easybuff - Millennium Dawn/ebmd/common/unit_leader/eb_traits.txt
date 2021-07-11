@@ -1,21 +1,21 @@
 leader_traits = {
-    ctrl_more_troops = { 
+    ctrl_more_troops = {
         allowed = { always = no }
 		type = all
 		trait_type = personality_trait
-		
+
 		field_marshal_modifier = {
 			max_army_group_size = 15
 		}
         corps_commander_modifier = {
-			max_commander_army_size = 76
+			max_commander_army_size = 276
 		}
 	}
-    lt_all_ability = { 
+    lt_all_ability = {
         allowed = { always = no }
 		type = all
 		trait_type = personality_trait
-		
+
 		enable_ability = extra_suplies
         enable_ability = siege_artillery
         enable_ability = faster_naval_invasion_planning
@@ -23,5 +23,64 @@ leader_traits = {
         enable_ability = glider_planes
         enable_ability = makeshift_bridges
 	}
-    
+	naval_op = {
+		allowed = { always = no }
+		type = navy
+		trait_type = personality_trait
+
+		modifier = {
+			navy_max_range = 1000
+			navy_max_range_factor = 10
+			navy_org = 1000
+			navy_org_factor = 10
+			strike_force_movement_org_loss = -1
+			spotting_chance = 10
+			sortie_efficiency = 10
+			screening_efficiency = 10
+			ships_at_battle_start = 1
+			positioning = 10
+			port_strike = 10
+			navy_capital_ship_attack_factor = 10
+			navy_capital_ship_defence_factor = 10
+			navy_carrier_air_agility_factor = 10
+			navy_carrier_air_attack_factor = 10
+			navy_carrier_air_targetting_factor = 10
+			navy_screen_attack_factor = 10
+			navy_screen_defence_factor = 10
+			navy_submarine_attack_factor = 10
+			navy_submarine_defence_factor = 10
+			navy_submarine_detection_factor = 10
+			submarine_attack = 10
+			sub_retreat_speed = 10
+			carrier_capacity_penalty_reduction = -1
+			carrier_traffic = -1
+			convoy_escort_efficiency = 10
+			convoy_raiding_efficiency_factor = 10
+			convoy_retreat_speed = 10
+			critical_receive_chance = -1
+			experience_gain_navy = 10
+			experience_gain_navy_unit = 10
+			fighter_sortie_efficiency = 10
+			naval_enemy_retreat_chance = -10
+			naval_has_potf_in_combat_attack = 10
+			naval_has_potf_in_combat_defense = 10
+			naval_hit_chance = 10
+			naval_enemy_fleet_size_ratio_penalty_factor = -1
+			naval_detection = 10
+			naval_damage_factor = 10
+			naval_defense_factor = 10
+			naval_coordination = 10
+			naval_critical_effect_factor = -10
+			naval_critical_score_chance_factor = 10
+			naval_morale_factor = 10
+			naval_retreat_speed = 10
+			naval_speed_factor = 10
+			naval_attrition = -1
+			naval_torpedo_cooldown_factor = -1
+			naval_torpedo_hit_chance_factor = 10
+			naval_torpedo_reveal_chance_factor = -1
+			naval_torpedo_screen_penetration_factor = 10
+			navy_anti_air_attack = 10
+		}
+	}
 }

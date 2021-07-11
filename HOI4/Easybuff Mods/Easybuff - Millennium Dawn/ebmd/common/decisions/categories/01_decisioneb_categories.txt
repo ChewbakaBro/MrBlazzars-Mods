@@ -1,5 +1,5 @@
 easybuff_decision = {
-	icon = political_actions
+	icon = generic
 
 	allowed = {
 		always = yes
