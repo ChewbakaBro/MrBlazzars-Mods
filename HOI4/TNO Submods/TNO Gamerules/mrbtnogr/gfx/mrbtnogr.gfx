@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_game_rule_option_disallow_achievements"
+		texturefile = "gfx/interface/game_rule_option_disallow_achievements.dds"
+	}
+}

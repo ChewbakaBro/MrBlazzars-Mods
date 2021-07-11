@@ -1,0 +1,63 @@
+allow_nuclear_end = {
+	name = "ALLOW_NUCLEAR_END"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = "NUCLEAR_END_ALLOWED"
+		text = "NUCLEAR_END_ALLOWED"
+		desc = "NUCLEAR_END_ALLOWED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "NUCLEAR_END_DISABLED"
+		text = "NUCLEAR_END_DISABLED"
+		desc = "NUCLEAR_END_DISABLED_DESC"
+		allow_achievements = yes
+	}
+}
+allow_wargoals = {
+	name = "RULE_ALLOW_WARGOALS"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_wargoals"
+	option = {
+		name = "ALWAYS_FREE"
+		text = "RULE_OPTION_ALWAYS_FREE"
+		desc = "RULE_ALLOW_WARGOALS_ALWAYS_FREE_DESC"
+		allow_achievements = yes
+	}
+	default = {
+		name = "LIMITED"
+		text = "RULE_OPTION_LIMITED"
+		desc = "RULE_ALLOW_WARGOALS_LIMITED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "FREE_25"
+		text = "RULE_OPTION_FREE_25"
+		desc = "RULE_ALLOW_WARGOALS_FREE_25_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "FREE_50"
+		text = "RULE_OPTION_FREE_50"
+		desc = "RULE_ALLOW_WARGOALS_FREE_50_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "FREE_75"
+		text = "RULE_OPTION_FREE_75"
+		desc = "RULE_ALLOW_WARGOALS_FREE_75_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "FREE_100"
+		text = "RULE_OPTION_FREE_100"
+		desc = "RULE_ALLOW_WARGOALS_FREE_100_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "FOCUSES_ONLY"
+		text = "RULE_OPTION_FOCUSES_ONLY"
+		desc = "RULE_ALLOW_WARGOALS_FOCUSES_ONLY_DESC"
+		allow_achievements = yes
+	}
+}

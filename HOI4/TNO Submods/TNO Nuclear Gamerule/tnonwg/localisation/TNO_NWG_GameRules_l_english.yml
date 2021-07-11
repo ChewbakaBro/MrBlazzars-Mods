@@ -1,0 +1,6 @@
+﻿l_english:
+  ALLOW_NUCLEAR_END:0 "Allow Nuclear War"
+  NUCLEAR_END_ALLOWED:0 "Allow Nuclear War"
+  NUCLEAR_END_ALLOWED_DESC:0 "This option will allow the game to 'End' when using nuclear devices through the Super event/scripted effect."
+  NUCLEAR_END_DISABLED:0 "Disable Nuclear War"
+  NUCLEAR_END_DISABLED_DESC:0 "This option will NOT allow the game to 'End' when using nuclear devices through the Super event/scripted effect."

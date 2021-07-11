@@ -1,0 +1,16 @@
+allow_nuclear_end = {
+	name = "ALLOW_NUCLEAR_END"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = NUCLEAR_END_ALLOWED
+		text = "NUCLEAR_END_ALLOWED"
+		desc = "NUCLEAR_END_ALLOWED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = NUCLEAR_END_DISABLED
+		text = "NUCLEAR_END_DISABLED"
+		desc = "NUCLEAR_END_DISABLED_DESC"
+		allow_achievements = yes
+	}
+}
