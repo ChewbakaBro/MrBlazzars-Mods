@@ -1,0 +1,1641 @@
+scripted_gui = {
+
+	rmt_main_container = {
+
+		context_type = selected_state_context
+
+		window_name = "rmt_main_container"
+
+		visible = {
+			ROOT = {
+				is_ai = no
+				has_global_flag = rmt_enabled
+			}
+		}
+
+		effects = {
+			rmt_mark_button_click = {
+				set_state_flag = rmt_marked
+			}
+			rmt_unmark_button_click = {
+				clr_state_flag = rmt_marked
+			}
+			rmt_mark_all_click = {
+				FROM.OWNER = {
+					every_owned_state = {
+						set_state_flag = rmt_marked
+					}
+				}
+			}
+			rmt_mark_cores_click  = {
+				FROM.OWNER = {
+					every_owned_state = {
+						limit = {
+							is_core_of = PREV
+							NOT = { has_state_flag = rmt_marked }
+						}
+						set_state_flag = rmt_marked
+					}
+				}
+			}
+			rmt_mark_colonies_click  = {
+				FROM.OWNER = {
+					every_owned_state = {
+						limit = {
+							NOT = { is_core_of = PREV }
+							NOT = { has_state_flag = rmt_marked }
+						}
+						set_state_flag = rmt_marked
+					}
+				}
+			}
+			rmt_unmark_all_click = {
+				every_state = {
+					clr_state_flag = rmt_marked
+				}
+			}
+			rmt_energy_on_click = {
+				set_global_flag = rmt_energy_enabled
+			}
+			rmt_energy_off_click = {
+				clr_global_flag = rmt_energy_enabled
+			}
+			rmt_composites_on_click = {
+				set_global_flag = rmt_composites_enabled
+			}
+			rmt_composites_off_click = {
+				clr_global_flag = rmt_composites_enabled
+			}
+			rmt_metal_on_click = {
+				set_global_flag = rmt_metal_enabled
+			}
+			rmt_metal_off_click = {
+				clr_global_flag = rmt_metal_enabled
+			}
+			rmt_water_on_click = {
+				set_global_flag = rmt_water_enabled
+			}
+			rmt_water_off_click = {
+				clr_global_flag = rmt_water_enabled
+			}
+			rmt_circuitry_on_click = {
+				set_global_flag = rmt_circuitry_enabled
+			}
+			rmt_circuitry_off_click = {
+				clr_global_flag = rmt_circuitry_enabled
+			}
+			rmt_advanced_on_click = {
+				set_global_flag = rmt_advanced_enabled
+			}
+			rmt_advanced_off_click = {
+				clr_global_flag = rmt_advanced_enabled
+			}
+			rmt_state_modifier_on_click = {
+				set_global_flag = rmt_state_modifier_enabled
+			}
+			rmt_state_modifier_off_click = {
+				clr_global_flag = rmt_state_modifier_enabled
+			}
+			#rmt_var_1_on_click = {
+			#	set_global_flag = rmt_var_1_enabled
+			#}
+			#rmt_var_1_off_click = {
+			#	clr_global_flag = rmt_var_1_enabled
+			#}
+			#rmt_var_2_on_click = {
+			#	set_global_flag = rmt_var_2_enabled
+			#}
+			#rmt_var_2_off_click = {
+			#	clr_global_flag = rmt_var_2_enabled
+			#}
+			rmt_add_1_click = {
+				if = {
+					limit = { has_global_flag = rmt_var_1_enabled }
+					add_to_variable = { global.rmt_variable_1 = 1 }
+				}
+				if = {
+					limit = { has_global_flag = rmt_var_2_enabled }
+					add_to_variable = { global.rmt_variable_2 = 1 }
+				}
+				if = {
+					limit = {
+						all_state = {
+							NOT = { has_state_flag = rmt_marked }
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_energy_enabled }
+						add_resource = {
+							type = energy
+							amount = 1
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_composites_enabled }
+						add_resource = {
+							type = composites
+							amount = 1
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_metal_enabled }
+						add_resource = {
+							type = metal
+							amount = 1
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_water_enabled }
+						add_resource = {
+							type = water
+							amount = 1
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_circuitry_enabled }
+						add_resource = {
+							type = circuitry
+							amount = 1
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_advanced_enabled }
+						add_resource = {
+							type = advanced
+							amount = 1
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_state_modifier_enabled }
+						add_state_modifier = {
+							modifier = { local_resources = 0.01 }
+						}
+						add_to_variable = { rmt_modifier_size = 1 }
+					}
+				}
+				if = {
+					limit = {
+						any_state = { has_state_flag = rmt_marked }
+					}
+					every_state = {
+						limit = { has_state_flag = rmt_marked }
+						if = {
+							limit = { has_global_flag = rmt_energy_enabled }
+							add_resource = {
+								type = energy
+								amount = 1
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_composites_enabled }
+							add_resource = {
+								type = composites
+								amount = 1
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_metal_enabled }
+							add_resource = {
+								type = metal
+								amount = 1
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_water_enabled }
+							add_resource = {
+								type = water
+								amount = 1
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_circuitry_enabled }
+							add_resource = {
+								type = circuitry
+								amount = 1
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_advanced_enabled }
+							add_resource = {
+								type = advanced
+								amount = 1
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_state_modifier_enabled }
+							add_state_modifier = {
+								modifier = { local_resources = 0.01 }
+							}
+							add_to_variable = { rmt_modifier_size = 1 }
+						}
+					}
+				}
+			}
+			rmt_add_5_click = {
+				if = {
+					limit = { has_global_flag = rmt_var_1_enabled }
+					add_to_variable = { global.rmt_variable_1 = 5 }
+				}
+				if = {
+					limit = { has_global_flag = rmt_var_2_enabled }
+					add_to_variable = { global.rmt_variable_2 = 5 }
+				}
+				if = {
+					limit = {
+						all_state = {
+							NOT = { has_state_flag = rmt_marked }
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_energy_enabled }
+						add_resource = {
+							type = energy
+							amount = 5
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_composites_enabled }
+						add_resource = {
+							type = composites
+							amount = 5
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_metal_enabled }
+						add_resource = {
+							type = metal
+							amount = 5
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_water_enabled }
+						add_resource = {
+							type = water
+							amount = 5
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_circuitry_enabled }
+						add_resource = {
+							type = circuitry
+							amount = 5
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_advanced_enabled }
+						add_resource = {
+							type = advanced
+							amount = 5
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_state_modifier_enabled }
+						add_state_modifier = {
+							modifier = { local_resources = 0.05 }
+						}
+						add_to_variable = { rmt_modifier_size = 5 }
+					}
+				}
+				if = {
+					limit = {
+						any_state = { has_state_flag = rmt_marked }
+					}
+					every_state = {
+						limit = { has_state_flag = rmt_marked }
+						if = {
+							limit = { has_global_flag = rmt_energy_enabled }
+							add_resource = {
+								type = energy
+								amount = 5
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_composites_enabled }
+							add_resource = {
+								type = composites
+								amount = 5
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_metal_enabled }
+							add_resource = {
+								type = metal
+								amount = 5
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_water_enabled }
+							add_resource = {
+								type = water
+								amount = 5
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_circuitry_enabled }
+							add_resource = {
+								type = circuitry
+								amount = 5
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_advanced_enabled }
+							add_resource = {
+								type = advanced
+								amount = 5
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_state_modifier_enabled }
+							add_state_modifier = {
+								modifier = { local_resources = 0.05 }
+							}
+							add_to_variable = { rmt_modifier_size = 5 }
+						}
+					}
+				}
+			}
+			rmt_add_25_click = {
+				if = {
+					limit = { has_global_flag = rmt_var_1_enabled }
+					add_to_variable = { global.rmt_variable_1 = 25 }
+				}
+				if = {
+					limit = { has_global_flag = rmt_var_2_enabled }
+					add_to_variable = { global.rmt_variable_2 = 25 }
+				}
+				if = {
+					limit = {
+						all_state = {
+							NOT = { has_state_flag = rmt_marked }
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_energy_enabled }
+						add_resource = {
+							type = energy
+							amount = 25
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_composites_enabled }
+						add_resource = {
+							type = composites
+							amount = 25
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_metal_enabled }
+						add_resource = {
+							type = metal
+							amount = 25
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_water_enabled }
+						add_resource = {
+							type = water
+							amount = 25
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_circuitry_enabled }
+						add_resource = {
+							type = circuitry
+							amount = 25
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_advanced_enabled }
+						add_resource = {
+							type = advanced
+							amount = 25
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_state_modifier_enabled }
+						add_state_modifier = {
+							modifier = { local_resources = 0.25 }
+						}
+						add_to_variable = { rmt_modifier_size = 25 }
+					}
+				}
+				if = {
+					limit = {
+						any_state = { has_state_flag = rmt_marked }
+					}
+					every_state = {
+						limit = { has_state_flag = rmt_marked }
+						if = {
+							limit = { has_global_flag = rmt_energy_enabled }
+							add_resource = {
+								type = energy
+								amount = 25
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_composites_enabled }
+							add_resource = {
+								type = composites
+								amount = 25
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_metal_enabled }
+							add_resource = {
+								type = metal
+								amount = 25
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_water_enabled }
+							add_resource = {
+								type = water
+								amount = 25
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_circuitry_enabled }
+							add_resource = {
+								type = circuitry
+								amount = 25
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_advanced_enabled }
+							add_resource = {
+								type = advanced
+								amount = 25
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_state_modifier_enabled }
+							add_state_modifier = {
+								modifier = { local_resources = 0.25 }
+							}
+							add_to_variable = { rmt_modifier_size = 25 }
+						}
+					}
+				}
+			}
+			rmt_add_200_click = {
+				if = {
+					limit = { has_global_flag = rmt_var_1_enabled }
+					add_to_variable = { global.rmt_variable_1 = 200 }
+				}
+				if = {
+					limit = { has_global_flag = rmt_var_2_enabled }
+					add_to_variable = { global.rmt_variable_2 = 200 }
+				}
+				if = {
+					limit = {
+						all_state = {
+							NOT = { has_state_flag = rmt_marked }
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_energy_enabled }
+						add_resource = {
+							type = energy
+							amount = 200
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_composites_enabled }
+						add_resource = {
+							type = composites
+							amount = 200
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_metal_enabled }
+						add_resource = {
+							type = metal
+							amount = 200
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_water_enabled }
+						add_resource = {
+							type = water
+							amount = 200
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_circuitry_enabled }
+						add_resource = {
+							type = circuitry
+							amount = 200
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_advanced_enabled }
+						add_resource = {
+							type = advanced
+							amount = 200
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_state_modifier_enabled }
+						add_state_modifier = {
+							modifier = { local_resources = 2 }
+						}
+						add_to_variable = { rmt_modifier_size = 200 }
+					}
+				}
+				if = {
+					limit = {
+						any_state = { has_state_flag = rmt_marked }
+					}
+					every_state = {
+						limit = { has_state_flag = rmt_marked }
+						if = {
+							limit = { has_global_flag = rmt_energy_enabled }
+							add_resource = {
+								type = energy
+								amount = 200
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_composites_enabled }
+							add_resource = {
+								type = composites
+								amount = 200
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_metal_enabled }
+							add_resource = {
+								type = metal
+								amount = 200
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_water_enabled }
+							add_resource = {
+								type = water
+								amount = 200
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_circuitry_enabled }
+							add_resource = {
+								type = circuitry
+								amount = 200
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_advanced_enabled }
+							add_resource = {
+								type = advanced
+								amount = 200
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_state_modifier_enabled }
+							add_state_modifier = {
+								modifier = { local_resources = 2 }
+							}
+							add_to_variable = { rmt_modifier_size = 200 }
+						}
+					}
+				}
+			}
+			rmt_sub_1_click = {
+				if = {
+					limit = { has_global_flag = rmt_var_1_enabled }
+					subtract_from_variable = { global.rmt_variable_1 = 1 }
+				}
+				if = {
+					limit = { has_global_flag = rmt_var_2_enabled }
+					subtract_from_variable = { global.rmt_variable_2 = 1 }
+				}
+				if = {
+					limit = {
+						all_state = {
+							NOT = { has_state_flag = rmt_marked }
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_energy_enabled }
+						add_resource = {
+							type = energy
+							amount = -1
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_composites_enabled }
+						add_resource = {
+							type = composites
+							amount = -1
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_metal_enabled }
+						add_resource = {
+							type = metal
+							amount = -1
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_water_enabled }
+						add_resource = {
+							type = water
+							amount = -1
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_circuitry_enabled }
+						add_resource = {
+							type = circuitry
+							amount = -1
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_advanced_enabled }
+						add_resource = {
+							type = advanced
+							amount = -1
+						}
+					}
+					if = {
+						limit = {
+							has_global_flag = rmt_state_modifier_enabled
+							mrt_has_resources = yes
+							check_variable = { rmt_modifier_size > -100 }
+						}
+						add_state_modifier = {
+							modifier = { local_resources = -0.01 }
+						}
+						subtract_from_variable = { rmt_modifier_size = 1 }
+					}
+				}
+				if = {
+					limit = {
+						any_state = { has_state_flag = rmt_marked }
+					}
+					every_state = {
+						limit = { has_state_flag = rmt_marked }
+						if = {
+							limit = { has_global_flag = rmt_energy_enabled }
+							add_resource = {
+								type = energy
+								amount = -1
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_composites_enabled }
+							add_resource = {
+								type = composites
+								amount = -1
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_metal_enabled }
+							add_resource = {
+								type = metal
+								amount = -1
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_water_enabled }
+							add_resource = {
+								type = water
+								amount = -1
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_circuitry_enabled }
+							add_resource = {
+								type = circuitry
+								amount = -1
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_advanced_enabled }
+							add_resource = {
+								type = advanced
+								amount = -1
+							}
+						}
+						if = {
+							limit = {
+								has_global_flag = rmt_state_modifier_enabled
+								mrt_has_resources = yes
+								check_variable = { rmt_modifier_size > -100 }
+							}
+							add_state_modifier = {
+								modifier = { local_resources = -0.01 }
+							}
+							subtract_from_variable = { rmt_modifier_size = 1 }
+						}
+					}
+				}
+			}
+			rmt_sub_5_click = {
+				if = {
+					limit = { has_global_flag = rmt_var_1_enabled }
+					subtract_from_variable = { global.rmt_variable_1 = 5 }
+				}
+				if = {
+					limit = { has_global_flag = rmt_var_2_enabled }
+					subtract_from_variable = { global.rmt_variable_2 = 5 }
+				}
+				if = {
+					limit = {
+						all_state = {
+							NOT = { has_state_flag = rmt_marked }
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_energy_enabled }
+						add_resource = {
+							type = energy
+							amount = -5
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_composites_enabled }
+						add_resource = {
+							type = composites
+							amount = -5
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_metal_enabled }
+						add_resource = {
+							type = metal
+							amount = -5
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_water_enabled }
+						add_resource = {
+							type = water
+							amount = -5
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_circuitry_enabled }
+						add_resource = {
+							type = circuitry
+							amount = -5
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_advanced_enabled }
+						add_resource = {
+							type = advanced
+							amount = -5
+						}
+					}
+					if = {
+						limit = {
+							has_global_flag = rmt_state_modifier_enabled
+							mrt_has_resources = yes
+							check_variable = { rmt_modifier_size > -100 }
+						}
+						add_state_modifier = {
+							modifier = { local_resources = -0.05 }
+						}
+						subtract_from_variable = { rmt_modifier_size = 5 }
+					}
+				}
+				if = {
+					limit = {
+						any_state = { has_state_flag = rmt_marked }
+					}
+					every_state = {
+						limit = { has_state_flag = rmt_marked }
+						if = {
+							limit = { has_global_flag = rmt_energy_enabled }
+							add_resource = {
+								type = energy
+								amount = -5
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_composites_enabled }
+							add_resource = {
+								type = composites
+								amount = -5
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_metal_enabled }
+							add_resource = {
+								type = metal
+								amount = -5
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_water_enabled }
+							add_resource = {
+								type = water
+								amount = -5
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_circuitry_enabled }
+							add_resource = {
+								type = circuitry
+								amount = -5
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_advanced_enabled }
+							add_resource = {
+								type = advanced
+								amount = -5
+							}
+						}
+						if = {
+							limit = {
+								has_global_flag = rmt_state_modifier_enabled
+								mrt_has_resources = yes
+								check_variable = { rmt_modifier_size > -100 }
+							}
+							add_state_modifier = {
+								modifier = { local_resources = -0.05 }
+							}
+							subtract_from_variable = { rmt_modifier_size = 5 }
+						}
+					}
+				}
+			}
+			rmt_sub_25_click = {
+				if = {
+					limit = { has_global_flag = rmt_var_1_enabled }
+					subtract_from_variable = { global.rmt_variable_1 = 25 }
+				}
+				if = {
+					limit = { has_global_flag = rmt_var_2_enabled }
+					subtract_from_variable = { global.rmt_variable_2 = 25 }
+				}
+				if = {
+					limit = {
+						all_state = {
+							NOT = { has_state_flag = rmt_marked }
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_energy_enabled }
+						add_resource = {
+							type = energy
+							amount = -25
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_composites_enabled }
+						add_resource = {
+							type = composites
+							amount = -25
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_metal_enabled }
+						add_resource = {
+							type = metal
+							amount = -25
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_water_enabled }
+						add_resource = {
+							type = water
+							amount = -25
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_circuitry_enabled }
+						add_resource = {
+							type = circuitry
+							amount = -25
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_advanced_enabled }
+						add_resource = {
+							type = advanced
+							amount = -25
+						}
+					}
+					if = {
+						limit = {
+							has_global_flag = rmt_state_modifier_enabled
+							mrt_has_resources = yes
+							check_variable = { rmt_modifier_size > -100 }
+						}
+						add_state_modifier = {
+							modifier = { local_resources = -0.25 }
+						}
+						subtract_from_variable = { rmt_modifier_size = 25 }
+					}
+				}
+				if = {
+					limit = {
+						any_state = { has_state_flag = rmt_marked }
+					}
+					every_state = {
+						limit = { has_state_flag = rmt_marked }
+						if = {
+							limit = { has_global_flag = rmt_energy_enabled }
+							add_resource = {
+								type = energy
+								amount = -25
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_composites_enabled }
+							add_resource = {
+								type = composites
+								amount = -25
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_metal_enabled }
+							add_resource = {
+								type = metal
+								amount = -25
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_water_enabled }
+							add_resource = {
+								type = water
+								amount = -25
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_circuitry_enabled }
+							add_resource = {
+								type = circuitry
+								amount = -25
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_advanced_enabled }
+							add_resource = {
+								type = advanced
+								amount = -25
+							}
+						}
+						if = {
+							limit = {
+								has_global_flag = rmt_state_modifier_enabled
+								mrt_has_resources = yes
+								check_variable = { rmt_modifier_size > -100 }
+							}
+							add_state_modifier = {
+								modifier = { local_resources = -0.25 }
+							}
+							subtract_from_variable = { rmt_modifier_size = 25 }
+						}
+					}
+				}
+			}
+			rmt_sub_200_click = {
+				if = {
+					limit = { has_global_flag = rmt_var_1_enabled }
+					subtract_from_variable = { global.rmt_variable_1 = 200 }
+				}
+				if = {
+					limit = { has_global_flag = rmt_var_2_enabled }
+					subtract_from_variable = { global.rmt_variable_2 = 200 }
+				}
+				if = {
+					limit = {
+						all_state = {
+							NOT = { has_state_flag = rmt_marked }
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_energy_enabled }
+						add_resource = {
+							type = energy
+							amount = -200
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_composites_enabled }
+						add_resource = {
+							type = composites
+							amount = -200
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_metal_enabled }
+						add_resource = {
+							type = metal
+							amount = -200
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_water_enabled }
+						add_resource = {
+							type = water
+							amount = -200
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_circuitry_enabled }
+						add_resource = {
+							type = circuitry
+							amount = -200
+						}
+					}
+					if = {
+						limit = { has_global_flag = rmt_advanced_enabled }
+						add_resource = {
+							type = advanced
+							amount = -200
+						}
+					}
+					if = {
+						limit = {
+							has_global_flag = rmt_state_modifier_enabled
+							mrt_has_resources = yes
+							check_variable = { rmt_modifier_size > -1 }
+						}
+						add_state_modifier = {
+							modifier = { local_resources = -2 }
+						}
+						subtract_from_variable = { rmt_modifier_size = 200 }
+					}
+				}
+				if = {
+					limit = {
+						any_state = { has_state_flag = rmt_marked }
+					}
+					every_state = {
+						limit = { has_state_flag = rmt_marked }
+						if = {
+							limit = { has_global_flag = rmt_energy_enabled }
+							add_resource = {
+								type = energy
+								amount = -200
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_composites_enabled }
+							add_resource = {
+								type = composites
+								amount = -200
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_metal_enabled }
+							add_resource = {
+								type = metal
+								amount = -200
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_water_enabled }
+							add_resource = {
+								type = water
+								amount = -200
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_circuitry_enabled }
+							add_resource = {
+								type = circuitry
+								amount = -200
+							}
+						}
+						if = {
+							limit = { has_global_flag = rmt_advanced_enabled }
+							add_resource = {
+								type = advanced
+								amount = -200
+							}
+						}
+						if = {
+							limit = {
+								has_global_flag = rmt_state_modifier_enabled
+								mrt_has_resources = yes
+								check_variable = { rmt_modifier_size > -1 }
+							}
+							add_state_modifier = {
+								modifier = { local_resources = -2 }
+							}
+							subtract_from_variable = { rmt_modifier_size = 200 }
+						}
+					}
+				}
+			}
+			#rmt_sub_var_click = {
+			#	if = {
+			#		limit = {
+			#			all_state = {
+			#				NOT = { has_state_flag = rmt_marked }
+			#			}
+			#		}
+			#		if = {
+			#			limit = { has_global_flag = rmt_variable_1_enabled }
+			#			multiply_variable = { global.rmt_variable_1 = -1 }
+			#			if = {
+			#				limit = { has_global_flag = rmt_energy_enabled }
+			#				add_resource = {
+			#					type = energy
+			#					amount = global.rmt_variable_1
+			#				}
+			#			}
+			#			if = {
+			#				limit = { has_global_flag = rmt_composites_enabled }
+			#				add_resource = {
+			#					type = composites
+			#					amount = global.rmt_variable_1
+			#				}
+			#			}
+			#			if = {
+			#				limit = { has_global_flag = rmt_metal_enabled }
+			#				add_resource = {
+			#					type = metal
+			#					amount = global.rmt_variable_1
+			#				}
+			#			}
+			#			if = {
+			#				limit = { has_global_flag = rmt_water_enabled }
+			#				add_resource = {
+			#					type = water
+			#					amount = global.rmt_variable_1
+			#				}
+			#			}
+			#			if = {
+			#				limit = { has_global_flag = rmt_circuitry_enabled }
+			#				add_resource = {
+			#					type = circuitry
+			#					amount = global.rmt_variable_1
+			#				}
+			#			}
+			#			if = {
+			#				limit = { has_global_flag = rmt_advanced_enabled }
+			#				add_resource = {
+			#					type = advanced
+			#					amount = global.rmt_variable_1
+			#				}
+			#			}
+			#			if = {
+			#				limit = {
+			#					has_global_flag = rmt_state_modifier_enabled
+			#					mrt_has_resources = yes
+			#					check_variable = { rmt_modifier_size > -201 }
+			#				}
+			#				add_state_modifier = {
+			#					modifier = { local_resources = global.rmt_variable_1 }
+			#				}
+			#				subtract_from_variable = { rmt_modifier_size = global.rmt_variable_1 }
+			#			}
+			#			multiply_variable = { global.rmt_variable_1 = -1 }
+			#		}
+			#	}
+			#	if = {
+			#		limit = {
+			#			any_state = { has_state_flag = rmt_marked }
+			#		}
+			#		every_state = {
+			#			limit = { has_state_flag = rmt_marked }
+			#			if = {
+			#				limit = { has_global_flag = rmt_energy_enabled }
+			#				add_resource = {
+			#					type = energy
+			#					amount = -200
+			#				}
+			#			}
+			#			if = {
+			#				limit = { has_global_flag = rmt_composites_enabled }
+			#				add_resource = {
+			#					type = composites
+			#					amount = -200
+			#				}
+			#			}
+			#			if = {
+			#				limit = { has_global_flag = rmt_metal_enabled }
+			#				add_resource = {
+			#					type = metal
+			#					amount = -200
+			#				}
+			#			}
+			#			if = {
+			#				limit = { has_global_flag = rmt_water_enabled }
+			#				add_resource = {
+			#					type = water
+			#					amount = -200
+			#				}
+			#			}
+			#			if = {
+			#				limit = { has_global_flag = rmt_circuitry_enabled }
+			#				add_resource = {
+			#					type = circuitry
+			#					amount = -200
+			#				}
+			#			}
+			#			if = {
+			#				limit = { has_global_flag = rmt_advanced_enabled }
+			#				add_resource = {
+			#					type = advanced
+			#					amount = -200
+			#				}
+			#			}
+			#			if = {
+			#				limit = {
+			#					has_global_flag = rmt_state_modifier_enabled
+			#					mrt_has_resources = yes
+			#					check_variable = { rmt_modifier_size > -1 }
+			#				}
+			#				add_state_modifier = {
+			#					modifier = { local_resources = -2 }
+			#				}
+			#				subtract_from_variable = { rmt_modifier_size = 200 }
+			#			}
+			#		}
+			#	}
+			#}
+		}
+
+		triggers = {
+
+			rmt_mark_button_visible = {
+				NOT = { has_state_flag = rmt_marked }
+			}
+			rmt_unmark_button_visible = {
+				has_state_flag = rmt_marked
+			}
+			rmt_mark_all_click_enabled = {
+				FROM.OWNER = {
+					any_owned_state = {
+						NOT = { has_state_flag = rmt_marked }
+					}
+				}
+			}
+			rmt_mark_cores_click_enabled = {
+				FROM.OWNER = {
+					any_owned_state = {
+						NOT = { has_state_flag = rmt_marked }
+						is_core_of = this
+					}
+				}
+			}
+			rmt_mark_colonies_click_enabled = {
+				FROM.OWNER = {
+					any_owned_state = {
+						NOT = { has_state_flag = rmt_marked }
+						NOT = { is_core_of = this }
+					}
+				}
+			}
+			rmt_unmark_all_click_enabled = {
+				any_state = { has_state_flag = rmt_marked }
+			}
+			rmt_energy_on_visible = {
+				NOT = { has_global_flag = rmt_energy_enabled }
+			}
+			rmt_energy_off_visible = {
+				has_global_flag = rmt_energy_enabled
+			}
+			rmt_composites_on_visible = {
+				NOT = { has_global_flag = rmt_composites_enabled }
+			}
+			rmt_composites_off_visible = {
+				has_global_flag = rmt_composites_enabled
+			}
+			rmt_metal_on_visible = {
+				NOT = { has_global_flag = rmt_metal_enabled }
+			}
+			rmt_metal_off_visible = {
+				has_global_flag = rmt_metal_enabled
+			}
+			rmt_water_on_visible = {
+				NOT = { has_global_flag = rmt_water_enabled }
+			}
+			rmt_water_off_visible = {
+				has_global_flag = rmt_water_enabled
+			}
+			rmt_circuitry_on_visible = {
+				NOT = { has_global_flag = rmt_circuitry_enabled }
+			}
+			rmt_circuitry_off_visible = {
+				has_global_flag = rmt_circuitry_enabled
+			}
+			rmt_advanced_on_visible = {
+				NOT = { has_global_flag = rmt_advanced_enabled }
+			}
+			rmt_advanced_off_visible = {
+				has_global_flag = rmt_advanced_enabled
+			}
+			rmt_state_modifier_on_visible = {
+				NOT = { has_global_flag = rmt_state_modifier_enabled }
+			}
+			rmt_state_modifier_off_visible = {
+				has_global_flag = rmt_state_modifier_enabled
+			}
+			#rmt_var_1_on_visible = {
+			#	NOT = { has_global_flag = rmt_var_1_enabled }
+			#}
+			#rmt_var_1_off_visible = {
+			#	has_global_flag = rmt_var_1_enabled
+			#}
+			#rmt_var_2_on_visible = {
+			#	NOT = { has_global_flag = rmt_var_2_enabled }
+			#}
+			#rmt_var_2_off_visible = {
+			#	has_global_flag = rmt_var_2_enabled
+			#}
+			rmt_add_1_click_enabled = {
+				OR = {
+					AND = {
+						OR = {
+							has_global_flag = rmt_energy_enabled
+							has_global_flag = rmt_composites_enabled
+							has_global_flag = rmt_metal_enabled
+							has_global_flag = rmt_water_enabled
+							has_global_flag = rmt_circuitry_enabled
+							has_global_flag = rmt_advanced_enabled
+							has_global_flag = rmt_state_modifier_enabled
+						}
+						NOT = { has_global_flag = rmt_var_1_enabled }
+						NOT = { has_global_flag = rmt_var_2_enabled }
+					}
+					AND = {
+						NOT = { has_global_flag = rmt_energy_enabled }
+						NOT = { has_global_flag = rmt_composites_enabled }
+						NOT = { has_global_flag = rmt_metal_enabled }
+						NOT = { has_global_flag = rmt_water_enabled }
+						NOT = { has_global_flag = rmt_circuitry_enabled }
+						NOT = { has_global_flag = rmt_advanced_enabled }
+						NOT = { has_global_flag = rmt_state_modifier_enabled }
+						OR = {
+							has_global_flag = rmt_var_1_enabled
+							has_global_flag = rmt_var_2_enabled
+						}
+					}
+				}
+			}
+			rmt_add_5_click_enabled = {
+				OR = {
+					AND = {
+						OR = {
+							has_global_flag = rmt_energy_enabled
+							has_global_flag = rmt_composites_enabled
+							has_global_flag = rmt_metal_enabled
+							has_global_flag = rmt_water_enabled
+							has_global_flag = rmt_circuitry_enabled
+							has_global_flag = rmt_advanced_enabled
+							has_global_flag = rmt_state_modifier_enabled
+						}
+						NOT = { has_global_flag = rmt_var_1_enabled }
+						NOT = { has_global_flag = rmt_var_2_enabled }
+					}
+					AND = {
+						NOT = { has_global_flag = rmt_energy_enabled }
+						NOT = { has_global_flag = rmt_composites_enabled }
+						NOT = { has_global_flag = rmt_metal_enabled }
+						NOT = { has_global_flag = rmt_water_enabled }
+						NOT = { has_global_flag = rmt_circuitry_enabled }
+						NOT = { has_global_flag = rmt_advanced_enabled }
+						NOT = { has_global_flag = rmt_state_modifier_enabled }
+						OR = {
+							has_global_flag = rmt_var_1_enabled
+							has_global_flag = rmt_var_2_enabled
+						}
+					}
+				}
+			}
+			rmt_add_25_click_enabled = {
+				OR = {
+					AND = {
+						OR = {
+							has_global_flag = rmt_energy_enabled
+							has_global_flag = rmt_composites_enabled
+							has_global_flag = rmt_metal_enabled
+							has_global_flag = rmt_water_enabled
+							has_global_flag = rmt_circuitry_enabled
+							has_global_flag = rmt_advanced_enabled
+							has_global_flag = rmt_state_modifier_enabled
+						}
+						NOT = { has_global_flag = rmt_var_1_enabled }
+						NOT = { has_global_flag = rmt_var_2_enabled }
+					}
+					AND = {
+						NOT = { has_global_flag = rmt_energy_enabled }
+						NOT = { has_global_flag = rmt_composites_enabled }
+						NOT = { has_global_flag = rmt_metal_enabled }
+						NOT = { has_global_flag = rmt_water_enabled }
+						NOT = { has_global_flag = rmt_circuitry_enabled }
+						NOT = { has_global_flag = rmt_advanced_enabled }
+						NOT = { has_global_flag = rmt_state_modifier_enabled }
+						OR = {
+							has_global_flag = rmt_var_1_enabled
+							has_global_flag = rmt_var_2_enabled
+						}
+					}
+				}
+			}
+			rmt_add_200_click_enabled = {
+				OR = {
+					AND = {
+						OR = {
+							has_global_flag = rmt_energy_enabled
+							has_global_flag = rmt_composites_enabled
+							has_global_flag = rmt_metal_enabled
+							has_global_flag = rmt_water_enabled
+							has_global_flag = rmt_circuitry_enabled
+							has_global_flag = rmt_advanced_enabled
+							has_global_flag = rmt_state_modifier_enabled
+						}
+						NOT = { has_global_flag = rmt_var_1_enabled }
+						NOT = { has_global_flag = rmt_var_2_enabled }
+					}
+					AND = {
+						NOT = { has_global_flag = rmt_energy_enabled }
+						NOT = { has_global_flag = rmt_composites_enabled }
+						NOT = { has_global_flag = rmt_metal_enabled }
+						NOT = { has_global_flag = rmt_water_enabled }
+						NOT = { has_global_flag = rmt_circuitry_enabled }
+						NOT = { has_global_flag = rmt_advanced_enabled }
+						NOT = { has_global_flag = rmt_state_modifier_enabled }
+						OR = {
+							has_global_flag = rmt_var_1_enabled
+							has_global_flag = rmt_var_2_enabled
+						}
+					}
+				}
+			}
+			rmt_sub_1_click_enabled = {
+				OR = {
+					AND = {
+						OR = {
+							has_global_flag = rmt_energy_enabled
+							has_global_flag = rmt_composites_enabled
+							has_global_flag = rmt_metal_enabled
+							has_global_flag = rmt_water_enabled
+							has_global_flag = rmt_circuitry_enabled
+							has_global_flag = rmt_advanced_enabled
+							has_global_flag = rmt_state_modifier_enabled
+						}
+						NOT = { has_global_flag = rmt_var_1_enabled }
+						NOT = { has_global_flag = rmt_var_2_enabled }
+					}
+					AND = {
+						NOT = { has_global_flag = rmt_energy_enabled }
+						NOT = { has_global_flag = rmt_composites_enabled }
+						NOT = { has_global_flag = rmt_metal_enabled }
+						NOT = { has_global_flag = rmt_water_enabled }
+						NOT = { has_global_flag = rmt_circuitry_enabled }
+						NOT = { has_global_flag = rmt_advanced_enabled }
+						NOT = { has_global_flag = rmt_state_modifier_enabled }
+						OR = {
+							has_global_flag = rmt_var_1_enabled
+							has_global_flag = rmt_var_2_enabled
+						}
+					}
+				}
+			}
+			rmt_sub_5_click_enabled = {
+				OR = {
+					AND = {
+						OR = {
+							has_global_flag = rmt_energy_enabled
+							has_global_flag = rmt_composites_enabled
+							has_global_flag = rmt_metal_enabled
+							has_global_flag = rmt_water_enabled
+							has_global_flag = rmt_circuitry_enabled
+							has_global_flag = rmt_advanced_enabled
+							has_global_flag = rmt_state_modifier_enabled
+						}
+						NOT = { has_global_flag = rmt_var_1_enabled }
+						NOT = { has_global_flag = rmt_var_2_enabled }
+					}
+					AND = {
+						NOT = { has_global_flag = rmt_energy_enabled }
+						NOT = { has_global_flag = rmt_composites_enabled }
+						NOT = { has_global_flag = rmt_metal_enabled }
+						NOT = { has_global_flag = rmt_water_enabled }
+						NOT = { has_global_flag = rmt_circuitry_enabled }
+						NOT = { has_global_flag = rmt_advanced_enabled }
+						NOT = { has_global_flag = rmt_state_modifier_enabled }
+						OR = {
+							has_global_flag = rmt_var_1_enabled
+							has_global_flag = rmt_var_2_enabled
+						}
+					}
+				}
+			}
+			rmt_sub_25_click_enabled = {
+				OR = {
+					AND = {
+						OR = {
+							has_global_flag = rmt_energy_enabled
+							has_global_flag = rmt_composites_enabled
+							has_global_flag = rmt_metal_enabled
+							has_global_flag = rmt_water_enabled
+							has_global_flag = rmt_circuitry_enabled
+							has_global_flag = rmt_advanced_enabled
+							has_global_flag = rmt_state_modifier_enabled
+						}
+						NOT = { has_global_flag = rmt_var_1_enabled }
+						NOT = { has_global_flag = rmt_var_2_enabled }
+					}
+					AND = {
+						NOT = { has_global_flag = rmt_energy_enabled }
+						NOT = { has_global_flag = rmt_composites_enabled }
+						NOT = { has_global_flag = rmt_metal_enabled }
+						NOT = { has_global_flag = rmt_water_enabled }
+						NOT = { has_global_flag = rmt_circuitry_enabled }
+						NOT = { has_global_flag = rmt_advanced_enabled }
+						NOT = { has_global_flag = rmt_state_modifier_enabled }
+						OR = {
+							has_global_flag = rmt_var_1_enabled
+							has_global_flag = rmt_var_2_enabled
+						}
+					}
+				}
+			}
+			rmt_sub_200_click_enabled = {
+				OR = {
+					AND = {
+						OR = {
+							has_global_flag = rmt_energy_enabled
+							has_global_flag = rmt_composites_enabled
+							has_global_flag = rmt_metal_enabled
+							has_global_flag = rmt_water_enabled
+							has_global_flag = rmt_circuitry_enabled
+							has_global_flag = rmt_advanced_enabled
+							has_global_flag = rmt_state_modifier_enabled
+						}
+						NOT = { has_global_flag = rmt_var_1_enabled }
+						NOT = { has_global_flag = rmt_var_2_enabled }
+					}
+					AND = {
+						NOT = { has_global_flag = rmt_energy_enabled }
+						NOT = { has_global_flag = rmt_composites_enabled }
+						NOT = { has_global_flag = rmt_metal_enabled }
+						NOT = { has_global_flag = rmt_water_enabled }
+						NOT = { has_global_flag = rmt_circuitry_enabled }
+						NOT = { has_global_flag = rmt_advanced_enabled }
+						NOT = { has_global_flag = rmt_state_modifier_enabled }
+						OR = {
+							has_global_flag = rmt_var_1_enabled
+							has_global_flag = rmt_var_2_enabled
+						}
+					}
+				}
+			}
+			#rmt_add_var_click_enabled = {
+			#	OR = {
+			#		has_global_flag = rmt_var_1_enabled
+			#		has_global_flag = rmt_var_2_enabled
+			#	}
+			#	OR = {
+			#		has_global_flag = rmt_energy_enabled
+			#		has_global_flag = rmt_composites_enabled
+			#		has_global_flag = rmt_metal_enabled
+			#		has_global_flag = rmt_water_enabled
+			#		has_global_flag = rmt_circuitry_enabled
+			#		has_global_flag = rmt_advanced_enabled
+			#		AND = {
+			#			has_global_flag = rmt_state_modifier_enabled
+			#			OR = {
+			#				AND = {
+			#					has_global_flag = rmt_var_1_enabled
+			#					check_variable = { global.rmt_variable_1 > -201 }
+			#				}
+			#				AND = {
+			#					has_global_flag = rmt_var_2_enabled
+			#					check_variable = { global.rmt_variable_2 > -201 }
+			#				}
+			#			}
+			#		}
+			#	}
+			#}
+			#rmt_sub_var_click_enabled = {
+			#	OR = {
+			#		has_global_flag = rmt_var_1_enabled
+			#		has_global_flag = rmt_var_2_enabled
+			#	}
+			#	OR = {
+			#		has_global_flag = rmt_energy_enabled
+			#		has_global_flag = rmt_composites_enabled
+			#		has_global_flag = rmt_metal_enabled
+			#		has_global_flag = rmt_water_enabled
+			#		has_global_flag = rmt_circuitry_enabled
+			#		has_global_flag = rmt_advanced_enabled
+			#		AND = {
+			#			has_global_flag = rmt_state_modifier_enabled
+			#			OR = {
+			#				AND = {
+			#					has_global_flag = rmt_var_1_enabled
+			#					check_variable = { global.rmt_variable_1 > -201 }
+			#				}
+			#				AND = {
+			#					has_global_flag = rmt_var_2_enabled
+			#					check_variable = { global.rmt_variable_2 > -201 }
+			#				}
+			#			}
+			#		}
+			#	}
+			#}
+		}
+	}
+}

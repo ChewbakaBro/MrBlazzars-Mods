@@ -1,0 +1,165 @@
+ideas = {
+
+	country = {
+
+		tp_elites_nation = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = elites
+			}
+
+			removal_cost = -1
+
+			picture = generic_elites_drift_bonus
+
+
+			modifier = {
+				elites_drift = 100
+			}
+		}
+
+		tp_elites_banned = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = elites }
+			}
+
+			removal_cost = -1
+
+			picture = generic_elites_banned
+
+
+			modifier = {
+				elites_drift = -100
+			}
+		}
+
+		tp_intellectuals_nation = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = intellectuals
+			}
+
+			removal_cost = -1
+
+			picture = generic_intellectuals_drift_bonus
+
+
+			modifier = {
+				intellectuals_drift = 100
+			}
+		}
+
+		tp_intellectuals_banned = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = intellectuals }
+			}
+
+			removal_cost = -1
+
+			picture = anti_soviet_pact
+
+
+			modifier = {
+				intellectuals_drift = -100
+			}
+		}
+
+		tp_people_nation = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = people
+			}
+
+			removal_cost = -1
+
+			picture = generic_people_drift_bonus
+
+
+			modifier = {
+				people_drift = 100
+			}
+		}
+
+		tp_people_banned = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = people }
+			}
+
+			removal_cost = -1
+
+			picture = tpt_people_banned
+
+
+			modifier = {
+				people_drift = -100
+			}
+		}
+
+		tp_ruler_nation = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = ruler
+			}
+
+			removal_cost = -1
+
+			picture = generic_ruler_drift_bonus
+
+
+			modifier = {
+				ruler_drift = 100
+			}
+		}
+
+		tp_ruler_banned = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = ruler }
+			}
+
+			removal_cost = -1
+
+			picture = tpt_ruler_banned
+
+
+			modifier = {
+				ruler_drift = -100
+			}
+		}
+	}
+}

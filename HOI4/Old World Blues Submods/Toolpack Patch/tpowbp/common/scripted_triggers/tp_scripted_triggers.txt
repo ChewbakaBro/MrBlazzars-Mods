@@ -1,0 +1,29 @@
+
+mrt_has_resources = {
+	OR = {
+		has_resources_amount = {
+			resource = energy
+			amount > 0
+		}
+		has_resources_amount = {
+			resource = composites
+			amount > 0
+		}
+		has_resources_amount = {
+			resource = metal
+			amount > 0
+		}
+		has_resources_amount = {
+			resource = water
+			amount > 0
+		}
+		has_resources_amount = {
+			resource = circuitry
+			amount > 0
+		}
+		has_resources_amount = {
+			resource = advanced
+			amount > 0
+		}
+	}
+}

@@ -1,0 +1,4345 @@
+defined_text = {
+	name = TPT_ACTIVITY
+
+	text = {
+		trigger = {
+			has_global_flag = TPT_enabled
+		}
+		localization_key = TPT_ACTIVITY_OFF
+	}
+	text = {
+		localization_key = TPT_ACTIVITY_ON
+	}
+}
+
+defined_text = {
+	name = tpt_major_text
+
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_major = yes
+					NOT = { has_country_flag = tpt_not_major }
+				}
+				AND = {
+					is_major = no
+					has_country_flag = tpt_major
+				}
+			}
+		}
+		localization_key = tpt_major_yes
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					is_major = yes
+					has_country_flag = tpt_not_major
+				}
+				AND = {
+					is_major = no
+					NOT = { has_country_flag = tpt_major }
+				}
+			}
+		}
+		localization_key = tpt_major_no
+	}
+}
+
+defined_text = {
+	name = tpt_op_or_trade
+
+	text = {
+		trigger = {
+			has_global_flag = tpt_trade_yes
+		}
+		localization_key = tpt_key_trade_yes
+	}
+	text = {
+		localization_key = tpt_key_trade_no
+	}
+}
+
+defined_text = {
+	name = TPT_POP_elites
+
+	text = {
+		trigger = {
+			elites < 0.01
+		}
+		localization_key = TPT_POP_0
+	}
+	text = {
+		trigger = {
+			elites > 0.008
+			elites < 0.019
+		}
+		localization_key = TPT_POP_1
+	}
+	text = {
+		trigger = {
+			elites > 0.018
+			elites < 0.029
+		}
+		localization_key = TPT_POP_2
+	}
+	text = {
+		trigger = {
+			elites > 0.028
+			elites < 0.039
+		}
+		localization_key = TPT_POP_3
+	}
+	text = {
+		trigger = {
+			elites > 0.038
+			elites < 0.049
+		}
+		localization_key = TPT_POP_4
+	}
+	text = {
+		trigger = {
+			elites > 0.048
+			elites < 0.059
+		}
+		localization_key = TPT_POP_5
+	}
+	text = {
+		trigger = {
+			elites > 0.058
+			elites < 0.069
+		}
+		localization_key = TPT_POP_6
+	}
+	text = {
+		trigger = {
+			elites > 0.068
+			elites < 0.079
+		}
+		localization_key = TPT_POP_7
+	}
+	text = {
+		trigger = {
+			elites > 0.078
+			elites < 0.089
+		}
+		localization_key = TPT_POP_8
+	}
+	text = {
+		trigger = {
+			elites > 0.088
+			elites < 0.099
+		}
+		localization_key = TPT_POP_9
+	}
+	text = {
+		trigger = {
+			elites > 0.098
+			elites < 0.109
+		}
+		localization_key = TPT_POP_10
+	}
+	text = {
+		trigger = {
+			elites > 0.108
+			elites < 0.119
+		}
+		localization_key = TPT_POP_11
+	}
+	text = {
+		trigger = {
+			elites > 0.118
+			elites < 0.129
+		}
+		localization_key = TPT_POP_12
+	}
+	text = {
+		trigger = {
+			elites > 0.128
+			elites < 0.139
+		}
+		localization_key = TPT_POP_13
+	}
+	text = {
+		trigger = {
+			elites > 0.138
+			elites < 0.149
+		}
+		localization_key = TPT_POP_14
+	}
+	text = {
+		trigger = {
+			elites > 0.148
+			elites < 0.159
+		}
+		localization_key = TPT_POP_15
+	}
+	text = {
+		trigger = {
+			elites > 0.158
+			elites < 0.169
+		}
+		localization_key = TPT_POP_16
+	}
+	text = {
+		trigger = {
+			elites > 0.168
+			elites < 0.179
+		}
+		localization_key = TPT_POP_17
+	}
+	text = {
+		trigger = {
+			elites > 0.178
+			elites < 0.189
+		}
+		localization_key = TPT_POP_18
+	}
+	text = {
+		trigger = {
+			elites > 0.188
+			elites < 0.199
+		}
+		localization_key = TPT_POP_19
+	}
+	text = {
+		trigger = {
+			elites > 0.198
+			elites < 0.209
+		}
+		localization_key = TPT_POP_20
+	}
+	text = {
+		trigger = {
+			elites > 0.208
+			elites < 0.219
+		}
+		localization_key = TPT_POP_21
+	}
+	text = {
+		trigger = {
+			elites > 0.218
+			elites < 0.229
+		}
+		localization_key = TPT_POP_22
+	}
+	text = {
+		trigger = {
+			elites > 0.228
+			elites < 0.239
+		}
+		localization_key = TPT_POP_23
+	}
+	text = {
+		trigger = {
+			elites > 0.238
+			elites < 0.249
+		}
+		localization_key = TPT_POP_24
+	}
+	text = {
+		trigger = {
+			elites > 0.248
+			elites < 0.259
+		}
+		localization_key = TPT_POP_25
+	}
+	text = {
+		trigger = {
+			elites > 0.258
+			elites < 0.269
+		}
+		localization_key = TPT_POP_26
+	}
+	text = {
+		trigger = {
+			elites > 0.268
+			elites < 0.279
+		}
+		localization_key = TPT_POP_27
+	}
+	text = {
+		trigger = {
+			elites > 0.278
+			elites < 0.289
+		}
+		localization_key = TPT_POP_28
+	}
+	text = {
+		trigger = {
+			elites > 0.288
+			elites < 0.299
+		}
+		localization_key = TPT_POP_29
+	}
+	text = {
+		trigger = {
+			elites > 0.298
+			elites < 0.309
+		}
+		localization_key = TPT_POP_30
+	}
+	text = {
+		trigger = {
+			elites > 0.308
+			elites < 0.319
+		}
+		localization_key = TPT_POP_31
+	}
+	text = {
+		trigger = {
+			elites > 0.318
+			elites < 0.329
+		}
+		localization_key = TPT_POP_32
+	}
+	text = {
+		trigger = {
+			elites > 0.328
+			elites < 0.339
+		}
+		localization_key = TPT_POP_33
+	}
+	text = {
+		trigger = {
+			elites > 0.338
+			elites < 0.349
+		}
+		localization_key = TPT_POP_34
+	}
+	text = {
+		trigger = {
+			elites > 0.348
+			elites < 0.359
+		}
+		localization_key = TPT_POP_35
+	}
+	text = {
+		trigger = {
+			elites > 0.358
+			elites < 0.369
+		}
+		localization_key = TPT_POP_36
+	}
+	text = {
+		trigger = {
+			elites > 0.368
+			elites < 0.379
+		}
+		localization_key = TPT_POP_37
+	}
+	text = {
+		trigger = {
+			elites > 0.378
+			elites < 0.389
+		}
+		localization_key = TPT_POP_38
+	}
+	text = {
+		trigger = {
+			elites > 0.388
+			elites < 0.399
+		}
+		localization_key = TPT_POP_39
+	}
+	text = {
+		trigger = {
+			elites > 0.398
+			elites < 0.409
+		}
+		localization_key = TPT_POP_40
+	}
+	text = {
+		trigger = {
+			elites > 0.408
+			elites < 0.419
+		}
+		localization_key = TPT_POP_41
+	}
+	text = {
+		trigger = {
+			elites > 0.418
+			elites < 0.429
+		}
+		localization_key = TPT_POP_42
+	}
+	text = {
+		trigger = {
+			elites > 0.428
+			elites < 0.439
+		}
+		localization_key = TPT_POP_43
+	}
+	text = {
+		trigger = {
+			elites > 0.438
+			elites < 0.449
+		}
+		localization_key = TPT_POP_44
+	}
+	text = {
+		trigger = {
+			elites > 0.448
+			elites < 0.459
+		}
+		localization_key = TPT_POP_45
+	}
+	text = {
+		trigger = {
+			elites > 0.458
+			elites < 0.469
+		}
+		localization_key = TPT_POP_46
+	}
+	text = {
+		trigger = {
+			elites > 0.468
+			elites < 0.479
+		}
+		localization_key = TPT_POP_47
+	}
+	text = {
+		trigger = {
+			elites > 0.478
+			elites < 0.489
+		}
+		localization_key = TPT_POP_48
+	}
+	text = {
+		trigger = {
+			elites > 0.488
+			elites < 0.499
+		}
+		localization_key = TPT_POP_49
+	}
+	text = {
+		trigger = {
+			elites > 0.498
+			elites < 0.509
+		}
+		localization_key = TPT_POP_50
+	}
+	text = {
+		trigger = {
+			elites > 0.508
+			elites < 0.519
+		}
+		localization_key = TPT_POP_51
+	}
+	text = {
+		trigger = {
+			elites > 0.518
+			elites < 0.529
+		}
+		localization_key = TPT_POP_52
+	}
+	text = {
+		trigger = {
+			elites > 0.528
+			elites < 0.539
+		}
+		localization_key = TPT_POP_53
+	}
+	text = {
+		trigger = {
+			elites > 0.538
+			elites < 0.549
+		}
+		localization_key = TPT_POP_54
+	}
+	text = {
+		trigger = {
+			elites > 0.548
+			elites < 0.559
+		}
+		localization_key = TPT_POP_55
+	}
+	text = {
+		trigger = {
+			elites > 0.558
+			elites < 0.569
+		}
+		localization_key = TPT_POP_56
+	}
+	text = {
+		trigger = {
+			elites > 0.568
+			elites < 0.579
+		}
+		localization_key = TPT_POP_57
+	}
+	text = {
+		trigger = {
+			elites > 0.578
+			elites < 0.589
+		}
+		localization_key = TPT_POP_58
+	}
+	text = {
+		trigger = {
+			elites > 0.588
+			elites < 0.599
+		}
+		localization_key = TPT_POP_59
+	}
+	text = {
+		trigger = {
+			elites > 0.598
+			elites < 0.609
+		}
+		localization_key = TPT_POP_60
+	}
+	text = {
+		trigger = {
+			elites > 0.608
+			elites < 0.619
+		}
+		localization_key = TPT_POP_61
+	}
+	text = {
+		trigger = {
+			elites > 0.618
+			elites < 0.629
+		}
+		localization_key = TPT_POP_62
+	}
+	text = {
+		trigger = {
+			elites > 0.628
+			elites < 0.639
+		}
+		localization_key = TPT_POP_63
+	}
+	text = {
+		trigger = {
+			elites > 0.638
+			elites < 0.649
+		}
+		localization_key = TPT_POP_64
+	}
+	text = {
+		trigger = {
+			elites > 0.648
+			elites < 0.659
+		}
+		localization_key = TPT_POP_65
+	}
+	text = {
+		trigger = {
+			elites > 0.658
+			elites < 0.669
+		}
+		localization_key = TPT_POP_66
+	}
+	text = {
+		trigger = {
+			elites > 0.668
+			elites < 0.679
+		}
+		localization_key = TPT_POP_67
+	}
+	text = {
+		trigger = {
+			elites > 0.678
+			elites < 0.689
+		}
+		localization_key = TPT_POP_68
+	}
+	text = {
+		trigger = {
+			elites > 0.688
+			elites < 0.699
+		}
+		localization_key = TPT_POP_69
+	}
+	text = {
+		trigger = {
+			elites > 0.698
+			elites < 0.709
+		}
+		localization_key = TPT_POP_70
+	}
+	text = {
+		trigger = {
+			elites > 0.708
+			elites < 0.719
+		}
+		localization_key = TPT_POP_71
+	}
+	text = {
+		trigger = {
+			elites > 0.718
+			elites < 0.729
+		}
+		localization_key = TPT_POP_72
+	}
+	text = {
+		trigger = {
+			elites > 0.728
+			elites < 0.739
+		}
+		localization_key = TPT_POP_73
+	}
+	text = {
+		trigger = {
+			elites > 0.738
+			elites < 0.749
+		}
+		localization_key = TPT_POP_74
+	}
+	text = {
+		trigger = {
+			elites > 0.748
+			elites < 0.759
+		}
+		localization_key = TPT_POP_75
+	}
+	text = {
+		trigger = {
+			elites > 0.758
+			elites < 0.769
+		}
+		localization_key = TPT_POP_76
+	}
+	text = {
+		trigger = {
+			elites > 0.768
+			elites < 0.779
+		}
+		localization_key = TPT_POP_77
+	}
+	text = {
+		trigger = {
+			elites > 0.778
+			elites < 0.789
+		}
+		localization_key = TPT_POP_78
+	}
+	text = {
+		trigger = {
+			elites > 0.788
+			elites < 0.799
+		}
+		localization_key = TPT_POP_79
+	}
+	text = {
+		trigger = {
+			elites > 0.798
+			elites < 0.809
+		}
+		localization_key = TPT_POP_80
+	}
+	text = {
+		trigger = {
+			elites > 0.808
+			elites < 0.819
+		}
+		localization_key = TPT_POP_81
+	}
+	text = {
+		trigger = {
+			elites > 0.818
+			elites < 0.829
+		}
+		localization_key = TPT_POP_82
+	}
+	text = {
+		trigger = {
+			elites > 0.828
+			elites < 0.839
+		}
+		localization_key = TPT_POP_83
+	}
+	text = {
+		trigger = {
+			elites > 0.838
+			elites < 0.849
+		}
+		localization_key = TPT_POP_84
+	}
+	text = {
+		trigger = {
+			elites > 0.848
+			elites < 0.859
+		}
+		localization_key = TPT_POP_85
+	}
+	text = {
+		trigger = {
+			elites > 0.858
+			elites < 0.869
+		}
+		localization_key = TPT_POP_86
+	}
+	text = {
+		trigger = {
+			elites > 0.868
+			elites < 0.879
+		}
+		localization_key = TPT_POP_87
+	}
+	text = {
+		trigger = {
+			elites > 0.878
+			elites < 0.889
+		}
+		localization_key = TPT_POP_88
+	}
+	text = {
+		trigger = {
+			elites > 0.888
+			elites < 0.899
+		}
+		localization_key = TPT_POP_89
+	}
+	text = {
+		trigger = {
+			elites > 0.898
+			elites < 0.909
+		}
+		localization_key = TPT_POP_90
+	}
+	text = {
+		trigger = {
+			elites > 0.908
+			elites < 0.919
+		}
+		localization_key = TPT_POP_91
+	}
+	text = {
+		trigger = {
+			elites > 0.918
+			elites < 0.929
+		}
+		localization_key = TPT_POP_92
+	}
+	text = {
+		trigger = {
+			elites > 0.928
+			elites < 0.939
+		}
+		localization_key = TPT_POP_93
+	}
+	text = {
+		trigger = {
+			elites > 0.938
+			elites < 0.949
+		}
+		localization_key = TPT_POP_94
+	}
+	text = {
+		trigger = {
+			elites > 0.948
+			elites < 0.959
+		}
+		localization_key = TPT_POP_95
+	}
+	text = {
+		trigger = {
+			elites > 0.958
+			elites < 0.969
+		}
+		localization_key = TPT_POP_96
+	}
+	text = {
+		trigger = {
+			elites > 0.968
+			elites < 0.979
+		}
+		localization_key = TPT_POP_97
+	}
+	text = {
+		trigger = {
+			elites > 0.978
+			elites < 0.989
+		}
+		localization_key = TPT_POP_88
+	}
+	text = {
+		trigger = {
+			elites > 0.988
+			elites < 0.999
+		}
+		localization_key = TPT_POP_99
+	}
+	text = {
+		trigger = {
+			elites > 0.998
+		}
+		localization_key = TPT_POP_100
+	}
+}
+
+
+### #### ###   ###
+#   #  # #  # #  #
+#   #  # #  # #  #
+### #### #   #   #
+
+
+defined_text = {
+	name = TPT_POP_intellectuals
+
+	text = {
+		trigger = {
+			intellectuals < 0.01
+		}
+		localization_key = TPT_POP_0
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.008
+			intellectuals < 0.019
+		}
+		localization_key = TPT_POP_1
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.018
+			intellectuals < 0.029
+		}
+		localization_key = TPT_POP_2
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.028
+			intellectuals < 0.039
+		}
+		localization_key = TPT_POP_3
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.038
+			intellectuals < 0.049
+		}
+		localization_key = TPT_POP_4
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.048
+			intellectuals < 0.059
+		}
+		localization_key = TPT_POP_5
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.058
+			intellectuals < 0.069
+		}
+		localization_key = TPT_POP_6
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.068
+			intellectuals < 0.079
+		}
+		localization_key = TPT_POP_7
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.078
+			intellectuals < 0.089
+		}
+		localization_key = TPT_POP_8
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.088
+			intellectuals < 0.099
+		}
+		localization_key = TPT_POP_9
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.098
+			intellectuals < 0.109
+		}
+		localization_key = TPT_POP_10
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.108
+			intellectuals < 0.119
+		}
+		localization_key = TPT_POP_11
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.118
+			intellectuals < 0.129
+		}
+		localization_key = TPT_POP_12
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.128
+			intellectuals < 0.139
+		}
+		localization_key = TPT_POP_13
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.138
+			intellectuals < 0.149
+		}
+		localization_key = TPT_POP_14
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.148
+			intellectuals < 0.159
+		}
+		localization_key = TPT_POP_15
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.158
+			intellectuals < 0.169
+		}
+		localization_key = TPT_POP_16
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.168
+			intellectuals < 0.179
+		}
+		localization_key = TPT_POP_17
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.178
+			intellectuals < 0.189
+		}
+		localization_key = TPT_POP_18
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.188
+			intellectuals < 0.199
+		}
+		localization_key = TPT_POP_19
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.198
+			intellectuals < 0.209
+		}
+		localization_key = TPT_POP_20
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.208
+			intellectuals < 0.219
+		}
+		localization_key = TPT_POP_21
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.218
+			intellectuals < 0.229
+		}
+		localization_key = TPT_POP_22
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.228
+			intellectuals < 0.239
+		}
+		localization_key = TPT_POP_23
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.238
+			intellectuals < 0.249
+		}
+		localization_key = TPT_POP_24
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.248
+			intellectuals < 0.259
+		}
+		localization_key = TPT_POP_25
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.258
+			intellectuals < 0.269
+		}
+		localization_key = TPT_POP_26
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.268
+			intellectuals < 0.279
+		}
+		localization_key = TPT_POP_27
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.278
+			intellectuals < 0.289
+		}
+		localization_key = TPT_POP_28
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.288
+			intellectuals < 0.299
+		}
+		localization_key = TPT_POP_29
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.298
+			intellectuals < 0.309
+		}
+		localization_key = TPT_POP_30
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.308
+			intellectuals < 0.319
+		}
+		localization_key = TPT_POP_31
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.318
+			intellectuals < 0.329
+		}
+		localization_key = TPT_POP_32
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.328
+			intellectuals < 0.339
+		}
+		localization_key = TPT_POP_33
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.338
+			intellectuals < 0.349
+		}
+		localization_key = TPT_POP_34
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.348
+			intellectuals < 0.359
+		}
+		localization_key = TPT_POP_35
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.358
+			intellectuals < 0.369
+		}
+		localization_key = TPT_POP_36
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.368
+			intellectuals < 0.379
+		}
+		localization_key = TPT_POP_37
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.378
+			intellectuals < 0.389
+		}
+		localization_key = TPT_POP_38
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.388
+			intellectuals < 0.399
+		}
+		localization_key = TPT_POP_39
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.398
+			intellectuals < 0.409
+		}
+		localization_key = TPT_POP_40
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.408
+			intellectuals < 0.419
+		}
+		localization_key = TPT_POP_41
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.418
+			intellectuals < 0.429
+		}
+		localization_key = TPT_POP_42
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.428
+			intellectuals < 0.439
+		}
+		localization_key = TPT_POP_43
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.438
+			intellectuals < 0.449
+		}
+		localization_key = TPT_POP_44
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.448
+			intellectuals < 0.459
+		}
+		localization_key = TPT_POP_45
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.458
+			intellectuals < 0.469
+		}
+		localization_key = TPT_POP_46
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.468
+			intellectuals < 0.479
+		}
+		localization_key = TPT_POP_47
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.478
+			intellectuals < 0.489
+		}
+		localization_key = TPT_POP_48
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.488
+			intellectuals < 0.499
+		}
+		localization_key = TPT_POP_49
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.498
+			intellectuals < 0.509
+		}
+		localization_key = TPT_POP_50
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.508
+			intellectuals < 0.519
+		}
+		localization_key = TPT_POP_51
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.518
+			intellectuals < 0.529
+		}
+		localization_key = TPT_POP_52
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.528
+			intellectuals < 0.539
+		}
+		localization_key = TPT_POP_53
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.538
+			intellectuals < 0.549
+		}
+		localization_key = TPT_POP_54
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.548
+			intellectuals < 0.559
+		}
+		localization_key = TPT_POP_55
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.558
+			intellectuals < 0.569
+		}
+		localization_key = TPT_POP_56
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.568
+			intellectuals < 0.579
+		}
+		localization_key = TPT_POP_57
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.578
+			intellectuals < 0.589
+		}
+		localization_key = TPT_POP_58
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.588
+			intellectuals < 0.599
+		}
+		localization_key = TPT_POP_59
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.598
+			intellectuals < 0.609
+		}
+		localization_key = TPT_POP_60
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.608
+			intellectuals < 0.619
+		}
+		localization_key = TPT_POP_61
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.618
+			intellectuals < 0.629
+		}
+		localization_key = TPT_POP_62
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.628
+			intellectuals < 0.639
+		}
+		localization_key = TPT_POP_63
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.638
+			intellectuals < 0.649
+		}
+		localization_key = TPT_POP_64
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.648
+			intellectuals < 0.659
+		}
+		localization_key = TPT_POP_65
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.658
+			intellectuals < 0.669
+		}
+		localization_key = TPT_POP_66
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.668
+			intellectuals < 0.679
+		}
+		localization_key = TPT_POP_67
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.678
+			intellectuals < 0.689
+		}
+		localization_key = TPT_POP_68
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.688
+			intellectuals < 0.699
+		}
+		localization_key = TPT_POP_69
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.698
+			intellectuals < 0.709
+		}
+		localization_key = TPT_POP_70
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.708
+			intellectuals < 0.719
+		}
+		localization_key = TPT_POP_71
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.718
+			intellectuals < 0.729
+		}
+		localization_key = TPT_POP_72
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.728
+			intellectuals < 0.739
+		}
+		localization_key = TPT_POP_73
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.738
+			intellectuals < 0.749
+		}
+		localization_key = TPT_POP_74
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.748
+			intellectuals < 0.759
+		}
+		localization_key = TPT_POP_75
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.758
+			intellectuals < 0.769
+		}
+		localization_key = TPT_POP_76
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.768
+			intellectuals < 0.779
+		}
+		localization_key = TPT_POP_77
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.778
+			intellectuals < 0.789
+		}
+		localization_key = TPT_POP_78
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.788
+			intellectuals < 0.799
+		}
+		localization_key = TPT_POP_79
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.798
+			intellectuals < 0.809
+		}
+		localization_key = TPT_POP_80
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.808
+			intellectuals < 0.819
+		}
+		localization_key = TPT_POP_81
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.818
+			intellectuals < 0.829
+		}
+		localization_key = TPT_POP_82
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.828
+			intellectuals < 0.839
+		}
+		localization_key = TPT_POP_83
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.838
+			intellectuals < 0.849
+		}
+		localization_key = TPT_POP_84
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.848
+			intellectuals < 0.859
+		}
+		localization_key = TPT_POP_85
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.858
+			intellectuals < 0.869
+		}
+		localization_key = TPT_POP_86
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.868
+			intellectuals < 0.879
+		}
+		localization_key = TPT_POP_87
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.878
+			intellectuals < 0.889
+		}
+		localization_key = TPT_POP_88
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.888
+			intellectuals < 0.899
+		}
+		localization_key = TPT_POP_89
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.898
+			intellectuals < 0.909
+		}
+		localization_key = TPT_POP_90
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.908
+			intellectuals < 0.919
+		}
+		localization_key = TPT_POP_91
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.918
+			intellectuals < 0.929
+		}
+		localization_key = TPT_POP_92
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.928
+			intellectuals < 0.939
+		}
+		localization_key = TPT_POP_93
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.938
+			intellectuals < 0.949
+		}
+		localization_key = TPT_POP_94
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.948
+			intellectuals < 0.959
+		}
+		localization_key = TPT_POP_95
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.958
+			intellectuals < 0.969
+		}
+		localization_key = TPT_POP_96
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.968
+			intellectuals < 0.979
+		}
+		localization_key = TPT_POP_97
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.978
+			intellectuals < 0.989
+		}
+		localization_key = TPT_POP_88
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.988
+			intellectuals < 0.999
+		}
+		localization_key = TPT_POP_99
+	}
+	text = {
+		trigger = {
+			intellectuals > 0.998
+		}
+		localization_key = TPT_POP_100
+	}
+}
+
+###   #### ####  ####
+#  ## #    # ## ##  #
+#   # ###  #  # #   #
+#  ## #    #  ###   #
+###   #### #   #    #
+
+
+
+defined_text = {
+	name = TPT_POP_people
+
+	text = {
+		trigger = {
+			people < 0.01
+		}
+		localization_key = TPT_POP_0
+	}
+	text = {
+		trigger = {
+			people > 0.008
+			people < 0.019
+		}
+		localization_key = TPT_POP_1
+	}
+	text = {
+		trigger = {
+			people > 0.018
+			people < 0.029
+		}
+		localization_key = TPT_POP_2
+	}
+	text = {
+		trigger = {
+			people > 0.028
+			people < 0.039
+		}
+		localization_key = TPT_POP_3
+	}
+	text = {
+		trigger = {
+			people > 0.038
+			people < 0.049
+		}
+		localization_key = TPT_POP_4
+	}
+	text = {
+		trigger = {
+			people > 0.048
+			people < 0.059
+		}
+		localization_key = TPT_POP_5
+	}
+	text = {
+		trigger = {
+			people > 0.058
+			people < 0.069
+		}
+		localization_key = TPT_POP_6
+	}
+	text = {
+		trigger = {
+			people > 0.068
+			people < 0.079
+		}
+		localization_key = TPT_POP_7
+	}
+	text = {
+		trigger = {
+			people > 0.078
+			people < 0.089
+		}
+		localization_key = TPT_POP_8
+	}
+	text = {
+		trigger = {
+			people > 0.088
+			people < 0.099
+		}
+		localization_key = TPT_POP_9
+	}
+	text = {
+		trigger = {
+			people > 0.098
+			people < 0.109
+		}
+		localization_key = TPT_POP_10
+	}
+	text = {
+		trigger = {
+			people > 0.108
+			people < 0.119
+		}
+		localization_key = TPT_POP_11
+	}
+	text = {
+		trigger = {
+			people > 0.118
+			people < 0.129
+		}
+		localization_key = TPT_POP_12
+	}
+	text = {
+		trigger = {
+			people > 0.128
+			people < 0.139
+		}
+		localization_key = TPT_POP_13
+	}
+	text = {
+		trigger = {
+			people > 0.138
+			people < 0.149
+		}
+		localization_key = TPT_POP_14
+	}
+	text = {
+		trigger = {
+			people > 0.148
+			people < 0.159
+		}
+		localization_key = TPT_POP_15
+	}
+	text = {
+		trigger = {
+			people > 0.158
+			people < 0.169
+		}
+		localization_key = TPT_POP_16
+	}
+	text = {
+		trigger = {
+			people > 0.168
+			people < 0.179
+		}
+		localization_key = TPT_POP_17
+	}
+	text = {
+		trigger = {
+			people > 0.178
+			people < 0.189
+		}
+		localization_key = TPT_POP_18
+	}
+	text = {
+		trigger = {
+			people > 0.188
+			people < 0.199
+		}
+		localization_key = TPT_POP_19
+	}
+	text = {
+		trigger = {
+			people > 0.198
+			people < 0.209
+		}
+		localization_key = TPT_POP_20
+	}
+	text = {
+		trigger = {
+			people > 0.208
+			people < 0.219
+		}
+		localization_key = TPT_POP_21
+	}
+	text = {
+		trigger = {
+			people > 0.218
+			people < 0.229
+		}
+		localization_key = TPT_POP_22
+	}
+	text = {
+		trigger = {
+			people > 0.228
+			people < 0.239
+		}
+		localization_key = TPT_POP_23
+	}
+	text = {
+		trigger = {
+			people > 0.238
+			people < 0.249
+		}
+		localization_key = TPT_POP_24
+	}
+	text = {
+		trigger = {
+			people > 0.248
+			people < 0.259
+		}
+		localization_key = TPT_POP_25
+	}
+	text = {
+		trigger = {
+			people > 0.258
+			people < 0.269
+		}
+		localization_key = TPT_POP_26
+	}
+	text = {
+		trigger = {
+			people > 0.268
+			people < 0.279
+		}
+		localization_key = TPT_POP_27
+	}
+	text = {
+		trigger = {
+			people > 0.278
+			people < 0.289
+		}
+		localization_key = TPT_POP_28
+	}
+	text = {
+		trigger = {
+			people > 0.288
+			people < 0.299
+		}
+		localization_key = TPT_POP_29
+	}
+	text = {
+		trigger = {
+			people > 0.298
+			people < 0.309
+		}
+		localization_key = TPT_POP_30
+	}
+	text = {
+		trigger = {
+			people > 0.308
+			people < 0.319
+		}
+		localization_key = TPT_POP_31
+	}
+	text = {
+		trigger = {
+			people > 0.318
+			people < 0.329
+		}
+		localization_key = TPT_POP_32
+	}
+	text = {
+		trigger = {
+			people > 0.328
+			people < 0.339
+		}
+		localization_key = TPT_POP_33
+	}
+	text = {
+		trigger = {
+			people > 0.338
+			people < 0.349
+		}
+		localization_key = TPT_POP_34
+	}
+	text = {
+		trigger = {
+			people > 0.348
+			people < 0.359
+		}
+		localization_key = TPT_POP_35
+	}
+	text = {
+		trigger = {
+			people > 0.358
+			people < 0.369
+		}
+		localization_key = TPT_POP_36
+	}
+	text = {
+		trigger = {
+			people > 0.368
+			people < 0.379
+		}
+		localization_key = TPT_POP_37
+	}
+	text = {
+		trigger = {
+			people > 0.378
+			people < 0.389
+		}
+		localization_key = TPT_POP_38
+	}
+	text = {
+		trigger = {
+			people > 0.388
+			people < 0.399
+		}
+		localization_key = TPT_POP_39
+	}
+	text = {
+		trigger = {
+			people > 0.398
+			people < 0.409
+		}
+		localization_key = TPT_POP_40
+	}
+	text = {
+		trigger = {
+			people > 0.408
+			people < 0.419
+		}
+		localization_key = TPT_POP_41
+	}
+	text = {
+		trigger = {
+			people > 0.418
+			people < 0.429
+		}
+		localization_key = TPT_POP_42
+	}
+	text = {
+		trigger = {
+			people > 0.428
+			people < 0.439
+		}
+		localization_key = TPT_POP_43
+	}
+	text = {
+		trigger = {
+			people > 0.438
+			people < 0.449
+		}
+		localization_key = TPT_POP_44
+	}
+	text = {
+		trigger = {
+			people > 0.448
+			people < 0.459
+		}
+		localization_key = TPT_POP_45
+	}
+	text = {
+		trigger = {
+			people > 0.458
+			people < 0.469
+		}
+		localization_key = TPT_POP_46
+	}
+	text = {
+		trigger = {
+			people > 0.468
+			people < 0.479
+		}
+		localization_key = TPT_POP_47
+	}
+	text = {
+		trigger = {
+			people > 0.478
+			people < 0.489
+		}
+		localization_key = TPT_POP_48
+	}
+	text = {
+		trigger = {
+			people > 0.488
+			people < 0.499
+		}
+		localization_key = TPT_POP_49
+	}
+	text = {
+		trigger = {
+			people > 0.498
+			people < 0.509
+		}
+		localization_key = TPT_POP_50
+	}
+	text = {
+		trigger = {
+			people > 0.508
+			people < 0.519
+		}
+		localization_key = TPT_POP_51
+	}
+	text = {
+		trigger = {
+			people > 0.518
+			people < 0.529
+		}
+		localization_key = TPT_POP_52
+	}
+	text = {
+		trigger = {
+			people > 0.528
+			people < 0.539
+		}
+		localization_key = TPT_POP_53
+	}
+	text = {
+		trigger = {
+			people > 0.538
+			people < 0.549
+		}
+		localization_key = TPT_POP_54
+	}
+	text = {
+		trigger = {
+			people > 0.548
+			people < 0.559
+		}
+		localization_key = TPT_POP_55
+	}
+	text = {
+		trigger = {
+			people > 0.558
+			people < 0.569
+		}
+		localization_key = TPT_POP_56
+	}
+	text = {
+		trigger = {
+			people > 0.568
+			people < 0.579
+		}
+		localization_key = TPT_POP_57
+	}
+	text = {
+		trigger = {
+			people > 0.578
+			people < 0.589
+		}
+		localization_key = TPT_POP_58
+	}
+	text = {
+		trigger = {
+			people > 0.588
+			people < 0.599
+		}
+		localization_key = TPT_POP_59
+	}
+	text = {
+		trigger = {
+			people > 0.598
+			people < 0.609
+		}
+		localization_key = TPT_POP_60
+	}
+	text = {
+		trigger = {
+			people > 0.608
+			people < 0.619
+		}
+		localization_key = TPT_POP_61
+	}
+	text = {
+		trigger = {
+			people > 0.618
+			people < 0.629
+		}
+		localization_key = TPT_POP_62
+	}
+	text = {
+		trigger = {
+			people > 0.628
+			people < 0.639
+		}
+		localization_key = TPT_POP_63
+	}
+	text = {
+		trigger = {
+			people > 0.638
+			people < 0.649
+		}
+		localization_key = TPT_POP_64
+	}
+	text = {
+		trigger = {
+			people > 0.648
+			people < 0.659
+		}
+		localization_key = TPT_POP_65
+	}
+	text = {
+		trigger = {
+			people > 0.658
+			people < 0.669
+		}
+		localization_key = TPT_POP_66
+	}
+	text = {
+		trigger = {
+			people > 0.668
+			people < 0.679
+		}
+		localization_key = TPT_POP_67
+	}
+	text = {
+		trigger = {
+			people > 0.678
+			people < 0.689
+		}
+		localization_key = TPT_POP_68
+	}
+	text = {
+		trigger = {
+			people > 0.688
+			people < 0.699
+		}
+		localization_key = TPT_POP_69
+	}
+	text = {
+		trigger = {
+			people > 0.698
+			people < 0.709
+		}
+		localization_key = TPT_POP_70
+	}
+	text = {
+		trigger = {
+			people > 0.708
+			people < 0.719
+		}
+		localization_key = TPT_POP_71
+	}
+	text = {
+		trigger = {
+			people > 0.718
+			people < 0.729
+		}
+		localization_key = TPT_POP_72
+	}
+	text = {
+		trigger = {
+			people > 0.728
+			people < 0.739
+		}
+		localization_key = TPT_POP_73
+	}
+	text = {
+		trigger = {
+			people > 0.738
+			people < 0.749
+		}
+		localization_key = TPT_POP_74
+	}
+	text = {
+		trigger = {
+			people > 0.748
+			people < 0.759
+		}
+		localization_key = TPT_POP_75
+	}
+	text = {
+		trigger = {
+			people > 0.758
+			people < 0.769
+		}
+		localization_key = TPT_POP_76
+	}
+	text = {
+		trigger = {
+			people > 0.768
+			people < 0.779
+		}
+		localization_key = TPT_POP_77
+	}
+	text = {
+		trigger = {
+			people > 0.778
+			people < 0.789
+		}
+		localization_key = TPT_POP_78
+	}
+	text = {
+		trigger = {
+			people > 0.788
+			people < 0.799
+		}
+		localization_key = TPT_POP_79
+	}
+	text = {
+		trigger = {
+			people > 0.798
+			people < 0.809
+		}
+		localization_key = TPT_POP_80
+	}
+	text = {
+		trigger = {
+			people > 0.808
+			people < 0.819
+		}
+		localization_key = TPT_POP_81
+	}
+	text = {
+		trigger = {
+			people > 0.818
+			people < 0.829
+		}
+		localization_key = TPT_POP_82
+	}
+	text = {
+		trigger = {
+			people > 0.828
+			people < 0.839
+		}
+		localization_key = TPT_POP_83
+	}
+	text = {
+		trigger = {
+			people > 0.838
+			people < 0.849
+		}
+		localization_key = TPT_POP_84
+	}
+	text = {
+		trigger = {
+			people > 0.848
+			people < 0.859
+		}
+		localization_key = TPT_POP_85
+	}
+	text = {
+		trigger = {
+			people > 0.858
+			people < 0.869
+		}
+		localization_key = TPT_POP_86
+	}
+	text = {
+		trigger = {
+			people > 0.868
+			people < 0.879
+		}
+		localization_key = TPT_POP_87
+	}
+	text = {
+		trigger = {
+			people > 0.878
+			people < 0.889
+		}
+		localization_key = TPT_POP_88
+	}
+	text = {
+		trigger = {
+			people > 0.888
+			people < 0.899
+		}
+		localization_key = TPT_POP_89
+	}
+	text = {
+		trigger = {
+			people > 0.898
+			people < 0.909
+		}
+		localization_key = TPT_POP_90
+	}
+	text = {
+		trigger = {
+			people > 0.908
+			people < 0.919
+		}
+		localization_key = TPT_POP_91
+	}
+	text = {
+		trigger = {
+			people > 0.918
+			people < 0.929
+		}
+		localization_key = TPT_POP_92
+	}
+	text = {
+		trigger = {
+			people > 0.928
+			people < 0.939
+		}
+		localization_key = TPT_POP_93
+	}
+	text = {
+		trigger = {
+			people > 0.938
+			people < 0.949
+		}
+		localization_key = TPT_POP_94
+	}
+	text = {
+		trigger = {
+			people > 0.948
+			people < 0.959
+		}
+		localization_key = TPT_POP_95
+	}
+	text = {
+		trigger = {
+			people > 0.958
+			people < 0.969
+		}
+		localization_key = TPT_POP_96
+	}
+	text = {
+		trigger = {
+			people > 0.968
+			people < 0.979
+		}
+		localization_key = TPT_POP_97
+	}
+	text = {
+		trigger = {
+			people > 0.978
+			people < 0.989
+		}
+		localization_key = TPT_POP_88
+	}
+	text = {
+		trigger = {
+			people > 0.988
+			people < 0.999
+		}
+		localization_key = TPT_POP_99
+	}
+	text = {
+		trigger = {
+			people > 0.998
+		}
+		localization_key = TPT_POP_100
+	}
+}
+
+
+#   #  #### #####
+##  #  #      #
+# # #  ###    #
+#  ##  #      #
+#   #  ####   #
+
+
+
+defined_text = {
+	name = TPT_POP_ruler
+
+	text = {
+		trigger = {
+			ruler < 0.01
+		}
+		localization_key = TPT_POP_0
+	}
+	text = {
+		trigger = {
+			ruler > 0.008
+			ruler < 0.019
+		}
+		localization_key = TPT_POP_1
+	}
+	text = {
+		trigger = {
+			ruler > 0.018
+			ruler < 0.029
+		}
+		localization_key = TPT_POP_2
+	}
+	text = {
+		trigger = {
+			ruler > 0.028
+			ruler < 0.039
+		}
+		localization_key = TPT_POP_3
+	}
+	text = {
+		trigger = {
+			ruler > 0.038
+			ruler < 0.049
+		}
+		localization_key = TPT_POP_4
+	}
+	text = {
+		trigger = {
+			ruler > 0.048
+			ruler < 0.059
+		}
+		localization_key = TPT_POP_5
+	}
+	text = {
+		trigger = {
+			ruler > 0.058
+			ruler < 0.069
+		}
+		localization_key = TPT_POP_6
+	}
+	text = {
+		trigger = {
+			ruler > 0.068
+			ruler < 0.079
+		}
+		localization_key = TPT_POP_7
+	}
+	text = {
+		trigger = {
+			ruler > 0.078
+			ruler < 0.089
+		}
+		localization_key = TPT_POP_8
+	}
+	text = {
+		trigger = {
+			ruler > 0.088
+			ruler < 0.099
+		}
+		localization_key = TPT_POP_9
+	}
+	text = {
+		trigger = {
+			ruler > 0.098
+			ruler < 0.109
+		}
+		localization_key = TPT_POP_10
+	}
+	text = {
+		trigger = {
+			ruler > 0.108
+			ruler < 0.119
+		}
+		localization_key = TPT_POP_11
+	}
+	text = {
+		trigger = {
+			ruler > 0.118
+			ruler < 0.129
+		}
+		localization_key = TPT_POP_12
+	}
+	text = {
+		trigger = {
+			ruler > 0.128
+			ruler < 0.139
+		}
+		localization_key = TPT_POP_13
+	}
+	text = {
+		trigger = {
+			ruler > 0.138
+			ruler < 0.149
+		}
+		localization_key = TPT_POP_14
+	}
+	text = {
+		trigger = {
+			ruler > 0.148
+			ruler < 0.159
+		}
+		localization_key = TPT_POP_15
+	}
+	text = {
+		trigger = {
+			ruler > 0.158
+			ruler < 0.169
+		}
+		localization_key = TPT_POP_16
+	}
+	text = {
+		trigger = {
+			ruler > 0.168
+			ruler < 0.179
+		}
+		localization_key = TPT_POP_17
+	}
+	text = {
+		trigger = {
+			ruler > 0.178
+			ruler < 0.189
+		}
+		localization_key = TPT_POP_18
+	}
+	text = {
+		trigger = {
+			ruler > 0.188
+			ruler < 0.199
+		}
+		localization_key = TPT_POP_19
+	}
+	text = {
+		trigger = {
+			ruler > 0.198
+			ruler < 0.209
+		}
+		localization_key = TPT_POP_20
+	}
+	text = {
+		trigger = {
+			ruler > 0.208
+			ruler < 0.219
+		}
+		localization_key = TPT_POP_21
+	}
+	text = {
+		trigger = {
+			ruler > 0.218
+			ruler < 0.229
+		}
+		localization_key = TPT_POP_22
+	}
+	text = {
+		trigger = {
+			ruler > 0.228
+			ruler < 0.239
+		}
+		localization_key = TPT_POP_23
+	}
+	text = {
+		trigger = {
+			ruler > 0.238
+			ruler < 0.249
+		}
+		localization_key = TPT_POP_24
+	}
+	text = {
+		trigger = {
+			ruler > 0.248
+			ruler < 0.259
+		}
+		localization_key = TPT_POP_25
+	}
+	text = {
+		trigger = {
+			ruler > 0.258
+			ruler < 0.269
+		}
+		localization_key = TPT_POP_26
+	}
+	text = {
+		trigger = {
+			ruler > 0.268
+			ruler < 0.279
+		}
+		localization_key = TPT_POP_27
+	}
+	text = {
+		trigger = {
+			ruler > 0.278
+			ruler < 0.289
+		}
+		localization_key = TPT_POP_28
+	}
+	text = {
+		trigger = {
+			ruler > 0.288
+			ruler < 0.299
+		}
+		localization_key = TPT_POP_29
+	}
+	text = {
+		trigger = {
+			ruler > 0.298
+			ruler < 0.309
+		}
+		localization_key = TPT_POP_30
+	}
+	text = {
+		trigger = {
+			ruler > 0.308
+			ruler < 0.319
+		}
+		localization_key = TPT_POP_31
+	}
+	text = {
+		trigger = {
+			ruler > 0.318
+			ruler < 0.329
+		}
+		localization_key = TPT_POP_32
+	}
+	text = {
+		trigger = {
+			ruler > 0.328
+			ruler < 0.339
+		}
+		localization_key = TPT_POP_33
+	}
+	text = {
+		trigger = {
+			ruler > 0.338
+			ruler < 0.349
+		}
+		localization_key = TPT_POP_34
+	}
+	text = {
+		trigger = {
+			ruler > 0.348
+			ruler < 0.359
+		}
+		localization_key = TPT_POP_35
+	}
+	text = {
+		trigger = {
+			ruler > 0.358
+			ruler < 0.369
+		}
+		localization_key = TPT_POP_36
+	}
+	text = {
+		trigger = {
+			ruler > 0.368
+			ruler < 0.379
+		}
+		localization_key = TPT_POP_37
+	}
+	text = {
+		trigger = {
+			ruler > 0.378
+			ruler < 0.389
+		}
+		localization_key = TPT_POP_38
+	}
+	text = {
+		trigger = {
+			ruler > 0.388
+			ruler < 0.399
+		}
+		localization_key = TPT_POP_39
+	}
+	text = {
+		trigger = {
+			ruler > 0.398
+			ruler < 0.409
+		}
+		localization_key = TPT_POP_40
+	}
+	text = {
+		trigger = {
+			ruler > 0.408
+			ruler < 0.419
+		}
+		localization_key = TPT_POP_41
+	}
+	text = {
+		trigger = {
+			ruler > 0.418
+			ruler < 0.429
+		}
+		localization_key = TPT_POP_42
+	}
+	text = {
+		trigger = {
+			ruler > 0.428
+			ruler < 0.439
+		}
+		localization_key = TPT_POP_43
+	}
+	text = {
+		trigger = {
+			ruler > 0.438
+			ruler < 0.449
+		}
+		localization_key = TPT_POP_44
+	}
+	text = {
+		trigger = {
+			ruler > 0.448
+			ruler < 0.459
+		}
+		localization_key = TPT_POP_45
+	}
+	text = {
+		trigger = {
+			ruler > 0.458
+			ruler < 0.469
+		}
+		localization_key = TPT_POP_46
+	}
+	text = {
+		trigger = {
+			ruler > 0.468
+			ruler < 0.479
+		}
+		localization_key = TPT_POP_47
+	}
+	text = {
+		trigger = {
+			ruler > 0.478
+			ruler < 0.489
+		}
+		localization_key = TPT_POP_48
+	}
+	text = {
+		trigger = {
+			ruler > 0.488
+			ruler < 0.499
+		}
+		localization_key = TPT_POP_49
+	}
+	text = {
+		trigger = {
+			ruler > 0.498
+			ruler < 0.509
+		}
+		localization_key = TPT_POP_50
+	}
+	text = {
+		trigger = {
+			ruler > 0.508
+			ruler < 0.519
+		}
+		localization_key = TPT_POP_51
+	}
+	text = {
+		trigger = {
+			ruler > 0.518
+			ruler < 0.529
+		}
+		localization_key = TPT_POP_52
+	}
+	text = {
+		trigger = {
+			ruler > 0.528
+			ruler < 0.539
+		}
+		localization_key = TPT_POP_53
+	}
+	text = {
+		trigger = {
+			ruler > 0.538
+			ruler < 0.549
+		}
+		localization_key = TPT_POP_54
+	}
+	text = {
+		trigger = {
+			ruler > 0.548
+			ruler < 0.559
+		}
+		localization_key = TPT_POP_55
+	}
+	text = {
+		trigger = {
+			ruler > 0.558
+			ruler < 0.569
+		}
+		localization_key = TPT_POP_56
+	}
+	text = {
+		trigger = {
+			ruler > 0.568
+			ruler < 0.579
+		}
+		localization_key = TPT_POP_57
+	}
+	text = {
+		trigger = {
+			ruler > 0.578
+			ruler < 0.589
+		}
+		localization_key = TPT_POP_58
+	}
+	text = {
+		trigger = {
+			ruler > 0.588
+			ruler < 0.599
+		}
+		localization_key = TPT_POP_59
+	}
+	text = {
+		trigger = {
+			ruler > 0.598
+			ruler < 0.609
+		}
+		localization_key = TPT_POP_60
+	}
+	text = {
+		trigger = {
+			ruler > 0.608
+			ruler < 0.619
+		}
+		localization_key = TPT_POP_61
+	}
+	text = {
+		trigger = {
+			ruler > 0.618
+			ruler < 0.629
+		}
+		localization_key = TPT_POP_62
+	}
+	text = {
+		trigger = {
+			ruler > 0.628
+			ruler < 0.639
+		}
+		localization_key = TPT_POP_63
+	}
+	text = {
+		trigger = {
+			ruler > 0.638
+			ruler < 0.649
+		}
+		localization_key = TPT_POP_64
+	}
+	text = {
+		trigger = {
+			ruler > 0.648
+			ruler < 0.659
+		}
+		localization_key = TPT_POP_65
+	}
+	text = {
+		trigger = {
+			ruler > 0.658
+			ruler < 0.669
+		}
+		localization_key = TPT_POP_66
+	}
+	text = {
+		trigger = {
+			ruler > 0.668
+			ruler < 0.679
+		}
+		localization_key = TPT_POP_67
+	}
+	text = {
+		trigger = {
+			ruler > 0.678
+			ruler < 0.689
+		}
+		localization_key = TPT_POP_68
+	}
+	text = {
+		trigger = {
+			ruler > 0.688
+			ruler < 0.699
+		}
+		localization_key = TPT_POP_69
+	}
+	text = {
+		trigger = {
+			ruler > 0.698
+			ruler < 0.709
+		}
+		localization_key = TPT_POP_70
+	}
+	text = {
+		trigger = {
+			ruler > 0.708
+			ruler < 0.719
+		}
+		localization_key = TPT_POP_71
+	}
+	text = {
+		trigger = {
+			ruler > 0.718
+			ruler < 0.729
+		}
+		localization_key = TPT_POP_72
+	}
+	text = {
+		trigger = {
+			ruler > 0.728
+			ruler < 0.739
+		}
+		localization_key = TPT_POP_73
+	}
+	text = {
+		trigger = {
+			ruler > 0.738
+			ruler < 0.749
+		}
+		localization_key = TPT_POP_74
+	}
+	text = {
+		trigger = {
+			ruler > 0.748
+			ruler < 0.759
+		}
+		localization_key = TPT_POP_75
+	}
+	text = {
+		trigger = {
+			ruler > 0.758
+			ruler < 0.769
+		}
+		localization_key = TPT_POP_76
+	}
+	text = {
+		trigger = {
+			ruler > 0.768
+			ruler < 0.779
+		}
+		localization_key = TPT_POP_77
+	}
+	text = {
+		trigger = {
+			ruler > 0.778
+			ruler < 0.789
+		}
+		localization_key = TPT_POP_78
+	}
+	text = {
+		trigger = {
+			ruler > 0.788
+			ruler < 0.799
+		}
+		localization_key = TPT_POP_79
+	}
+	text = {
+		trigger = {
+			ruler > 0.798
+			ruler < 0.809
+		}
+		localization_key = TPT_POP_80
+	}
+	text = {
+		trigger = {
+			ruler > 0.808
+			ruler < 0.819
+		}
+		localization_key = TPT_POP_81
+	}
+	text = {
+		trigger = {
+			ruler > 0.818
+			ruler < 0.829
+		}
+		localization_key = TPT_POP_82
+	}
+	text = {
+		trigger = {
+			ruler > 0.828
+			ruler < 0.839
+		}
+		localization_key = TPT_POP_83
+	}
+	text = {
+		trigger = {
+			ruler > 0.838
+			ruler < 0.849
+		}
+		localization_key = TPT_POP_84
+	}
+	text = {
+		trigger = {
+			ruler > 0.848
+			ruler < 0.859
+		}
+		localization_key = TPT_POP_85
+	}
+	text = {
+		trigger = {
+			ruler > 0.858
+			ruler < 0.869
+		}
+		localization_key = TPT_POP_86
+	}
+	text = {
+		trigger = {
+			ruler > 0.868
+			ruler < 0.879
+		}
+		localization_key = TPT_POP_87
+	}
+	text = {
+		trigger = {
+			ruler > 0.878
+			ruler < 0.889
+		}
+		localization_key = TPT_POP_88
+	}
+	text = {
+		trigger = {
+			ruler > 0.888
+			ruler < 0.899
+		}
+		localization_key = TPT_POP_89
+	}
+	text = {
+		trigger = {
+			ruler > 0.898
+			ruler < 0.909
+		}
+		localization_key = TPT_POP_90
+	}
+	text = {
+		trigger = {
+			ruler > 0.908
+			ruler < 0.919
+		}
+		localization_key = TPT_POP_91
+	}
+	text = {
+		trigger = {
+			ruler > 0.918
+			ruler < 0.929
+		}
+		localization_key = TPT_POP_92
+	}
+	text = {
+		trigger = {
+			ruler > 0.928
+			ruler < 0.939
+		}
+		localization_key = TPT_POP_93
+	}
+	text = {
+		trigger = {
+			ruler > 0.938
+			ruler < 0.949
+		}
+		localization_key = TPT_POP_94
+	}
+	text = {
+		trigger = {
+			ruler > 0.948
+			ruler < 0.959
+		}
+		localization_key = TPT_POP_95
+	}
+	text = {
+		trigger = {
+			ruler > 0.958
+			ruler < 0.969
+		}
+		localization_key = TPT_POP_96
+	}
+	text = {
+		trigger = {
+			ruler > 0.968
+			ruler < 0.979
+		}
+		localization_key = TPT_POP_97
+	}
+	text = {
+		trigger = {
+			ruler > 0.978
+			ruler < 0.989
+		}
+		localization_key = TPT_POP_88
+	}
+	text = {
+		trigger = {
+			ruler > 0.988
+			ruler < 0.999
+		}
+		localization_key = TPT_POP_99
+	}
+	text = {
+		trigger = {
+			ruler > 0.998
+		}
+		localization_key = TPT_POP_100
+	}
+}
+
+defined_text = {
+	name = TPT_STABILITY
+
+	text = {
+		trigger = {
+			has_stability < 0.01
+		}
+		localization_key = TPT_STABILITY_0
+	}
+	text = {
+		trigger = {
+			has_stability > 0.008
+			has_stability < 0.019
+		}
+		localization_key = TPT_STABILITY_1
+	}
+	text = {
+		trigger = {
+			has_stability > 0.018
+			has_stability < 0.029
+		}
+		localization_key = TPT_STABILITY_2
+	}
+	text = {
+		trigger = {
+			has_stability > 0.028
+			has_stability < 0.039
+		}
+		localization_key = TPT_STABILITY_3
+	}
+	text = {
+		trigger = {
+			has_stability > 0.038
+			has_stability < 0.049
+		}
+		localization_key = TPT_STABILITY_4
+	}
+	text = {
+		trigger = {
+			has_stability > 0.048
+			has_stability < 0.059
+		}
+		localization_key = TPT_STABILITY_5
+	}
+	text = {
+		trigger = {
+			has_stability > 0.058
+			has_stability < 0.069
+		}
+		localization_key = TPT_STABILITY_6
+	}
+	text = {
+		trigger = {
+			has_stability > 0.068
+			has_stability < 0.079
+		}
+		localization_key = TPT_STABILITY_7
+	}
+	text = {
+		trigger = {
+			has_stability > 0.078
+			has_stability < 0.089
+		}
+		localization_key = TPT_STABILITY_8
+	}
+	text = {
+		trigger = {
+			has_stability > 0.088
+			has_stability < 0.099
+		}
+		localization_key = TPT_STABILITY_9
+	}
+	text = {
+		trigger = {
+			has_stability > 0.098
+			has_stability < 0.109
+		}
+		localization_key = TPT_STABILITY_10
+	}
+	text = {
+		trigger = {
+			has_stability > 0.108
+			has_stability < 0.119
+		}
+		localization_key = TPT_STABILITY_11
+	}
+	text = {
+		trigger = {
+			has_stability > 0.118
+			has_stability < 0.129
+		}
+		localization_key = TPT_STABILITY_12
+	}
+	text = {
+		trigger = {
+			has_stability > 0.128
+			has_stability < 0.139
+		}
+		localization_key = TPT_STABILITY_13
+	}
+	text = {
+		trigger = {
+			has_stability > 0.138
+			has_stability < 0.149
+		}
+		localization_key = TPT_STABILITY_14
+	}
+	text = {
+		trigger = {
+			has_stability > 0.148
+			has_stability < 0.159
+		}
+		localization_key = TPT_STABILITY_15
+	}
+	text = {
+		trigger = {
+			has_stability > 0.158
+			has_stability < 0.169
+		}
+		localization_key = TPT_STABILITY_16
+	}
+	text = {
+		trigger = {
+			has_stability > 0.168
+			has_stability < 0.179
+		}
+		localization_key = TPT_STABILITY_17
+	}
+	text = {
+		trigger = {
+			has_stability > 0.178
+			has_stability < 0.189
+		}
+		localization_key = TPT_STABILITY_18
+	}
+	text = {
+		trigger = {
+			has_stability > 0.188
+			has_stability < 0.199
+		}
+		localization_key = TPT_STABILITY_19
+	}
+	text = {
+		trigger = {
+			has_stability > 0.198
+			has_stability < 0.209
+		}
+		localization_key = TPT_STABILITY_20
+	}
+	text = {
+		trigger = {
+			has_stability > 0.208
+			has_stability < 0.219
+		}
+		localization_key = TPT_STABILITY_21
+	}
+	text = {
+		trigger = {
+			has_stability > 0.218
+			has_stability < 0.229
+		}
+		localization_key = TPT_STABILITY_22
+	}
+	text = {
+		trigger = {
+			has_stability > 0.228
+			has_stability < 0.239
+		}
+		localization_key = TPT_STABILITY_23
+	}
+	text = {
+		trigger = {
+			has_stability > 0.238
+			has_stability < 0.249
+		}
+		localization_key = TPT_STABILITY_24
+	}
+	text = {
+		trigger = {
+			has_stability > 0.248
+			has_stability < 0.259
+		}
+		localization_key = TPT_STABILITY_25
+	}
+	text = {
+		trigger = {
+			has_stability > 0.258
+			has_stability < 0.269
+		}
+		localization_key = TPT_STABILITY_26
+	}
+	text = {
+		trigger = {
+			has_stability > 0.268
+			has_stability < 0.279
+		}
+		localization_key = TPT_STABILITY_27
+	}
+	text = {
+		trigger = {
+			has_stability > 0.278
+			has_stability < 0.289
+		}
+		localization_key = TPT_STABILITY_28
+	}
+	text = {
+		trigger = {
+			has_stability > 0.288
+			has_stability < 0.299
+		}
+		localization_key = TPT_STABILITY_29
+	}
+	text = {
+		trigger = {
+			has_stability > 0.298
+			has_stability < 0.309
+		}
+		localization_key = TPT_STABILITY_30
+	}
+	text = {
+		trigger = {
+			has_stability > 0.308
+			has_stability < 0.319
+		}
+		localization_key = TPT_STABILITY_31
+	}
+	text = {
+		trigger = {
+			has_stability > 0.318
+			has_stability < 0.329
+		}
+		localization_key = TPT_STABILITY_32
+	}
+	text = {
+		trigger = {
+			has_stability > 0.328
+			has_stability < 0.339
+		}
+		localization_key = TPT_STABILITY_33
+	}
+	text = {
+		trigger = {
+			has_stability > 0.338
+			has_stability < 0.349
+		}
+		localization_key = TPT_STABILITY_34
+	}
+	text = {
+		trigger = {
+			has_stability > 0.348
+			has_stability < 0.359
+		}
+		localization_key = TPT_STABILITY_35
+	}
+	text = {
+		trigger = {
+			has_stability > 0.358
+			has_stability < 0.369
+		}
+		localization_key = TPT_STABILITY_36
+	}
+	text = {
+		trigger = {
+			has_stability > 0.368
+			has_stability < 0.379
+		}
+		localization_key = TPT_STABILITY_37
+	}
+	text = {
+		trigger = {
+			has_stability > 0.378
+			has_stability < 0.389
+		}
+		localization_key = TPT_STABILITY_38
+	}
+	text = {
+		trigger = {
+			has_stability > 0.388
+			has_stability < 0.399
+		}
+		localization_key = TPT_STABILITY_39
+	}
+	text = {
+		trigger = {
+			has_stability > 0.398
+			has_stability < 0.409
+		}
+		localization_key = TPT_STABILITY_40
+	}
+	text = {
+		trigger = {
+			has_stability > 0.408
+			has_stability < 0.419
+		}
+		localization_key = TPT_STABILITY_41
+	}
+	text = {
+		trigger = {
+			has_stability > 0.418
+			has_stability < 0.429
+		}
+		localization_key = TPT_STABILITY_42
+	}
+	text = {
+		trigger = {
+			has_stability > 0.428
+			has_stability < 0.439
+		}
+		localization_key = TPT_STABILITY_43
+	}
+	text = {
+		trigger = {
+			has_stability > 0.438
+			has_stability < 0.449
+		}
+		localization_key = TPT_STABILITY_44
+	}
+	text = {
+		trigger = {
+			has_stability > 0.448
+			has_stability < 0.459
+		}
+		localization_key = TPT_STABILITY_45
+	}
+	text = {
+		trigger = {
+			has_stability > 0.458
+			has_stability < 0.469
+		}
+		localization_key = TPT_STABILITY_46
+	}
+	text = {
+		trigger = {
+			has_stability > 0.468
+			has_stability < 0.479
+		}
+		localization_key = TPT_STABILITY_47
+	}
+	text = {
+		trigger = {
+			has_stability > 0.478
+			has_stability < 0.489
+		}
+		localization_key = TPT_STABILITY_48
+	}
+	text = {
+		trigger = {
+			has_stability > 0.488
+			has_stability < 0.499
+		}
+		localization_key = TPT_STABILITY_49
+	}
+	text = {
+		trigger = {
+			has_stability > 0.498
+			has_stability < 0.509
+		}
+		localization_key = TPT_STABILITY_50
+	}
+	text = {
+		trigger = {
+			has_stability > 0.508
+			has_stability < 0.519
+		}
+		localization_key = TPT_STABILITY_51
+	}
+	text = {
+		trigger = {
+			has_stability > 0.518
+			has_stability < 0.529
+		}
+		localization_key = TPT_STABILITY_52
+	}
+	text = {
+		trigger = {
+			has_stability > 0.528
+			has_stability < 0.539
+		}
+		localization_key = TPT_STABILITY_53
+	}
+	text = {
+		trigger = {
+			has_stability > 0.538
+			has_stability < 0.549
+		}
+		localization_key = TPT_STABILITY_54
+	}
+	text = {
+		trigger = {
+			has_stability > 0.548
+			has_stability < 0.559
+		}
+		localization_key = TPT_STABILITY_55
+	}
+	text = {
+		trigger = {
+			has_stability > 0.558
+			has_stability < 0.569
+		}
+		localization_key = TPT_STABILITY_56
+	}
+	text = {
+		trigger = {
+			has_stability > 0.568
+			has_stability < 0.579
+		}
+		localization_key = TPT_STABILITY_57
+	}
+	text = {
+		trigger = {
+			has_stability > 0.578
+			has_stability < 0.589
+		}
+		localization_key = TPT_STABILITY_58
+	}
+	text = {
+		trigger = {
+			has_stability > 0.588
+			has_stability < 0.599
+		}
+		localization_key = TPT_STABILITY_59
+	}
+	text = {
+		trigger = {
+			has_stability > 0.598
+			has_stability < 0.609
+		}
+		localization_key = TPT_STABILITY_60
+	}
+	text = {
+		trigger = {
+			has_stability > 0.608
+			has_stability < 0.619
+		}
+		localization_key = TPT_STABILITY_61
+	}
+	text = {
+		trigger = {
+			has_stability > 0.618
+			has_stability < 0.629
+		}
+		localization_key = TPT_STABILITY_62
+	}
+	text = {
+		trigger = {
+			has_stability > 0.628
+			has_stability < 0.639
+		}
+		localization_key = TPT_STABILITY_63
+	}
+	text = {
+		trigger = {
+			has_stability > 0.638
+			has_stability < 0.649
+		}
+		localization_key = TPT_STABILITY_64
+	}
+	text = {
+		trigger = {
+			has_stability > 0.648
+			has_stability < 0.659
+		}
+		localization_key = TPT_STABILITY_65
+	}
+	text = {
+		trigger = {
+			has_stability > 0.658
+			has_stability < 0.669
+		}
+		localization_key = TPT_STABILITY_66
+	}
+	text = {
+		trigger = {
+			has_stability > 0.668
+			has_stability < 0.679
+		}
+		localization_key = TPT_STABILITY_67
+	}
+	text = {
+		trigger = {
+			has_stability > 0.678
+			has_stability < 0.689
+		}
+		localization_key = TPT_STABILITY_68
+	}
+	text = {
+		trigger = {
+			has_stability > 0.688
+			has_stability < 0.699
+		}
+		localization_key = TPT_STABILITY_69
+	}
+	text = {
+		trigger = {
+			has_stability > 0.698
+			has_stability < 0.709
+		}
+		localization_key = TPT_STABILITY_70
+	}
+	text = {
+		trigger = {
+			has_stability > 0.708
+			has_stability < 0.719
+		}
+		localization_key = TPT_STABILITY_71
+	}
+	text = {
+		trigger = {
+			has_stability > 0.718
+			has_stability < 0.729
+		}
+		localization_key = TPT_STABILITY_72
+	}
+	text = {
+		trigger = {
+			has_stability > 0.728
+			has_stability < 0.739
+		}
+		localization_key = TPT_STABILITY_73
+	}
+	text = {
+		trigger = {
+			has_stability > 0.738
+			has_stability < 0.749
+		}
+		localization_key = TPT_STABILITY_74
+	}
+	text = {
+		trigger = {
+			has_stability > 0.748
+			has_stability < 0.759
+		}
+		localization_key = TPT_STABILITY_75
+	}
+	text = {
+		trigger = {
+			has_stability > 0.758
+			has_stability < 0.769
+		}
+		localization_key = TPT_STABILITY_76
+	}
+	text = {
+		trigger = {
+			has_stability > 0.768
+			has_stability < 0.779
+		}
+		localization_key = TPT_STABILITY_77
+	}
+	text = {
+		trigger = {
+			has_stability > 0.778
+			has_stability < 0.789
+		}
+		localization_key = TPT_STABILITY_78
+	}
+	text = {
+		trigger = {
+			has_stability > 0.788
+			has_stability < 0.799
+		}
+		localization_key = TPT_STABILITY_79
+	}
+	text = {
+		trigger = {
+			has_stability > 0.798
+			has_stability < 0.809
+		}
+		localization_key = TPT_STABILITY_80
+	}
+	text = {
+		trigger = {
+			has_stability > 0.808
+			has_stability < 0.819
+		}
+		localization_key = TPT_STABILITY_81
+	}
+	text = {
+		trigger = {
+			has_stability > 0.818
+			has_stability < 0.829
+		}
+		localization_key = TPT_STABILITY_82
+	}
+	text = {
+		trigger = {
+			has_stability > 0.828
+			has_stability < 0.839
+		}
+		localization_key = TPT_STABILITY_83
+	}
+	text = {
+		trigger = {
+			has_stability > 0.838
+			has_stability < 0.849
+		}
+		localization_key = TPT_STABILITY_84
+	}
+	text = {
+		trigger = {
+			has_stability > 0.848
+			has_stability < 0.859
+		}
+		localization_key = TPT_STABILITY_85
+	}
+	text = {
+		trigger = {
+			has_stability > 0.858
+			has_stability < 0.869
+		}
+		localization_key = TPT_STABILITY_86
+	}
+	text = {
+		trigger = {
+			has_stability > 0.868
+			has_stability < 0.879
+		}
+		localization_key = TPT_STABILITY_87
+	}
+	text = {
+		trigger = {
+			has_stability > 0.878
+			has_stability < 0.889
+		}
+		localization_key = TPT_STABILITY_88
+	}
+	text = {
+		trigger = {
+			has_stability > 0.888
+			has_stability < 0.899
+		}
+		localization_key = TPT_STABILITY_89
+	}
+	text = {
+		trigger = {
+			has_stability > 0.898
+			has_stability < 0.909
+		}
+		localization_key = TPT_STABILITY_90
+	}
+	text = {
+		trigger = {
+			has_stability > 0.908
+			has_stability < 0.919
+		}
+		localization_key = TPT_STABILITY_91
+	}
+	text = {
+		trigger = {
+			has_stability > 0.918
+			has_stability < 0.929
+		}
+		localization_key = TPT_STABILITY_92
+	}
+	text = {
+		trigger = {
+			has_stability > 0.928
+			has_stability < 0.939
+		}
+		localization_key = TPT_STABILITY_93
+	}
+	text = {
+		trigger = {
+			has_stability > 0.938
+			has_stability < 0.949
+		}
+		localization_key = TPT_STABILITY_94
+	}
+	text = {
+		trigger = {
+			has_stability > 0.948
+			has_stability < 0.959
+		}
+		localization_key = TPT_STABILITY_95
+	}
+	text = {
+		trigger = {
+			has_stability > 0.958
+			has_stability < 0.969
+		}
+		localization_key = TPT_STABILITY_96
+	}
+	text = {
+		trigger = {
+			has_stability > 0.968
+			has_stability < 0.979
+		}
+		localization_key = TPT_STABILITY_97
+	}
+	text = {
+		trigger = {
+			has_stability > 0.978
+			has_stability < 0.989
+		}
+		localization_key = TPT_STABILITY_88
+	}
+	text = {
+		trigger = {
+			has_stability > 0.988
+			has_stability < 0.999
+		}
+		localization_key = TPT_STABILITY_99
+	}
+	text = {
+		trigger = {
+			has_stability > 0.998
+		}
+		localization_key = TPT_STABILITY_100
+	}
+}
+defined_text = {
+	name = TPT_WAR_SUPPORT
+
+	text = {
+		trigger = {
+			has_war_support < 0.01
+		}
+		localization_key = TPT_WAR_SUPPORT_0
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.008
+			has_war_support < 0.019
+		}
+		localization_key = TPT_WAR_SUPPORT_1
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.018
+			has_war_support < 0.029
+		}
+		localization_key = TPT_WAR_SUPPORT_2
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.028
+			has_war_support < 0.039
+		}
+		localization_key = TPT_WAR_SUPPORT_3
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.038
+			has_war_support < 0.049
+		}
+		localization_key = TPT_WAR_SUPPORT_4
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.048
+			has_war_support < 0.059
+		}
+		localization_key = TPT_WAR_SUPPORT_5
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.058
+			has_war_support < 0.069
+		}
+		localization_key = TPT_WAR_SUPPORT_6
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.068
+			has_war_support < 0.079
+		}
+		localization_key = TPT_WAR_SUPPORT_7
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.078
+			has_war_support < 0.089
+		}
+		localization_key = TPT_WAR_SUPPORT_8
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.088
+			has_war_support < 0.099
+		}
+		localization_key = TPT_WAR_SUPPORT_9
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.098
+			has_war_support < 0.109
+		}
+		localization_key = TPT_WAR_SUPPORT_10
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.108
+			has_war_support < 0.119
+		}
+		localization_key = TPT_WAR_SUPPORT_11
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.118
+			has_war_support < 0.129
+		}
+		localization_key = TPT_WAR_SUPPORT_12
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.128
+			has_war_support < 0.139
+		}
+		localization_key = TPT_WAR_SUPPORT_13
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.138
+			has_war_support < 0.149
+		}
+		localization_key = TPT_WAR_SUPPORT_14
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.148
+			has_war_support < 0.159
+		}
+		localization_key = TPT_WAR_SUPPORT_15
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.158
+			has_war_support < 0.169
+		}
+		localization_key = TPT_WAR_SUPPORT_16
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.168
+			has_war_support < 0.179
+		}
+		localization_key = TPT_WAR_SUPPORT_17
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.178
+			has_war_support < 0.189
+		}
+		localization_key = TPT_WAR_SUPPORT_18
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.188
+			has_war_support < 0.199
+		}
+		localization_key = TPT_WAR_SUPPORT_19
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.198
+			has_war_support < 0.209
+		}
+		localization_key = TPT_WAR_SUPPORT_20
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.208
+			has_war_support < 0.219
+		}
+		localization_key = TPT_WAR_SUPPORT_21
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.218
+			has_war_support < 0.229
+		}
+		localization_key = TPT_WAR_SUPPORT_22
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.228
+			has_war_support < 0.239
+		}
+		localization_key = TPT_WAR_SUPPORT_23
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.238
+			has_war_support < 0.249
+		}
+		localization_key = TPT_WAR_SUPPORT_24
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.248
+			has_war_support < 0.259
+		}
+		localization_key = TPT_WAR_SUPPORT_25
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.258
+			has_war_support < 0.269
+		}
+		localization_key = TPT_WAR_SUPPORT_26
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.268
+			has_war_support < 0.279
+		}
+		localization_key = TPT_WAR_SUPPORT_27
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.278
+			has_war_support < 0.289
+		}
+		localization_key = TPT_WAR_SUPPORT_28
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.288
+			has_war_support < 0.299
+		}
+		localization_key = TPT_WAR_SUPPORT_29
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.298
+			has_war_support < 0.309
+		}
+		localization_key = TPT_WAR_SUPPORT_30
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.308
+			has_war_support < 0.319
+		}
+		localization_key = TPT_WAR_SUPPORT_31
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.318
+			has_war_support < 0.329
+		}
+		localization_key = TPT_WAR_SUPPORT_32
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.328
+			has_war_support < 0.339
+		}
+		localization_key = TPT_WAR_SUPPORT_33
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.338
+			has_war_support < 0.349
+		}
+		localization_key = TPT_WAR_SUPPORT_34
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.348
+			has_war_support < 0.359
+		}
+		localization_key = TPT_WAR_SUPPORT_35
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.358
+			has_war_support < 0.369
+		}
+		localization_key = TPT_WAR_SUPPORT_36
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.368
+			has_war_support < 0.379
+		}
+		localization_key = TPT_WAR_SUPPORT_37
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.378
+			has_war_support < 0.389
+		}
+		localization_key = TPT_WAR_SUPPORT_38
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.388
+			has_war_support < 0.399
+		}
+		localization_key = TPT_WAR_SUPPORT_39
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.398
+			has_war_support < 0.409
+		}
+		localization_key = TPT_WAR_SUPPORT_40
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.408
+			has_war_support < 0.419
+		}
+		localization_key = TPT_WAR_SUPPORT_41
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.418
+			has_war_support < 0.429
+		}
+		localization_key = TPT_WAR_SUPPORT_42
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.428
+			has_war_support < 0.439
+		}
+		localization_key = TPT_WAR_SUPPORT_43
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.438
+			has_war_support < 0.449
+		}
+		localization_key = TPT_WAR_SUPPORT_44
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.448
+			has_war_support < 0.459
+		}
+		localization_key = TPT_WAR_SUPPORT_45
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.458
+			has_war_support < 0.469
+		}
+		localization_key = TPT_WAR_SUPPORT_46
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.468
+			has_war_support < 0.479
+		}
+		localization_key = TPT_WAR_SUPPORT_47
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.478
+			has_war_support < 0.489
+		}
+		localization_key = TPT_WAR_SUPPORT_48
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.488
+			has_war_support < 0.499
+		}
+		localization_key = TPT_WAR_SUPPORT_49
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.498
+			has_war_support < 0.509
+		}
+		localization_key = TPT_WAR_SUPPORT_50
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.508
+			has_war_support < 0.519
+		}
+		localization_key = TPT_WAR_SUPPORT_51
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.518
+			has_war_support < 0.529
+		}
+		localization_key = TPT_WAR_SUPPORT_52
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.528
+			has_war_support < 0.539
+		}
+		localization_key = TPT_WAR_SUPPORT_53
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.538
+			has_war_support < 0.549
+		}
+		localization_key = TPT_WAR_SUPPORT_54
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.548
+			has_war_support < 0.559
+		}
+		localization_key = TPT_WAR_SUPPORT_55
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.558
+			has_war_support < 0.569
+		}
+		localization_key = TPT_WAR_SUPPORT_56
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.568
+			has_war_support < 0.579
+		}
+		localization_key = TPT_WAR_SUPPORT_57
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.578
+			has_war_support < 0.589
+		}
+		localization_key = TPT_WAR_SUPPORT_58
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.588
+			has_war_support < 0.599
+		}
+		localization_key = TPT_WAR_SUPPORT_59
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.598
+			has_war_support < 0.609
+		}
+		localization_key = TPT_WAR_SUPPORT_60
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.608
+			has_war_support < 0.619
+		}
+		localization_key = TPT_WAR_SUPPORT_61
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.618
+			has_war_support < 0.629
+		}
+		localization_key = TPT_WAR_SUPPORT_62
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.628
+			has_war_support < 0.639
+		}
+		localization_key = TPT_WAR_SUPPORT_63
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.638
+			has_war_support < 0.649
+		}
+		localization_key = TPT_WAR_SUPPORT_64
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.648
+			has_war_support < 0.659
+		}
+		localization_key = TPT_WAR_SUPPORT_65
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.658
+			has_war_support < 0.669
+		}
+		localization_key = TPT_WAR_SUPPORT_66
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.668
+			has_war_support < 0.679
+		}
+		localization_key = TPT_WAR_SUPPORT_67
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.678
+			has_war_support < 0.689
+		}
+		localization_key = TPT_WAR_SUPPORT_68
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.688
+			has_war_support < 0.699
+		}
+		localization_key = TPT_WAR_SUPPORT_69
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.698
+			has_war_support < 0.709
+		}
+		localization_key = TPT_WAR_SUPPORT_70
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.708
+			has_war_support < 0.719
+		}
+		localization_key = TPT_WAR_SUPPORT_71
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.718
+			has_war_support < 0.729
+		}
+		localization_key = TPT_WAR_SUPPORT_72
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.728
+			has_war_support < 0.739
+		}
+		localization_key = TPT_WAR_SUPPORT_73
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.738
+			has_war_support < 0.749
+		}
+		localization_key = TPT_WAR_SUPPORT_74
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.748
+			has_war_support < 0.759
+		}
+		localization_key = TPT_WAR_SUPPORT_75
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.758
+			has_war_support < 0.769
+		}
+		localization_key = TPT_WAR_SUPPORT_76
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.768
+			has_war_support < 0.779
+		}
+		localization_key = TPT_WAR_SUPPORT_77
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.778
+			has_war_support < 0.789
+		}
+		localization_key = TPT_WAR_SUPPORT_78
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.788
+			has_war_support < 0.799
+		}
+		localization_key = TPT_WAR_SUPPORT_79
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.798
+			has_war_support < 0.809
+		}
+		localization_key = TPT_WAR_SUPPORT_80
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.808
+			has_war_support < 0.819
+		}
+		localization_key = TPT_WAR_SUPPORT_81
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.818
+			has_war_support < 0.829
+		}
+		localization_key = TPT_WAR_SUPPORT_82
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.828
+			has_war_support < 0.839
+		}
+		localization_key = TPT_WAR_SUPPORT_83
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.838
+			has_war_support < 0.849
+		}
+		localization_key = TPT_WAR_SUPPORT_84
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.848
+			has_war_support < 0.859
+		}
+		localization_key = TPT_WAR_SUPPORT_85
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.858
+			has_war_support < 0.869
+		}
+		localization_key = TPT_WAR_SUPPORT_86
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.868
+			has_war_support < 0.879
+		}
+		localization_key = TPT_WAR_SUPPORT_87
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.878
+			has_war_support < 0.889
+		}
+		localization_key = TPT_WAR_SUPPORT_88
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.888
+			has_war_support < 0.899
+		}
+		localization_key = TPT_WAR_SUPPORT_89
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.898
+			has_war_support < 0.909
+		}
+		localization_key = TPT_WAR_SUPPORT_90
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.908
+			has_war_support < 0.919
+		}
+		localization_key = TPT_WAR_SUPPORT_91
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.918
+			has_war_support < 0.929
+		}
+		localization_key = TPT_WAR_SUPPORT_92
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.928
+			has_war_support < 0.939
+		}
+		localization_key = TPT_WAR_SUPPORT_93
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.938
+			has_war_support < 0.949
+		}
+		localization_key = TPT_WAR_SUPPORT_94
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.948
+			has_war_support < 0.959
+		}
+		localization_key = TPT_WAR_SUPPORT_95
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.958
+			has_war_support < 0.969
+		}
+		localization_key = TPT_WAR_SUPPORT_96
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.968
+			has_war_support < 0.979
+		}
+		localization_key = TPT_WAR_SUPPORT_97
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.978
+			has_war_support < 0.989
+		}
+		localization_key = TPT_WAR_SUPPORT_88
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.988
+			has_war_support < 0.999
+		}
+		localization_key = TPT_WAR_SUPPORT_99
+	}
+	text = {
+		trigger = {
+			has_war_support > 0.998
+		}
+		localization_key = TPT_WAR_SUPPORT_100
+	}
+}
