@@ -1,0 +1,21 @@
+######################
+### Puppet Stuff   ###
+######################
+
+puppet_lower = {
+	name = "PUPPET_LOWER"
+	group = "RULE_GROUP_KAISERREICH_RULES"
+	icon = "GFX_take_over_faction_leadership"
+	option = {
+		name = "PUPPET_LOWER_YES"
+		text = "RULE_PUPPET_LOWER_YES"
+		desc = "RULE_PUPPET_LOWER_YES_DESC"
+		allow_achievements = yes
+	}
+	default = {
+		name = "PUPPET_LOWER_NO"
+		text = "RULE_PUPPET_LOWER_NO"
+		desc = "RULE_PUPPET_LOWER_NO_DESC"
+		allow_achievements = yes
+	}
+}

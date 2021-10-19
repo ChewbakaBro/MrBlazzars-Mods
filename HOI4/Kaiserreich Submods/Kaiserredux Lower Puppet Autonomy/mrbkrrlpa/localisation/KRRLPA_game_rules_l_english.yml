@@ -1,0 +1,6 @@
+﻿l_english:
+  PUPPET_LOWER:0 "Lower Puppet Autonomy"
+  RULE_PUPPET_LOWER_YES:0 "Allow Lowering Puppet Autonomy"
+  RULE_PUPPET_LOWER_YES_DESC:0 "You will be able to lower puppet autonomy level"
+  RULE_PUPPET_LOWER_NO: "Don't Allow Lowering Puppet Autonomy"
+  RULE_PUPPET_LOWER_NO_DESC:0 "You won't be able to lower puppet autonomy level"
