@@ -1,0 +1,1122 @@
+ideas = {
+	mobilization_laws = {
+		law = yes
+		use_list_view = yes
+		communal_militias = {
+			picture = FRA_national_mobilization_focus
+			level = 3
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			cancel_if_invalid = no
+			available = {
+				always = yes
+			}
+			modifier = {
+				conscription = 0.15
+				training_time_factor = 0.4
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_speed_factor = -0.05
+				mobilization_speed = -0.2
+				army_org_factor = -0.1
+			}
+			allowed_to_remove = {
+				always = no
+			}
+		}
+		disarmed_nation = {
+			cost = 150
+			removal_cost = -1
+			level = 7
+			visible = {
+				NOT = {
+					has_country_flag = DED_AP_no_such_thing_as_conscription
+				}
+			}
+			available = {
+				#has_manpower_for_recruit_change_to = { value = 0.005 group = mobilization_laws }
+				if = {
+					limit = {
+						has_country_flag = is_maresoc
+					}
+					NOT = {
+						has_country_flag = is_maresoc
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = GRI_griffenheim_square
+					}
+					NOT = {
+						has_completed_focus = GRI_limit_conscription_term
+					}
+				}
+				if = {
+					limit = {
+						tag = HLQ
+					}
+					NOT = {
+						has_completed_focus = HLQ_all_shall_serve_the_state
+					}
+				}
+			}
+			modifier = {
+				conscription = 0.01
+				non_core_manpower = 0.01
+				monthly_population = 0.4
+				political_power_factor = 0.05
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				training_time_factor = -0.2
+				conversion_cost_civ_to_mil_factor = 0.5
+				conversion_cost_mil_to_civ_factor = -0.5
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				army_speed_factor = -0.15
+				army_morale_factor = -0.15
+				army_org_factor = -0.15
+				army_org_regain = -0.15
+				experience_gain_army_factor = -0.5
+				max_planning_factor = -0.15
+				special_forces_cap = -0.4
+				org_loss_when_moving = 0.1
+				planning_speed = -0.15
+				air_accidents_factor = 0.1
+				air_ace_generation_chance_factor = -0.3
+				air_agility_factor = -0.15
+				air_attack_factor = -0.15
+				air_defence_factor = -0.15
+				air_mission_xp_gain_factor = -0.15
+				experience_gain_navy_factor = -0.5
+				naval_accidents_chance = 0.1
+				naval_coordination = -0.15
+				naval_damage_factor = -0.15
+				naval_defense_factor = -0.15
+				naval_morale_factor = -0.15
+				positioning = -0.15
+				repair_speed_factor = -0.15
+				screening_efficiency = -0.15
+				sortie_efficiency = -0.15
+			}
+			cancel_if_invalid = no
+		}
+		volunteer_only = {
+			cost = 150
+			removal_cost = -1
+			level = 6
+			visible = {
+				if = {
+					limit = {
+						original_tag = ELF
+					}
+					NOT = {
+						has_country_flag = ELF_cannot_change_manpower_law_flag_volunteer_only
+					}
+				}
+				NOT = {
+					has_country_flag = DED_AP_no_such_thing_as_conscription
+				}
+			}
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
+				NOT = {
+					has_idea = undisturbed_isolation
+				}
+				NOT = {
+					has_idea = isolation
+				}
+				if = {
+					limit = {
+						has_completed_focus = GRI_griffenheim_square
+					}
+					NOT = {
+						has_completed_focus = GRI_limit_conscription_term
+					}
+				}
+				NOT = {
+					has_country_flag = demilitarized
+				}
+				if = {
+					limit = {
+						tag = HLQ
+					}
+					NOT = {
+						has_completed_focus = HLQ_all_shall_serve_the_state
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 60					# being disarmed is bad in a wargame yo
+					has_idea = disarmed_nation
+				}
+			}
+			modifier = {
+				conscription = 0.015
+				non_core_manpower = 0.05
+				monthly_population = 0.3
+				political_power_factor = 0.1
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				training_time_factor = -0.15
+				conversion_cost_civ_to_mil_factor = 0.25
+				conversion_cost_mil_to_civ_factor = -0.25
+				army_attack_factor = 0.025
+				army_defence_factor = 0.025
+				army_speed_factor = 0.025
+				army_morale_factor = 0.025
+				army_org_factor = 0.025
+				army_org_regain = 0.025
+				experience_gain_army_factor = 0.1
+				max_planning_factor = 0.025
+				special_forces_cap = 0.25
+				org_loss_when_moving = -0.025
+				planning_speed = 0.025
+				air_accidents_factor = -0.05
+				air_ace_generation_chance_factor = 0.1
+				air_agility_factor = 0.025
+				air_attack_factor = 0.025
+				air_defence_factor = 0.025
+				air_mission_xp_gain_factor = 0.1
+				experience_gain_navy_factor = 0.1
+				naval_accidents_chance = -0.05
+				naval_coordination = 0.025
+				naval_damage_factor = 0.025
+				naval_defense_factor = 0.025
+				naval_morale_factor = 0.025
+				positioning = 0.025
+				repair_speed_factor = 0.025
+				screening_efficiency = 0.025
+				sortie_efficiency = 0.025
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		ELF_special_volunteer_only = {
+			picture = volunteer_only
+			cost = 150
+			removal_cost = -1
+			allowed = {
+				original_tag = ELF
+			}
+			visible = {
+				has_country_flag = ELF_cannot_change_manpower_law_flag_volunteer_only
+			}
+			modifier = {
+				conscription = 0.015
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				non_core_manpower = 0.05
+				monthly_population = 0.3
+				political_power_factor = 0.1
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				training_time_factor = -0.15
+				conversion_cost_civ_to_mil_factor = 0.25
+				conversion_cost_mil_to_civ_factor = -0.25
+				army_attack_factor = 0.025
+				army_defence_factor = 0.025
+				army_speed_factor = 0.025
+				army_org_regain = 0.025
+				experience_gain_army_factor = 0.1
+				max_planning_factor = 0.025
+				special_forces_cap = 0.25
+				org_loss_when_moving = -0.025
+				planning_speed = 0.025
+				air_accidents_factor = -0.05
+				air_ace_generation_chance_factor = 0.1
+				air_agility_factor = 0.025
+				air_attack_factor = 0.025
+				air_defence_factor = 0.025
+				air_mission_xp_gain_factor = 0.1
+				experience_gain_navy_factor = 0.1
+				naval_accidents_chance = -0.05
+				naval_coordination = 0.025
+				naval_damage_factor = 0.025
+				naval_defense_factor = 0.025
+				naval_morale_factor = 0.025
+				positioning = 0.025
+				repair_speed_factor = 0.025
+				screening_efficiency = 0.025
+				sortie_efficiency = 0.025
+			}
+			allowed_to_remove = {
+				custom_trigger_tooltip = {
+					tooltip = ELF_conscription_law_remove_tt
+					always = no
+				}
+			}
+		}
+		limited_conscription = {
+			cost = 150
+			removal_cost = -1
+			level = 5
+			visible = {
+				if = {
+					limit = {
+						original_tag = ELF
+					}
+					NOT = {
+						has_country_flag = ELF_cannot_change_manpower_law_flag_limited_conscription
+					}
+				}
+				NOT = {
+					has_country_flag = DED_AP_no_such_thing_as_conscription
+				}
+			}
+			available = {
+				if = {
+					limit = {
+						has_country_flag = is_maresoc
+					}
+					has_country_flag = is_maresoc
+				}
+				else = {
+					#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
+					NOT = {
+						has_idea = undisturbed_isolation
+					}
+					NOT = {
+						has_idea = isolation
+					}
+					has_war_support > 0.1
+					if = {
+						limit = {
+							tag = event_target:equestria
+						}
+						NOT = {
+							has_country_flag = manpower_laws_blocked
+						}
+					}
+					if = {
+						limit = {
+							original_tag = EQC
+							NOT = {
+								has_country_flag = is_maresoc
+							}
+						}
+						has_completed_focus = EQC_national_mobilisation_act
+					}
+				}
+				NOT = {
+					has_country_flag = demilitarized
+				}
+				NOT = {
+					has_country_flag = manpower_laws_blocked
+				}
+				if = {
+					limit = {
+						tag = HLQ
+					}
+					NOT = {
+						has_completed_focus = HLQ_all_shall_serve_the_state
+					}
+				}
+			}
+			modifier = {
+				conscription = 0.025
+				non_core_manpower = 0.1
+				monthly_population = 0.15
+				political_power_factor = 0.15
+				industrial_capacity_dockyard = 0.025
+				industrial_capacity_factory = 0.025
+				production_speed_buildings_factor = 0.025
+				training_time_factor = -0.05
+				conversion_cost_civ_to_mil_factor = 0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+				army_attack_factor = 0.01
+				army_defence_factor = 0.01
+				army_speed_factor = 0.01
+				army_morale_factor = 0.01
+				army_org_factor = 0.01
+				army_org_regain = 0.01
+				experience_gain_army_factor = 0.05
+				max_planning_factor = 0.01
+				special_forces_cap = 0.15
+				org_loss_when_moving = -0.01
+				planning_speed = 0.01
+				air_accidents_factor = -0.01
+				air_ace_generation_chance_factor = 0.05
+				air_agility_factor = 0.01
+				air_attack_factor = 0.01
+				air_defence_factor = 0.01
+				air_mission_xp_gain_factor = 0.05
+				experience_gain_navy_factor = 0.05
+				naval_accidents_chance = -0.01
+				naval_coordination = 0.01
+				naval_damage_factor = 0.01
+				naval_defense_factor = 0.01
+				naval_morale_factor = 0.01
+				positioning = 0.01
+				repair_speed_factor = 0.01
+				screening_efficiency = 0.01
+				sortie_efficiency = 0.01
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					#Prio if low on manpower
+					factor = 200
+					NOT = {
+						has_idea = extensive_conscription
+						has_idea = service_by_requirement
+						has_idea = all_adults_serve
+						has_idea = scraping_the_barrel
+					}
+					has_manpower < 5000
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory < 1000
+				}
+				modifier = {
+					#Prio if low on manpower
+					add = 100
+					NOT = {
+						has_idea = extensive_conscription
+						has_idea = service_by_requirement
+						has_idea = all_adults_serve
+						has_idea = scraping_the_barrel
+					}
+					has_manpower < 2500
+				}
+			}
+			cancel_if_invalid = no
+		}
+		ELF_special_limited_conscription = {
+			picture = limited_conscription
+			cost = 150
+			removal_cost = -1
+			allowed = {
+				original_tag = ELF
+			}
+			visible = {
+				has_country_flag = ELF_cannot_change_manpower_law_flag_limited_conscription
+			}
+			modifier = {
+				conscription = 0.025
+				minimum_training_level = -0.05
+				training_time_factor = -0.05
+				mobilization_speed = 0.05
+				surrender_limit = 0.05
+				non_core_manpower = 0.1
+				monthly_population = 0.15
+				political_power_factor = 0.15
+				industrial_capacity_dockyard = 0.025
+				industrial_capacity_factory = 0.025
+				production_speed_buildings_factor = 0.025
+				conversion_cost_civ_to_mil_factor = 0.1
+				conversion_cost_mil_to_civ_factor = -0.1
+				army_attack_factor = 0.01
+				army_defence_factor = 0.01
+				army_speed_factor = 0.01
+				army_morale_factor = 0.01
+				army_org_factor = 0.01
+				army_org_regain = 0.01
+				experience_gain_army_factor = 0.05
+				max_planning_factor = 0.01
+				special_forces_cap = 0.15
+				org_loss_when_moving = -0.01
+				planning_speed = 0.01
+				air_accidents_factor = -0.01
+				air_ace_generation_chance_factor = 0.05
+				air_agility_factor = 0.01
+				air_attack_factor = 0.01
+				air_defence_factor = 0.01
+				air_mission_xp_gain_factor = 0.05
+				experience_gain_navy_factor = 0.05
+				naval_accidents_chance = -0.01
+				naval_coordination = 0.01
+				naval_damage_factor = 0.01
+				naval_defense_factor = 0.01
+				naval_morale_factor = 0.01
+				positioning = 0.01
+				repair_speed_factor = 0.01
+				screening_efficiency = 0.01
+				sortie_efficiency = 0.01
+			}
+			allowed_to_remove = {
+				custom_trigger_tooltip = {
+					tooltip = ELF_conscription_law_remove_tt
+					always = no
+				}
+			}
+		}
+		extensive_conscription = {
+			visible = {
+				NOT = {
+					has_country_flag = DED_AP_no_such_thing_as_conscription
+				}
+			}
+			available = {
+				if = {
+					limit = {
+						has_country_flag = is_maresoc
+					}
+					has_country_flag = is_maresoc
+				}
+				else = {
+					#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
+					NOT = {
+						has_idea = undisturbed_isolation
+					}
+					NOT = {
+						has_idea = isolation
+					}
+					has_war_support > 0.2
+					OR = {
+						has_government = fascism
+						has_government = communism
+						has_war_support > 0.3
+						AND = {
+							has_war = yes
+							OR = {
+								enemies_strength_ratio > 0.5
+								has_manpower < 1000
+								surrender_progress > 0.15
+							}
+							#any_enemy_country = {
+							#	strength_ratio = {
+							#		tag = ROOT
+							#		ratio > 0.5
+							#	}
+							#}
+						}
+					}
+					if = {
+						limit = {
+							tag = event_target:equestria
+						}
+						NOT = {
+							has_country_flag = manpower_laws_blocked
+						}
+					}
+					if = {
+						limit = {
+							original_tag = EQC
+							NOT = {
+								has_country_flag = is_maresoc
+							}
+						}
+						has_completed_focus = EQC_national_mobilisation_act
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = GRI_griffenheim_square
+					}
+					NOT = {
+						has_completed_focus = GRI_limit_conscription_term
+					}
+				}
+				NOT = {
+					has_country_flag = demilitarized
+				}
+				NOT = {
+					has_country_flag = manpower_laws_blocked
+				}
+				if = {
+					limit = {
+						tag = HLQ
+					}
+					NOT = {
+						has_completed_focus = HLQ_all_shall_serve_the_state
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					#Prio if low on manpower
+					factor = 200
+					NOT = {
+						has_idea = service_by_requirement
+						has_idea = all_adults_serve
+						has_idea = scraping_the_barrel
+					}
+					has_manpower < 5000
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory < 800
+				}
+				modifier = {
+					#Prio if low on manpower
+					add = 200
+					has_war = yes
+					NOT = {
+						has_idea = service_by_requirement
+						has_idea = all_adults_serve
+						has_idea = scraping_the_barrel
+					}
+					has_manpower < 2500
+				}
+			}
+			cost = 150
+			removal_cost = -1
+			level = 4
+			modifier = {
+				conscription = 0.05
+				non_core_manpower = 0.15
+				monthly_population = 0.05
+				political_power_factor = 0.1
+				conversion_cost_civ_to_mil_factor = 0.05
+				conversion_cost_mil_to_civ_factor = -0.05
+				training_time_factor = 0.1
+			}
+			cancel_if_invalid = no
+		}
+		ZES_assemblies_centered_conscription = {
+			picture = CES_wartime_farms_idea
+			cost = 150
+			removal_cost = -1
+			allowed = {
+				original_tag = ZES
+			}
+			visible = {
+				has_country_flag = ZES_cannot_change_manpower_yrmthu_assemblies
+			}
+			modifier = {
+				conscription = 0.1
+				army_org_factor = -0.025
+				mobilization_speed = 0.1
+				training_time_factor = -0.1
+			}
+			allowed_to_remove = {
+				always = no
+			}
+		}
+		service_by_requirement = {
+			visible = {
+				NOT = {
+					has_country_flag = DED_AP_no_such_thing_as_conscription
+				}
+			}
+			available = {
+				if = {
+					limit = {
+						has_country_flag = is_maresoc
+					}
+					has_country_flag = is_maresoc
+				}
+				else = {
+					#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
+					NOT = {
+						has_idea = undisturbed_isolation
+					}
+					NOT = {
+						has_idea = isolation
+					}
+					OR = {
+						has_government = fascism
+						has_government = communism
+						AND = {
+							has_war = yes
+							OR = {
+								has_war_support > 0.6
+								enemies_strength_ratio > 0.6
+								surrender_progress > 0
+							}
+							#any_enemy_country = {
+							#	strength_ratio = {
+							#		tag = ROOT
+							#		ratio > 0.6
+							#	}
+							#}
+						}
+					}
+					if = {
+						limit = {
+							tag = event_target:equestria
+						}
+						NOT = {
+							has_country_flag = manpower_laws_blocked
+						}
+					}
+					if = {
+						limit = {
+							original_tag = EQC
+							NOT = {
+								has_country_flag = is_maresoc
+							}
+						}
+						has_completed_focus = EQC_national_mobilisation_act
+						has_completed_focus = EQC_expand_conscription
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = GRI_griffenheim_square
+					}
+					NOT = {
+						has_completed_focus = GRI_limit_conscription_term
+					}
+				}
+				NOT = {
+					has_country_flag = demilitarized
+				}
+				NOT = {
+					has_country_flag = manpower_laws_blocked
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					#Prio if low on manpower
+					factor = 200
+					NOT = {
+						has_idea = all_adults_serve
+						has_idea = scraping_the_barrel
+					}
+					has_manpower < 5000
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory < 700
+				}
+				modifier = {
+					#Lower chance if has decent amount
+					factor = 0.5
+					manpower_per_military_factory > 1000
+				}
+				modifier = {
+					#Block has plenty manpower
+					factor = 0.2
+					manpower_per_military_factory > 3000
+					NOT = {
+						tag = DED
+					}
+				}
+				modifier = {
+					#no need to
+					factor = 0.2
+					enemies_strength_ratio < 1.2
+					NOT = {
+						tag = DED
+					}
+				}
+				modifier = {
+					#Prio if low on manpower
+					add = 200
+					NOT = {
+						has_idea = all_adults_serve
+						has_idea = scraping_the_barrel
+					}
+					has_war = yes
+					has_manpower < 2500
+				}
+			}
+			cost = 150
+			removal_cost = -1
+			level = 3
+			modifier = {
+				conscription = 0.1
+				non_core_manpower = 0.25
+				monthly_population = -0.1
+				political_power_factor = 0.05
+				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.05
+				training_time_factor = 0.1
+				conversion_cost_civ_to_mil_factor = -0.1
+				conversion_cost_mil_to_civ_factor = 0.1
+				army_attack_factor = -0.03
+				army_defence_factor = -0.03
+				army_speed_factor = -0.03
+				army_morale_factor = -0.03
+				army_org_factor = -0.03
+				army_org_regain = -0.03
+				experience_gain_army_factor = -0.25
+				max_planning_factor = -0.03
+				special_forces_cap = -0.15
+				org_loss_when_moving = 0.025
+				planning_speed = -0.03
+				air_accidents_factor = 0.025
+				air_ace_generation_chance_factor = -0.1
+				air_agility_factor = -0.03
+				air_attack_factor = -0.03
+				air_defence_factor = -0.03
+				air_mission_xp_gain_factor = -0.03
+				experience_gain_navy_factor = -0.25
+				naval_accidents_chance = 0.025
+				naval_coordination = -0.03
+				naval_damage_factor = -0.03
+				naval_defense_factor = -0.03
+				naval_morale_factor = -0.03
+				positioning = -0.03
+				repair_speed_factor = -0.03
+				screening_efficiency = -0.03
+				sortie_efficiency = -0.03
+				training_time_factor = 0.2
+			}
+			cancel_if_invalid = no
+		}
+		all_adults_serve = {
+			visible = {
+				NOT = {
+					has_country_flag = DED_AP_no_such_thing_as_conscription
+				}
+			}
+			available = {
+				if = {
+					limit = {
+						has_country_flag = is_maresoc
+					}
+					has_country_flag = is_maresoc
+				}
+				else = {
+					#has_manpower_for_recruit_change_to =  { value = 0.2 group = mobilization_laws }
+					NOT = {
+						has_idea = undisturbed_isolation
+					}
+					NOT = {
+						has_idea = isolation
+					}
+					has_war = yes
+					OR = {
+						has_war_support > 0.7
+						enemies_strength_ratio > 0.75
+						surrender_progress > 0.15
+					}
+					#any_enemy_country = {
+					#	strength_ratio = {
+					#		tag = ROOT
+					#		ratio > 0.75
+					#	}
+					#}
+					if = {
+						limit = {
+							tag = event_target:equestria
+						}
+						NOT = {
+							has_country_flag = manpower_laws_blocked
+						}
+					}
+					if = {
+						limit = {
+							original_tag = EQC
+							NOT = {
+								has_country_flag = is_maresoc
+							}
+						}
+						has_completed_focus = EQC_national_mobilisation_act
+						has_completed_focus = EQC_expand_conscription
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = GRI_griffenheim_square
+					}
+					NOT = {
+						has_completed_focus = GRI_limit_conscription_term
+					}
+				}
+				NOT = {
+					has_country_flag = demilitarized
+				}
+				NOT = {
+					has_country_flag = manpower_laws_blocked
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					#Prio if low on manpower
+					factor = 200
+					NOT = {
+						has_idea = scraping_the_barrel
+					}
+					has_manpower < 5000
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory < 600
+				}
+				modifier = {
+					#Lower chance if has decent amount
+					factor = 0.5
+					manpower_per_military_factory > 1000
+				}
+				modifier = {
+					#Block has plenty manpower
+					factor = 0
+					manpower_per_military_factory > 5000
+					NOT = {
+						tag = DED
+					}
+				}
+				modifier = {
+					#no need to
+					factor = 0
+					enemies_strength_ratio < 0.5
+					NOT = {
+						tag = DED
+					}
+				}
+				modifier = {
+					#Prio if low on manpower
+					add = 200
+					NOT = {
+						has_idea = scraping_the_barrel
+					}
+					has_war = yes
+					has_manpower < 2500
+				}
+			}
+			cost = 150
+			removal_cost = -1
+			level = 2
+			modifier = {
+				conscription = 0.2
+				non_core_manpower = 0.3
+				monthly_population = -0.2
+				political_power_factor = -0.1
+				industrial_capacity_dockyard = -0.1
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+				training_time_factor = 0.2
+				conversion_cost_civ_to_mil_factor = -0.25
+				conversion_cost_mil_to_civ_factor = 0.25
+				army_attack_factor = -0.075
+				army_defence_factor = -0.075
+				army_speed_factor = -0.075
+				army_morale_factor = -0.075
+				army_org_factor = -0.075
+				army_org_regain = -0.075
+				experience_gain_army_factor = -0.4
+				max_planning_factor = -0.075
+				special_forces_cap = -0.25
+				org_loss_when_moving = 0.05
+				planning_speed = -0.075
+				air_accidents_factor = 0.05
+				air_ace_generation_chance_factor = -0.2
+				air_agility_factor = -0.075
+				air_attack_factor = -0.075
+				air_defence_factor = -0.075
+				air_mission_xp_gain_factor = -0.075
+				experience_gain_navy_factor = -0.4
+				naval_accidents_chance = 0.05
+				naval_coordination = -0.075
+				naval_damage_factor = -0.075
+				naval_defense_factor = -0.075
+				naval_morale_factor = -0.075
+				positioning = -0.075
+				repair_speed_factor = -0.075
+				screening_efficiency = -0.075
+				sortie_efficiency = -0.075
+				#XP from reinforcement penalty (small)
+				training_time_factor = 0.3
+			}
+			cancel_if_invalid = no
+		}
+		scraping_the_barrel = {
+			visible = {
+				NOT = {
+					has_country_flag = DED_AP_no_such_thing_as_conscription
+				}
+			}
+			available = {
+				if = {
+					limit = {
+						has_country_flag = is_maresoc
+					}
+					has_country_flag = is_maresoc
+				}
+				else = {
+					#has_manpower_for_recruit_change_to =  { value = 0.25 group = mobilization_laws }
+					NOT = {
+						has_idea = undisturbed_isolation
+					}
+					NOT = {
+						has_idea = isolation
+					}
+					has_war = yes
+					OR = {
+						has_war_support > 0.85
+						surrender_progress > 0.25
+					}
+					#any_enemy_country = {
+					#	strength_ratio = {
+					#		tag = ROOT
+					#		ratio > 1
+					#	}
+					#}
+					if = {
+						limit = {
+							tag = event_target:equestria
+						}
+						NOT = {
+							has_country_flag = manpower_laws_blocked
+						}
+					}
+					if = {
+						limit = {
+							original_tag = EQC
+							NOT = {
+								has_country_flag = is_maresoc
+							}
+						}
+						has_completed_focus = EQC_national_mobilisation_act
+						has_completed_focus = EQC_expand_conscription
+					}
+				}
+				if = {
+					limit = {
+						has_completed_focus = GRI_griffenheim_square
+					}
+					NOT = {
+						has_completed_focus = GRI_limit_conscription_term
+					}
+				}
+				NOT = {
+					has_country_flag = demilitarized
+				}
+				NOT = {
+					has_country_flag = manpower_laws_blocked
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					#Prio if low on manpower
+					factor = 200
+					has_manpower < 5000
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory < 500
+				}
+				modifier = {
+					#Lower chance if has decent amount
+					factor = 0.5
+					manpower_per_military_factory > 1000
+				}
+				modifier = {
+					#Block has plenty manpower
+					factor = 0
+					manpower_per_military_factory > 5000
+					NOT = {
+						tag = DED
+					}
+				}
+				modifier = {
+					#no need to
+					factor = 0
+					enemies_strength_ratio < 0.5
+					NOT = {
+						tag = DED
+					}
+				}
+				modifier = {
+					#Prio if low on manpower
+					add = 200
+					has_war = yes
+					has_manpower < 2500
+				}
+			}
+			cost = 150
+			removal_cost = -1
+			level = 1
+			modifier = {
+				conscription = 0.25
+				non_core_manpower = 0.4
+				monthly_population = -0.5
+				political_power_factor = -0.15
+				industrial_capacity_dockyard = -0.15
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.15
+				training_time_factor = 0.5
+				conversion_cost_civ_to_mil_factor = -0.5
+				conversion_cost_mil_to_civ_factor = 0.5
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				army_speed_factor = -0.15
+				army_morale_factor = -0.15
+				army_org_factor = -0.15
+				army_org_regain = -0.15
+				experience_gain_army_factor = -0.5
+				max_planning_factor = -0.15
+				special_forces_cap = -0.4
+				org_loss_when_moving = 0.1
+				planning_speed = -0.15
+				air_accidents_factor = 0.1
+				air_ace_generation_chance_factor = -0.3
+				air_agility_factor = -0.15
+				air_attack_factor = -0.15
+				air_defence_factor = -0.15
+				air_mission_xp_gain_factor = -0.15
+				experience_gain_navy_factor = -0.5
+				naval_accidents_chance = 0.1
+				naval_coordination = -0.15
+				naval_damage_factor = -0.15
+				naval_defense_factor = -0.15
+				naval_morale_factor = -0.15
+				positioning = -0.15
+				repair_speed_factor = -0.15
+				screening_efficiency = -0.15
+				sortie_efficiency = -0.15
+				training_time_factor = 0.5
+			}
+			cancel_if_invalid = no
+		}
+		changeling_garrison = {
+			visible = {
+				is_subject_of = CHN
+			}
+			available = {
+				is_subject_of = CHN
+			}
+			allowed_to_remove = {
+				if = {
+					limit = {
+						original_tag = MAN
+					}
+					OR = {
+						NOT = {
+							is_subject_of = CHN
+						}
+						custom_trigger_tooltip = {
+							tooltip = MAN_we_can_indeed_remove_changeling_garrison_law_tt
+							has_country_flag = MAN_can_remove_changeling_garrison_law
+						}
+					}
+				}
+				else = {
+					NOT = {
+						is_subject_of = CHN
+					}
+				}
+			}
+			modifier = {
+				conscription = 0.025
+				modifier_army_sub_unit_infiltrator_company_attack_factor = 0.025
+				modifier_army_sub_unit_infiltrator_company_defence_factor = 0.025
+			}
+		}
+		DED_APN_no_such_thing_as_conscripts = {
+			visible = {
+				has_country_flag = DED_AP_no_such_thing_as_conscription
+			}
+			available = {
+				always = yes
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			modifier = {
+				conscription = 1
+			}
+		}
+	}
+}
