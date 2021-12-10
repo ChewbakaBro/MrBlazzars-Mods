@@ -71,6 +71,29 @@ buildings = {
 		value = 1
 	}
 
+	supply_node = {
+		show_on_map = 1
+		base_cost = 4500
+		provincial = yes
+		disabled_in_dmz = yes
+		icon_frame = 21
+		max_level = 1
+		centered = yes
+		supply_node = yes
+		damage_factor = 0.1
+		allied_build = yes
+		always_shown = yes
+	}
+
+	rail_way = {
+		base_cost = 85
+		per_level_extra_cost = 75
+		provincial = yes
+		disabled_in_dmz = yes
+		icon_frame = 20
+		max_level = 1
+	}
+
 	bunker = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
