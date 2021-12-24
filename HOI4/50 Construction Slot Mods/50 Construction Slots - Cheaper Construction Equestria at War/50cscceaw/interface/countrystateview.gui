@@ -28,6 +28,7 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
+		clipping = no 
 		orientation = lower_left
 		size = { width=436 height=796 }
 
@@ -56,11 +57,11 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "state_building_entries"
-				position = { x = 155 y = 43 }
+				position = { x = 155 y = 45 }
 				size = { width = 480 height = 105 }
 				format = "UPPER_LEFT"
-				slotsize = { width = 137 height = 52 }
-				max_slots_horizontal = 2
+				slotsize = { width = 60 height = 52 }
+				max_slots_horizontal = 5
 			}
 
 			instantTextboxType = {
@@ -79,7 +80,7 @@ guiTypes = {
 				position = { x = 152 y = 168 }
 				size = { width = 480 height = 90%% }
 				format = "UPPER_LEFT"
-				slotsize = { width = 55 height = 46 }
+				slotsize = { width = 58 height = 46 }
 				max_slots_horizontal = 5
 			}
 
@@ -161,7 +162,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "state_resources"
 				position = { x= 26 y=355}
-				size = { width=135 height=63 }
+				size = { width=135 height=123 }
 
 
 				background = {
@@ -316,6 +317,14 @@ guiTypes = {
 			}
 
 			iconType = {
+				name = "modifiers_snow_icons"
+				position = { x = 0 y= 0 }
+				spriteType = "GFX_modifiers_snow_icons"
+				Orientation = "UPPER_LEFT"
+				frame = 1
+			}
+
+			iconType = {
 				name = "modifiers_weather_icons"
 				position = { x = 0 y= 0 }
 				spriteType = "GFX_modifiers_weather_icons"
@@ -363,98 +372,119 @@ guiTypes = {
 					name = "unplanned_offensive_icon"
 					spriteType = "GFX_modifiers_unplanned_offensive_icon"
 					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
-				}
+					Orientation = "UPPER_LEFT"			
+	 			  
+				}	
 
 				iconType = {
 					name = "nuked_icon"
 					spriteType = "GFX_modifiers_nuked_icon"
 					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
-				}
+					Orientation = "UPPER_LEFT"			
+				}		
 
 				iconType = {
 					name = "riaportu_cloudtower_icon"
 					spriteType = "GFX_modifiers_riaportu_cloudtower_icon"
 					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
-				}
+					Orientation = "UPPER_LEFT"			
+				}	
 
 				iconType = {
 					name = "dinkau_lighthouse_icon"
 					spriteType = "GFX_modifiers_dinkau_lighthouse_icon"
 					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
+					Orientation = "UPPER_LEFT"	
 				}
 
 				iconType = {
 					name = "old_dragon_gardens_icon"
 					spriteType = "GFX_modifiers_old_dragon_gardens_icon"
 					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
+					Orientation = "UPPER_LEFT"	
 				}
 
 				iconType = {
 					name = "skynavian_peoples_archives_icon"
 					spriteType = "GFX_modifiers_skynavian_peoples_archives_icon"
 					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
+					Orientation = "UPPER_LEFT"	
 				}
 
 				iconType = {
 					name = "great_hall_of_the_proletariat_icon"
 					spriteType = "GFX_modifiers_great_hall_of_the_proletariat_icon"
 					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
+					Orientation = "UPPER_LEFT"	
 				}
 
 				iconType = {
 					name = "hail_forest_obelisk_icon"
 					spriteType = "GFX_modifiers_hail_forest_obelisk_icon"
 					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
-				}
-
-				iconType = {
-					name = "ostfloy_nature_reserve_icon"
-					spriteType = "GFX_modifiers_ostfloy_nature_reserve_icon"
-					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
+					Orientation = "UPPER_LEFT"	
 				}
 
 				iconType = {
 					name = "skynavia_trolleybus_network_icon"
 					spriteType = "GFX_modifiers_skynavia_trolleybus_network_icon"
 					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
+					Orientation = "UPPER_LEFT"	
 				}
-				iconType = {
-					name = "ostfloy_nature_reserve_icon"
-					spriteType = "GFX_modifiers_ostfloy_nature_reserve_icon"
-					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
-				}
+
 				iconType = {
 					name = "eygsic_forest_icon"
 					spriteType = "GFX_modifiers_eygsic_forest_icon"
 					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
+					Orientation = "UPPER_LEFT"	
 				}
+				
 				iconType = {
 					name = "scheisswald_forest_icon"
 					spriteType = "GFX_modifiers_scheisswald_forest_icon"
 					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
+					Orientation = "UPPER_LEFT"	
 				}
+				iconType = {
+					name = "barrad_climate_icon"
+					spriteType = "GFX_modifiers_barrad_climate_icon"
+					position = { x = 0 y = 0 }
+					Orientation = "UPPER_LEFT"	
+				}
+				iconType = {
+					name = "barrad_climate2_icon"
+					spriteType = "GFX_modifiers_barrad_climate_icon"
+					position = { x = 0 y = 0 }
+					Orientation = "UPPER_LEFT"	
+				}
+				iconType = {
+					name = "barrad_climate3_icon"
+					spriteType = "GFX_modifiers_barrad_climate_icon"
+					position = { x = 0 y = 0 }
+					Orientation = "UPPER_LEFT"	
+				}
+				iconType = {
+					name = "tarrin_resistance_icon"
+					spriteType = "GFX_modifiers_FRN_tarrin_resistance"
+					position = { x = 0 y = 0 }
+					Orientation = "UPPER_LEFT"	
+				}
+				iconType = {
+					name = "tarrin_autonomy_icon"
+					spriteType = "GFX_modifiers_FRN_tarrin_autonomy"
+					position = { x = 0 y = 0 }
+					Orientation = "UPPER_LEFT"	
+				}
+	
 			}
-
+			
 			gridBoxType = {
 				name = "province_building_entries"
 				position = { x = 12 y = 52 }
 				size = { width = 480 height = 90%% }
 				format = "UPPER_LEFT"
-				slotsize = { width = 130 height = 54 }
-				max_slots_horizontal = 3
+				slotsize = { width = 109 height = 54 }
+				max_slots_horizontal = 4
 			}
 
 			buttonType = {
@@ -475,17 +505,26 @@ guiTypes = {
 				spriteType = "GFX_nuke_progress_frame"
 				position = { x=15 y= -6 }
 			}
+
 		}
 
 		buttonType = {
 			name = "close_button"
-			position = { x = -36 y = 11 }
+			position = { x = -30 y = 11 }
 			quadTextureSprite ="GFX_closebutton_small"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
 			Orientation = "UPPER_RIGHT"
 			clicksound = click_close
 			pdx_tooltip = "CLOSE"
+		}
+
+		buttonType = {
+			name = "scorched_earth_state_button"
+			position = { x = -31 y = 135 }
+			quadTextureSprite ="GFX_scorched_earth"
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_RIGHT"
 		}
 	}
 
@@ -517,20 +556,20 @@ guiTypes = {
 
 		background = {
 			name = "Background"
-			spriteType ="GFX_building_entry_stateview"
+			spriteType ="GFX_building_standing_entry_stateview"
 		}
 
 		iconType = {
 			name = "level_bg"
-			position = { x=65 y=11 }
-			spriteType = "GFX_generic_text_bg_60"
+			position = { x=5 y=60 }
+			spriteType = "GFX_generic_text_bg_48"
 		}
 
 		instantTextboxType = {
 			name = "level"
-			position = { x = 45 y = 14 }
+			position = { x = -1 y = 63 }
 			font = "hoi_20b"
-			maxWidth = 100
+			maxWidth = 60
 			maxHeight = 20
 			format = center
 			alwaystransparent = yes
@@ -538,14 +577,14 @@ guiTypes = {
 
 		buttonType = {
 			name = "building_picture"
-			position = { x = 13 y = 3 }
+			position = { x = 12 y = 5 }
 			quadTextureSprite ="GFX_buildings_strip"
 		}
 
 		iconType = {
 			name = "damage_bar"
 			spriteType = "GFX_damage_bar"
-			position = { x=10 y=36 }
+			position = { x=10 y=41 }
 			rotation = 1.5708
 		}
 	}
@@ -603,13 +642,13 @@ guiTypes = {
 
 		iconType = {
 			name = "level_bg"
-			position = { x=65 y=11 }
-			spriteType = "GFX_generic_text_bg_60"
+			position = { x=58 y=11 }
+			spriteType = "GFX_generic_text_bg_48"
 		}
 
 		instantTextboxType = {
 			name = "level"
-			position = { x = 45 y = 14 }
+			position = { x = 32 y = 14 }
 			font = "hoi_20b"
 			maxWidth = 100
 			maxHeight = 100
@@ -619,14 +658,14 @@ guiTypes = {
 
 		buttonType = {
 			name = "building_picture"
-			position = { x = 13 y = 3 }
+			position = { x = 10 y = 3 }
 			quadTextureSprite ="GFX_buildings_strip"
 		}
 
 		iconType = {
 			name = "damage_bar"
 			spriteType = "GFX_damage_bar"
-			position = { x=10 y=39  }
+			position = { x=9 y=38  }
 			rotation = 1.5708
 		}
 	}
@@ -653,6 +692,8 @@ guiTypes = {
 			format = center
 		}
 	}
+
+
 	containerWindowType = {
 		name = "state_compliance_status_container"
 		position = { x = 300 y = 40 }
