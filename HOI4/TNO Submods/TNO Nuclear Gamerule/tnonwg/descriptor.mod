@@ -9,5 +9,5 @@ dependencies={
 }
 picture="Thumbnail.png"
 name="TNO Nuclear War Gamerule"
-supported_version="1.10.*"
+supported_version="1.11.*"
 remote_file_id="2536098374"

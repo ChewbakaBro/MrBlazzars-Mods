@@ -13,10 +13,74 @@ remove_all_ministers = {
 		remove_ideas_with_trait = security_minister
 	}
 }
+
+#fill empty minister slots
+fill_empty_minister = {
+	if = {
+		limit = {
+			NOT = { has_idea_with_trait = head_of_government }
+		}
+		meta_effect = {
+			text = {
+				add_ideas = [currenttag]_Generic_Vacant_hog
+			}
+			currenttag = "[THIS.GetTag]"
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_idea_with_trait = foreign_minister }
+		}
+		meta_effect = {
+			text = {
+				add_ideas = [currenttag]_Generic_Vacant_for
+			}
+			currenttag = "[THIS.GetTag]"
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_idea_with_trait = security_minister }
+		}
+		meta_effect = {
+			text = {
+				add_ideas = [currenttag]_Generic_Vacant_sec
+			}
+			currenttag = "[THIS.GetTag]"
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_idea_with_trait = economy_minister }
+		}
+		meta_effect = {
+			text = {
+				add_ideas = [currenttag]_Generic_Vacant_eco
+			}
+			currenttag = "[THIS.GetTag]"
+		}
+	}
+}
+
+# Should be used in history file only when a country doesn't have ministers for the rest of the game.
+# If a country adds ministers in the middle of the game, add the effect and then remove the vacant positions when you're adding the minsiters
+fill_empty_minister_nochecks = {
+	meta_effect = {
+		text = {
+			add_ideas = {
+				[currenttag]_Generic_Vacant_hog
+				[currenttag]_Generic_Vacant_for
+				[currenttag]_Generic_Vacant_sec
+				[currenttag]_Generic_Vacant_eco
+			}
+		}
+		currenttag = "[THIS.GetTag]"
+	}
+}
+
 # changes the government of the country in scope to that of ROOT (the country running the event)
 
 fire_nuclear_war = {
-	log = "[GetDateText]: [Root.GetName]: Total Nuclear War Initiating"
 	if = {
 		limit = {
 			has_game_rule = {
@@ -24,16 +88,16 @@ fire_nuclear_war = {
 				option = NUCLEAR_END_ALLOWED
 			}
 		}
+		log = "[GetDateText]: [Root.GetName]: Total Nuclear War Initiating"
 		set_variable = { global.world_population_pre = 0 }
 		set_variable = { global.world_population_post = 0 }
 		set_global_flag = TNO_world_tension_WW3
-		TNO_World_Tension_add_100 = yes
-		news_event = { id = WORLD.100 hours = 1 }
+		#news_event = { id = WORLD.100 hours = 1 }
 		ZZZ = {
-			add_named_threat = {
-				threat = 100
-				name = threat.45.t
-			}
+			#add_named_threat = {
+			#	threat = 100
+			#	name = threat.45.t
+			#}
 			set_cosmetic_tag = ZZZ_nuclear
 			fire_nukes = yes
 			set_global_flag = NUCLEAR_WAR
@@ -47,7 +111,8 @@ fire_nuclear_war = {
 			load_focus_tree = blank_no_tree_apoc
 			if = {
 				limit = { is_ai = no }
-				set_country_flag = big_event_nuclear_war
+				set_temp_variable = { TNO_temp_super_event = 1 }
+				TNO_fire_super_event = yes
 				ZZZ = {
 					change_tag_from = PREV
 					set_country_flag = PLAYER_NATION_POSTAPOC
@@ -108,11 +173,11 @@ fire_nuclear_war = {
 						OR = {
 							original_tag = CHI
 
-							original_tag = RAJ
-							original_tag = BEN
+							original_tag = IND
+							original_tag = AZH
 
 							original_tag = VIN
-							original_tag = SIA
+							original_tag = THA
 							original_tag = CAM
 							original_tag = LAO
 							original_tag = AST
@@ -121,7 +186,7 @@ fire_nuclear_war = {
 							original_tag = PHI
 							original_tag = INS
 							original_tag = NRB
-							original_tag = SYO
+							original_tag = SHO
 
 						}
 					}
@@ -139,8 +204,8 @@ fire_nuclear_war = {
 				limit = {
 					is_ai = no
 					OR = {
-						original_tag = RAJ
-						original_tag = BEN
+						original_tag = IND
+						original_tag = AZH
 					}
 				}
 				set_global_flag = play_RAD_IN_PostApoc_Events
@@ -150,7 +215,7 @@ fire_nuclear_war = {
 					is_ai = no
 					OR = {
 						original_tag = VIN
-						original_tag = SIA
+						original_tag = THA
 						original_tag = CAM
 						original_tag = LAO
 						original_tag = AST
@@ -159,7 +224,7 @@ fire_nuclear_war = {
 						original_tag = PHI
 						original_tag = INS
 						original_tag = NRB
-						original_tag = SYO
+						original_tag = SHO
 					}
 				}
 				set_global_flag = play_RAD_SEA_PostApoc_Events
@@ -187,9 +252,9 @@ fire_nuclear_war = {
 			}
 			if = {
 				limit = {
-					ORS = { has_country_leader = { name = "Oskar Dirlewanger" ruling_only = yes } }
+					DRL = { has_country_leader = { character = DRL_Oskar_Dirlewanger ruling_only = yes } }
 				}
-				set_global_flag = ORS_PostApoc_Event
+				set_global_flag = DRL_PostApoc_Event
 			}
 			if = {
 				limit = {
@@ -199,13 +264,13 @@ fire_nuclear_war = {
 			}
 			if = {
 				limit = {
-					USA = { has_country_leader = { name = "Margaret Chase Smith" ruling_only = yes } }
+					USA = { has_country_leader = { character = USA_Margaret_Chase_Smith ruling_only = yes } }
 				}
 				set_global_flag = USA_MCS_PostApoc_Event
 			}
 			if = {
 				limit = {
-					GER = { has_country_leader = { name = "Hermann Göring" ruling_only = yes } }
+					GER = { has_country_leader = { character = GER_Hermann_Goring ruling_only = yes } }
 				}
 				set_global_flag = Goering_PostApoc_Event
 			}
@@ -217,42 +282,34 @@ fire_nuclear_war = {
 			}
 			if = {
 				limit = {
-					ANG = { has_country_leader = { name = "Wolfgang Schenck" ruling_only = yes } }
+					ANG = { has_country_leader = { character = ANG_Wolfgang_Schenck ruling_only = yes } }
 				}
 				set_global_flag = Schenck_PostApoc_Event
 			}
 			if = {
 				limit = {
-					COG = { has_country_leader = { name = "Siegfried Müller" ruling_only = yes } }
+					COG = { has_country_leader = { character = COG_Siegfried_Muller ruling_only = yes } }
 				}
 				set_global_flag = Muller_PostApoc_Event
 			}
 		}
 	}
 	else = {
-		#Nothing
+		#nothing
 	}
 }
 fire_nukes = {
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_nuclear_end
-				option = NUCLEAR_END_ALLOWED
-			}
-		}
-		country_event = { id = nuclearwar.10 hours = 1 }
-		country_event = { id = nuclearwar.11 hours = 2 }
-		country_event = { id = nuclearwar.12 hours = 3 }
-		country_event = { id = nuclearwar.13 hours = 4 }
-		country_event = { id = nuclearwar.14 hours = 5 }
-		country_event = { id = nuclearwar.15 hours = 6 }
-		country_event = { id = nuclearwar.16 hours = 7 }
-		country_event = { id = nuclearwar.17 hours = 8 }
-		country_event = { id = nuclearwar.18 hours = 9 }
-		country_event = { id = nuclearwar.19 hours = 10 }
-		country_event = { id = nuclearwar.101 days = 1 }
-	}
+	country_event = { id = nuclearwar.10 hours = 1 }
+	country_event = { id = nuclearwar.11 hours = 2 }
+	country_event = { id = nuclearwar.12 hours = 3 }
+	country_event = { id = nuclearwar.13 hours = 4 }
+	country_event = { id = nuclearwar.14 hours = 5 }
+	country_event = { id = nuclearwar.15 hours = 6 }
+	country_event = { id = nuclearwar.16 hours = 7 }
+	country_event = { id = nuclearwar.17 hours = 8 }
+	country_event = { id = nuclearwar.18 hours = 9 }
+	country_event = { id = nuclearwar.19 hours = 10 }
+	country_event = { id = nuclearwar.101 days = 1 }
 }
 copy_government_of_ROOT = {
 	if = {
@@ -264,28 +321,24 @@ copy_government_of_ROOT = {
 		set_politics = { ruling_party = socialist elections_allowed = no }
 	}
 	if = {
-		limit = { ROOT = { has_government = ultranational_socialism } }
-		set_politics = { ruling_party = ultranational_socialism elections_allowed = no }
+		limit = { ROOT = { has_government = ultranationalism } }
+		set_politics = { ruling_party = ultranationalism elections_allowed = no }
 	}
 	if = {
-		limit = { ROOT = { has_government = social_democrat } }
-		set_politics = { ruling_party = social_democrat elections_allowed = no }
+		limit = { ROOT = { has_government = social_democracy } }
+		set_politics = { ruling_party = social_democracy elections_allowed = no }
 	}
 	if = {
-		limit = { ROOT = { has_government = social_liberal } }
-		set_politics = { ruling_party = social_liberal elections_allowed = no }
+		limit = { ROOT = { has_government = liberal_democracy } }
+		set_politics = { ruling_party = liberal_democracy elections_allowed = no }
 	}
 	if = {
-		limit = { ROOT = { has_government = market_liberal } }
-		set_politics = { ruling_party = market_liberal elections_allowed = no }
+		limit = { ROOT = { has_government = conservative_democracy } }
+		set_politics = { ruling_party = conservative_democracy elections_allowed = no }
 	}
 	if = {
-		limit = { ROOT = { has_government = social_conservative } }
-		set_politics = { ruling_party = social_conservative elections_allowed = no }
-	}
-	if = {
-		limit = { ROOT = { has_government = authoritarian_democrat } }
-		set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
+		limit = { ROOT = { has_government = authoritarian_democracy } }
+		set_politics = { ruling_party = authoritarian_democracy elections_allowed = no }
 	}
 	if = {
 		limit = { ROOT = { has_government = despotism } }
@@ -296,8 +349,8 @@ copy_government_of_ROOT = {
 		set_politics = { ruling_party = fascism elections_allowed = no }
 	}
 	if = {
-		limit = { ROOT = { has_government = burgundian_system } }
-		set_politics = { ruling_party = burgundian_system elections_allowed = no }
+		limit = { ROOT = { has_government = esoteric_nazism } }
+		set_politics = { ruling_party = esoteric_nazism elections_allowed = no }
 	}
 }
 
@@ -305,14 +358,13 @@ get_current_government_type = {
 	clr_country_flag = was_communist
 	clr_country_flag = was_socialist
 	clr_country_flag = was_ultranational_socialist
-	clr_country_flag = was_social_democrat
-	clr_country_flag = was_social_liberal
-	clr_country_flag = was_market_liberal
-	clr_country_flag = was_social_conservative
-	clr_country_flag = was_authoritarian_democrat
+	clr_country_flag = was_social_democracy
+	clr_country_flag = was_liberal_democracy
+	clr_country_flag = was_conservative_democracy
+	clr_country_flag = was_authoritarian_democracy
 	clr_country_flag = was_despotist
 	clr_country_flag = was_fascist
-	clr_country_flag = was_burgundian_system
+	clr_country_flag = was_esoteric_nazism
 	if = {
 		limit = { has_government = communist }
 		set_country_flag = was_communist
@@ -322,28 +374,24 @@ get_current_government_type = {
 		set_country_flag = was_socialist
 	}
 	if = {
-		limit = { has_government = ultranational_socialism }
+		limit = { has_government = ultranationalism }
 		set_country_flag = was_ultranational_socialist
 	}
 	if = {
-		limit = { has_government = social_democrat }
-		set_country_flag = was_social_democrat
+		limit = { has_government = social_democracy }
+		set_country_flag = was_social_democracy
 	}
 	if = {
-		limit = { has_government = social_liberal }
-		set_country_flag = was_social_liberal
+		limit = { has_government = liberal_democracy }
+		set_country_flag = was_liberal_democracy
 	}
 	if = {
-		limit = { has_government = market_liberal }
-		set_country_flag = was_market_liberal
+		limit = { has_government = conservative_democracy }
+		set_country_flag = was_conservative_democracy
 	}
 	if = {
-		limit = { has_government = social_conservative }
-		set_country_flag = was_social_conservative
-	}
-	if = {
-		limit = { has_government = authoritarian_democrat }
-		set_country_flag = was_authoritarian_democrat
+		limit = { has_government = authoritarian_democracy }
+		set_country_flag = was_authoritarian_democracy
 	}
 	if = {
 		limit = { has_government = despotism }
@@ -354,8 +402,8 @@ get_current_government_type = {
 		set_country_flag = was_fascist
 	}
 	if = {
-		limit = { has_government = burgundian_system }
-		set_country_flag = was_burgundian_system
+		limit = { has_government = esoteric_nazism }
+		set_country_flag = was_esoteric_nazism
 	}
 }
 
@@ -371,27 +419,23 @@ restore_previous_government_type = {
 		}
 		if = {
 			limit = { has_country_flag = was_ultranational_socialist }
-			set_politics = { ruling_party = ultranational_socialism }
+			set_politics = { ruling_party = ultranationalism }
 		}
 		if = {
-			limit = { has_country_flag = was_social_democrat }
-			set_politics = { ruling_party = social_democrat }
+			limit = { has_country_flag = was_social_democracy }
+			set_politics = { ruling_party = social_democracy }
 		}
 		if = {
-			limit = { has_country_flag = was_social_liberal }
-			set_politics = { ruling_party = social_liberal }
+			limit = { has_country_flag = was_liberal_democracy }
+			set_politics = { ruling_party = liberal_democracy }
 		}
 		if = {
-			limit = { has_country_flag = was_market_liberal }
-			set_politics = { ruling_party = market_liberal }
+			limit = { has_country_flag = was_conservative_democracy }
+			set_politics = { ruling_party = conservative_democracy }
 		}
 		if = {
-			limit = { has_country_flag = was_social_conservative }
-			set_politics = { ruling_party = social_conservative }
-		}
-		if = {
-			limit = { has_country_flag = was_authoritarian_democrat }
-			set_politics = { ruling_party = authoritarian_democrat }
+			limit = { has_country_flag = was_authoritarian_democracy }
+			set_politics = { ruling_party = authoritarian_democracy }
 		}
 		if = {
 			limit = { has_country_flag = was_despotist }
@@ -402,8 +446,8 @@ restore_previous_government_type = {
 			set_politics = { ruling_party = fascism }
 		}
 		if = {
-			limit = { has_country_flag = was_burgundian_system }
-			set_politics = { ruling_party = burgundian_system }
+			limit = { has_country_flag = was_esoteric_nazism }
+			set_politics = { ruling_party = esoteric_nazism }
 		}
 	}
 }
@@ -757,10 +801,42 @@ random_get_regionals = {
 }
 
 TNO_div_limiter_calculate_unit_cap = {
-	set_variable = { TNOLimiterIndustry = num_of_military_factories }
+	set_variable = { TNOLimiterIndustry = production_units }
 	multiply_variable = { TNOLimiterIndustry = 1.5 }
-	add_to_variable = { TNOLimiterIndustry = DivLimiterEscalatorPerm }
-	if = {  #Caps unit production based on milfacs
+	multiply_variable = { TNOLimiterIndustry = DivLimiterEscalatorPerm }
+	if = {
+		limit = {
+			tag = USA
+			has_war = no
+		}
+		divide_variable = { TNOLimiterIndustry = 11.9 }
+	}
+	#else_if = {
+	#	limit = {
+	#		tag = JAP
+	#		has_war = no
+	#	}
+	#	divide_variable = { TNOLimiterIndustry = 7.1 }
+	#}
+	#else_if = {
+	#	limit = {
+	#		tag = ITA
+	#	}
+	#	divide_variable = { TNOLimiterIndustry = 5 }
+	#}
+	#else_if = {
+	#	limit = {
+	#		tag = GER
+	#	}
+	#	divide_variable = { TNOLimiterIndustry = 1.9 }
+	#}
+	else_if = {
+		limit = {
+			tag = ENG
+		}
+		divide_variable = { TNOLimiterIndustry = 1.7 }
+	}
+	if = {  #Caps unit production based on PUs
 		limit = {
 			has_war = no
 			OR = {
@@ -774,6 +850,12 @@ TNO_div_limiter_calculate_unit_cap = {
 		limit = {
 			check_variable = { num_divisions < TNOLimiterIndustry }
 			has_country_flag = TNO_DIVISIONS_CAPPED
+			NOT = {
+				AND = {
+					tag = GER
+					has_country_flag = sgr_werhmacht_division_limiter_activated
+				}
+			}
 		}
 		clr_country_flag = TNO_DIVISIONS_CAPPED
 	}
@@ -781,25 +863,16 @@ TNO_div_limiter_calculate_unit_cap = {
 
 TNO_div_limiter_escalator_mechanism_run = {
 	THIS = {
-		set_variable = { DivLimiterEscalatorPerm = 1.1 }
+		set_variable = { DivLimiterEscalatorPerm = 1 }
 		every_neighbor_country = {
+			set_variable = { THIS.DivLimiterEscalator = THIS.num_divisions }
+			divide_variable = { THIS.DivLimiterEscalator = PREV.num_divisions }
 			if = {
-				limit = {
-					check_variable = { THIS.num_divisions > THIS.TNOLimiterIndustry }
-				}
-				set_variable = { THIS.DivLimiterEscalator = THIS.num_divisions }
-				divide_variable = { THIS.DivLimiterEscalator = THIS.TNOLimiterIndustry }
+				limit = { check_variable = { THIS.DivLimiterEscalator > PREV.DivLimiterEscalatorPerm} }
+				set_variable = { PREV.DivLimiterEscalatorPerm = THIS.DivLimiterEscalator }
 			}
-			if = {
-				limit = {
-					check_variable = { THIS.num_divisions < THIS.TNOLimiterIndustry }
-				}
-				set_variable = { THIS.DivLimiterEscalator = THIS.num_divisions }
-				divide_variable = { THIS.DivLimiterEscalator = THIS.TNOLimiterIndustry }
-			}
-			multiply_variable = { PREV.DivLimiterEscalatorPerm = THIS.DivLimiterEscalator }
 		}
-		log = "[GetDateText]: [THIS.GetName]: ran Division Limiter Escalator script - current temp escalator value is [?DivLimiterEscalator] - current permanent escalator value is [?DivLimiterEscalatorPerm] - current limiter value is [?TNOLimiterIndustry]"
+		log = "[GetDateText]: [THIS.GetName]: ran Division Limiter Escalator script - current permanent escalator value is [?DivLimiterEscalatorPerm] - current limiter value is [?TNOLimiterIndustry]"
 	}
 }
 
@@ -884,18 +957,18 @@ TNO_cancel_border_war_state_scope = {
 # Use both effects on the same scope
 save_party_popularities = { # Use this before puppeting
 	log = "[GetDateText]: [THIS.GetName]: Running save_party_popularities command"
+	set_temp_variable = { PartyPopTotal = 0 }
 	add_to_array = { PartyPops = party_popularity@communist }
 	add_to_array = { PartyPops = party_popularity@socialist }
-	add_to_array = { PartyPops = party_popularity@social_democrat }
-	add_to_array = { PartyPops = party_popularity@social_liberal }
-	add_to_array = { PartyPops = party_popularity@market_liberal }
-	add_to_array = { PartyPops = party_popularity@social_conservative }
-	add_to_array = { PartyPops = party_popularity@authoritarian_democrat }
+	add_to_array = { PartyPops = party_popularity@social_democracy }
+	add_to_array = { PartyPops = party_popularity@liberal_democracy }
+	add_to_array = { PartyPops = party_popularity@conservative_democracy }
+	add_to_array = { PartyPops = party_popularity@authoritarian_democracy }
 	add_to_array = { PartyPops = party_popularity@despotism }
 	add_to_array = { PartyPops = party_popularity@fascism }
 	add_to_array = { PartyPops = party_popularity@national_socialism }
-	add_to_array = { PartyPops = party_popularity@ultranational_socialism }
-	add_to_array = { PartyPops = party_popularity@burgundian_system }
+	add_to_array = { PartyPops = party_popularity@ultranationalism }
+	add_to_array = { PartyPops = party_popularity@esoteric_nazism }
 
 	for_each_loop = {
 		array = PartyPops
@@ -939,16 +1012,15 @@ apply_party_popularities = { # Use this after puppeting
 		set_popularities = {
 			communist = PartyPops^0
 			socialist = PartyPops^1
-			social_democrat = PartyPops^2
-			social_liberal = PartyPops^3
-			market_liberal = PartyPops^4
-			social_conservative = PartyPops^5
-			authoritarian_democrat = PartyPops^6
-			despotism = PartyPops^7
-			fascism = PartyPops^8
-			national_socialism = PartyPops^9
-			ultranational_socialism = PartyPops^10
-			burgundian_system = PartyPops^11
+			social_democracy = PartyPops^2
+			liberal_democracy = PartyPops^3
+			conservative_democracy = PartyPops^4
+			authoritarian_democracy = PartyPops^5
+			despotism = PartyPops^6
+			fascism = PartyPops^7
+			national_socialism = PartyPops^8
+			ultranationalism = PartyPops^9
+			esoteric_nazism = PartyPops^10
 		}
 		clear_array = PartyPops
 	}
@@ -971,7 +1043,7 @@ TNO_Oil_Crisis_apply_modifier = {
 	set_variable = { OC_industrial_capacity_dockyard = -0.1 }
 	set_variable = { OC_trade_opinion_factor = -0.5 }
 	set_variable = { OC_annual_gdp_growth_factor = -0.25 }
-	set_variable = { OC_proportional_gdp_cost = 0.08 }
+	set_variable = { OC_proportional_pop_cost = 0.08 }
 	set_variable = { OC_personnel_cost_modifier = 0.25 }
 }
 
@@ -981,14 +1053,14 @@ TNO_Oil_Crisis_reduce_effects = { # Can be fired up to 5 times until the OC modi
 		limit = {
 			NOT = {tag = IBR}
 			check_variable = { OC_dynamic_modifier_counter < 4 }
-			}
+		}
 		custom_effect_tooltip = TNO_Oil_Crisis_reduce_effects_tooltip
 	}
 	else_if = {
 		limit = {
 			NOT = {tag = IBR}
 			check_variable = { OC_dynamic_modifier_counter = 4 }
-			}
+		}
 		custom_effect_tooltip = TNO_Oil_Crisis_remove_modifier_tooltip
 	}
 	add_to_variable = { OC_fuel_gain_factor = 0.08 }
@@ -1028,7 +1100,7 @@ TNO_Oil_Crisis_remove_modifier = {
 	clear_variable = OC_industrial_capacity_dockyard
 	clear_variable = OC_trade_opinion_factor
 	clear_variable = OC_annual_gdp_growth_factor
-	clear_variable = OC_proportional_gdp_cost
+	clear_variable = OC_proportional_pop_cost
 	clear_variable = OC_personnel_cost_modifier
 }
 
@@ -1060,6 +1132,44 @@ TNO_Oil_Crisis_reduce_effects_USA = { # USA unique : only gives pp and stab back
 	}
 }
 
+# Babylonian (Newton) method of finding square roots by Yard1 (https://hackmd.io/@Yard1/B1w3sRCNv)
+# Feel free to use and modify provided credits are given
+
+# # Finding the square root of 10.
+# set_variable = { sr_arg_number = 10 } # Put 10 into the argument variable
+# square_root_number = yes # Run the effect
+# set_variable = { out = sr_ret_number } # Set your out variable to the return variable
+
+# Square roots a number (sr_arg_number), returns value in sr_ret_number.
+square_root_babylonian = {
+	if = {
+		limit = {
+			check_variable = { sr_arg_number < 0.001 }
+		}
+		set_variable = { sr_ret_number = 0 }
+	}
+	else = {
+		# overflow at 2147483.647
+		# therefore, highest possible square root * 2 is ~2931
+		set_temp_variable = { x = 2931 }
+
+		set_temp_variable = { y = 1 }
+		set_temp_variable = { e = 0.001 } # precision - game can't go any lower than this
+		while_loop_effect = {
+			limit = {
+				set_temp_variable = { t_x = x }
+				subtract_from_temp_variable = { t_x = y }
+				check_variable = { t_x > e }
+			}
+			add_to_temp_variable = { x = y }
+			divide_temp_variable = { x = 2 }
+			set_temp_variable = { y = sr_arg_number }
+			divide_temp_variable = { y = x }
+		}
+		set_variable = { sr_ret_number = x }
+	}
+}
+
 remove_faction_status = {
 	hidden_effect = {
 		remove_ideas = {
@@ -1081,6 +1191,9 @@ remove_faction_status = {
 			Sphere_Fully_Dependent
 			Sphere_Economic_Dependent
 			Sphere_Coequal
+			Sphere_Observer
+			NLF_Leader
+			NLF_Member
 			OFN_Leader_of_The_Free_World
 			OFN_Independent_Member
 			OFN_Dependent_Member
@@ -1092,6 +1205,19 @@ remove_faction_status = {
 			TRI_Founder_TR
 			TRI_Member
 			TRI_Member_Client
+			TRI_Observer
+			PALF_Faction
+			PALF_Satellite
+			WAA_Faction
+			WAA_Protectorate
+			WAF_Faction
+			WAF_Supervised
+			FMA_Faction
+			FMA_Puppet
+			FRU_Faction
+			FRU_Associated
+			Mano_Member
+			UAS_Member
 		}
 	}
 }
