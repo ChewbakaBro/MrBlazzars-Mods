@@ -11,5 +11,5 @@ tags={
 	"Alternative History"
 	"Technologies"
 }
-supported_version="1.10.*"
+supported_version="1.11.*"
 path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/ers"

@@ -1,5 +1,7 @@
-﻿name="Extra Research Slot"
+﻿name="Maximum Building Slots"
 dependencies={
+	"Endsieg: Ultimate Victory"
+	"Equestria at War"
 	"Old World Blues"
 	"Old World Blues - Dev"
 	"Kaiserredux: A Kaiserreich Expansion"
