@@ -365,19 +365,25 @@ country_event = {
 	}
 	option = {
 		name = Easybuff.21.d
-		set_temp_variable = { caps_daily_diff = 150 }
+		set_temp_variable = { temp_income_source = ROOT }
+		set_temp_variable = { temp_income_amount = 150 }
+		set_temp_variable = { temp_income_id = 1 }
 		update_caps_income = yes
 		country_event = Easybuff.20
 	}
 	option = {
 		name = Easybuff.21.e
-		set_temp_variable = { caps_daily_diff = 300 }
+		set_temp_variable = { temp_income_source = ROOT }
+		set_temp_variable = { temp_income_amount = 300 }
+		set_temp_variable = { temp_income_id = 1 }
 		update_caps_income = yes
 		country_event = Easybuff.20
 	}
 	option = {
 		name = Easybuff.21.f
-		set_temp_variable = { caps_daily_diff = 500 }
+		set_temp_variable = { temp_income_source = ROOT }
+		set_temp_variable = { temp_income_amount = 500 }
+		set_temp_variable = { temp_income_id = 1 }
 		update_caps_income = yes
 		country_event = Easybuff.20
 	}
