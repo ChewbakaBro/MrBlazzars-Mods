@@ -1,17 +1,15 @@
 ﻿add_namespace = Easybuff
-
-
 country_event = {
 	id = Easybuff.1
 	title = Easybuff.1.t
 	desc = Easybuff.1.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	immediate = {
-		hidden_effect = { remove_ideas = cheat_open_easybuff }
+		hidden_effect = {
+			remove_ideas = cheat_open_easybuff
+		}
 	}
-
 	option = {
 		name = Easybuff.1.a
 		country_event = Easybuff.10
@@ -60,12 +58,12 @@ country_event = {
 	desc = Easybuff.10.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
-
 	option = {
 		name = Easybuff.10.a
 		every_state = {
-			limit = { is_controlled_by = ROOT }
+			limit = {
+				is_controlled_by = ROOT
+			}
 			add_building_construction = {
 				type = infrastructure
 				level = 1
@@ -77,7 +75,9 @@ country_event = {
 	option = {
 		name = Easybuff.10.b
 		every_state = {
-			limit = { is_controlled_by = ROOT }
+			limit = {
+				is_controlled_by = ROOT
+			}
 			add_building_construction = {
 				type = anti_air_building
 				level = 1
@@ -89,7 +89,9 @@ country_event = {
 	option = {
 		name = Easybuff.10.c
 		every_state = {
-			limit = { is_controlled_by = ROOT }
+			limit = {
+				is_controlled_by = ROOT
+			}
 			add_building_construction = {
 				type = radar_station
 				level = 1
@@ -101,7 +103,9 @@ country_event = {
 	option = {
 		name = Easybuff.10.d
 		every_state = {
-			limit = { is_controlled_by = ROOT }
+			limit = {
+				is_controlled_by = ROOT
+			}
 			add_building_construction = {
 				type = air_base
 				level = 1
@@ -112,35 +116,52 @@ country_event = {
 	}
 	option = {
 		name = Easybuff.10.e
-		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.10.f
-		add_offsite_building = { type = arms_factory level = 2 }
+		add_offsite_building = {
+			type = arms_factory
+			level = 2
+		}
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.10.g
 		every_state = {
-			limit = { is_controlled_by = ROOT }
+			limit = {
+				is_controlled_by = ROOT
+			}
 			add_extra_state_shared_building_slots = 2
 		}
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.10.h
-		add_offsite_building = { type = dockyard level = 3 }
+		add_offsite_building = {
+			type = dockyard
+			level = 3
+		}
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.10.i
-		add_offsite_building = { type = rocket_site level = 1 }
+		add_offsite_building = {
+			type = rocket_site
+			level = 1
+		}
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.10.j
-		add_offsite_building = { type = nuclear_reactor level = 1 }
+		add_offsite_building = {
+			type = nuclear_reactor
+			level = 1
+		}
 		country_event = Easybuff.1
 	}
 	option = {
@@ -156,7 +177,6 @@ country_event = {
 	desc = Easybuff.20.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.20.a
 		country_event = Easybuff.21
@@ -182,11 +202,12 @@ country_event = {
 	desc = Easybuff.21.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.21.a
 		every_state = {
-			limit = { is_controlled_by = ROOT }
+			limit = {
+				is_controlled_by = ROOT
+			}
 			add_resource = {
 				type = rubber
 				amount = 8
@@ -228,7 +249,7 @@ country_event = {
 				amount = 8
 			}
 			add_resource = {
-				type = electronics
+				type = eletronics
 				amount = 8
 			}
 			add_resource = {
@@ -314,7 +335,7 @@ country_event = {
 				amount = 8
 			}
 			add_resource = {
-				type = electronics
+				type = eletronics
 				amount = 8
 			}
 			add_resource = {
@@ -396,7 +417,7 @@ country_event = {
 				amount = 8
 			}
 			add_resource = {
-				type = electronics
+				type = eletronics
 				amount = 8
 			}
 			add_resource = {
@@ -447,7 +468,6 @@ country_event = {
 	desc = Easybuff.22.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.22.a
 		random_owned_state = {
@@ -587,7 +607,6 @@ country_event = {
 	desc = Easybuff.22.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.22.j
 		random_owned_state = {
@@ -610,7 +629,7 @@ country_event = {
 				is_controlled_by = ROOT
 			}
 			add_resource = {
-				type = electronics
+				type = eletronics
 				amount = 8
 			}
 		}
@@ -741,8 +760,6 @@ country_event = {
 	desc = Easybuff.30.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
-
 	option = {
 		name = Easybuff.30.a
 		country_event = Easybuff.31
@@ -760,32 +777,34 @@ country_event = {
 		country_event = Easybuff.1
 	}
 }
+
 # Bicycle 31
 country_event = {
 	id = Easybuff.31
 	title = Easybuff.31.t
 	desc = Easybuff.31.desc
 	picture = GFX_report_event_german_inspect_troops
-
 	is_triggered_only = yes
-
-
 	option = {
 		name = Easybuff.31.a
-		set_technology = { bicycle_infantry = 1 }
+		set_technology = {
+			armor_tech_bicycle_division = 1
+		}
 		country_event = Easybuff.30
 	}
 	option = {
 		name = Easybuff.31.b
-		set_technology = { bicycle_infantry = 0 }
+		set_technology = {
+			armor_tech_bicycle_division = 0
+		}
 		country_event = Easybuff.30
 	}
-
 	option = {
 		name = Easybuffback
 		country_event = Easybuff.30
 	}
 }
+
 # 32
 country_event = {
 	id = Easybuff.32
@@ -793,7 +812,6 @@ country_event = {
 	desc = Easybuff.32.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.32.a
 		# set_technology = { cv_fighter3 = 1 }
@@ -839,6 +857,7 @@ country_event = {
 		country_event = Easybuff.30
 	}
 }
+
 # 33
 country_event = {
 	id = Easybuff.33
@@ -846,7 +865,6 @@ country_event = {
 	desc = Easybuff.33.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.33.a
 		country_event = Easybuff.30
@@ -855,7 +873,6 @@ country_event = {
 		name = Easybuff.33.b
 		country_event = Easybuff.30
 	}
-
 	option = {
 		name = Easybuffback
 		country_event = Easybuff.30
@@ -869,7 +886,6 @@ country_event = {
 	desc = Easybuff.40.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.40.a
 		country_event = Easybuff.41
@@ -878,7 +894,6 @@ country_event = {
 		name = Easybuff.40.b
 		country_event = Easybuff.42
 	}
-
 	option = {
 		name = Easybuffback
 		country_event = Easybuff.1
@@ -892,11 +907,10 @@ country_event = {
 	desc = Easybuff.41.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.41.a
 		add_equipment_to_stockpile = {
-			type = infantry_equipment_0
+			type = infantry_equipment
 			amount = 1000
 		}
 		country_event = Easybuff.40
@@ -941,7 +955,6 @@ country_event = {
 		}
 		country_event = Easybuff.40
 	}
-
 	option = {
 		name = Easybuff.41.g
 		add_equipment_to_stockpile = {
@@ -963,7 +976,6 @@ country_event = {
 	desc = Easybuff.42.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.42.a
 		add_equipment_to_stockpile = {
@@ -1017,7 +1029,6 @@ country_event = {
 	desc = Easybuff.50.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.50.a
 		army_experience = 250
@@ -1060,12 +1071,16 @@ country_event = {
 	}
 	option = {
 		name = Easybuff.50.i
-		add_named_threat = { threat = 25 }
+		add_named_threat = {
+			threat = 25
+		}
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.50.j
-		add_named_threat = { threat = -25 }
+		add_named_threat = {
+			threat = -25
+		}
 		country_event = Easybuff.1
 	}
 	option = {
@@ -1081,7 +1096,6 @@ country_event = {
 	desc = Easybuff.60.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.60.a
 		random_country = {
@@ -1099,7 +1113,6 @@ country_event = {
 		name = Easybuff.60.b
 		country_event = Easybuff.61
 	}
-
 	option = {
 		name = Easybuff.60.c
 		every_country = {
@@ -1130,7 +1143,6 @@ country_event = {
 		name = Easybuff.60.e
 		country_event = Easybuff.63
 	}
-
 	option = {
 		name = Easybuffback
 		country_event = Easybuff.1
@@ -1144,7 +1156,6 @@ country_event = {
 	desc = Easybuff.61.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.61.a
 		random_country = {
@@ -1197,7 +1208,6 @@ country_event = {
 	desc = Easybuff.62.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.62.a
 		random_country = {
@@ -1247,404 +1257,163 @@ country_event = {
 	desc = Easybuff.63.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.63.a
-		set_politics = {
-			ruling_party = centrism
-			elections_allowed = no
-			parties = {
-				centrism = {
-					popularity = 100
-				}
-				traditional_conservatism = {
-					popularity = 0
-				}
-				social_egalitarianism = {
-					popularity = 0
-				}
-				collectivist_socialism = {
-					popularity = 0
-				}
-				vanguard_communism = {
-					popularity = 0
-				}
-				autocracy = {
-					popularity = 0
-				}
-				radical_democracy = {
-					popularity = 0
-				}
-				chauvinist_populism = {
-					popularity = 0
-				}
-				anarchism = {
-					popularity = 0
-				}
-				fundamentalism = {
-					popularity = 0
-				}
-			}
+		set_popularities = {
+			centrism = 100
+			traditional_conservatism = 0
+			social_egalitarianism = 0
+			collectivist_socialism = 0
+			vanguard_communism = 0
+			autocracy = 0
+			radical_democracy = 0
+			chauvinist_populism = 0
+			anarchism = 0
+			fundamentalism = 0
 		}
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.b
-		set_politics = {
-			ruling_party = traditional_conservatism
-			elections_allowed = no
-			parties = {
-				centrism = {
-					popularity = 0
-				}
-				traditional_conservatism = {
-					popularity = 100
-				}
-				social_egalitarianism = {
-					popularity = 0
-				}
-				collectivist_socialism = {
-					popularity = 0
-				}
-				vanguard_communism = {
-					popularity = 0
-				}
-				autocracy = {
-					popularity = 0
-				}
-				radical_democracy = {
-					popularity = 0
-				}
-				chauvinist_populism = {
-					popularity = 0
-				}
-				anarchism = {
-					popularity = 0
-				}
-				fundamentalism = {
-					popularity = 0
-				}
-			}
+		set_popularities = {
+			centrism = 0
+			traditional_conservatism = 100
+			social_egalitarianism = 0
+			collectivist_socialism = 0
+			vanguard_communism = 0
+			autocracy = 0
+			radical_democracy = 0
+			chauvinist_populism = 0
+			anarchism = 0
+			fundamentalism = 0
 		}
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.c
-		set_politics = {
-			ruling_party = social_egalitarianism
-			elections_allowed = no
-			parties = {
-				centrism = {
-					popularity = 0
-				}
-				traditional_conservatism = {
-					popularity = 0
-				}
-				social_egalitarianism = {
-					popularity = 100
-				}
-				collectivist_socialism = {
-					popularity = 0
-				}
-				vanguard_communism = {
-					popularity = 0
-				}
-				autocracy = {
-					popularity = 0
-				}
-				radical_democracy = {
-					popularity = 0
-				}
-				chauvinist_populism = {
-					popularity = 0
-				}
-				anarchism = {
-					popularity = 0
-				}
-				fundamentalism = {
-					popularity = 0
-				}
-			}
+		set_popularities = {
+			centrism = 0
+			traditional_conservatism = 0
+			social_egalitarianism = 100
+			collectivist_socialism = 0
+			vanguard_communism = 0
+			autocracy = 0
+			radical_democracy = 0
+			chauvinist_populism = 0
+			anarchism = 0
+			fundamentalism = 0
 		}
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.e
-		set_politics = {
-			ruling_party = collectivist_socialism
-			elections_allowed = no
-			parties = {
-				centrism = {
-					popularity = 0
-				}
-				traditional_conservatism = {
-					popularity = 0
-				}
-				social_egalitarianism = {
-					popularity = 0
-				}
-				collectivist_socialism = {
-					popularity = 100
-				}
-				vanguard_communism = {
-					popularity = 0
-				}
-				autocracy = {
-					popularity = 0
-				}
-				radical_democracy = {
-					popularity = 0
-				}
-				chauvinist_populism = {
-					popularity = 0
-				}
-				anarchism = {
-					popularity = 0
-				}
-				fundamentalism = {
-					popularity = 0
-				}
-			}
+		set_popularities = {
+			centrism = 0
+			traditional_conservatism = 0
+			social_egalitarianism = 0
+			collectivist_socialism = 100
+			vanguard_communism = 0
+			autocracy = 0
+			radical_democracy = 0
+			chauvinist_populism = 0
+			anarchism = 0
+			fundamentalism = 0
 		}
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.f
-		set_politics = {
-			ruling_party = vanguard_communism
-			elections_allowed = no
-			parties = {
-				centrism = {
-					popularity = 0
-				}
-				traditional_conservatism = {
-					popularity = 0
-				}
-				social_egalitarianism = {
-					popularity = 0
-				}
-				collectivist_socialism = {
-					popularity = 0
-				}
-				vanguard_communism = {
-					popularity = 100
-				}
-				autocracy = {
-					popularity = 0
-				}
-				radical_democracy = {
-					popularity = 0
-				}
-				chauvinist_populism = {
-					popularity = 0
-				}
-				anarchism = {
-					popularity = 0
-				}
-				fundamentalism = {
-					popularity = 0
-				}
-			}
+		set_popularities = {
+			centrism = 0
+			traditional_conservatism = 0
+			social_egalitarianism = 0
+			collectivist_socialism = 0
+			vanguard_communism = 100
+			autocracy = 0
+			radical_democracy = 0
+			chauvinist_populism = 0
+			anarchism = 0
+			fundamentalism = 0
 		}
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.g
-		set_politics = {
-			ruling_party = autocracy
-			elections_allowed = no
-			parties = {
-				centrism = {
-					popularity = 0
-				}
-				traditional_conservatism = {
-					popularity = 0
-				}
-				social_egalitarianism = {
-					popularity = 0
-				}
-				collectivist_socialism = {
-					popularity = 0
-				}
-				vanguard_communism = {
-					popularity = 0
-				}
-				autocracy = {
-					popularity = 100
-				}
-				radical_democracy = {
-					popularity = 0
-				}
-				chauvinist_populism = {
-					popularity = 0
-				}
-				anarchism = {
-					popularity = 0
-				}
-				fundamentalism = {
-					popularity = 0
-				}
-			}
+		set_popularities = {
+			centrism = 0
+			traditional_conservatism = 0
+			social_egalitarianism = 0
+			collectivist_socialism = 0
+			vanguard_communism = 0
+			autocracy = 100
+			radical_democracy = 0
+			chauvinist_populism = 0
+			anarchism = 0
+			fundamentalism = 0
 		}
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.h
-		set_politics = {
-			ruling_party = radical_democracy
-			elections_allowed = no
-			parties = {
-				centrism = {
-					popularity = 0
-				}
-				traditional_conservatism = {
-					popularity = 0
-				}
-				social_egalitarianism = {
-					popularity = 0
-				}
-				collectivist_socialism = {
-					popularity = 0
-				}
-				vanguard_communism = {
-					popularity = 0
-				}
-				autocracy = {
-					popularity = 0
-				}
-				radical_democracy = {
-					popularity = 100
-				}
-				chauvinist_populism = {
-					popularity = 0
-				}
-				anarchism = {
-					popularity = 0
-				}
-				fundamentalism = {
-					popularity = 0
-				}
-			}
+		set_popularities = {
+			centrism = 0
+			traditional_conservatism = 0
+			social_egalitarianism = 0
+			collectivist_socialism = 0
+			vanguard_communism = 0
+			autocracy = 0
+			radical_democracy = 100
+			chauvinist_populism = 0
+			anarchism = 0
+			fundamentalism = 0
 		}
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.i
-		set_politics = {
-			ruling_party = chauvinist_populism
-			elections_allowed = no
-			parties = {
-				centrism = {
-					popularity = 0
-				}
-				traditional_conservatism = {
-					popularity = 0
-				}
-				social_egalitarianism = {
-					popularity = 0
-				}
-				collectivist_socialism = {
-					popularity = 0
-				}
-				vanguard_communism = {
-					popularity = 0
-				}
-				autocracy = {
-					popularity = 0
-				}
-				radical_democracy = {
-					popularity = 0
-				}
-				chauvinist_populism = {
-					popularity = 100
-				}
-				anarchism = {
-					popularity = 0
-				}
-				fundamentalism = {
-					popularity = 0
-				}
-			}
+		set_popularities = {
+			centrism = 0
+			traditional_conservatism = 0
+			social_egalitarianism = 0
+			collectivist_socialism = 0
+			vanguard_communism = 0
+			autocracy = 0
+			radical_democracy = 0
+			chauvinist_populism = 100
+			anarchism = 0
+			fundamentalism = 0
 		}
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.j
-		set_politics = {
-			ruling_party = anarchism
-			elections_allowed = no
-			parties = {
-				centrism = {
-					popularity = 0
-				}
-				traditional_conservatism = {
-					popularity = 0
-				}
-				social_egalitarianism = {
-					popularity = 0
-				}
-				collectivist_socialism = {
-					popularity = 0
-				}
-				vanguard_communism = {
-					popularity = 0
-				}
-				autocracy = {
-					popularity = 0
-				}
-				radical_democracy = {
-					popularity = 0
-				}
-				chauvinist_populism = {
-					popularity = 0
-				}
-				anarchism = {
-					popularity = 100
-				}
-				fundamentalism = {
-					popularity = 0
-				}
-			}
+		set_popularities = {
+			centrism = 0
+			traditional_conservatism = 0
+			social_egalitarianism = 0
+			collectivist_socialism = 0
+			vanguard_communism = 0
+			autocracy = 0
+			radical_democracy = 0
+			chauvinist_populism = 0
+			anarchism = 100
+			fundamentalism = 0
 		}
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.k
-		set_politics = {
-			ruling_party = fundamentalism
-			elections_allowed = no
-			parties = {
-				centrism = {
-					popularity = 0
-				}
-				traditional_conservatism = {
-					popularity = 0
-				}
-				social_egalitarianism = {
-					popularity = 0
-				}
-				collectivist_socialism = {
-					popularity = 0
-				}
-				vanguard_communism = {
-					popularity = 0
-				}
-				autocracy = {
-					popularity = 0
-				}
-				radical_democracy = {
-					popularity = 0
-				}
-				chauvinist_populism = {
-					popularity = 0
-				}
-				anarchism = {
-					popularity = 0
-				}
-				fundamentalism = {
-					popularity = 100
-				}
-			}
+		set_popularities = {
+			centrism = 0
+			traditional_conservatism = 0
+			social_egalitarianism = 0
+			collectivist_socialism = 0
+			vanguard_communism = 0
+			autocracy = 0
+			radical_democracy = 0
+			chauvinist_populism = 0
+			anarchism = 0
+			fundamentalism = 100
 		}
 		country_event = Easybuff.60
 	}
@@ -1661,11 +1430,10 @@ country_event = {
 	desc = Easybuff.70.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	immediate = {
 		hidden_effect = {
 			every_state = {
-				limit= {
+				limit = {
 					is_core_of = ROOT
 				}
 				set_state_flag = player_state
@@ -1673,7 +1441,6 @@ country_event = {
 			set_country_flag = player_country
 		}
 	}
-
 	option = {
 		name = Easybuff.70.a
 		every_state = {
@@ -1684,7 +1451,9 @@ country_event = {
 			}
 			every_country = {
 				limit = {
-					NOT = { has_country_flag = player_country }
+					NOT = {
+						has_country_flag = player_country
+					}
 				}
 				remove_state_core = PREV
 				remove_state_claim = PREV
@@ -1700,8 +1469,12 @@ country_event = {
 		name = Easybuff.70.c
 		every_state = {
 			limit = {
-				NOT = { is_controlled_by = ROOT }
-				AND = { is_core_of = ROOT }
+				NOT = {
+					is_controlled_by = ROOT
+				}
+				AND = {
+					is_core_of = ROOT
+				}
 			}
 			remove_core_of = ROOT
 		}
@@ -1729,7 +1502,9 @@ country_event = {
 			limit = {
 				has_war_with = ROOT
 			}
-			PREV =  { white_peace = ROOT }
+			PREV = {
+				white_peace = ROOT
+			}
 		}
 		country_event = Easybuff.1
 	}
@@ -1746,14 +1521,19 @@ country_event = {
 	desc = Easybuff.71.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.71.a
 		random_state = {
 			limit = {
 				AND = {
-					any_neighbor_state = { owner = { tag = ROOT } }
-					NOT = { is_core_of = ROOT }
+					any_neighbor_state = {
+						owner = {
+							tag = ROOT
+						}
+					}
+					NOT = {
+						is_core_of = ROOT
+					}
 				}
 			}
 			add_core_of = ROOT
@@ -1766,7 +1546,9 @@ country_event = {
 			limit = {
 				AND = {
 					is_controlled_by = ROOT
-					NOT = { is_core_of = ROOT }
+					NOT = {
+						is_core_of = ROOT
+					}
 				}
 			}
 			add_core_of = ROOT
@@ -1779,7 +1561,9 @@ country_event = {
 			limit = {
 				AND = {
 					is_claimed_by = ROOT
-					NOT = { is_core_of = ROOT }
+					NOT = {
+						is_core_of = ROOT
+					}
 				}
 			}
 			add_core_of = ROOT
@@ -1799,14 +1583,15 @@ country_event = {
 	desc = Easybuff.72.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	immediate = {
 		hidden_effect = {
 			random_state = {
 				limit = {
 					AND = {
 						is_core_of = ROOT
-						NOT = { is_controlled_by = ROOT }
+						NOT = {
+							is_controlled_by = ROOT
+						}
 					}
 				}
 				save_event_target_as = ROOT_state
@@ -1819,7 +1604,9 @@ country_event = {
 			limit = {
 				AND = {
 					is_core_of = ROOT
-					NOT = { is_controlled_by = ROOT }
+					NOT = {
+						is_controlled_by = ROOT
+					}
 				}
 			}
 			ROOT = {
@@ -1828,14 +1615,15 @@ country_event = {
 		}
 		country_event = Easybuff.70
 	}
-
 	option = {
 		name = Easybuff.72.b
 		every_state = {
 			limit = {
 				AND = {
 					is_core_of = ROOT
-					NOT = { is_controlled_by = ROOT }
+					NOT = {
+						is_controlled_by = ROOT
+					}
 				}
 			}
 			ROOT = {
@@ -1857,15 +1645,22 @@ country_event = {
 	desc = Easybuff.73.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.73.a
 		random_state = {
 			limit = {
 				AND = {
-					any_neighbor_state = { owner = { tag = ROOT } }
-					NOT = { is_controlled_by = ROOT }
-					owner = { has_war_with = ROOT }
+					any_neighbor_state = {
+						owner = {
+							tag = ROOT
+						}
+					}
+					NOT = {
+						is_controlled_by = ROOT
+					}
+					owner = {
+						has_war_with = ROOT
+					}
 				}
 			}
 			ROOT = {
@@ -1874,14 +1669,19 @@ country_event = {
 		}
 		country_event = Easybuff.70
 	}
-
 	option = {
 		name = Easybuff.73.b
 		random_state = {
 			limit = {
 				AND = {
-					any_neighbor_state = { owner = { tag = ROOT } }
-					NOT = { is_controlled_by = ROOT }
+					any_neighbor_state = {
+						owner = {
+							tag = ROOT
+						}
+					}
+					NOT = {
+						is_controlled_by = ROOT
+					}
 				}
 			}
 			ROOT = {
@@ -1890,7 +1690,6 @@ country_event = {
 		}
 		country_event = Easybuff.70
 	}
-
 	option = {
 		name = Easybuff.73.c
 		random_state = {
@@ -1905,8 +1704,9 @@ country_event = {
 							}
 						}
 					}
-
-					NOT = { is_controlled_by = ROOT }
+					NOT = {
+						is_controlled_by = ROOT
+					}
 				}
 			}
 			ROOT = {
@@ -1928,49 +1728,57 @@ country_event = {
 	desc = Easybuff.74.desc
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.74.a
 		random_country = {
 			limit = {
 				AND = {
 					is_ai = yes
-					NOT = { is_puppet_of = ROOT }
+					NOT = {
+						is_puppet_of = ROOT
+					}
 				}
 			}
-			ROOT = { puppet = PREV }
+			ROOT = {
+				puppet = PREV
+			}
 		}
 		country_event = Easybuff.70
 	}
-
 	option = {
 		name = Easybuff.74.b
 		random_country = {
 			limit = {
 				AND = {
 					is_neighbor_of = ROOT
-					NOT = { is_puppet_of = ROOT }
+					NOT = {
+						is_puppet_of = ROOT
+					}
 				}
 			}
-			ROOT = { puppet = PREV }
+			ROOT = {
+				puppet = PREV
+			}
 		}
 		country_event = Easybuff.70
 	}
-
 	option = {
 		name = Easybuff.74.c
 		random_country = {
 			limit = {
 				AND = {
 					has_war_with = ROOT
-					NOT = { is_puppet_of = ROOT }
+					NOT = {
+						is_puppet_of = ROOT
+					}
 				}
 			}
-			ROOT = { puppet = PREV }
+			ROOT = {
+				puppet = PREV
+			}
 		}
 		country_event = Easybuff.70
 	}
-
 	option = {
 		name = Easybuffback
 		country_event = Easybuff.70
@@ -1984,7 +1792,6 @@ country_event = {
 	desc = Easybuff.75.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	immediate = {
 		hidden_effect = {
 			random_owned_state = {
@@ -2020,20 +1827,25 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = Easybuff.75.a
-		set_capital = event_target:cap_state
+		set_capital = {
+			state = event_target:cap_state
+		}
 		country_event = Easybuff.70
 	}
 	option = {
 		name = Easybuff.75.b
-		set_capital = event_target:cap_states
+		set_capital = {
+			state = event_target:cap_states
+		}
 		country_event = Easybuff.70
 	}
 	option = {
 		name = Easybuff.75.c
-		set_capital = event_target:cap_statess
+		set_capital = {
+			state = event_target:cap_statess
+		}
 		country_event = Easybuff.70
 	}
 	option = {
@@ -2049,58 +1861,81 @@ country_event = {
 	desc = Easybuff.80.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.80.a
 		if = {
-			limit = { has_idea = de_combat_width }
+			limit = {
+				has_idea = de_combat_width
+			}
 			remove_ideas = de_combat_width
-			else = { add_ideas = de_combat_width }
+			else = {
+				add_ideas = de_combat_width
+			}
 		}
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.80.b
 		if = {
-			limit = { has_idea = more_org }
+			limit = {
+				has_idea = more_org
+			}
 			remove_ideas = more_org
-			else = { add_ideas = more_org }
+			else = {
+				add_ideas = more_org
+			}
 		}
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.80.c
 		if = {
-			limit = { has_idea = more_special }
+			limit = {
+				has_idea = more_special
+			}
 			remove_ideas = more_special
-			else = { add_ideas = more_special }
+			else = {
+				add_ideas = more_special
+			}
 		}
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.80.d
 		if = {
-			limit = { has_idea = safety_eqs }
+			limit = {
+				has_idea = safety_eqs
+			}
 			remove_ideas = safety_eqs
-			else = { add_ideas = safety_eqs }
+			else = {
+				add_ideas = safety_eqs
+			}
 		}
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.80.e
 		if = {
-			limit = { has_idea = more_speed }
+			limit = {
+				has_idea = more_speed
+			}
 			remove_ideas = more_speed
-			else = { add_ideas = more_speed }
+			else = {
+				add_ideas = more_speed
+			}
 		}
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.80.f
 		if = {
-			limit = { has_idea = gen_mods }
+			limit = {
+				has_idea = gen_mods
+			}
 			remove_ideas = gen_mods
-			else = { add_ideas = gen_mods }
+			else = {
+				add_ideas = gen_mods
+			}
 		}
 		country_event = Easybuff.1
 	}
@@ -2117,7 +1952,6 @@ country_event = {
 	desc = Easybuff.90.d
 	picture = GFX_report_event_german_inspect_troops
 	is_triggered_only = yes
-
 	option = {
 		name = Easybuff.90.a
 		every_army_leader = {
