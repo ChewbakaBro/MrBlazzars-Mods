@@ -84,7 +84,7 @@ buildings = {
 
 	supply_node = {
 		show_on_map = 1
-		base_cost = 10000
+		base_cost = 7250
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 15
@@ -98,7 +98,7 @@ buildings = {
 	}	
 	
 	rail_way = {
-		base_cost = 85
+		base_cost = 20
 		per_level_extra_cost = 65
 		provincial = yes
 		disabled_in_dmz = yes
