@@ -252,6 +252,13 @@ difficulty_settings = {
 	}
 
 	difficulty_setting = {
+		key = "custom_diff_strong_brt"
+		modifier = diff_strong_ai_generic
+		countries = { BRT }
+		multiplier = 2.0
+	}
+
+	difficulty_setting = {
 		key = "custom_diff_strong_bsf"
 		modifier = diff_strong_ai_generic
 		countries = { BSF }
@@ -521,6 +528,13 @@ difficulty_settings = {
 		key = "custom_diff_strong_eas"
 		modifier = diff_strong_ai_generic
 		countries = { EAS }
+		multiplier = 2.0
+	}
+
+	difficulty_setting = {
+		key = "custom_diff_strong_eag"
+		modifier = diff_strong_ai_generic
+		countries = { EAG }
 		multiplier = 2.0
 	}
 
@@ -2007,6 +2021,13 @@ difficulty_settings = {
 		key = "custom_diff_strong_vlt"
 		modifier = diff_strong_ai_generic
 		countries = { VLT }
+		multiplier = 2.0
+	}
+
+	difficulty_setting = {
+		key = "custom_diff_strong_vls"
+		modifier = diff_strong_ai_generic
+		countries = { VLS }
 		multiplier = 2.0
 	}
 
