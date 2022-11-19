@@ -818,7 +818,7 @@ country_event = {
 	}
 	option = {
 		name = Easybuff.61.b
-		join_ncr = yes
+		join_new_california = yes
 		country_event = Easybuff.60
 	}
 	option = {
