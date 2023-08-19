@@ -10,5 +10,5 @@ dependencies={
 }
 picture="Thumbnail.png"
 name="TNO Gamerules"
-supported_version="1.10.*"
+supported_version="1.12.*"
 remote_file_id="2544642706"
