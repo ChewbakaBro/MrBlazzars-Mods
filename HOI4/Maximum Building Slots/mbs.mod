@@ -1,16 +1,19 @@
-﻿name="Maximum Building Slots"
-path="mod/mbs/"
+name="Maximum Building Slots"
 dependencies={
 	"Endsieg: Ultimate Victory"
-	"Old World Blues"
 	"Equestria at War"
+	"Old World Blues"
+	"Old World Blues - Dev"
+	"Kaiserredux: A Kaiserreich Expansion"
+	"Novum Vexillum"
+	"The Road to 56"
+	"Pax Britannica: An Imperial Timeline"
 }
 tags={
 	"Balance"
-	"Events"
-	"Utilities"
 	"Gameplay"
+	"Alternative History"
+	"Technologies"
 }
-picture="thumbnail.jpg"
-remote_file_id="948496068"
-supported_version="1.11.*"
+supported_version="1.12.*"
+path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/mbs"

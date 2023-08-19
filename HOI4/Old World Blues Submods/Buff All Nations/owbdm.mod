@@ -11,6 +11,6 @@ tags={
 }
 picture="thumbnail.jpg"
 version="1"
-supported_version="1.11.*"
+supported_version="1.12.*"
 path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/owbdm"
 remote_file_id="1631092048"

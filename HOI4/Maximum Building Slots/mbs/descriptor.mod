@@ -6,6 +6,8 @@ dependencies={
 	"Old World Blues - Dev"
 	"Kaiserredux: A Kaiserreich Expansion"
 	"Novum Vexillum"
+	"The Road to 56"
+	"Pax Britannica: An Imperial Timeline"
 }
 tags={
 	"Balance"
@@ -13,4 +15,4 @@ tags={
 	"Alternative History"
 	"Technologies"
 }
-supported_version="1.11.*"
+supported_version="1.12.*"

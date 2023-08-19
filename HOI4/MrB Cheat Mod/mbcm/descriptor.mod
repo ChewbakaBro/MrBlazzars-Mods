@@ -1,4 +1,4 @@
-﻿name="Extra Research Slot"
+﻿name="MrB Cheat Mod"
 dependencies={
 	"Endsieg: Ultimate Victory"
 	"Equestria at War"

@@ -5,7 +5,7 @@ buildings = {
 	#	if provincial = no, then show_on_map = X is amount per state
 
 	infrastructure = {
-		base_cost = 1500
+		base_cost = 3000
 		icon_frame = 3
 		infrastructure = yes
 		max_level = 5
@@ -55,7 +55,7 @@ buildings = {
 
 	supply_node = {
 		show_on_map = 1
-		base_cost = 6000
+		base_cost = 5500
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 15
@@ -69,8 +69,8 @@ buildings = {
 	}	
 	
 	rail_way = {
-		base_cost = 250
-		per_level_extra_cost = 210
+		base_cost = 190
+		per_level_extra_cost = 120
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 16

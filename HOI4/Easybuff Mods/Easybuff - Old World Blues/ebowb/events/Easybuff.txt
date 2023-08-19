@@ -111,12 +111,12 @@ country_event = {
 	}
 	option = {
 		name = Easybuff.10.e
-		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = { type = industrial_complex level = 3 }
 		country_event = Easybuff.1
 	}
 	option = {
 		name = Easybuff.10.f
-		add_offsite_building = { type = arms_factory level = 2 }
+		add_offsite_building = { type = arms_factory level = 3 }
 		country_event = Easybuff.1
 	}
 	option = {
@@ -129,7 +129,7 @@ country_event = {
 	}
 	option = {
 		name = Easybuff.10.h
-		add_offsite_building = { type = dockyard level = 2 }
+		add_offsite_building = { type = dockyard level = 3 }
 		country_event = Easybuff.1
 	}
 	option = {

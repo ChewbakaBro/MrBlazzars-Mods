@@ -118,7 +118,7 @@ country_event = {
 		name = Easybuff.10.e
 		add_offsite_building = {
 			type = industrial_complex
-			level = 2
+			level = 3
 		}
 		country_event = Easybuff.1
 	}
@@ -126,7 +126,7 @@ country_event = {
 		name = Easybuff.10.f
 		add_offsite_building = {
 			type = arms_factory
-			level = 2
+			level = 3
 		}
 		country_event = Easybuff.1
 	}
@@ -209,15 +209,15 @@ country_event = {
 				is_controlled_by = ROOT
 			}
 			add_resource = {
-				type = rubber
-				amount = 8
-			}
-			add_resource = {
 				type = oil
 				amount = 8
 			}
 			add_resource = {
 				type = aluminium
+				amount = 8
+			}
+			add_resource = {
+				type = rubber
 				amount = 8
 			}
 			add_resource = {
@@ -1261,160 +1261,170 @@ country_event = {
 		name = Easybuff.63.a
 		set_popularities = {
 			centrism = 100
+			ideology_social_liberalism = 0
 			traditional_conservatism = 0
-			social_egalitarianism = 0
-			collectivist_socialism = 0
-			vanguard_communism = 0
 			autocracy = 0
-			radical_democracy = 0
+			social_egalitarianism = 0
+			ideology_radical_socialism = 0
+			fundamentalism = 0
 			chauvinist_populism = 0
 			anarchism = 0
-			fundamentalism = 0
+			radical_democracy = 0
 		}
+		set_politics = { ruling_party = centrism }
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.b
 		set_popularities = {
 			centrism = 0
-			traditional_conservatism = 100
-			social_egalitarianism = 0
-			collectivist_socialism = 0
-			vanguard_communism = 0
+			ideology_social_liberalism = 100
+			traditional_conservatism = 0
 			autocracy = 0
-			radical_democracy = 0
+			social_egalitarianism = 0
+			ideology_radical_socialism = 0
+			fundamentalism = 0
 			chauvinist_populism = 0
 			anarchism = 0
-			fundamentalism = 0
+			radical_democracy = 0
 		}
+		set_politics = { ruling_party = ideology_social_liberalism }
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.c
 		set_popularities = {
 			centrism = 0
-			traditional_conservatism = 0
-			social_egalitarianism = 100
-			collectivist_socialism = 0
-			vanguard_communism = 0
+			ideology_social_liberalism = 0
+			traditional_conservatism = 100
 			autocracy = 0
-			radical_democracy = 0
+			social_egalitarianism = 0
+			ideology_radical_socialism = 0
+			fundamentalism = 0
 			chauvinist_populism = 0
 			anarchism = 0
-			fundamentalism = 0
+			radical_democracy = 0
 		}
+		set_politics = { ruling_party = traditional_conservatism }
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.e
 		set_popularities = {
 			centrism = 0
+			ideology_social_liberalism = 0
 			traditional_conservatism = 0
+			autocracy = 100
 			social_egalitarianism = 0
-			collectivist_socialism = 100
-			vanguard_communism = 0
-			autocracy = 0
-			radical_democracy = 0
+			ideology_radical_socialism = 0
+			fundamentalism = 0
 			chauvinist_populism = 0
 			anarchism = 0
-			fundamentalism = 0
+			radical_democracy = 0
 		}
+		set_politics = { ruling_party = autocracy }
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.f
 		set_popularities = {
 			centrism = 0
+			ideology_social_liberalism = 0
 			traditional_conservatism = 0
-			social_egalitarianism = 0
-			collectivist_socialism = 0
-			vanguard_communism = 100
 			autocracy = 0
-			radical_democracy = 0
+			social_egalitarianism = 100
+			ideology_radical_socialism = 0
+			fundamentalism = 0
 			chauvinist_populism = 0
 			anarchism = 0
-			fundamentalism = 0
+			radical_democracy = 0
 		}
+		set_politics = { ruling_party = social_egalitarianism }
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.g
 		set_popularities = {
 			centrism = 0
+			ideology_social_liberalism = 0
 			traditional_conservatism = 0
+			autocracy = 0
 			social_egalitarianism = 0
-			collectivist_socialism = 0
-			vanguard_communism = 0
-			autocracy = 100
-			radical_democracy = 0
+			ideology_radical_socialism = 100
+			fundamentalism = 0
 			chauvinist_populism = 0
 			anarchism = 0
-			fundamentalism = 0
+			radical_democracy = 0
 		}
+		set_politics = { ruling_party = ideology_radical_socialism }
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.h
 		set_popularities = {
 			centrism = 0
+			ideology_social_liberalism = 0
 			traditional_conservatism = 0
-			social_egalitarianism = 0
-			collectivist_socialism = 0
-			vanguard_communism = 0
 			autocracy = 0
-			radical_democracy = 100
+			social_egalitarianism = 0
+			ideology_radical_socialism = 0
+			fundamentalism = 100
 			chauvinist_populism = 0
 			anarchism = 0
-			fundamentalism = 0
+			radical_democracy = 0
 		}
+		set_politics = { ruling_party = fundamentalism }
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.i
 		set_popularities = {
 			centrism = 0
+			ideology_social_liberalism = 0
 			traditional_conservatism = 0
-			social_egalitarianism = 0
-			collectivist_socialism = 0
-			vanguard_communism = 0
 			autocracy = 0
-			radical_democracy = 0
+			social_egalitarianism = 0
+			ideology_radical_socialism = 0
+			fundamentalism = 0
 			chauvinist_populism = 100
 			anarchism = 0
-			fundamentalism = 0
+			radical_democracy = 0
 		}
+		set_politics = { ruling_party = chauvinist_populism }
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.j
 		set_popularities = {
 			centrism = 0
+			ideology_social_liberalism = 0
 			traditional_conservatism = 0
-			social_egalitarianism = 0
-			collectivist_socialism = 0
-			vanguard_communism = 0
 			autocracy = 0
-			radical_democracy = 0
+			social_egalitarianism = 0
+			ideology_radical_socialism = 0
+			fundamentalism = 0
 			chauvinist_populism = 0
 			anarchism = 100
-			fundamentalism = 0
+			radical_democracy = 0
 		}
+		set_politics = { ruling_party = anarchism }
 		country_event = Easybuff.60
 	}
 	option = {
 		name = Easybuff.63.k
 		set_popularities = {
 			centrism = 0
+			ideology_social_liberalism = 0
 			traditional_conservatism = 0
-			social_egalitarianism = 0
-			collectivist_socialism = 0
-			vanguard_communism = 0
 			autocracy = 0
-			radical_democracy = 0
+			social_egalitarianism = 0
+			ideology_radical_socialism = 0
+			fundamentalism = 0
 			chauvinist_populism = 0
 			anarchism = 0
-			fundamentalism = 100
+			radical_democracy = 100
 		}
+		set_politics = { ruling_party = radical_democracy }
 		country_event = Easybuff.60
 	}
 	option = {

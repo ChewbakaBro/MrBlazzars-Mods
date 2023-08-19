@@ -1,0 +1,75 @@
+leader_traits = {
+	mbcm_naval_cheat_1 = { 
+		type = navy
+		trait_type = personality_trait
+		modifier = {
+			critical_receive_chance = -10
+			naval_coordination = 10
+			navy_anti_air_attack_factor = 10
+			submarine_attack = 10
+			navy_capital_ship_attack_factor = 10
+			navy_screen_attack_factor = 10
+			navy_submarine_attack_factor = 10
+			screening_without_screens = 10
+			naval_accidents_chance = -10
+			naval_torpedo_enemy_critical_chance_factor = -10
+			naval_detection = 10
+			naval_heavy_gun_hit_chance_factor = 10
+			naval_light_gun_hit_chance_factor = 10
+			night_spotting_chance = 10
+			naval_enemy_retreat_chance = -10
+			naval_hit_chance = 10
+			naval_critical_score_chance_factor = 10
+			naval_torpedo_reveal_chance_factor = -10
+			spotting_chance = 10
+			experience_gain_navy_unit = 10
+			naval_torpedo_damage_reduction_factor = 10
+			naval_damage_factor = 10
+			naval_night_attack = 10
+			naval_mines_effect_reduction = 10
+			naval_defense_factor = 10
+			navy_capital_ship_defence_factor = 10
+			navy_screen_defence_factor = 10
+			navy_submarine_defence_factor = 10
+			naval_critical_effect_factor = -10
+		}
+	}
+	mbcm_naval_cheat_2 = { 
+		type = navy
+		trait_type = personality_trait
+		modifier = {
+			critical_receive_chance = -10
+			convoy_escort_efficiency = 10
+			convoy_raiding_efficiency_factor = 10
+			screening_efficiency = 10
+			experience_gain_navy_unit_factor = 10
+			naval_torpedo_hit_chance_factor = 10
+			naval_morale_factor = 10
+			naval_morale = 100
+			navy_max_range_factor  = 10
+			navy_max_range = 1000
+			navy_org_factor = 10
+			navy_org = 100
+			ships_at_battle_start = 10
+			strike_force_movement_org_loss = -10
+			navy_weather_penalty = -10
+			positioning = 10
+			naval_enemy_fleet_size_ratio_penalty_factor = 10
+			naval_torpedo_cooldown_factor = -10
+			naval_torpedo_screen_penetration_factor = 10
+			repair_speed_factor = 10
+			convoy_retreat_speed = 10
+			naval_speed_factor = 10
+			navy_visibility = -10
+		}
+	}
+	mbcm_naval_invader_cheat = {
+		type = corps_commander
+		trait_type = personality_trait
+		enable_ability = faster_naval_invasion_planning
+		modifier = {
+			amphibious_invasion = 3 # 30% faster invasions
+			invasion_preparation = -3
+		}
+	}
+}

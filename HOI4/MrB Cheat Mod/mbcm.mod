@@ -1,4 +1,4 @@
-﻿name="Extra Research Slot"
+name="MrB Cheat Mod"
 dependencies={
 	"Endsieg: Ultimate Victory"
 	"Equestria at War"
@@ -16,3 +16,4 @@ tags={
 	"Technologies"
 }
 supported_version="1.12.*"
+path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/mbcm"
