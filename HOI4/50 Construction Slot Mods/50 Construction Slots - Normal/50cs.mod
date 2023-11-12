@@ -12,6 +12,6 @@ tags={
 	"Balance"
 }
 picture="thumbnail.jpg"
-supported_version="1.12.*"
-path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/50cs"
+supported_version="1.13.*"
+path="mod/50cs"
 remote_file_id="902284355"
