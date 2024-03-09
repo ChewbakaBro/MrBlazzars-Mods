@@ -53,7 +53,7 @@ buildings = {
 		base_cost = 1250
 		icon_frame = 5
 		air_base = yes
-		max_level = 20
+		max_level = 10
 		value = 1
 		damage_factor = 0.5
 
@@ -94,8 +94,8 @@ buildings = {
 	}
 
 	rail_way = {
-		base_cost = -1
-		per_level_extra_cost = -1
+		base_cost = 1
+		per_level_extra_cost = 0
 		provincial = yes
 		disabled_in_dmz = yes
 		allied_build = no
