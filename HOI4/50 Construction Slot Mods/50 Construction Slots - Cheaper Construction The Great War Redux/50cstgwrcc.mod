@@ -9,5 +9,5 @@ dependencies={
 name="50 Construction Slots - GW Redux CC"
 picture="Thumbnail.png"
 supported_version="1.11.*"
-path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/50cstgwrcc"
+path="mod/50cstgwrcc"
 remote_file_id="2791987992"

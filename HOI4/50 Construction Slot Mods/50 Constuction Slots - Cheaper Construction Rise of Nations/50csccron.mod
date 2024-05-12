@@ -10,5 +10,5 @@ dependencies={
 picture="Thumbnail.png"
 name="50 Construction Slots CC - Rise of Nations"
 supported_version="1.13.*"
-path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/50csccron"
+path="mod/50csccron"
 remote_file_id="3080881529"

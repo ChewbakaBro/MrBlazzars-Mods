@@ -10,5 +10,5 @@ dependencies={
 }
 name="Peace Deals OWB patch"
 supported_version="1.10.*"
-path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/pdowbp"
+path="mod/pdowbp"
 remote_file_id="2514339898"

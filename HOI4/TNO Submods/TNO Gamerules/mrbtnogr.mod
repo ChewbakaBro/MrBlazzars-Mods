@@ -11,5 +11,5 @@ dependencies={
 picture="Thumbnail.png"
 name="TNO Gamerules"
 supported_version="1.12.*"
-path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/mrbtnogr"
+path="mod/mrbtnogr"
 remote_file_id="2544642706"

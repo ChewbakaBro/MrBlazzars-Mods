@@ -8,4 +8,4 @@ dependencies={
 }
 name="50 Construction Slots - Age of Imperialism CC"
 supported_version="1.10.*"
-path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/50csccaoi"
+path="mod/50csccaoi"

@@ -10,5 +10,5 @@ dependencies={
 picture="Thumbnail.png"
 name="TNO Nuclear War Gamerule"
 supported_version="1.11.*"
-path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/tnonwg"
+path="mod/tnonwg"
 remote_file_id="2536098374"

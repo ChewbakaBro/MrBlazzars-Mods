@@ -16,4 +16,4 @@ tags={
 	"Technologies"
 }
 supported_version="1.12.*"
-path="C:/Users/MrBla/Documents/Paradox Interactive/Hearts of Iron IV/mod/mbcm"
+path="mod/mbcm"
