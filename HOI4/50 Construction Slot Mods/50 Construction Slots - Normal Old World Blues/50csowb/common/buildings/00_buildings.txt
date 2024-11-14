@@ -13,6 +13,7 @@ buildings = {
 		infrastructure = yes
 		max_level = 10
 		value = 1
+		infrastructure_construction_effect = yes
 
 		show_modifier = yes
 		max_fuel_building = 1 #k

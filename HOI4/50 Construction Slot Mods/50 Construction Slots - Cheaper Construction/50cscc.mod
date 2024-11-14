@@ -12,6 +12,6 @@ tags={
 	"Gameplay"
 }
 picture="thumbnail.jpg"
-supported_version="1.14.*"
+supported_version="1.15.*"
 path="mod/50cscc"
 remote_file_id="902291461"
